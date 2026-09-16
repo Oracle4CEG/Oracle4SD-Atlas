@@ -1,0 +1,51 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_ledger.json",
+  "original_sha256": "dcc865b0b04532ae76b8131b339dd37ee8e6c34e31fc9f65a844a93ff34c705d",
+  "metadata": {
+    "amount_policy": "integer strings only; Settle payout is never labelled as reward",
+    "by_event": {
+      "AncillaryDataUpdated": 237,
+      "AuthorizedUser": 5,
+      "DeauthorizedUser": 4,
+      "DisputePrice": 1843,
+      "MessageSent": 3587,
+      "PriceRequestAdded": 3587,
+      "PriceRequestBridged": 2768,
+      "ProposePrice": 166507,
+      "PushedPrice": 3552,
+      "QuestionFlaggedForAdminResolution": 16,
+      "QuestionInitialized": 47812,
+      "QuestionPaused": 1,
+      "QuestionReset": 766,
+      "QuestionResolved": 43472,
+      "QuestionSettled": 2932,
+      "RequestPrice": 179944,
+      "ResolutionDataRequested": 3022,
+      "ResolvedLegacyRequest": 18,
+      "Settle": 166500
+    },
+    "decode_errors_by_topic": {},
+    "decoded_events": 626573,
+    "duplicate_source_logs": 0,
+    "grade_a_adapter_question_links": 42675,
+    "outputs": {
+      "adapter": "data/curated/polygon_adapter_events.jsonl",
+      "child": "data/curated/polygon_child_tunnel_events.jsonl",
+      "oov2": "data/curated/polygon_oov2_events.jsonl",
+      "request_rounds": "data/curated/polygon_uma_request_rounds.jsonl"
+    },
+    "payout_qc_nonzero_gaps": 0,
+    "protocol": "Polygon Polymarket UMA / OOV2",
+    "request_rounds": 42676,
+    "request_rounds_by_sample_tier": {
+      "primary": 41334,
+      "supplementary": 1341,
+      "unresolved": 1
+    },
+    "request_rounds_by_status": {
+      "disputed": 1,
+      "requested": 849,
+      "settled": 41826
+    }
+  }
+}

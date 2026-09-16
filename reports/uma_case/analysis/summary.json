@@ -1,0 +1,13 @@
+{
+  "asset": "USDC.e",
+  "asset_decimals": 6,
+  "configured_reward_raw": "5000000",
+  "data_version": "uma-public-rpc-case-v1",
+  "external_truth": "protocol_resolution_only",
+  "gross_payout_raw": "1000000000",
+  "observations": 1,
+  "principal_returned_raw": "750000000",
+  "realized_payoff_raw": "250000000",
+  "scope": "one case descriptive reconstruction; not population inference or full economic profit",
+  "source_transactions": 5
+}

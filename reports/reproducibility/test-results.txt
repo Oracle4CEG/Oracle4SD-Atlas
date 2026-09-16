@@ -1,0 +1,25 @@
+/tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /tmp/oracle-atlas-fresh-20260916/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+test_changed_input_fails_before_processing (test_case_pipeline.CaseTests.test_changed_input_fails_before_processing) ... ok
+test_changed_scientific_summary_rejected (test_case_pipeline.CaseTests.test_changed_scientific_summary_rejected) ... ok
+test_full_verifier_rejects_external_symlink_by_default (test_case_pipeline.CaseTests.test_full_verifier_rejects_external_symlink_by_default) ... ok
+test_integer_payment_mismatch_rejected (test_case_pipeline.CaseTests.test_integer_payment_mismatch_rejected) ... ok
+test_missing_full_data_is_failure (test_case_pipeline.CaseTests.test_missing_full_data_is_failure) ... ok
+test_missing_receipt_rejected (test_case_pipeline.CaseTests.test_missing_receipt_rejected) ... ok
+test_no_overwrite_or_path_escape (test_case_pipeline.CaseTests.test_no_overwrite_or_path_escape) ... ok
+test_real_case_values_and_scope (test_case_pipeline.CaseTests.test_real_case_values_and_scope) ... ok
+test_removed_event_rejected (test_case_pipeline.CaseTests.test_removed_event_rejected) ... ok
+test_wrong_chain_rejected (test_case_pipeline.CaseTests.test_wrong_chain_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 6.530s
+
+OK

@@ -1,77 +1,102 @@
-"""Synthetic teaching adapter: exact deduplication, flags and Celsius-to-kelvin conversion."""
+"""Reconstruct acquired receipts and pinned sources using existing project code."""
+
+import argparse, json, os, subprocess, sys
 from pathlib import Path
-import argparse
-from datetime import datetime
-from decimal import Decimal, InvalidOperation
-import sys
+import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from common import load_config, read_csv, sha256, write_csv, write_json
+from common import (
+    ROOT,
+    contained,
+    load_config,
+    read_json,
+    require,
+    sha256,
+    write_csv,
+    write_json,
+)
 
-FIELDS = ["observation_id", "group_id", "timestamp_utc", "temperature_c",
-          "temperature_k", "value_status", "origin"]
 
-
-def process(config, run_root):
-    cfg = load_config(config, require_demo=True)
-    raw = Path(run_root) / "queried_data/observations.csv"
-    before = sha256(raw)
-    rows = read_csv(raw)
-    expected = {"observation_id", "group_id", "timestamp_utc", "temperature_c", "origin"}
-    seen, output, decisions = {}, [], []
-    for row in rows:
-        if set(row) != expected or row["origin"] != "synthetic_teaching":
-            raise ValueError("Unexpected schema or non-teaching source")
-        ident = row["observation_id"]
-        if not ident or not row["group_id"]:
-            raise ValueError("Missing stable identifier")
-        try:
-            parsed_time = datetime.fromisoformat(row["timestamp_utc"].replace("Z", "+00:00"))
-        except ValueError as exc:
-            raise ValueError("timestamp_utc must be an ISO 8601 UTC timestamp ending in Z or +00:00") from exc
-        if parsed_time.tzinfo is None or parsed_time.utcoffset().total_seconds() != 0:
-            raise ValueError("Document UTC timestamps explicitly")
-        if ident in seen:
-            if seen[ident] != row:
-                raise ValueError("Conflicting duplicate ID requires an explicit scientific decision")
-            decisions.append({"id": ident, "decision": "drop_exact_duplicate"})
-            continue
-        seen[ident] = row
-        text = row["temperature_c"]
-        if text == "":
-            c, k, status = "", "", "missing"
-        else:
-            try:
-                value = Decimal(text)
-            except InvalidOperation as exc:
-                raise ValueError("Non-numeric temperature") from exc
-            if not value.is_finite():
-                raise ValueError("Non-finite temperature")
-            if not Decimal("-50") <= value <= Decimal("60"):
-                decisions.append({"id": ident, "decision": "exclude_teaching_range"})
-                continue
-            c, k, status = f"{value:.2f}", f"{value + Decimal('273.15'):.2f}", "synthetic_value"
-        output.append({"observation_id": ident, "group_id": row["group_id"],
-                       "timestamp_utc": row["timestamp_utc"], "temperature_c": c,
-                       "temperature_k": k, "value_status": status, "origin": row["origin"]})
-    output.sort(key=lambda row: row["observation_id"])
-    target = Path(run_root) / "processed_data/observations.csv"
-    if target.exists():
-        raise FileExistsError("Refusing stale processed output")
-    write_csv(target, FIELDS, output)
-    if sha256(raw) != before:
-        raise ValueError("Raw input changed")
-    write_json(Path(run_root) / "reports/processing.json", {
-        "evidence_status": "SYNTHETIC", "input_rows": len(rows), "output_rows": len(output),
-        "decisions": decisions, "range_rule_scope": "Arbitrary teaching rule, not a domain recommendation",
-        "missing_rule": "Retain and flag; never impute zero", "raw_sha256": before,
-        "processed_sha256": sha256(target)})
-    return output
+def process(config, run_dir):
+    cfg = load_config(config)
+    run = Path(run_dir).resolve()
+    acq = read_json(run / "reports/acquisition.json")
+    require(
+        acq["data_version"] == cfg["data_version"],
+        "Acquisition belongs to another release",
+    )
+    for f in acq["files"]:
+        p = contained(run, f["path"])
+        require(
+            p.is_file() and sha256(p) == f["sha256"],
+            "Acquired source changed: " + f["source_id"],
+        )
+    inputs = run / "queried_data/uma_case"
+    out = run / "reconstruction"
+    require(not out.exists(), "Use a new reconstruction directory")
+    cmd = [
+        sys.executable,
+        str(
+            ROOT
+            / "code/production/scripts/case_studies/reproduce_uma_public_rpc_case.py"
+        ),
+        "--spec",
+        str(inputs / "case_spec.json"),
+        "--snapshot-dir",
+        str(inputs / "raw"),
+        "--source-cache",
+        str(inputs / "source"),
+        "--offline-sources",
+        "--output",
+        str(out),
+    ]
+    env = os.environ.copy()
+    env["MPLBACKEND"] = "Agg"
+    env["MPLCONFIGDIR"] = str(run / "runtime/matplotlib")
+    result = subprocess.run(cmd, cwd=ROOT, env=env, capture_output=True, text=True)
+    (run / "reports/reconstruction.stderr.log").write_text(result.stderr)
+    require(result.returncode == 0, "Reconstruction failed: " + result.stderr[-6000:])
+    (run / "reports/reconstruction.log").write_text(result.stdout)
+    ep = read_json(out / "processed/economic_episode.json")
+    manifest = read_json(out / "manifest.json")
+    require(manifest["all_required_assertions_pass"], "Case builder assertions failed")
+    row = {
+        k: json.dumps(v, separators=(",", ":")) if isinstance(v, (list, dict)) else v
+        for k, v in ep.items()
+    }
+    write_csv(run / "processed_data/economic_episodes.csv", [row])
+    write_json(run / "processed_data/economic_episode.json", ep)
+    conversions = {
+        "source_events": "validated/polygon_decoded_events.parquet",
+        "token_flows": "validated/token_flows.parquet",
+        "canonical_chain_qc": "validated/canonical_chain_qc.parquet",
+        "economic_link_qc": "validated/economic_link_qc.parquet",
+        "variable_provenance": "economic/variable_provenance.parquet",
+        "lifecycle_timeline": "statistics/lifecycle_timeline.parquet",
+        "economic_cashflows": "statistics/economic_cashflows.parquet",
+        "abc_economic_measures": "economic/abc_economic_measures.parquet",
+    }
+    counts = {"economic_episodes": 1}
+    for name, rel in conversions.items():
+        frame = pd.read_parquet(out / rel)
+        counts[name] = len(frame)
+        frame.to_csv(run / "processed_data" / f"{name}.csv", index=False)
+    record = {
+        "data_version": cfg["data_version"],
+        "counts": counts,
+        "source_transactions": acq["source_transactions"],
+        "operation": "multi-event cross-chain linking -> one request lifecycle; transfers remain child rows",
+        "rule_implementation": "code/production/scripts/case_studies/reproduce_uma_public_rpc_case.py",
+        "scope": "one preregistered real request; no missing-value imputation",
+        "amount_policy": "raw integers + asset + decimals; no cross-token sum",
+    }
+    write_json(run / "reports/processing.json", record)
+    return record
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", required=True)
-    parser.add_argument("--run-dir", required=True)
-    args = parser.parse_args()
-    process(args.config, Path(args.run_dir).resolve())
+    p = argparse.ArgumentParser()
+    p.add_argument("--config", default=str(ROOT / "configs/project.json"))
+    p.add_argument("--run-dir", required=True)
+    a = p.parse_args()
+    print(json.dumps(process(a.config, a.run_dir), indent=2))

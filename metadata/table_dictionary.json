@@ -1,0 +1,57 @@
+{
+  "historical_dictionaries": [
+    "metadata/economic_variable_dictionary.csv",
+    "metadata/abc_economic_measure_dictionary.csv",
+    "metadata/cross_chain_economic_observation_fields.csv"
+  ],
+  "historical_dictionary_status": "preserved evidence; blank historical descriptions are superseded for the case by data_dictionary.csv; no repaired full common schema claim",
+  "tables": {
+    "abc_economic_measures": {
+      "rows": 28,
+      "unit": "core A/B/C measure availability",
+      "warning": "33-variable dictionary includes 5 support variables beyond these 28"
+    },
+    "canonical_chain_qc": {
+      "passed": "boolean; all must pass",
+      "rows": 30,
+      "unit": "receipt/header/log/code consistency check"
+    },
+    "economic_cashflows": {
+      "rows": 4,
+      "unit": "accounting component of episode",
+      "warning": "components are not additional lifecycles"
+    },
+    "economic_episodes": {
+      "dictionary": "metadata/data_dictionary.csv",
+      "primary_key": [
+        "episode_id"
+      ],
+      "rows": 1,
+      "unit": "one lifecycle"
+    },
+    "economic_link_qc": {
+      "passed": "boolean; all must pass",
+      "rows": 13,
+      "unit": "cross-chain or settlement linkage check"
+    },
+    "lifecycle_timeline": {
+      "rows": 5,
+      "unit": "request, proposal, dispute, resolution or settlement transaction"
+    },
+    "source_events": {
+      "identity": "chain + transaction_hash + log_index; see CSV headers",
+      "rows": 9,
+      "unit": "decoded Polygon protocol event"
+    },
+    "token_flows": {
+      "amount": "decimal-string integer base units; decimals 6",
+      "rows": 8,
+      "unit": "USDC.e Transfer event in selected receipts"
+    },
+    "variable_provenance": {
+      "rows": 12,
+      "unit": "derived variable and evidence path"
+    }
+  },
+  "version": "uma-public-rpc-case-v1"
+}

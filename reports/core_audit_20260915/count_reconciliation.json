@@ -1,0 +1,54 @@
+{
+  "export_manifest_files": 56,
+  "export_rows_declared": 231251318,
+  "export_same_set_current_rows": 231251318,
+  "current_directory_files": 67,
+  "current_directory_cross_table_rows": 383378723,
+  "additional_files_not_in_56_file_export": [
+    {
+      "file": "economic_semantics_events.parquet",
+      "rows": 22723389
+    },
+    {
+      "file": "polymarket_decision_time_price_onchain_validation.parquet",
+      "rows": 48
+    },
+    {
+      "file": "polymarket_decision_time_price_provenance.parquet",
+      "rows": 810
+    },
+    {
+      "file": "polymarket_decision_time_prices.parquet",
+      "rows": 810
+    },
+    {
+      "file": "polymarket_decision_time_web_evidence.parquet",
+      "rows": 291
+    },
+    {
+      "file": "polymarket_decision_time_web_provenance.parquet",
+      "rows": 291
+    },
+    {
+      "file": "realized_reward_slash_events.parquet",
+      "rows": 19275854
+    },
+    {
+      "file": "sample_b_observable_accountability.parquet",
+      "rows": 105702424
+    },
+    {
+      "file": "sample_c_strict_honesty_events.parquet",
+      "rows": 3435826
+    },
+    {
+      "file": "uma_phase2_dvm_negative_slash_panel.parquet",
+      "rows": 947128
+    },
+    {
+      "file": "uma_phase2_request_panel.parquet",
+      "rows": 40534
+    }
+  ],
+  "reason": "56 counts the JSONL-to-Parquet export inventory; 67 also includes four economic/sample projections, two phase-2 analysis tables and five later price/web-evidence tables. This is an inventory-definition difference, not 11 wholly new core datasets."
+}

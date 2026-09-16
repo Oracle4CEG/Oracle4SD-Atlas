@@ -1,0 +1,30 @@
+validation_id,object,unit,denominator,passed,failed,skipped,rule,verification_status,evidence_file,remaining_limit
+V01,curated physical files,file,67,67,0,0,"Read Parquet footer, schema and full SHA256",本轮重新计算,physical_inventory.csv,No full-dataset historical co-build proven
+V02,four native UMA key tables,row/key,42676;42676;835;3744,all unique and non-null,0,0,count versus count distinct; null count,本轮重新计算,recomputed_statistics.json,Only named tables; no blanket uniqueness claim for 105M table
+V03,UMA flow→request; Grade-A→DVM,foreign-key record,42676;832,42676;832,0,0,ANTI JOIN has zero orphans,本轮重新计算,recomputed_statistics.json,Matched identity not external truth
+V04,UMA settled payout formula,settled request,41826,41826,0,0,gross_payout_raw=expected_gross_payout_raw; integer exact gap zero,本轮重新计算,recomputed_statistics.json,"Recomputed equality of stored fields, not freshly fetched all receipts"
+V05,UMA request flow QC,request,42676,41826,0,850,settlement_flow_exact TRUE among settled; NULL among not settled,本轮重新计算,recomputed_statistics.json,"Stored flow results; incomplete cases skipped, not treated as failures or zero payout"
+V06,Chainlink expected token flows,staking/reward event,51372,50772,0,600,flow_exact TRUE when expected; accounting-only excluded,本轮重新计算,recomputed_statistics.json,Summarizes saved reconciliation; 600 require no transfer
+V07,Flare claim amount/state,epoch,183,183,0,0,claimed_matches and burn lower-bound condition,本轮重新计算,recomputed_statistics.json,"Reads historical verification flags, not independent raw replay"
+V08,Flare reward calculation root,epoch,183,183,0,0,calculated Merkle root equals recorded chain root,已核实历史产物,source_flare_fsp_rewards.json,No fresh 183-epoch Merkle rebuild this turn
+V09,strict realized inclusion/precision,economic component,19275854,19275854,0,0,included AND cashflow/state flag; signed/unsigned integer regex,本轮重新计算,strict_semantics.csv,"Verification booleans are provenance signals, not independent truth proof; NULL presence not exhaustively tested"
+V10,UMA exact cross-chain linking,disputed request,835,832,3,0,"exact ancillary and request hashes, unique DVM match",本轮重新计算,uma_links.csv,3 U are unmatched; 12 A rows lack three-way price consistency
+V11,common timestamp cutoff,common row,105588120,102852211,0,2735909,non-null event_time_unix <= 1782863999,本轮重新计算,common_protocol_units.csv,NULL DVM/staking timestamps; no common start; event timestamps vary in meaning
+V12,OATA episode ID/time,episode,2784472,2784472,0,0,unique ID; no end before non-null start,本轮重新计算,semantic_risk_audit.json,956552 missing start;2674966 right-censored; uniqueness not semantic correctness
+V13,UMA OATA challenge flag,request,42676,1684,40992,0,"challenge requires actual native dispute event, not just non-null address",存在冲突,semantic_risk_audit.json#R001,Zero address accepted as disputer
+V14,UMA OATA payout confirmation,request,42676,41826,850,0,transfer confirmation requires observed settlement,存在冲突,semantic_risk_audit.json#R001,Confirmation hardcoded true
+V15,UMA OATA disputed reward,settled disputed request,834,0,834,0,paid reward must include explicit reward plus winner reward component,存在冲突,semantic_risk_audit.json#R002,Downstream financial amount identical
+V16,Tellor Sample C label,dispute,13,0,13,0,"SUPPORT supports challenge, not report",存在冲突,semantic_risk_audit.json#R003,13 labels reversed; count unchanged
+V17,Tellor OATA slash applicability,dispute,13,3,10,0,applied reporter slash only if challenge supported,存在冲突,semantic_risk_audit.json#R004,Exposed slash amount copied even on failed challenge
+V18,DVM OATA accrued-negative state,negative accrued payoff,947128,0,947128,0,calculated delta must not be labelled confirmed principal-slash state,存在冲突,semantic_risk_audit.json#R005,state_change_confirmed false helps but state label still misleading
+V19,common JSON schema enum accountability_unit_type,common row,105588120,105587965,155,0,actual field value in current JSON schema enum,存在冲突,additional_checks.json,Outdated schema; not proof corresponding raw records wrong
+V20,common JSON schema enum truth_basis,common row,105588120,21946126,83641994,0,actual field value in current JSON schema enum,存在冲突,additional_checks.json,Outdated schema; not proof corresponding raw records wrong
+V21,economic v1.5 checksum inventory,file,1395,1393,2,0,current SHA256 equals historical inventory,存在冲突,historical_checksum_summary.json,2 modified manifests/reports; not all current bytes match historical release
+V22,HF local checksummed release subset,file,44,44,0,0,size and SHA256 check,本轮重新计算,historical_checksum_summary.json;hf_local_validation.log,Local checksum pass not full-core publication
+V23,named software regression set,test,46,46,0,0,Five test modules; pytest no cacheprovider,本轮重新计算,../reproduce/software_tests_46.log,Application/software logic tests do not cover new semantic bugs
+V24,UMA isolated raw snapshot reconstruction,case assertion,13,13,0,0,receipt/header decode; exact hash link; token transfer and formula assertions,本轮重新计算,case_replay_manifest.json,One case; frozen snapshots; not live full-chain recollection
+V25,UMA source semantics in isolated case,contract semantic rule,7,7,0,0,pinned source rules checked by case reproducer,本轮重新计算,case_replay_manifest.json,Rule-based source check not formal proof of deployed bytecode equivalence
+V26,three minimal reuse workflows,workflow,3,3,0,0,one source trace; one replay; 14-row typed union,本轮重新计算,reuse_workflows_status.json,Small demonstration; not statistically representative
+V27,Tellor case schema/QC,check,13,13,0,0,case extension saved checks,已核实历史产物,tellor_case_qc.csv,Not raw-replayed this turn; distinct from defective OATA and Sample C
+V28,full-chain fresh public recollection,protocol,unknown,0,0,not run,Would require archive RPC and scope-appropriate node access,当前无法核实,audit_manifest.json,No assertion of independent all-history fresh reproduction
+V29,full common-table uniqueness and all foreign keys,row,105588120,not checked,not checked,not run,Need per-branch key collision and relationship audit before final release,当前无法核实,data_model.csv,Named UMA keys checked only

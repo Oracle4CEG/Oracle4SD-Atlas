@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "Cite the exact code commit of this teaching template. Cite research data separately."
-title: "Oracle4SD scientific data project template"
-type: software
+message: "Cite the exact code commit, data version and original protocol sources. This is a review bundle, not a final full dataset release."
+title: "Oracle4SD Atlas: reproducible oracle accountability evidence"
 authors:
-  - name: "Oracle4SD contributors"
-repository-code: "https://github.com/sunshineluyao/Oracle4SD"
+  - name: "Oracle4CEG project contributors"
+version: "atlas-review-20260916"
+date-released: "2026-09-16"
+repository-code: "https://github.com/Oracle4CEG/Oracle4SD-Atlas"
 license: MIT
-abstract: "A reusable author instruction and reproducibility scaffold with synthetic teaching data."
+type: software

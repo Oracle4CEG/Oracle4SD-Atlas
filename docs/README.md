@@ -1,25 +1,9 @@
-# Instructions
+# Project documentation
 
-Start with the first-author guide and requirement map.
-
-**First-author task:** Read FIRST_AUTHOR_GUIDE.md, REQUIREMENTS.md, REPRODUCIBILITY.md and HUGGING_FACE.md. Recheck policies for your submission year. Document venue-specific decisions in the author checklist.
-
-**Start with:** [FIRST_AUTHOR_GUIDE.md](FIRST_AUTHOR_GUIDE.md).
-
-
-## Author inputs for the completed project
-
-| Item | Fill with verified information |
-|---|---|
-| Scientific purpose and observation unit | AUTHOR INPUT |
-| Exact inputs, versions and source/DOI URLs | AUTHOR INPUT |
-| Permanent GitHub code or folder links | AUTHOR INPUT |
-| Commands, parameters and manual prerequisites | AUTHOR INPUT |
-| Expected output paths, counts and units | AUTHOR INPUT |
-| Access, rights, limitations and untested dimensions | AUTHOR INPUT |
-| Independent check and evidence location | AUTHOR INPUT |
-
-**Done when:** The tutorial can be followed without prior topic knowledge.
-
-**Requirement mapping:** [current journal instructions](https://www.nature.com/sdata/submission-guidelines); [current NeurIPS dataset requirements](https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting). These links identify the governing requirements;
-the task instructions are teaching recommendations. Check the actual submission year.
+- METHODS.md: data acquisition, reference-paper adaptation and transformation semantics.
+- API_VERIFICATION.md: current official API documentation reviewed on 2026-09-16.
+- REPRODUCIBILITY.md and REQUIREMENTS.md: execution, environment and troubleshooting.
+- FULL_DATA.md: exact candidate inventory, historical code, acquisition dependencies and missing full archive.
+- VALIDATION_STATUS.md: scoped passes and unresolved full-core failures.
+- HANDOFF.md: September 17 links/status and concrete author questions.
+- REPOSITORY_SETUP.md and HUGGING_FACE.md: version boundaries and public evidence.

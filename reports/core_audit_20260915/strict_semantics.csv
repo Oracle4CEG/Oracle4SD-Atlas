@@ -1,0 +1,14 @@
+oracle_network,source_event,economic_evidence_class,n_rows,nonincluded,without_verification,malformed_unsigned,malformed_signed
+Chainlink,RewardClaimed,paid_reward,29927,0,0,0,0
+Chronicle,OpChallengeRewardPaid,paid_invalid_report_challenge_reward,14,0,0,0,0
+DIA,unstake+wDIA Transfer,paid_base_staking_reward,127,0,0,0,0
+Flare,RewardClaimed,paid_reward_claim,18468675,0,0,0,0
+Pyth,reward_transfer,paid_reward_to_stake_custody,459083,0,0,0,0
+Tellor,MsgClaimReward,paid_reward,18,0,0,0,0
+Tellor,dispute_executed,realized_principal_slash,3,0,0,0,0
+Tellor,tip_withdrawn,paid_reward_compounded_to_stake,20380,0,0,0,0
+UMA,Settle,paid_reward_embedded_in_settlement,41769,0,0,0,0
+UMA,Settle,realized_bond_forfeiture,834,0,0,0,0
+UMA,Settle,realized_final_fee_forfeiture,834,0,0,0,0
+UMA,VoterSlashApplied,applied_net_stake_increase,114815,0,0,0,0
+UMA,VoterSlashApplied,applied_net_stake_slash,139375,0,0,0,0

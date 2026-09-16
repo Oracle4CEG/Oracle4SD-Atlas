@@ -1,0 +1,69 @@
+{
+  "original_relative_path": "data/manifests/chronicle_redstone_ethereum_events.json",
+  "original_sha256": "33fc7afe9d05d1a55834f6dfaf648aba56b0ca7a05723cf112db7f00942036a7",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "chain_id": 1,
+    "chronicle_duplicate_events": 0,
+    "chronicle_event_counts": {
+      "BarUpdated": 173,
+      "FeedDropped": 308,
+      "FeedLifted": 1184,
+      "MaxChallengeRewardUpdated": 62,
+      "OpChallengePeriodUpdated": 112,
+      "OpChallengeRewardPaid": 14,
+      "OpPokeChallengedSuccessfully": 14,
+      "OpPokeChallengedUnsuccessfully": 9,
+      "OpPokeDataDropped": 16,
+      "OpPoked": 81552,
+      "Poked": 57082
+    },
+    "chronicle_event_rows": 140526,
+    "chronicle_excluded_addresses": [
+      "0xb0b07b9280edfd1547221d590147b04b2589565a"
+    ],
+    "chronicle_excluded_unvalidated_candidates": 1,
+    "chronicle_raw_candidates": 140574,
+    "chronicle_realized_challenge_reward_raw_wei": "11020000000000000000",
+    "chronicle_reward_without_successful_challenge": 0,
+    "chronicle_source_commit": "12ff06ca78811e01313afde4b38fe959d6647096",
+    "chronicle_successful_challenge_without_self_drop": 0,
+    "chronicle_validated_contracts": 72,
+    "chronicle_validator_registry_commit": "f06e0a8209fcb47f1535d1b874cb8ff254a9c2c5",
+    "cutoff_block": 25433938,
+    "cutoff_block_hash": "0x82ba65044cd2af79c7e3e21dd4a87a26d257e6f9abcf585eed201f2d177f35a0",
+    "cutoff_block_time": "2026-06-30T23:59:59+00:00",
+    "dataset": "Chronicle and RedStone Ethereum event observability ledger",
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-27T05:19:11.113349+00:00",
+    "redstone_duplicate_events": 0,
+    "redstone_event_counts": {
+      "AnswerUpdated": 22551,
+      "UpdateSkipDueToBlockTimestamp": 7989,
+      "UpdateSkipDueToDataTimestamp": 3300,
+      "ValueUpdate": 580479
+    },
+    "redstone_event_rows": 614319,
+    "redstone_manifest_adapter_contracts": 9,
+    "redstone_manifest_non_address_feed_entries": [
+      {
+        "configured_value": "__no_feed__",
+        "feed_name": "ETH_CLE",
+        "manifest": "data/raw/source_audit/redstone_monorepo_95f8/packages/relayer-remote-config/main/relayer-manifests/ethereumPufStaking.json",
+        "reason": "not_an_evm_contract_address"
+      },
+      {
+        "configured_value": "__no_feed__",
+        "feed_name": "ETH_ELE",
+        "manifest": "data/raw/source_audit/redstone_monorepo_95f8/packages/relayer-remote-config/main/relayer-manifests/ethereumPufStaking.json",
+        "reason": "not_an_evm_contract_address"
+      }
+    ],
+    "redstone_manifest_price_feed_contracts": 91,
+    "redstone_realized_reward_events": 0,
+    "redstone_realized_slash_events": 0,
+    "redstone_source_and_manifest_commit": "95f8cb9fd00b0a9f12c3e4bc45206533c90f09cb",
+    "scope_guard": "Chronicle rows cover Ethereum Scribe/ScribeOptimistic event signatures and include realized ETH challenge rewards and self-governed feed drops. RedStone rows cover official Ethereum Push-adapter manifests pinned at the cutoff; the Pull model embeds signed payloads in consumer calls and has no global price-update log. Official scoped EVM adapter contracts define no publisher reward or slash settlement event, so those values are verified absent rather than inferred as zero protocol-wide.",
+    "segments_per_protocol": 255
+  }
+}

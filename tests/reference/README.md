@@ -1,3 +1,3 @@
-# Governed teaching reference
+# Reference
 
-The manifest pins deterministic outputs of the synthetic example. Expected record counts and temperature conversions were independently checked. A mismatch requires investigation and review; the normal runner never regenerates this reference. Scientific validity remains unevaluated. See [test instructions](../README.md).
+uma_case_summary.json is copied from the prior real-case reconstruction. New runs compare scientific summary values exactly; do not regenerate it just to satisfy tests.

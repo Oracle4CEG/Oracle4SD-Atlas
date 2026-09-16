@@ -1,0 +1,63 @@
+{
+  "original_relative_path": "data/manifests/research_samples.json",
+  "original_sha256": "5d53d60181669511b807f5e5ca9f5913f4ee756a3f554156efd384408bb4a22f",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "assertions": {
+      "sample_b_has_all_five_networks": true,
+      "sample_b_unique_event_ids": true,
+      "sample_c_event_ids_are_subset_of_sample_b": true,
+      "sample_c_excludes_base_staking_reward": true,
+      "sample_c_excludes_undisputed_acceptance": true,
+      "sample_c_unique_event_ids": true
+    },
+    "dataset": "Oracle Accountability Atlas fixed research samples",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-28T11:45:13.672115+00:00",
+    "sample_b": {
+      "definition": "All observable accountability rows for the five deep-panel networks.",
+      "duplicate_event_ids": 0,
+      "path": "data/curated/parquet/sample_b_observable_accountability.parquet",
+      "rows": 105702424,
+      "rows_by_network": {
+        "Chainlink": 118947,
+        "Flare_FTSOv2": 19402262,
+        "Pyth": 587720,
+        "Tellor": 82887135,
+        "UMA": 2706360
+      },
+      "sha256": "072626d7b94ad60c89a39c4188fe4d8192715c313d03006cc4745205b6fca71c"
+    },
+    "sample_c": {
+      "definition": "Protocol-rule-linked correctness or reliability outcomes; not external objective truth.",
+      "duplicate_event_ids": 0,
+      "path": "data/curated/parquet/sample_c_strict_honesty_events.parquet",
+      "rows": 3435826,
+      "rows_by_network": {
+        "Flare_FTSOv2": 869278,
+        "Tellor": 57,
+        "UMA": 2566491
+      },
+      "rows_by_strict_event_class": {
+        "flare_consensus_band_condition_met": 829973,
+        "flare_consensus_band_condition_not_met": 39305,
+        "tellor_dispute_voter_reward_paid": 18,
+        "tellor_report_rejected": 10,
+        "tellor_report_supported": 3,
+        "tellor_reporter_jailed": 13,
+        "tellor_reporter_unjailed": 13,
+        "uma_correct_vote_redistribution": 1618542,
+        "uma_dvm_confirmed_disputer_correct": 473,
+        "uma_dvm_confirmed_proposer_correct": 348,
+        "uma_no_valid_reveal_slash": 887620,
+        "uma_wrong_vote_slash": 59508
+      },
+      "sha256": "b47a7d4b550ebfeee59ea022aa7eb68ee888a4b47f45aebe7ea612a9bd8569c1",
+      "zero_row_networks": {
+        "Chainlink": "No valid AlertRaised/operator Slashed event observed at the fixed cutoff.",
+        "Pyth": "No adjudicated realized OIS data-quality slash observed in the durable rolling-state panel."
+      }
+    },
+    "schema_version": "1.0.0"
+  }
+}

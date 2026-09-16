@@ -1,0 +1,108 @@
+{
+  "original_relative_path": "data/manifests/chainlink_staking_v02_raw.json",
+  "original_sha256": "4f575cc0d8327edcdf560894569fc52abf9b3ee560a66edf3cd4bae4f76620e5",
+  "metadata": {
+    "chain_id": 1,
+    "contracts": {
+      "community_pool": {
+        "address": "0xbc10f2e862ed4502144c7d632a3459f49dfcdb5e",
+        "deployment_block": 18572190,
+        "runtime_code_bytes_at_cutoff": 16422,
+        "runtime_code_hash_at_cutoff": "0x631f7df94138c04d3b338f44b90fae6d8364e121cacfb5f33d8261326fdd7cbd"
+      },
+      "operator_pool": {
+        "address": "0xa1d76a7ca72128541e9fcacafbda3a92ef94fdc5",
+        "deployment_block": 18572190,
+        "runtime_code_bytes_at_cutoff": 21624,
+        "runtime_code_hash_at_cutoff": "0x7e69984d9b53291326e8d67c4e6600088af546959641df789f1759d1ea3b089c"
+      },
+      "price_feed_alert_controller": {
+        "address": "0x27484ba119d12649be2a9854e4d3b44cc3fdbad7",
+        "deployment_block": 18621068,
+        "runtime_code_bytes_at_cutoff": 13102,
+        "runtime_code_hash_at_cutoff": "0xf6e759f5d591ab81492928df2c3d9a910b2628a0f79f8b77ef1bd79ae1757e78"
+      },
+      "reward_vault": {
+        "address": "0x996913c8c08472f584ab8834e925b06d0eb1d813",
+        "deployment_block": 18621067,
+        "runtime_code_bytes_at_cutoff": 19246,
+        "runtime_code_hash_at_cutoff": "0x58f5788dc9004e3aacbaa3afd5f3f5806227fbbb1ace4a03183c80ae6904c93c"
+      }
+    },
+    "cutoff_block": 25433938,
+    "generated_at_utc": "2026-07-18T08:09:50.512340+00:00",
+    "head_block": 25558024,
+    "interpretation_guard": "Raw logs only. LINK transfers and claimed rewards are not automatically honesty-linked rewards.",
+    "protocol": "Chainlink Staking v0.2",
+    "raw_log_scan": {
+      "chunks": 72,
+      "event_counts": {
+        "CommunityPoolRewardUpdated(uint256)": 42389,
+        "ForfeitedRewardDistributed(uint256,uint256,uint256,bool)": 600,
+        "OperatorPoolRewardUpdated(uint256,uint256)": 353,
+        "RewardAdded(address,uint256,uint256)": 10,
+        "RewardClaimed(address,uint256)": 29927,
+        "RewardFinalized(address,bool)": 20853,
+        "SlasherConfigSet(address,uint256,uint256)": 1,
+        "StakerRewardUpdated(address,uint256,uint256,uint256,uint256,uint256)": 50780,
+        "UnbondingPeriodReset(address)": 62,
+        "UnbondingPeriodStarted(address)": 9069
+      },
+      "event_counts_by_contract": {
+        "community_pool": {
+          "UnbondingPeriodReset(address)": 55,
+          "UnbondingPeriodStarted(address)": 8834,
+          "unclassified_topic": 20743
+        },
+        "operator_pool": {
+          "SlasherConfigSet(address,uint256,uint256)": 1,
+          "UnbondingPeriodReset(address)": 7,
+          "UnbondingPeriodStarted(address)": 235,
+          "unclassified_topic": 209
+        },
+        "price_feed_alert_controller": {
+          "unclassified_topic": 11
+        },
+        "reward_vault": {
+          "CommunityPoolRewardUpdated(uint256)": 42389,
+          "ForfeitedRewardDistributed(uint256,uint256,uint256,bool)": 600,
+          "OperatorPoolRewardUpdated(uint256,uint256)": 353,
+          "RewardAdded(address,uint256,uint256)": 10,
+          "RewardClaimed(address,uint256)": 29927,
+          "RewardFinalized(address,bool)": 20853,
+          "StakerRewardUpdated(address,uint256,uint256,uint256,uint256,uint256)": 50780,
+          "unclassified_topic": 8
+        }
+      },
+      "from_block": 18572190,
+      "to_block": 25433938,
+      "total_logs": 175015,
+      "unknown_topic_counts": {
+        "0x03402a75be6462f03cfaa1a1d189e17ecf71c8b57bf127e93f5f5aeae974b43c": 1,
+        "0x05c7298d5a1cfa304dcb2b5dca121c2dcbcba489d28eff0474f99491dab8e95c": 2,
+        "0x123d88ba82600dfc3f219f8885c691b0ff020caa535666874b3f5174973757fe": 3,
+        "0x204fccf0d92ed8d48f204adb39b2e81e92bad0dedb93f5716ca9478cfb57de00": 3197,
+        "0x25a396cea9ba6982315a3d3e139ba96cd1c22cbd4d13b3a34474be6a78d79cf4": 2,
+        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": 22,
+        "0x3377dc44241e779dd06afab5b788a35ca5f3b778836e2990bdb26a2a4b2e5ed6": 4,
+        "0x539851b0675b473b0130d32676207eae7491ebd4ed2d8aba5c394b6c5c4c2c81": 1,
+        "0x5da547b9d16fdf24d2effc5aab5525df02b543c8f72b9dec3867cc81aba35982": 2,
+        "0x6aaa2f2ba155cd8a13033dd0c62c423be75c53bb7d5cd4ba23d331288b62d14f": 5,
+        "0x7f4f497e086b2eb55f8a9885ba00d33399bbe0ebcb92ea092834386435a1b9c0": 2,
+        "0x8a64345dc20861a6d144acccb8559538642cccafb7485ad5f14b8c4739ba107b": 2,
+        "0x9450c62cdfe8d5a3d6d6ef2b42b61c81ce45b294d6a56f3a8dbe883c64831eac": 2,
+        "0xac6fa858e9350a46cec16539926e0fde25b7629f84b5a72bffaae4df888ae86d": 54,
+        "0xb4caaf29adda3eefee3ad552a8e85058589bf834c7466cae4ee58787f70589ed": 17648,
+        "0xd691495cfd395b3857dac24d1572b6a8f4d94f8be46b13d645ffaaf2f9186db8": 1,
+        "0xd8572c381824ffffebc7dcf1cc25a094eedc7498e31f3ddfd0a82d4ffa026e9d": 13,
+        "0xded6ebf04e261e1eb2f3e3b268a2e6aee5b478c15b341eba5cf18b9bc80c2e63": 2,
+        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": 8
+      }
+    },
+    "rpc_client": "reth/v1.11.3-d6324d6/x86_64-unknown-linux-gnu",
+    "source": {
+      "address_registry": "https://staking.chain.link/ official mainnet application configuration",
+      "event_abi": "https://staking.chain.link/ official v0.2 front-end ABI"
+    }
+  }
+}

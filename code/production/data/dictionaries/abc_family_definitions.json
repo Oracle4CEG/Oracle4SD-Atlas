@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "distinction_from_research_samples": "A/B/C are economic measure families, not the project Sample A/B/C data cohorts.",
+  "families": [
+    {
+      "code": "A",
+      "name": "verification_concentration",
+      "question": "Who verifies?",
+      "economic_scope": "Concentration, breadth and threshold dependence of observed verification activity.",
+      "variables": [
+        "monitoring_concentration_hhi",
+        "monitoring_top_k_share",
+        "monitoring_effective_n",
+        "monitoring_threshold_n"
+      ],
+      "variable_count": 4
+    },
+    {
+      "code": "B",
+      "name": "incentives_and_frictions",
+      "question": "Why verify?",
+      "economic_scope": "Configured incentives, capital at risk, liquidity and delay frictions, verification costs and scenario-based expected private utility.",
+      "variables": [
+        "bond_raw",
+        "reward_configured_raw",
+        "reward_to_bond_ratio",
+        "mandatory_wait_seconds",
+        "protocol_fee_raw",
+        "capital_days_locked_raw",
+        "gas_cost_native_raw",
+        "verification_cost_usd",
+        "expected_verifier_utility_usd"
+      ],
+      "variable_count": 9
+    },
+    {
+      "code": "C",
+      "name": "accountability_outcomes",
+      "question": "What happens after verification?",
+      "economic_scope": "Challenge, adjudication, transfer, payoff, delay and censoring outcomes, with protocol resolution kept separate from independent factual truth.",
+      "variables": [
+        "dispute_decision",
+        "proposal_upheld",
+        "settlement_delay_seconds",
+        "excess_delay_seconds",
+        "reward_paid_raw",
+        "principal_returned_raw",
+        "bond_forfeited_raw",
+        "gross_payout_raw",
+        "realized_payoff_raw",
+        "right_censored",
+        "dvm_signed_payoff_delta_raw",
+        "dvm_applied_stake_delta_raw",
+        "independent_ground_truth_available",
+        "token_only_action_regret_raw",
+        "economic_regret_usd"
+      ],
+      "variable_count": 15
+    }
+  ]
+}

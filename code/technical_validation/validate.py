@@ -1,56 +1,138 @@
-"""Bounded software checks for the teaching fixture; scientific validation remains unevaluated."""
+"""Validate a declared case scope against raw-derived checks and a frozen reference."""
+
+import argparse, json, sys
 from pathlib import Path
-import argparse
-from collections import Counter
-from decimal import Decimal, InvalidOperation
-import sys
+from jsonschema import Draft202012Validator
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from common import load_config, read_csv, write_json
+from common import (
+    ROOT,
+    contained,
+    load_config,
+    read_csv,
+    read_json,
+    require,
+    sha256,
+    write_json,
+)
 
 
-def validate(config, run_root):
-    load_config(config, require_demo=True)
-    rows = read_csv(Path(run_root) / "processed_data/observations.csv")
+def validate(config, run_dir):
+    cfg = load_config(config)
+    run = Path(run_dir)
+    ep = read_json(run / "processed_data/economic_episode.json")
+    manifest = read_json(run / "reconstruction/manifest.json")
+    summary = read_json(run / "reconstruction/statistics/summary.json")
+    reference = read_json(ROOT / "tests/reference/uma_case_summary.json")
     checks = []
-    def add(name, n, failures, criterion):
-        checks.append({"check": name, "n_examined": n, "n_failed": failures,
-                       "criterion": criterion,
-                       "status": "not_evaluated" if n == 0 else ("fail" if failures else "pass")})
-    ids = [row["observation_id"] for row in rows]
-    id_counts = Counter(ids)
-    add("unique_nonempty_ids", len(rows), sum(not x or id_counts[x] > 1 for x in ids),
-        "Every output row has one unique stable ID")
-    bad_conversion, measured, bad_missing, bad_origin = 0, 0, 0, 0
-    for row in rows:
-        bad_origin += row["origin"] != "synthetic_teaching"
-        if row["temperature_c"] == "":
-            bad_missing += row["temperature_k"] != "" or row["value_status"] != "missing"
-        else:
-            measured += 1
-            try:
-                c, k = Decimal(row["temperature_c"]), Decimal(row["temperature_k"])
-                valid = c.is_finite() and k.is_finite() and abs(k-c-Decimal("273.15")) <= Decimal("0.005")
-                valid = valid and row["value_status"] == "synthetic_value"
-            except InvalidOperation:
-                valid = False
-            bad_conversion += not valid
-    add("unit_conversion", measured, bad_conversion, "K minus Celsius equals 273.15 within 0.005")
-    add("missingness_encoding", len(rows), bad_missing, "Missing source values remain missing and flagged")
-    add("synthetic_origin", len(rows), bad_origin, "All teaching records retain their synthetic label")
-    for check in ["measurement_accuracy", "population_representativeness", "ML_construct_validity"]:
-        checks.append({"check": check, "status": "not_evaluated", "n_examined": 0,
-                       "reason": "Synthetic teaching data provide no project-specific scientific evidence"})
-    report = {"evidence_status": "SYNTHETIC", "scope": "Bundled teaching fixture only",
-              "scientific_readiness": "not_evaluated", "checks": checks}
-    write_json(Path(run_root) / "reports/validation.json", report)
+
+    def add(name, ok, unit, den, scope):
+        checks.append(
+            {
+                "check": name,
+                "passed": bool(ok),
+                "unit": unit,
+                "denominator": den,
+                "scope": scope,
+            }
+        )
+
+    errors = list(
+        Draft202012Validator(
+            read_json(ROOT / "metadata/economic_episode.schema.json")
+        ).iter_errors(ep)
+    )
+    add(
+        "episode_schema",
+        not errors,
+        "episode",
+        1,
+        "85-field case schema; not full common schema",
+    )
+    add(
+        "frozen_reference_values",
+        summary == reference,
+        "case",
+        1,
+        "previous reconstruction values; not independent factual truth",
+    )
+    add(
+        "episode_identity",
+        ep["episode_id"].endswith(cfg["case_id"]),
+        "episode",
+        1,
+        "fixed preregistered request",
+    )
+    add(
+        "principal_not_profit",
+        int(ep["gross_payout_raw"])
+        == int(ep["principal_returned_raw"]) + int(ep["realized_payoff_raw"]),
+        "settlement",
+        1,
+        "integer equality",
+    )
+    add(
+        "asset_precision",
+        ep["asset_decimals"] == 6 and ep["asset_symbol"] == "USDC.e",
+        "asset",
+        1,
+        "this case only",
+    )
+    for name, ok in manifest["assertions"].items():
+        add(name, ok, "case assertion", 1, "raw-derived case assertion")
+    for name in ["canonical_chain_qc", "economic_link_qc"]:
+        rows = read_csv(run / "processed_data" / f"{name}.csv")
+        add(
+            name,
+            bool(rows) and all(r["passed"].lower() == "true" for r in rows),
+            "check",
+            len(rows),
+            "retained receipt/header or economic link",
+        )
+    for item in read_json(run / "reports/acquisition.json")["files"]:
+        add(
+            "source_hash:" + item["source_id"],
+            sha256(contained(run, item["path"])) == item["sha256"],
+            "file",
+            1,
+            "run input identity",
+        )
+    add(
+        "config_version",
+        all(
+            read_json(run / "reports" / f"{n}.json")["data_version"]
+            == cfg["data_version"]
+            for n in ["acquisition", "processing"]
+        ),
+        "stage",
+        2,
+        "one sample version",
+    )
+    report = {
+        "data_version": cfg["data_version"],
+        "review_bundle": cfg["review_bundle"],
+        "scope": cfg["scope"],
+        "passed": all(r["passed"] for r in checks),
+        "checks": checks,
+        "passed_checks": sum(r["passed"] for r in checks),
+        "failed_checks": sum(not r["passed"] for r in checks),
+        "schema_errors": [e.message for e in errors],
+        "not_evaluated": [
+            "all-protocol recollection",
+            "population representativeness",
+            "independent external truth",
+            "full-core schema/application issues",
+        ],
+        "known_core_failures": "reports/core_audit_20260915/known_issues.csv",
+    }
+    write_json(run / "reports/validation.json", report)
+    require(report["passed"], "Validation failed; inspect reports/validation.json")
     return report
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", required=True)
-    parser.add_argument("--run-dir", required=True)
-    args = parser.parse_args()
-    result = validate(args.config, Path(args.run_dir).resolve())
-    raise SystemExit(1 if any(x["status"] == "fail" for x in result["checks"]) else 0)
+    p = argparse.ArgumentParser()
+    p.add_argument("--config", default=str(ROOT / "configs/project.json"))
+    p.add_argument("--run-dir", required=True)
+    a = p.parse_args()
+    print(json.dumps(validate(a.config, a.run_dir), indent=2))

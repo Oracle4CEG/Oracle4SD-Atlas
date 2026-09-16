@@ -1,14 +1,11 @@
-check_id,requirement,applies_to,evidence_path,status,reason_if_not_applicable,owner,checked_date
-R01,Claims have release-specific evidence,All,,not_evaluated,,,
-R02,Sources and release rights documented,All,,not_evaluated,,,
-R03,Files dictionary manuscript and notebook agree,All,,not_evaluated,,,
-R04,Scientific validation and limits reported,All,,not_evaluated,,,
-R05,Independent reproduction recorded,All,,not_evaluated,,,
-R06,Data version and access verified,All,,not_evaluated,,,
-R07,Current headings and declarations complete,Scientific Data,,not_evaluated,,,
-R08,Core and minimal RAI Croissant validated,NeurIPS dataset contribution,,not_evaluated,,,
-R09,Evaluative purpose and assumptions supported,NeurIPS E&D,,not_evaluated,,,
-R10,Small sample for data larger than 4 GB,NeurIPS E&D when applicable,,not_evaluated,,,
-R11,Review mode and URLs follow current rules,NeurIPS E&D,,not_evaluated,,,
-R12,Official current-year checklist completed,NeurIPS submission,,not_evaluated,,,
-R13,Teaching prompts removed from submission,Completed manuscript,,not_evaluated,,,
+check_id,requirement,status,evidence_path,checked_date
+R01,case inputs and source licenses,passed,metadata/source_register.csv,2026-09-16
+R02,case dictionary and expected outputs,passed,metadata/data_dictionary.csv,2026-09-16
+R03,case replay and negative tests,passed,reports/uma_case/reports/validation.json,2026-09-16
+R04,fresh notebook Run all,pending_execution,reports/reproducibility/README.md,2026-09-16
+R05,full immutable dataset archive and DOI,blocked_missing_archive,docs/FULL_DATA.md,2026-09-16
+R06,full-core semantic repairs,open_failures,metadata/issue_log.csv,2026-09-16
+R07,independent organization review,pending_human_review,docs/HANDOFF.md,2026-09-16
+R08,hosted Google Colab execution,pending_hosted_run,docs/HANDOFF.md,2026-09-16
+R09,editable Overleaf and compiled paper,not_supplied,paper/README.md,2026-09-16
+R10,shared data identity,case_bound_full_candidate_separate,metadata/release.json,2026-09-16

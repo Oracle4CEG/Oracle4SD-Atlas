@@ -20,3 +20,9 @@ data/queried_data/project/*
 !data/queried_data/project/README.md
 data/processed_data/project/*
 !data/processed_data/project/README.md
+
+/code/production/data/raw/
+/code/production/data/curated/
+/code/production/data/applications/
+/code/production/reports/
+*.egg-info/

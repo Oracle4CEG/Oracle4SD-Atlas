@@ -1,16 +1,11 @@
-## Why this change is needed
+## Scientific scope and change
 
-AUTHOR INPUT: scientific or documentation problem and its consequence.
+Describe the concrete behavior, data version and affected units.
 
-## What changes
+## Evidence
 
-AUTHOR INPUT: methods, data/schema, instructions and expected behavior.
+List the tested commit, source identities, scoped checks and notebook runtime evidence.
 
-## Evidence and tests
+## Remaining limitations
 
-AUTHOR INPUT: commands, input/output versions, failures, limits and reports.
-
-- [ ] Data rights and disclosure checked for added files.
-- [ ] Source, dictionary, code, notebook and manuscript references agree.
-- [ ] Real findings are distinguished from synthetic examples and plans.
-- [ ] Local checks run; hosted CI status reported accurately.
+Link applicable issue-log entries. State whether full recollection, hosted Colab execution and independent human review were completed.

@@ -1,1 +1,6 @@
-claim_id,proposed_claim,type,scope_and_denominator,data_version,evidence_path,code_commit_and_path,uncertainty,counterevidence,permitted_wording,status,owner
+claim_id,claim,evidence,scope
+S01,one real cross-chain lifecycle,reports/uma_case/reports/processing.json,sample
+S02,gross payout is not all reward,reports/uma_case/analysis/summary.json,one USDC.e settlement
+S03,28 sample checks pass,reports/uma_case/reports/validation.json,replayed fixed evidence
+F01,105588120 common candidate rows,metadata/full_data_inventory.csv,historical local audit; not full public release
+F02,full candidate has known semantic failures,reports/core_audit_20260915/known_issues.csv,not repaired by sample validation

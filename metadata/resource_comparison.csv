@@ -1,1 +1,4 @@
-resource,citation,version,matched_record_unit,coverage,modality,annotation_basis,access_and_licence,verified_difference,limit,evidence_url
+mode,inputs,input_bytes,memory,time,network,status
+bundled case,7 files,285355,2GB RAM suggested; CPU only,seconds after dependency install; see measured reproduction record,installation only,tested locally
+full candidate verification,71 inventory records including 67 curated,15474890321,streamed hash; row-count reads only parquet footer,depends on disk throughput; not recollection,full public archive unavailable,metadata describes existing local files
+full recollection,heterogeneous histories and rolling states,not bounded here; exceeds curated storage,production server and archive endpoints; not free Colab,not benchmarked in this review; can require days,"chain/archive nodes, source repositories",not certified reproducible until full snapshots and dependencies deposited

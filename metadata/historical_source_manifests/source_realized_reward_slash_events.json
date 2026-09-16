@@ -1,0 +1,390 @@
+{
+  "original_relative_path": "data/manifests/realized_reward_slash_events.json",
+  "original_sha256": "dd9c67bc3cd6e04fd3612fbc0304763734db2165232c52c9c783909f34138561",
+  "metadata": {
+    "schema_version": "1.0.0",
+    "generated_at": "2026-07-28T11:41:49.308044+00:00",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "evidence_output": "data/curated/parquet/economic_semantics_events.parquet",
+    "realized_output": "data/curated/parquet/realized_reward_slash_events.parquet",
+    "row_counts": {
+      "economic_semantics_events": 22723389,
+      "realized_reward_slash_events": 19275854
+    },
+    "evidence_summary": [
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "accounting_redistribution",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 600,
+        "amount_raw": "1815917989999359913039"
+      },
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "designed_alert_reward_parameter",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 1,
+        "amount_raw": "7000000000000000000000"
+      },
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "designed_slash_parameter",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 1,
+        "amount_raw": "700000000000000000000"
+      },
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "paid_reward",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 29927,
+        "amount_raw": "2711776174615755500202138"
+      },
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "reward_eligibility_finalization",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 3205,
+        "amount_raw": null
+      },
+      {
+        "oracle_network": "Chronicle",
+        "economic_evidence_class": "paid_invalid_report_challenge_reward",
+        "asset": "ETH",
+        "asset_decimals": 18,
+        "row_count": 14,
+        "amount_raw": "11020000000000000000"
+      },
+      {
+        "oracle_network": "DIA",
+        "economic_evidence_class": "paid_base_staking_reward",
+        "asset": "0x9f5da8630d47178bab71f5923644a28b15cbdca7",
+        "asset_decimals": 18,
+        "row_count": 127,
+        "amount_raw": "22235907087809645291878"
+      },
+      {
+        "oracle_network": "Flare",
+        "economic_evidence_class": "claimable_entitlement",
+        "asset": "FLR",
+        "asset_decimals": 18,
+        "row_count": 49858,
+        "amount_raw": "4220510238803026035144069359"
+      },
+      {
+        "oracle_network": "Flare",
+        "economic_evidence_class": "paid_reward_claim",
+        "asset": "FLR",
+        "asset_decimals": 18,
+        "row_count": 18468675,
+        "amount_raw": "3936734286992524182177003731"
+      },
+      {
+        "oracle_network": "Pyth",
+        "economic_evidence_class": "paid_reward_to_stake_custody",
+        "asset": "PYTH",
+        "asset_decimals": 6,
+        "row_count": 459083,
+        "amount_raw": "109117725148136"
+      },
+      {
+        "oracle_network": "Pyth",
+        "economic_evidence_class": "reward_parameter",
+        "asset": "rate_fixed_6",
+        "asset_decimals": 6,
+        "row_count": 6566,
+        "amount_raw": "10054824"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "accrued_reporter_period_reward",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 715362,
+        "amount_raw": "6422273947"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "paid_reward",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 18,
+        "amount_raw": "1726605"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "paid_reward_compounded_to_stake",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 20380,
+        "amount_raw": "8748623099"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "realized_principal_slash",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 3,
+        "amount_raw": "79920000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "accrued_stake_redistribution",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 1618542,
+        "amount_raw": "6944230751570400765134817"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "applied_net_stake_increase",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 114815,
+        "amount_raw": "6479233845987681993750235"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "applied_net_stake_slash",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 139375,
+        "amount_raw": "5131815031398152941194165"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "calculated_stake_slash",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 947128,
+        "amount_raw": "5596811936980871712578747"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "paid_reward_embedded_in_settlement",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 41757,
+        "amount_raw": "382385000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "paid_reward_embedded_in_settlement",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 12,
+        "amount_raw": "1252000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_bond_forfeiture",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 824,
+        "amount_raw": "403000000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_bond_forfeiture",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 10,
+        "amount_raw": "2500000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_final_fee_forfeiture",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 824,
+        "amount_raw": "215500000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_final_fee_forfeiture",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 10,
+        "amount_raw": "2500000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "zero_applied_stake_delta",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 8258,
+        "amount_raw": "0"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "zero_stake_delta",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 98014,
+        "amount_raw": "0"
+      }
+    ],
+    "realized_summary": [
+      {
+        "oracle_network": "Chainlink",
+        "economic_evidence_class": "paid_reward",
+        "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "asset_decimals": 18,
+        "row_count": 29927,
+        "amount_raw": "2711776174615755500202138"
+      },
+      {
+        "oracle_network": "Chronicle",
+        "economic_evidence_class": "paid_invalid_report_challenge_reward",
+        "asset": "ETH",
+        "asset_decimals": 18,
+        "row_count": 14,
+        "amount_raw": "11020000000000000000"
+      },
+      {
+        "oracle_network": "DIA",
+        "economic_evidence_class": "paid_base_staking_reward",
+        "asset": "0x9f5da8630d47178bab71f5923644a28b15cbdca7",
+        "asset_decimals": 18,
+        "row_count": 127,
+        "amount_raw": "22235907087809645291878"
+      },
+      {
+        "oracle_network": "Flare",
+        "economic_evidence_class": "paid_reward_claim",
+        "asset": "FLR",
+        "asset_decimals": 18,
+        "row_count": 18468675,
+        "amount_raw": "3936734286992524182177003731"
+      },
+      {
+        "oracle_network": "Pyth",
+        "economic_evidence_class": "paid_reward_to_stake_custody",
+        "asset": "PYTH",
+        "asset_decimals": 6,
+        "row_count": 459083,
+        "amount_raw": "109117725148136"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "paid_reward",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 18,
+        "amount_raw": "1726605"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "paid_reward_compounded_to_stake",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 20380,
+        "amount_raw": "8748623099"
+      },
+      {
+        "oracle_network": "Tellor",
+        "economic_evidence_class": "realized_principal_slash",
+        "asset": "loya",
+        "asset_decimals": 6,
+        "row_count": 3,
+        "amount_raw": "79920000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "applied_net_stake_increase",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 114815,
+        "amount_raw": "6479233845987681993750235"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "applied_net_stake_slash",
+        "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "asset_decimals": 18,
+        "row_count": 139375,
+        "amount_raw": "5131815031398152941194165"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "paid_reward_embedded_in_settlement",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 41757,
+        "amount_raw": "382385000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "paid_reward_embedded_in_settlement",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 12,
+        "amount_raw": "1252000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_bond_forfeiture",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 824,
+        "amount_raw": "403000000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_bond_forfeiture",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 10,
+        "amount_raw": "2500000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_final_fee_forfeiture",
+        "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "asset_decimals": 6,
+        "row_count": 824,
+        "amount_raw": "215500000000"
+      },
+      {
+        "oracle_network": "UMA",
+        "economic_evidence_class": "realized_final_fee_forfeiture",
+        "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+        "asset_decimals": 6,
+        "row_count": 10,
+        "amount_raw": "2500000000"
+      }
+    ],
+    "qc": {
+      "voter_slashed_rows_in_realized": 0,
+      "voter_slash_applied_rows_in_realized": 254190,
+      "dvm_voter_slashed_accrued_net_raw": "1347418814589529052556070",
+      "dvm_voter_slash_applied_net_raw": "1347418814589529052556070",
+      "dvm_accrued_net_equals_applied_net": true,
+      "uma_dispute_penalty_rows_not_flow_exact": 0,
+      "chainlink_claims_not_flow_exact": 0,
+      "chainlink_realized_slash_rows": 0,
+      "flare_rows_in_realized": 18468675,
+      "pyth_rows_in_realized": 459083,
+      "tellor_tip_withdrawals_in_realized": 20380,
+      "chronicle_rewards_in_realized": 14,
+      "dia_rewards_in_realized": 127,
+      "dia_rewards_not_payment_exact": 0,
+      "flare_fee_burns_in_realized": 0,
+      "pyth_parameter_rows_in_realized": 0,
+      "tellor_accrual_rows_in_realized": 0,
+      "realized_rows_without_payment_or_state_delta": 0,
+      "duplicate_evidence_ids": 0
+    },
+    "counting_policy": {
+      "paid_reward": "requires observed token/bank transfer, or an exact gross transfer whose source-level decomposition isolates reward",
+      "realized_slash": "requires applied stake/principal mutation or fully reconciled bond/fee loss",
+      "excluded": "accruals, unclaimed Merkle entitlements, reward factors, eligibility outcomes, alerts, fee burns, and accounting redistribution",
+      "uma_guard": "VoterSlashed is accrual-only; VoterSlashApplied is the aggregate realized net delta; never sum both"
+    }
+  }
+}

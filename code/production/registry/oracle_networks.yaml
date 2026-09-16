@@ -1,0 +1,87 @@
+snapshot_date: "2026-07-20"
+purpose: "Oracle Incentives and Accountability Atlas — observability registry seed"
+networks:
+  - oracle_network: Chainlink
+    oracle_family: decentralized_oracle_network
+    security_chain: Ethereum
+    delivery_chains: multi_chain
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: true
+    publisher_level_observable: partial
+    deep_panel_status: ethereum_ledgers_link_flow_and_feed_qc_complete
+    source_evidence: https://chain.link/economics/staking
+  - oracle_network: Pyth
+    oracle_family: publisher_oracle_network
+    security_chain: Solana_Mainnet
+    delivery_chains: multi_chain
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: false
+    publisher_level_observable: true
+    deep_panel_status: ois_full_transaction_stake_reward_slash_ledger_qc_complete
+    source_evidence: https://docs.pyth.network/
+  - oracle_network: UMA
+    oracle_family: optimistic_oracle_and_dvm
+    security_chain: Ethereum
+    delivery_chains: Polygon_and_multi_chain
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: true
+    publisher_level_observable: false
+    deep_panel_status: polygon_and_ethereum_ledgers_complete_grade_a_primary_window
+    source_evidence: https://docs.uma.xyz/
+  - oracle_network: Tellor
+    oracle_family: reporter_dispute_oracle
+    security_chain: tellor-1
+    delivery_chains: multi_chain
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: true
+    publisher_level_observable: true
+    deep_panel_status: report_reward_tip_dispute_vote_slash_ledger_qc_complete
+    source_evidence: https://docs.tellor.io/
+  - oracle_network: Flare_FTSOv2
+    oracle_family: commit_reveal_price_oracle
+    security_chain: Flare_Mainnet
+    delivery_chains: Flare_Mainnet
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: true
+    publisher_level_observable: true
+    deep_panel_status: reward_epochs_provider_conditions_actual_claim_and_chill_history_qc_complete
+    source_evidence: https://dev.flare.network/ftso/
+  - oracle_network: Chronicle
+    oracle_family: oracle_network
+    security_chain: Ethereum
+    delivery_chains: multi_chain
+    reward_mechanism_documented: true
+    penalty_mechanism_documented: true
+    reward_onchain_observable: true
+    penalty_onchain_observable: true
+    report_level_observable: true
+    publisher_level_observable: partial
+    deep_panel_status: ethereum_scribe_report_challenge_reward_and_feed_drop_qc_complete
+    source_evidence: https://docs.chroniclelabs.org/
+  - oracle_network: RedStone
+    oracle_family: modular_oracle_network
+    security_chain: offchain_signed_data_and_delivery_chain_verification
+    delivery_chains: multi_chain
+    reward_mechanism_documented: partial
+    penalty_mechanism_documented: partial
+    reward_onchain_observable: false
+    penalty_onchain_observable: false
+    report_level_observable: true
+    publisher_level_observable: partial_or_unknown
+    deep_panel_status: ethereum_push_event_qc_complete_reward_slash_interfaces_verified_absent_in_scope
+    source_evidence: https://docs.redstone.finance/

@@ -1,0 +1,20 @@
+[
+  {
+    "table": "sample_b_observable_accountability",
+    "historical_sha256": "072626d7b94ad60c89a39c4188fe4d8192715c313d03006cc4745205b6fca71c",
+    "current_sha256": "072626d7b94ad60c89a39c4188fe4d8192715c313d03006cc4745205b6fca71c",
+    "same_bytes": true,
+    "historical_rows": 105702424,
+    "current_rows": 105702424,
+    "scope": "Historical uniqueness/assertions are associated with these bytes; current semantic correctness is separately audited."
+  },
+  {
+    "table": "sample_c_strict_honesty_events",
+    "historical_sha256": "b47a7d4b550ebfeee59ea022aa7eb68ee888a4b47f45aebe7ea612a9bd8569c1",
+    "current_sha256": "b47a7d4b550ebfeee59ea022aa7eb68ee888a4b47f45aebe7ea612a9bd8569c1",
+    "same_bytes": true,
+    "historical_rows": 3435826,
+    "current_rows": 3435826,
+    "scope": "Historical uniqueness/assertions are associated with these bytes; current semantic correctness is separately audited."
+  }
+]

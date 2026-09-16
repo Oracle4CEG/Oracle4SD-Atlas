@@ -1,0 +1,8 @@
+# Historical collector dependencies; full recollection is not certified by the case test.
+-r requirements.txt
+duckdb==1.5.4
+PyYAML==6.0.1
+orjson==3.10.18
+scikit-learn==1.5.2
+statsmodels==0.14.4
+mcp==1.19.0

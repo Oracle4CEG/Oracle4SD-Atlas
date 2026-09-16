@@ -1,0 +1,39 @@
+{
+  "variables": 33,
+  "families": {
+    "A": 4,
+    "B": 9,
+    "C": 15,
+    "supporting": 5
+  },
+  "constructability": {
+    "complete": 24,
+    "partial": 9
+  },
+  "provenance_entry": [
+    {
+      "variable_name": "provenance_id",
+      "measure_family": "supporting",
+      "track": "provenance",
+      "mathematical_definition": "P_i = H(source entities || transformation rule || release version)",
+      "indexing": "i=processed observation",
+      "observation_unit": "any processed observation",
+      "measurement_unit": "identifier",
+      "economic_definition": "Stable pointer to the entities, activities and agents that generated an observation.",
+      "economic_mechanism": "Accountability, auditability and reproducibility of measurement.",
+      "hypothesis_role": "Every economic value must be reversible to its primary evidence and transformation.",
+      "source_mapping": "source transaction/log keys, transformation rule id, code version and release manifest",
+      "decision_time_availability": "not_applicable",
+      "evidence_class": "derived",
+      "missing_value_rule": "Never optional for released processed observations.",
+      "validation_rule": "Hash is deterministic; referenced source objects and rules exist and pass checksums.",
+      "references": "https://www.w3.org/TR/prov-o/; https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html",
+      "measurement_limitations": "A hash proves identity/integrity of cited inputs, not semantic correctness by itself.",
+      "uma_constructability": "partial",
+      "uma_source_tables": "all processed tables and manifests",
+      "uma_non_null_observations": "0",
+      "notes": ""
+    }
+  ],
+  "note": "Conceptual dictionary formulas are not universal physical primary-key implementations. Native keys and code formulas in data_model.csv take precedence."
+}
