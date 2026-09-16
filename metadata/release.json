@@ -18,5 +18,8 @@
     "Flare reward source pinned to historical commit",
     "Pyth declared source version pinned; historical rolling state not recoverable from current RPC"
   ],
-  "sample_license_notice": "THIRD_PARTY_NOTICES.md"
+  "sample_license_notice": "THIRD_PARTY_NOTICES.md",
+  "tutorial_code_commit": "80745c2c9edcdd2c3b4f8bbf244d89751fe4d5f3",
+  "tutorial_local_execution": "passed; 9 executable cells, 10 tests; 28 scoped case checks; hosted Colab UI pending",
+  "full_local_file_identity": "71 of71 SHA256 and row counts match; semantic defects remain"
 }

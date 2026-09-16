@@ -21,7 +21,7 @@ python -m unittest discover -s tests -v
 
 Expected final result: `validation_passed: true`. Inspect `runs/my-first-case/reports/validation.json`: **28 checks passed, zero failed**. The nested raw evidence checks cover 30 canonicality checks and 13 economic/link checks; these are different check levels, not 71 independent tests. Use a new output directory on each run.
 
-For an interdisciplinary walkthrough, open [the eight-part tutorial](notebooks/Oracle4SD_Atlas_Tutorial.ipynb). It defines the terms, explains each cell, displays expected outputs and covers setup, troubleshooting and full-data limits. [Execution record](reports/reproducibility/README.md) distinguishes an isolated local notebook run from hosted Google Colab execution.
+For an interdisciplinary walkthrough, open [the eight-part tutorial](notebooks/Oracle4SD_Atlas_Tutorial.ipynb). It defines the terms, explains each cell, displays expected outputs and covers setup, troubleshooting and full-data limits. The full tutorial passed all 9 executable cells in a fresh local kernel. [Execution record](reports/reproducibility/README.md) distinguishes an isolated local notebook run from hosted Google Colab execution.
 
 ## Repository map
 

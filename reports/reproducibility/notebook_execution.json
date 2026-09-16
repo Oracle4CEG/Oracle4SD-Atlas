@@ -1,0 +1,19 @@
+{
+  "data_version": "uma-public-rpc-case-v1",
+  "scope": "one real case; independent repeat; not full candidate",
+  "runtime_kind": "fresh local Jupyter kernel; not hosted Google Colab UI",
+  "python": "3.12.7",
+  "kernel_executable": "/tmp/oracle-atlas-fresh-20260916/bin/python",
+  "elapsed_seconds": 54.633,
+  "code_cells": 9,
+  "executed_code_cells": 9,
+  "passed": true,
+  "error": null,
+  "code_commit": "80745c2c9edcdd2c3b4f8bbf244d89751fe4d5f3",
+  "review_bundle": "atlas-review-20260916",
+  "cutoff": "2026-06-30T23:59:59Z",
+  "notebook_sha256": "270f99d716508347ebc1aec5dd5783ed3cfa222ea04e2e9fd5e4c508a44216d1",
+  "dependency_download_cache": "pip wheel cache may be reused; no inherited installed project packages",
+  "independent_repeat_passed": true,
+  "negative_and_integration_tests_passed": 10
+}

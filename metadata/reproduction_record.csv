@@ -1,4 +1,4 @@
 run_id,data_version,scope,status,evidence
 working-tree-case,uma-public-rpc-case-v1,"7 inputs,5 transactions,1 episode,28 scoped checks",passed,reports/uma_case/reports/validation.json
 immutable-public-download,uma-public-rpc-case-v1,two raw snapshots from fixed HF revision; other inputs bundled,passed,reports/reproducibility/public-download.json
-fresh-notebook,uma-public-rpc-case-v1,fresh local kernel; not hosted Colab UI,pending_execution,reports/reproducibility/README.md
+fresh-notebook,uma-public-rpc-case-v1,fresh local kernel; not hosted Colab UI,passed_9_code_cells_10_tests,reports/reproducibility/notebook_execution.json

@@ -2,7 +2,7 @@ check_id,requirement,status,evidence_path,checked_date
 R01,case inputs and source licenses,passed,metadata/source_register.csv,2026-09-16
 R02,case dictionary and expected outputs,passed,metadata/data_dictionary.csv,2026-09-16
 R03,case replay and negative tests,passed,reports/uma_case/reports/validation.json,2026-09-16
-R04,fresh notebook Run all,pending_execution,reports/reproducibility/README.md,2026-09-16
+R04,fresh notebook Run all,passed_local_fresh_kernel,reports/reproducibility/notebook_execution.json,2026-09-16
 R05,full immutable dataset archive and DOI,blocked_missing_archive,docs/FULL_DATA.md,2026-09-16
 R06,full-core semantic repairs,open_failures,metadata/issue_log.csv,2026-09-16
 R07,independent organization review,pending_human_review,docs/HANDOFF.md,2026-09-16
