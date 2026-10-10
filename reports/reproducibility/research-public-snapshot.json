@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "dataset_revision": "ee197fc6fd6b8d980e7c7dda4feae966efe5d28c",
+  "authentication": "anonymous HTTPS",
+  "scope": "Four selected file identities and row counts; not full Atlas semantic validation",
+  "files": [
+    {
+      "path": "data/curated/parquet/polygon_oov2_events.parquet",
+      "sha256": "6f3b243a9df36affbdfb3ffd03fd78a5359557b16e9cce4e822d9b873a735db7",
+      "rows": 514794,
+      "passed": true
+    },
+    {
+      "path": "data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "sha256": "fe025843c774765b9c7da16cfc9ef610bf02e44006d3b95fa94ae5177db4282c",
+      "rows": 42676,
+      "passed": true
+    },
+    {
+      "path": "data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230",
+      "rows": 42676,
+      "passed": true
+    },
+    {
+      "path": "data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359",
+      "rows": 835,
+      "passed": true
+    }
+  ]
+}

@@ -49,7 +49,7 @@ flowchart LR
 
 The local candidate audit covers **67 curated Parquet files** with a **105,588,120-row common table**, a 22,723,389-row economic projection and a 19,275,854-row realized-event projection. These are overlapping layers, not disjoint populations. Five deep panels cover UMA, Chainlink, Tellor, Flare and Pyth; Chronicle, RedStone and DIA are limited extensions. The 56-category ecosystem census is a separate scope.
 
-**The complete candidate dataset is not publicly deposited or fully validated.** [Full-data inventory](metadata/full_data_inventory.csv) gives 71 file records (67 curated plus four application files), exact hashes and availability. [Known failures](metadata/issue_log.csv) include application-level dispute/slash classifications and schema drift. Sample checks do not clear those failures. Follow [full-data instructions](docs/FULL_DATA.md), including the historical rolling-snapshot limitation. No dataset DOI has been assigned here.
+**The complete candidate dataset is not publicly deposited or fully validated.** Four selected UMA source tables used by the research are now separately published with immutable hashes; see [the research delivery](docs/RESEARCH_DELIVERY.md). [Full-data inventory](metadata/full_data_inventory.csv) gives 71 file records (67 curated plus four application files), exact hashes and availability. [Known failures](metadata/issue_log.csv) include application-level dispute/slash classifications and schema drift. Sample checks do not clear those failures. Follow [full-data instructions](docs/FULL_DATA.md), including the historical rolling-snapshot limitation. No dataset DOI has been assigned here.
 
 ## Acquisition modes
 
