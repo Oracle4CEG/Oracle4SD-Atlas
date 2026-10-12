@@ -1,0 +1,71 @@
+{
+  "scope": "real historical native rows for regression; not an independent sample",
+  "files": [
+    {
+      "path": "chainlink_eth_usd_reports.parquet",
+      "sha256": "a03b95f46427f6a6150c642ca9cdd7457637a62333663a3b9e4964b9d0e10a0f",
+      "source_inventory_path": "data/curated/parquet/chainlink_eth_usd_reports.parquet",
+      "selection_sql": "SELECT * FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/chainlink_eth_usd_reports.parquet') ORDER BY source_block,log_index LIMIT 10"
+    },
+    {
+      "path": "chainlink_staking_v02_events.parquet",
+      "sha256": "14660282d2ff5bd200d4294061347bc158ca404101cead7760364597f5ff415e",
+      "source_inventory_path": "data/curated/parquet/chainlink_staking_v02_events.parquet",
+      "selection_sql": "SELECT * FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/chainlink_staking_v02_events.parquet') ORDER BY source_block,log_index LIMIT 10"
+    },
+    {
+      "path": "flare_provider_conditions.parquet",
+      "sha256": "fea6b860f25e04e2566c5b7cccf125348df451aa09d4d0fea31f35d288f8ab6a",
+      "source_inventory_path": "data/curated/parquet/flare_provider_conditions.parquet",
+      "selection_sql": "SELECT * FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/flare_provider_conditions.parquet') LIMIT 2"
+    },
+    {
+      "path": "polygon_oov2_events.parquet",
+      "sha256": "21dd93640a145383b28b236b36a21f762028d32290256d4b4403e3ab5e214d6d",
+      "source_inventory_path": "data/curated/parquet/polygon_oov2_events.parquet",
+      "selection_sql": "Join to selected native request/voter IDs; see dependent fixture files"
+    },
+    {
+      "path": "polygon_uma_request_flow_qc.parquet",
+      "sha256": "9796dc289f204ce3b9d19dade6f2392d2293cbab661deff336dd979f1b9f05b5",
+      "source_inventory_path": "data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "selection_sql": "Join to selected native request/voter IDs; see dependent fixture files"
+    },
+    {
+      "path": "polygon_uma_request_rounds.parquet",
+      "sha256": "cc694b715266f1996fffb58a76003a2c7bbfdf0136327aa1a4a60a8f11073fc2",
+      "source_inventory_path": "data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "selection_sql": "SELECT * EXCLUDE(rn) FROM (SELECT *,row_number() OVER(PARTITION BY economic_status ORDER BY oo_request_id) rn FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/polygon_uma_request_rounds.parquet')) WHERE rn=1 OR oo_request_id='0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca'"
+    },
+    {
+      "path": "pyth_ois_publisher_epoch_factors.parquet",
+      "sha256": "682a353d2dd8f072215d32ebbdf93a1474423568418652aa0549e2d17042f8ac",
+      "source_inventory_path": "data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+      "selection_sql": "SELECT * FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet') ORDER BY publisher,epoch_id LIMIT 2"
+    },
+    {
+      "path": "tellor_disputes.parquet",
+      "sha256": "4cc8cbbab601562adbb32e08d66bbe4cc3742207d98ab249386035f85d2f4fda",
+      "source_inventory_path": "data/curated/parquet/tellor_disputes.parquet",
+      "selection_sql": "SELECT * FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/tellor_disputes.parquet') ORDER BY dispute_id"
+    },
+    {
+      "path": "uma_dvm_voter_payoffs.parquet",
+      "sha256": "cb8b32a7774a56138641c01392c1cf04f9cb750719bfd7a60b5c28b2719709a9",
+      "source_inventory_path": "data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+      "selection_sql": "SELECT * EXCLUDE(rn) FROM (SELECT *,row_number() OVER(PARTITION BY sign(try_cast(signed_slash_delta_raw AS HUGEINT)) ORDER BY dvm_request_id,voter) rn FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/uma_dvm_voter_payoffs.parquet')) WHERE rn=1"
+    },
+    {
+      "path": "uma_dvm_votes_events.parquet",
+      "sha256": "52a98744dd2c0581335f6320cf5d6849146f88408042b9b7db002088bf4aa455",
+      "source_inventory_path": "data/curated/parquet/uma_dvm_votes_events.parquet",
+      "selection_sql": "Join to selected native request/voter IDs; see dependent fixture files"
+    },
+    {
+      "path": "uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256": "416f991d35ba7cd203ac474a999062817687e72624f3fe38e5066ff5e19bfa4c",
+      "source_inventory_path": "data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "selection_sql": "Join to selected native request/voter IDs; see dependent fixture files"
+    }
+  ]
+}

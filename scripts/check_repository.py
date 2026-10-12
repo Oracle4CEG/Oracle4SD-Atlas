@@ -40,6 +40,7 @@ def check():
         rel = p.relative_to(ROOT)
         if any(x in rel.parts for x in [".git", ".venv", "runs"]) or rel.parts[:2] in [
             ("code", "production"),
+            ("code", "reconstruction"),
             ("reports", "core_audit_20260915"),
         ]:
             continue

@@ -1,0 +1,192 @@
+{
+  "dvm": [
+    {
+      "rows": 2663684,
+      "unapplied_principal_slash": 0
+    }
+  ],
+  "financial": [
+    {
+      "asset": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": null,
+      "rows": 2663684,
+      "terminal_event": "right_censored"
+    },
+    {
+      "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "201500000000",
+      "rows": 824,
+      "terminal_event": "bond_forfeited"
+    },
+    {
+      "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "0",
+      "rows": 1,
+      "terminal_event": "principal_returned"
+    },
+    {
+      "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "180885000000",
+      "rows": 40933,
+      "terminal_event": "reward_paid"
+    },
+    {
+      "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": null,
+      "rows": 73,
+      "terminal_event": "right_censored"
+    },
+    {
+      "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "1250000000",
+      "rows": 10,
+      "terminal_event": "bond_forfeited"
+    },
+    {
+      "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "0",
+      "rows": 56,
+      "terminal_event": "principal_returned"
+    },
+    {
+      "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": "2000000",
+      "rows": 2,
+      "terminal_event": "reward_paid"
+    },
+    {
+      "asset": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "UMA",
+      "reward_paid_raw": null,
+      "rows": 777,
+      "terminal_event": "right_censored"
+    },
+    {
+      "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Chainlink",
+      "reward_paid_raw": null,
+      "rows": 419,
+      "terminal_event": "principal_returned"
+    },
+    {
+      "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Chainlink",
+      "reward_paid_raw": "2711776174615755500202138",
+      "rows": 5905,
+      "terminal_event": "reward_paid"
+    },
+    {
+      "asset": "0x514910771af9ca656af840dff83e8264ecf986ca",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Chainlink",
+      "reward_paid_raw": null,
+      "rows": 4108,
+      "terminal_event": "right_censored"
+    },
+    {
+      "asset": "FLR",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Flare_FTSOv2",
+      "reward_paid_raw": null,
+      "rows": 3403,
+      "terminal_event": "nonmonetary_restriction"
+    },
+    {
+      "asset": "FLR",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Flare_FTSOv2",
+      "reward_paid_raw": null,
+      "rows": 10976,
+      "terminal_event": "unresolved_coverage"
+    },
+    {
+      "asset": "LINK",
+      "asset_decimals": 18,
+      "principal_slashed_raw": null,
+      "protocol": "Chainlink",
+      "reward_paid_raw": null,
+      "rows": 46722,
+      "terminal_event": "unresolved_coverage"
+    },
+    {
+      "asset": "PYTH",
+      "asset_decimals": 6,
+      "principal_slashed_raw": null,
+      "protocol": "Pyth",
+      "reward_paid_raw": null,
+      "rows": 6566,
+      "terminal_event": "unresolved_coverage"
+    },
+    {
+      "asset": "loya",
+      "asset_decimals": 6,
+      "principal_slashed_raw": "0",
+      "protocol": "Tellor",
+      "reward_paid_raw": null,
+      "rows": 10,
+      "terminal_event": "nonmonetary_restriction"
+    },
+    {
+      "asset": "loya",
+      "asset_decimals": 6,
+      "principal_slashed_raw": "79920000",
+      "protocol": "Tellor",
+      "reward_paid_raw": null,
+      "rows": 3,
+      "terminal_event": "principal_slashed"
+    }
+  ],
+  "sample_c": [
+    {
+      "inverted_tellor_labels": 0,
+      "rows": 13
+    }
+  ],
+  "tellor": [
+    {
+      "rejected_challenge_as_slash": 0,
+      "rows": 13
+    }
+  ],
+  "uma": [
+    {
+      "false_challenged": 0,
+      "incomplete_disputed_reward": 0,
+      "rows": 42676,
+      "transfer_without_settlement": 0
+    }
+  ]
+}

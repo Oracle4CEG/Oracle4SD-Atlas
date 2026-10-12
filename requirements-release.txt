@@ -1,0 +1,9 @@
+-c constraints-release.txt
+# Offline full-snapshot repair, application views and metadata validation.
+-r requirements-production.txt
+seaborn==0.13.2
+mlcroissant==1.1.0
+huggingface-hub==0.35.3
+pip==25.2
+scikit-survival==0.23.1
+xgboost-cpu==2.1.4

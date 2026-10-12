@@ -1,0 +1,77 @@
+{
+  "host_python": "3.12.7",
+  "host_executable": "/home/hy/anaconda3/bin/python",
+  "scientific": {
+    "python": "3.12.12",
+    "executable": "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific/bin/python"
+  },
+  "uv_version": "0.9.5",
+  "commands": [
+    {
+      "command": [
+        "/home/hy/anaconda3/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-deps",
+        "--target",
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/bootstrap-tools",
+        "uv==0.9.5"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/bootstrap-tools/bin/uv",
+        "venv",
+        "--python",
+        "3.12.12",
+        "--python-preference",
+        "only-managed",
+        "--seed",
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/bootstrap-tools/bin/uv",
+        "pip",
+        "install",
+        "--python",
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific/bin/python",
+        "-r",
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/requirements-release.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/bootstrap-portability-20261012/scientific/bin/python",
+        "-c",
+        "import sys,platform,json; print(json.dumps({'python':platform.python_version(),'executable':sys.executable}))"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "passed": true
+}

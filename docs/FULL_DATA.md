@@ -1,57 +1,76 @@
-# Full-data access and reproduction
+# Full Atlas: download, reconstruct and run experiments
 
-## Availability and exact identity
+The supported reconstruction starts from **64 frozen native/curated input files (1,807,346,651 bytes)**. It builds the common layer, economic projections, research samples and application views. These are the retained native tables, not every original RPC response. Fresh historical network collection is separate and is not required to reproduce this release.
 
-The runnable public release is `uma-public-rpc-case-v1`. Its seven source files and derived case tables are included in this repository. Two raw snapshots can alternatively be obtained at the immutable Hugging Face revision `aabcff2e1492df35f0aaa9abef657133fffe9b81`; exact URLs, byte lengths and SHA256 values are in [source_register.csv](../metadata/source_register.csv).
+## Install without relying on the host's venv package
 
-The [larger public review/demo subset](https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/tree/aabcff2e1492df35f0aaa9abef657133fffe9b81) has version `1.5.0-draft`. It is not the full core. The 71-record [full inventory](../metadata/full_data_inventory.csv) describes 67 curated Parquet files plus four application files, totaling **15,474,890,321 bytes**. Its hashes identify existing local audited files. The inventory preserves the September audit availability state. Four matching UMA tables were subsequently deposited in the October [selected research snapshot](RESEARCH_DELIVERY.md); its separate manifest provides exact archive-member mappings. The other blank inventory URLs remain unavailable, and no full archive URL or DOI is claimed.
-
-If the authors provide an authorized copy, preserve inventory-relative paths and verify it with:
+Run from the repository root. The bootstrap needs a host Python with pip and internet. It downloads its own Python 3.12.12 and installs the pinned scientific dependencies; the host Python is not used for scientific processing.
 
 ```bash
-python scripts/verify_full_data.py --root /path/to/authorized-copy --output /tmp/full-verification.json
+python3 scripts/bootstrap_environment.py --output runs/environment
 ```
 
-This streams file hashes, reads Parquet row counts and fails for missing, changed or structurally different files. The author layout uses a separately mounted data directory; only for an explicitly authorized mounted layout, add `--allow-external-symlinks`. A normal extracted public archive should be self-contained. It does not repair the known semantic failures. Do not run on the bundled case directory and interpret missing full files as a defect in the case.
+On Linux/macOS, subsequent commands use `runs/environment/scientific/bin/python`. Installation logs, dependency freeze and interpreter identities are saved under `runs/environment/`. On Windows the interpreter is `runs/environment/scientific/Scripts/python.exe`.
 
-## Isolated production workspace
-
-Historical production code is included under [code/production](../code/production/README.md), with per-file original/imported hashes. The default tutorial does not execute expensive full collectors. To inspect or stage a production rerun:
+## Download verified inputs and rebuild
 
 ```bash
-python scripts/prepare_full_workspace.py --output /path/to/new-production-workspace
-python -m pip install -r requirements-production.txt
-cd /path/to/new-production-workspace
-export PYTHONPATH="$PWD/src"
-python -m oracle_ledger --help
-python scripts/ingest_polygon_uma.py --help
+runs/environment/scientific/bin/python scripts/download_atlas.py \
+  --component native --output runs/native
+runs/environment/scientific/bin/python scripts/rebuild_atlas.py \
+  --input-root runs/native --output runs/full-atlas \
+  --from-native --with-trajectory-views --with-benchmarks
+runs/environment/scientific/bin/python scripts/build_release_metadata.py \
+  --release runs/full-atlas
 ```
 
-Several legacy collectors write under their own script root; staging prevents accidental changes to a different project. Obtain archive-capable nodes and the exact historical source/state bundles before full collection. A public endpoint URL is not a promise of unrestricted archive access. Read [acquisition profiles](../metadata/acquisition_profiles.json) before selecting a provider.
+The downloader uses immutable revisions, byte lengths and SHA-256 digests in [data_releases.json](../configs/data_releases.json). It verifies existing files and resumes at file boundaries. A changed existing file is an error; use a new directory to retain both versions. The builder refuses to overwrite an existing output directory and verifies all native inputs before constructing data.
 
-## Execution order and limitations
+The success record is `runs/full-atlas/validation/full_release.json`. Full child-process logs and package versions are retained beside it. `metadata/file_manifest.json` records output identities; `metadata/table_catalog.json`, `field_dictionary.json`, `time_coverage.csv` and `accountability_events.schema.json` document the data. Check scope matters: an economic consistency check does not establish independent factual truth.
 
-Run these commands **inside the staged workspace**. They are documented historical entry points, not a claim that all histories were recollected during this review. Configure your own Ethereum and Polygon archive endpoint URLs in `ETHEREUM_RPC_URL` and `POLYGON_RPC_URL` before running commands that use them.
+To inspect released outputs without rebuilding:
 
-| Panel | Query and process order |
-|---|---|
-| UMA | `python scripts/ingest_uma_dvm.py --root . --rpc-url "$ETHEREUM_RPC_URL"`; `python scripts/build_uma_dvm_ledger.py`; `python scripts/ingest_polygon_uma.py --root . --rpc-url "$POLYGON_RPC_URL"`; legacy bridge and flow receipt collectors; `build_polygon_uma_ledger.py`, `build_polygon_uma_flows.py`, `build_uma_crosschain_links.py` |
-| Chainlink | `ingest_chainlink_staking_v02.py --root . --rpc-url "$ETHEREUM_RPC_URL"`, `ingest_chainlink_evidence.py --root . --rpc-url "$ETHEREUM_RPC_URL"`; then `build_chainlink_staking_v02_ledger.py`, `build_chainlink_evidence.py` |
-| Tellor | `ingest_tellor_reports_block_results.py --cutoff-height 19890860`; disputes, rewards, tips/withdrawals and jail collectors named in `scripts/`; preserve module-version limitations |
-| Flare | `ingest_flare_fsp_rewards.py --source-commit 56dccda13597ec78e47c24a38f875fa9ebad897c`; raw claims, claims/chill and attribution builders; exclude straddling epoch 411 |
-| Pyth | `ingest_pyth_ois_history.py`; archived rolling-state snapshot required for the old 49-epoch panel. Running `ingest_pyth_ois_rolling_state.py` today creates a new state snapshot, not the old one |
-| Chronicle / RedStone | Restore pinned source registries under `data/raw/source_audit/`; run `ingest_chronicle_redstone_events.py` and source settlement audit |
-| DIA | `ingest_dia_staking.py`; retain principal/reward reconciliation and deployment range |
-| Shared layers | After native prerequisites: `build_accountability_events.py`, `build_phase4_economic_interfaces.py`, `build_realized_economic_events.py`, `export_curated_parquet.py`; then QC scripts. Research-sample builders retain known semantic defects and are not cleared for inference |
+```bash
+runs/environment/scientific/bin/python scripts/download_atlas.py \
+  --component repaired --output runs/released-atlas
+```
 
-Every bare filename in the table is an actual Python file under the staged `scripts/` directory and must be invoked as `python scripts/<filename>`. The [import inventory](../metadata/production_code_imports.csv) and historical [pipeline audit](../reports/core_audit_20260915/pipeline_records_validation_map.csv) provide further dependencies. Staging and `--help` are safe inspection paths, not a one-command full reproduction certification.
+For individual files add `--include data/curated/parquet/tellor_disputes.parquet` (repeat for multiple paths). Select `native` for original input identities and `repaired` for reconstructed output identities.
 
-### Required external source registries
+## Small experiment first
 
-The RedStone collector reads `data/raw/source_audit/redstone_monorepo_95f8/packages/relayer-remote-config/main/` at commit `95f8cb9fd00b0a9f12c3e4bc45206533c90f09cb` of [redstone-finance/redstone-oracles-monorepo](https://github.com/redstone-finance/redstone-oracles-monorepo). Chronicle source is [chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe) at `12ff06ca78811e01313afde4b38fe959d6647096`; its validator registry reference is `f06e0a8209fcb47f1535d1b874cb8ff254a9c2c5`, as recorded in the frozen collector. Preserve upstream licenses. Tellor source reference is `943a2709ef0a60eb560447278b2f59923b9de484`; a source reference is not proof of the deployed binary version. Source registry trees and large raw snapshots are not all bundled here. Their complete archival manifest is an explicit full-release blocker.
+The chronological decision benchmark needs two small files:
 
-## Resources and release gate
+```bash
+runs/environment/scientific/bin/python scripts/download_atlas.py \
+  --component native --output runs/decision-inputs \
+  --include data/applications/trustworthy_ai_challenge/decision_samples.parquet \
+  --include data/applications/trustworthy_ai_challenge/splits.parquet
+runs/environment/scientific/bin/python scripts/run_decision_benchmark.py \
+  --release runs/decision-inputs --output runs/decision-experiment
+```
 
-The existing curated/application files alone occupy about 15.5 GB; raw histories, caches, source trees and temporary outputs require additional disk space. Full collection involves tens of millions of records and archive requests; this review does not provide a measured full-run RAM/time budget. Use a production server, rate-budgeted endpoints and resumable storage. A free Colab session is intended only for the case tutorial.
+This executes a majority baseline, logistic regression and histogram gradient boosting on 810 frozen observations. It validates sample/split identity, chronological ordering and an explicit feature allowlist; fits preprocessing on training data; and saves metrics, predictions and checks. These are small retrospective experiments, not evidence of profitable trading or independently verified historical availability of every off-chain field.
 
-Before claiming a complete Scientific Data release: deposit immutable full inputs/outputs with permitted licenses and DOI; bind a reviewed code commit to them; archive the historical Pyth state; fix and revalidate semantic/schema issues; provide measured full resource requirements and independent rerun evidence. [Issue log](../metadata/issue_log.csv) records the current gaps.
+`--with-benchmarks` also runs the financial survival experiment on rebuilt lifecycle tables. Inspect fitting failures and undefined metrics in `data/applications/financial_benchmark/metrics.parquet`; they are not successful scores. A random-split fallback is explicitly labeled where chronological evaluation is infeasible and must not be pooled with chronological results. Unimplemented model families are registered as not executed.
+
+Historical OATA model runners are retained for inspection. Reconstructed retrospective trajectories are descriptive data, not a certified decision-time feature set. The supported decision experiment above uses a separate allowlist. Do not treat historical prefix/trajectory features as proof of leakage-free prediction.
+
+## Historical Pyth state
+
+The original compressed snapshot is included at [pyth_historical](../data/data_source/pyth_historical/), with acquisition metadata and SHA-256. Replay it offline:
+
+```bash
+runs/environment/scientific/bin/python scripts/replay_pyth_snapshot.py \
+  --output runs/pyth-replay
+```
+
+This reconstructs 49 reward epochs, 6,566 publisher/epoch factors and 134 slash-counter records. The full builder also compares every row against the three frozen reference tables. Querying the rolling endpoint today is not a replay of this historical state.
+
+## Evidence, resources and limits
+
+The historical 71-file [inventory](../metadata/full_data_inventory.csv) and [audit](../reports/core_audit_20260915/) preserve original identities and failures. Seven derived tables are replaced by the reconstruction; old hashes are not reassigned to repaired data.
+
+Plan for at least 40 GB of free disk for inputs, overlapping materialized layers, trajectory tables and temporary files. Builders generally limit DuckDB to two threads and 4 GB; survival models use additional workers and memory. The full-run resource report is measured evidence for this machine, not a universal hardware guarantee. Use the small case or decision experiment in free Colab; run the full Atlas on an adequately provisioned workstation or server.
+
+Original collectors and source references are retained in [code/reconstruction](../code/reconstruction/) and [acquisition profiles](../metadata/acquisition_profiles.json). Some historical collectors require archived source trees, archive RPC access or protocol-specific indexers. The 64-table replay does not recreate unavailable RPC histories, recover missing native timestamps, assign a DOI, or supply independent author provenance for every historical operation. The [revision record](REVISION_20261012.md) separates technical repairs from remaining publication work.
