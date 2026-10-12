@@ -1,0 +1,40 @@
+/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+test_changed_input_fails_before_processing (test_case_pipeline.CaseTests.test_changed_input_fails_before_processing) ... ok
+test_changed_scientific_summary_rejected (test_case_pipeline.CaseTests.test_changed_scientific_summary_rejected) ... ok
+test_full_verifier_rejects_external_symlink_by_default (test_case_pipeline.CaseTests.test_full_verifier_rejects_external_symlink_by_default) ... ok
+test_integer_payment_mismatch_rejected (test_case_pipeline.CaseTests.test_integer_payment_mismatch_rejected) ... ok
+test_missing_full_data_is_failure (test_case_pipeline.CaseTests.test_missing_full_data_is_failure) ... ok
+test_missing_receipt_rejected (test_case_pipeline.CaseTests.test_missing_receipt_rejected) ... ok
+test_no_overwrite_or_path_escape (test_case_pipeline.CaseTests.test_no_overwrite_or_path_escape) ... ok
+test_real_case_values_and_scope (test_case_pipeline.CaseTests.test_real_case_values_and_scope) ... ok
+test_removed_event_rejected (test_case_pipeline.CaseTests.test_removed_event_rejected) ... ok
+test_wrong_chain_rejected (test_case_pipeline.CaseTests.test_wrong_chain_rejected) ... ok
+test_case_gross_payment_is_principal_plus_gain (test_full_release.FullReleaseTests.test_case_gross_payment_is_principal_plus_gain) ... ok
+test_common_projection_preserves_negative_accrual (test_full_release.FullReleaseTests.test_common_projection_preserves_negative_accrual) ... ok
+test_negative_accrual_does_not_establish_applied_slash (test_full_release.FullReleaseTests.test_negative_accrual_does_not_establish_applied_slash) ... ok
+test_open_lifecycle_has_no_realized_payment (test_full_release.FullReleaseTests.test_open_lifecycle_has_no_realized_payment) ... ok
+test_pyth_corrupted_snapshot_fails (test_full_release.FullReleaseTests.test_pyth_corrupted_snapshot_fails) ... ok
+test_reward_rate_is_never_a_token_amount (test_full_release.FullReleaseTests.test_reward_rate_is_never_a_token_amount) ... ok
+test_tellor_escrow_is_not_report_power (test_full_release.FullReleaseTests.test_tellor_escrow_is_not_report_power) ... ok
+test_tellor_only_three_support_outcomes_keep_principal_slash (test_full_release.FullReleaseTests.test_tellor_only_three_support_outcomes_keep_principal_slash) ... ok
+test_zero_accrual_is_not_negative_adjudication (test_full_release.FullReleaseTests.test_zero_accrual_is_not_negative_adjudication) ... ok
+test_zero_address_is_not_a_challenge (test_full_release.FullReleaseTests.test_zero_address_is_not_a_challenge) ... ok
+test_corrupted_existing_download_is_not_replaced (test_release_access.ReleaseAccessTests.test_corrupted_existing_download_is_not_replaced) ... ok
+test_financial_sampling_is_order_and_outcome_invariant (test_release_access.ReleaseAccessTests.test_financial_sampling_is_order_and_outcome_invariant) ... ok
+test_future_outcomes_cannot_change_model_features (test_release_access.ReleaseAccessTests.test_future_outcomes_cannot_change_model_features) ... ok
+test_prefix_features_do_not_retain_full_outcomes (test_release_access.ReleaseAccessTests.test_prefix_features_do_not_retain_full_outcomes) ... ok
+test_unsettled_rule_is_specific_and_not_a_settlement_claim (test_release_access.ReleaseAccessTests.test_unsettled_rule_is_specific_and_not_a_settlement_claim) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 9.462s
+
+OK

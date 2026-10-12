@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "recordsets": [
+    {
+      "recordset": "record:abc_dictionary",
+      "rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_real_episode",
+      "rows": 1,
+      "expected_rows": 1,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_real_episode_abc",
+      "rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_public_rpc_episode",
+      "rows": 1,
+      "expected_rows": 1,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_public_rpc_abc",
+      "rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_decisions",
+      "rows": 810,
+      "expected_rows": 810,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_decision_splits",
+      "rows": 810,
+      "expected_rows": 810,
+      "passed": true
+    },
+    {
+      "recordset": "record:decision_evidence",
+      "rows": 2430,
+      "expected_rows": 2430,
+      "passed": true
+    },
+    {
+      "recordset": "record:ai_feature_dictionary",
+      "rows": 16,
+      "expected_rows": 16,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_episodes",
+      "rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_decisions",
+      "rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_splits",
+      "rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_evidence",
+      "rows": 192,
+      "expected_rows": 192,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_predictions",
+      "rows": 70,
+      "expected_rows": 70,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_metrics",
+      "rows": 7,
+      "expected_rows": 7,
+      "passed": true
+    }
+  ],
+  "mlcroissant_version": "1.1.0",
+  "source": "Public immutable URLs; no local mapping override",
+  "scope": "Download, file identity, JSON-LD/schema parsing and loading; not independent scientific provenance"
+}

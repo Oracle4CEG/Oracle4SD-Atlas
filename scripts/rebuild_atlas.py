@@ -23,7 +23,7 @@ import pyarrow.parquet as pq
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "code/reconstruction"))
-from scripts.revision_semantics import SCHEMA_VERSION, TRUTH_DEFINITIONS, UNIT_DEFINITIONS, common_projection
+from scripts.revision_semantics import SCHEMA_VERSION, TRUTH_DEFINITIONS, UNIT_DEFINITIONS, MAPPING_RULES, common_projection
 
 RELEASE = "atlas-repaired-20261012"
 REBUILT_TABLES = {"accountability_events","sample_b_observable_accountability",
@@ -161,6 +161,14 @@ def validate(con, output):
     zero("rate_is_not_reward_amount", f"SELECT count(*) FROM {ep} WHERE episode_type='pyth_publisher_epoch' AND (reward_accrued_raw IS NOT NULL OR reward_paid_raw IS NOT NULL)", "all Pyth publisher epochs")
     zero("uma_gross_principal_gain_identity", f"SELECT count(*) FROM {ep} WHERE episode_type='uma_oov2_request' AND transfer_confirmed AND try_cast(gross_payout_raw AS HUGEINT) IS DISTINCT FROM try_cast(principal_returned_raw AS HUGEINT)+try_cast(reward_paid_raw AS HUGEINT)", "all flow-confirmed UMA settlements")
     zero("uma_link_evidence", f"SELECT count(*) FROM {ep} e WHERE episode_type='uma_oov2_request' AND cross_chain_flag AND NOT EXISTS (SELECT 1 FROM {table(output,'uma_polygon_ethereum_grade_a_links')} l WHERE l.oo_request_id=e.unit_id AND l.cross_chain_match_grade='A')", "all cross-chain flagged UMA episodes")
+    prefix_path=output/'data/applications/oata/prefix_episodes.parquet'
+    if prefix_path.exists():
+        prefix=f"read_parquet({sqlpath(prefix_path)})"
+        raw_fields=[field.name for field in pq.read_schema(prefix_path) if field.name.endswith('_raw')]
+        zero('prefix_hides_financial_outcomes',f'SELECT count(*) FROM {prefix} WHERE '+
+             ' OR '.join(f'"{name}" IS NOT NULL' for name in raw_fields), 'all retrospective masked episodes; not a T0 certification')
+        allowed="'INITIATED','ELIGIBLE','PRINCIPAL_LOCKED','ACTION_PERFORMED','REPORT_SUBMITTED','SERVICE_OBSERVED','CHALLENGED','VOTE_COMMITTED','VOTE_REVEALED'"
+        zero('prefix_hides_adjudication_and_terminal_states',f'SELECT count(*) FROM {prefix} WHERE list_count(list_filter(state_sequence,x->x NOT IN ({allowed})))>0', 'all retrospective masked episodes')
     after = audit(con, output)
     for group in ("uma", "tellor", "dvm", "sample_c"):
         for key, value in after[group][0].items():
@@ -194,6 +202,8 @@ def main():
     # Bind executed source before work starts, so an edit during a long replay
     # cannot accidentally be reported as the source of already-computed results.
     executed_sources = sorted((ROOT/"code/reconstruction").rglob("*.py"))+sorted((ROOT/"scripts").glob("*.py"))
+    executed_sources += [p for base in ('schemas','code/reconstruction/schemas','data/data_source/full_build_metadata','data/data_source/pyth_historical') for p in (ROOT/base).rglob('*') if p.is_file()]
+    executed_sources += list(ROOT.glob('requirements*.txt'))+list(ROOT.glob('constraints*.txt'))
     source_hashes = {str(path.relative_to(ROOT)):sha256(path) for path in executed_sources}
     identity = []
     for index, row in enumerate(manifest):
@@ -259,7 +269,7 @@ def main():
         steps.append(step(output, "decision_benchmark", [sys.executable, str(ROOT/"scripts/run_decision_benchmark.py"), "--release",str(output),"--output",str(output/"experiments/decision_benchmark")],env))
     checks, after = validate(con, output)
     write_json(output/"validation/semantic_after.json", after)
-    write_json(output/"metadata/semantic_decisions.json", dict(schema_version=SCHEMA_VERSION, truth_basis=TRUTH_DEFINITIONS, accountability_unit_type=UNIT_DEFINITIONS))
+    write_json(output/"metadata/semantic_decisions.json", dict(schema_version=SCHEMA_VERSION, truth_basis=TRUTH_DEFINITIONS, accountability_unit_type=UNIT_DEFINITIONS, mapping_rules=MAPPING_RULES))
     inventory = []
     for path in sorted((output/"data").rglob("*.parquet")):
         meta = pq.read_metadata(path)

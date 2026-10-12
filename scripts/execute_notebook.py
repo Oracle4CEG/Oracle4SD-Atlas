@@ -55,7 +55,7 @@ def execute(notebook, output):
         code_cells = [c for c in book.cells if c.cell_type == "code"]
         report = {
             "data_version": "uma-public-rpc-case-v1",
-            "scope": "all eight tutorial sections; one real case; independent repeat and negative tests",
+            "scope": "all eight tutorial sections; one real case; deterministic repeat and negative tests",
             "runtime_kind": "fresh local Jupyter kernel; not hosted Google Colab UI",
             "python": platform.python_version(),
             "kernel_executable": sys.executable,

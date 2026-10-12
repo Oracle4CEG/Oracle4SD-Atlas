@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "chronicleprotocol/scribe",
+    "source_commit": "12ff06ca78811e01313afde4b38fe959d6647096",
+    "files": 90,
+    "passed": true
+  },
+  {
+    "repository": "chronicleprotocol/validator-registry",
+    "source_commit": "f06e0a8209fcb47f1535d1b874cb8ff254a9c2c5",
+    "files": 17,
+    "passed": true
+  },
+  {
+    "repository": "redstone-finance/redstone-oracles-monorepo",
+    "source_commit": "95f8cb9fd00b0a9f12c3e4bc45206533c90f09cb",
+    "files": 3090,
+    "passed": true
+  },
+  {
+    "repository": "pyth-network/governance",
+    "source_commit": "68a9a36ec3d41364490e71b056b422c99f13e0cf",
+    "files": 344,
+    "passed": true
+  },
+  {
+    "repository": "tellor-io/layer",
+    "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484",
+    "files": 1114,
+    "passed": true
+  }
+]

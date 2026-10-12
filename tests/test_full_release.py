@@ -79,7 +79,8 @@ class FullReleaseTests(unittest.TestCase):
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         source="""(SELECT '1.1.0' schema_version,'uma_dvm_voter_payoffs' native_table,
           '123' principal_slashed_raw,'principal_slash' penalty_class,NULL::VARCHAR reward_class,
-          'protocol_vote_adjudication' truth_basis,'old' interpretation_note)"""
+          'protocol_vote_adjudication' truth_basis,'old' interpretation_note,
+          'dvm_accrual' rule_id,'negative_accrual' outcome_status)"""
         row=self.con.execute(module.common_projection(source)).fetchdf().iloc[0]
         self.assertEqual(row.penalty_accrued_raw,'123')
         self.assertEqual(row.penalty_class,'accrued_stake_penalty')

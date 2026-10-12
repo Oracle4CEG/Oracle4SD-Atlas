@@ -128,7 +128,7 @@ def build(release):
     con=duckdb.connect(config={'threads':2,'memory_limit':'2GB'})
     common=release/'data/curated/parquet/accountability_events.parquet'
     con.read_parquet(str(common)).create_view('common')
-    coverage=con.execute('SELECT oracle_network,native_table,count(*) rows,count(event_time_unix) timed_rows,min(event_time_unix) first_time,max(event_time_unix) last_time FROM common GROUP BY ALL ORDER BY 1,2').fetchdf()
+    coverage=con.execute('SELECT oracle_network,native_table,count(*) AS rows,count(event_time_unix) AS timed_rows,min(event_time_unix) AS first_time,max(event_time_unix) AS last_time FROM common GROUP BY ALL ORDER BY 1,2').fetchdf()
     coverage.to_csv(metadata/'time_coverage.csv',index=False)
     schema=json.loads((ROOT/'schemas/accountability_events_v2.schema.json').read_text())
     for name,properties in schema['properties'].items(): properties['description']=describe(name)

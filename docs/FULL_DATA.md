@@ -10,7 +10,7 @@ Run from the repository root. The bootstrap needs a host Python with pip and int
 python3 scripts/bootstrap_environment.py --output runs/environment
 ```
 
-On Linux/macOS, subsequent commands use `runs/environment/scientific/bin/python`. Installation logs, dependency freeze and interpreter identities are saved under `runs/environment/`. On Windows the interpreter is `runs/environment/scientific/Scripts/python.exe`.
+The validated platform is Linux x86-64 on CPU. Subsequent commands use `runs/environment/scientific/bin/python`. Installation logs, dependency freeze and interpreter identities are saved under `runs/environment/`.
 
 ## Download verified inputs and rebuild
 
@@ -68,6 +68,22 @@ runs/environment/scientific/bin/python scripts/replay_pyth_snapshot.py \
 This reconstructs 49 reward epochs, 6,566 publisher/epoch factors and 134 slash-counter records. The full builder also compares every row against the three frozen reference tables. Querying the rolling endpoint today is not a replay of this historical state.
 
 ## Evidence, resources and limits
+
+Five upstream source/registry trees (Chronicle Scribe, Chronicle validator registry, RedStone, Pyth governance and Tellor Layer) are archived from immutable public GitHub commits. Restore them without executing upstream code:
+
+```bash
+runs/environment/scientific/bin/python scripts/restore_source_registries.py \
+  --output runs/source-workspace
+```
+
+The script verifies archive and member hashes, restores regular files to collector-compatible `data/raw/source_audit/` paths, and retains upstream licenses. The archives retain upstream symlinks, while the restore script deliberately does not follow or create them. Its validation report records all restored regular files. Remaining public source/deployment references are in the source audit metadata; source identity alone does not establish an on-chain deployed binary match.
+
+The original 15-table review deposit can also be checked through its actual public URLs:
+
+```bash
+runs/environment/scientific/bin/python scripts/validate_review_deposit.py \
+  --output runs/review-public-loading.json
+```
 
 The historical 71-file [inventory](../metadata/full_data_inventory.csv) and [audit](../reports/core_audit_20260915/) preserve original identities and failures. Seven derived tables are replaced by the reconstruction; old hashes are not reassigned to repaired data.
 

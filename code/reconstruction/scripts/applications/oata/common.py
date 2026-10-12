@@ -53,6 +53,7 @@ STATE_ORDER = [
     "NONMONETARY_RESTRICTED","CLOSED","RIGHT_CENSORED",
 ]
 STATE_ID = {s:i for i,s in enumerate(STATE_ORDER)}
+PREFIX_STATES = tuple(STATE_ORDER[:9])
 TRACKS = ("reward","penalty","adjudication")
 PROTOCOLS = ("UMA","Chainlink","Flare_FTSOv2","Tellor","Pyth")
 COLORS = {"UMA":"#111111","Chainlink":"#444444","Flare_FTSOv2":"#777777","Tellor":"#aaaaaa","Pyth":"#d0d0d0"}
@@ -310,6 +311,40 @@ def map_states() -> dict[str,int]:
     }
 
 
+def build_prefix_view(con, episode_path):
+    """Conservative pre-adjudication masking, not a certified T0 snapshot."""
+    columns = pq.read_schema(episode_path).names
+    allowed = ",".join("'"+state+"'" for state in PREFIX_STATES)
+    replacements = [f"list_filter(state_sequence,x->x IN ({allowed})) AS state_sequence",
+                    "NULL::BIGINT AS end_time", "'prefix_hidden' AS terminal_status",
+                    "NULL::VARCHAR AS actor", "'prefix_hidden' AS actor_role",
+                    "'prefix_hidden' AS coverage_status", "NULL::VARCHAR AS evidence_class",
+                    "NULL::BOOLEAN AS right_censored", "false AS transfer_confirmed",
+                    "false AS state_change_confirmed", "false AS cross_chain_flag",
+                    "NULL::BIGINT AS protocol_dispute_deadline"]
+    replacements += [f'NULL::VARCHAR AS "{name}"' for name in columns if name.endswith('_raw')]
+    _copy(con, f"SELECT * REPLACE ({','.join(replacements)}) FROM read_parquet('{episode_path}')",
+          OATA/"prefix_episodes.parquet")
+
+
+def prefix_feature_frame(frame: pd.DataFrame) -> pd.DataFrame:
+    """Recompute prefix features; never retain full-outcome numeric columns."""
+    result = frame.copy()
+    result['state_sequence'] = result.state_sequence.map(lambda seq: [s for s in seq if s in PREFIX_STATES])
+    identity = {'episode_id', 'protocol', 'episode_type', 'state_sequence'}
+    for name in result.columns:
+        if name not in identity:
+            result[name] = np.nan
+    for state in STATE_ORDER:
+        result['state_'+state.lower()] = result.state_sequence.map(lambda seq: int(state in seq))
+    result['state_count'] = result.state_sequence.map(len)
+    result['transition_count'] = (result.state_count-1).clip(lower=0)
+    for name, state in [('challenged','CHALLENGED'),('vote_committed','VOTE_COMMITTED'),
+                        ('vote_revealed','VOTE_REVEALED')]:
+        result[name] = result['state_'+state.lower()]
+    return result
+
+
 def build_trajectory_views() -> dict[str,Any]:
     """Create four independent views and prefix/full versions."""
     setup();con=duckdb.connect(config={"threads": 2, "memory_limit": "4GB"});ep=OATA/"accountability_episodes.parquet"
@@ -364,17 +399,7 @@ def build_trajectory_views() -> dict[str,Any]:
       FROM read_parquet('{ep}')
     """
     _copy(con,evidence,OATA/"episode_evidence_features.parquet")
-    prefix=f"""
-      SELECT * REPLACE (
-        list_filter(state_sequence,x->x NOT IN ('REWARD_PAID','REWARD_FORFEITED','BOND_FORFEITED',
-          'PRINCIPAL_SLASHED','PRINCIPAL_RETURNED','CLOSED','RIGHT_CENSORED')) AS state_sequence,
-        NULL::BIGINT AS end_time,'prefix_hidden' AS terminal_status,
-        NULL::VARCHAR AS reward_paid_raw,NULL::VARCHAR AS reward_forfeited_raw,
-        NULL::VARCHAR AS bond_forfeited_raw,NULL::VARCHAR AS principal_slashed_raw,
-        NULL::VARCHAR AS principal_returned_raw
-      ) FROM read_parquet('{ep}')
-    """
-    _copy(con,prefix,OATA/"prefix_episodes.parquet")
+    build_prefix_view(con, ep)
     # State presence and selected transition features form the state-transition view.
     state_cols=",".join(
         f"list_contains(state_sequence,'{s}')::INTEGER state_{s.lower()}" for s in STATE_ORDER
@@ -446,6 +471,8 @@ def build_tracks_and_splits() -> dict[str,Any]:
 
 
 def load_model_frame(track:str, version:str="full") -> pd.DataFrame:
+    if version not in ('full', 'prefix'):
+        raise ValueError('Unknown trajectory version')
     con=duckdb.connect(config={"threads": 2, "memory_limit": "4GB"})
     source=OATA/"episode_multiview_features.parquet"
     track_path=OATA/f"{track}_track_episodes.parquet"
@@ -458,7 +485,8 @@ def load_model_frame(track:str, version:str="full") -> pd.DataFrame:
       JOIN read_parquet('{sample}') m USING(episode_id)
       JOIN read_parquet('{seq_source}') s USING(episode_id)
     """
-    return con.execute(q).fetch_df()
+    frame = con.execute(q).fetch_df()
+    return prefix_feature_frame(frame) if version == 'prefix' else frame
 
 
 def numeric_matrix(frame:pd.DataFrame, include_evidence:bool=True) -> tuple[np.ndarray,list[str]]:

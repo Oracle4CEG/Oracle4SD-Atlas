@@ -49,5 +49,6 @@ CREATE TABLE accountability_events (
     confidence_grade VARCHAR NOT NULL,
     native_table VARCHAR NOT NULL,
     sample_tier VARCHAR,
-    interpretation_note VARCHAR
+    interpretation_note VARCHAR,
+    penalty_accrued_raw VARCHAR
 );

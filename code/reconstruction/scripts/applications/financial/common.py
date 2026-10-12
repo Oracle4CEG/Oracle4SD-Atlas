@@ -455,6 +455,29 @@ def _km_survival(times: np.ndarray, events: np.ndarray, grid: np.ndarray) -> np.
     return np.asarray(values)
 
 
+def select_benchmark_sample(frame: pd.DataFrame, maximum: int = 6000) -> pd.DataFrame:
+    """Stable protocol/split sampling without using outcomes for selection.
+
+    This bounds computation and preserves small protocol panels. The resulting
+    benchmark is protocol-balanced, not a population-prevalence estimate.
+    """
+    ordered = frame.sort_values(["track", "episode_id"]).reset_index(drop=True)
+    kept = []
+    for _, group in ordered.groupby("track", sort=True):
+        if len(group) > maximum:
+            strata = list(group.groupby(["protocol", "chronological_split"], sort=True))
+            if maximum < len(strata):
+                raise ValueError("Sample budget cannot cover all protocol/split strata")
+            quota = maximum // len(strata)
+            selected = pd.concat([part.sample(min(len(part), quota), random_state=SEED)
+                                  for _, part in strata])
+            remainder = group.drop(index=selected.index)
+            fill = remainder.sample(min(len(remainder), maximum-len(selected)), random_state=SEED)
+            group = pd.concat([selected, fill])
+        kept.append(group)
+    return pd.concat(kept).sort_values(["track", "episode_id"]).reset_index(drop=True)
+
+
 def run_benchmark(max_rows_per_track: int = 6000) -> None:
     """Run seven executable T0 survival families plus an AJ incidence baseline."""
     from sklearn.compose import ColumnTransformer
@@ -492,23 +515,9 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
     con.close()
     if df.empty:
         raise RuntimeError("No eligible financial prefix observations")
-    rng = np.random.default_rng(SEED)
-    kept = []
-    for _, g in df.groupby("track", sort=False):
-        if len(g) > max_rows_per_track:
-            # Bound computation without selecting observations by their outcome.
-            rare_parts = []
-            for _, z in g.groupby(
-                ["chronological_split"], sort=False
-            ):
-                rare_parts.append(z.sample(min(len(z), max_rows_per_track//3), random_state=SEED))
-            rare = pd.concat(rare_parts).drop_duplicates("episode_id")
-            remaining = g.drop(index=rare.index, errors="ignore")
-            fill_n = max(0, max_rows_per_track - len(rare))
-            fill = remaining.sample(min(fill_n, len(remaining)), random_state=SEED)
-            g = pd.concat([rare, fill], ignore_index=True)
-        kept.append(g)
-    df = pd.concat(kept, ignore_index=True)
+    df = select_benchmark_sample(df, max_rows_per_track)
+    df[["episode_id", "track", "protocol", "chronological_split", "random_split"]].to_parquet(
+        OUT / "benchmark_sample.parquet", index=False)
     df["duration_days"] = df["observed_duration_seconds"].astype(float) / 86400.0
     df["start_year"] = pd.to_datetime(df["prediction_time"], unit="s", utc=True).dt.year
     df["start_month"] = pd.to_datetime(df["prediction_time"], unit="s", utc=True).dt.month
@@ -522,7 +531,7 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
     df["cross_chain_flag"] = df["cross_chain_flag"].fillna(False).astype(int)
 
     models = {
-        "CoxPH": CoxPHSurvivalAnalysis(alpha=1e-3),
+        "CoxPH": CoxPHSurvivalAnalysis(alpha=1.0, n_iter=300),
         "Coxnet": CoxnetSurvivalAnalysis(
             l1_ratio=0.2, alpha_min_ratio=0.05, fit_baseline_model=True
         ),
@@ -546,9 +555,9 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
     model_registry = [
         ("KaplanMeier", "executed", "nonparametric marginal baseline"),
         ("AalenJohansen", "executed", "nonparametric competing-risk incidence"),
-        *[(k, "executed", "individualized T0 survival") for k in models],
+        *[(k, "attempted", "individualized T0 survival; inspect per-track metrics/status") for k in models],
         ("FineGray", "not_executed", "no stable compatible implementation in environment"),
-        ("XGBoostAFT", "executed", "log-normal AFT with censoring bounds"),
+        ("XGBoostAFT", "attempted", "log-normal AFT; inspect per-track metrics/status"),
         ("DeepSurv", "not_executed", "PyTorch training stack unavailable"),
         ("DeepHit", "not_executed", "PyTorch training stack unavailable"),
         ("SequenceSurvival", "not_executed", "requires preregistered sequence architecture"),
@@ -567,10 +576,13 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
             train = d[d.random_split == "train"].copy() if "random_split" in d else d.iloc[0:0]
             test = d[d.random_split == "test"].copy() if "random_split" in d else d.iloc[0:0]
             evaluation_name = "pooled_random_fallback"
-        if len(train) < 100 or len(test) < 30 or train.event_observed.nunique() < 2:
+        if len(train) < 100 or len(test) < 30 or train.event_observed.nunique() < 2 or test.event_observed.nunique() < 2:
+            metric_rows.append(dict(track=track, evaluation=evaluation_name,
+                                    model="all", n_train=len(train), n_test=len(test),
+                                    status="not_estimable", error="Insufficient cohort size or event/censoring support"))
             continue
         prep = ColumnTransformer(
-            [("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=False), cat),
+            [("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=False, drop="first"), cat),
              ("num", StandardScaler(), num)],
             sparse_threshold=0,
         )
@@ -721,7 +733,13 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
                 error=str(exc)[:300],
             ))
 
-    pd.DataFrame(metric_rows).to_parquet(OUT / "metrics.parquet", index=False)
+    metrics = pd.DataFrame(metric_rows)
+    if "status" not in metrics:
+        metrics["status"] = "completed"
+    else:
+        metrics["status"] = metrics["status"].fillna("completed")
+    metrics["undefined_metrics_are_not_zero"] = True
+    metrics.to_parquet(OUT / "metrics.parquet", index=False)
     pd.DataFrame(pred_rows).to_parquet(OUT / "predictions.parquet", index=False)
     pd.DataFrame(cal_rows).to_parquet(OUT / "calibration.parquet", index=False)
     pd.DataFrame(model_registry, columns=["model", "status", "note"]).to_parquet(
@@ -733,6 +751,9 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
         "primary_landmark": "T0",
         "split": "chronological 70/15/15",
         "maximum_rows_per_track": max_rows_per_track,
+        "sampling": "Stable episode-ID order, then protocol/chronological-split strata; independent of outcome. This computational benchmark is not a population-prevalence estimate.",
+        "categorical_encoding": "Training-only one-hot encoding with one reference category dropped",
+        "coxph_l2_penalty": 1.0,
         "feature_policy": "only static fields visible at episode initiation",
         "unknown_unavailable_are_negative": False,
         "asset_aggregation": "none",
