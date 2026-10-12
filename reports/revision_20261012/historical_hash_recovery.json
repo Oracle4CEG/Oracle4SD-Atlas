@@ -1,0 +1,16 @@
+{
+  "status": "one historical expected byte sequence recovered; historical mismatch report retained unchanged",
+  "original_path": "data/applications/trustworthy_ai_public_source_demo/manifest.json",
+  "expected_sha256": "ea7ff01e3db05001f83d0749ac49791458ec2efcb53ffcb4eabf35b07806103b",
+  "recovered_sha256": "ea7ff01e3db05001f83d0749ac49791458ec2efcb53ffcb4eabf35b07806103b",
+  "recovered_archive": "metadata/recovered_historical/public_ai_manifest.json",
+  "recovered_from": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/6f9c6616950393682a778aa16747c43d6843bc11/public_ai_evidence/manifest.json",
+  "verification": "Downloaded the public file at the fixed revision and recomputed SHA-256 on 2026-10-12.",
+  "original_workspace_current_file_matches": false,
+  "other_unrecovered_conflict": {
+    "path": "reports/neurips_release_peer_evaluation.md",
+    "expected_sha256": "e535da69a6224bed8eb97e73052f6bf72ac901d6f6c24a7b25ff60ec9b799199",
+    "status": "No matching copy found in the inspected local release copies; not proof it no longer exists elsewhere."
+  },
+  "limit": "Recovery of a historical manifest does not independently validate all records named inside it."
+}

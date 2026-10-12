@@ -1,0 +1,20 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_token_flow_ledger.json",
+  "original_sha256": "684e4a1b2e53f84755285c6893ce189c3656d4f833e7e892a18234346ff45c9c",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "flows": 562536,
+    "flows_by_token": {
+      "USDC": 4074,
+      "USDC_e": 558462
+    },
+    "outputs": {
+      "flows": "data:/curated/polygon_uma_token_flows.jsonl",
+      "request_qc": "data:/curated/polygon_uma_request_flow_qc.jsonl"
+    },
+    "protocol": "Polygon UMA token flow reconciliation",
+    "settlement_flow_qc": {
+      "settlement_exact": 41826
+    }
+  }
+}

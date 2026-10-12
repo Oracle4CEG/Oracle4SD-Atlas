@@ -1,0 +1,36 @@
+{
+  "original_relative_path": "data/manifests/uma_dvm_ledger.json",
+  "original_sha256": "2488506f929760564a13f68ae0cfe35013e511f402e1ee8a4ef24ccd069fc672",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "amount_policy": "integer strings only",
+    "cross_chain_match_policy": "all requests remain U until Polygon evidence is present",
+    "events_seen": {
+      "DelegateSet": 887,
+      "DelegatorSet": 642,
+      "EncryptedVote": 1829513,
+      "ExecutedUnstake": 3698,
+      "GatAndSpatChanged": 2,
+      "MaxRequestsPerRoundChanged": 1,
+      "MaxRollsChanged": 1,
+      "OwnershipTransferred": 2,
+      "RequestAdded": 3744,
+      "RequestDeleted": 1,
+      "RequestResolved": 3712,
+      "RequestRolled": 80,
+      "RequestedUnstake": 3935,
+      "SetNewEmissionRate": 4,
+      "SetNewUnstakeCoolDown": 1,
+      "SlashingLibraryChanged": 1,
+      "Staked": 28951,
+      "UpdatedReward": 1893599,
+      "VoteCommitted": 1841405,
+      "VoteRevealed": 1745826,
+      "VoterSlashApplied": 262448,
+      "VoterSlashed": 2663684,
+      "WithdrawnRewards": 19240
+    },
+    "protocol": "UMA VotingV2",
+    "requests": 3744
+  }
+}

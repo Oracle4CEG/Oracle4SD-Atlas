@@ -13,7 +13,10 @@ The authoritative result is [full_release.json](full_release.json): **50 checks 
 | [input_identity.json](input_identity.json) | Initial 71-file historical snapshot inspection, including replaced derived tables |
 | [pyth_replay.json](pyth_replay.json) | 49 epochs, 6,566 factors and 134 counters reconstructed and compared row by row |
 | [source_registry_restore.json](source_registry_restore.json) | Five pinned upstream source/registry archives restored with member hashes |
-| [unit_tests.txt](unit_tests.txt) | 28 current regression tests (27 at the published scientific code commit), including real-row materialization, corrupt input, sampling and future-feature invariance |
+| [unit_tests.txt](unit_tests.txt) | 28 regression tests at notebook execution code d558c46 (27 at the published scientific code commit), including real-row materialization, corrupt input, sampling and future-feature invariance |
+| [provenance_acceptance_tests.txt](provenance_acceptance_tests.txt) | 35 current tests, adding seven saved-evidence acceptance and rejection tests |
+| [colab_evidence_local_diagnostic.json](colab_evidence_local_diagnostic.json) | Retained local evidence passes diagnostic checks; this report explicitly does not accept hosted Colab execution |
+| [historical_hash_recovery.json](historical_hash_recovery.json) | One expected old manifest recovered and verified from an immutable public dataset revision |
 | [decision_benchmark](decision_benchmark/) | Three CPU baselines, chronological 489/161/160 split |
 | [repaired_public_replay.json](repaired_public_replay.json) | Eight repaired-release files downloaded; 963 predictions reproduced exactly and 21 completed financial fits read successfully |
 | [decision_public_replay.json](decision_public_replay.json) | 963 predictions reproduced exactly from freshly downloaded public inputs |

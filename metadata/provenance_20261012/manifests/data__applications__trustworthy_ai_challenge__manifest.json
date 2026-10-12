@@ -1,0 +1,124 @@
+{
+  "original_relative_path": "data/applications/trustworthy_ai_challenge/manifest.json",
+  "original_sha256": "86f407809a07b1bda25c7bf70abe3e1540c52bd51f2e896464cefcd7763f094e",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "dataset": "UMA conditional four-action Trustworthy AI benchmark",
+    "generated_at_utc": "2026-08-18T01:52:46.396849+00:00",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "all_required_assertions_pass": true,
+    "rows": {
+      "decision_samples": 810,
+      "evidence_provenance": 2430,
+      "splits": 810,
+      "feature_dictionary": 16,
+      "predictions": 1120,
+      "metrics": 7,
+      "risk_coverage": 14,
+      "model_coefficients": 95,
+      "repeated_run_reliability": 1,
+      "model_registry": 7,
+      "cost_sensitivity": 36,
+      "robustness_checks": 4,
+      "group_metrics": 5,
+      "qc_results": 11
+    },
+    "files": [
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/cost_sensitivity.csv",
+        "bytes": 1318,
+        "sha256": "b48c65258e056d5bc5d5d5b9fc856075b412d4ab447c0230ca2d0f5efc192d5b"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/cost_sensitivity.parquet",
+        "bytes": 4512,
+        "sha256": "02e726858409b06c9d1db62a06130b386f6b7c1bac9cf6335a2a40bb201082ee"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+        "bytes": 495481,
+        "sha256": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/evidence_provenance.parquet",
+        "bytes": 350127,
+        "sha256": "0cab72ecba603b6c31d6ee3d353f615ab8460d09dc2f72592ac922ecdf9e682c"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/feature_dictionary.csv",
+        "bytes": 2647,
+        "sha256": "a2b752073ab22fa31926aac3e5befb85ff8fdb39dd8f7be80bed8aa9954cecad"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/feature_dictionary.parquet",
+        "bytes": 5861,
+        "sha256": "0fe2dc0e0b9c412c7569f100fee1d3b57003b88a25395e739dc3a0a27f7a9d92"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/group_metrics.parquet",
+        "bytes": 6348,
+        "sha256": "22a9f6f727240b06602c5022ea4dd82c8f96aab09b06f9d00013d7d6a9d9627a"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/metrics.csv",
+        "bytes": 943,
+        "sha256": "2fb5c0d642da5c1b49fa62914d736f9a862ec90972df43a218fbfa43f1d616e2"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/metrics.parquet",
+        "bytes": 8645,
+        "sha256": "5f8a7067ecd6cf36ff045123b6a4092217f5ac3e6bb2122875db778eefc3209e"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/model_coefficients.parquet",
+        "bytes": 3913,
+        "sha256": "3feff2db99d0ad0557cb74b92fe5a8d3c211d51408ec75a04d6eb8104039a04a"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/model_registry.parquet",
+        "bytes": 6443,
+        "sha256": "b15e2e568553593d622bc725a2a487f9d8b3f1979ab32f6db28ff78ebccfca88"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/predictions.parquet",
+        "bytes": 59874,
+        "sha256": "943e0dd5ab9e6f305466594612cd442e98818ca7a2a621efe0f3bfb939acc05e"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/qc_results.csv",
+        "bytes": 384,
+        "sha256": "09af082cb121bd463f14e5884e67e648727a5a5ff9c752baeea7948a32b547e5"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/qc_results.parquet",
+        "bytes": 2124,
+        "sha256": "042868bdec99b21952f5a0847b8b6731339cd8faa8c24d6f4887785b9012f255"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/repeated_run_reliability.parquet",
+        "bytes": 4852,
+        "sha256": "a66442e82b2e5a63470dad2ee0f97042c39436d07451278bfdae3b50ed55f504"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/risk_coverage.parquet",
+        "bytes": 4126,
+        "sha256": "a38de404309a19b8efd2eb1b185dcb9aac6fc3269371db640a8be7898938d115"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/robustness_checks.parquet",
+        "bytes": 4248,
+        "sha256": "7164c07e9f5ba46b485048a8ce80fe3a749eacac518afae6b9b534fbd7ef9a20"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/splits.parquet",
+        "bytes": 60472,
+        "sha256": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae"
+      },
+      {
+        "path": "workspace:/data/applications/trustworthy_ai_challenge/task_definition.json",
+        "bytes": 3000,
+        "sha256": "ee1a383495e9dd9a50b98acebc7ee11140a7a59fc7544eaddc7497640c926ff1"
+      }
+    ]
+  }
+}

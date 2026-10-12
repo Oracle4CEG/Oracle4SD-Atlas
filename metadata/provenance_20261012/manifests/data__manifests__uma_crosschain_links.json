@@ -1,0 +1,16 @@
+{
+  "original_relative_path": "data/manifests/uma_crosschain_links.json",
+  "original_sha256": "9e9cff05f681d05f5ecfbbda6c42a77e2840e675036eac63145cf6290381677e",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "ambiguous_matches": 0,
+    "by_grade": {
+      "A": 832,
+      "U": 3
+    },
+    "disputed_oov2_requests": 835,
+    "grade_a_policy": "exact childRequestId + parentRequestId + identifier/time/compressed ancillary match",
+    "output": "data:/curated/uma_polygon_ethereum_grade_a_links.jsonl",
+    "protocol": "Polymarket UMA Polygon-Ethereum linkage"
+  }
+}

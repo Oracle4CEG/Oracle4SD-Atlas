@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "binding_method": "Explicit authoring of table-to-manifest and producer relationships, checked against retained manifest paths and source. Producer availability does not establish its historical execution commit.",
+  "groups": [
+    {
+      "id": "chainlink_feed",
+      "tables": [
+        "chainlink_eth_usd_reports",
+        "chainlink_event_link_flow_qc",
+        "chainlink_link_flows"
+      ],
+      "manifests": [
+        "data/manifests/chainlink_evidence_raw.json",
+        "data/manifests/chainlink_evidence_ledger.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_chainlink_evidence.py",
+        "scripts/build_chainlink_evidence.py",
+        "src/oracle_ledger/chainlink_evidence_build.py"
+      ],
+      "transformation": "Decode registered feed/Transfer logs; restrict reports to active proxy phases and reconcile LINK flow routes."
+    },
+    {
+      "id": "chainlink_staking",
+      "tables": [
+        "chainlink_staking_v02_events"
+      ],
+      "manifests": [
+        "data/manifests/chainlink_staking_v02_raw.json",
+        "data/manifests/chainlink_staking_v02_ledger.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_chainlink_staking_v02.py",
+        "scripts/build_chainlink_staking_v02_ledger.py",
+        "src/oracle_ledger/chainlink_staking.py"
+      ],
+      "transformation": "Decode v0.2 staking logs by registered contract and event ABI; preserve integer amounts and native event identity."
+    },
+    {
+      "id": "chronicle_redstone",
+      "tables": [
+        "chronicle_ethereum_events",
+        "redstone_ethereum_push_events",
+        "ecosystem_observability_evidence"
+      ],
+      "manifests": [
+        "data/manifests/chronicle_redstone_ethereum_events.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_chronicle_redstone_events.py",
+        "src/oracle_ledger/ecosystem_events.py"
+      ],
+      "transformation": "Scan known topics through the cutoff block; validate registered runtime/contracts, deduplicate and decode; retain scoped observability evidence."
+    },
+    {
+      "id": "settlement_interfaces",
+      "tables": [
+        "chronicle_redstone_settlement_interfaces"
+      ],
+      "manifests": [
+        "data/manifests/chronicle_redstone_settlement_audit.json"
+      ],
+      "producer_files": [
+        "scripts/audit_chronicle_redstone_settlement.py"
+      ],
+      "transformation": "Audit pinned contract/source interfaces for identifiable settlement terms; do not infer publisher payouts from ordinary token flows."
+    },
+    {
+      "id": "dia_staking",
+      "tables": [
+        "dia_staking_events",
+        "dia_staking_withdrawals"
+      ],
+      "manifests": [
+        "data/manifests/dia_staking.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_dia_staking.py"
+      ],
+      "transformation": "Decode Lasernet staking/withdrawal/transfer events; separate returned principal and reward only where transfer evidence permits."
+    },
+    {
+      "id": "flare_fsp",
+      "tables": [
+        "flare_beneficiary_chill_state",
+        "flare_provider_conditions",
+        "flare_provider_failures",
+        "flare_provider_feed_performance",
+        "flare_provider_passes",
+        "flare_reward_claims",
+        "flare_reward_epochs",
+        "flare_voter_registrations"
+      ],
+      "manifests": [
+        "data/manifests/flare_fsp_rewards.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_flare_fsp_rewards.py",
+        "src/oracle_ledger/flare_fsp.py"
+      ],
+      "transformation": "Read pinned official reward files for epochs 228\u2013410; exclude the cutoff-straddling epoch; reconcile recorded roots/state and condition fields."
+    },
+    {
+      "id": "flare_claims",
+      "tables": [
+        "flare_beneficiary_chill_events",
+        "flare_reward_claim_epoch_qc",
+        "flare_reward_claim_events"
+      ],
+      "manifests": [
+        "data/manifests/flare_claims_chill.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_flare_claims_rpc_raw.py",
+        "scripts/ingest_flare_claims_chill.py",
+        "src/oracle_ledger/flare_events.py"
+      ],
+      "transformation": "Decode canonical RewardClaimed/BeneficiaryChilled logs and reconcile recorded epoch aggregates against cutoff state."
+    },
+    {
+      "id": "flare_attribution",
+      "tables": [
+        "flare_reward_component_attribution"
+      ],
+      "manifests": [
+        "data/manifests/flare_reward_attribution.json",
+        "data/manifests/flare_fsp_rewards.json",
+        "data/manifests/flare_claims_chill.json"
+      ],
+      "producer_files": [
+        "scripts/build_flare_reward_attribution.py"
+      ],
+      "transformation": "Join entitlement/realized ledgers; retain non-identifiability rather than proportionally inventing reward components."
+    },
+    {
+      "id": "phase4_interfaces",
+      "tables": [
+        "phase4_oracle_economic_interfaces"
+      ],
+      "manifests": [
+        "data/manifests/phase4_oracle_economic_interfaces.json"
+      ],
+      "producer_files": [
+        "scripts/build_phase4_economic_interfaces.py"
+      ],
+      "transformation": "Manually encoded documentary interface assessment with cited protocol sources; scoped absence is not a universal absence claim."
+    },
+    {
+      "id": "polygon_uma",
+      "tables": [
+        "polygon_adapter_events",
+        "polygon_child_tunnel_events",
+        "polygon_oov2_events",
+        "polygon_uma_request_rounds"
+      ],
+      "manifests": [
+        "data/manifests/polygon_uma_raw.json",
+        "data/manifests/polygon_uma_legacy_child_tunnel_raw.json",
+        "data/manifests/polygon_uma_ledger.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_polygon_uma_legacy_bridge.py",
+        "scripts/build_polygon_uma_ledger.py",
+        "src/oracle_ledger/polygon_uma.py",
+        "src/oracle_ledger/polygon_uma_ledger.py"
+      ],
+      "transformation": "Decode registered Polygon oracle/adapter/tunnel logs; assemble request rounds with integer payout components and explicit linkage grades."
+    },
+    {
+      "id": "polygon_flows",
+      "tables": [
+        "polygon_uma_request_flow_qc",
+        "polygon_uma_token_flows"
+      ],
+      "manifests": [
+        "data/manifests/polygon_uma_token_flows_raw.json",
+        "data/manifests/polygon_uma_token_flow_receipts.json",
+        "data/manifests/polygon_uma_token_flow_ledger.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_polygon_uma_flows.py",
+        "scripts/build_polygon_uma_flows.py",
+        "src/oracle_ledger/polygon_uma_flows.py"
+      ],
+      "transformation": "Decode token transfers and receipt fallbacks; reconcile observed settlements without treating missing receipts as zero payments."
+    },
+    {
+      "id": "gamma_snapshot",
+      "tables": [
+        "polygon_uma_gamma_links",
+        "polymarket_gamma_markets"
+      ],
+      "manifests": [
+        "data/manifests/polymarket_gamma.json",
+        "data/manifests/polymarket_gamma_targeted.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_polymarket_gamma.py",
+        "scripts/ingest_polymarket_gamma_questions.py",
+        "scripts/finalize_polymarket_gamma.py"
+      ],
+      "transformation": "Paginate the recorded mutable Gamma snapshot and link question IDs; the post-cutoff snapshot does not certify historical decision-time availability."
+    },
+    {
+      "id": "decision_prices",
+      "tables": [
+        "polymarket_decision_time_price_provenance",
+        "polymarket_decision_time_prices"
+      ],
+      "manifests": [
+        "data/manifests/polymarket_decision_time_prices.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_polymarket_decision_prices.py"
+      ],
+      "transformation": "Select frozen price-history responses ending at proposal timestamps; retrieval time is later than the historical observation window."
+    },
+    {
+      "id": "price_chain_validation",
+      "tables": [
+        "polymarket_decision_time_price_onchain_validation"
+      ],
+      "manifests": [
+        "data/manifests/polymarket_decision_time_price_onchain_validation.json",
+        "data/manifests/polymarket_decision_time_prices.json"
+      ],
+      "producer_files": [
+        "scripts/validate_polymarket_price_evidence_onchain.py"
+      ],
+      "transformation": "Compare the registered price subsample with historical order-fill events and receipts; retain tolerance, sampling and evidence grades."
+    },
+    {
+      "id": "web_evidence",
+      "tables": [
+        "polymarket_decision_time_web_evidence",
+        "polymarket_decision_time_web_provenance"
+      ],
+      "manifests": [
+        "data/manifests/polymarket_decision_time_web_evidence.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_polymarket_decision_web_evidence.py"
+      ],
+      "transformation": "Audit archived availability of URLs committed in request text; current web pages and Gamma resolution sources are not admitted as historical truth."
+    },
+    {
+      "id": "pyth_history",
+      "tables": [
+        "pyth_ois_economic_events",
+        "pyth_ois_instructions",
+        "pyth_ois_stake_events"
+      ],
+      "manifests": [
+        "data/manifests/pyth_ois_history.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_pyth_ois_history.py",
+        "src/oracle_ledger/pyth_history.py"
+      ],
+      "transformation": "Page signatures and archived transactions; decode direct staking-program instructions and actual transfers through the fixed cutoff."
+    },
+    {
+      "id": "pyth_observability",
+      "tables": [
+        "pyth_ois_historical_observability"
+      ],
+      "manifests": [
+        "data/manifests/pyth_historical_observability.json",
+        "data/manifests/pyth_ois_history.json",
+        "data/manifests/pyth_ois_rolling_state.json"
+      ],
+      "producer_files": [
+        "scripts/audit_pyth_historical_boundary.py"
+      ],
+      "transformation": "Document which historical fields are recoverable from archived transaction/state evidence; missing quality fields remain unknown."
+    },
+    {
+      "id": "pyth_rolling",
+      "tables": [
+        "pyth_ois_publisher_epoch_factors",
+        "pyth_ois_reward_epochs",
+        "pyth_ois_slash_counters"
+      ],
+      "manifests": [
+        "data/manifests/pyth_ois_rolling_state.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_pyth_ois_rolling_state.py",
+        "src/oracle_ledger/pyth_ois.py"
+      ],
+      "transformation": "Decode the archived July 21 state snapshot; retain 49 complete pre-cutoff epochs; exclude post-cutoff current delegation balances."
+    },
+    {
+      "id": "tellor_aggregate",
+      "tables": [
+        "tellor_aggregate_height_index"
+      ],
+      "manifests": [
+        "data/manifests/tellor_aggregate_index.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_aggregate_index.py",
+        "src/oracle_ledger/tellor_abci.py"
+      ],
+      "transformation": "Scan historical state index by query/height; exclude post-cutoff entries and check height ordering."
+    },
+    {
+      "id": "tellor_disputes",
+      "tables": [
+        "tellor_dispute_payments",
+        "tellor_dispute_votes",
+        "tellor_disputes"
+      ],
+      "manifests": [
+        "data/manifests/tellor_layer_disputes.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_layer_disputes.py",
+        "src/oracle_ledger/tellor_layer.py"
+      ],
+      "transformation": "Link recorded dispute state, successful canonical transactions, votes and payments; interpretation of SUPPORT is versioned by the repaired release."
+    },
+    {
+      "id": "tellor_jail",
+      "tables": [
+        "tellor_jail_events",
+        "tellor_jail_lifecycles"
+      ],
+      "manifests": [
+        "data/manifests/tellor_jail_lifecycle.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_jail_lifecycle.py"
+      ],
+      "transformation": "Match jail and unjail events into observed restriction lifecycles; retain unmatched/censored cases."
+    },
+    {
+      "id": "tellor_rewards",
+      "tables": [
+        "tellor_legacy_selector_reward_accruals",
+        "tellor_liveness_reward_distributions_full",
+        "tellor_reporter_reward_accruals_full"
+      ],
+      "manifests": [
+        "data/manifests/tellor_rewards_full.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_rewards_full.py",
+        "src/oracle_ledger/tellor_rewards.py"
+      ],
+      "transformation": "Decode reward events across module versions; distinguish incremental accrual, cumulative-only legacy events and realized withdrawals."
+    },
+    {
+      "id": "tellor_tips",
+      "tables": [
+        "tellor_query_tip_funding",
+        "tellor_tip_withdrawals_realized"
+      ],
+      "manifests": [
+        "data/manifests/tellor_tips_withdrawals.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_tips_withdrawals.py",
+        "src/oracle_ledger/tellor_payments.py"
+      ],
+      "transformation": "Decode tip funding, burn and withdrawals; retain transaction cash-flow reconciliation and protocol units."
+    },
+    {
+      "id": "tellor_micro",
+      "tables": [
+        "tellor_micro_reports"
+      ],
+      "manifests": [
+        "data/manifests/tellor_micro_reports.json",
+        "data/manifests/tellor_aggregate_index.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_tellor_reports_block_results.py"
+      ],
+      "transformation": "Read canonical block_results new_report events, deduplicate source/storage identity and retain explicit cutoff and scan scope."
+    },
+    {
+      "id": "uma_dvm",
+      "tables": [
+        "uma_dvm_requests",
+        "uma_dvm_staking_events",
+        "uma_dvm_voter_payoffs",
+        "uma_dvm_votes_events"
+      ],
+      "manifests": [
+        "data/manifests/ethereum_feasibility_audit.json",
+        "data/manifests/uma_dvm_ledger.json"
+      ],
+      "producer_files": [
+        "scripts/ingest_uma_dvm.py",
+        "scripts/build_uma_dvm_ledger.py",
+        "src/oracle_ledger/ledger_build.py"
+      ],
+      "transformation": "Decode DVM request/vote/staking events; preserve raw signed accrued adjustments separately from subsequently applied state changes."
+    },
+    {
+      "id": "uma_phase2",
+      "tables": [
+        "uma_phase2_dvm_negative_slash_panel",
+        "uma_phase2_request_panel"
+      ],
+      "manifests": [
+        "data/manifests/uma_phase2_analysis.json"
+      ],
+      "producer_files": [
+        "scripts/analyze_uma_phase2.py"
+      ],
+      "transformation": "Construct historical analysis panels from UMA ledgers; retained inputs preserve historical semantics and do not replace repaired application interpretations."
+    },
+    {
+      "id": "uma_crosschain",
+      "tables": [
+        "uma_polygon_ethereum_grade_a_links"
+      ],
+      "manifests": [
+        "data/manifests/uma_crosschain_links.json",
+        "data/manifests/polygon_uma_bridge_discovery.json"
+      ],
+      "producer_files": [
+        "scripts/build_uma_crosschain_links.py",
+        "src/oracle_ledger/uma_crosschain.py"
+      ],
+      "transformation": "Join exact request/tunnel/adapter identities across chains; retain match grades, ambiguous and unmatched cases."
+    },
+    {
+      "id": "decision_cohort",
+      "tables": [
+        "decision_samples",
+        "splits"
+      ],
+      "manifests": [
+        "data/applications/trustworthy_ai_challenge/manifest.json"
+      ],
+      "producer_files": [
+        "scripts/applications/trustworthy_ai/run_challenge_benchmark.py"
+      ],
+      "transformation": "Construct 810 observed disputed-request decisions from fixed native tables; labels follow protocol adjudication and splits follow decision time."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "original_relative_path": "data/manifests/flare_reward_attribution.json",
+  "original_sha256": "d2b5d3f60511c075b094bd7fa44927bd3358522bc0f24747f0ef604664d2db2d",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "aggregate_claim_ledger": "data:/curated/flare_reward_claims.jsonl",
+    "all_required_assertions_pass": true,
+    "amounts_fabricated_or_proportionally_allocated": 0,
+    "components": [
+      "median_closeness",
+      "fast_updates",
+      "staking_uptime",
+      "fdc_participation",
+      "signature_deposition",
+      "finalization"
+    ],
+    "conclusion": "Provider-epoch eligibility inputs are attributable. Published Merkle claims combine protocol components, so exact median/signature/finalization FLR amounts are structurally non-identifiable.",
+    "dataset": "Flare provider reward component attribution boundary",
+    "first_reward_epoch": 251,
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-28T11:26:05.177545+00:00",
+    "last_reward_epoch": 410,
+    "output": "data:/curated/flare_reward_component_attribution.jsonl",
+    "realized_claim_ledger": "data:/curated/parquet/flare_reward_claim_events.parquet",
+    "rows": 86274
+  }
+}

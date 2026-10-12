@@ -1,0 +1,526 @@
+{
+  "data/applications/trustworthy_ai_challenge/manifest.json": {
+    "archive": "manifests/data__applications__trustworthy_ai_challenge__manifest.json",
+    "archive_sha256": "11cf90827aea930f1e8b9684f61779d4661f0b1937ba81528b9f2cadc0f1e0f2",
+    "original_sha256": "86f407809a07b1bda25c7bf70abe3e1540c52bd51f2e896464cefcd7763f094e",
+    "original_bytes": 4992,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "generated_at_utc": "2026-08-18T01:52:46.396849+00:00",
+      "fixed_cutoff": "2026-06-30T23:59:59Z"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/accountability_events.json": {
+    "archive": "manifests/data__manifests__accountability_events.json",
+    "archive_sha256": "c32aef86927e2b0d59225dfbbaf30ab464960ebac9a60cb475f3a6d66abcf5da",
+    "original_sha256": "198987c6c7998c918bcd5e1308936e7357bb38822fa0ecd1621350bf4f0454ce",
+    "original_bytes": 3880,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-28T11:44:21.214070+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chainlink_evidence_ledger.json": {
+    "archive": "manifests/data__manifests__chainlink_evidence_ledger.json",
+    "archive_sha256": "046a05812981d50a0a26e810e29dcde2a729d71e996060bd1e1976c6af3ffc39",
+    "original_sha256": "0088921e9fe37c9fb10750e4fb260f4bb48dcf1b4aa81709ade9704d8e5ff8fc",
+    "original_bytes": 1663,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chainlink_evidence_raw.json": {
+    "archive": "manifests/data__manifests__chainlink_evidence_raw.json",
+    "archive_sha256": "e93a03632f2e483e2ad6451add9d499941ee7baf4c7006828f5159a4183fbabb",
+    "original_sha256": "b066b5ef93f6c5f021448005c69c84f68eb5a1d78609827d895930e86c841879",
+    "original_bytes": 1714,
+    "prior_archived_original_sha256": "b066b5ef93f6c5f021448005c69c84f68eb5a1d78609827d895930e86c841879",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 25433938,
+      "generated_at_utc": "2026-07-20T12:42:22.847173+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chainlink_staking_v02_ledger.json": {
+    "archive": "manifests/data__manifests__chainlink_staking_v02_ledger.json",
+    "archive_sha256": "574d42e38f2dc79af05f730b15bbda01973f640a5ba1d693b7859fef748f9dcc",
+    "original_sha256": "78b86de17b3d2e5c420a45a5d2cee8b403b150da17b4e5b3ddb1d3730d09457c",
+    "original_bytes": 608,
+    "prior_archived_original_sha256": "78b86de17b3d2e5c420a45a5d2cee8b403b150da17b4e5b3ddb1d3730d09457c",
+    "matches_prior_archive": true,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chainlink_staking_v02_raw.json": {
+    "archive": "manifests/data__manifests__chainlink_staking_v02_raw.json",
+    "archive_sha256": "ad43f460d649b8e374b9245301ab5315ae53074865fe8d5c390c683b24648642",
+    "original_sha256": "4f575cc0d8327edcdf560894569fc52abf9b3ee560a66edf3cd4bae4f76620e5",
+    "original_bytes": 4947,
+    "prior_archived_original_sha256": "4f575cc0d8327edcdf560894569fc52abf9b3ee560a66edf3cd4bae4f76620e5",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 25433938,
+      "generated_at_utc": "2026-07-18T08:09:50.512340+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chronicle_redstone_ethereum_events.json": {
+    "archive": "manifests/data__manifests__chronicle_redstone_ethereum_events.json",
+    "archive_sha256": "12713caf956eb26198639346d1bf5fd10aa5ddc63c7c54e1cc23787dab92548a",
+    "original_sha256": "33fc7afe9d05d1a55834f6dfaf648aba56b0ca7a05723cf112db7f00942036a7",
+    "original_bytes": 28472,
+    "prior_archived_original_sha256": "33fc7afe9d05d1a55834f6dfaf648aba56b0ca7a05723cf112db7f00942036a7",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "chronicle_source_commit": "12ff06ca78811e01313afde4b38fe959d6647096",
+      "cutoff_block": 25433938,
+      "cutoff_block_hash": "0x82ba65044cd2af79c7e3e21dd4a87a26d257e6f9abcf585eed201f2d177f35a0",
+      "cutoff_block_time": "2026-06-30T23:59:59+00:00",
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T05:19:11.113349+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/chronicle_redstone_settlement_audit.json": {
+    "archive": "manifests/data__manifests__chronicle_redstone_settlement_audit.json",
+    "archive_sha256": "6a55246552a18832962c58e6fab0be56ebf8e17bf8325b0fb35fac801e9edf47",
+    "original_sha256": "b7d920cb4b7b6e80f9aace7325620b7cf4a3dc506afc797dc864298e28192b0a",
+    "original_bytes": 481,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-28T11:26:05.427816+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/curated_parquet.json": {
+    "archive": "manifests/data__manifests__curated_parquet.json",
+    "archive_sha256": "3f5d1e66da05ac1c9421a50ea8ccf1d36ebccb4a2e80ea5cae585715125ce351",
+    "original_sha256": "9159e5395e1cf9fbe5ac8f10e9bae4021200856023c9bda79626ab40c3c9f743",
+    "original_bytes": 16322,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "generated_at_utc": "2026-07-28T11:46:52.975770+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/dia_staking.json": {
+    "archive": "manifests/data__manifests__dia_staking.json",
+    "archive_sha256": "fa0d42244572bc3a86e09c247cc1cac3cc6a3bf2acb01b3ec649444abe885afb",
+    "original_sha256": "580db95d14e3c354f514bec289dac90afa7f87339b9c74df81b68e2492369a1e",
+    "original_bytes": 1057,
+    "prior_archived_original_sha256": "580db95d14e3c354f514bec289dac90afa7f87339b9c74df81b68e2492369a1e",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 31302665,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-28T11:35:20.445103+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/ethereum_feasibility_audit.json": {
+    "archive": "manifests/data__manifests__ethereum_feasibility_audit.json",
+    "archive_sha256": "6e4d0f8b7f95bf9d9fa699b966119aaa9626ca6e0691c212e7f5ac8fa41fc2f4",
+    "original_sha256": "a9ce2823c5f5ee766ee098a73dc4b6b4eb107df079992530f1e37e372de45186",
+    "original_bytes": 3502,
+    "prior_archived_original_sha256": "a9ce2823c5f5ee766ee098a73dc4b6b4eb107df079992530f1e37e372de45186",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "ethereum.cutoff_block": 25433938,
+      "generated_at_utc": "2026-07-18T09:38:51.062142+00:00",
+      "semantic_verification.source_commit": "a16ee53125c433dfa4e29738b73d9069ff109c03"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/flare_claims_chill.json": {
+    "archive": "manifests/data__manifests__flare_claims_chill.json",
+    "archive_sha256": "77a32db6922b1e005809c802d7b6cd1ae1ba819ef57d7c610b58c29d23c2be54",
+    "original_sha256": "187d5ccd1561cc142fe59f456a27a3808fa0e4fa5ce7c992c24d238b1590b08d",
+    "original_bytes": 2334,
+    "prior_archived_original_sha256": "187d5ccd1561cc142fe59f456a27a3808fa0e4fa5ce7c992c24d238b1590b08d",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 64054789,
+      "cutoff_block_hash": "0x4c77cf5230d62fa130d5895a3a21594475c1f83ea51fcd50d4cd26b1b85c7430",
+      "cutoff_block_time": "2026-06-30T23:59:59Z",
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T08:43:23.856974+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/flare_fsp_rewards.json": {
+    "archive": "manifests/data__manifests__flare_fsp_rewards.json",
+    "archive_sha256": "8a43e88b96cf0ec8902faa128ed58067b358fcd08aa6ff64a73662baa323c250",
+    "original_sha256": "c8bb1bd7d2ecd6d0a9ce16ea3e6916f4f26e2ffd1f378b24fa99df9501661bb3",
+    "original_bytes": 75847,
+    "prior_archived_original_sha256": "c8bb1bd7d2ecd6d0a9ce16ea3e6916f4f26e2ffd1f378b24fa99df9501661bb3",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 64054789,
+      "cutoff_block_hash": "0x4c77cf5230d62fa130d5895a3a21594475c1f83ea51fcd50d4cd26b1b85c7430",
+      "cutoff_block_time": "2026-06-30T23:59:59Z",
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-21T02:15:29.275807+00:00",
+      "source_commit": "56dccda13597ec78e47c24a38f875fa9ebad897c",
+      "source_repository": "https://github.com/flare-foundation/fsp-rewards"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/flare_reward_attribution.json": {
+    "archive": "manifests/data__manifests__flare_reward_attribution.json",
+    "archive_sha256": "b3bab41f2e3350f8b4d70451a5955a3610c9aec7ab88900629af9db4f0e448e1",
+    "original_sha256": "d2b5d3f60511c075b094bd7fa44927bd3358522bc0f24747f0ef604664d2db2d",
+    "original_bytes": 1014,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-28T11:26:05.177545+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/phase4_oracle_economic_interfaces.json": {
+    "archive": "manifests/data__manifests__phase4_oracle_economic_interfaces.json",
+    "archive_sha256": "3bdd6c1aef872ba56dd0df972c8177ce168b5d7aa70edaefc3ce5ef9bec54e2d",
+    "original_sha256": "92002dd87ccf5c1461cc99024708a44d49796df67c770dcdee7f459edd98eb44",
+    "original_bytes": 578,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-28T11:39:33.428455+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_bridge_discovery.json": {
+    "archive": "manifests/data__manifests__polygon_uma_bridge_discovery.json",
+    "archive_sha256": "ac4597eef7491cc8b6a5008efabfd82e9fbb5331c3fda755d3956ccb88326dd7",
+    "original_sha256": "2d0228cf396ecd85ac38c2997c2ee52733c78c47323a62b79bb481950b14e622",
+    "original_bytes": 313,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_ledger.json": {
+    "archive": "manifests/data__manifests__polygon_uma_ledger.json",
+    "archive_sha256": "cd7b3d7241b0689d7d44907f92655fd4fc992923ac1f44151eea13b019837d68",
+    "original_sha256": "dcc865b0b04532ae76b8131b339dd37ee8e6c34e31fc9f65a844a93ff34c705d",
+    "original_bytes": 1491,
+    "prior_archived_original_sha256": "dcc865b0b04532ae76b8131b339dd37ee8e6c34e31fc9f65a844a93ff34c705d",
+    "matches_prior_archive": true,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_legacy_child_tunnel_raw.json": {
+    "archive": "manifests/data__manifests__polygon_uma_legacy_child_tunnel_raw.json",
+    "archive_sha256": "c58629830d3604171b5ad3bfe032594c698f5b468672d05afe78813119709daf",
+    "original_sha256": "9681f5565f479d26d1b12e8a88fce2985971dafa281f411a84c51c59b5f9b2b7",
+    "original_bytes": 1008,
+    "prior_archived_original_sha256": "9681f5565f479d26d1b12e8a88fce2985971dafa281f411a84c51c59b5f9b2b7",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 89439336,
+      "generated_at_utc": "2026-07-20T09:26:14.446570+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_raw.json": {
+    "archive": "manifests/data__manifests__polygon_uma_raw.json",
+    "archive_sha256": "6ac81046b62f3dd8e00baf262544d7d939b4c25138b9e33b702bde6241010979",
+    "original_sha256": "c98425785b8d6504989bc9ca84c1bc1d030ec75cf1f448867cf02203d7ad32ad",
+    "original_bytes": 4790,
+    "prior_archived_original_sha256": "c98425785b8d6504989bc9ca84c1bc1d030ec75cf1f448867cf02203d7ad32ad",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block": 89439336,
+      "generated_at_utc": "2026-07-20T09:56:29.727208+00:00",
+      "source_commits": {
+        "Polymarket/uma-ctf-adapter": "8b76cc9e0d46c6f7450a0adb0ddc0f5b0568c9cc",
+        "UMAprotocol/protocol": "a16ee53125c433dfa4e29738b73d9069ff109c03"
+      }
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_token_flow_ledger.json": {
+    "archive": "manifests/data__manifests__polygon_uma_token_flow_ledger.json",
+    "archive_sha256": "54d6ef419c18fd0249740e810a2429e704ea08c34abc02b3de606d70c99f5b76",
+    "original_sha256": "684e4a1b2e53f84755285c6893ce189c3656d4f833e7e892a18234346ff45c9c",
+    "original_bytes": 402,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_token_flow_receipts.json": {
+    "archive": "manifests/data__manifests__polygon_uma_token_flow_receipts.json",
+    "archive_sha256": "9680f5336510e3c3c8a571c3e0302d13098520e5427977e43ce67c8ec6a602cd",
+    "original_sha256": "7a812f60d52e3b63f1c54bee8c83ef0f7c5950812c565a826d084be24f9e8d7d",
+    "original_bytes": 427,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polygon_uma_token_flows_raw.json": {
+    "archive": "manifests/data__manifests__polygon_uma_token_flows_raw.json",
+    "archive_sha256": "56038b3ad8d96eec02df4b94688c9170c0c757a9b208c63eeffd6ae8b93a0cab",
+    "original_sha256": "749a5a94aef3c8aa5857d451c10d5dab37e89d1a33cd2cc94c5ff9f5fbe62097",
+    "original_bytes": 834,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polymarket_decision_time_price_onchain_validation.json": {
+    "archive": "manifests/data__manifests__polymarket_decision_time_price_onchain_validation.json",
+    "archive_sha256": "b664357dc9d7d748dd485724a808094cacd0e59f72f89c8d72b19a131f3497de",
+    "original_sha256": "18755f1dbd30a8cf1d926ac1a64ee5d4d31da578dbc6ae895300c00854ef476b",
+    "original_bytes": 976,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polymarket_decision_time_prices.json": {
+    "archive": "manifests/data__manifests__polymarket_decision_time_prices.json",
+    "archive_sha256": "f01f5e55078cefbb59eba1b2b3f2cbffad5de828da1917056d8cec5c4506cf33",
+    "original_sha256": "16fa091953619e5a41c368b29895ee5df5c445946d4dfd143e243cc68b201279",
+    "original_bytes": 1235,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "generated_at_utc": "2026-08-18T01:52:51.280133+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polymarket_decision_time_web_evidence.json": {
+    "archive": "manifests/data__manifests__polymarket_decision_time_web_evidence.json",
+    "archive_sha256": "41ad366f4dc983fa0cce3f132d8f2d4fa8af03196fa163ef458a37d217fb7e08",
+    "original_sha256": "8b2d232a12b72aa3e9fdd6129c60062090907f0f39134313513d2ef6f1238368",
+    "original_bytes": 1320,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "generated_at_utc": "2026-08-18T01:53:30.089805+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polymarket_gamma.json": {
+    "archive": "manifests/data__manifests__polymarket_gamma.json",
+    "archive_sha256": "0664f8bfc75f3ca6a35e0614b971b5941d44f19cdb1166c09891b960e02a7c57",
+    "original_sha256": "499d09469101c3586386c82c951e4e3774a4d718fa2c233c22ffd7cf3734423f",
+    "original_bytes": 2044,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "cutoff_utc": "2026-06-30T23:59:59+00:00",
+      "snapshot_time_utc": "2026-07-20T10:52:44.978309+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/polymarket_gamma_targeted.json": {
+    "archive": "manifests/data__manifests__polymarket_gamma_targeted.json",
+    "archive_sha256": "da0dacda1c5119aea13a5ab0a359eac6bb2d764324b96fea36d4eb2b4918c3b3",
+    "original_sha256": "064b3f4e9b2d2517ec250c2588c842a80f01ebea18d24e18d5f666b35bc5f507",
+    "original_bytes": 393,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/pyth_historical_observability.json": {
+    "archive": "manifests/data__manifests__pyth_historical_observability.json",
+    "archive_sha256": "0314b08df1d680bb73960297d497d57a88fb39eeb56a8e22ed5ebefe4b6d0258",
+    "original_sha256": "87df856e3ae931680c574106495e7ea5b1add3003e94d8459e685ccc099cfe92",
+    "original_bytes": 994,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-28T11:26:02.294634+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/pyth_ois_history.json": {
+    "archive": "manifests/data__manifests__pyth_ois_history.json",
+    "archive_sha256": "2c3291c392a0fd14a72c6c77f3495ed8516a9e481145949bbae28fc1c031e414",
+    "original_sha256": "323e919be8dbb7f41aca3ba542dd68b9d1de8bcdb3b415b3ff462053ea3c02f5",
+    "original_bytes": 3053,
+    "prior_archived_original_sha256": "323e919be8dbb7f41aca3ba542dd68b9d1de8bcdb3b415b3ff462053ea3c02f5",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T08:25:45.394518+00:00",
+      "signature_rpc_host": "api.mainnet-beta.solana.com",
+      "source_commit": "68a9a36ec3d41364490e71b056b422c99f13e0cf",
+      "transaction_rpc_hosts": [
+        "moltnode.ag",
+        "moltnode.ag",
+        "solana.lava.build",
+        "solana.lava.build",
+        "api.mainnet-beta.solana.com",
+        "public.rpc.solanavibestation.com",
+        "public.rpc.solanavibestation.com"
+      ]
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/pyth_ois_rolling_state.json": {
+    "archive": "manifests/data__manifests__pyth_ois_rolling_state.json",
+    "archive_sha256": "2f7fbca322b53e4afdf6ee880a386b84b571a0afe4ad1c9c658c50a270c2d411",
+    "original_sha256": "b1f19eacbb8685ae7b01d8b7551aeaaf28da98766aa47efb1987fc621cd493e2",
+    "original_bytes": 1695,
+    "prior_archived_original_sha256": "b1f19eacbb8685ae7b01d8b7551aeaaf28da98766aa47efb1987fc621cd493e2",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-21T02:30:05.118606+00:00",
+      "snapshot_slot": 434217940,
+      "snapshot_time": "2026-07-21T02:29:48+00:00",
+      "source_commit": "68a9a36ec3d41364490e71b056b422c99f13e0cf",
+      "source_repository": "https://github.com/pyth-network/governance"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_aggregate_index.json": {
+    "archive": "manifests/data__manifests__tellor_aggregate_index.json",
+    "archive_sha256": "b6074a321f798ffea2cf36213f5560a73ecd7ed74177f48397b27a99d0f9711a",
+    "original_sha256": "4e180af5e177748f9d8bd65a8b274cf59bcd51ec0f1ed0bed81148c5e8ac5668",
+    "original_bytes": 3420,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T06:51:54.860988+00:00",
+      "post_cutoff_rows_excluded": 16044,
+      "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_jail_lifecycle.json": {
+    "archive": "manifests/data__manifests__tellor_jail_lifecycle.json",
+    "archive_sha256": "95567debae05751766d1a88e0cfdc7448eef59363e94aa1cc86660d173506eb1",
+    "original_sha256": "c6506710fe3cb38b4789405cb0ff52be00b46a1d296dbd28a406f17ac7d6f994",
+    "original_bytes": 1042,
+    "prior_archived_original_sha256": "c6506710fe3cb38b4789405cb0ff52be00b46a1d296dbd28a406f17ac7d6f994",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-28T11:08:16.629911+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_layer_disputes.json": {
+    "archive": "manifests/data__manifests__tellor_layer_disputes.json",
+    "archive_sha256": "3ec05b53c0e4ca3d28e8bf819eea5e2c04a89523ae7d255b1010a75a24eec7a6",
+    "original_sha256": "e1b2df98168f45f686c7c306146fef63889bff1c4f76487b46009d1ff9b98698",
+    "original_bytes": 1494,
+    "prior_archived_original_sha256": "e1b2df98168f45f686c7c306146fef63889bff1c4f76487b46009d1ff9b98698",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "api_host": "mainnet.tellorlayer.com",
+      "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-21T02:01:36.314402+00:00",
+      "rpc_host": "mainnet.tellorlayer.com"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_micro_reports.json": {
+    "archive": "manifests/data__manifests__tellor_micro_reports.json",
+    "archive_sha256": "b2d0534c40910fc16c3c719bbad05546fcaca29ba51ab2f22fbb40d05da5adef",
+    "original_sha256": "38d1a53c6d0514e8927612f574c1356b98fda6e9a8a1fc1ecef359110a7c385e",
+    "original_bytes": 1745,
+    "prior_archived_original_sha256": "38d1a53c6d0514e8927612f574c1356b98fda6e9a8a1fc1ecef359110a7c385e",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-28T10:38:45.528027+00:00",
+      "post_cutoff_timestamp_rows": 0,
+      "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484",
+      "source_method": "block_results"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_rewards_full.json": {
+    "archive": "manifests/data__manifests__tellor_rewards_full.json",
+    "archive_sha256": "55d260d3d15f0d93a3f692f9e051120b7e350b807a1e8d8a7e3b2568cbcea88e",
+    "original_sha256": "8951ac40cb56ec1a6fd4d2322dfc58bf3a168e1532151ecb1807b84122e0b56d",
+    "original_bytes": 1685,
+    "prior_archived_original_sha256": "8951ac40cb56ec1a6fd4d2322dfc58bf3a168e1532151ecb1807b84122e0b56d",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T08:33:57.155371+00:00",
+      "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/tellor_tips_withdrawals.json": {
+    "archive": "manifests/data__manifests__tellor_tips_withdrawals.json",
+    "archive_sha256": "881b281ecc92315a0837439193153366080e8cedbe8a635dc2da771f1175f01d",
+    "original_sha256": "72859c8bf82fa1061af168a7f64cd7853c946a9531ca92b955594e91e8cc7693",
+    "original_bytes": 1201,
+    "prior_archived_original_sha256": "72859c8bf82fa1061af168a7f64cd7853c946a9531ca92b955594e91e8cc7693",
+    "matches_prior_archive": true,
+    "recorded_fields": {
+      "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+      "cutoff_height": 19890860,
+      "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+      "generated_at_utc": "2026-07-27T05:09:01.520875+00:00",
+      "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/uma_crosschain_links.json": {
+    "archive": "manifests/data__manifests__uma_crosschain_links.json",
+    "archive_sha256": "dabdb5f4cd0d32894267f7b6209ac8d61df6380c75502a67c55da25bdbb74f20",
+    "original_sha256": "9e9cff05f681d05f5ecfbbda6c42a77e2840e675036eac63145cf6290381677e",
+    "original_bytes": 367,
+    "prior_archived_original_sha256": "9e9cff05f681d05f5ecfbbda6c42a77e2840e675036eac63145cf6290381677e",
+    "matches_prior_archive": true,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/uma_dvm_ledger.json": {
+    "archive": "manifests/data__manifests__uma_dvm_ledger.json",
+    "archive_sha256": "bee1fc6d8f409db584924c0f5ee9b1d6df2eb2fd2f13297c1ddaa5bd14196396",
+    "original_sha256": "2488506f929760564a13f68ae0cfe35013e511f402e1ee8a4ef24ccd069fc672",
+    "original_bytes": 870,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {},
+    "claim_status": "retained historical record; not recollected or independently attested"
+  },
+  "data/manifests/uma_phase2_analysis.json": {
+    "archive": "manifests/data__manifests__uma_phase2_analysis.json",
+    "archive_sha256": "e30e1bec184df3804300b0142da94cf699f9b2cfa70e0c3642f937c13d521393",
+    "original_sha256": "fa689ae90fa9ef5475d475b04ace3aa7d9570778e85a26685e3b756d40a746a8",
+    "original_bytes": 2753,
+    "prior_archived_original_sha256": null,
+    "matches_prior_archive": null,
+    "recorded_fields": {
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "generated_at_utc": "2026-07-21T10:56:08.991266+00:00"
+    },
+    "claim_status": "retained historical record; not recollected or independently attested"
+  }
+}

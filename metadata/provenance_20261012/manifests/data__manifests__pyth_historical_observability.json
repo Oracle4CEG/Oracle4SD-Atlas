@@ -1,0 +1,24 @@
+{
+  "original_relative_path": "data/manifests/pyth_historical_observability.json",
+  "original_sha256": "87df856e3ae931680c574106495e7ea5b1add3003e94d8459e685ccc099cfe92",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "dataset": "Pyth OIS historical observability boundary",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-28T11:26:02.294634+00:00",
+    "output": "data:/curated/pyth_ois_historical_observability.jsonl",
+    "publisher_caps_recoverable": true,
+    "quality_fields_improperly_imputed_as_zero": 0,
+    "realized_reward_stake_slash_transfers_preserved": true,
+    "requested_quality_fields": 4,
+    "ring_buffer_slots": 52,
+    "rows": 6,
+    "source_files": [
+      "data:/raw/pyth_ois/source_governance/staking/programs/integrity-pool/src/utils/constants.rs",
+      "data:/raw/pyth_ois/source_governance/staking/programs/integrity-pool/src/state/pool.rs",
+      "data:/raw/pyth_ois/source_governance/staking/cli/src/instructions.rs",
+      "data:/raw/pyth_ois/source_governance/staking/integration-tests/tests/claim.rs"
+    ]
+  }
+}

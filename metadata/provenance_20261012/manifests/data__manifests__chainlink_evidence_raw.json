@@ -1,0 +1,59 @@
+{
+  "original_relative_path": "data/manifests/chainlink_evidence_raw.json",
+  "original_sha256": "b066b5ef93f6c5f021448005c69c84f68eb5a1d78609827d895930e86c841879",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "chain_id": 1,
+    "cutoff_block": 25433938,
+    "eth_usd_feed": {
+      "aggregators": [
+        "0x00c7a37b03690fb9f41b5c5af8131735c7275446",
+        "0x37bc7498f4ff12c19678ee8fe19d713b87f6a9e6",
+        "0x7d4e742018fb52e48b08be73d041c18b21de6fb5",
+        "0xb103ede8acd6f0c106b7a5772e9d24e34f5ebc2c",
+        "0xd3fcd40153e56110e6eeae13e12530e26c9cb4fd",
+        "0xe62b71cf983019bff55bc83b48601ce8419650cc",
+        "0xf79d6afbb6da890132f9d7c355e3015f15f3406f"
+      ],
+      "chunks": 69,
+      "event_counts_raw_all_phase_contracts": {
+        "AnswerUpdated": 47074,
+        "NewTransmission": 16005
+      },
+      "from_block": 18572190,
+      "logs": 63079,
+      "phase_id": 7,
+      "phase_intervals": [
+        {
+          "aggregator": "0xe62b71cf983019bff55bc83b48601ce8419650cc",
+          "phase_id": 6,
+          "valid_from_block": 18572190,
+          "valid_to_block": 20822020
+        },
+        {
+          "aggregator": "0x7d4e742018fb52e48b08be73d041c18b21de6fb5",
+          "phase_id": 7,
+          "valid_from_block": 20822021,
+          "valid_to_block": 25433938
+        }
+      ],
+      "start_phase_id": 6,
+      "to_block": 25433938
+    },
+    "eth_usd_proxy": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+    "generated_at_utc": "2026-07-20T12:42:22.847173+00:00",
+    "interpretation_guard": "Transfers are reconciliation evidence; feed events establish service timing but do not alone prove a valid alert.",
+    "link_flows": {
+      "chunks": 69,
+      "direction_counts": {
+        "incoming_to_protocol": 44079,
+        "outgoing_from_protocol": 33124
+      },
+      "from_block": 18572190,
+      "logs": 77203,
+      "to_block": 25433938
+    },
+    "link_token": "0x514910771af9ca656af840dff83e8264ecf986ca",
+    "protocol": "Chainlink Staking v0.2 supporting evidence"
+  }
+}

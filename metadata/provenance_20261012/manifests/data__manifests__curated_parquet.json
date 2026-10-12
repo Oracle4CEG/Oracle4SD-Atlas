@@ -1,0 +1,406 @@
+{
+  "original_relative_path": "data/manifests/curated_parquet.json",
+  "original_sha256": "9159e5395e1cf9fbe5ac8f10e9bae4021200856023c9bda79626ab40c3c9f743",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "compression": "zstd",
+    "dataset": "Curated Oracle accountability Parquet export",
+    "files": [
+      {
+        "bytes": 4953032,
+        "parquet": "data:/curated/parquet/chainlink_eth_usd_reports.parquet",
+        "rows": 62575,
+        "schema_mode": "inferred",
+        "source": "data:/curated/chainlink_eth_usd_reports.jsonl"
+      },
+      {
+        "bytes": 3492033,
+        "parquet": "data:/curated/parquet/chainlink_event_link_flow_qc.parquet",
+        "rows": 51372,
+        "schema_mode": "inferred",
+        "source": "data:/curated/chainlink_event_link_flow_qc.jsonl"
+      },
+      {
+        "bytes": 2876017,
+        "parquet": "data:/curated/parquet/chainlink_link_flows.parquet",
+        "rows": 77203,
+        "schema_mode": "inferred",
+        "source": "data:/curated/chainlink_link_flows.jsonl"
+      },
+      {
+        "bytes": 5505766,
+        "parquet": "data:/curated/parquet/chainlink_staking_v02_events.parquet",
+        "rows": 174890,
+        "schema_mode": "inferred",
+        "source": "data:/curated/chainlink_staking_v02_events.jsonl"
+      },
+      {
+        "bytes": 12406334,
+        "parquet": "data:/curated/parquet/chronicle_ethereum_events.parquet",
+        "rows": 140526,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/chronicle_ethereum_events.jsonl"
+      },
+      {
+        "bytes": 3863,
+        "parquet": "data:/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+        "rows": 2,
+        "schema_mode": "inferred",
+        "source": "data:/curated/chronicle_redstone_settlement_interfaces.jsonl"
+      },
+      {
+        "bytes": 42573,
+        "parquet": "data:/curated/parquet/dia_staking_events.parquet",
+        "rows": 801,
+        "schema_mode": "inferred",
+        "source": "data:/curated/dia_staking_events.jsonl"
+      },
+      {
+        "bytes": 18638,
+        "parquet": "data:/curated/parquet/dia_staking_withdrawals.parquet",
+        "rows": 129,
+        "schema_mode": "inferred",
+        "source": "data:/curated/dia_staking_withdrawals.jsonl"
+      },
+      {
+        "bytes": 5484,
+        "parquet": "data:/curated/parquet/ecosystem_observability_evidence.parquet",
+        "rows": 2,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/ecosystem_observability_evidence.jsonl"
+      },
+      {
+        "bytes": 6064,
+        "parquet": "data:/curated/parquet/flare_beneficiary_chill_events.parquet",
+        "rows": 6,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/flare_beneficiary_chill_events.jsonl"
+      },
+      {
+        "bytes": 1806,
+        "parquet": "data:/curated/parquet/flare_beneficiary_chill_state.parquet",
+        "rows": 6,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_beneficiary_chill_state.jsonl"
+      },
+      {
+        "bytes": 258856,
+        "parquet": "data:/curated/parquet/flare_provider_conditions.parquet",
+        "rows": 14379,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_provider_conditions.jsonl"
+      },
+      {
+        "bytes": 16768,
+        "parquet": "data:/curated/parquet/flare_provider_failures.parquet",
+        "rows": 3742,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_provider_failures.jsonl"
+      },
+      {
+        "bytes": 1268079,
+        "parquet": "data:/curated/parquet/flare_provider_feed_performance.parquet",
+        "rows": 869278,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_provider_feed_performance.jsonl"
+      },
+      {
+        "bytes": 45031,
+        "parquet": "data:/curated/parquet/flare_provider_passes.parquet",
+        "rows": 14379,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_provider_passes.jsonl"
+      },
+      {
+        "bytes": 22228,
+        "parquet": "data:/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+        "rows": 183,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/flare_reward_claim_epoch_qc.jsonl"
+      },
+      {
+        "bytes": 692913421,
+        "parquet": "data:/curated/parquet/flare_reward_claim_events.parquet",
+        "rows": 18468735,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/flare_reward_claim_events.jsonl"
+      },
+      {
+        "bytes": 714097,
+        "parquet": "data:/curated/parquet/flare_reward_claims.parquet",
+        "rows": 49858,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_reward_claims.jsonl"
+      },
+      {
+        "bytes": 39711,
+        "parquet": "data:/curated/parquet/flare_reward_component_attribution.parquet",
+        "rows": 86274,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_reward_component_attribution.jsonl"
+      },
+      {
+        "bytes": 23651,
+        "parquet": "data:/curated/parquet/flare_reward_epochs.parquet",
+        "rows": 183,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_reward_epochs.jsonl"
+      },
+      {
+        "bytes": 892675,
+        "parquet": "data:/curated/parquet/flare_voter_registrations.parquet",
+        "rows": 15859,
+        "schema_mode": "inferred",
+        "source": "data:/curated/flare_voter_registrations.jsonl"
+      },
+      {
+        "bytes": 5224,
+        "parquet": "data:/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+        "rows": 6,
+        "schema_mode": "inferred",
+        "source": "data:/curated/phase4_oracle_economic_interfaces.jsonl"
+      },
+      {
+        "bytes": 9768251,
+        "parquet": "data:/curated/parquet/polygon_adapter_events.parquet",
+        "rows": 98267,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_adapter_events.jsonl"
+      },
+      {
+        "bytes": 1763991,
+        "parquet": "data:/curated/parquet/polygon_child_tunnel_events.parquet",
+        "rows": 13512,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_child_tunnel_events.jsonl"
+      },
+      {
+        "bytes": 47813666,
+        "parquet": "data:/curated/parquet/polygon_oov2_events.parquet",
+        "rows": 514794,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_oov2_events.jsonl"
+      },
+      {
+        "bytes": 12469227,
+        "parquet": "data:/curated/parquet/polygon_uma_gamma_links.parquet",
+        "rows": 42676,
+        "schema_mode": "all_varchar_for_mutable_metadata",
+        "source": "data:/curated/polygon_uma_gamma_links.jsonl"
+      },
+      {
+        "bytes": 1518161,
+        "parquet": "data:/curated/parquet/polygon_uma_request_flow_qc.parquet",
+        "rows": 42676,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_uma_request_flow_qc.jsonl"
+      },
+      {
+        "bytes": 11167492,
+        "parquet": "data:/curated/parquet/polygon_uma_request_rounds.parquet",
+        "rows": 42676,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_uma_request_rounds.jsonl"
+      },
+      {
+        "bytes": 19223359,
+        "parquet": "data:/curated/parquet/polygon_uma_token_flows.parquet",
+        "rows": 562536,
+        "schema_mode": "inferred",
+        "source": "data:/curated/polygon_uma_token_flows.jsonl"
+      },
+      {
+        "bytes": 92640198,
+        "parquet": "data:/curated/parquet/polymarket_gamma_markets.parquet",
+        "rows": 463022,
+        "schema_mode": "all_varchar_for_mutable_metadata",
+        "source": "data:/curated/polymarket_gamma_markets.jsonl"
+      },
+      {
+        "bytes": 27297906,
+        "parquet": "data:/curated/parquet/pyth_ois_economic_events.parquet",
+        "rows": 459083,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/pyth_ois_economic_events.jsonl"
+      },
+      {
+        "bytes": 3703,
+        "parquet": "data:/curated/parquet/pyth_ois_historical_observability.parquet",
+        "rows": 6,
+        "schema_mode": "inferred",
+        "source": "data:/curated/pyth_ois_historical_observability.jsonl"
+      },
+      {
+        "bytes": 71184144,
+        "parquet": "data:/curated/parquet/pyth_ois_instructions.parquet",
+        "rows": 518560,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/pyth_ois_instructions.jsonl"
+      },
+      {
+        "bytes": 17619,
+        "parquet": "data:/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+        "rows": 6566,
+        "schema_mode": "inferred",
+        "source": "data:/curated/pyth_ois_publisher_epoch_factors.jsonl"
+      },
+      {
+        "bytes": 3831,
+        "parquet": "data:/curated/parquet/pyth_ois_reward_epochs.parquet",
+        "rows": 49,
+        "schema_mode": "inferred",
+        "source": "data:/curated/pyth_ois_reward_epochs.jsonl"
+      },
+      {
+        "bytes": 6380,
+        "parquet": "data:/curated/parquet/pyth_ois_slash_counters.parquet",
+        "rows": 134,
+        "schema_mode": "inferred",
+        "source": "data:/curated/pyth_ois_slash_counters.jsonl"
+      },
+      {
+        "bytes": 16505145,
+        "parquet": "data:/curated/parquet/pyth_ois_stake_events.parquet",
+        "rows": 122071,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/pyth_ois_stake_events.jsonl"
+      },
+      {
+        "bytes": 20623170,
+        "parquet": "data:/curated/parquet/redstone_ethereum_push_events.parquet",
+        "rows": 614319,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/redstone_ethereum_push_events.jsonl"
+      },
+      {
+        "bytes": 148286845,
+        "parquet": "data:/curated/parquet/tellor_aggregate_height_index.parquet",
+        "rows": 9972753,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_aggregate_height_index.jsonl"
+      },
+      {
+        "bytes": 3618,
+        "parquet": "data:/curated/parquet/tellor_dispute_payments.parquet",
+        "rows": 21,
+        "schema_mode": "inferred",
+        "source": "data:/curated/tellor_dispute_payments.jsonl"
+      },
+      {
+        "bytes": 6054,
+        "parquet": "data:/curated/parquet/tellor_dispute_votes.parquet",
+        "rows": 55,
+        "schema_mode": "inferred",
+        "source": "data:/curated/tellor_dispute_votes.jsonl"
+      },
+      {
+        "bytes": 12935,
+        "parquet": "data:/curated/parquet/tellor_disputes.parquet",
+        "rows": 13,
+        "schema_mode": "inferred",
+        "source": "data:/curated/tellor_disputes.jsonl"
+      },
+      {
+        "bytes": 5662,
+        "parquet": "data:/curated/parquet/tellor_jail_events.parquet",
+        "rows": 26,
+        "schema_mode": "inferred",
+        "source": "data:/curated/tellor_jail_events.jsonl"
+      },
+      {
+        "bytes": 5867,
+        "parquet": "data:/curated/parquet/tellor_jail_lifecycles.parquet",
+        "rows": 13,
+        "schema_mode": "inferred",
+        "source": "data:/curated/tellor_jail_lifecycles.jsonl"
+      },
+      {
+        "bytes": 2834,
+        "parquet": "data:/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+        "rows": 0,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_legacy_selector_reward_accruals.jsonl"
+      },
+      {
+        "bytes": 1024662,
+        "parquet": "data:/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+        "rows": 59920,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_liveness_reward_distributions_full.jsonl"
+      },
+      {
+        "bytes": 462712658,
+        "parquet": "data:/curated/parquet/tellor_micro_reports.parquet",
+        "rows": 82866640,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_micro_reports.jsonl"
+      },
+      {
+        "bytes": 1595132,
+        "parquet": "data:/curated/parquet/tellor_query_tip_funding.parquet",
+        "rows": 29310,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_query_tip_funding.jsonl"
+      },
+      {
+        "bytes": 35033877,
+        "parquet": "data:/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+        "rows": 715362,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_reporter_reward_accruals_full.jsonl"
+      },
+      {
+        "bytes": 1287034,
+        "parquet": "data:/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+        "rows": 20380,
+        "schema_mode": "collector_native_parquet",
+        "source": "data:/curated/tellor_tip_withdrawals_realized.jsonl"
+      },
+      {
+        "bytes": 469143,
+        "parquet": "data:/curated/parquet/uma_dvm_requests.parquet",
+        "rows": 3744,
+        "schema_mode": "inferred",
+        "source": "data:/curated/uma_dvm_requests.jsonl"
+      },
+      {
+        "bytes": 23139868,
+        "parquet": "data:/curated/parquet/uma_dvm_staking_events.parquet",
+        "rows": 2211876,
+        "schema_mode": "inferred",
+        "source": "data:/curated/uma_dvm_staking_events.jsonl"
+      },
+      {
+        "bytes": 39203134,
+        "parquet": "data:/curated/parquet/uma_dvm_voter_payoffs.parquet",
+        "rows": 2663684,
+        "schema_mode": "inferred",
+        "source": "data:/curated/uma_dvm_voter_payoffs.jsonl"
+      },
+      {
+        "bytes": 22818301,
+        "parquet": "data:/curated/parquet/uma_dvm_votes_events.parquet",
+        "rows": 3587231,
+        "schema_mode": "inferred",
+        "source": "data:/curated/uma_dvm_votes_events.jsonl"
+      },
+      {
+        "bytes": 214885,
+        "parquet": "data:/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+        "rows": 835,
+        "schema_mode": "inferred",
+        "source": "data:/curated/uma_polygon_ethereum_grade_a_links.jsonl"
+      },
+      {
+        "bytes": 4852468129,
+        "parquet": "data:/curated/parquet/accountability_events.parquet",
+        "rows": 105588120,
+        "schema_mode": "common_accountability_schema_v1",
+        "source": "derived from QC-complete native Parquet ledgers"
+      }
+    ],
+    "generated_at_utc": "2026-07-28T11:46:52.975770+00:00",
+    "note": "Counts are per table and must not be summed as unique accountability events.",
+    "total_rows_across_tables": 231251318
+  }
+}

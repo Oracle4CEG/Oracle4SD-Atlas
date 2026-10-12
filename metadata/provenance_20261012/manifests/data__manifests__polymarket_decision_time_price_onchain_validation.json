@@ -1,0 +1,27 @@
+{
+  "original_relative_path": "data/manifests/polymarket_decision_time_price_onchain_validation.json",
+  "original_sha256": "18755f1dbd30a8cf1d926ac1a64ee5d4d31da578dbc6ae895300c00854ef476b",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "dataset": "Polymarket decision-time price on-chain validation",
+    "sampling": "24 deterministic cases stratified by protocol outcome and decision time",
+    "chain_id": 137,
+    "block_window": 5000,
+    "price_tolerance": 0.02,
+    "checks": {
+      "sample_cases": 24,
+      "side_rows": 48,
+      "both_sides_found": 41,
+      "successful_receipts": 41,
+      "before_or_at_proposal": 41,
+      "within_0_02_price_tolerance": 26,
+      "post_decision_logs": 0,
+      "median_absolute_price_difference": 0.008999999999999998,
+      "p95_absolute_price_difference": 0.10999999999999999,
+      "api_onchain_spearman": 0.9366041131025689
+    },
+    "output": "workspace:/data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+    "evidence_grade_rule": "Grade B corroborated when the linked token has a successful pre-decision OrderFilled receipt; API sampling price is not asserted equal to the final on-chain fill.",
+    "all_required_assertions_pass": true
+  }
+}

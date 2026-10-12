@@ -1,0 +1,470 @@
+{
+  "scripts/ingest_chainlink_evidence.py": {
+    "available_source_sha256": "15e379baf67f2c860c56d9a370a0ba7e179bd827180f8778a555f7a4b7b81fcf",
+    "available_source_archive": "code/production/scripts/ingest_chainlink_evidence.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_chainlink_evidence.py",
+    "current_reconstruction_sha256": "15e379baf67f2c860c56d9a370a0ba7e179bd827180f8778a555f7a4b7b81fcf",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_chainlink_evidence.py": {
+    "available_source_sha256": "efec53e2ef70b7f24bf7b83900b2356bbd7d4a0c6c725c53c35986bbfffe97eb",
+    "available_source_archive": "code/production/scripts/build_chainlink_evidence.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_chainlink_evidence.py",
+    "current_reconstruction_sha256": "efec53e2ef70b7f24bf7b83900b2356bbd7d4a0c6c725c53c35986bbfffe97eb",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/chainlink_evidence_build.py": {
+    "available_source_sha256": "84c033eed611ca25bd9246b6290da7a4d8ebc02ac5917e8a10d33724817e567a",
+    "available_source_archive": "code/production/src/oracle_ledger/chainlink_evidence_build.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/chainlink_evidence_build.py",
+    "current_reconstruction_sha256": "84c033eed611ca25bd9246b6290da7a4d8ebc02ac5917e8a10d33724817e567a",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_chainlink_staking_v02.py": {
+    "available_source_sha256": "31a19186dba9c3f8c8eee357399716fefee2883b8873e59891984b7af01bf000",
+    "available_source_archive": "code/production/scripts/ingest_chainlink_staking_v02.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_chainlink_staking_v02.py",
+    "current_reconstruction_sha256": "31a19186dba9c3f8c8eee357399716fefee2883b8873e59891984b7af01bf000",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_chainlink_staking_v02_ledger.py": {
+    "available_source_sha256": "317547406c45cc250d25e047e0db313a22cc015a0026ce4df0387acc5ba9349e",
+    "available_source_archive": "code/production/scripts/build_chainlink_staking_v02_ledger.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_chainlink_staking_v02_ledger.py",
+    "current_reconstruction_sha256": "317547406c45cc250d25e047e0db313a22cc015a0026ce4df0387acc5ba9349e",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/chainlink_staking.py": {
+    "available_source_sha256": "479d92080c92ce548ddd592f1af0e0b3a2d0a6e21f57319e2ba12338e16231f2",
+    "available_source_archive": "historical_producers/src/oracle_ledger/chainlink_staking.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/chainlink_staking.py",
+    "current_reconstruction_sha256": "e01453980d33b90920bdaa6c667a15a09786160848bfbf66eec353a9f747ed6c",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_chronicle_redstone_events.py": {
+    "available_source_sha256": "a95b4704400477e751a5633cb11664a1307da69ae3e63ce99bfebad41f34029d",
+    "available_source_archive": "historical_producers/scripts/ingest_chronicle_redstone_events.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_chronicle_redstone_events.py",
+    "current_reconstruction_sha256": "e1098379f1f27149377cdf3bdd00389cef166d25a07cef9b31fa96ebfa67d194",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/ecosystem_events.py": {
+    "available_source_sha256": "1c899cf62f668da30016f438bb831aadb4b7c09447405bb6ee3dcacffed85ba5",
+    "available_source_archive": "code/production/src/oracle_ledger/ecosystem_events.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/ecosystem_events.py",
+    "current_reconstruction_sha256": "1c899cf62f668da30016f438bb831aadb4b7c09447405bb6ee3dcacffed85ba5",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/audit_chronicle_redstone_settlement.py": {
+    "available_source_sha256": "975685e29729fee56638130984243c8d0e8971e82cb69fbcfde391db376a923b",
+    "available_source_archive": "code/production/scripts/audit_chronicle_redstone_settlement.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/audit_chronicle_redstone_settlement.py",
+    "current_reconstruction_sha256": "975685e29729fee56638130984243c8d0e8971e82cb69fbcfde391db376a923b",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_dia_staking.py": {
+    "available_source_sha256": "75c0f719ab04ea490cdcf0f1bdf1956fb8d00516a7f4f3bb1778a4b7bdb2c738",
+    "available_source_archive": "code/production/scripts/ingest_dia_staking.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_dia_staking.py",
+    "current_reconstruction_sha256": "75c0f719ab04ea490cdcf0f1bdf1956fb8d00516a7f4f3bb1778a4b7bdb2c738",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_flare_fsp_rewards.py": {
+    "available_source_sha256": "a892449cdb200f44d6a8f728228e30080819497497fa0a78e76b5510d768b222",
+    "available_source_archive": "historical_producers/scripts/ingest_flare_fsp_rewards.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_flare_fsp_rewards.py",
+    "current_reconstruction_sha256": "bad9f106245eded30d294e02f15f40b72b0fa93403210c083c669f953f0c62ee",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/flare_fsp.py": {
+    "available_source_sha256": "c4eb25eb6f2cfb4968580b6b4332846fafede8f544e46a224aa9b0fecb020992",
+    "available_source_archive": "code/production/src/oracle_ledger/flare_fsp.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/flare_fsp.py",
+    "current_reconstruction_sha256": "c4eb25eb6f2cfb4968580b6b4332846fafede8f544e46a224aa9b0fecb020992",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_flare_claims_rpc_raw.py": {
+    "available_source_sha256": "05f0ff200040b89d739646b36b1c06c31844108cce2f1aa91754f9fe90229679",
+    "available_source_archive": "code/production/scripts/ingest_flare_claims_rpc_raw.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_flare_claims_rpc_raw.py",
+    "current_reconstruction_sha256": "05f0ff200040b89d739646b36b1c06c31844108cce2f1aa91754f9fe90229679",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_flare_claims_chill.py": {
+    "available_source_sha256": "1a3b98605b61e1c8446e4cd21a833144f493636c6619821a36d10a449ea81b1b",
+    "available_source_archive": "code/production/scripts/ingest_flare_claims_chill.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_flare_claims_chill.py",
+    "current_reconstruction_sha256": "1a3b98605b61e1c8446e4cd21a833144f493636c6619821a36d10a449ea81b1b",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/flare_events.py": {
+    "available_source_sha256": "02fe54f4513755b1feba90b2ab550cb635d2b3084f9dedf220d2fea0ca63fe5d",
+    "available_source_archive": "code/production/src/oracle_ledger/flare_events.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/flare_events.py",
+    "current_reconstruction_sha256": "02fe54f4513755b1feba90b2ab550cb635d2b3084f9dedf220d2fea0ca63fe5d",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_flare_reward_attribution.py": {
+    "available_source_sha256": "4770a9bf0811d122506d6a37e3b218399fab32208d638159d17c59ffa062f8fe",
+    "available_source_archive": "code/production/scripts/build_flare_reward_attribution.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_flare_reward_attribution.py",
+    "current_reconstruction_sha256": "4770a9bf0811d122506d6a37e3b218399fab32208d638159d17c59ffa062f8fe",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_phase4_economic_interfaces.py": {
+    "available_source_sha256": "c67922108928020a10e491c6cf4da84f5707d5b6518300e1db372923879882d3",
+    "available_source_archive": "code/production/scripts/build_phase4_economic_interfaces.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_phase4_economic_interfaces.py",
+    "current_reconstruction_sha256": "c67922108928020a10e491c6cf4da84f5707d5b6518300e1db372923879882d3",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polygon_uma_legacy_bridge.py": {
+    "available_source_sha256": "dbd46c233e145364152886d6d03d5a92510f1d4c8ee6b79eaac0dc1914efa1a0",
+    "available_source_archive": "code/production/scripts/ingest_polygon_uma_legacy_bridge.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_polygon_uma_legacy_bridge.py",
+    "current_reconstruction_sha256": "dbd46c233e145364152886d6d03d5a92510f1d4c8ee6b79eaac0dc1914efa1a0",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_polygon_uma_ledger.py": {
+    "available_source_sha256": "d600200421c30d8c97f2ae5ea70f20f31b138727e9fa90cda420fe3f8e1e5600",
+    "available_source_archive": "code/production/scripts/build_polygon_uma_ledger.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_polygon_uma_ledger.py",
+    "current_reconstruction_sha256": "d600200421c30d8c97f2ae5ea70f20f31b138727e9fa90cda420fe3f8e1e5600",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/polygon_uma.py": {
+    "available_source_sha256": "1d600c6cdc22decf889f8ff184ff707fc0cc248ac538bc10b4d5717834d9b43d",
+    "available_source_archive": "code/production/src/oracle_ledger/polygon_uma.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/polygon_uma.py",
+    "current_reconstruction_sha256": "1d600c6cdc22decf889f8ff184ff707fc0cc248ac538bc10b4d5717834d9b43d",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/polygon_uma_ledger.py": {
+    "available_source_sha256": "1deffb06a81aafda849bb1093f6e5ba423cf73ff0618d311c5599c5f9bcdfc5b",
+    "available_source_archive": "code/production/src/oracle_ledger/polygon_uma_ledger.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/polygon_uma_ledger.py",
+    "current_reconstruction_sha256": "1deffb06a81aafda849bb1093f6e5ba423cf73ff0618d311c5599c5f9bcdfc5b",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polygon_uma_flows.py": {
+    "available_source_sha256": "14cdc27745f4080482cbf160b5e0c212653a14fe53301531d94c1f74c0877314",
+    "available_source_archive": "code/production/scripts/ingest_polygon_uma_flows.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_polygon_uma_flows.py",
+    "current_reconstruction_sha256": "14cdc27745f4080482cbf160b5e0c212653a14fe53301531d94c1f74c0877314",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_polygon_uma_flows.py": {
+    "available_source_sha256": "1dc6e60d91a4e985a25530eea36e149f0ab06300c6f35c026ebec7e9f2d27c03",
+    "available_source_archive": "code/production/scripts/build_polygon_uma_flows.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_polygon_uma_flows.py",
+    "current_reconstruction_sha256": "1dc6e60d91a4e985a25530eea36e149f0ab06300c6f35c026ebec7e9f2d27c03",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/polygon_uma_flows.py": {
+    "available_source_sha256": "01cb274d475eb54b98bb7a838ac7af237e02f4de83fc6102977e9e549fa7c6af",
+    "available_source_archive": "code/production/src/oracle_ledger/polygon_uma_flows.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/polygon_uma_flows.py",
+    "current_reconstruction_sha256": "01cb274d475eb54b98bb7a838ac7af237e02f4de83fc6102977e9e549fa7c6af",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polymarket_gamma.py": {
+    "available_source_sha256": "c3b70f801e4a014e186636fa00b8603d003cff264f75c26407ba76f979554cbd",
+    "available_source_archive": "code/production/scripts/ingest_polymarket_gamma.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_polymarket_gamma.py",
+    "current_reconstruction_sha256": "c3b70f801e4a014e186636fa00b8603d003cff264f75c26407ba76f979554cbd",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polymarket_gamma_questions.py": {
+    "available_source_sha256": "bb51d74346e275b50559a51395a79d5fbcf39a3718858fe0fa249080c5cd1649",
+    "available_source_archive": "code/production/scripts/ingest_polymarket_gamma_questions.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_polymarket_gamma_questions.py",
+    "current_reconstruction_sha256": "bb51d74346e275b50559a51395a79d5fbcf39a3718858fe0fa249080c5cd1649",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/finalize_polymarket_gamma.py": {
+    "available_source_sha256": "8a4c80656088a518f583723688ab63911bd0019e0490c27b7298e8e6b29d1bd3",
+    "available_source_archive": "code/production/scripts/finalize_polymarket_gamma.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/finalize_polymarket_gamma.py",
+    "current_reconstruction_sha256": "8a4c80656088a518f583723688ab63911bd0019e0490c27b7298e8e6b29d1bd3",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polymarket_decision_prices.py": {
+    "available_source_sha256": "d7f5a916111ad4b653aa6012d0a2f99a145ab82ecca760ff992ec94a6362b5e0",
+    "available_source_archive": "historical_producers/scripts/ingest_polymarket_decision_prices.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": null,
+    "current_reconstruction_sha256": null,
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/validate_polymarket_price_evidence_onchain.py": {
+    "available_source_sha256": "0dc17f05a8a8627e42492169d699e11a9273ae40638c2e3f6e3d05cd70839f5d",
+    "available_source_archive": "historical_producers/scripts/validate_polymarket_price_evidence_onchain.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": null,
+    "current_reconstruction_sha256": null,
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_polymarket_decision_web_evidence.py": {
+    "available_source_sha256": "eaa2d81d7e23fd9f0c290b0b4b05fd2c8e3d0d2b6e17b144917691b65e80c866",
+    "available_source_archive": "historical_producers/scripts/ingest_polymarket_decision_web_evidence.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": null,
+    "current_reconstruction_sha256": null,
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_pyth_ois_history.py": {
+    "available_source_sha256": "df626588a392f514815fc3f9cecb1901fb3579b691b1cbff22b43c949ac7ccf4",
+    "available_source_archive": "code/production/scripts/ingest_pyth_ois_history.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_pyth_ois_history.py",
+    "current_reconstruction_sha256": "df626588a392f514815fc3f9cecb1901fb3579b691b1cbff22b43c949ac7ccf4",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/pyth_history.py": {
+    "available_source_sha256": "28dc3e04de09b15c93edee8a40b0d5a086d460cea8d8cd303f39401807e6489c",
+    "available_source_archive": "code/production/src/oracle_ledger/pyth_history.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/pyth_history.py",
+    "current_reconstruction_sha256": "28dc3e04de09b15c93edee8a40b0d5a086d460cea8d8cd303f39401807e6489c",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/audit_pyth_historical_boundary.py": {
+    "available_source_sha256": "1f896c2df813f9f5487d32c93aed5c555cdb480e2bceb439d2bb63d6886593b9",
+    "available_source_archive": "code/production/scripts/audit_pyth_historical_boundary.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/audit_pyth_historical_boundary.py",
+    "current_reconstruction_sha256": "1f896c2df813f9f5487d32c93aed5c555cdb480e2bceb439d2bb63d6886593b9",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_pyth_ois_rolling_state.py": {
+    "available_source_sha256": "d8a9cc8835d99cdfc144f09a5aa7f71fc6544da19816b84329b4c889e27fd764",
+    "available_source_archive": "historical_producers/scripts/ingest_pyth_ois_rolling_state.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_pyth_ois_rolling_state.py",
+    "current_reconstruction_sha256": "5c96c897f20d3ce3e444002269afdb105eab9d5fb9317d011d321a8cb03c142a",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/pyth_ois.py": {
+    "available_source_sha256": "83dcf8f687e664c2227026d0aa046593a96a67d5b50e130048b9a3caf8a50b9b",
+    "available_source_archive": "code/production/src/oracle_ledger/pyth_ois.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/pyth_ois.py",
+    "current_reconstruction_sha256": "83dcf8f687e664c2227026d0aa046593a96a67d5b50e130048b9a3caf8a50b9b",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_aggregate_index.py": {
+    "available_source_sha256": "b20074223b39bc2a6339f49d410416509fb4fc167059a99bf490ad414149695f",
+    "available_source_archive": "code/production/scripts/ingest_tellor_aggregate_index.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_aggregate_index.py",
+    "current_reconstruction_sha256": "b20074223b39bc2a6339f49d410416509fb4fc167059a99bf490ad414149695f",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/tellor_abci.py": {
+    "available_source_sha256": "84416c4b2d2b078343865224a07d0d171a50d84ca168029f524ab43e77613806",
+    "available_source_archive": "code/production/src/oracle_ledger/tellor_abci.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/tellor_abci.py",
+    "current_reconstruction_sha256": "84416c4b2d2b078343865224a07d0d171a50d84ca168029f524ab43e77613806",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_layer_disputes.py": {
+    "available_source_sha256": "40701cb2fbbed793d47e5e41bef18b0648fd5502d1b26462195bfc8ef5d720e6",
+    "available_source_archive": "code/production/scripts/ingest_tellor_layer_disputes.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_layer_disputes.py",
+    "current_reconstruction_sha256": "40701cb2fbbed793d47e5e41bef18b0648fd5502d1b26462195bfc8ef5d720e6",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/tellor_layer.py": {
+    "available_source_sha256": "f31a0eed6271b59f33c788da24cf8f0b9ab19fcf21537a4d23959f0b7b24fe9d",
+    "available_source_archive": "code/production/src/oracle_ledger/tellor_layer.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/tellor_layer.py",
+    "current_reconstruction_sha256": "f31a0eed6271b59f33c788da24cf8f0b9ab19fcf21537a4d23959f0b7b24fe9d",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_jail_lifecycle.py": {
+    "available_source_sha256": "f8b1434810ac4ccee6e299fff5ff9db2141025e5233970f1b02e3589c928708f",
+    "available_source_archive": "code/production/scripts/ingest_tellor_jail_lifecycle.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_jail_lifecycle.py",
+    "current_reconstruction_sha256": "f8b1434810ac4ccee6e299fff5ff9db2141025e5233970f1b02e3589c928708f",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_rewards_full.py": {
+    "available_source_sha256": "b3539adbae36a7282da96c7912f51f60dc1b14aa2338a353d9df87d12011667e",
+    "available_source_archive": "code/production/scripts/ingest_tellor_rewards_full.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_rewards_full.py",
+    "current_reconstruction_sha256": "b3539adbae36a7282da96c7912f51f60dc1b14aa2338a353d9df87d12011667e",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/tellor_rewards.py": {
+    "available_source_sha256": "cf35d25d33414685a9f15f6922a71d5e39e5e7a965e169d63df41e732351faaf",
+    "available_source_archive": "code/production/src/oracle_ledger/tellor_rewards.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/tellor_rewards.py",
+    "current_reconstruction_sha256": "cf35d25d33414685a9f15f6922a71d5e39e5e7a965e169d63df41e732351faaf",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_tips_withdrawals.py": {
+    "available_source_sha256": "f5dfb3069ed277f7c573c614f3ce970c4fe6991c1af2aa2642ab8dba915aaa85",
+    "available_source_archive": "code/production/scripts/ingest_tellor_tips_withdrawals.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_tips_withdrawals.py",
+    "current_reconstruction_sha256": "f5dfb3069ed277f7c573c614f3ce970c4fe6991c1af2aa2642ab8dba915aaa85",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/tellor_payments.py": {
+    "available_source_sha256": "a44a37adca32a8a2ff8343497c8a1ddfa6c19c685c36b5bff0091c3d3543fbce",
+    "available_source_archive": "code/production/src/oracle_ledger/tellor_payments.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/tellor_payments.py",
+    "current_reconstruction_sha256": "a44a37adca32a8a2ff8343497c8a1ddfa6c19c685c36b5bff0091c3d3543fbce",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_tellor_reports_block_results.py": {
+    "available_source_sha256": "9965b791108a499f2c6b069f5a5cab2e56d5419dfc00337a5e6129c1ee94c19d",
+    "available_source_archive": "code/production/scripts/ingest_tellor_reports_block_results.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_tellor_reports_block_results.py",
+    "current_reconstruction_sha256": "9965b791108a499f2c6b069f5a5cab2e56d5419dfc00337a5e6129c1ee94c19d",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/ingest_uma_dvm.py": {
+    "available_source_sha256": "32cc4bd678c729ea25dbdf035fc3571e7afe015c1d7e39cb6e2e6911512db9a8",
+    "available_source_archive": "code/production/scripts/ingest_uma_dvm.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/ingest_uma_dvm.py",
+    "current_reconstruction_sha256": "32cc4bd678c729ea25dbdf035fc3571e7afe015c1d7e39cb6e2e6911512db9a8",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_uma_dvm_ledger.py": {
+    "available_source_sha256": "388d62707a66b7a09ce30c9d2b8e09f64c5b8a566dc3e50cca80d6c7bcf1f575",
+    "available_source_archive": "code/production/scripts/build_uma_dvm_ledger.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_uma_dvm_ledger.py",
+    "current_reconstruction_sha256": "388d62707a66b7a09ce30c9d2b8e09f64c5b8a566dc3e50cca80d6c7bcf1f575",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/ledger_build.py": {
+    "available_source_sha256": "6c762e8a03db07e3c319c8a35501c61e7529d37550c2faf1a2d1abcfac21cfc2",
+    "available_source_archive": "code/production/src/oracle_ledger/ledger_build.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/ledger_build.py",
+    "current_reconstruction_sha256": "6c762e8a03db07e3c319c8a35501c61e7529d37550c2faf1a2d1abcfac21cfc2",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/analyze_uma_phase2.py": {
+    "available_source_sha256": "090e0ccc55bf26de3e0a3c0fd73e1697a72011f917c7e1050811ff2890f7f7ef",
+    "available_source_archive": "historical_producers/scripts/analyze_uma_phase2.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": null,
+    "current_reconstruction_sha256": null,
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/build_uma_crosschain_links.py": {
+    "available_source_sha256": "e072427fbe73f5f7406bd668380fafb851fbb3e5ca345f255fe1b199eb0de033",
+    "available_source_archive": "code/production/scripts/build_uma_crosschain_links.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/scripts/build_uma_crosschain_links.py",
+    "current_reconstruction_sha256": "e072427fbe73f5f7406bd668380fafb851fbb3e5ca345f255fe1b199eb0de033",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "src/oracle_ledger/uma_crosschain.py": {
+    "available_source_sha256": "a5b11957c81f567014a2b780ab5ec54bc4870c11f12fab195c692f22acd1cb01",
+    "available_source_archive": "code/production/src/oracle_ledger/uma_crosschain.py",
+    "archive_base": "repository",
+    "current_reconstruction_path": "code/reconstruction/src/oracle_ledger/uma_crosschain.py",
+    "current_reconstruction_sha256": "a5b11957c81f567014a2b780ab5ec54bc4870c11f12fab195c692f22acd1cb01",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  },
+  "scripts/applications/trustworthy_ai/run_challenge_benchmark.py": {
+    "available_source_sha256": "1b86228bab42eff702864809386dd4b2ec8843414cd25dc82678de30ec0ee78c",
+    "available_source_archive": "historical_producers/scripts/applications/trustworthy_ai/run_challenge_benchmark.py",
+    "archive_base": "supplement",
+    "current_reconstruction_path": "code/reconstruction/scripts/applications/trustworthy_ai/run_challenge_benchmark.py",
+    "current_reconstruction_sha256": "1b86228bab42eff702864809386dd4b2ec8843414cd25dc82678de30ec0ee78c",
+    "historical_executed_commit": null,
+    "limit": "Available source is not proof that this exact code ran during original acquisition."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-10-12T08:12:35.538231+00:00",
+  "release": "atlas-repaired-20261012",
+  "native_tables": 64,
+  "bound_tables": 64,
+  "groups": 28,
+  "archived_manifests": 39,
+  "available_producer_files": 52,
+  "native_bytes_rehashed": 1807346651,
+  "native_historical_hash_matches": 7,
+  "prior_manifest_hash_matches": 19,
+  "raw_files_rehashed": 688,
+  "raw_bytes_rehashed": 194091021,
+  "output_tables_bound": 95,
+  "failures": [],
+  "identity_and_binding_checks_passed": true,
+  "complete_historical_acquisition_provenance": false,
+  "scope": "This audit rechecks stored bytes and explicit document bindings; it does not independently validate past acquisition statements."
+}

@@ -1,0 +1,57 @@
+{
+  "original_relative_path": "data/manifests/polymarket_gamma.json",
+  "original_sha256": "499d09469101c3586386c82c951e4e3774a4d718fa2c233c22ffd7cf3734423f",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "closed_ascending_pages": 2935,
+    "closed_descending_pages": 1061,
+    "cutoff_utc": "2026-06-30T23:59:59+00:00",
+    "dataset": "Polymarket Gamma market metadata",
+    "interpretation_guard": "Gamma is mutable snapshot metadata; on-chain values remain authoritative.",
+    "markets": 463022,
+    "markets_created_before_cutoff": 308371,
+    "metadata_onchain_comparisons": {
+      "bond_match": 31984,
+      "bond_mismatch": 192,
+      "bond_missing": 8881,
+      "reward_match": 31984,
+      "reward_mismatch": 192,
+      "reward_missing": 8881
+    },
+    "open_pages": 635,
+    "outputs": {
+      "markets": "workspace:/data/curated/polymarket_gamma_markets.jsonl",
+      "uma_links": "workspace:/data/curated/polygon_uma_gamma_links.jsonl"
+    },
+    "pagination": "bidirectional keyset",
+    "raw_pages_or_batches": 7431,
+    "resolved_by_counts": {
+      "0x021de777cf8c1a9d97bd93f4a587d7fb7c982800": 14,
+      "0x0dd333859cf16942dd333d7570d839b8946ac221": 559,
+      "0x157ce2d672854c848c9b79c49a8cc6cc89176a49": 13080,
+      "0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d": 78995,
+      "0x65070be91477460d8a7aeeb94ef92fe056c2f2a7": 204577,
+      "0x69c47de9d4d3dad79590d61b9e05918e03775f24": 34920,
+      "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74": 27300,
+      "0x75ba4c1081a67e4984e23e2dfe8e631066c0697e": 197,
+      "0xb21182d0494521cf45dbbeebb5a3acaab6d22093": 5728,
+      "0xcb1822859cef82cd2eb4e6276c7916e692995130": 2816,
+      "0xcd2cd1b7cb8fed9aac8508aba3333aad81f1211f": 177
+    },
+    "scope_note": "Broad bidirectional discovery snapshot plus exhaustive lookup of every included on-chain UMA question; not an indiscriminate full Gamma warehouse.",
+    "snapshot_time_utc": "2026-07-20T10:52:44.978309+00:00",
+    "source": "https://gamma-api.polymarket.com/markets/keyset",
+    "targeted_question_batches": 2800,
+    "uma_round_gamma_grades_by_sample": {
+      "primary:A": 39808,
+      "primary:U": 1526,
+      "supplementary:A": 1249,
+      "supplementary:U": 92,
+      "unresolved:U": 1
+    },
+    "uma_round_gamma_link_grades": {
+      "A": 41057,
+      "U": 1619
+    }
+  }
+}

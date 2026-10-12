@@ -2,7 +2,7 @@
 
 Oracle4SD Atlas reconstructs how blockchain oracle requests are challenged, adjudicated and paid. Protocol decisions, independent factual truth, principal at risk, accrued entitlements and realized payments remain separate.
 
-[中文操作说明](docs/QUICKSTART_ZH.md)
+[中文操作说明](docs/QUICKSTART_ZH.md) · [Colab 验收步骤](docs/COLAB_ACCEPTANCE_ZH.md) · [DOI 登记材料](docs/DOI_REGISTRATION_ZH.md)
 
 **Reconstruction version:** `atlas-repaired-20261012`, common schema **2.0.0**. **Observation cutoff:** 2026-06-30 23:59:59 UTC. The earlier one-request teaching example remains available as `uma-public-rpc-case-v1`.
 
@@ -60,5 +60,7 @@ See [full reproduction instructions](docs/FULL_DATA.md) for downloading prepared
 | [tests](tests/) | Real-row regression fixtures and failure-path tests |
 
 The dataset covers native records from UMA, Chainlink, Tellor, Flare and Pyth, with limited Chronicle, RedStone and DIA extensions. The 56-category ecosystem census is a separate scope. Missing timestamps remain missing unless source evidence establishes them. Machine checks do not replace independent scientific review or a historical acquisition record.
+
+The [acquisition supplement](docs/ACQUISITION_PROVENANCE.md) binds all 64 inputs to 39 retained manifests, rechecks 688 raw-file hashes and records build-level lineage for all 95 canonical outputs. Unknown historical collector identities and execution commits remain explicit gaps. The [Colab acceptance guide](docs/COLAB_ACCEPTANCE_ZH.md) supplies the pinned notebook link, expected results and an evidence validator; actual hosted execution remains pending.
 
 Code is [MIT](LICENSE); original documentation and derived evidence are [CC BY 4.0](DATA_LICENSE.md). Third-party contract/source licenses are preserved in [notices](THIRD_PARTY_NOTICES.md). Cite the actual code commit and immutable data revision. No dataset DOI is assigned here.

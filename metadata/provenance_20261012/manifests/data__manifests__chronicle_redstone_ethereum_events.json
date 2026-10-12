@@ -1,0 +1,656 @@
+{
+  "original_relative_path": "data/manifests/chronicle_redstone_ethereum_events.json",
+  "original_sha256": "33fc7afe9d05d1a55834f6dfaf648aba56b0ca7a05723cf112db7f00942036a7",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "chain_id": 1,
+    "chronicle_contract_metadata": {
+      "0x013c5c46db9914a19a58e57ad539ed5b125afa15": {
+        "address": "0x013c5c46db9914a19a58e57ad539ed5b125afa15",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTETH/USD"
+      },
+      "0x02238bb0085395ae52cd4755456891fc2fd5934d": {
+        "address": "0x02238bb0085395ae52cd4755456891fc2fd5934d",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "STETH/BTC"
+      },
+      "0x057f30e63a69175c69a4af5656b8c9ee647de3d0": {
+        "address": "0x057f30e63a69175c69a4af5656b8c9ee647de3d0",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "STONE/ETH"
+      },
+      "0x08669c836f41aead03e3ef81a59f3b8e72ec417a": {
+        "address": "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "LIDO_LST/2DAYS"
+      },
+      "0x0b4cb11fac24707f3f0f89e441a4cdf6ef01d215": {
+        "address": "0x0b4cb11fac24707f3f0f89e441a4cdf6ef01d215",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSRUSD/USD"
+      },
+      "0x0b4d1660d9f28203a23c33808112ff44ca7bce41": {
+        "address": "0x0b4d1660d9f28203a23c33808112ff44ca7bce41",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "GNO/USD"
+      },
+      "0x0e9a3846757acaf9c21f4f7a5091beae906a4784": {
+        "address": "0x0e9a3846757acaf9c21f4f7a5091beae906a4784",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "JUMP/UP"
+      },
+      "0x101adfaf85890a000dedea24d01aa4a10e3709ad": {
+        "address": "0x101adfaf85890a000dedea24d01aa4a10e3709ad",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "FBTC/USD"
+      },
+      "0x1174948681bb05748e3682398d9b7a6836b07554": {
+        "address": "0x1174948681bb05748e3682398d9b7a6836b07554",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "ETH/USD"
+      },
+      "0x12a8ad45db5085e17ababb3016bba67cc6bac5db": {
+        "address": "0x12a8ad45db5085e17ababb3016bba67cc6bac5db",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTETH/USD"
+      },
+      "0x13118422f890cb3a8ee4f0aac8ad4c4be913cb51": {
+        "address": "0x13118422f890cb3a8ee4f0aac8ad4c4be913cb51",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "STONE/USD"
+      },
+      "0x1384c3e8bf8bd98a93768f77685569994cad7f4b": {
+        "address": "0x1384c3e8bf8bd98a93768f77685569994cad7f4b",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "EBTC#etherfi/ETH"
+      },
+      "0x1ea387a7228b97796256cc6b109b361635195c5f": {
+        "address": "0x1ea387a7228b97796256cc6b109b361635195c5f",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "ETH/USD"
+      },
+      "0x209186cd917dfabd9529935dd7202c755a59f06f": {
+        "address": "0x209186cd917dfabd9529935dd7202c755a59f06f",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USDC/USD"
+      },
+      "0x247b64e37cb3014566422d778b3ac7747e9c8194": {
+        "address": "0x247b64e37cb3014566422d778b3ac7747e9c8194",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USD0++/USD"
+      },
+      "0x24c392cdbf32cf911b258981a66d5541d85269ce": {
+        "address": "0x24c392cdbf32cf911b258981a66d5541d85269ce",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "BTC/USD"
+      },
+      "0x277f78f39b9dc73df3723bacd40f8658f8a1a633": {
+        "address": "0x277f78f39b9dc73df3723bacd40f8658f8a1a633",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SRUSD/USD"
+      },
+      "0x27c0d69b99e4ea0bf99ebdc07dacbe0b3f068917": {
+        "address": "0x27c0d69b99e4ea0bf99ebdc07dacbe0b3f068917",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTRBTC/USD"
+      },
+      "0x286204401e0c1e63043e95a8de93236b735d4bf2": {
+        "address": "0x286204401e0c1e63043e95a8de93236b735d4bf2",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WBTC/USD"
+      },
+      "0x3131e6a68bfb42976ef574af042f67d322098747": {
+        "address": "0x3131e6a68bfb42976ef574af042f67d322098747",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "CBBTC/USDC"
+      },
+      "0x376d995fa69a1aaf90f641feedd6dd42cd9bd726": {
+        "address": "0x376d995fa69a1aaf90f641feedd6dd42cd9bd726",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "ALETH/ETH"
+      },
+      "0x3be46d64aaf6bd88d5d445d83821805f7e393ddf": {
+        "address": "0x3be46d64aaf6bd88d5d445d83821805f7e393ddf",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WATWAT/CHILL"
+      },
+      "0x3bf2436a3771b7c0b3674ffb9e7e605006deccd4": {
+        "address": "0x3bf2436a3771b7c0b3674ffb9e7e605006deccd4",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SKY/USD"
+      },
+      "0x3fcc752dc6fb8acc80e3e0843c16ea080240b57f": {
+        "address": "0x3fcc752dc6fb8acc80e3e0843c16ea080240b57f",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "RETH/USD"
+      },
+      "0x46ef0071b1e2ff6b42d36e5a177ea43ae5917f4e": {
+        "address": "0x46ef0071b1e2ff6b42d36e5a177ea43ae5917f4e",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "ETH/USD"
+      },
+      "0x496470f4835186bf118545bd76889f123d608e84": {
+        "address": "0x496470f4835186bf118545bd76889f123d608e84",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SUSDS/USD"
+      },
+      "0x496c851b2a9567dfeee0acbf04365f3ba00eb8dc": {
+        "address": "0x496c851b2a9567dfeee0acbf04365f3ba00eb8dc",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "PEPE/USD"
+      },
+      "0x4ac943b192ce76ead66d1dc86557228338e6a6c0": {
+        "address": "0x4ac943b192ce76ead66d1dc86557228338e6a6c0",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSRUSD/USD"
+      },
+      "0x51492f478daa59f9464757605fdc54c40512a584": {
+        "address": "0x51492f478daa59f9464757605fdc54c40512a584",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTRBTC/USD"
+      },
+      "0x552116e747a5b386b2e7eed4371002359cf2a574": {
+        "address": "0x552116e747a5b386b2e7eed4371002359cf2a574",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SPK/USD"
+      },
+      "0x576211f0585aedbd21b7b5d4babe57e112f9b4b3": {
+        "address": "0x576211f0585aedbd21b7b5d4babe57e112f9b4b3",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "TEST/TEST"
+      },
+      "0x5769e5353da4bafcbd19f20b1daab8860c2ee5f0": {
+        "address": "0x5769e5353da4bafcbd19f20b1daab8860c2ee5f0",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "CBBTC/WETH"
+      },
+      "0x591eb5e6b4148749a9833a2dffe9756de771eb04": {
+        "address": "0x591eb5e6b4148749a9833a2dffe9756de771eb04",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "JUMP/UP"
+      },
+      "0x5e16ca75000fb2b9d7b1184fa24ff5d938a345ef": {
+        "address": "0x5e16ca75000fb2b9d7b1184fa24ff5d938a345ef",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "ETH/USD"
+      },
+      "0x608d9cd5ac613ebac4549e6b8a73954ea64c3660": {
+        "address": "0x608d9cd5ac613ebac4549e6b8a73954ea64c3660",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "RETH/USD"
+      },
+      "0x621cc3eaab018383bb780619d900c69067e74f55": {
+        "address": "0x621cc3eaab018383bb780619d900c69067e74f55",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USTBILL3M/RATE"
+      },
+      "0x6a906372ca06523ba7feaedab18ab8b665caed71": {
+        "address": "0x6a906372ca06523ba7feaedab18ab8b665caed71",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WEETH/USD"
+      },
+      "0x6b595d4e06bae413928793a4f5077eaf8a2530fc": {
+        "address": "0x6b595d4e06bae413928793a4f5077eaf8a2530fc",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WATWAT/CHILL"
+      },
+      "0x7084a627a22b2de99e18733dc5aaf40993fa405c": {
+        "address": "0x7084a627a22b2de99e18733dc5aaf40993fa405c",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USDT/USD"
+      },
+      "0x74661a9ea74fd04975c6ebc6b155abf8f885636c": {
+        "address": "0x74661a9ea74fd04975c6ebc6b155abf8f885636c",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USDS/USD"
+      },
+      "0x74a31431054cfa5ee82576df8d374916c169190b": {
+        "address": "0x74a31431054cfa5ee82576df8d374916c169190b",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "PXETH/USD"
+      },
+      "0x7525acfe2df5ba9cb06002e837db02aaec49b675": {
+        "address": "0x7525acfe2df5ba9cb06002e837db02aaec49b675",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USD0PLUSPLUS/USD"
+      },
+      "0x762bd3343eff34e660da724751177cb94a2a7990": {
+        "address": "0x762bd3343eff34e660da724751177cb94a2a7990",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "CRO/USD"
+      },
+      "0x7ba120dd96ac58b76508fa3b4777f76214881dc0": {
+        "address": "0x7ba120dd96ac58b76508fa3b4777f76214881dc0",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "ALUSD/USD"
+      },
+      "0x7c16774cc8989a2ac08345b233df1b76265a041c": {
+        "address": "0x7c16774cc8989a2ac08345b233df1b76265a041c",
+        "bar": 7,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "STETH/BTC"
+      },
+      "0x84a48f89d5844385c515f43797147d6af61ce2ae": {
+        "address": "0x84a48f89d5844385c515f43797147d6af61ce2ae",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTETH/ETH"
+      },
+      "0x898d1ab819a24880f636416df7d1493c94143262": {
+        "address": "0x898d1ab819a24880f636416df7d1493c94143262",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "BTC/USD"
+      },
+      "0x93accff0590797f2c67edcbadfb2c98920bd0704": {
+        "address": "0x93accff0590797f2c67edcbadfb2c98920bd0704",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "AAVE/USD"
+      },
+      "0x96920bba8c90af75595c875b890a3ab768866113": {
+        "address": "0x96920bba8c90af75595c875b890a3ab768866113",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "WSRUSD/USD"
+      },
+      "0x9af8fe1d0c9ed3f176dd3559b6f4b6fef3aab83b": {
+        "address": "0x9af8fe1d0c9ed3f176dd3559b6f4b6fef3aab83b",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "BTC/USD"
+      },
+      "0x9e2c3e0bce361067fd8d55098eaed63d31bc9429": {
+        "address": "0x9e2c3e0bce361067fd8d55098eaed63d31bc9429",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "AAVE/USD"
+      },
+      "0x9f7ce792d0ee09a6ce89ec2b9b236a44b0acf73e": {
+        "address": "0x9f7ce792d0ee09a6ce89ec2b9b236a44b0acf73e",
+        "bar": 255,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SKY/USD"
+      },
+      "0xa18297eb53a5d90990e4514ca6244e7f25405674": {
+        "address": "0xa18297eb53a5d90990e4514ca6244e7f25405674",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "CBBTC/WBTC"
+      },
+      "0xa69e234a1f55072201127209a18230e89d9e71ac": {
+        "address": "0xa69e234a1f55072201127209a18230e89d9e71ac",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "MKR/USD"
+      },
+      "0xa770582353b573cbfdcc948751750eeb3ccf23cf": {
+        "address": "0xa770582353b573cbfdcc948751750eeb3ccf23cf",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WSTETH/USD"
+      },
+      "0xb074eee1f1e66650da49a4d96e255c8337a272a9": {
+        "address": "0xb074eee1f1e66650da49a4d96e255c8337a272a9",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WETH/USD"
+      },
+      "0xb0b07b9280edfd1547221d590147b04b2589565a": {
+        "address": "0xb0b07b9280edfd1547221d590147b04b2589565a",
+        "bar": null,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": false,
+        "wat": null
+      },
+      "0xb400027b7c31d67982199fa48b8228f128691fcb": {
+        "address": "0xb400027b7c31d67982199fa48b8228f128691fcb",
+        "bar": 3,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "MKR/USD"
+      },
+      "0xb5130cc30be369afeac34b61d60ddfdef84b7b63": {
+        "address": "0xb5130cc30be369afeac34b61d60ddfdef84b7b63",
+        "bar": 255,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "EBTC/ETH"
+      },
+      "0xb82345cd7be6db5069c7bc73ce7de44745ce9f21": {
+        "address": "0xb82345cd7be6db5069c7bc73ce7de44745ce9f21",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "CBBTC/WBTC"
+      },
+      "0xbc8a6c17787a201be8f54caa5db56f780eef8bcc": {
+        "address": "0xbc8a6c17787a201be8f54caa5db56f780eef8bcc",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "AAVE/USD"
+      },
+      "0xc2ffbbdccf1466eb8968a846179191cb881ecdff": {
+        "address": "0xc2ffbbdccf1466eb8968a846179191cb881ecdff",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": null,
+        "validated_scribe_contract": true,
+        "wat": "SKY/USD"
+      },
+      "0xc4962e0c282b52d00f995f5c70d4695e4ac14f57": {
+        "address": "0xc4962e0c282b52d00f995f5c70d4695e4ac14f57",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "MKR/USD"
+      },
+      "0xc4a3356a5dac819afd0e2e4786cbe5e8703577ef": {
+        "address": "0xc4a3356a5dac819afd0e2e4786cbe5e8703577ef",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USD0++/USD"
+      },
+      "0xce701340261a3dc3541c5f8a6d2be689381c8fcc": {
+        "address": "0xce701340261a3dc3541c5f8a6d2be689381c8fcc",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USDC/USD"
+      },
+      "0xd02d70dd1e495f1d9245d97bfd93259fe8c81ff4": {
+        "address": "0xd02d70dd1e495f1d9245d97bfd93259fe8c81ff4",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "USR/USD"
+      },
+      "0xde753a0a9af0169deca6b69ed1b5cd86b31fdaf9": {
+        "address": "0xde753a0a9af0169deca6b69ed1b5cd86b31fdaf9",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "0",
+        "validated_scribe_contract": true,
+        "wat": "WSTETH/USD"
+      },
+      "0xe53e78006d2c3e905d73cbdb31b8e43ec06f27a9": {
+        "address": "0xe53e78006d2c3e905d73cbdb31b8e43ec06f27a9",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "SDAI/USD"
+      },
+      "0xe7a6e74d1654b98e9d3ddb003b645e0d7c82c935": {
+        "address": "0xe7a6e74d1654b98e9d3ddb003b645e0d7c82c935",
+        "bar": 13,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "RUSD/USD"
+      },
+      "0xeb656424e16a8092592a74e6cd93cfd212204495": {
+        "address": "0xeb656424e16a8092592a74e6cd93cfd212204495",
+        "bar": 255,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "EBTC#badger/ETH"
+      },
+      "0xf2dc732221e2b374ebbfd0023ef794c4432e66d8": {
+        "address": "0xf2dc732221e2b374ebbfd0023ef794c4432e66d8",
+        "bar": 9,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "DAI/USD"
+      },
+      "0xf7cbef92ef380502dce9de8a654a5c1d2a513e78": {
+        "address": "0xf7cbef92ef380502dce9de8a654a5c1d2a513e78",
+        "bar": 2,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "WATWAT/CHILL"
+      },
+      "0xfe7f9ece94500d6381ba1bb0afd77577d6834c0c": {
+        "address": "0xfe7f9ece94500d6381ba1bb0afd77577d6834c0c",
+        "bar": 1,
+        "code_present_at_cutoff": true,
+        "max_challenge_reward_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "validated_scribe_contract": true,
+        "wat": "MOG/USD"
+      }
+    },
+    "chronicle_duplicate_events": 0,
+    "chronicle_event_counts": {
+      "BarUpdated": 173,
+      "FeedDropped": 308,
+      "FeedLifted": 1184,
+      "MaxChallengeRewardUpdated": 62,
+      "OpChallengePeriodUpdated": 112,
+      "OpChallengeRewardPaid": 14,
+      "OpPokeChallengedSuccessfully": 14,
+      "OpPokeChallengedUnsuccessfully": 9,
+      "OpPokeDataDropped": 16,
+      "OpPoked": 81552,
+      "Poked": 57082
+    },
+    "chronicle_event_rows": 140526,
+    "chronicle_excluded_addresses": [
+      "0xb0b07b9280edfd1547221d590147b04b2589565a"
+    ],
+    "chronicle_excluded_unvalidated_candidates": 1,
+    "chronicle_raw_candidates": 140574,
+    "chronicle_realized_challenge_reward_raw_wei": "11020000000000000000",
+    "chronicle_reward_without_successful_challenge": 0,
+    "chronicle_source_commit": "12ff06ca78811e01313afde4b38fe959d6647096",
+    "chronicle_successful_challenge_without_self_drop": 0,
+    "chronicle_validated_contracts": 72,
+    "chronicle_validator_registry_commit": "f06e0a8209fcb47f1535d1b874cb8ff254a9c2c5",
+    "cutoff_block": 25433938,
+    "cutoff_block_hash": "0x82ba65044cd2af79c7e3e21dd4a87a26d257e6f9abcf585eed201f2d177f35a0",
+    "cutoff_block_time": "2026-06-30T23:59:59+00:00",
+    "dataset": "Chronicle and RedStone Ethereum event observability ledger",
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-27T05:19:11.113349+00:00",
+    "redstone_duplicate_events": 0,
+    "redstone_event_counts": {
+      "AnswerUpdated": 22551,
+      "UpdateSkipDueToBlockTimestamp": 7989,
+      "UpdateSkipDueToDataTimestamp": 3300,
+      "ValueUpdate": 580479
+    },
+    "redstone_event_rows": 614319,
+    "redstone_manifest_adapter_contracts": 9,
+    "redstone_manifest_non_address_feed_entries": [
+      {
+        "configured_value": "__no_feed__",
+        "feed_name": "ETH_CLE",
+        "manifest": "data:/raw/source_audit/redstone_monorepo_95f8/packages/relayer-remote-config/main/relayer-manifests/ethereumPufStaking.json",
+        "reason": "not_an_evm_contract_address"
+      },
+      {
+        "configured_value": "__no_feed__",
+        "feed_name": "ETH_ELE",
+        "manifest": "data:/raw/source_audit/redstone_monorepo_95f8/packages/relayer-remote-config/main/relayer-manifests/ethereumPufStaking.json",
+        "reason": "not_an_evm_contract_address"
+      }
+    ],
+    "redstone_manifest_price_feed_contracts": 91,
+    "redstone_realized_reward_events": 0,
+    "redstone_realized_slash_events": 0,
+    "redstone_source_and_manifest_commit": "95f8cb9fd00b0a9f12c3e4bc45206533c90f09cb",
+    "scope_guard": "Chronicle rows cover Ethereum Scribe/ScribeOptimistic event signatures and include realized ETH challenge rewards and self-governed feed drops. RedStone rows cover official Ethereum Push-adapter manifests pinned at the cutoff; the Pull model embeds signed payloads in consumer calls and has no global price-update log. Official scoped EVM adapter contracts define no publisher reward or slash settlement event, so those values are verified absent rather than inferred as zero protocol-wide.",
+    "segments_per_protocol": 255
+  }
+}
