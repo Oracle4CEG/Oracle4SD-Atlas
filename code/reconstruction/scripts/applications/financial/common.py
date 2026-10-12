@@ -478,6 +478,12 @@ def select_benchmark_sample(frame: pd.DataFrame, maximum: int = 6000) -> pd.Data
     return pd.concat(kept).sort_values(["track", "episode_id"]).reset_index(drop=True)
 
 
+def survival_cohort_supported(frame: pd.DataFrame, minimum: int) -> bool:
+    """Uncensored cohorts are valid; cohorts with no observed event are not."""
+    return (len(frame) >= minimum and bool(frame.event_observed.any())
+            and frame.observed_duration_seconds.nunique() > 1)
+
+
 def run_benchmark(max_rows_per_track: int = 6000) -> None:
     """Run seven executable T0 survival families plus an AJ incidence baseline."""
     from sklearn.compose import ColumnTransformer
@@ -566,8 +572,8 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
     for track, d in df.groupby("track", sort=False):
         chrono_train = d[d.chronological_split == "train"]
         chrono_test = d[d.chronological_split == "test"]
-        if (chrono_train.event_observed.nunique() >= 2
-                and chrono_test.event_observed.nunique() >= 2):
+        if (survival_cohort_supported(chrono_train,100)
+                and survival_cohort_supported(chrono_test,30)):
             train, test = chrono_train.copy(), chrono_test.copy()
             evaluation_name = "pooled_chronological"
         else:
@@ -576,7 +582,7 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
             train = d[d.random_split == "train"].copy() if "random_split" in d else d.iloc[0:0]
             test = d[d.random_split == "test"].copy() if "random_split" in d else d.iloc[0:0]
             evaluation_name = "pooled_random_fallback"
-        if len(train) < 100 or len(test) < 30 or train.event_observed.nunique() < 2 or test.event_observed.nunique() < 2:
+        if not survival_cohort_supported(train,100) or not survival_cohort_supported(test,30):
             metric_rows.append(dict(track=track, evaluation=evaluation_name,
                                     model="all", n_train=len(train), n_test=len(test),
                                     status="not_estimable", error="Insufficient cohort size or event/censoring support"))
@@ -694,9 +700,19 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
                 norm.sf((np.log(np.maximum(grid,1e-6))-np.log(pt))/1.0)
                 for pt in predicted_time
             ])
-            uno = concordance_index_ipcw(ytr, yte, risk, tau=upper)[0]
-            auc = float(np.mean(cumulative_dynamic_auc(ytr,yte,risk,grid)[0]))
-            ibs = integrated_brier_score(ytr,yte,surv_pred,grid)
+            metric_errors = {}
+            try:
+                uno = concordance_index_ipcw(ytr, yte, risk, tau=upper)[0]
+            except Exception as exc:
+                uno = np.nan; metric_errors['uno_c_index'] = str(exc)[:300]
+            try:
+                auc = float(np.mean(cumulative_dynamic_auc(ytr,yte,risk,grid)[0]))
+            except Exception as exc:
+                auc = np.nan; metric_errors['time_dependent_auc'] = str(exc)[:300]
+            try:
+                ibs = integrated_brier_score(ytr,yte,surv_pred,grid)
+            except Exception as exc:
+                ibs = np.nan; metric_errors['integrated_brier_score'] = str(exc)[:300]
             hidx=len(grid)//2
             observed_event=(test.event_observed.to_numpy(bool)
                             &(test.duration_days.to_numpy(float)<=grid[hidx])).astype(float)
@@ -714,6 +730,7 @@ def run_benchmark(max_rows_per_track: int = 6000) -> None:
                 uno_c_index=uno,integrated_brier_score=ibs,
                 time_dependent_auc=auc,calibration_error=cal,
                 median_time_mae=med_mae,interval_coverage=np.nan,
+                metric_unavailability=json.dumps(metric_errors,sort_keys=True),
             ))
             for j,eid in enumerate(test.episode_id.astype(str)):
                 pred_rows.append(dict(

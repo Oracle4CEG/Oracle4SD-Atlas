@@ -33,9 +33,10 @@ test_corrupted_existing_download_is_not_replaced (test_release_access.ReleaseAcc
 test_financial_sampling_is_order_and_outcome_invariant (test_release_access.ReleaseAccessTests.test_financial_sampling_is_order_and_outcome_invariant) ... ok
 test_future_outcomes_cannot_change_model_features (test_release_access.ReleaseAccessTests.test_future_outcomes_cannot_change_model_features) ... ok
 test_prefix_features_do_not_retain_full_outcomes (test_release_access.ReleaseAccessTests.test_prefix_features_do_not_retain_full_outcomes) ... ok
+test_uncensored_survival_cohort_is_eligible (test_release_access.ReleaseAccessTests.test_uncensored_survival_cohort_is_eligible) ... ok
 test_unsettled_rule_is_specific_and_not_a_settlement_claim (test_release_access.ReleaseAccessTests.test_unsettled_rule_is_specific_and_not_a_settlement_claim) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 11.600s
+Ran 27 tests in 8.685s
 
 OK

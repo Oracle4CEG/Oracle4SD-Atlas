@@ -35,6 +35,17 @@ def finalize(baseline, output, resume=False):
     checkpoint={}
     if resume:
         checkpoint=json.loads(checkpoint_path.read_text())
+        current=json.loads((output/'validation/full_release.json').read_text())
+        current_failures=[c['name'] for c in current['checks'] if not c['passed']]
+        if current.get('code_commit')!=original['code_commit']:
+            if current_failures!=['financial_models_complete']:
+                raise ValueError('A completed finalization can only resume its isolated financial check')
+            current_manifest=json.loads((output/'metadata/file_manifest.json').read_text())
+            for item in current_manifest:
+                if sha256(output/item['path'])!=item['sha256']:
+                    raise ValueError('Completed data changed before financial retry')
+            checkpoint['repaired_hashes']={x['path']:x['sha256'] for x in current_manifest}
+            shutil.copy2(output/'validation/full_release.json',output/'validation/financial_feasibility_initial.json')
         if checkpoint['baseline_code_commit']!=original['code_commit']:
             raise ValueError('Checkpoint belongs to a different native build')
         for item in inventory:
@@ -98,9 +109,9 @@ def finalize(baseline, output, resume=False):
     metrics=con.execute(f"SELECT * FROM read_parquet({sqlpath(target/'metrics.parquet')})").fetchdf()
     completed=metrics[(metrics['status']=='completed') & metrics['harrell_c_index'].notna()]
     failures=metrics[metrics['status']!='completed']
-    checks.append(dict(name='financial_models_complete',passed=len(completed)==14 and failures.empty,
+    checks.append(dict(name='financial_models_complete',passed=len(completed)==21 and failures.empty,
                        completed_model_track_fits=len(completed),failed_or_unestimable=len(failures),
-                       scope='Seven fitted models on two protocol-balanced tasks; random fallback is labeled; undefined time-dependent metrics remain null'))
+                       scope='Seven fitted models on three tasks; protocol-balanced sampling and evaluation split are recorded; undefined time-dependent metrics remain null'))
     permitted={'data/curated/parquet/accountability_events.parquet','data/curated/parquet/sample_b_observable_accountability.parquet',
                'data/applications/oata/prefix_episodes.parquet'}
     before={x['path']:x for x in inventory};final=[];unexpected_changes=[]

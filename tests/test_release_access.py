@@ -20,6 +20,14 @@ def module(name):
 
 
 class ReleaseAccessTests(unittest.TestCase):
+    def test_uncensored_survival_cohort_is_eligible(self):
+        sys.path.insert(0,str(ROOT/'code/reconstruction'))
+        from scripts.applications.financial.common import survival_cohort_supported
+        frame=pd.DataFrame({'event_observed':[True]*100,'observed_duration_seconds':range(1,101)})
+        self.assertTrue(survival_cohort_supported(frame,100))
+        frame['event_observed']=False
+        self.assertFalse(survival_cohort_supported(frame,100))
+
     def test_financial_sampling_is_order_and_outcome_invariant(self):
         sys.path.insert(0,str(ROOT/'code/reconstruction'))
         from scripts.applications.financial.common import select_benchmark_sample
