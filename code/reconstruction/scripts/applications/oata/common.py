@@ -17,6 +17,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import pyarrow.parquet as arrow_parquet
 import seaborn as sns
 from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import cdist, pdist, squareform
@@ -313,7 +314,7 @@ def map_states() -> dict[str,int]:
 
 def build_prefix_view(con, episode_path):
     """Conservative pre-adjudication masking, not a certified T0 snapshot."""
-    columns = pq.read_schema(episode_path).names
+    columns = arrow_parquet.read_schema(episode_path).names
     allowed = ",".join("'"+state+"'" for state in PREFIX_STATES)
     replacements = [f"list_filter(state_sequence,x->x IN ({allowed})) AS state_sequence",
                     "NULL::BIGINT AS end_time", "'prefix_hidden' AS terminal_status",

@@ -26,6 +26,7 @@ test_pyth_corrupted_snapshot_fails (test_full_release.FullReleaseTests.test_pyth
 test_reward_rate_is_never_a_token_amount (test_full_release.FullReleaseTests.test_reward_rate_is_never_a_token_amount) ... ok
 test_tellor_escrow_is_not_report_power (test_full_release.FullReleaseTests.test_tellor_escrow_is_not_report_power) ... ok
 test_tellor_only_three_support_outcomes_keep_principal_slash (test_full_release.FullReleaseTests.test_tellor_only_three_support_outcomes_keep_principal_slash) ... ok
+test_written_prefix_hides_actual_settlement (test_full_release.FullReleaseTests.test_written_prefix_hides_actual_settlement) ... ok
 test_zero_accrual_is_not_negative_adjudication (test_full_release.FullReleaseTests.test_zero_accrual_is_not_negative_adjudication) ... ok
 test_zero_address_is_not_a_challenge (test_full_release.FullReleaseTests.test_zero_address_is_not_a_challenge) ... ok
 test_corrupted_existing_download_is_not_replaced (test_release_access.ReleaseAccessTests.test_corrupted_existing_download_is_not_replaced) ... ok
@@ -35,6 +36,6 @@ test_prefix_features_do_not_retain_full_outcomes (test_release_access.ReleaseAcc
 test_unsettled_rule_is_specific_and_not_a_settlement_claim (test_release_access.ReleaseAccessTests.test_unsettled_rule_is_specific_and_not_a_settlement_claim) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 9.462s
+Ran 26 tests in 11.600s
 
 OK

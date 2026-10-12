@@ -22,7 +22,7 @@ from rebuild_atlas import ROOT, sha256, sqlpath, rewrite, validate, write_json
 from build_release_metadata import build as build_metadata
 
 
-def finalize(baseline, output):
+def finalize(baseline, output, resume=False):
     baseline=Path(baseline).resolve();output=Path(output).resolve()
     original=json.loads((baseline/'validation/full_release.json').read_text())
     unexpected=[c for c in original['checks'] if not c['passed'] and c['name']!='schema_field_rule_id']
@@ -31,10 +31,20 @@ def finalize(baseline, output):
     for item in inventory:
         if sha256(baseline/item['path'])!=item['sha256']:
             raise ValueError('Baseline output changed: '+item['path'])
-    if output.exists():raise FileExistsError(output)
-    output.mkdir(parents=True)
+    checkpoint_path=output/'validation/finalization_checkpoint.json'
+    checkpoint={}
+    if resume:
+        checkpoint=json.loads(checkpoint_path.read_text())
+        if checkpoint['baseline_code_commit']!=original['code_commit']:
+            raise ValueError('Checkpoint belongs to a different native build')
+        for item in inventory:
+            expected=checkpoint.get('repaired_hashes',{}).get(item['path'],item['sha256'])
+            if sha256(output/item['path'])!=expected:
+                raise ValueError('Partial output differs from checkpoint: '+item['path'])
+    elif output.exists():raise FileExistsError(output)
+    else:output.mkdir(parents=True)
     started=time.monotonic()
-    for source in baseline.rglob('*'):
+    for source in ([] if resume else baseline.rglob('*')):
         relative=source.relative_to(baseline)
         if 'scratch' in relative.parts or not source.is_file():continue
         target=output/relative;target.parent.mkdir(parents=True,exist_ok=True)
@@ -52,14 +62,19 @@ def finalize(baseline, output):
     sources += [p for base in ('schemas','code/reconstruction/schemas','data/data_source/full_build_metadata','data/data_source/pyth_historical') for p in (ROOT/base).rglob('*') if p.is_file()]
     hashes={str(p.relative_to(ROOT)):sha256(p) for p in sources}
     con=duckdb.connect(config={'threads':2,'memory_limit':'4GB','temp_directory':str(output/'scratch')})
-    corrected=[]
+    corrected=checkpoint.get('rule_corrections',[])
+    repaired_hashes=checkpoint.get('repaired_hashes',{})
     for name in ['accountability_events','sample_b_observable_accountability','sample_c_strict_honesty_events']:
         path=output/'data/curated/parquet'/(name+'.parquet')
         count=con.execute(f"SELECT count(*) FROM read_parquet({sqlpath(path)}) WHERE native_table='polygon_uma_request_rounds' AND outcome_status='not_settled' AND rule_id IS NULL").fetchone()[0]
         if count:
             print('Repairing unsettled rule:',name,count,flush=True)
             rewrite(con,f'SELECT * REPLACE ({UNSETTLED_RULE_EXPR}) FROM read_parquet({sqlpath(path)})',path)
-        corrected.append(dict(table=name,corrected_rows=count))
+        if count or not any(x['table']==name for x in corrected):
+            corrected.append(dict(table=name,corrected_rows=count))
+        if count:repaired_hashes[str(path.relative_to(output))]=sha256(path)
+        write_json(checkpoint_path,dict(baseline_code_commit=original['code_commit'],rule_corrections=corrected,repaired_hashes=repaired_hashes,
+                                       scope='Only completed rule repairs are resumable; other baseline data must retain its exact hash'))
     print('Rebuilding masked view',flush=True)
     oata.build_prefix_view(con,output/'data/applications/oata/accountability_episodes.parquet')
     # Benchmark output is staged separately so hardlinked baseline bytes cannot
@@ -120,4 +135,5 @@ def finalize(baseline, output):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--baseline',required=True);p.add_argument('--output',required=True)
-    a=p.parse_args();finalize(a.baseline,a.output)
+    p.add_argument('--resume',action='store_true',help='Resume only a hash-bound rule-repair checkpoint')
+    a=p.parse_args();finalize(a.baseline,a.output,a.resume)

@@ -25,7 +25,7 @@ class FullReleaseTests(unittest.TestCase):
         env.update(ORACLE_WORKSPACE=str(cls.work), PYTHONPATH=str(ROOT/"code/reconstruction"),
                    MPLBACKEND="Agg", OPENBLAS_NUM_THREADS="1", OMP_NUM_THREADS="1")
         result = subprocess.run([sys.executable,"-c",
-            "from scripts.applications.oata.common import build_episodes; print(build_episodes())"],
+            "from scripts.applications.oata.common import build_episodes,build_prefix_view,OATA; import duckdb; print(build_episodes()); build_prefix_view(duckdb.connect(),OATA/'accountability_episodes.parquet')"],
             cwd=ROOT, env=env, capture_output=True,text=True)
         if result.returncode:
             raise RuntimeError(result.stdout+result.stderr)
@@ -40,6 +40,11 @@ class FullReleaseTests(unittest.TestCase):
     def test_case_gross_payment_is_principal_plus_gain(self):
         row = self.con.execute("SELECT gross_payout_raw,principal_returned_raw,reward_paid_raw,principal_locked_raw,total_profit_raw FROM episodes WHERE unit_id=?",[CASE]).fetchone()
         self.assertEqual(row,("1000000000","750000000","250000000","750000000",None))
+
+    def test_written_prefix_hides_actual_settlement(self):
+        prefix=str(self.work/'data/applications/oata/prefix_episodes.parquet')
+        row=self.con.execute("SELECT gross_payout_raw,actor,transfer_confirmed,list_contains(state_sequence,'REWARD_PAID') FROM read_parquet(?) WHERE unit_id=?",[prefix,CASE]).fetchone()
+        self.assertEqual(row,(None,None,False,False))
 
     def test_zero_address_is_not_a_challenge(self):
         row = self.con.execute("SELECT challenged,list_contains(state_sequence,'CHALLENGED') FROM episodes WHERE unit_id='0x0000694348feeb28610ac89f5fc775184b8a6a394591d19d249f501b1be44d56'").fetchone()
