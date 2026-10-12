@@ -1,0 +1,192 @@
+{
+  "revision": "356fb1aeac18fb4e6672ca1ea56988dac72c3417",
+  "manifest_sha256": "0a4217615b026eb94f0a422491880fd6c2064c1ba3e4b968fd482bda0095a1dd",
+  "entries": 46,
+  "passed": true,
+  "checks": [
+    {
+      "path": "CITATION.cff",
+      "passed": true
+    },
+    {
+      "path": "DATA_LICENSE.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "passed": true
+    },
+    {
+      "path": "croissant.json",
+      "passed": true
+    },
+    {
+      "path": "data/abc_dictionary.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/ai_feature_dictionary.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/decision_evidence.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_decisions.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_episodes.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_evidence.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_metrics.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_predictions.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/public_ai_splits.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_decision_splits.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_decisions.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_public_rpc_abc.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_public_rpc_episode.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_real_episode.parquet",
+      "passed": true
+    },
+    {
+      "path": "data/uma_real_episode_abc.parquet",
+      "passed": true
+    },
+    {
+      "path": "dataset_info.json",
+      "passed": true
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_coefficients.csv",
+      "passed": true
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_metrics.json",
+      "passed": true
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_predictions_sample.csv",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.drawio",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.pdf",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.png",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.svg",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.drawio",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.pdf",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.png",
+      "passed": true
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.svg",
+      "passed": true
+    },
+    {
+      "path": "notebooks/uma_minimal_trustworthy_ai_demo.ipynb",
+      "passed": true
+    },
+    {
+      "path": "public_ai_evidence/manifest.json",
+      "passed": true
+    },
+    {
+      "path": "public_ai_evidence/pipeline_qc.parquet",
+      "passed": true
+    },
+    {
+      "path": "public_ai_evidence/public_rpc_records.jsonl.gz",
+      "passed": true
+    },
+    {
+      "path": "public_ai_evidence/report.md",
+      "passed": true
+    },
+    {
+      "path": "public_ai_evidence/source_registry.json",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/case_spec.json",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/contract_semantics.json",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/ethereum_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/polygon_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/reproduction_report.md",
+      "passed": true
+    },
+    {
+      "path": "public_evidence/source_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "review_metadata_validation.json",
+      "passed": true
+    },
+    {
+      "path": "review_provenance.json",
+      "passed": true
+    },
+    {
+      "path": "task_definition.json",
+      "passed": true
+    }
+  ]
+}

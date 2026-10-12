@@ -1,0 +1,53 @@
+{
+  "release": "atlas-repaired-20261012",
+  "code_repository": "https://github.com/virusLuke3/Oracle4SD-Atlas",
+  "code_commit": "38e63d2ed503b38b97d2fddd484f7871b9dda7de",
+  "scope": "Complete versioned Atlas code archive with acquisition supplement, DOI author metadata and Colab acceptance tool. The 213 scientific data/source artifacts remain at their existing immutable revisions.",
+  "doi": null,
+  "files": [
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/Oracle4SD-Atlas-code-provenance.tar.gz",
+      "bytes": 2185835,
+      "sha256": "9840b8d49d7e407807ba31e0d4966177799d669c64763957002d4a7b22fd1cf7",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/Oracle4SD-Atlas-code-provenance.tar.gz"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/authors.json",
+      "bytes": 1309,
+      "sha256": "345310b602abf106f4130f0b0e015e021c816233869532f1576f63feaf8bcd18",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/authors.json"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/zenodo_metadata.json",
+      "bytes": 2610,
+      "sha256": "41a588a4f4eef6269d26f0cb25435546b9e15b858cce3b9ff6ffe045db2b6d5d",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/zenodo_metadata.json"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/artifact_plan.json",
+      "bytes": 102732,
+      "sha256": "c056ee810e14386e2a02be88daf92d4bda459ceb132cb6ce6afb10ed3edcf786",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/artifact_plan.json"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/provenance_verification.json",
+      "bytes": 693,
+      "sha256": "a60302b2570046945a7f20d2008b9b280dba65ea09e0c8c9c14faf8fd7f9a3af",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/provenance_verification.json"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/historical_hash_recovery.json",
+      "bytes": 1219,
+      "sha256": "b1a79d9d63960b6f481c585bad6526151d1304b0774b770565069f16342635e1",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/historical_hash_recovery.json"
+    },
+    {
+      "path": "atlas/releases/atlas-repaired-20261012/acquisition-supplement/CITATION.cff",
+      "bytes": 1097,
+      "sha256": "f814f51308a4f0fb984fdba6f1222ce658e33c60776d5e0f47c818ba7a760099",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/CITATION.cff"
+    }
+  ],
+  "dataset_revision": "757c8e3e17e6c302423252f493fc0fc4db498fe3",
+  "prefix": "atlas/releases/atlas-repaired-20261012/acquisition-supplement"
+}

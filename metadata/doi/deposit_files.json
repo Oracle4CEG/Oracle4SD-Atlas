@@ -1,0 +1,1337 @@
+{
+  "release": "atlas-repaired-20261012",
+  "status": "all listed files publicly hosted; DOI deposition not performed",
+  "files": [
+    {
+      "archive_path": "native/data/curated/parquet/chainlink_eth_usd_reports.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chainlink_eth_usd_reports.parquet",
+      "sha256": "a8a7163c2aa4fd52a19354324116831a749da37bfc7382982c0d706589626d27",
+      "bytes": 4953032
+    },
+    {
+      "archive_path": "native/data/curated/parquet/chainlink_event_link_flow_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chainlink_event_link_flow_qc.parquet",
+      "sha256": "6bfa2d90b7829374dfc5dd9df86c8685530142c79c6738812586755a2a642551",
+      "bytes": 3492033
+    },
+    {
+      "archive_path": "native/data/curated/parquet/chainlink_link_flows.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chainlink_link_flows.parquet",
+      "sha256": "ec9fcb99c4f4b746ac985a5cb351bf2cffb4a0a5577045f168a67e27d17d1d3c",
+      "bytes": 2876017
+    },
+    {
+      "archive_path": "native/data/curated/parquet/chainlink_staking_v02_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chainlink_staking_v02_events.parquet",
+      "sha256": "bb2ba7e88efddfd8f51d2a9fee66773717c072d52565b43ed84851c00f43a2b9",
+      "bytes": 5505766
+    },
+    {
+      "archive_path": "native/data/curated/parquet/chronicle_ethereum_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chronicle_ethereum_events.parquet",
+      "sha256": "abab0400a1bac52704ec9b14821bbf5c19de7d02c69f956cdbad83b6c6cecf00",
+      "bytes": 12406334
+    },
+    {
+      "archive_path": "native/data/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+      "sha256": "0d0e5d72200671ed45bef321ca2957dc19df039097e7ccea68e729b64dc0a053",
+      "bytes": 3863
+    },
+    {
+      "archive_path": "native/data/curated/parquet/dia_staking_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/dia_staking_events.parquet",
+      "sha256": "f49809472446852446bc02e8d5c533e59b2c96a4b1f5afd813c2c3daa949ce8d",
+      "bytes": 42573
+    },
+    {
+      "archive_path": "native/data/curated/parquet/dia_staking_withdrawals.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/dia_staking_withdrawals.parquet",
+      "sha256": "3fc27630287da229dd7c71964dc77476660ef3c5d5c451f61e11c8295e3c2268",
+      "bytes": 18638
+    },
+    {
+      "archive_path": "native/data/curated/parquet/ecosystem_observability_evidence.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/ecosystem_observability_evidence.parquet",
+      "sha256": "e147ba2db8e77715ea51e02bfed1855f4cd3bc73b6cf08391fafeee6656b768e",
+      "bytes": 5484
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_beneficiary_chill_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_beneficiary_chill_events.parquet",
+      "sha256": "6b653603f17a286b6258ef04bcde70ee592b4b13d02da32909fa2f9605559a29",
+      "bytes": 6064
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_beneficiary_chill_state.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_beneficiary_chill_state.parquet",
+      "sha256": "f1c159f3c5b6905b5fc4ff84e076994c24ef84fde36aab20473593e93b6e585a",
+      "bytes": 1806
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_provider_conditions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_provider_conditions.parquet",
+      "sha256": "04b6bd3d1576998e94e954f74889c4e17097d56ee94149662d593f268eb87007",
+      "bytes": 258856
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_provider_failures.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_provider_failures.parquet",
+      "sha256": "e317741462f289834331dc5123e0988d64345d06f95359568e0be9566106bc4a",
+      "bytes": 16768
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_provider_feed_performance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_provider_feed_performance.parquet",
+      "sha256": "b5c075239b287895af50a4b53166c2a907f9a95828fe3456ca2f3e2f0c377616",
+      "bytes": 1268079
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_provider_passes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_provider_passes.parquet",
+      "sha256": "7f37ba421a530de1fba59a4edd9507c7478cd434806138c6dc5e01c35a320f5d",
+      "bytes": 45031
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+      "sha256": "456e171369c37b920e286a303cf7a5ea52b9020efb3604a37d0c76ed239fb6a9",
+      "bytes": 22228
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_reward_claim_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_reward_claim_events.parquet",
+      "sha256": "c0bf86b2103c48f02c14efb4ade7c4ff0aedc2df23de2f4711a3ab1b85d84c2c",
+      "bytes": 692913421
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_reward_claims.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_reward_claims.parquet",
+      "sha256": "9566afbb94b2b18bff54154f45791b5ed8270f80720a892130d5b37f52574a13",
+      "bytes": 714097
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_reward_component_attribution.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_reward_component_attribution.parquet",
+      "sha256": "b50741d301f1ec947bf6bc6b8fc1f9039ee008825b1f28b23d3c329695c6014a",
+      "bytes": 39711
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_reward_epochs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_reward_epochs.parquet",
+      "sha256": "21f50d686ca88cfba3f88ada0ec26544246b34481d1908deb3a21d3e1a6dadc1",
+      "bytes": 23651
+    },
+    {
+      "archive_path": "native/data/curated/parquet/flare_voter_registrations.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/flare_voter_registrations.parquet",
+      "sha256": "0465b28c910c053cbc42f51dcc814b8d9420c6c09ee285851f5c0fe446c52d5b",
+      "bytes": 892675
+    },
+    {
+      "archive_path": "native/data/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+      "sha256": "a0363ae29c2daf3391b91b9e604f815e6c2023b542bb8ba4fafb36c0032a5711",
+      "bytes": 5224
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_adapter_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_adapter_events.parquet",
+      "sha256": "2dfb4f47bffbb2de2ea631ff321e81b18d2b60b86291e89e32ffb2105283023d",
+      "bytes": 9768251
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_child_tunnel_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_child_tunnel_events.parquet",
+      "sha256": "6c3dc5c6b41c20339b5dde35ca3554f1f30e8d5f6f193d6734f468931662aac8",
+      "bytes": 1763991
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_oov2_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_oov2_events.parquet",
+      "sha256": "6f3b243a9df36affbdfb3ffd03fd78a5359557b16e9cce4e822d9b873a735db7",
+      "bytes": 47813666
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_uma_gamma_links.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_uma_gamma_links.parquet",
+      "sha256": "e33b68e610a58e3fcd88d951d311cce74be4098af43fb7641f3fdb525f042ce9",
+      "bytes": 12469227
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "sha256": "fe025843c774765b9c7da16cfc9ef610bf02e44006d3b95fa94ae5177db4282c",
+      "bytes": 1518161
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230",
+      "bytes": 11167492
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polygon_uma_token_flows.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polygon_uma_token_flows.parquet",
+      "sha256": "7a55dc2fdcef6223e7e727f77be0dbb491a60d93190f9850239bf96598eebbad",
+      "bytes": 19223359
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+      "sha256": "b3e27a6d96c674a3bb88c3a6281971c836b8d51921052cbf1952e8d616f2431b",
+      "bytes": 20399
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+      "sha256": "e6784b932748669a8761e7301fb1e2a427a8b23d37dcdd84bc07aba1add30f41",
+      "bytes": 189107
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_decision_time_prices.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_decision_time_prices.parquet",
+      "sha256": "c996f51c711f47c3d42c772577d6036420f35f77192776a2fd555103516a92e7",
+      "bytes": 152359
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+      "sha256": "ade711bcf9bc062d75321024dd822cd0b98d0efa6c95993e9825fffaf08b3557",
+      "bytes": 125256
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+      "sha256": "dda4516ce0907e27f3e3689c150156a28055803f5c7472e63a51ec2f8fcd5888",
+      "bytes": 82830
+    },
+    {
+      "archive_path": "native/data/curated/parquet/polymarket_gamma_markets.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/polymarket_gamma_markets.parquet",
+      "sha256": "3908d276cf0534435b79a5553ea724db441d878f682b651fd6b015de99780c91",
+      "bytes": 92640198
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_economic_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_economic_events.parquet",
+      "sha256": "0e75370b73752cdeec90fa0101e88d597161a94632eae785c84becef35d95499",
+      "bytes": 27297906
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_historical_observability.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_historical_observability.parquet",
+      "sha256": "9184533a990e9379eb4558d70b5ba415bc28c1b48fcf907329b6b6d9b904f0e7",
+      "bytes": 3703
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_instructions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_instructions.parquet",
+      "sha256": "4c6b28ca65b7d14f98c7914487bbd5f165d5bdeac0ca7e1a9030e09b5999eaa6",
+      "bytes": 71184144
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+      "sha256": "45486317d6c893e24231d8cf427d73cb427361593975c38637ae47ec07883354",
+      "bytes": 17619
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_reward_epochs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_reward_epochs.parquet",
+      "sha256": "e73360306656c3195decd6fe125e83b14c293c044fa4e7386f0470ea04321163",
+      "bytes": 3831
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_slash_counters.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_slash_counters.parquet",
+      "sha256": "e15a617a0cb73d6b9d41055ed03297e02c5d82ac67d227675136a1d9af3d49ef",
+      "bytes": 6380
+    },
+    {
+      "archive_path": "native/data/curated/parquet/pyth_ois_stake_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/pyth_ois_stake_events.parquet",
+      "sha256": "e2d16ed106c12f92a29cd0a2195e8d6dbe114b003834f42949e7d0e6b3aa1d28",
+      "bytes": 16505145
+    },
+    {
+      "archive_path": "native/data/curated/parquet/redstone_ethereum_push_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/redstone_ethereum_push_events.parquet",
+      "sha256": "7bf0d8aadf503e2a39730bd93d50264cc8739b6b08d86571c4abf3dfdb0d6484",
+      "bytes": 20623170
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_aggregate_height_index.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_aggregate_height_index.parquet",
+      "sha256": "53ea2f16c14d075b7cd4161b1845405a62713f45981f913e02d997b0e3fbdcfc",
+      "bytes": 148286845
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_dispute_payments.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_dispute_payments.parquet",
+      "sha256": "fc512e808c5cfcfb593e34f53c24e7357fe5b711007f18b41268ba2bf18a56ce",
+      "bytes": 3618
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_dispute_votes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_dispute_votes.parquet",
+      "sha256": "9040e016d562a187ea007c8733549f81728c904072fcfb057becd64434355f76",
+      "bytes": 6054
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_disputes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_disputes.parquet",
+      "sha256": "bb790e9469a3a658c9f9fac748480036fc7e0e2e42ec6ebcd6d38c0d7cfe8c89",
+      "bytes": 12935
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_jail_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_jail_events.parquet",
+      "sha256": "da2c5435bdf42c3b2942a11aef1cd45818edbb37a012629e8696c2b1b8d77d18",
+      "bytes": 5662
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_jail_lifecycles.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_jail_lifecycles.parquet",
+      "sha256": "7e9b53bc3261a69921a011b12b8ea9d5cda1246edef64e415f86e6dedf7ef124",
+      "bytes": 5867
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+      "sha256": "41d3bc010d22fa74f96af4a2e942b2c3a17515297ba93fb7d4a33d893d9f5466",
+      "bytes": 2834
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+      "sha256": "b1d34e0770a5e96f58e655be6cae7bead6725d58f69ab525b2f0fc159380de3c",
+      "bytes": 1024662
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_micro_reports.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_micro_reports.parquet",
+      "sha256": "e8764928eba7436cdf957ee53f42e312592d13174d0fde043e97926d92f94c17",
+      "bytes": 462712658
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_query_tip_funding.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_query_tip_funding.parquet",
+      "sha256": "e72603acb40b4eeebda9de47d58a2876cd669a60f2cd9a5c03604f89cc32692e",
+      "bytes": 1595132
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+      "sha256": "7516799d796e763635e74c2b7aa9ff4b300092dc2d7148751e23fab6f962d61a",
+      "bytes": 35033877
+    },
+    {
+      "archive_path": "native/data/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+      "sha256": "03eb729ccd69ae97b5508d0af1a056b3352df0d6b4dd3ecefb99c4c10339040f",
+      "bytes": 1287034
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_dvm_requests.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_dvm_requests.parquet",
+      "sha256": "158273c7b83591f540a266618bf7136c9dbe1c28fb8ca788485cd05387b837ff",
+      "bytes": 469143
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_dvm_staking_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_dvm_staking_events.parquet",
+      "sha256": "9f932a49e59ed8bebcc39b8ca06ce3d26d8ce25f8b05963902a7f260369475bb",
+      "bytes": 23139868
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+      "sha256": "48e6010a53b2b3caf35d57b996dd2b803feb75a09b06bfa5bce7633d51e35a8b",
+      "bytes": 39203134
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_dvm_votes_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_dvm_votes_events.parquet",
+      "sha256": "bf2f4613a523989dd3f246b8415c14f571eee3a12259a68b7ec449bd99a4c389",
+      "bytes": 22818301
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+      "sha256": "8d8369f24158606ab16cb9dfb388d202fb26a856c028922baf220565f7e70522",
+      "bytes": 9343301
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_phase2_request_panel.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_phase2_request_panel.parquet",
+      "sha256": "6dcd3bb263c9cd9a09bce7e233b8a603da3645c5b3efc8f4017a07e8dc5c370f",
+      "bytes": 3537343
+    },
+    {
+      "archive_path": "native/data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359",
+      "bytes": 214885
+    },
+    {
+      "archive_path": "native/data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+      "sha256": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864",
+      "bytes": 495481
+    },
+    {
+      "archive_path": "native/data/applications/trustworthy_ai_challenge/splits.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/c7df3127756d831a61c781d0531c155dc8d9c2fb/atlas/releases/atlas-repaired-20261012/native/data/applications/trustworthy_ai_challenge/splits.parquet",
+      "sha256": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae",
+      "bytes": 60472
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/chronicle_scribe_12ff.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/chronicle_scribe_12ff.tar.gz",
+      "sha256": "9c3447af39b3bb085fd3e5ff075cc3bd0b306c3f136276ee1d901e4a509e8820",
+      "bytes": 6139686
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/chronicle_validator_registry_f06e.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/chronicle_validator_registry_f06e.tar.gz",
+      "sha256": "269c84723af645ebb35db3bb45235b24b1476770f7af8c2997b1261dbc1cfe79",
+      "bytes": 11597
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/pyth_governance_68a9.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/pyth_governance_68a9.tar.gz",
+      "sha256": "fe303585798c9ba5d201a8b42725f6c537465630393d6312e28f3b6715a85a73",
+      "bytes": 2346220
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/redstone_monorepo_95f8.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/redstone_monorepo_95f8.tar.gz",
+      "sha256": "22f97bb1504261c91f0dc271daad075f54efe65e40db5aaf4cfda65ef05b1af0",
+      "bytes": 51438981
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/source_registry_manifest.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/source_registry_manifest.json",
+      "sha256": "5dfd6d00e040d610fd0387afb216baedc594b547bc26ad7bb90c4cd7d0e2e9bc",
+      "bytes": 1210286
+    },
+    {
+      "archive_path": "source_registries/data/source_archives/tellor_layer_943a2709.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/212d469bcae7acdf22a19736e861b4c85596cd73/atlas/releases/atlas-repaired-20261012/source-registries/tellor_layer_943a2709.tar.gz",
+      "sha256": "4005460dde2beccf8fb40e7b6be07f1d85db0a0b2db0743bba0535fd5bbd2673",
+      "bytes": 8451348
+    },
+    {
+      "archive_path": "repaired/README.md",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/README.md",
+      "sha256": "80a1d3554bcad66ee9bcb6894249580cf9684d3fa3e16243f86d7933209c0518",
+      "bytes": 1945
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/benchmark_config.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/benchmark_config.json",
+      "sha256": "c0743f1543a7ee71c106d9e0f2ef044de414ff74cd8d38371d87b3e148ebda15",
+      "bytes": 606
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/benchmark_sample.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/benchmark_sample.parquet",
+      "sha256": "ea67664d0939f0ebb7d09171ef29aa8f191c452500cc54c4f1e9c12b3aac0b59",
+      "bytes": 1165104
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/calibration.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/calibration.parquet",
+      "sha256": "6bfc1247e45666b8757b508cedaa6208d3f834855d89267a9a34dea13522ca90",
+      "bytes": 6379
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/capital_lock_distribution.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/capital_lock_distribution.parquet",
+      "sha256": "531f5571ca733783cd9fb156103039cc4d6bae202aac6c1be08a4cc2e5f9d75d",
+      "bytes": 1452
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/delay_decomposition.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/delay_decomposition.parquet",
+      "sha256": "bb4c0822050bedf8f7fad3e24d65925d34f347ee89001595f7f7d4b4b5428d6b",
+      "bytes": 1703
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/episode_summary.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/episode_summary.parquet",
+      "sha256": "ea1e9b97ac384caccb715d1aa162a5e04978d3fed1c6b4aaf44d6f39170cb814",
+      "bytes": 1464
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/financial_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/financial_episodes.parquet",
+      "sha256": "abafa9a6e145e458650edc6df1d9c0178a3fdf48a506e20cf56e4a81c21865e4",
+      "bytes": 119405748
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/landmark_prefixes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/landmark_prefixes.parquet",
+      "sha256": "b2757859d75921ef4285574be1c98c433b5b889ba989a167ccbd702e231da5c2",
+      "bytes": 160009794
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/metrics.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/metrics.parquet",
+      "sha256": "b90db50a54d1bc58010325cdf69a655dee3fd176dfe5e638aba3d3ae5b0e6d17",
+      "bytes": 11897
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/model_registry.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/model_registry.parquet",
+      "sha256": "8460f9e9c679d3e64066030642c913395987dc61421998bad221bdcb46483c04",
+      "bytes": 3060
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/predictions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/predictions.parquet",
+      "sha256": "05f7c5db3519751ed4a1cc73926aebb6db19a531ec4753dad9c6f1e3d23574f2",
+      "bytes": 281455
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/splits.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/splits.parquet",
+      "sha256": "f12b71aefbd6b13a529bdd27efd41b3a5344dcc51dc7c1bb1721a7e6eb315359",
+      "bytes": 160283119
+    },
+    {
+      "archive_path": "repaired/data/applications/financial_benchmark/track_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/track_episodes.parquet",
+      "sha256": "c81186a64337d7b7897f00c897df1edafd9c65d69f042e970a905275e9266ad2",
+      "bytes": 195135039
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/accountability_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/accountability_episodes.parquet",
+      "sha256": "086f0f22da9bb712195e4701285a8baae67c1f953b6357052f6a9b7a9c1772b0",
+      "bytes": 134269600
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/adjudication_track_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/adjudication_track_episodes.parquet",
+      "sha256": "f91b0a55abd056f74fd7fd4f6f6049f1092d9b80f1875b9128a37e1ea7bbf837",
+      "bytes": 133128018
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_economic_features.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_economic_features.parquet",
+      "sha256": "aa6cfe52eb8f6b8e70659b367d8df864f16efdf828030b49f6d310d53c38a000",
+      "bytes": 110865618
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_evidence_features.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_evidence_features.parquet",
+      "sha256": "8a1e4871a412443ddbdc374d4f2b146fefc99309d946be62ebc2ec0b2083ee07",
+      "bytes": 98759260
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_multiview_features.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_multiview_features.parquet",
+      "sha256": "2ef05affeb485853dc231d9687a25fc2fa1fd9942ee0d1c305dcd58c922a31e9",
+      "bytes": 100196194
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_states.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_states.parquet",
+      "sha256": "0d6a4c4f1a4041a00dab771335b359d2848864c7ca4bcd918c6e30b8602f8430",
+      "bytes": 124382653
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_temporal_features.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_temporal_features.parquet",
+      "sha256": "1e8ed2f5965911b912d05965ad362bef484c54bedb1729a28500c7a0204f3fcd",
+      "bytes": 99321061
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/episode_transitions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/episode_transitions.parquet",
+      "sha256": "e159d2d88429ad72908e973aee16d7ca305a3d2f3a3b7101c711a52bfddc57a8",
+      "bytes": 121709051
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/model_episode_sample.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/model_episode_sample.parquet",
+      "sha256": "7320a7aacf4ad86def5377bc2345642e0a08c85ae9e8cea7239a183f657b05e2",
+      "bytes": 1083190
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/penalty_track_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/penalty_track_episodes.parquet",
+      "sha256": "ae973c6c812a9652c263a87e495c1c3b7f56db53b5abf3c369abeb775e3bb904",
+      "bytes": 133063426
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/prefix_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/prefix_episodes.parquet",
+      "sha256": "6ea3922dc2f983de79d22b25cf78a18e45374e730f0535e4020c9383a628b647",
+      "bytes": 104208774
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/protocol_holdout_splits.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/protocol_holdout_splits.parquet",
+      "sha256": "03602253c8009bc8ffa5812fd63dc5bc334d51ee87a7ece7f820db087f832803",
+      "bytes": 98652311
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/reward_track_episodes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/reward_track_episodes.parquet",
+      "sha256": "1bbc3c1f0bb05b4ddd2ddb5e89fcdd6a4741e3804ce63458916c0ee91b62db0f",
+      "bytes": 87779915
+    },
+    {
+      "archive_path": "repaired/data/applications/oata/train_valid_test_splits.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/oata/train_valid_test_splits.parquet",
+      "sha256": "b6409d95e3c3840de57434ccf245dba479799dfde1e445bd8919f3fd367139cc",
+      "bytes": 99011655
+    },
+    {
+      "archive_path": "repaired/data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+      "sha256": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864",
+      "bytes": 495481
+    },
+    {
+      "archive_path": "repaired/data/applications/trustworthy_ai_challenge/splits.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/trustworthy_ai_challenge/splits.parquet",
+      "sha256": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae",
+      "bytes": 60472
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/accountability_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/accountability_events.parquet",
+      "sha256": "fcfee61a7e153f8d7e93175e504b4931cffc5ea70a6fa544135c97e05aecef60",
+      "bytes": 4861915192
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chainlink_eth_usd_reports.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chainlink_eth_usd_reports.parquet",
+      "sha256": "a8a7163c2aa4fd52a19354324116831a749da37bfc7382982c0d706589626d27",
+      "bytes": 4953032
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chainlink_event_link_flow_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chainlink_event_link_flow_qc.parquet",
+      "sha256": "6bfa2d90b7829374dfc5dd9df86c8685530142c79c6738812586755a2a642551",
+      "bytes": 3492033
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chainlink_link_flows.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chainlink_link_flows.parquet",
+      "sha256": "ec9fcb99c4f4b746ac985a5cb351bf2cffb4a0a5577045f168a67e27d17d1d3c",
+      "bytes": 2876017
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chainlink_staking_v02_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chainlink_staking_v02_events.parquet",
+      "sha256": "bb2ba7e88efddfd8f51d2a9fee66773717c072d52565b43ed84851c00f43a2b9",
+      "bytes": 5505766
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chronicle_ethereum_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chronicle_ethereum_events.parquet",
+      "sha256": "abab0400a1bac52704ec9b14821bbf5c19de7d02c69f956cdbad83b6c6cecf00",
+      "bytes": 12406334
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+      "sha256": "0d0e5d72200671ed45bef321ca2957dc19df039097e7ccea68e729b64dc0a053",
+      "bytes": 3863
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/dia_staking_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/dia_staking_events.parquet",
+      "sha256": "f49809472446852446bc02e8d5c533e59b2c96a4b1f5afd813c2c3daa949ce8d",
+      "bytes": 42573
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/dia_staking_withdrawals.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/dia_staking_withdrawals.parquet",
+      "sha256": "3fc27630287da229dd7c71964dc77476660ef3c5d5c451f61e11c8295e3c2268",
+      "bytes": 18638
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/economic_semantics_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/economic_semantics_events.parquet",
+      "sha256": "54bcc1bd5736ada94881e3b2d8a2da9c7fa6e86956478ec3f01ac296a9913de0",
+      "bytes": 1904016406
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/ecosystem_observability_evidence.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/ecosystem_observability_evidence.parquet",
+      "sha256": "e147ba2db8e77715ea51e02bfed1855f4cd3bc73b6cf08391fafeee6656b768e",
+      "bytes": 5484
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_beneficiary_chill_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_beneficiary_chill_events.parquet",
+      "sha256": "6b653603f17a286b6258ef04bcde70ee592b4b13d02da32909fa2f9605559a29",
+      "bytes": 6064
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_beneficiary_chill_state.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_beneficiary_chill_state.parquet",
+      "sha256": "f1c159f3c5b6905b5fc4ff84e076994c24ef84fde36aab20473593e93b6e585a",
+      "bytes": 1806
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_provider_conditions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_provider_conditions.parquet",
+      "sha256": "04b6bd3d1576998e94e954f74889c4e17097d56ee94149662d593f268eb87007",
+      "bytes": 258856
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_provider_failures.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_provider_failures.parquet",
+      "sha256": "e317741462f289834331dc5123e0988d64345d06f95359568e0be9566106bc4a",
+      "bytes": 16768
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_provider_feed_performance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_provider_feed_performance.parquet",
+      "sha256": "b5c075239b287895af50a4b53166c2a907f9a95828fe3456ca2f3e2f0c377616",
+      "bytes": 1268079
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_provider_passes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_provider_passes.parquet",
+      "sha256": "7f37ba421a530de1fba59a4edd9507c7478cd434806138c6dc5e01c35a320f5d",
+      "bytes": 45031
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+      "sha256": "456e171369c37b920e286a303cf7a5ea52b9020efb3604a37d0c76ed239fb6a9",
+      "bytes": 22228
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_reward_claim_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_reward_claim_events.parquet",
+      "sha256": "c0bf86b2103c48f02c14efb4ade7c4ff0aedc2df23de2f4711a3ab1b85d84c2c",
+      "bytes": 692913421
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_reward_claims.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_reward_claims.parquet",
+      "sha256": "9566afbb94b2b18bff54154f45791b5ed8270f80720a892130d5b37f52574a13",
+      "bytes": 714097
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_reward_component_attribution.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_reward_component_attribution.parquet",
+      "sha256": "b50741d301f1ec947bf6bc6b8fc1f9039ee008825b1f28b23d3c329695c6014a",
+      "bytes": 39711
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_reward_epochs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_reward_epochs.parquet",
+      "sha256": "21f50d686ca88cfba3f88ada0ec26544246b34481d1908deb3a21d3e1a6dadc1",
+      "bytes": 23651
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/flare_voter_registrations.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/flare_voter_registrations.parquet",
+      "sha256": "0465b28c910c053cbc42f51dcc814b8d9420c6c09ee285851f5c0fe446c52d5b",
+      "bytes": 892675
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+      "sha256": "a0363ae29c2daf3391b91b9e604f815e6c2023b542bb8ba4fafb36c0032a5711",
+      "bytes": 5224
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_adapter_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_adapter_events.parquet",
+      "sha256": "2dfb4f47bffbb2de2ea631ff321e81b18d2b60b86291e89e32ffb2105283023d",
+      "bytes": 9768251
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_child_tunnel_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_child_tunnel_events.parquet",
+      "sha256": "6c3dc5c6b41c20339b5dde35ca3554f1f30e8d5f6f193d6734f468931662aac8",
+      "bytes": 1763991
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_oov2_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_oov2_events.parquet",
+      "sha256": "6f3b243a9df36affbdfb3ffd03fd78a5359557b16e9cce4e822d9b873a735db7",
+      "bytes": 47813666
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_uma_gamma_links.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_uma_gamma_links.parquet",
+      "sha256": "e33b68e610a58e3fcd88d951d311cce74be4098af43fb7641f3fdb525f042ce9",
+      "bytes": 12469227
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "sha256": "fe025843c774765b9c7da16cfc9ef610bf02e44006d3b95fa94ae5177db4282c",
+      "bytes": 1518161
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230",
+      "bytes": 11167492
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polygon_uma_token_flows.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polygon_uma_token_flows.parquet",
+      "sha256": "7a55dc2fdcef6223e7e727f77be0dbb491a60d93190f9850239bf96598eebbad",
+      "bytes": 19223359
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+      "sha256": "b3e27a6d96c674a3bb88c3a6281971c836b8d51921052cbf1952e8d616f2431b",
+      "bytes": 20399
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+      "sha256": "e6784b932748669a8761e7301fb1e2a427a8b23d37dcdd84bc07aba1add30f41",
+      "bytes": 189107
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_decision_time_prices.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_decision_time_prices.parquet",
+      "sha256": "c996f51c711f47c3d42c772577d6036420f35f77192776a2fd555103516a92e7",
+      "bytes": 152359
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+      "sha256": "ade711bcf9bc062d75321024dd822cd0b98d0efa6c95993e9825fffaf08b3557",
+      "bytes": 125256
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+      "sha256": "dda4516ce0907e27f3e3689c150156a28055803f5c7472e63a51ec2f8fcd5888",
+      "bytes": 82830
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/polymarket_gamma_markets.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/polymarket_gamma_markets.parquet",
+      "sha256": "3908d276cf0534435b79a5553ea724db441d878f682b651fd6b015de99780c91",
+      "bytes": 92640198
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_economic_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_economic_events.parquet",
+      "sha256": "0e75370b73752cdeec90fa0101e88d597161a94632eae785c84becef35d95499",
+      "bytes": 27297906
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_historical_observability.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_historical_observability.parquet",
+      "sha256": "9184533a990e9379eb4558d70b5ba415bc28c1b48fcf907329b6b6d9b904f0e7",
+      "bytes": 3703
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_instructions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_instructions.parquet",
+      "sha256": "4c6b28ca65b7d14f98c7914487bbd5f165d5bdeac0ca7e1a9030e09b5999eaa6",
+      "bytes": 71184144
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+      "sha256": "de69fee1aa2a834e33849280379f783d3e77283a1f19228c0740770ed58e0bf8",
+      "bytes": 19965
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_reward_epochs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_reward_epochs.parquet",
+      "sha256": "4bd7e25ca0a87904ac61740e666aaa10fde717e57f90dbc33b2ba104b3e410af",
+      "bytes": 7277
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_slash_counters.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_slash_counters.parquet",
+      "sha256": "74edbc0f23e2bf292c111d8dbd5beba591bbabbe41f3ea7853ffaafad1a1ccc9",
+      "bytes": 8173
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/pyth_ois_stake_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/pyth_ois_stake_events.parquet",
+      "sha256": "e2d16ed106c12f92a29cd0a2195e8d6dbe114b003834f42949e7d0e6b3aa1d28",
+      "bytes": 16505145
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/realized_reward_slash_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/realized_reward_slash_events.parquet",
+      "sha256": "e642f549c70670eac1801eb152aff3b91980599e289905285b215504f68281c3",
+      "bytes": 1706267666
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/redstone_ethereum_push_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/redstone_ethereum_push_events.parquet",
+      "sha256": "7bf0d8aadf503e2a39730bd93d50264cc8739b6b08d86571c4abf3dfdb0d6484",
+      "bytes": 20623170
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/sample_b_observable_accountability.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/sample_b_observable_accountability.parquet",
+      "sha256": "9bf01c940a68a167845d8fa5a997f388ceb2cbc80710d6912e5b1da6e3244cfe",
+      "bytes": 4829731702
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/sample_c_strict_honesty_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/sample_c_strict_honesty_events.parquet",
+      "sha256": "470c2a90a12ad62e2896f45b663b229db28c94aeec9d12970deec3e356a8fe26",
+      "bytes": 149919569
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_aggregate_height_index.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_aggregate_height_index.parquet",
+      "sha256": "53ea2f16c14d075b7cd4161b1845405a62713f45981f913e02d997b0e3fbdcfc",
+      "bytes": 148286845
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_dispute_payments.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_dispute_payments.parquet",
+      "sha256": "fc512e808c5cfcfb593e34f53c24e7357fe5b711007f18b41268ba2bf18a56ce",
+      "bytes": 3618
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_dispute_votes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_dispute_votes.parquet",
+      "sha256": "9040e016d562a187ea007c8733549f81728c904072fcfb057becd64434355f76",
+      "bytes": 6054
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_disputes.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_disputes.parquet",
+      "sha256": "bb790e9469a3a658c9f9fac748480036fc7e0e2e42ec6ebcd6d38c0d7cfe8c89",
+      "bytes": 12935
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_jail_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_jail_events.parquet",
+      "sha256": "da2c5435bdf42c3b2942a11aef1cd45818edbb37a012629e8696c2b1b8d77d18",
+      "bytes": 5662
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_jail_lifecycles.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_jail_lifecycles.parquet",
+      "sha256": "7e9b53bc3261a69921a011b12b8ea9d5cda1246edef64e415f86e6dedf7ef124",
+      "bytes": 5867
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+      "sha256": "41d3bc010d22fa74f96af4a2e942b2c3a17515297ba93fb7d4a33d893d9f5466",
+      "bytes": 2834
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+      "sha256": "b1d34e0770a5e96f58e655be6cae7bead6725d58f69ab525b2f0fc159380de3c",
+      "bytes": 1024662
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_micro_reports.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_micro_reports.parquet",
+      "sha256": "e8764928eba7436cdf957ee53f42e312592d13174d0fde043e97926d92f94c17",
+      "bytes": 462712658
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_query_tip_funding.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_query_tip_funding.parquet",
+      "sha256": "e72603acb40b4eeebda9de47d58a2876cd669a60f2cd9a5c03604f89cc32692e",
+      "bytes": 1595132
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+      "sha256": "7516799d796e763635e74c2b7aa9ff4b300092dc2d7148751e23fab6f962d61a",
+      "bytes": 35033877
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+      "sha256": "03eb729ccd69ae97b5508d0af1a056b3352df0d6b4dd3ecefb99c4c10339040f",
+      "bytes": 1287034
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_dvm_requests.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_dvm_requests.parquet",
+      "sha256": "158273c7b83591f540a266618bf7136c9dbe1c28fb8ca788485cd05387b837ff",
+      "bytes": 469143
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_dvm_staking_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_dvm_staking_events.parquet",
+      "sha256": "9f932a49e59ed8bebcc39b8ca06ce3d26d8ce25f8b05963902a7f260369475bb",
+      "bytes": 23139868
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+      "sha256": "48e6010a53b2b3caf35d57b996dd2b803feb75a09b06bfa5bce7633d51e35a8b",
+      "bytes": 39203134
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_dvm_votes_events.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_dvm_votes_events.parquet",
+      "sha256": "bf2f4613a523989dd3f246b8415c14f571eee3a12259a68b7ec449bd99a4c389",
+      "bytes": 22818301
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+      "sha256": "8d8369f24158606ab16cb9dfb388d202fb26a856c028922baf220565f7e70522",
+      "bytes": 9343301
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_phase2_request_panel.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_phase2_request_panel.parquet",
+      "sha256": "6dcd3bb263c9cd9a09bce7e233b8a603da3645c5b3efc8f4017a07e8dc5c370f",
+      "bytes": 3537343
+    },
+    {
+      "archive_path": "repaired/data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359",
+      "bytes": 214885
+    },
+    {
+      "archive_path": "repaired/data/manifests/accountability_events.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/accountability_events.json",
+      "sha256": "3640b9c0a6f9ab7053e5d2c66dbe84a437a0be499fba11eac46a9f32ab3a4768",
+      "bytes": 4005
+    },
+    {
+      "archive_path": "repaired/data/manifests/chainlink_evidence_ledger.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/chainlink_evidence_ledger.json",
+      "sha256": "0088921e9fe37c9fb10750e4fb260f4bb48dcf1b4aa81709ade9704d8e5ff8fc",
+      "bytes": 1663
+    },
+    {
+      "archive_path": "repaired/data/manifests/chainlink_staking_v02_ledger.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/chainlink_staking_v02_ledger.json",
+      "sha256": "78b86de17b3d2e5c420a45a5d2cee8b403b150da17b4e5b3ddb1d3730d09457c",
+      "bytes": 608
+    },
+    {
+      "archive_path": "repaired/data/manifests/contract_semantics_audit.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/contract_semantics_audit.json",
+      "sha256": "40b6786ef77706c2a0940b2f1d898201b2634df35ee5072636289ade388be312",
+      "bytes": 31667
+    },
+    {
+      "archive_path": "repaired/data/manifests/manifest.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/manifest.json",
+      "sha256": "50424823f825baa235167fb3cbedda857a6dd3690fc15820df6b992e2bf95bcb",
+      "bytes": 689
+    },
+    {
+      "archive_path": "repaired/data/manifests/research_samples.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/manifests/research_samples.json",
+      "sha256": "ea7fd9baebab263ea8cde88d7e18772e39d180e440a0069829ef25d2c939cb5c",
+      "bytes": 2435
+    },
+    {
+      "archive_path": "repaired/experiments/decision_benchmark/metrics.csv",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/experiments/decision_benchmark/metrics.csv",
+      "sha256": "efbbe833851cbd77c484736ce36ad379123d461b2dfc91741a7f92b566a659e4",
+      "bytes": 632
+    },
+    {
+      "archive_path": "repaired/experiments/decision_benchmark/predictions.parquet",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/experiments/decision_benchmark/predictions.parquet",
+      "sha256": "396df563ece1c78cd03b898ac67ddad0536bc57dd23cce633217ecc3da3dfb3d",
+      "bytes": 32031
+    },
+    {
+      "archive_path": "repaired/experiments/decision_benchmark/validation.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/experiments/decision_benchmark/validation.json",
+      "sha256": "f4a9f7806cf41735ac83cf65e090f491f7ac00b3ab530c9a7b2255a04877c9c6",
+      "bytes": 1490
+    },
+    {
+      "archive_path": "repaired/metadata/accountability_events.schema.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/accountability_events.schema.json",
+      "sha256": "cccfeeb7d5015dacd8d87ab8c82c7d24a8674b5edadda10c0e7a055122e5fae1",
+      "bytes": 13239
+    },
+    {
+      "archive_path": "repaired/metadata/baseline_file_manifest.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/baseline_file_manifest.json",
+      "sha256": "54a4700aa16bab32b6c4dce1c3471cea703298991dd65c706e0cf3411bcfffe5",
+      "bytes": 19047
+    },
+    {
+      "archive_path": "repaired/metadata/documentation_validation.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/documentation_validation.json",
+      "sha256": "d962ca0c1c8126291258a7e1fff6bca7a0f9da24ab9c0a186beb3f030fa84d4a",
+      "bytes": 204
+    },
+    {
+      "archive_path": "repaired/metadata/field_dictionary.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/field_dictionary.json",
+      "sha256": "dfcbc9d160af9e42fa389ab50abae921c664444594b135377e4ecfc351035046",
+      "bytes": 1655196
+    },
+    {
+      "archive_path": "repaired/metadata/file_manifest.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/file_manifest.json",
+      "sha256": "fa318241ac7288421255d4c9eb863fab994f5a706d659d06b4ec69b784143895",
+      "bytes": 19258
+    },
+    {
+      "archive_path": "repaired/metadata/revision_provenance.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/revision_provenance.json",
+      "sha256": "140e29907660b80f5a53f53b0ef1fe32932eb29000f72608c16d5d7428c8f8e8",
+      "bytes": 2008
+    },
+    {
+      "archive_path": "repaired/metadata/semantic_decisions.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/semantic_decisions.json",
+      "sha256": "6aaeb0cfcaacf65463431bc80a27fc397540f41a6a38c0b8f34dffdecd9ab8a4",
+      "bytes": 2788
+    },
+    {
+      "archive_path": "repaired/metadata/table_catalog.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/table_catalog.json",
+      "sha256": "76b0800235cbc3d797294769ee282d63f60dec90fcd97828cc28e988cb8f5929",
+      "bytes": 84714
+    },
+    {
+      "archive_path": "repaired/metadata/time_coverage.csv",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/time_coverage.csv",
+      "sha256": "444705fa2e04c57c383475b9befe5464fb8050783d0fa763db8e2a393f98f290",
+      "bytes": 1410
+    },
+    {
+      "archive_path": "repaired/schemas/CHANGELOG.md",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/CHANGELOG.md",
+      "sha256": "074e23bd15602f7b4271f38c27f99bef173779cb7813b26c9f8d9662f63e2310",
+      "bytes": 780
+    },
+    {
+      "archive_path": "repaired/schemas/accountability_events.schema.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/accountability_events.schema.json",
+      "sha256": "0a1fb6ff90a6b3f6fedb93324218129e36573ac3d5b15f81d78a35b164a74a6f",
+      "bytes": 8528
+    },
+    {
+      "archive_path": "repaired/schemas/accountability_events.sql",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/accountability_events.sql",
+      "sha256": "86da10c44600ebea9ec5c69e5273774bce64ceaae059913ed7523fc65d07af1a",
+      "bytes": 1867
+    },
+    {
+      "archive_path": "repaired/schemas/cross_chain_economic_observation.schema.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/cross_chain_economic_observation.schema.json",
+      "sha256": "cf3d2a0e89a57af345fbe13fed314841eeb68da96503c07533d548507aec050c",
+      "bytes": 6957
+    },
+    {
+      "archive_path": "repaired/schemas/economic_semantics_events.schema.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/economic_semantics_events.schema.json",
+      "sha256": "78eddbb4109c2bcd3a46dc962117ba55ffdc86e944b392c5141fbf6aa3253c91",
+      "bytes": 2138
+    },
+    {
+      "archive_path": "repaired/schemas/economic_variable_dictionary.schema.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/schemas/economic_variable_dictionary.schema.json",
+      "sha256": "217977503bc401f71c7fcd5f03d78a5b62c4336dedbfc3826dd8402f39bbae22",
+      "bytes": 2231
+    },
+    {
+      "archive_path": "repaired/validation/baseline_full_release.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/baseline_full_release.json",
+      "sha256": "12e8f5b3a8e8620f23a200d64d742675ca4a94ebad286fe15e1e5526b774164c",
+      "bytes": 32045
+    },
+    {
+      "archive_path": "repaired/validation/decision_benchmark.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/decision_benchmark.log",
+      "sha256": "c4d49d2b518a0f404d55394323014789488cbc4c4d2587658a70ec64da8e9717",
+      "bytes": 546
+    },
+    {
+      "archive_path": "repaired/validation/environment.freeze.txt",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/environment.freeze.txt",
+      "sha256": "532d344374581760a1fa777acf8c16092f9415092c7de726ed39f7bf3b1f92d4",
+      "bytes": 2003
+    },
+    {
+      "archive_path": "repaired/validation/finalization.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/finalization.log",
+      "sha256": "0d823df8f7c1fb92e8c12fa77d10936908805e27ab7adb2aefedad10cda95a27",
+      "bytes": 2470
+    },
+    {
+      "archive_path": "repaired/validation/finalization_checkpoint.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/finalization_checkpoint.json",
+      "sha256": "f52154d3fee683cb8f9c9421a4c5297444285c1fb6bff02cbb31859052433eae",
+      "bytes": 13049
+    },
+    {
+      "archive_path": "repaired/validation/finalization_first_resume.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/finalization_first_resume.log",
+      "sha256": "e001560e246096e9086fb6b80cda0472df3b4c0fac5f987e7a674855b50d0b4b",
+      "bytes": 2183
+    },
+    {
+      "archive_path": "repaired/validation/finalization_initial_failure.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/finalization_initial_failure.log",
+      "sha256": "97a67b2fc35d5879c8613afef91c70cecd6fb6d86df89a9418c0610ae8cb35c1",
+      "bytes": 899
+    },
+    {
+      "archive_path": "repaired/validation/finalization_runtime.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/finalization_runtime.json",
+      "sha256": "12e23ca2ff84dddaf0ea5c10e1c4308cf21faa26cb9d00aad08f40db4b05aaab",
+      "bytes": 680
+    },
+    {
+      "archive_path": "repaired/validation/financial_benchmarks.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/financial_benchmarks.log",
+      "sha256": "75fdc297b27a99b745128ef30973eab924d0a13fd255e5eaae7b76379a6e23e2",
+      "bytes": 6460
+    },
+    {
+      "archive_path": "repaired/validation/financial_feasibility_initial.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/financial_feasibility_initial.json",
+      "sha256": "0665bc41e5e1f95ee1d80947e5c3e569985cd313913d2e2fdcacbe89799d616d",
+      "bytes": 35677
+    },
+    {
+      "archive_path": "repaired/validation/financial_views.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/financial_views.log",
+      "sha256": "e7eff91a8552d6dfd2a2e611c08b8e230e8db915a4f0b9c4a1cbe613724457ca",
+      "bytes": 11006
+    },
+    {
+      "archive_path": "repaired/validation/full_release.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/full_release.json",
+      "sha256": "fbed19cc42fca53a914addb35be9e8a516360f455125bf139ae4e1e65370c16a",
+      "bytes": 35692
+    },
+    {
+      "archive_path": "repaired/validation/input_identity.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/input_identity.json",
+      "sha256": "a8ba52468ea9b0a2fcbbe274d7cfc00d58577abde8738b65bd5f31e0b690571c",
+      "bytes": 14173
+    },
+    {
+      "archive_path": "repaired/validation/native_common.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/native_common.log",
+      "sha256": "107ce3b74453b89e5f7381d83eff18235e01307cac554dcd2e0b158005da63c8",
+      "bytes": 235
+    },
+    {
+      "archive_path": "repaired/validation/native_samples.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/native_samples.log",
+      "sha256": "ea7fd9baebab263ea8cde88d7e18772e39d180e440a0069829ef25d2c939cb5c",
+      "bytes": 2435
+    },
+    {
+      "archive_path": "repaired/validation/oata_episodes.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/oata_episodes.log",
+      "sha256": "b633c9c7a6f580e0ed8a586bff82e2ca07c50925f6fb41589c512c17c6eda5bf",
+      "bytes": 314
+    },
+    {
+      "archive_path": "repaired/validation/oata_views.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/oata_views.log",
+      "sha256": "532bdd89caf5be754e545fe58044aab1e38faa39efeac5477acc21e5d5059327",
+      "bytes": 18747
+    },
+    {
+      "archive_path": "repaired/validation/pyth_replay/validation.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/pyth_replay/validation.json",
+      "sha256": "4fc8e2de7bc64e9d308fae629d7b5260732b17f3626d369167fb592ac85b80a1",
+      "bytes": 630
+    },
+    {
+      "archive_path": "repaired/validation/pyth_replay.log",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/pyth_replay.log",
+      "sha256": "4fc8e2de7bc64e9d308fae629d7b5260732b17f3626d369167fb592ac85b80a1",
+      "bytes": 630
+    },
+    {
+      "archive_path": "repaired/validation/semantic_after.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/semantic_after.json",
+      "sha256": "b502e6aff53704e4a02b6557feefb4ae23c7b868302cb06b75e1fdb8232c1382",
+      "bytes": 4941
+    },
+    {
+      "archive_path": "repaired/validation/semantic_before.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/semantic_before.json",
+      "sha256": "b5b28e53c6026fd6004cc6dd2d182b177ca5572e25438b8e9ec4bba18a425819",
+      "bytes": 4761
+    },
+    {
+      "archive_path": "repaired/validation/unit_tests.txt",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/unit_tests.txt",
+      "sha256": "0e2499c5ccaf37907855d301cd2d6387ad4a6ba1d7dac57c5f3219e3c0573efd",
+      "bytes": 4987
+    },
+    {
+      "archive_path": "acquisition-supplement/Oracle4SD-Atlas-code-provenance.tar.gz",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/Oracle4SD-Atlas-code-provenance.tar.gz",
+      "sha256": "9840b8d49d7e407807ba31e0d4966177799d669c64763957002d4a7b22fd1cf7",
+      "bytes": 2185835
+    },
+    {
+      "archive_path": "acquisition-supplement/authors.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/authors.json",
+      "sha256": "345310b602abf106f4130f0b0e015e021c816233869532f1576f63feaf8bcd18",
+      "bytes": 1309
+    },
+    {
+      "archive_path": "acquisition-supplement/zenodo_metadata.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/zenodo_metadata.json",
+      "sha256": "41a588a4f4eef6269d26f0cb25435546b9e15b858cce3b9ff6ffe045db2b6d5d",
+      "bytes": 2610
+    },
+    {
+      "archive_path": "acquisition-supplement/artifact_plan.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/artifact_plan.json",
+      "sha256": "c056ee810e14386e2a02be88daf92d4bda459ceb132cb6ce6afb10ed3edcf786",
+      "bytes": 102732
+    },
+    {
+      "archive_path": "acquisition-supplement/provenance_verification.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/provenance_verification.json",
+      "sha256": "a60302b2570046945a7f20d2008b9b280dba65ea09e0c8c9c14faf8fd7f9a3af",
+      "bytes": 693
+    },
+    {
+      "archive_path": "acquisition-supplement/historical_hash_recovery.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/historical_hash_recovery.json",
+      "sha256": "b1a79d9d63960b6f481c585bad6526151d1304b0774b770565069f16342635e1",
+      "bytes": 1219
+    },
+    {
+      "archive_path": "acquisition-supplement/CITATION.cff",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/CITATION.cff",
+      "sha256": "f814f51308a4f0fb984fdba6f1222ce658e33c60776d5e0f47c818ba7a760099",
+      "bytes": 1097
+    },
+    {
+      "archive_path": "acquisition-supplement/supplement_manifest.json",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/757c8e3e17e6c302423252f493fc0fc4db498fe3/atlas/releases/atlas-repaired-20261012/acquisition-supplement/supplement_manifest.json",
+      "sha256": "ce22a7f1ad62c3a87d3072f29d520222df1bc9cecaa9c3714d0f588fcc0c16ec",
+      "bytes": 1961
+    }
+  ],
+  "file_count": 221,
+  "bytes": 19223276635,
+  "code_archive_commit": "38e63d2ed503b38b97d2fddd484f7871b9dda7de",
+  "license_note": "Derived data/documentation CC BY 4.0; code MIT; embedded third-party sources retain their notices.",
+  "instruction": "Upload the actual bytes identified by this list when making a scoped Atlas deposit. This list alone is not a data archive."
+}

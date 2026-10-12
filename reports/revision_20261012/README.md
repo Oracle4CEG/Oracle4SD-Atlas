@@ -17,6 +17,8 @@ The authoritative result is [full_release.json](full_release.json): **50 checks 
 | [provenance_acceptance_tests.txt](provenance_acceptance_tests.txt) | 35 current tests, adding seven saved-evidence acceptance and rejection tests |
 | [colab_evidence_local_diagnostic.json](colab_evidence_local_diagnostic.json) | Retained local evidence passes diagnostic checks; this report explicitly does not accept hosted Colab execution |
 | [historical_hash_recovery.json](historical_hash_recovery.json) | One expected old manifest recovered and verified from an immutable public dataset revision |
+| [provenance_public_download.json](provenance_public_download.json) | Eight supplement/registration files re-downloaded and verified at immutable dataset revision 757c8e3 |
+| [provenance_card_verification.json](provenance_card_verification.json) | Updated Dataset Card and all 46 root checksum entries verified at dataset revision 356fb1a |
 | [decision_benchmark](decision_benchmark/) | Three CPU baselines, chronological 489/161/160 split |
 | [repaired_public_replay.json](repaired_public_replay.json) | Eight repaired-release files downloaded; 963 predictions reproduced exactly and 21 completed financial fits read successfully |
 | [decision_public_replay.json](decision_public_replay.json) | 963 predictions reproduced exactly from freshly downloaded public inputs |
