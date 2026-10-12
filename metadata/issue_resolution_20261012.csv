@@ -1,0 +1,13 @@
+issue_id,status,resolution,evidence_base,evidence,checked_date
+I01,resolved_repaired_release,UMA challenged requires native dispute evidence; transfer requires settlement and reconciled flow,reports/revision_20261012/,full_release.json; semantic_after.json,2026-10-12
+I02,resolved_repaired_release,UMA winner reward component restored; principal return separated; profit unknown,reports/revision_20261012/,full_release.json; semantic_after.json,2026-10-12
+I03,resolved_repaired_release,Tellor SUPPORT means challenge supported and report rejected,reports/revision_20261012/,full_release.json; semantic_after.json,2026-10-12
+I04,resolved_repaired_release,Rejected Tellor challenges do not produce applied principal slashes,reports/revision_20261012/,full_release.json; semantic_after.json,2026-10-12
+I05,resolved_repaired_release,DVM signed accrual is separate from applied principal; negative and zero cases covered,reports/revision_20261012/,full_release.json; semantic_after.json,2026-10-12
+I06,resolved_repaired_release,Version 2 semantics reviewed and common schema scanned; 850 unsettled request rule IDs repaired,reports/revision_20261012/,full_release.json; unit_tests.txt,2026-10-12
+I07,historical_conflicts_preserved_new_release_verified,Two old mismatches remain documented; current inputs and outputs have separate verified immutable identities,reports/revision_20261012/,historical_hash_mismatches.json; full_public_verification.json,2026-10-12
+I08,documented_not_imputed,Timestamp gaps and heterogeneous censoring retained; coverage published per table; unknown times not fabricated,reports/revision_20261012/,../../metadata/repaired_atlas_20261012/time_coverage.csv,2026-10-12
+I09,field_type_reference_coverage_complete_semantic_review_limited,1789 fields documented; native source-reference definitions do not establish full scientific/human provenance,reports/revision_20261012/,../../metadata/repaired_atlas_20261012/documentation_validation.json,2026-10-12
+I10,code_inputs_outputs_public_doi_pending,Full native inputs and repaired outputs published; source registries and historical Pyth state available; archival DOI not assigned,reports/revision_20261012/,full_publication.json; native_public_download.json; source_registry_restore.json; pyth_replay.json,2026-10-12
+R01,deferred_by_user,User explicitly excluded manuscript and Overleaf work,reports/revision_20261012/,../../docs/REVISION_20261012.md,2026-10-12
+R02,local_pass_hosted_and_independent_review_pending,All 9 notebook cells and both replays passed locally; actual hosted Colab and independent human review not claimed,reports/revision_20261012/,notebook/notebook_execution.json; notebook/retained_evidence.json,2026-10-12

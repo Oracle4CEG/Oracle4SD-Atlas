@@ -1,0 +1,13 @@
+{
+  "asset_aggregation": "none",
+  "categorical_encoding": "Training-only one-hot encoding with one reference category dropped",
+  "coxph_l2_penalty": 1.0,
+  "cutoff_unix": 1782863999,
+  "feature_policy": "only static fields visible at episode initiation",
+  "maximum_rows_per_track": 6000,
+  "primary_landmark": "T0",
+  "random_seed": 20260729,
+  "sampling": "Stable episode-ID order, then protocol/chronological-split strata; independent of outcome. This computational benchmark is not a population-prevalence estimate.",
+  "split": "chronological 70/15/15",
+  "unknown_unavailable_are_negative": false
+}

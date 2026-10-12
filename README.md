@@ -2,11 +2,21 @@
 
 Oracle4SD Atlas reconstructs how blockchain oracle requests are challenged, adjudicated and paid. Protocol decisions, independent factual truth, principal at risk, accrued entitlements and realized payments remain separate.
 
+[中文操作说明](docs/QUICKSTART_ZH.md)
+
 **Reconstruction version:** `atlas-repaired-20261012`, common schema **2.0.0**. **Observation cutoff:** 2026-06-30 23:59:59 UTC. The earlier one-request teaching example remains available as `uma-public-rpc-case-v1`.
 
 ## Run a small real case
 
-From a fresh checkout, create the scientific environment. The bootstrap downloads pinned Python 3.12.12, so the host does not need a working `venv`/`ensurepip` installation.
+Use the revision branch while the organization pull request is under review:
+
+```bash
+git clone --branch fix/usable-atlas-release-20261012 --single-branch \
+  https://github.com/virusLuke3/Oracle4SD-Atlas.git
+cd Oracle4SD-Atlas
+```
+
+Create the scientific environment. The bootstrap downloads pinned Python 3.12.12, so the host does not need a working `venv`/`ensurepip` installation.
 
 ```bash
 python3 scripts/bootstrap_environment.py --output runs/environment
@@ -31,6 +41,8 @@ runs/environment/scientific/bin/python scripts/build_release_metadata.py \
 ```
 
 The 64 frozen inputs total 1.81 GB. Downloads use immutable revisions and are checked against SHA-256 and byte lengths. The builder reconstructs the 105,588,120-row common layer, research samples, economic layers and application views. Layers overlap; their row counts must not be added as distinct observations.
+
+The prepared release has **95 Parquet tables (17.34 GB)** and passed **50 full-release checks**. Its [1,789-field/type dictionary](metadata/repaired_atlas_20261012/field_dictionary.json) distinguishes explicit common/episode definitions from native source-reference documentation. The financial benchmark completed 21 fits across seven models and three tasks; the decision benchmark runs three baselines. Scores have task-specific evaluation limits described with the results.
 
 See [full reproduction instructions](docs/FULL_DATA.md) for downloading prepared outputs, a small 810-observation experiment, disk requirements, field documentation and the boundary between offline replay and fresh network collection. The [revision record](docs/REVISION_20261012.md) explains the UMA, Tellor, DVM, schema, Pyth and metadata repairs with their verification evidence.
 

@@ -18,7 +18,7 @@ from pathlib import Path
 import duckdb
 import pyarrow.parquet as pq
 
-from rebuild_atlas import ROOT, sha256, sqlpath, rewrite, validate, write_json
+from rebuild_atlas import ROOT, sha256, sqlpath, rewrite, validate, write_json, financial_benchmark_check
 from build_release_metadata import build as build_metadata
 
 
@@ -107,11 +107,7 @@ def finalize(baseline, output, resume=False):
     print('Validating all final layers',flush=True)
     checks,after=validate(con,output)
     metrics=con.execute(f"SELECT * FROM read_parquet({sqlpath(target/'metrics.parquet')})").fetchdf()
-    completed=metrics[(metrics['status']=='completed') & metrics['harrell_c_index'].notna()]
-    failures=metrics[metrics['status']!='completed']
-    checks.append(dict(name='financial_models_complete',passed=len(completed)==21 and failures.empty,
-                       completed_model_track_fits=len(completed),failed_or_unestimable=len(failures),
-                       scope='Seven fitted models on three tasks; protocol-balanced sampling and evaluation split are recorded; undefined time-dependent metrics remain null'))
+    checks.append(financial_benchmark_check(metrics))
     permitted={'data/curated/parquet/accountability_events.parquet','data/curated/parquet/sample_b_observable_accountability.parquet',
                'data/applications/oata/prefix_episodes.parquet'}
     before={x['path']:x for x in inventory};final=[];unexpected_changes=[]

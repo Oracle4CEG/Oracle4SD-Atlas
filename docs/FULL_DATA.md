@@ -37,6 +37,24 @@ runs/environment/scientific/bin/python scripts/download_atlas.py \
 
 For individual files add `--include data/curated/parquet/tellor_disputes.parquet` (repeat for multiple paths). Select `native` for original input identities and `repaired` for reconstructed output identities.
 
+Read a projection without loading the 105-million-row table into RAM:
+
+```bash
+runs/environment/scientific/bin/python - <<'PY'
+import duckdb
+con = duckdb.connect(config={"threads": 2, "memory_limit": "2GB"})
+path = "runs/released-atlas/data/curated/parquet/accountability_events.parquet"
+rows = con.execute("""
+    SELECT oracle_network, event_granularity, reward_amount_raw,
+           reward_asset_decimals, truth_basis, rule_id
+    FROM read_parquet(?) WHERE oracle_network = 'UMA' LIMIT 5
+""", [path]).fetchdf()
+print(rows.to_string(index=False))
+PY
+```
+
+Keep exact raw amounts as strings or sufficiently wide decimal integers. A raw reward-class value does not by itself establish payment; inspect the stage/evidence fields or the realized-event layer. Nulls remain unknown/unobserved/not applicable according to native context.
+
 ## Small experiment first
 
 The chronological decision benchmark needs two small files:

@@ -1,11 +1,13 @@
 check_id,requirement,status,evidence_path,checked_date
-R01,case inputs and source licenses,passed,metadata/source_register.csv,2026-09-16
-R02,case dictionary and expected outputs,passed,metadata/data_dictionary.csv,2026-09-16
-R03,case replay and negative tests,passed,reports/uma_case/reports/validation.json,2026-09-16
-R04,fresh notebook Run all,passed_local_fresh_kernel,reports/reproducibility/notebook_execution.json,2026-09-16
-R05,full immutable dataset archive and DOI,blocked_missing_archive,docs/FULL_DATA.md,2026-09-16
-R06,full-core semantic repairs,open_failures,metadata/issue_log.csv,2026-09-16
-R07,independent organization review,pending_human_review,docs/HANDOFF.md,2026-09-16
-R08,hosted Google Colab execution,pending_hosted_run,docs/HANDOFF.md,2026-09-16
-R09,editable Overleaf and compiled paper,not_supplied,paper/README.md,2026-09-16
-R10,shared data identity,case_bound_full_candidate_separate,metadata/release.json,2026-09-16
+R01,case source identity and preserved licenses,passed,metadata/source_register.csv,2026-10-12
+R02,full field/type/source reference coverage,passed_with_native_semantic_limits,metadata/repaired_atlas_20261012/documentation_validation.json,2026-10-12
+R03,case replays and 28 regression tests,passed,reports/revision_20261012/notebook/retained_evidence.json,2026-10-12
+R04,all notebook cells in a fresh local kernel,passed_local_fresh_kernel,reports/revision_20261012/notebook/notebook_execution.json,2026-10-12
+R05,full immutable public inputs and outputs,passed,reports/revision_20261012/full_public_verification.json,2026-10-12
+R06,full semantic/schema/reconstruction gate,passed_50_checks,reports/revision_20261012/full_release.json,2026-10-12
+R07,independent organization review,pending_human_review,docs/REVISION_20261012.md,2026-10-12
+R08,hosted Google Colab execution,pending_hosted_run,docs/REVISION_20261012.md,2026-10-12
+R09,manuscript changes,excluded_by_user,docs/REVISION_20261012.md,2026-10-12
+R10,shared data identity and reproducible downloads,passed,configs/data_releases.json,2026-10-12
+R11,archival dataset DOI,not_assigned,metadata/release.json,2026-10-12
+R12,complete historical acquisition and human/agent provenance,not_fully_established,metadata/repaired_atlas_20261012/revision_provenance.json,2026-10-12

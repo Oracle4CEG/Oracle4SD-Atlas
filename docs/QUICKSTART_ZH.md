@@ -2,6 +2,14 @@
 
 以下命令在仓库根目录执行。已验证环境为 Linux x86-64、CPU；不需要钱包、RPC 密钥或 GPU。主文档见 [FULL_DATA.md](FULL_DATA.md)。
 
+本次修复交付在专门分支中。新机器先这样获取代码，避免下载到旧的默认分支：
+
+```bash
+git clone --branch fix/usable-atlas-release-20261012 --single-branch \
+  https://github.com/virusLuke3/Oracle4SD-Atlas.git
+cd Oracle4SD-Atlas
+```
+
 ## 1. 安装独立环境
 
 ```bash
@@ -47,6 +55,19 @@ runs/environment/scientific/bin/python scripts/build_release_metadata.py \
 全量输入约 1.81 GB，重建需至少预留 40 GB 磁盘。建议 8 GB 或以上内存；实际耗时和峰值内存见发布包的 `validation/full_release.json`。全部下载使用固定版本并校验 SHA-256。
 
 成功标志是 `validation/full_release.json` 中 `passed: true`。字段说明、表清单和时间覆盖在 `metadata/`；各阶段完整日志在 `validation/`；金融实验结果在 `data/applications/financial_benchmark/`。金融实验的随机切分回退会明确标记，无法估计的指标保留为空，不能当作 0。
+
+亿级公共表适合用 DuckDB 按列、按条件读取，不要一次性装入 pandas。可以先读取 5 行：
+
+```bash
+runs/environment/scientific/bin/python - <<'PY'
+import duckdb
+con = duckdb.connect(config={"threads": 2, "memory_limit": "2GB"})
+path = "runs/released-atlas/data/curated/parquet/accountability_events.parquet"
+print(con.execute("SELECT oracle_network, reward_amount_raw, truth_basis, rule_id FROM read_parquet(?) WHERE oracle_network='UMA' LIMIT 5", [path]).fetchdf())
+PY
+```
+
+原始金额保留为整数字符串，并结合资产和小数位解释；不能把不同代币直接相加，也不能把本金返还算成奖励或总利润。
 
 ## 4. 回归测试与历史状态
 

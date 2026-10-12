@@ -1,0 +1,32 @@
+{
+  "accountability_unit_type": {
+    "dispute": "A native dispute or a vote/payment event linked to a dispute; consult event_granularity.",
+    "individual_report": "One native report or authenticated update; not a unique independent real-world fact.",
+    "publisher_pool_epoch": "Pyth publisher epoch, stake instruction or reward transfer; native granularity remains essential.",
+    "reporter_jail_lifecycle": "Tellor jail/release event; two rows may belong to one restriction lifecycle.",
+    "request": "One oracle request round, identified by the native request ID.",
+    "reward_epoch": "A provider, beneficiary or claim observation linked to a protocol reward epoch.",
+    "service_availability_window": "Chainlink service interval or staking action; consult native_table and event_granularity.",
+    "staking_position": "DIA withdrawal against a native staking position index.",
+    "voting_epoch": "A protocol-defined voting round.",
+    "voting_request": "Voter-level accrual linked to a DVM request; multiple voters share the request ID."
+  },
+  "mapping_rules": {
+    "uma_oov2_unsettled_request_observation_v2": "A retained UMA request has economic_status=not_settled. The rule records request observability only; it does not establish settlement, a realized payment or report correctness."
+  },
+  "schema_version": "2.0.0",
+  "truth_basis": {
+    "consensus_median_alignment": "Agreement with the protocol aggregate, not an independent reference.",
+    "cryptographic_validation_and_challenge": "Chronicle validation/challenge mechanism; factual truth is not independently observed.",
+    "external_ground_truth": "Independent factual label requiring its own source and validation.",
+    "independent_reference_adjudication": "Adjudication against an explicitly identified independent reference; not inferred from a transfer.",
+    "protocol_aggregate": "Tellor native report/aggregate inclusion; does not certify the report as true.",
+    "protocol_recognized_reporting": "Tellor report recognized for a payment; recognition is not external truth.",
+    "protocol_state_transition": "Observed Pyth stake/transfer state transition without independent factual adjudication.",
+    "protocol_vote_adjudication": "Protocol voting outcome, not independent factual ground truth.",
+    "service_availability_condition": "Recorded service or eligibility condition, without a factual truth judgment.",
+    "signed_payload_verification": "RedStone authenticated payload evidence; signatures authenticate a source, not the price.",
+    "staking_participation_not_individual_report_truth": "DIA staking withdrawal evidence, with no individual report correctness label.",
+    "undisputed_acceptance": "Protocol acceptance without adjudication; does not establish factual truth."
+  }
+}

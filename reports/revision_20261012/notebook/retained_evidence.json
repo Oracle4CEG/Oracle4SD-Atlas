@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "zip_files": 159,
+  "code_commit": "6317a1b66bc6f9653b21650a7d170dc762891a31",
+  "host_python": "3.12.7",
+  "scientific_python": "3.12.12",
+  "both_runs": true,
+  "runtime_kind": "fresh local Jupyter kernel; not hosted Google Colab UI"
+}

@@ -20,6 +20,18 @@ def module(name):
 
 
 class ReleaseAccessTests(unittest.TestCase):
+    def test_fresh_build_rejects_incomplete_financial_fits(self):
+        check=module('rebuild_atlas').financial_benchmark_check
+        metrics=pd.read_csv(ROOT/'reports/revision_20261012/financial_benchmark/metrics.csv')
+        self.assertTrue(check(metrics)['passed'])
+        changed=metrics.copy()
+        fitted=changed.index[changed.harrell_c_index.notna()][0]
+        changed.loc[fitted,'status']='not_estimable'
+        self.assertFalse(check(changed)['passed'])
+        changed.loc[fitted,'status']='completed'
+        changed.loc[fitted,'harrell_c_index']=float('nan')
+        self.assertFalse(check(changed)['passed'])
+
     def test_uncensored_survival_cohort_is_eligible(self):
         sys.path.insert(0,str(ROOT/'code/reconstruction'))
         from scripts.applications.financial.common import survival_cohort_supported

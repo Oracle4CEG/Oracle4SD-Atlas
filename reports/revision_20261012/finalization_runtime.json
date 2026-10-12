@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/tmp/oracle-atlas-tutorial-5vs_5s5w/managed-environment/scientific/bin/python",
+    "scripts/finalize_revision.py",
+    "--baseline",
+    "/mnt/sda/hy/oracle-nature-data/releases/atlas-repaired-20261012-native",
+    "--output",
+    "/mnt/sda/hy/oracle-nature-data/releases/atlas-repaired-20261012-final",
+    "--resume"
+  ],
+  "scientific": {
+    "python": "3.12.12",
+    "executable": "/tmp/oracle-atlas-tutorial-5vs_5s5w/managed-environment/scientific/bin/python"
+  },
+  "previous_rule_repair_seconds": 473,
+  "previous_time_source": "Initial finalization log creation/modification timestamps",
+  "native_runtime": "3.12.7",
+  "final_runtime": "3.12.12"
+}

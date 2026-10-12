@@ -177,9 +177,18 @@ def validate(con, output):
     return checks, after
 
 
+def financial_benchmark_check(metrics):
+    """Keep fresh builds and bounded finalization under the same fit gate."""
+    completed=metrics[(metrics['status']=='completed') & metrics['harrell_c_index'].notna()]
+    failures=metrics[metrics['status']!='completed']
+    return dict(name='financial_models_complete',passed=len(completed)==21 and failures.empty,
+                completed_model_track_fits=len(completed),failed_or_unestimable=len(failures),
+                scope='Seven fitted models on three tasks; evaluation splits are recorded; undefined time-dependent metrics remain null')
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--input-root", required=True, help="Root of the 71-file historical snapshot")
+    p.add_argument("--input-root", required=True, help="Root of 64 native inputs (--from-native), or the 71-file historical snapshot")
     p.add_argument("--output", required=True, help="New directory; never overwritten")
     p.add_argument("--with-trajectory-views", action="store_true", help="Also materialize all OATA state/transition and model feature tables")
     p.add_argument("--with-benchmarks", action="store_true", help="Run financial prediction experiments after rebuilding data")
@@ -268,6 +277,9 @@ def main():
         steps.append(step(output, "financial_benchmarks", [sys.executable, "-c", "from scripts.applications.financial.common import run_benchmark; run_benchmark()"], env))
         steps.append(step(output, "decision_benchmark", [sys.executable, str(ROOT/"scripts/run_decision_benchmark.py"), "--release",str(output),"--output",str(output/"experiments/decision_benchmark")],env))
     checks, after = validate(con, output)
+    if a.with_benchmarks:
+        metrics=con.execute(f"SELECT * FROM read_parquet({sqlpath(output/'data/applications/financial_benchmark/metrics.parquet')})").fetchdf()
+        checks.append(financial_benchmark_check(metrics))
     write_json(output/"validation/semantic_after.json", after)
     write_json(output/"metadata/semantic_decisions.json", dict(schema_version=SCHEMA_VERSION, truth_basis=TRUTH_DEFINITIONS, accountability_unit_type=UNIT_DEFINITIONS, mapping_rules=MAPPING_RULES))
     inventory = []

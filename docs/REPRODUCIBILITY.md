@@ -1,6 +1,6 @@
 # Reproduction guide
 
-Use the commands in the root README and the eight-part notebook. Python 3.12 is the tested baseline. Pin the reviewed Git commit and retain `requirements.txt`, the full installed-package freeze, `configs/project.json` and the run reports together.
+Use the commands in the root README and the eight-part notebook. `scripts/bootstrap_environment.py` installs managed Python 3.12.12 with `requirements-release.txt` and `constraints-release.txt`. Pin the code commit and retain the full installed-package freeze, input configuration and run reports together. Full data and experiment commands are in [FULL_DATA.md](FULL_DATA.md).
 
 ## What stays fixed
 
@@ -17,11 +17,11 @@ New run directories receive query/process/analysis/QC outputs. Generated timesta
 |---|---|
 | Existing output directory | Choose another `--output`; do not delete a prior audited result just to pass |
 | Input SHA mismatch | Re-check the pinned checkout or download; do not update reference hashes to hide a mismatch |
-| Missing package / incompatible Python | Use a clean Python 3.12 virtual environment and the pinned requirements; in Colab use the tutorial's isolated environment |
+| Missing package / incompatible Python | Use the managed bootstrap environment; the host does not need venv/ensurepip; retain its installation log on failure |
 | HTTP 429 / timeout / missing historical code | Retain the failed live run; try a suitable archive endpoint or the explicitly separate bundled replay |
 | No transaction/receipt | Confirm chain ID and transaction hash; absence is not a zero payment |
 | Full inventory missing | Full files are separately distributed; see FULL_DATA.md; the case is not that dataset |
 | Notebook kernel interrupted | Restart and run all cells in order; the notebook creates a unique run folder |
 | Semantic assertion failure | Read `reports/validation.json` and stage stderr logs; retain original evidence and report the mismatch |
 
-[Fresh execution reports](../reports/reproducibility/README.md) state what was actually tested. Hosted Google Colab UI testing is separate from isolated Jupyter execution. [Known full-core defects](../metadata/issue_log.csv) do not disappear when the small case passes.
+[Current execution reports](../reports/revision_20261012/README.md) state what was actually tested. Hosted Google Colab UI testing is separate from isolated Jupyter execution. The [historical issue log](../metadata/issue_log.csv) is preserved; [current resolutions](../metadata/issue_resolution_20261012.csv) refer to the full reconstruction checks rather than inferring success from the small case.

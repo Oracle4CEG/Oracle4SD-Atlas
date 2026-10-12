@@ -1,5 +1,4 @@
 {
-  "data_version": "uma-public-rpc-case-v1",
   "historical_core_audit": "reports/core_audit_20260915/README.md",
   "outputs": {
     "abc_economic_measures.csv": "data/processed_data/uma_case/abc_economic_measures.csv",
@@ -14,5 +13,13 @@
     "variable_provenance.csv": "data/processed_data/uma_case/variable_provenance.csv"
   },
   "sample_summary": "reports/uma_case/analysis/summary.json",
-  "sample_validation": "reports/uma_case/reports/validation.json"
+  "sample_validation": "reports/uma_case/reports/validation.json",
+  "case_data_version": "uma-public-rpc-case-v1",
+  "release": "atlas-repaired-20261012",
+  "full_validation": "reports/revision_20261012/full_release.json",
+  "full_catalog": "metadata/repaired_atlas_20261012/table_catalog.json",
+  "public_downloads": "configs/data_releases.json",
+  "decision_experiment": "reports/revision_20261012/decision_benchmark/",
+  "financial_experiment": "reports/revision_20261012/financial_benchmark/",
+  "notebook": "reports/revision_20261012/notebook/"
 }

@@ -1,0 +1,26 @@
+{
+  "review_bundle": "atlas-review-20260916",
+  "data_version": "uma-public-rpc-case-v1",
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "core_audit_snapshot": "SD-HANDOFF-20260915",
+  "formal_full_data_release": null,
+  "publication_scope": "one real case bundled; metadata and historical production code for broader candidate resource",
+  "full_curated_files": 67,
+  "full_common_rows": 105588120,
+  "full_economic_rows": 22723389,
+  "full_realized_rows": 19275854,
+  "known_core_issues": "reports/core_audit_20260915/known_issues.csv",
+  "sample_source_config": "configs/project.json",
+  "manuscript_status": "Descriptor Overleaf project identified by the author; actual public arXiv identifier and final PDF remain pending.",
+  "human_review_status": "pending organization review; no independent human approval claimed",
+  "historical_code_adaptations": [
+    "public RPC defaults replace private local endpoints",
+    "Flare reward source pinned to historical commit",
+    "Pyth declared source version pinned; historical rolling state not recoverable from current RPC"
+  ],
+  "sample_license_notice": "THIRD_PARTY_NOTICES.md",
+  "tutorial_code_commit": "80745c2c9edcdd2c3b4f8bbf244d89751fe4d5f3",
+  "tutorial_local_execution": "passed; 9 executable cells, 10 tests; 28 scoped case checks; hosted Colab UI pending",
+  "full_local_file_identity": "71 of71 SHA256 and row counts match; semantic defects remain",
+  "research_selected_snapshot": "metadata/research_snapshot.json"
+}

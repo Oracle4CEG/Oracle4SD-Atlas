@@ -1,13 +1,13 @@
-/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+/tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
   prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
-/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+/tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
   parse = parser.parseString(pattern)
-/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+/tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
   parser.resetCache()
-/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+/tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
   ParserElement.enablePackrat()
-In /home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
-In /home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /tmp/oracle-atlas-tutorial-b_zsv7w8/managed-environment/scientific/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
 test_changed_input_fails_before_processing (test_case_pipeline.CaseTests.test_changed_input_fails_before_processing) ... ok
 test_changed_scientific_summary_rejected (test_case_pipeline.CaseTests.test_changed_scientific_summary_rejected) ... ok
 test_full_verifier_rejects_external_symlink_by_default (test_case_pipeline.CaseTests.test_full_verifier_rejects_external_symlink_by_default) ... ok
@@ -31,12 +31,13 @@ test_zero_accrual_is_not_negative_adjudication (test_full_release.FullReleaseTes
 test_zero_address_is_not_a_challenge (test_full_release.FullReleaseTests.test_zero_address_is_not_a_challenge) ... ok
 test_corrupted_existing_download_is_not_replaced (test_release_access.ReleaseAccessTests.test_corrupted_existing_download_is_not_replaced) ... ok
 test_financial_sampling_is_order_and_outcome_invariant (test_release_access.ReleaseAccessTests.test_financial_sampling_is_order_and_outcome_invariant) ... ok
+test_fresh_build_rejects_incomplete_financial_fits (test_release_access.ReleaseAccessTests.test_fresh_build_rejects_incomplete_financial_fits) ... ok
 test_future_outcomes_cannot_change_model_features (test_release_access.ReleaseAccessTests.test_future_outcomes_cannot_change_model_features) ... ok
 test_prefix_features_do_not_retain_full_outcomes (test_release_access.ReleaseAccessTests.test_prefix_features_do_not_retain_full_outcomes) ... ok
 test_uncensored_survival_cohort_is_eligible (test_release_access.ReleaseAccessTests.test_uncensored_survival_cohort_is_eligible) ... ok
 test_unsettled_rule_is_specific_and_not_a_settlement_claim (test_release_access.ReleaseAccessTests.test_unsettled_rule_is_specific_and_not_a_settlement_claim) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 8.685s
+Ran 28 tests in 10.458s
 
 OK
