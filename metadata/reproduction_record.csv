@@ -4,6 +4,6 @@ immutable-public-download,uma-public-rpc-case-v1,two raw snapshots from fixed HF
 fresh-notebook,uma-public-rpc-case-v1,fresh local kernel; not hosted Colab UI,passed_9_code_cells_10_tests,reports/reproducibility/notebook_execution.json
 native-plus-finalization,atlas-repaired-20261012,native reconstruction followed by explicit recorded repairs,passed_50_checks,reports/revision_20261012/full_release.json
 full-public-identity,atlas-repaired-20261012,143 public files: 95 canonical tables plus predictions and evidence,passed,reports/revision_20261012/full_public_verification.json
-fresh-notebook-20261012,atlas-repaired-20261012,9 code cells; 27 regression tests; two deterministic 28-check case runs,passed_local_not_hosted,reports/revision_20261012/notebook/retained_evidence.json
+fresh-notebook-20261012,atlas-repaired-20261012,9 code cells; 28 regression tests; two deterministic 28-check case runs,passed_local_not_hosted,reports/revision_20261012/notebook/retained_evidence.json
 financial-benchmark-20261012,atlas-repaired-20261012,seven models by three tasks; three KM baselines,21_model_fits_completed,reports/revision_20261012/financial_benchmark/metrics.csv
 public-decision-replay,atlas-repaired-20261012,810 samples; 963 validation/test predictions across three models,exact_prediction_match,reports/revision_20261012/decision_public_replay.json

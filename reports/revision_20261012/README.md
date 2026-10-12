@@ -18,7 +18,8 @@ The authoritative result is [full_release.json](full_release.json): **50 checks 
 | [repaired_public_replay.json](repaired_public_replay.json) | Eight repaired-release files downloaded; 963 predictions reproduced exactly and 21 completed financial fits read successfully |
 | [decision_public_replay.json](decision_public_replay.json) | 963 predictions reproduced exactly from freshly downloaded public inputs |
 | [financial_benchmark](financial_benchmark/) | Seven models × three tasks; three additional Kaplan–Meier baselines; fit/status and metric availability |
-| [notebook](notebook/) | Executed notebook and ZIP containing both case runs, full logs and host/scientific environments |
+| [dataset_card_manifest_verification.json](dataset_card_manifest_verification.json) | All 46 updated root manifest entries verified against the published Dataset Card revision |
+| [notebook](notebook/) | All 9 cells passed at `d558c46`, with 28 tests and 28 case checks per run; executed notebook and ZIP containing both case runs, full logs and host/scientific environments |
 | [review_public_loading.json](review_public_loading.json) | All 15 historical review record sets loaded through public URLs with mlcroissant 1.1.0 |
 
 Financial F1/F2 evaluations use an explicitly labeled random fallback; F3 is chronological. Protocol-balanced sampling and protocol/time covariates can produce high pooled concordance without establishing cross-protocol generalization. Null metrics are not zeros. These reports do not claim hosted Google Colab execution, an independent scientific review, or a dataset DOI.

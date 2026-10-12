@@ -4,7 +4,7 @@
   "runtime_kind": "fresh local Jupyter kernel; not hosted Google Colab UI",
   "python": "3.12.7",
   "kernel_executable": "/home/hy/develop/oracle-nature/release/Oracle4SD-Atlas/runs/revision-env-20261012/bin/python",
-  "elapsed_seconds": 242.683,
+  "elapsed_seconds": 608.833,
   "code_cells": 9,
   "executed_code_cells": 9,
   "passed": true,

@@ -31,6 +31,22 @@ runs/environment/scientific/bin/python scripts/run_decision_benchmark.py \
 
 这会运行 810 条真实决策样本上的三个基线，输出 `metrics.csv`、`predictions.parquet` 和 `validation.json`。训练/验证/测试按时间分开；标签是后续协议裁决，不是独立事实真值或收益保证。
 
+如果只想重跑七个金融模型，可下载已重建的两个输入表，省去亿级数据重建。此实验仍建议 8 GB 以上内存，使用新的实验目录：
+
+```bash
+runs/environment/scientific/bin/python scripts/download_atlas.py \
+  --component repaired --output runs/financial-replay \
+  --include data/applications/financial_benchmark/landmark_prefixes.parquet \
+  --include data/applications/financial_benchmark/splits.parquet
+ORACLE_WORKSPACE="$PWD/runs/financial-replay" \
+PYTHONPATH="$PWD/code/reconstruction" \
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 \
+runs/environment/scientific/bin/python -c \
+  'from scripts.applications.financial.common import run_benchmark; run_benchmark()'
+```
+
+结果位于 `runs/financial-replay/data/applications/financial_benchmark/`。检查 `metrics.parquet` 的 `status`、`evaluation` 和 `metric_unavailability`：本次发布完成了 21 个模型/任务拟合，F1/F2 使用随机切分回退，F3 使用时间切分。无法估计的指标保持为空。完整重建命令还会自动检查这 21 次拟合是否完成。
+
 ## 3. 下载完整结果或重新构建
 
 直接读取修复后的完整数据：
