@@ -1,1 +1,12 @@
-claim_id,proposed_claim,type,scope_and_denominator,data_version,evidence_path,code_commit_and_path,uncertainty,counterevidence,permitted_wording,status,owner
+claim_id,claim,evidence,scope
+S01,one real cross-chain lifecycle,reports/uma_case/reports/processing.json,sample
+S02,gross payout is not all reward,reports/uma_case/analysis/summary.json,one USDC.e settlement
+S03,28 sample checks pass,reports/uma_case/reports/validation.json,replayed fixed evidence
+F01,105588120 common candidate rows,metadata/full_data_inventory.csv,historical audit; superseded by F03 for current release
+F02,full candidate has known semantic failures,reports/core_audit_20260915/known_issues.csv,historical version; repairs evidenced separately by F04
+F03,105588120 common rows in the repaired public release,reports/revision_20261012/full_release.json,reconstruction from frozen native inputs; overlapping layers
+F04,50 full-release checks pass,reports/revision_20261012/full_release.json,exact listed checks; not independent ground truth
+F05,64 native input files publicly retrievable and verified,reports/revision_20261012/native_public_download.json,fresh public download of every input
+F06,95 canonical tables and one additional prediction file published,reports/revision_20261012/full_public_verification.json,public sizes and LFS hash binding; small metadata downloaded
+F07,28 regression tests and 9 notebook cells pass,reports/revision_20261012/notebook/retained_evidence.json,local isolated scientific environment; not hosted Colab
+F08,seven financial models complete 21 fits,reports/revision_20261012/financial_benchmark/metrics.csv,random fallback in F1/F2; undefined metrics and generalization limits retained

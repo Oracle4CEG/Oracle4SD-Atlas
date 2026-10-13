@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "zip_files": 159,
+  "code_commit": "d558c4669b1020b2664af2bf852658828a1c1da6",
+  "host_python": "3.12.7",
+  "scientific_python": "3.12.12",
+  "regression_tests": 28,
+  "case_checks_per_run": 28,
+  "both_runs": true,
+  "runtime_kind": "fresh local Jupyter kernel; not hosted Google Colab UI",
+  "elapsed_seconds": 608.833
+}

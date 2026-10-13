@@ -1,0 +1,56 @@
+{
+  "release": "atlas-repaired-20261012",
+  "data_version": "atlas-repaired-20261012",
+  "case_data_version": "uma-public-rpc-case-v1",
+  "schema_version": "2.0.0",
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "formal_full_data_release": {
+    "repository": "Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+    "revision": "57ab1e2409652291c75f02c9e066c52011d8b4ad",
+    "prefix": "atlas/releases/atlas-repaired-20261012/repaired",
+    "doi": null
+  },
+  "scientific_code_commit": "6317a1b66bc6f9653b21650a7d170dc762891a31",
+  "publication_scope": "64 frozen native/curated inputs; 95 reconstructed canonical Parquet tables; one additional decision-prediction Parquet and complete execution/metadata files",
+  "components": {
+    "native": {
+      "revision": "c7df3127756d831a61c781d0531c155dc8d9c2fb",
+      "prefix": "atlas/releases/atlas-repaired-20261012/native",
+      "files": 64,
+      "bytes": 1807346651
+    },
+    "source_registries": {
+      "revision": "212d469bcae7acdf22a19736e861b4c85596cd73",
+      "prefix": "atlas/releases/atlas-repaired-20261012/source-registries",
+      "files": 6,
+      "bytes": 69598118
+    },
+    "repaired": {
+      "revision": "57ab1e2409652291c75f02c9e066c52011d8b4ad",
+      "prefix": "atlas/releases/atlas-repaired-20261012/repaired",
+      "files": 143,
+      "bytes": 17344034410
+    }
+  },
+  "full_common_rows": 105588120,
+  "canonical_parquet_tables": 95,
+  "canonical_parquet_bytes": 17341941711,
+  "download_manifest": "configs/data_releases.json",
+  "field_dictionary": "metadata/repaired_atlas_20261012/field_dictionary.json",
+  "source_register": "metadata/full_source_register_20261012.csv",
+  "full_inventory": "metadata/repaired_full_data_inventory.csv",
+  "validation": "reports/revision_20261012/full_release.json",
+  "full_checks_passed": 50,
+  "regression_tests_passed": 28,
+  "tutorial_code_commit": "d558c4669b1020b2664af2bf852658828a1c1da6",
+  "tutorial_local_execution": "passed all 9 code cells; 28 regression tests; two deterministic case replays with 28 case checks each; hosted Google Colab not tested",
+  "historical_release": "metadata/historical_release_20260916.json",
+  "historical_issue_log": "metadata/issue_log.csv",
+  "current_issue_resolutions": "metadata/issue_resolution_20261012.csv",
+  "historical_hash_mismatches": "reports/revision_20261012/historical_hash_mismatches.json",
+  "human_review_status": "independent scientific/organization review pending; no human approval claimed",
+  "historical_provenance_status": "Original acquisition/person-agent details not fully known; current reconstruction lineage and source references recorded",
+  "manuscript_status": "Outside this code/data task; no manuscript or Overleaf changes",
+  "license_notice": "THIRD_PARTY_NOTICES.md",
+  "published_release_code_regression_tests_passed": 27
+}

@@ -1,0 +1,14 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_token_flow_receipts.json",
+  "original_sha256": "7a812f60d52e3b63f1c54bee8c83ef0f7c5950812c565a826d084be24f9e8d7d",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "protocol": "Polygon UMA settlement receipt fallback",
+    "raw_receipts": "workspace:/data/raw/polygon/uma_token_flows/settlement_receipt_fallback.jsonl.gz",
+    "reason": "provider eth_getLogs omission for otherwise canonical receipt logs",
+    "receipts": 107,
+    "requested_mismatches": 107,
+    "requested_transactions": 107,
+    "sha256": "86f3e661393b42e1d160856ac7230e43452890e19c0aecac7220c88349a6ba1c"
+  }
+}

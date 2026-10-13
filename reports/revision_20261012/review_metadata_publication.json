@@ -1,0 +1,13 @@
+{
+  "revision": "daa45be70a0f2a457b2d77ea70217f97a12cfba3",
+  "previous_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+  "previous_checksum_mismatches": [
+    {
+      "path": "README.md",
+      "expected": "fb3d966201a34b454b682fd6d466878f0df2c4fbd6628b3eae661a12b6ac275d",
+      "observed": "5294a03f38947538f4f0fe68c1030770ff94c413c2c057b0778bde91857b54ab"
+    }
+  ],
+  "recordsets": 15,
+  "scope": "Original review subset only"
+}

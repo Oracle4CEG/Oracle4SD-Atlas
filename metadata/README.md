@@ -1,32 +1,7 @@
 # Metadata
 
-Provide human-readable records and machine-readable release descriptions.
+[release.json](release.json) is the current identity authority. [repaired_full_data_inventory.csv](repaired_full_data_inventory.csv) lists all 95 canonical tables and immutable download URLs; [full_source_register_20261012.csv](full_source_register_20261012.csv) binds the frozen native inputs and pinned upstream archives. The [repaired metadata directory](repaired_atlas_20261012/) supplies 1,789 field/type/source-reference definitions, table-level code references, timestamps, semantic rules and current reconstruction provenance. Native source-reference definitions are not complete independent scientific provenance.
 
-**First-author task:** Complete the source register, dictionary, claim index and governance records. The Croissant template is intentionally incomplete; remove instructional fields and use the actual specification. Validate core/RAI content and loading, keep the report, and review factual completeness.
+`source_register.csv` and `file_manifest.csv` retain the seven permitted case inputs. `data_dictionary.csv` defines all 85 case fields; `table_dictionary.json` documents child units. `acquisition_profiles.json` and `contracts.csv` retain chain-specific acquisition evidence. `production_code_imports.csv` binds unchanged historical imports; `reconstruction_source_imports.csv` records initial import identities before the versioned repairs.
 
-**Start with:** [croissant.template.json](croissant.template.json).
-
-Complete [the file manifest](file_manifest.csv) with one row per deposited file or
-documented shard. Record bytes and SHA-256 from the actual release, and define what
-the record count means for its modality. A restricted resource still needs a clear
-access route. Cross-reference the [source register](source_register.csv),
-[dictionary](data_dictionary.csv), [processing trace](process_trace.csv) and
-[validation plan](validation_plan.csv). Empty CSV headers are author worksheets.
-
-
-## Author inputs for the completed project
-
-| Item | Fill with verified information |
-|---|---|
-| Scientific purpose and observation unit | AUTHOR INPUT |
-| Exact inputs, versions and source/DOI URLs | AUTHOR INPUT |
-| Permanent GitHub code or folder links | AUTHOR INPUT |
-| Commands, parameters and manual prerequisites | AUTHOR INPUT |
-| Expected output paths, counts and units | AUTHOR INPUT |
-| Access, rights, limitations and untested dimensions | AUTHOR INPUT |
-| Independent check and evidence location | AUTHOR INPUT |
-
-**Done when:** The release and metadata describe the same files, rights, fields and limits.
-
-**Requirement mapping:** [Data Records](https://www.nature.com/sdata/submission-guidelines); [required core and minimal RAI metadata](https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting); [dataset-card metadata](https://huggingface.co/docs/hub/datasets-cards). These links identify the governing requirements;
-the task instructions are teaching recommendations. Check the actual submission year.
+`full_data_inventory.csv` is the historical 71-file snapshot, not the current public manifest. `historical_release_20260916.json`, `historical_release_checklist_20260916.csv`, `issue_log.csv`, original source manifests and audit reports preserve their original status. [issue_resolution_20261012.csv](issue_resolution_20261012.csv), `release_checklist.csv`, `claim_evidence.csv`, `result_index.json` and `reproduction_record.csv` map the current release to executed evidence. Historical failures are not silently rewritten.

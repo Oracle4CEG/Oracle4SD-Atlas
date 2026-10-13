@@ -1,1 +1,6 @@
-check_id,claim,release,population,sampling,n_examined,reference_and_independence,metric,criterion_and_rationale,criterion_timing,outcome,uncertainty,failures,evidence_path,command_and_commit,limits,status,owner
+check,unit,denominator,method,failure_policy
+source identity,file,7,SHA256 against frozen configuration,stop
+canonical evidence,check,30,"receipts, canonical headers, status, removed flags, code evidence",stop
+economic and cross-chain links,check,13,exact event and payment reconciliation,stop
+case schema,episode,1,85 fields JSON Schema Draft202012,stop
+full candidate,row,105588120,historical audit only; known defects,withhold full-validation claim

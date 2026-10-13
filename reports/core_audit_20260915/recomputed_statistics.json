@@ -1,0 +1,1035 @@
+{
+  "common_protocol_units": [
+    {
+      "oracle_network": "Chainlink",
+      "native_table": "chainlink_eth_usd_reports",
+      "accountability_unit_type": "service_availability_window",
+      "n_rows": 46722,
+      "min_time": 1699992323,
+      "max_time": 1782861695,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Chainlink",
+      "native_table": "chainlink_staking_v02_events",
+      "accountability_unit_type": "service_availability_window",
+      "n_rows": 72225,
+      "min_time": null,
+      "max_time": null,
+      "missing_time": 72225,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Chronicle",
+      "native_table": "chronicle_ethereum_events",
+      "accountability_unit_type": "individual_report",
+      "n_rows": 140503,
+      "min_time": 1693239431,
+      "max_time": 1782862607,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Chronicle",
+      "native_table": "chronicle_ethereum_events",
+      "accountability_unit_type": "dispute",
+      "n_rows": 23,
+      "min_time": 1707743219,
+      "max_time": 1769545883,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "DIA",
+      "native_table": "dia_staking_withdrawals",
+      "accountability_unit_type": "staking_position",
+      "n_rows": 129,
+      "min_time": 1751970645,
+      "max_time": 1781800219,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "native_table": "flare_beneficiary_chill_events",
+      "accountability_unit_type": "reward_epoch",
+      "n_rows": 6,
+      "min_time": 1766049124,
+      "max_time": 1766049124,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "native_table": "flare_beneficiary_chill_state",
+      "accountability_unit_type": "reward_epoch",
+      "n_rows": 6,
+      "min_time": 1782863999,
+      "max_time": 1782863999,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "native_table": "flare_provider_conditions",
+      "accountability_unit_type": "reward_epoch",
+      "n_rows": 14379,
+      "min_time": 1734634755,
+      "max_time": 1782716355,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "native_table": "flare_reward_claim_events",
+      "accountability_unit_type": "reward_epoch",
+      "n_rows": 18468735,
+      "min_time": 1727986209,
+      "max_time": 1782863966,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "native_table": "flare_reward_claims",
+      "accountability_unit_type": "reward_epoch",
+      "n_rows": 49858,
+      "min_time": 1727679555,
+      "max_time": 1782716355,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Pyth",
+      "native_table": "pyth_ois_economic_events",
+      "accountability_unit_type": "publisher_pool_epoch",
+      "n_rows": 459083,
+      "min_time": 1727914114,
+      "max_time": 1782566717,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Pyth",
+      "native_table": "pyth_ois_publisher_epoch_factors",
+      "accountability_unit_type": "publisher_pool_epoch",
+      "n_rows": 6566,
+      "min_time": 1753315200,
+      "max_time": 1782345600,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Pyth",
+      "native_table": "pyth_ois_stake_events",
+      "accountability_unit_type": "publisher_pool_epoch",
+      "n_rows": 122071,
+      "min_time": 1726674321,
+      "max_time": 1782861089,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "RedStone",
+      "native_table": "redstone_ethereum_push_events",
+      "accountability_unit_type": "individual_report",
+      "n_rows": 614319,
+      "min_time": 1701945875,
+      "max_time": 1782863963,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_dispute_payments",
+      "accountability_unit_type": "dispute",
+      "n_rows": 21,
+      "min_time": 1764585283,
+      "max_time": 1775734639,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_dispute_votes",
+      "accountability_unit_type": "dispute",
+      "n_rows": 55,
+      "min_time": 1759136703,
+      "max_time": 1775105078,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_disputes",
+      "accountability_unit_type": "dispute",
+      "n_rows": 13,
+      "min_time": 1759147542,
+      "max_time": 1775060717,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_jail_events",
+      "accountability_unit_type": "reporter_jail_lifecycle",
+      "n_rows": 26,
+      "min_time": 1759118742,
+      "max_time": 1775059260,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_micro_reports",
+      "accountability_unit_type": "individual_report",
+      "n_rows": 82866640,
+      "min_time": 1746801846,
+      "max_time": 1782863998,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "native_table": "tellor_tip_withdrawals_realized",
+      "accountability_unit_type": "individual_report",
+      "n_rows": 20380,
+      "min_time": 1747155812,
+      "max_time": 1782863761,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "native_table": "polygon_uma_request_rounds",
+      "accountability_unit_type": "request",
+      "n_rows": 42676,
+      "min_time": 1667593230,
+      "max_time": 1782835378,
+      "missing_time": 0,
+      "post_cutoff": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "native_table": "uma_dvm_voter_payoffs",
+      "accountability_unit_type": "voting_request",
+      "n_rows": 2663684,
+      "min_time": null,
+      "max_time": null,
+      "missing_time": 2663684,
+      "post_cutoff": 0
+    }
+  ],
+  "common_evidence_states": [
+    {
+      "truth_basis": "protocol_aggregate",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 82866640
+    },
+    {
+      "truth_basis": "service_availability_condition",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 18658497
+    },
+    {
+      "truth_basis": "protocol_vote_adjudication",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 2664633
+    },
+    {
+      "truth_basis": "signed_payload_verification",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 614319
+    },
+    {
+      "truth_basis": "independent_reference_adjudication",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 581154
+    },
+    {
+      "truth_basis": "cryptographic_validation_and_challenge",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 140526
+    },
+    {
+      "truth_basis": "undisputed_acceptance",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 41841
+    },
+    {
+      "truth_basis": "protocol_recognized_reporting",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 20380
+    },
+    {
+      "truth_basis": "staking_participation_not_individual_report_truth",
+      "observability_grade": "A",
+      "confidence_grade": "A",
+      "n_rows": 129
+    },
+    {
+      "truth_basis": "undisputed_acceptance",
+      "observability_grade": "U",
+      "confidence_grade": "U",
+      "n_rows": 1
+    }
+  ],
+  "economic_states": [
+    {
+      "oracle_network": "Chainlink",
+      "economic_kind": "accounting",
+      "economic_evidence_class": "accounting_redistribution",
+      "realization_status": "not_paid",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 600
+    },
+    {
+      "oracle_network": "Chainlink",
+      "economic_kind": "accounting",
+      "economic_evidence_class": "reward_eligibility_finalization",
+      "realization_status": "not_paid",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 3205
+    },
+    {
+      "oracle_network": "Chainlink",
+      "economic_kind": "parameter",
+      "economic_evidence_class": "designed_alert_reward_parameter",
+      "realization_status": "configured_not_executed",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 1
+    },
+    {
+      "oracle_network": "Chainlink",
+      "economic_kind": "parameter",
+      "economic_evidence_class": "designed_slash_parameter",
+      "realization_status": "configured_not_executed",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 1
+    },
+    {
+      "oracle_network": "Chainlink",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward",
+      "realization_status": "paid",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 29927
+    },
+    {
+      "oracle_network": "Chronicle",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_invalid_report_challenge_reward",
+      "realization_status": "paid",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 14
+    },
+    {
+      "oracle_network": "DIA",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_base_staking_reward",
+      "realization_status": "paid",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 127
+    },
+    {
+      "oracle_network": "Flare",
+      "economic_kind": "reward",
+      "economic_evidence_class": "claimable_entitlement",
+      "realization_status": "claimable_not_observed_paid",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 49858
+    },
+    {
+      "oracle_network": "Flare",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward_claim",
+      "realization_status": "paid_or_wrapped",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 18468675
+    },
+    {
+      "oracle_network": "Pyth",
+      "economic_kind": "parameter",
+      "economic_evidence_class": "reward_parameter",
+      "realization_status": "parameter_not_payment",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 6566
+    },
+    {
+      "oracle_network": "Pyth",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward_to_stake_custody",
+      "realization_status": "paid_to_stake_custody",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 459083
+    },
+    {
+      "oracle_network": "Tellor",
+      "economic_kind": "reward",
+      "economic_evidence_class": "accrued_reporter_period_reward",
+      "realization_status": "accrued_not_paid",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 715362
+    },
+    {
+      "oracle_network": "Tellor",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward",
+      "realization_status": "paid",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 18
+    },
+    {
+      "oracle_network": "Tellor",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward_compounded_to_stake",
+      "realization_status": "paid_to_stake",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 20380
+    },
+    {
+      "oracle_network": "Tellor",
+      "economic_kind": "slash",
+      "economic_evidence_class": "realized_principal_slash",
+      "realization_status": "finalized",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": true,
+      "n_rows": 3
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "penalty",
+      "economic_evidence_class": "realized_bond_forfeiture",
+      "realization_status": "realized",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": true,
+      "n_rows": 834
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "penalty",
+      "economic_evidence_class": "realized_final_fee_forfeiture",
+      "realization_status": "realized",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": true,
+      "n_rows": 834
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "reward",
+      "economic_evidence_class": "accrued_stake_redistribution",
+      "realization_status": "accrued_not_applied",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 1618542
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "reward",
+      "economic_evidence_class": "applied_net_stake_increase",
+      "realization_status": "applied",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 114815
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "reward",
+      "economic_evidence_class": "paid_reward_embedded_in_settlement",
+      "realization_status": "paid",
+      "include_in_realized_reward": true,
+      "include_in_realized_slash": false,
+      "n_rows": 41769
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "slash",
+      "economic_evidence_class": "applied_net_stake_slash",
+      "realization_status": "applied",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": true,
+      "n_rows": 139375
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "slash",
+      "economic_evidence_class": "calculated_stake_slash",
+      "realization_status": "accrued_not_applied",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 947128
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "slash",
+      "economic_evidence_class": "zero_stake_delta",
+      "realization_status": "accrued_not_applied",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 98014
+    },
+    {
+      "oracle_network": "UMA",
+      "economic_kind": "state_delta",
+      "economic_evidence_class": "zero_applied_stake_delta",
+      "realization_status": "applied",
+      "include_in_realized_reward": false,
+      "include_in_realized_slash": false,
+      "n_rows": 8258
+    }
+  ],
+  "strict_semantics": [
+    {
+      "oracle_network": "Chainlink",
+      "source_event": "RewardClaimed",
+      "economic_evidence_class": "paid_reward",
+      "n_rows": 29927,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Chronicle",
+      "source_event": "OpChallengeRewardPaid",
+      "economic_evidence_class": "paid_invalid_report_challenge_reward",
+      "n_rows": 14,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "DIA",
+      "source_event": "unstake+wDIA Transfer",
+      "economic_evidence_class": "paid_base_staking_reward",
+      "n_rows": 127,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Flare",
+      "source_event": "RewardClaimed",
+      "economic_evidence_class": "paid_reward_claim",
+      "n_rows": 18468675,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Pyth",
+      "source_event": "reward_transfer",
+      "economic_evidence_class": "paid_reward_to_stake_custody",
+      "n_rows": 459083,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "source_event": "MsgClaimReward",
+      "economic_evidence_class": "paid_reward",
+      "n_rows": 18,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "source_event": "dispute_executed",
+      "economic_evidence_class": "realized_principal_slash",
+      "n_rows": 3,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "Tellor",
+      "source_event": "tip_withdrawn",
+      "economic_evidence_class": "paid_reward_compounded_to_stake",
+      "n_rows": 20380,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "source_event": "Settle",
+      "economic_evidence_class": "paid_reward_embedded_in_settlement",
+      "n_rows": 41769,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "source_event": "Settle",
+      "economic_evidence_class": "realized_bond_forfeiture",
+      "n_rows": 834,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "source_event": "Settle",
+      "economic_evidence_class": "realized_final_fee_forfeiture",
+      "n_rows": 834,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "source_event": "VoterSlashApplied",
+      "economic_evidence_class": "applied_net_stake_increase",
+      "n_rows": 114815,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    },
+    {
+      "oracle_network": "UMA",
+      "source_event": "VoterSlashApplied",
+      "economic_evidence_class": "applied_net_stake_slash",
+      "n_rows": 139375,
+      "nonincluded": 0,
+      "without_verification": 0,
+      "malformed_unsigned": 0,
+      "malformed_signed": 0
+    }
+  ],
+  "sample_b_protocol": [
+    {
+      "oracle_network": "Chainlink",
+      "n_rows": 118947
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "n_rows": 19402262
+    },
+    {
+      "oracle_network": "Pyth",
+      "n_rows": 587720
+    },
+    {
+      "oracle_network": "Tellor",
+      "n_rows": 82887135
+    },
+    {
+      "oracle_network": "UMA",
+      "n_rows": 2706360
+    }
+  ],
+  "sample_c_classes": [
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "strict_event_class": "flare_consensus_band_condition_met",
+      "n_rows": 829973
+    },
+    {
+      "oracle_network": "Flare_FTSOv2",
+      "strict_event_class": "flare_consensus_band_condition_not_met",
+      "n_rows": 39305
+    },
+    {
+      "oracle_network": "Tellor",
+      "strict_event_class": "tellor_dispute_voter_reward_paid",
+      "n_rows": 18
+    },
+    {
+      "oracle_network": "Tellor",
+      "strict_event_class": "tellor_report_rejected",
+      "n_rows": 10
+    },
+    {
+      "oracle_network": "Tellor",
+      "strict_event_class": "tellor_report_supported",
+      "n_rows": 3
+    },
+    {
+      "oracle_network": "Tellor",
+      "strict_event_class": "tellor_reporter_jailed",
+      "n_rows": 13
+    },
+    {
+      "oracle_network": "Tellor",
+      "strict_event_class": "tellor_reporter_unjailed",
+      "n_rows": 13
+    },
+    {
+      "oracle_network": "UMA",
+      "strict_event_class": "uma_correct_vote_redistribution",
+      "n_rows": 1618542
+    },
+    {
+      "oracle_network": "UMA",
+      "strict_event_class": "uma_dvm_confirmed_disputer_correct",
+      "n_rows": 473
+    },
+    {
+      "oracle_network": "UMA",
+      "strict_event_class": "uma_dvm_confirmed_proposer_correct",
+      "n_rows": 348
+    },
+    {
+      "oracle_network": "UMA",
+      "strict_event_class": "uma_no_valid_reveal_slash",
+      "n_rows": 887620
+    },
+    {
+      "oracle_network": "UMA",
+      "strict_event_class": "uma_wrong_vote_slash",
+      "n_rows": 59508
+    }
+  ],
+  "uma_rounds": [
+    {
+      "sample_tier": "primary",
+      "status": "disputed",
+      "economic_status": "not_settled",
+      "n_rows": 1,
+      "min_request_time": 1750967408,
+      "max_request_time": 1750967408
+    },
+    {
+      "sample_tier": "primary",
+      "status": "requested",
+      "economic_status": "not_settled",
+      "n_rows": 799,
+      "min_request_time": 1746200831,
+      "max_request_time": 1782835378
+    },
+    {
+      "sample_tier": "primary",
+      "status": "settled",
+      "economic_status": "settled_disputed_disputer_wins",
+      "n_rows": 473,
+      "min_request_time": 1680802662,
+      "max_request_time": 1761495965
+    },
+    {
+      "sample_tier": "primary",
+      "status": "settled",
+      "economic_status": "settled_disputed_proposer_wins",
+      "n_rows": 348,
+      "min_request_time": 1681143556,
+      "max_request_time": 1770604487
+    },
+    {
+      "sample_tier": "primary",
+      "status": "settled",
+      "economic_status": "settled_undisputed",
+      "n_rows": 39713,
+      "min_request_time": 1680372422,
+      "max_request_time": 1778346188
+    },
+    {
+      "sample_tier": "supplementary",
+      "status": "requested",
+      "economic_status": "not_settled",
+      "n_rows": 49,
+      "min_request_time": 1671573060,
+      "max_request_time": 1686163627
+    },
+    {
+      "sample_tier": "supplementary",
+      "status": "settled",
+      "economic_status": "settled_disputed_disputer_wins",
+      "n_rows": 7,
+      "min_request_time": 1676557256,
+      "max_request_time": 1679953007
+    },
+    {
+      "sample_tier": "supplementary",
+      "status": "settled",
+      "economic_status": "settled_disputed_proposer_wins",
+      "n_rows": 6,
+      "min_request_time": 1672249334,
+      "max_request_time": 1680226385
+    },
+    {
+      "sample_tier": "supplementary",
+      "status": "settled",
+      "economic_status": "settled_undisputed",
+      "n_rows": 1279,
+      "min_request_time": 1667593230,
+      "max_request_time": 1680304258
+    },
+    {
+      "sample_tier": "unresolved",
+      "status": "requested",
+      "economic_status": "not_settled",
+      "n_rows": 1,
+      "min_request_time": 1747115953,
+      "max_request_time": 1747115953
+    }
+  ],
+  "uma_flow": [
+    {
+      "status": "settled",
+      "settlement_flow_exact": true,
+      "n_rows": 41826
+    },
+    {
+      "status": "disputed",
+      "settlement_flow_exact": null,
+      "n_rows": 1
+    },
+    {
+      "status": "requested",
+      "settlement_flow_exact": null,
+      "n_rows": 849
+    }
+  ],
+  "uma_links": [
+    {
+      "sample_tier": "primary",
+      "cross_chain_match_grade": "A",
+      "resolved_price_consistent": true,
+      "unmatched_reason": null,
+      "n_rows": 810
+    },
+    {
+      "sample_tier": "primary",
+      "cross_chain_match_grade": "A",
+      "resolved_price_consistent": null,
+      "unmatched_reason": null,
+      "n_rows": 12
+    },
+    {
+      "sample_tier": "supplementary",
+      "cross_chain_match_grade": "A",
+      "resolved_price_consistent": true,
+      "unmatched_reason": null,
+      "n_rows": 10
+    },
+    {
+      "sample_tier": "supplementary",
+      "cross_chain_match_grade": "U",
+      "resolved_price_consistent": null,
+      "unmatched_reason": "exact_polygon_bridge_found_but_no_votingv2_request",
+      "n_rows": 3
+    }
+  ],
+  "polygon_uma_request_rounds_key": [
+    {
+      "n_rows": 42676,
+      "unique_keys": 42676,
+      "null_keys": 0
+    }
+  ],
+  "polygon_uma_request_flow_qc_key": [
+    {
+      "n_rows": 42676,
+      "unique_keys": 42676,
+      "null_keys": 0
+    }
+  ],
+  "uma_polygon_ethereum_grade_a_links_key": [
+    {
+      "n_rows": 835,
+      "unique_keys": 835,
+      "null_keys": 0
+    }
+  ],
+  "uma_dvm_requests_key": [
+    {
+      "n_rows": 3744,
+      "unique_keys": 3744,
+      "null_keys": 0
+    }
+  ],
+  "uma_rounds_flow_fk": [
+    {
+      "orphan_rows": 0
+    }
+  ],
+  "uma_links_dvm_fk": [
+    {
+      "orphan_grade_a": 0
+    }
+  ],
+  "uma_payout_formula": [
+    {
+      "settled": 41826,
+      "formula_exact": 41826,
+      "nonzero_gap": 0,
+      "missing": 0
+    }
+  ],
+  "chainlink_flow_qc": [
+    {
+      "event": "ForfeitedRewardDistributed",
+      "flow_expected": false,
+      "flow_exact": null,
+      "reconciliation_status": "accounting_only_no_transfer_required",
+      "n_rows": 600
+    },
+    {
+      "event": "RewardClaimed",
+      "flow_expected": true,
+      "flow_exact": true,
+      "reconciliation_status": null,
+      "n_rows": 29927
+    },
+    {
+      "event": "Staked",
+      "flow_expected": true,
+      "flow_exact": true,
+      "reconciliation_status": null,
+      "n_rows": 17648
+    },
+    {
+      "event": "Unstaked",
+      "flow_expected": true,
+      "flow_exact": true,
+      "reconciliation_status": null,
+      "n_rows": 3197
+    }
+  ],
+  "flare_epoch_qc": [
+    {
+      "epochs": 183,
+      "exact_claimed": 183,
+      "burn_bound_pass": 183
+    }
+  ],
+  "episode_schema_sample": [
+    {
+      "episode_id": "a944f9ae4aa755861d713c7b9f59285d6955c7650c84154d8b2e25e3d1538b46",
+      "protocol": "UMA",
+      "episode_type": "uma_oov2_request",
+      "unit_id": "0xa3e4bd8ed8c260e41cd6bf693001f0ef89dc1d5f28372995a2a8de949db77d16",
+      "actor": "0x52764dd44eb51b0d21cd08e5497035f256ea7754",
+      "actor_role": "proposer_or_disputer",
+      "start_time": 1754506173,
+      "end_time": 1778443005,
+      "terminal_status": "closed",
+      "coverage_status": "complete",
+      "asset": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "asset_decimals": 6,
+      "contract_version": "adapter_v3_current",
+      "cross_chain_flag": true,
+      "source_table": "polygon_uma_request_rounds",
+      "state_sequence": [
+        "INITIATED",
+        "ELIGIBLE",
+        "PRINCIPAL_LOCKED",
+        "ACTION_PERFORMED",
+        "REPORT_SUBMITTED",
+        "CHALLENGED",
+        "ADJUDICATED_POSITIVE",
+        "REWARD_ACCRUED",
+        "REWARD_PAID",
+        "PRINCIPAL_RETURNED",
+        "CLOSED"
+      ],
+      "principal_locked_raw": "500000000",
+      "principal_returned_raw": "750000000",
+      "reward_accrued_raw": "5000000",
+      "reward_paid_raw": "5000000",
+      "reward_claimable_raw": null,
+      "reward_forfeited_raw": null,
+      "bond_forfeited_raw": "0",
+      "principal_slashed_raw": null,
+      "protocol_fee_raw": "0",
+      "signed_stake_delta_raw": null,
+      "challenged": true,
+      "right_censored": false,
+      "transfer_confirmed": true,
+      "state_change_confirmed": true,
+      "evidence_class": "A"
+    }
+  ],
+  "episodes": [
+    {
+      "protocol": "Chainlink",
+      "episode_type": "chainlink_service_window",
+      "right_censored": false,
+      "n_rows": 46722
+    },
+    {
+      "protocol": "Chainlink",
+      "episode_type": "chainlink_staking_cycle",
+      "right_censored": true,
+      "n_rows": 10432
+    },
+    {
+      "protocol": "Flare_FTSOv2",
+      "episode_type": "flare_provider_epoch",
+      "right_censored": false,
+      "n_rows": 14379
+    },
+    {
+      "protocol": "Pyth",
+      "episode_type": "pyth_publisher_epoch",
+      "right_censored": false,
+      "n_rows": 6566
+    },
+    {
+      "protocol": "Tellor",
+      "episode_type": "tellor_dispute",
+      "right_censored": false,
+      "n_rows": 13
+    },
+    {
+      "protocol": "UMA",
+      "episode_type": "uma_dvm_voter",
+      "right_censored": true,
+      "n_rows": 2663684
+    },
+    {
+      "protocol": "UMA",
+      "episode_type": "uma_oov2_request",
+      "right_censored": false,
+      "n_rows": 41826
+    },
+    {
+      "protocol": "UMA",
+      "episode_type": "uma_oov2_request",
+      "right_censored": true,
+      "n_rows": 850
+    }
+  ],
+  "strict_810_keys": [
+    {
+      "n_rows": 810,
+      "unique_samples": 810
+    }
+  ]
+}

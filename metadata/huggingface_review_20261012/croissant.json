@@ -1,0 +1,5633 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "name": "OracleEconLab Oracle Incentives and Accountability v1",
+  "description": "Review-sized, audit-first UMA economic episodes, A/B/C measures and decision-time evaluation records.",
+  "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.5.0-review-metadata-repair-20261012",
+  "datePublished": "2026-08-16",
+  "citeAs": "Oracle-Nature Contributors (2026), OracleEconLab Economic Research Release v1.5.0.",
+  "isLiveDataset": false,
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "rai:hasSyntheticData": true,
+  "rai:dataCollection": "Software collection of public Polygon and Ethereum protocol records, fixed RPC snapshots, deterministic cross-chain linkage and versioned transformations.",
+  "rai:dataCollectionType": [
+    "Software Collection",
+    "Web API",
+    "Secondary Data analysis"
+  ],
+  "rai:dataCollectionRawData": "Canonical contract events, transaction receipts, token transfers and protocol source semantics.",
+  "rai:dataCollectionTimeframe": [
+    "end:2026-06-30T23:59:59Z"
+  ],
+  "rai:dataCollectionMissingData": "Unknown, unavailable, not applicable, verified zero and right-censored states are distinct; off-chain investigation effort and most independent factual outcomes are unavailable.",
+  "rai:dataLimitations": [
+    "The AI cohort conditions on actually challenged UMA proposals and cannot identify policy value for undisputed requests.",
+    "Protocol adjudication is not independent factual truth.",
+    "Address-level activity is not verified person- or institution-level activity.",
+    "The review draft is not the full cross-protocol ledger and requires archive infrastructure for complete recollection.",
+    "Observed chain records are real; model predictions and derived evaluation outputs are machine-generated. Core metadata validation does not establish independent factual truth or full-Atlas completeness."
+  ],
+  "rai:dataBiases": [
+    "Selection favors challenged requests with exact Grade-A linkage and flow evidence.",
+    "UMA and Polymarket-style adapter activity are over-represented relative to less observable oracle mechanisms."
+  ],
+  "rai:personalSensitiveInformation": [
+    "Public pseudonymous blockchain addresses and transaction hashes are present; no natural-person identity mapping is asserted.",
+    "No private RPC endpoint, API credential, private key or off-chain personal profile is released.",
+    "Public wallet addresses can be linked across transactions and may be re-identified using outside information; do not treat pseudonymity as anonymity."
+  ],
+  "rai:dataUseCases": [
+    "Economic-measure auditing and reproducibility research.",
+    "Conditional protocol-outcome evaluation with calibration, leakage checks and abstention.",
+    "Not validated for production challenge automation, causal truthfulness claims or identity inference."
+  ],
+  "rai:dataSocialImpact": "The resource can improve transparency around who bears verification costs and how accountability is realized, but misuse as an automated challenge policy could impose financial losses or amplify selective-label bias.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:abc_dictionary",
+      "name": "abc_dictionary.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/abc_dictionary.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "caf6c39c6331f7ea578b787279f1a89b8fbeda12bdedb68f2a50bf71259010bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_real_episode",
+      "name": "uma_real_episode.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_real_episode.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "3a940fb4165254d528652d9eff3d94e831aca7e00a9374c910c96436925dacd7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_real_episode_abc",
+      "name": "uma_real_episode_abc.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_real_episode_abc.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "510cfac9ffbd2e32f45d3096dedd80d1f86eddf27f54f4de980fc670b6aaf17a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_public_rpc_episode",
+      "name": "uma_public_rpc_episode.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_public_rpc_episode.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "a25bcc1923ae2bfb6a9d99cc48aea75f6b8dd875c947db0d339058d1eddd5c8b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_public_rpc_abc",
+      "name": "uma_public_rpc_abc.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_public_rpc_abc.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "6048d9525b67187cc5789d63b706402cebe93f37cdfee7e37d538b1a5e55de4c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_decisions",
+      "name": "uma_decisions.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_decisions.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "07d7c71c3086f5c4411e505651d89edf97881d164f479a8bccfa9401d8f3078e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:uma_decision_splits",
+      "name": "uma_decision_splits.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_decision_splits.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "2ae1de1c52bf55c1d12e80288f2144dcbf6a601261f6a444219d3207f770a555"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:decision_evidence",
+      "name": "decision_evidence.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/decision_evidence.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "031e9d4f501537e9f9c57c8d6d8588cb154c9e2006a698ab6ab25150952e2732"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:ai_feature_dictionary",
+      "name": "ai_feature_dictionary.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/ai_feature_dictionary.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "f1ec0a4d97421392dee8d449d472fcd6bae29c3e57062e440f87d25429e380b7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_episodes",
+      "name": "public_ai_episodes.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_episodes.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "c88c5ca399c98d0acfece652b2699c882f1d638f2d480f9952af61bb93928017"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_decisions",
+      "name": "public_ai_decisions.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_decisions.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "a291329f9294a3c676677b54cb944e9b4a68556140cbabee3ed23b4aff4f14a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_splits",
+      "name": "public_ai_splits.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_splits.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "22e41dfd4217c85f7b96a173b47fb42a2a24388b33245847f054b813852e2f2b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_evidence",
+      "name": "public_ai_evidence.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_evidence.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "9a4826f204a97660606a7bf7ac57d57628a14811c31640b3ae7140108f527c53"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_predictions",
+      "name": "public_ai_predictions.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_predictions.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "430df04253cc32fe259bf1264aa4c2639ce7eff98964e90973d91286b3f48d2b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file:public_ai_metrics",
+      "name": "public_ai_metrics.parquet",
+      "contentUrl": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_metrics.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "59322398ab54fd7141d4b815dcba47bdd29a88fb60e3c3f841dc2e727127a5ec"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:abc_dictionary",
+      "name": "abc_dictionary",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/variable_name",
+          "name": "variable_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "variable_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/measure_family",
+          "name": "measure_family",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "measure_family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/track",
+          "name": "track",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "track"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/mathematical_definition",
+          "name": "mathematical_definition",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "mathematical_definition"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/indexing",
+          "name": "indexing",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "indexing"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/observation_unit",
+          "name": "observation_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "observation_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/measurement_unit",
+          "name": "measurement_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "measurement_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/economic_definition",
+          "name": "economic_definition",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "economic_definition"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/economic_mechanism",
+          "name": "economic_mechanism",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "economic_mechanism"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/hypothesis_role",
+          "name": "hypothesis_role",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "hypothesis_role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/source_mapping",
+          "name": "source_mapping",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "source_mapping"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/decision_time_availability",
+          "name": "decision_time_availability",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "decision_time_availability"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/evidence_class",
+          "name": "evidence_class",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "evidence_class"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/missing_value_rule",
+          "name": "missing_value_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "missing_value_rule"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/validation_rule",
+          "name": "validation_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "validation_rule"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/references",
+          "name": "references",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "references"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/measurement_limitations",
+          "name": "measurement_limitations",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "measurement_limitations"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/uma_constructability",
+          "name": "uma_constructability",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "uma_constructability"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/uma_source_tables",
+          "name": "uma_source_tables",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "uma_source_tables"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/uma_non_null_observations",
+          "name": "uma_non_null_observations",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "uma_non_null_observations"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:abc_dictionary/notes",
+          "name": "notes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:abc_dictionary"
+            },
+            "extract": {
+              "column": "notes"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/abc_dictionary.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_real_episode",
+      "name": "uma_real_episode",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/schema_version",
+          "name": "schema_version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "schema_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/episode_id",
+          "name": "episode_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "episode_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/protocol",
+          "name": "protocol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/mechanism",
+          "name": "mechanism",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "mechanism"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/native_unit_type",
+          "name": "native_unit_type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "native_unit_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/observation_unit",
+          "name": "observation_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "observation_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/security_chain_namespace",
+          "name": "security_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "security_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/security_chain_id",
+          "name": "security_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "security_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/delivery_chain_namespace",
+          "name": "delivery_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "delivery_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/delivery_chain_id",
+          "name": "delivery_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "delivery_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/actor",
+          "name": "actor",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "actor"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/actor_role",
+          "name": "actor_role",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "actor_role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/counterparty",
+          "name": "counterparty",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "counterparty"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/counterparty_role",
+          "name": "counterparty_role",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "counterparty_role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/proposal_time_unix",
+          "name": "proposal_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "proposal_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/dispute_time_unix",
+          "name": "dispute_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "dispute_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/settlement_time_unix",
+          "name": "settlement_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "settlement_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/challenge_deadline_unix",
+          "name": "challenge_deadline_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "challenge_deadline_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/terminal_time_unix",
+          "name": "terminal_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "terminal_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/action",
+          "name": "action",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/terminal_outcome",
+          "name": "terminal_outcome",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "terminal_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/right_censored",
+          "name": "right_censored",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "right_censored"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/independent_ground_truth",
+          "name": "independent_ground_truth",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "independent_ground_truth"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/asset_address",
+          "name": "asset_address",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "asset_address"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/asset_symbol",
+          "name": "asset_symbol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "asset_symbol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/asset_decimals",
+          "name": "asset_decimals",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "asset_decimals"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/bond_raw",
+          "name": "bond_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "bond_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/reward_configured_raw",
+          "name": "reward_configured_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "reward_configured_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/reward_paid_raw",
+          "name": "reward_paid_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "reward_paid_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/reward_forfeited_raw",
+          "name": "reward_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "reward_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/principal_returned_raw",
+          "name": "principal_returned_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "principal_returned_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/bond_forfeited_raw",
+          "name": "bond_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "bond_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/final_fee_forfeited_raw",
+          "name": "final_fee_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "final_fee_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/principal_slashed_raw",
+          "name": "principal_slashed_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "principal_slashed_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/protocol_fee_raw",
+          "name": "protocol_fee_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "protocol_fee_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/gross_payout_raw",
+          "name": "gross_payout_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "gross_payout_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/realized_payoff_raw",
+          "name": "realized_payoff_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "realized_payoff_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/gas_cost_native_raw",
+          "name": "gas_cost_native_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "gas_cost_native_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/investigation_cost_usd",
+          "name": "investigation_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "investigation_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/delay_cost_usd",
+          "name": "delay_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "delay_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/capital_cost_usd",
+          "name": "capital_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "capital_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/usd_value",
+          "name": "usd_value",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "usd_value"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/usd_conversion_source",
+          "name": "usd_conversion_source",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "usd_conversion_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/usd_conversion_time_unix",
+          "name": "usd_conversion_time_unix",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "usd_conversion_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/reward_to_bond_ratio",
+          "name": "reward_to_bond_ratio",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "reward_to_bond_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/dispute_decision",
+          "name": "dispute_decision",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "dispute_decision"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/proposal_upheld",
+          "name": "proposal_upheld",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "proposal_upheld"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/mandatory_wait_seconds",
+          "name": "mandatory_wait_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "mandatory_wait_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/resolution_delay_seconds",
+          "name": "resolution_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "resolution_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/settlement_delay_seconds",
+          "name": "settlement_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "settlement_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/excess_delay_seconds",
+          "name": "excess_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "excess_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/capital_days_locked_raw",
+          "name": "capital_days_locked_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "capital_days_locked_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/verification_cost_usd",
+          "name": "verification_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "verification_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/economic_regret_usd",
+          "name": "economic_regret_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "economic_regret_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/independent_ground_truth_available",
+          "name": "independent_ground_truth_available",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "independent_ground_truth_available"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/dvm_positive_redistribution_raw",
+          "name": "dvm_positive_redistribution_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "dvm_positive_redistribution_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/dvm_negative_slash_raw",
+          "name": "dvm_negative_slash_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "dvm_negative_slash_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/decision_evidence_ids",
+          "name": "decision_evidence_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "decision_evidence_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/evidence_snapshot_time_unix",
+          "name": "evidence_snapshot_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "evidence_snapshot_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/future_fields_excluded",
+          "name": "future_fields_excluded",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "future_fields_excluded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_chain_namespace",
+          "name": "source_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_chain_id",
+          "name": "source_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_contract",
+          "name": "source_contract",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_contract"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_transaction",
+          "name": "source_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_log_index",
+          "name": "source_log_index",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_log_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_block_number",
+          "name": "source_block_number",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_block_number"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_block_timestamp_unix",
+          "name": "source_block_timestamp_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_block_timestamp_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_event",
+          "name": "source_event",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_event"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_table",
+          "name": "source_table",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_table"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/source_finality_rule",
+          "name": "source_finality_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "source_finality_rule"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/cross_chain_link_grade",
+          "name": "cross_chain_link_grade",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "cross_chain_link_grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/provenance_id",
+          "name": "provenance_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "provenance_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/prov_entity_id",
+          "name": "prov_entity_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "prov_entity_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/prov_activity_id",
+          "name": "prov_activity_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "prov_activity_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/prov_agent_id",
+          "name": "prov_agent_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "prov_agent_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/transformation_rule_id",
+          "name": "transformation_rule_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "transformation_rule_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/contract_semantics_rule_id",
+          "name": "contract_semantics_rule_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "contract_semantics_rule_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/coverage_status",
+          "name": "coverage_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "coverage_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/missing_reason",
+          "name": "missing_reason",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "missing_reason"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/evidence_grade",
+          "name": "evidence_grade",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "evidence_grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/validation_status",
+          "name": "validation_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "validation_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/validation_rule_ids",
+          "name": "validation_rule_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "validation_rule_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode/interpretation_note",
+          "name": "interpretation_note",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode"
+            },
+            "extract": {
+              "column": "interpretation_note"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_real_episode.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_real_episode_abc",
+      "name": "uma_real_episode_abc",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/episode_id",
+          "name": "episode_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "episode_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/measure_family",
+          "name": "measure_family",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "measure_family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/variable_name",
+          "name": "variable_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "variable_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/value_raw_or_text",
+          "name": "value_raw_or_text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "value_raw_or_text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/measurement_unit",
+          "name": "measurement_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "measurement_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/observation_unit",
+          "name": "observation_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "observation_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/decision_time_availability",
+          "name": "decision_time_availability",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "decision_time_availability"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/case_measure_status",
+          "name": "case_measure_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "case_measure_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/component_row_count",
+          "name": "component_row_count",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "component_row_count"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/missing_reason",
+          "name": "missing_reason",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "missing_reason"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/source_reference",
+          "name": "source_reference",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "source_reference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/provenance_id",
+          "name": "provenance_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "provenance_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_real_episode_abc/interpretation_limit",
+          "name": "interpretation_limit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_real_episode_abc"
+            },
+            "extract": {
+              "column": "interpretation_limit"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_real_episode_abc.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_public_rpc_episode",
+      "name": "uma_public_rpc_episode",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/schema_version",
+          "name": "schema_version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "schema_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/episode_id",
+          "name": "episode_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "episode_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/protocol",
+          "name": "protocol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/mechanism",
+          "name": "mechanism",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "mechanism"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/native_unit_type",
+          "name": "native_unit_type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "native_unit_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/observation_unit",
+          "name": "observation_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "observation_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/security_chain_namespace",
+          "name": "security_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "security_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/security_chain_id",
+          "name": "security_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "security_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/delivery_chain_namespace",
+          "name": "delivery_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "delivery_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/delivery_chain_id",
+          "name": "delivery_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "delivery_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/actor",
+          "name": "actor",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "actor"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/actor_role",
+          "name": "actor_role",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "actor_role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/counterparty",
+          "name": "counterparty",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "counterparty"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/counterparty_role",
+          "name": "counterparty_role",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "counterparty_role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/proposal_time_unix",
+          "name": "proposal_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "proposal_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/dispute_time_unix",
+          "name": "dispute_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "dispute_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/settlement_time_unix",
+          "name": "settlement_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "settlement_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/challenge_deadline_unix",
+          "name": "challenge_deadline_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "challenge_deadline_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/terminal_time_unix",
+          "name": "terminal_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "terminal_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/action",
+          "name": "action",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/terminal_outcome",
+          "name": "terminal_outcome",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "terminal_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/right_censored",
+          "name": "right_censored",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "right_censored"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/independent_ground_truth",
+          "name": "independent_ground_truth",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "independent_ground_truth"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/asset_address",
+          "name": "asset_address",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "asset_address"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/asset_symbol",
+          "name": "asset_symbol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "asset_symbol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/asset_decimals",
+          "name": "asset_decimals",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "asset_decimals"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/bond_raw",
+          "name": "bond_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "bond_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/reward_configured_raw",
+          "name": "reward_configured_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "reward_configured_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/reward_paid_raw",
+          "name": "reward_paid_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "reward_paid_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/reward_forfeited_raw",
+          "name": "reward_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "reward_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/principal_returned_raw",
+          "name": "principal_returned_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "principal_returned_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/bond_forfeited_raw",
+          "name": "bond_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "bond_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/final_fee_forfeited_raw",
+          "name": "final_fee_forfeited_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "final_fee_forfeited_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/principal_slashed_raw",
+          "name": "principal_slashed_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "principal_slashed_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/protocol_fee_raw",
+          "name": "protocol_fee_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "protocol_fee_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/gross_payout_raw",
+          "name": "gross_payout_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "gross_payout_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/realized_payoff_raw",
+          "name": "realized_payoff_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "realized_payoff_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/gas_cost_native_raw",
+          "name": "gas_cost_native_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "gas_cost_native_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/investigation_cost_usd",
+          "name": "investigation_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "investigation_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/delay_cost_usd",
+          "name": "delay_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "delay_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/capital_cost_usd",
+          "name": "capital_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "capital_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/usd_value",
+          "name": "usd_value",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "usd_value"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/usd_conversion_source",
+          "name": "usd_conversion_source",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "usd_conversion_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/usd_conversion_time_unix",
+          "name": "usd_conversion_time_unix",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "usd_conversion_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/reward_to_bond_ratio",
+          "name": "reward_to_bond_ratio",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "reward_to_bond_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/dispute_decision",
+          "name": "dispute_decision",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "dispute_decision"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/proposal_upheld",
+          "name": "proposal_upheld",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "proposal_upheld"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/mandatory_wait_seconds",
+          "name": "mandatory_wait_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "mandatory_wait_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/resolution_delay_seconds",
+          "name": "resolution_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "resolution_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/settlement_delay_seconds",
+          "name": "settlement_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "settlement_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/excess_delay_seconds",
+          "name": "excess_delay_seconds",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "excess_delay_seconds"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/capital_days_locked_raw",
+          "name": "capital_days_locked_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "capital_days_locked_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/verification_cost_usd",
+          "name": "verification_cost_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "verification_cost_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/economic_regret_usd",
+          "name": "economic_regret_usd",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "economic_regret_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/independent_ground_truth_available",
+          "name": "independent_ground_truth_available",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "independent_ground_truth_available"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/dvm_positive_redistribution_raw",
+          "name": "dvm_positive_redistribution_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "dvm_positive_redistribution_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/dvm_negative_slash_raw",
+          "name": "dvm_negative_slash_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "dvm_negative_slash_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/decision_evidence_ids",
+          "name": "decision_evidence_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "decision_evidence_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/evidence_snapshot_time_unix",
+          "name": "evidence_snapshot_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "evidence_snapshot_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/future_fields_excluded",
+          "name": "future_fields_excluded",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "future_fields_excluded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_chain_namespace",
+          "name": "source_chain_namespace",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_chain_namespace"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_chain_id",
+          "name": "source_chain_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_chain_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_contract",
+          "name": "source_contract",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_contract"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_transaction",
+          "name": "source_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_log_index",
+          "name": "source_log_index",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_log_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_block_number",
+          "name": "source_block_number",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_block_number"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_block_timestamp_unix",
+          "name": "source_block_timestamp_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_block_timestamp_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_event",
+          "name": "source_event",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_event"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_table",
+          "name": "source_table",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_table"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/source_finality_rule",
+          "name": "source_finality_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "source_finality_rule"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/cross_chain_link_grade",
+          "name": "cross_chain_link_grade",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "cross_chain_link_grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/provenance_id",
+          "name": "provenance_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "provenance_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/prov_entity_id",
+          "name": "prov_entity_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "prov_entity_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/prov_activity_id",
+          "name": "prov_activity_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "prov_activity_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/prov_agent_id",
+          "name": "prov_agent_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "prov_agent_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/transformation_rule_id",
+          "name": "transformation_rule_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "transformation_rule_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/contract_semantics_rule_id",
+          "name": "contract_semantics_rule_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "contract_semantics_rule_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/coverage_status",
+          "name": "coverage_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "coverage_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/missing_reason",
+          "name": "missing_reason",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "missing_reason"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/evidence_grade",
+          "name": "evidence_grade",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "evidence_grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/validation_status",
+          "name": "validation_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "validation_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/validation_rule_ids",
+          "name": "validation_rule_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "validation_rule_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_episode/interpretation_note",
+          "name": "interpretation_note",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_episode"
+            },
+            "extract": {
+              "column": "interpretation_note"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_public_rpc_episode.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_public_rpc_abc",
+      "name": "uma_public_rpc_abc",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/episode_id",
+          "name": "episode_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "episode_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/measure_family",
+          "name": "measure_family",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "measure_family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/variable_name",
+          "name": "variable_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "variable_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/value_raw_or_text",
+          "name": "value_raw_or_text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "value_raw_or_text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/measurement_unit",
+          "name": "measurement_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "measurement_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/observation_unit",
+          "name": "observation_unit",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "observation_unit"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/case_measure_status",
+          "name": "case_measure_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "case_measure_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/missing_reason",
+          "name": "missing_reason",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "missing_reason"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_public_rpc_abc/provenance_id",
+          "name": "provenance_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_public_rpc_abc"
+            },
+            "extract": {
+              "column": "provenance_id"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_public_rpc_abc.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_decisions",
+      "name": "uma_decisions",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/protocol",
+          "name": "protocol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/mechanism",
+          "name": "mechanism",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "mechanism"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/challenge_deadline_unix",
+          "name": "challenge_deadline_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "challenge_deadline_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/evidence_snapshot_time_unix",
+          "name": "evidence_snapshot_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "evidence_snapshot_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/request_transaction",
+          "name": "request_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "request_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposal_transaction",
+          "name": "proposal_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposal_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/dispute_transaction_outcome_only",
+          "name": "dispute_transaction_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "dispute_transaction_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/dvm_request_id_outcome_only",
+          "name": "dvm_request_id_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "dvm_request_id_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/independent_ground_truth_available",
+          "name": "independent_ground_truth_available",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "independent_ground_truth_available"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/observed_action",
+          "name": "observed_action",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "observed_action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposal_rejected_by_protocol",
+          "name": "proposal_rejected_by_protocol",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposal_rejected_by_protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/protocol_terminal_outcome",
+          "name": "protocol_terminal_outcome",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "protocol_terminal_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/bond_raw_outcome_only",
+          "name": "bond_raw_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "bond_raw_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/final_fee_raw_outcome_only",
+          "name": "final_fee_raw_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "final_fee_raw_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/future_fields_excluded",
+          "name": "future_fields_excluded",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "future_fields_excluded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/evidence_ids",
+          "name": "evidence_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "evidence_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/log_bond_raw",
+          "name": "log_bond_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "log_bond_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/log_final_fee_raw",
+          "name": "log_final_fee_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "log_final_fee_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/log_reward_plus1_raw",
+          "name": "log_reward_plus1_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "log_reward_plus1_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/reward_to_bond_ratio",
+          "name": "reward_to_bond_ratio",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "reward_to_bond_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/liveness_hours",
+          "name": "liveness_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "liveness_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposal_latency_hours",
+          "name": "proposal_latency_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposal_latency_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/ancillary_bytes",
+          "name": "ancillary_bytes",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "ancillary_bytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/requester_is_polymarket_adapter",
+          "name": "requester_is_polymarket_adapter",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "requester_is_polymarket_adapter"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposer_prior_completed",
+          "name": "proposer_prior_completed",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_completed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposer_prior_dispute_rate",
+          "name": "proposer_prior_dispute_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_dispute_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposer_prior_rejection_rate",
+          "name": "proposer_prior_rejection_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_rejection_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/requester_prior_completed",
+          "name": "requester_prior_completed",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_completed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/requester_prior_dispute_rate",
+          "name": "requester_prior_dispute_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_dispute_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/requester_prior_rejection_rate",
+          "name": "requester_prior_rejection_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_rejection_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/proposed_price_class",
+          "name": "proposed_price_class",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "proposed_price_class"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decisions/adapter_version",
+          "name": "adapter_version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decisions"
+            },
+            "extract": {
+              "column": "adapter_version"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_decisions.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:uma_decision_splits",
+      "name": "uma_decision_splits",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decision_splits/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decision_splits"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decision_splits/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decision_splits"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:uma_decision_splits/split",
+          "name": "split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:uma_decision_splits"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/uma_decision_splits.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:decision_evidence",
+      "name": "decision_evidence",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/evidence_kind",
+          "name": "evidence_kind",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "evidence_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/source_transaction",
+          "name": "source_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "source_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/source_block",
+          "name": "source_block",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "source_block"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/evidence_time_unix",
+          "name": "evidence_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "evidence_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/fields",
+          "name": "fields",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "fields"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/evidence_id",
+          "name": "evidence_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "evidence_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:decision_evidence/availability_rule",
+          "name": "availability_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:decision_evidence"
+            },
+            "extract": {
+              "column": "availability_rule"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/decision_evidence.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:ai_feature_dictionary",
+      "name": "ai_feature_dictionary",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/feature",
+          "name": "feature",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "feature"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/definition",
+          "name": "definition",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "definition"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/source_mapping",
+          "name": "source_mapping",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "source_mapping"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/available_at_decision",
+          "name": "available_at_decision",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "available_at_decision"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/model_input",
+          "name": "model_input",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "model_input"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:ai_feature_dictionary/limitation",
+          "name": "limitation",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:ai_feature_dictionary"
+            },
+            "extract": {
+              "column": "limitation"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/ai_feature_dictionary.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_episodes",
+      "name": "public_ai_episodes",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/rank",
+          "name": "rank",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "rank"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/split",
+          "name": "split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/requester",
+          "name": "requester",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "requester"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/proposer",
+          "name": "proposer",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "proposer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/disputer",
+          "name": "disputer",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "disputer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/request_time",
+          "name": "request_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "request_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/request_block_time",
+          "name": "request_block_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "request_block_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/proposal_time",
+          "name": "proposal_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "proposal_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/dispute_time",
+          "name": "dispute_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "dispute_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/settlement_time",
+          "name": "settlement_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "settlement_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/expiration_time",
+          "name": "expiration_time",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "expiration_time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/ancillary_data_hex",
+          "name": "ancillary_data_hex",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "ancillary_data_hex"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/reward_configured_raw",
+          "name": "reward_configured_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "reward_configured_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/bond_raw",
+          "name": "bond_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "bond_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/final_fee_raw",
+          "name": "final_fee_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "final_fee_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/escrow_capital_at_risk_raw",
+          "name": "escrow_capital_at_risk_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "escrow_capital_at_risk_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/proposed_price_raw",
+          "name": "proposed_price_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "proposed_price_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/resolved_price_raw",
+          "name": "resolved_price_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "resolved_price_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/gross_payout_raw",
+          "name": "gross_payout_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "gross_payout_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/realized_challenge_payoff_raw",
+          "name": "realized_challenge_payoff_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "realized_challenge_payoff_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/dispute_gas_native_raw",
+          "name": "dispute_gas_native_raw",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "dispute_gas_native_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/proposal_rejected_by_protocol",
+          "name": "proposal_rejected_by_protocol",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "proposal_rejected_by_protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/independent_ground_truth_available",
+          "name": "independent_ground_truth_available",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "independent_ground_truth_available"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/cross_chain_link_grade",
+          "name": "cross_chain_link_grade",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "cross_chain_link_grade"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/adapter_version",
+          "name": "adapter_version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "adapter_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/request_transaction",
+          "name": "request_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "request_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/proposal_transaction",
+          "name": "proposal_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "proposal_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/dispute_transaction",
+          "name": "dispute_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "dispute_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/settlement_transaction",
+          "name": "settlement_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "settlement_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/dvm_resolution_transaction",
+          "name": "dvm_resolution_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "dvm_resolution_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/dvm_request_id",
+          "name": "dvm_request_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "dvm_request_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_episodes/case_qc",
+          "name": "case_qc",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_episodes"
+            },
+            "extract": {
+              "column": "case_qc"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_episodes.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_decisions",
+      "name": "public_ai_decisions",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/protocol",
+          "name": "protocol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/mechanism",
+          "name": "mechanism",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "mechanism"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/challenge_deadline_unix",
+          "name": "challenge_deadline_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "challenge_deadline_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/evidence_snapshot_time_unix",
+          "name": "evidence_snapshot_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "evidence_snapshot_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/request_transaction",
+          "name": "request_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "request_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposal_transaction",
+          "name": "proposal_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposal_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/dispute_transaction_outcome_only",
+          "name": "dispute_transaction_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "dispute_transaction_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/dvm_request_id_outcome_only",
+          "name": "dvm_request_id_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "dvm_request_id_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/independent_ground_truth_available",
+          "name": "independent_ground_truth_available",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "independent_ground_truth_available"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/observed_action",
+          "name": "observed_action",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "observed_action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposal_rejected_by_protocol",
+          "name": "proposal_rejected_by_protocol",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposal_rejected_by_protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/protocol_terminal_outcome",
+          "name": "protocol_terminal_outcome",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "protocol_terminal_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/bond_raw_outcome_only",
+          "name": "bond_raw_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "bond_raw_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/final_fee_raw_outcome_only",
+          "name": "final_fee_raw_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "final_fee_raw_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/realized_challenge_payoff_raw_outcome_only",
+          "name": "realized_challenge_payoff_raw_outcome_only",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "realized_challenge_payoff_raw_outcome_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/future_fields_excluded",
+          "name": "future_fields_excluded",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "future_fields_excluded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/evidence_ids",
+          "name": "evidence_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "evidence_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/log_bond_raw",
+          "name": "log_bond_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "log_bond_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/log_final_fee_raw",
+          "name": "log_final_fee_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "log_final_fee_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/log_reward_plus1_raw",
+          "name": "log_reward_plus1_raw",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "log_reward_plus1_raw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/reward_to_bond_ratio",
+          "name": "reward_to_bond_ratio",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "reward_to_bond_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/liveness_hours",
+          "name": "liveness_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "liveness_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposal_latency_hours",
+          "name": "proposal_latency_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposal_latency_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/ancillary_bytes",
+          "name": "ancillary_bytes",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "ancillary_bytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/requester_is_polymarket_adapter",
+          "name": "requester_is_polymarket_adapter",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "requester_is_polymarket_adapter"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposer_prior_completed",
+          "name": "proposer_prior_completed",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_completed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposer_prior_dispute_rate",
+          "name": "proposer_prior_dispute_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_dispute_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposer_prior_rejection_rate",
+          "name": "proposer_prior_rejection_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposer_prior_rejection_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/requester_prior_completed",
+          "name": "requester_prior_completed",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_completed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/requester_prior_dispute_rate",
+          "name": "requester_prior_dispute_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_dispute_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/requester_prior_rejection_rate",
+          "name": "requester_prior_rejection_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "requester_prior_rejection_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/proposed_price_class",
+          "name": "proposed_price_class",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "proposed_price_class"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_decisions/adapter_version",
+          "name": "adapter_version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_decisions"
+            },
+            "extract": {
+              "column": "adapter_version"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_decisions.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_splits",
+      "name": "public_ai_splits",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_splits/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_splits"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_splits/decision_time_unix",
+          "name": "decision_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_splits"
+            },
+            "extract": {
+              "column": "decision_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_splits/split",
+          "name": "split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_splits"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_splits.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_evidence",
+      "name": "public_ai_evidence",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/evidence_kind",
+          "name": "evidence_kind",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "evidence_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/source_transaction",
+          "name": "source_transaction",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "source_transaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/source_block",
+          "name": "source_block",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "source_block"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/evidence_time_unix",
+          "name": "evidence_time_unix",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "evidence_time_unix"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/fields",
+          "name": "fields",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "fields"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/evidence_id",
+          "name": "evidence_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "evidence_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_evidence/availability_rule",
+          "name": "availability_rule",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_evidence"
+            },
+            "extract": {
+              "column": "availability_rule"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_evidence.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_predictions",
+      "name": "public_ai_predictions",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/sample_id",
+          "name": "sample_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "sample_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/model",
+          "name": "model",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "model"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/split",
+          "name": "split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/probability_proposal_rejected",
+          "name": "probability_proposal_rejected",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "probability_proposal_rejected"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/probability_std_across_runs",
+          "name": "probability_std_across_runs",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "probability_std_across_runs"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/action",
+          "name": "action",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/confidence",
+          "name": "confidence",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "confidence"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/protocol_outcome",
+          "name": "protocol_outcome",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "protocol_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/correct_if_automated",
+          "name": "correct_if_automated",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "correct_if_automated"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/evidence_ids",
+          "name": "evidence_ids",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "evidence_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/explanation",
+          "name": "explanation",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "explanation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/stylized_normalized_cost",
+          "name": "stylized_normalized_cost",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "stylized_normalized_cost"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_predictions/ground_truth_status",
+          "name": "ground_truth_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_predictions"
+            },
+            "extract": {
+              "column": "ground_truth_status"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_predictions.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "record:public_ai_metrics",
+      "name": "public_ai_metrics",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/model",
+          "name": "model",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "model"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/n_test",
+          "name": "n_test",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "n_test"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/roc_auc",
+          "name": "roc_auc",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "roc_auc"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/brier_score",
+          "name": "brier_score",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "brier_score"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/log_loss",
+          "name": "log_loss",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "log_loss"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/ece_10",
+          "name": "ece_10",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "ece_10"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/automated_coverage",
+          "name": "automated_coverage",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "automated_coverage"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/automated_selective_error",
+          "name": "automated_selective_error",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "automated_selective_error"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/investigate_rate",
+          "name": "investigate_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "investigate_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/abstain_rate",
+          "name": "abstain_rate",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "abstain_rate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "record:public_ai_metrics/stylized_normalized_cost",
+          "name": "stylized_normalized_cost",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file:public_ai_metrics"
+            },
+            "extract": {
+              "column": "stylized_normalized_cost"
+            }
+          }
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/586e850ce504db0f4ffec9bea7b0f4db3fa45239/data/public_ai_metrics.parquet"
+        }
+      ],
+      "prov:wasGeneratedBy": {
+        "@id": "urn:oracle-atlas:historical-review-build-v1.5"
+      }
+    }
+  ],
+  "dateModified": "2026-10-12",
+  "prov:wasDerivedFrom": {
+    "@id": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/tree/586e850ce504db0f4ffec9bea7b0f4db3fa45239"
+  },
+  "prov:wasGeneratedBy": {
+    "@id": "urn:oracle-atlas:historical-review-build-v1.5",
+    "@type": "prov:Activity",
+    "sc:description": "Historical generation of the archived review tables; exact original execution commit is not established for every table. Byte identity is pinned; retrospective source mappings must not be mistaken for a fresh scientific rerun."
+  },
+  "rai:dataReleaseMaintenancePlan": "Keep immutable historical revisions; publish corrected outputs with new manifests, code identities and before/after validation. Contact the repository issue tracker for reproducible data issues."
+}

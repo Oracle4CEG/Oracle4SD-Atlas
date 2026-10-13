@@ -1,0 +1,152 @@
+[
+  {
+    "recordset": "record:abc_dictionary",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/abc_dictionary.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_real_episode",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_real_episode.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_real_episode_abc",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_real_episode_abc.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_public_rpc_episode",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_public_rpc_episode.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_public_rpc_abc",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_public_rpc_abc.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_decisions",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_decisions.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:uma_decision_splits",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/uma_decision_splits.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:decision_evidence",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/decision_evidence.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:ai_feature_dictionary",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/ai_feature_dictionary.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_episodes",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_episodes.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_decisions",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_decisions.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_splits",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_splits.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_evidence",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_evidence.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_predictions",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_predictions.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  },
+  {
+    "recordset": "record:public_ai_metrics",
+    "dataset_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+    "source_files": [
+      "data/public_ai_metrics.parquet"
+    ],
+    "observation_cutoff": "2026-06-30T23:59:59Z",
+    "original_execution_identity": "not established for all historical contributions",
+    "quality_control": "Current full-file hashes, Parquet schema and row counts; scientific generation history remains separately documented."
+  }
+]

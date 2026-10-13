@@ -1,1 +1,5 @@
-step_id,purpose,input_paths_and_versions,command_or_protocol,code_commit,parameters,output_paths,input_count_and_unit,output_count_and_unit,excluded_count,expansion_or_aggregation,reason_codes,manual_action,log_path
+stage,input,code,output,unit
+query,7 checksum-pinned source files,code/query_data/query.py,RUN/queried_data/uma_case; RUN/reports/acquisition.json,5 source transactions
+process,acquired receipts and pinned contract sources,code/process_data/process.py,RUN/processed_data/*.csv; RUN/reconstruction,9 decoded events;8 transfers;1 episode
+analyze,one economic episode,code/analyze_data/analyze.py,RUN/analysis/summary.json,750 principal +250 gain =1000 gross USDC.e
+validate,raw-derived assertions + prior summary + schema,code/technical_validation/validate.py,RUN/reports/validation.json,28 scoped checks; not population truth

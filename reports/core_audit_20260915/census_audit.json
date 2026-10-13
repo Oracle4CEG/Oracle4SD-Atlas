@@ -1,0 +1,91 @@
+{
+  "current_registry_counts": [
+    {
+      "table": "oracle_universe",
+      "rows": 56,
+      "fields": [
+        "deep_panel_status",
+        "delivery_chains_observed",
+        "integrated_protocol_tvl_sum_usd",
+        "measurement_note",
+        "number_of_integrated_protocols_observed",
+        "oracle_family",
+        "oracle_network",
+        "penalty_mechanism_documented",
+        "penalty_onchain_observable",
+        "publisher_level_observable",
+        "report_level_observable",
+        "reward_mechanism_documented",
+        "reward_onchain_observable",
+        "security_chain",
+        "snapshot_time_utc",
+        "source_evidence",
+        "universe_source"
+      ],
+      "sha256": "5ee99efd7f79c6d1afdddef9648fc96ec35cc44a5d13c51e3edae915689e494b",
+      "assignment_count_from_rows": 366
+    },
+    {
+      "table": "oracle_observability_scores",
+      "rows": 56,
+      "fields": [
+        "deep_panel_status",
+        "delivery_chains_observed",
+        "economic_importance_reason",
+        "economic_importance_score",
+        "ecosystem_audit_class",
+        "ecosystem_audit_complete",
+        "historical_depth_reason",
+        "historical_depth_score",
+        "implementation_cost_reason",
+        "implementation_cost_score",
+        "integrated_protocol_tvl_sum_usd",
+        "measurement_note",
+        "number_of_integrated_protocols_observed",
+        "oracle_family",
+        "oracle_network",
+        "penalty_mechanism_documented",
+        "penalty_observability_reason",
+        "penalty_observability_score",
+        "penalty_onchain_observable",
+        "publisher_level_observable",
+        "report_level_observable",
+        "reward_mechanism_documented",
+        "reward_observability_reason",
+        "reward_observability_score",
+        "reward_onchain_observable",
+        "scoring_version",
+        "security_chain",
+        "snapshot_time_utc",
+        "source_evidence",
+        "truth_linkability_reason",
+        "truth_linkability_score",
+        "universe_source"
+      ],
+      "sha256": "eda5513e6022044c2ac542f84fc87ec1be564a0e1b53f648d6fd66b9dff05a18",
+      "assignment_count_from_rows": 366
+    }
+  ],
+  "historical_manifest": {
+    "dataset": "Oracle ecosystem universe census",
+    "deep_seed_networks_present": [
+      "Chainlink",
+      "Chronicle",
+      "Flare_FTSOv2",
+      "Pyth",
+      "RedStone",
+      "Tellor",
+      "UMA"
+    ],
+    "oracle_categories": 56,
+    "output": "registry/oracle_universe.jsonl",
+    "protocol_oracle_assignments": 366,
+    "raw_snapshot": "data/raw/ecosystem/defillama_protocols.json.gz",
+    "raw_snapshot_sha256": "11d0e35afa19d593005f559709ed7f6a0199c07f3fafd501646edf797dfdef33",
+    "rebuilt_from_cached_snapshot": true,
+    "scope_note": "Universe census, not an event crawl and not proof that a tagged mechanism has observable rewards or penalties.",
+    "snapshot_time_utc": "2026-07-20T12:15:35.947259+00:00",
+    "source_url": "https://api.llama.fi/protocols"
+  },
+  "scope": "Ecosystem labels/assignments, not 56 event-crawled full economic protocols; raw snapshot Jul20 postdates chain observation cutoff."
+}

@@ -1,0 +1,76 @@
+{
+  "dataset_id": "oracle4sd-atlas",
+  "data_version": "uma-public-rpc-case-v1",
+  "review_bundle": "atlas-review-20260916",
+  "core_audit_snapshot": "SD-HANDOFF-20260915",
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "pipeline": "uma_public_rpc_case_v1",
+  "scope": "one real UMA disputed request; 5 source transactions across Polygon and Ethereum",
+  "case_id": "0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca",
+  "source_mode": "frozen_snapshot_replay",
+  "sources": [
+    {
+      "source_id": "case_spec.json",
+      "path": "data/data_source/uma_case/case_spec.json",
+      "filename": "case_spec.json",
+      "sha256": "6bc9d141f52398b1f3446a93d7619e4e475535419bffec528f2b662ae7c3b865",
+      "max_bytes": 12178,
+      "bytes": 6089,
+      "kind": "local"
+    },
+    {
+      "source_id": "raw/ethereum_rpc_snapshot.json",
+      "path": "data/data_source/uma_case/raw/ethereum_rpc_snapshot.json",
+      "filename": "raw/ethereum_rpc_snapshot.json",
+      "sha256": "2af8dd712384c6b67e1323bdb0a9fde4b3849cf8a99bf2eec3299e868614c0d6",
+      "max_bytes": 58432,
+      "bytes": 29216,
+      "kind": "local"
+    },
+    {
+      "source_id": "raw/polygon_rpc_snapshot.json",
+      "path": "data/data_source/uma_case/raw/polygon_rpc_snapshot.json",
+      "filename": "raw/polygon_rpc_snapshot.json",
+      "sha256": "bdf308fce350db604af04f889826c16304081a0197b01fceae9e147450d273f8",
+      "max_bytes": 198716,
+      "bytes": 99358,
+      "kind": "local"
+    },
+    {
+      "source_id": "source/OptimisticOracleV2.sol",
+      "path": "data/data_source/uma_case/source/OptimisticOracleV2.sol",
+      "filename": "source/OptimisticOracleV2.sol",
+      "sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+      "max_bytes": 64586,
+      "bytes": 32293,
+      "kind": "local"
+    },
+    {
+      "source_id": "source/OptimisticOracleV2Interface.sol",
+      "path": "data/data_source/uma_case/source/OptimisticOracleV2Interface.sol",
+      "filename": "source/OptimisticOracleV2Interface.sol",
+      "sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328",
+      "max_bytes": 32276,
+      "bytes": 16138,
+      "kind": "local"
+    },
+    {
+      "source_id": "source/VotingV2.abi.json",
+      "path": "data/data_source/uma_case/source/VotingV2.abi.json",
+      "filename": "source/VotingV2.abi.json",
+      "sha256": "84e7656bf39385b2fb4af555422f1ec36d933889be38eed9f3a2e3b9500117c6",
+      "max_bytes": 85258,
+      "bytes": 42629,
+      "kind": "local"
+    },
+    {
+      "source_id": "source/VotingV2.sol",
+      "path": "data/data_source/uma_case/source/VotingV2.sol",
+      "filename": "source/VotingV2.sol",
+      "sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+      "max_bytes": 119264,
+      "bytes": 59632,
+      "kind": "local"
+    }
+  ]
+}

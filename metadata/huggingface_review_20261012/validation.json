@@ -1,0 +1,205 @@
+{
+  "data_revision": "586e850ce504db0f4ffec9bea7b0f4db3fa45239",
+  "mlcroissant_version": "1.1.0",
+  "files": [
+    {
+      "check": "immutable_file_identity",
+      "path": "data/abc_dictionary.parquet",
+      "sha256": "caf6c39c6331f7ea578b787279f1a89b8fbeda12bdedb68f2a50bf71259010bd",
+      "rows": 28,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_real_episode.parquet",
+      "sha256": "3a940fb4165254d528652d9eff3d94e831aca7e00a9374c910c96436925dacd7",
+      "rows": 1,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_real_episode_abc.parquet",
+      "sha256": "510cfac9ffbd2e32f45d3096dedd80d1f86eddf27f54f4de980fc670b6aaf17a",
+      "rows": 28,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_public_rpc_episode.parquet",
+      "sha256": "a25bcc1923ae2bfb6a9d99cc48aea75f6b8dd875c947db0d339058d1eddd5c8b",
+      "rows": 1,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_public_rpc_abc.parquet",
+      "sha256": "6048d9525b67187cc5789d63b706402cebe93f37cdfee7e37d538b1a5e55de4c",
+      "rows": 28,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_decisions.parquet",
+      "sha256": "07d7c71c3086f5c4411e505651d89edf97881d164f479a8bccfa9401d8f3078e",
+      "rows": 810,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/uma_decision_splits.parquet",
+      "sha256": "2ae1de1c52bf55c1d12e80288f2144dcbf6a601261f6a444219d3207f770a555",
+      "rows": 810,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/decision_evidence.parquet",
+      "sha256": "031e9d4f501537e9f9c57c8d6d8588cb154c9e2006a698ab6ab25150952e2732",
+      "rows": 2430,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/ai_feature_dictionary.parquet",
+      "sha256": "f1ec0a4d97421392dee8d449d472fcd6bae29c3e57062e440f87d25429e380b7",
+      "rows": 16,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_episodes.parquet",
+      "sha256": "c88c5ca399c98d0acfece652b2699c882f1d638f2d480f9952af61bb93928017",
+      "rows": 64,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_decisions.parquet",
+      "sha256": "a291329f9294a3c676677b54cb944e9b4a68556140cbabee3ed23b4aff4f14a9",
+      "rows": 64,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_splits.parquet",
+      "sha256": "22e41dfd4217c85f7b96a173b47fb42a2a24388b33245847f054b813852e2f2b",
+      "rows": 64,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_evidence.parquet",
+      "sha256": "9a4826f204a97660606a7bf7ac57d57628a14811c31640b3ae7140108f527c53",
+      "rows": 192,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_predictions.parquet",
+      "sha256": "430df04253cc32fe259bf1264aa4c2639ce7eff98964e90973d91286b3f48d2b",
+      "rows": 70,
+      "passed": true
+    },
+    {
+      "check": "immutable_file_identity",
+      "path": "data/public_ai_metrics.parquet",
+      "sha256": "59322398ab54fd7141d4b815dcba47bdd29a88fb60e3c3f841dc2e727127a5ec",
+      "rows": 7,
+      "passed": true
+    }
+  ],
+  "recordsets": [
+    {
+      "recordset": "record:abc_dictionary",
+      "loaded_rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_real_episode",
+      "loaded_rows": 1,
+      "expected_rows": 1,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_real_episode_abc",
+      "loaded_rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_public_rpc_episode",
+      "loaded_rows": 1,
+      "expected_rows": 1,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_public_rpc_abc",
+      "loaded_rows": 28,
+      "expected_rows": 28,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_decisions",
+      "loaded_rows": 810,
+      "expected_rows": 810,
+      "passed": true
+    },
+    {
+      "recordset": "record:uma_decision_splits",
+      "loaded_rows": 810,
+      "expected_rows": 810,
+      "passed": true
+    },
+    {
+      "recordset": "record:decision_evidence",
+      "loaded_rows": 2430,
+      "expected_rows": 2430,
+      "passed": true
+    },
+    {
+      "recordset": "record:ai_feature_dictionary",
+      "loaded_rows": 16,
+      "expected_rows": 16,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_episodes",
+      "loaded_rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_decisions",
+      "loaded_rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_splits",
+      "loaded_rows": 64,
+      "expected_rows": 64,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_evidence",
+      "loaded_rows": 192,
+      "expected_rows": 192,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_predictions",
+      "loaded_rows": 70,
+      "expected_rows": 70,
+      "passed": true
+    },
+    {
+      "recordset": "record:public_ai_metrics",
+      "loaded_rows": 7,
+      "expected_rows": 7,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Format, pinned file identity, schema and record loading; not complete historical scientific provenance"
+}

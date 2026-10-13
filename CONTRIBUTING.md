@@ -1,18 +1,9 @@
-# Contributing
+# Contributing to Oracle4SD Atlas
 
-Read [the first-author guide](docs/FIRST_AUTHOR_GUIDE.md), work on a branch, and open a pull
-request explaining the scientific reason for the change. Keep the existing licence notice.
-Run the local checks below and report failures and scope honestly.
+Use a personal fork and a review branch; open a PR into Oracle4CEG/Oracle4SD-Atlas. Keep this MIT notice and third-party licenses. Do not commit credentials, private endpoints, full unreviewed datasets or notebooks containing secrets.
 
-~~~bash
-python scripts/check_template.py
-python -m unittest discover -s tests -v
-python scripts/run_pipeline.py
-~~~
+Describe the scientific scope of changes. If monetary or label semantics change, version the schema/rules, preserve prior inputs and references, report affected rows and regenerate only explicitly authorized outputs. Never update a frozen expected result merely to make a test pass.
 
-Update dictionaries, manifests, notebooks and instructions when a schema or method changes.
-Never approve a reference mismatch by simply overwriting its expected hash. Record the reason,
-independent review and data/code version. Keep confidential material and credentials out of commits.
-For project datasets, follow [Scientific Data](https://www.nature.com/sdata/submission-guidelines) and [NeurIPS dataset guidance](https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting).
+Run `python scripts/check_repository.py`, `python -m unittest discover -s tests -v` and a fresh `python scripts/run_pipeline.py --output runs/review-unique-name`. Changes to the tutorial also require a new isolated notebook execution record. Record the tested code commit and dirty status. Human review and hosted Colab execution must be reported separately from automated checks.
 
-This repository's instructions are educational. Scientific adequacy requires project-specific evidence.
+Full-core failures remain open until their specific evidence and revalidation results are included. Use metadata/issue_log.csv and docs/HANDOFF.md to scope corrections.

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "dataset_revision": "57ab1e2409652291c75f02c9e066c52011d8b4ad",
+  "downloaded_files": 8,
+  "downloaded_bytes": 1816976,
+  "files": [
+    {
+      "path": "data/applications/financial_benchmark/benchmark_sample.parquet",
+      "bytes": 1165104,
+      "sha256": "ea67664d0939f0ebb7d09171ef29aa8f191c452500cc54c4f1e9c12b3aac0b59",
+      "rows": 18000,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/benchmark_sample.parquet"
+    },
+    {
+      "path": "data/applications/financial_benchmark/metrics.parquet",
+      "bytes": 11897,
+      "sha256": "b90db50a54d1bc58010325cdf69a655dee3fd176dfe5e638aba3d3ae5b0e6d17",
+      "rows": 24,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/metrics.parquet"
+    },
+    {
+      "path": "data/applications/financial_benchmark/model_registry.parquet",
+      "bytes": 3060,
+      "sha256": "8460f9e9c679d3e64066030642c913395987dc61421998bad221bdcb46483c04",
+      "rows": 13,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/financial_benchmark/model_registry.parquet"
+    },
+    {
+      "path": "data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+      "bytes": 495481,
+      "sha256": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864",
+      "rows": 810,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/trustworthy_ai_challenge/decision_samples.parquet"
+    },
+    {
+      "path": "data/applications/trustworthy_ai_challenge/splits.parquet",
+      "bytes": 60472,
+      "sha256": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae",
+      "rows": 810,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/data/applications/trustworthy_ai_challenge/splits.parquet"
+    },
+    {
+      "path": "experiments/decision_benchmark/predictions.parquet",
+      "bytes": 32031,
+      "sha256": "396df563ece1c78cd03b898ac67ddad0536bc57dd23cce633217ecc3da3dfb3d",
+      "rows": 963,
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/experiments/decision_benchmark/predictions.parquet"
+    },
+    {
+      "path": "metadata/accountability_events.schema.json",
+      "bytes": 13239,
+      "sha256": "cccfeeb7d5015dacd8d87ab8c82c7d24a8674b5edadda10c0e7a055122e5fae1",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/metadata/accountability_events.schema.json"
+    },
+    {
+      "path": "validation/full_release.json",
+      "bytes": 35692,
+      "sha256": "fbed19cc42fca53a914addb35be9e8a516360f455125bf139ae4e1e65370c16a",
+      "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/resolve/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired/validation/full_release.json"
+    }
+  ],
+  "decision_predictions": 963,
+  "prediction_match": "all columns exactly equal",
+  "financial_model_fits_completed": 21,
+  "release_checks": 50,
+  "note": "Public byte download of this selected subset; all release objects separately checked by public download or remote LFS SHA binding"
+}

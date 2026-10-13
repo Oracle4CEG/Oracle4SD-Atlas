@@ -1,0 +1,450 @@
+[
+  {
+    "bytes": 4953032,
+    "passed": true,
+    "path": "data/curated/parquet/chainlink_eth_usd_reports.parquet",
+    "rows": 62575,
+    "sha256": "a8a7163c2aa4fd52a19354324116831a749da37bfc7382982c0d706589626d27"
+  },
+  {
+    "bytes": 3492033,
+    "passed": true,
+    "path": "data/curated/parquet/chainlink_event_link_flow_qc.parquet",
+    "rows": 51372,
+    "sha256": "6bfa2d90b7829374dfc5dd9df86c8685530142c79c6738812586755a2a642551"
+  },
+  {
+    "bytes": 2876017,
+    "passed": true,
+    "path": "data/curated/parquet/chainlink_link_flows.parquet",
+    "rows": 77203,
+    "sha256": "ec9fcb99c4f4b746ac985a5cb351bf2cffb4a0a5577045f168a67e27d17d1d3c"
+  },
+  {
+    "bytes": 5505766,
+    "passed": true,
+    "path": "data/curated/parquet/chainlink_staking_v02_events.parquet",
+    "rows": 174890,
+    "sha256": "bb2ba7e88efddfd8f51d2a9fee66773717c072d52565b43ed84851c00f43a2b9"
+  },
+  {
+    "bytes": 12406334,
+    "passed": true,
+    "path": "data/curated/parquet/chronicle_ethereum_events.parquet",
+    "rows": 140526,
+    "sha256": "abab0400a1bac52704ec9b14821bbf5c19de7d02c69f956cdbad83b6c6cecf00"
+  },
+  {
+    "bytes": 3863,
+    "passed": true,
+    "path": "data/curated/parquet/chronicle_redstone_settlement_interfaces.parquet",
+    "rows": 2,
+    "sha256": "0d0e5d72200671ed45bef321ca2957dc19df039097e7ccea68e729b64dc0a053"
+  },
+  {
+    "bytes": 42573,
+    "passed": true,
+    "path": "data/curated/parquet/dia_staking_events.parquet",
+    "rows": 801,
+    "sha256": "f49809472446852446bc02e8d5c533e59b2c96a4b1f5afd813c2c3daa949ce8d"
+  },
+  {
+    "bytes": 18638,
+    "passed": true,
+    "path": "data/curated/parquet/dia_staking_withdrawals.parquet",
+    "rows": 129,
+    "sha256": "3fc27630287da229dd7c71964dc77476660ef3c5d5c451f61e11c8295e3c2268"
+  },
+  {
+    "bytes": 5484,
+    "passed": true,
+    "path": "data/curated/parquet/ecosystem_observability_evidence.parquet",
+    "rows": 2,
+    "sha256": "e147ba2db8e77715ea51e02bfed1855f4cd3bc73b6cf08391fafeee6656b768e"
+  },
+  {
+    "bytes": 6064,
+    "passed": true,
+    "path": "data/curated/parquet/flare_beneficiary_chill_events.parquet",
+    "rows": 6,
+    "sha256": "6b653603f17a286b6258ef04bcde70ee592b4b13d02da32909fa2f9605559a29"
+  },
+  {
+    "bytes": 1806,
+    "passed": true,
+    "path": "data/curated/parquet/flare_beneficiary_chill_state.parquet",
+    "rows": 6,
+    "sha256": "f1c159f3c5b6905b5fc4ff84e076994c24ef84fde36aab20473593e93b6e585a"
+  },
+  {
+    "bytes": 258856,
+    "passed": true,
+    "path": "data/curated/parquet/flare_provider_conditions.parquet",
+    "rows": 14379,
+    "sha256": "04b6bd3d1576998e94e954f74889c4e17097d56ee94149662d593f268eb87007"
+  },
+  {
+    "bytes": 16768,
+    "passed": true,
+    "path": "data/curated/parquet/flare_provider_failures.parquet",
+    "rows": 3742,
+    "sha256": "e317741462f289834331dc5123e0988d64345d06f95359568e0be9566106bc4a"
+  },
+  {
+    "bytes": 1268079,
+    "passed": true,
+    "path": "data/curated/parquet/flare_provider_feed_performance.parquet",
+    "rows": 869278,
+    "sha256": "b5c075239b287895af50a4b53166c2a907f9a95828fe3456ca2f3e2f0c377616"
+  },
+  {
+    "bytes": 45031,
+    "passed": true,
+    "path": "data/curated/parquet/flare_provider_passes.parquet",
+    "rows": 14379,
+    "sha256": "7f37ba421a530de1fba59a4edd9507c7478cd434806138c6dc5e01c35a320f5d"
+  },
+  {
+    "bytes": 22228,
+    "passed": true,
+    "path": "data/curated/parquet/flare_reward_claim_epoch_qc.parquet",
+    "rows": 183,
+    "sha256": "456e171369c37b920e286a303cf7a5ea52b9020efb3604a37d0c76ed239fb6a9"
+  },
+  {
+    "bytes": 692913421,
+    "passed": true,
+    "path": "data/curated/parquet/flare_reward_claim_events.parquet",
+    "rows": 18468735,
+    "sha256": "c0bf86b2103c48f02c14efb4ade7c4ff0aedc2df23de2f4711a3ab1b85d84c2c"
+  },
+  {
+    "bytes": 714097,
+    "passed": true,
+    "path": "data/curated/parquet/flare_reward_claims.parquet",
+    "rows": 49858,
+    "sha256": "9566afbb94b2b18bff54154f45791b5ed8270f80720a892130d5b37f52574a13"
+  },
+  {
+    "bytes": 39711,
+    "passed": true,
+    "path": "data/curated/parquet/flare_reward_component_attribution.parquet",
+    "rows": 86274,
+    "sha256": "b50741d301f1ec947bf6bc6b8fc1f9039ee008825b1f28b23d3c329695c6014a"
+  },
+  {
+    "bytes": 23651,
+    "passed": true,
+    "path": "data/curated/parquet/flare_reward_epochs.parquet",
+    "rows": 183,
+    "sha256": "21f50d686ca88cfba3f88ada0ec26544246b34481d1908deb3a21d3e1a6dadc1"
+  },
+  {
+    "bytes": 892675,
+    "passed": true,
+    "path": "data/curated/parquet/flare_voter_registrations.parquet",
+    "rows": 15859,
+    "sha256": "0465b28c910c053cbc42f51dcc814b8d9420c6c09ee285851f5c0fe446c52d5b"
+  },
+  {
+    "bytes": 5224,
+    "passed": true,
+    "path": "data/curated/parquet/phase4_oracle_economic_interfaces.parquet",
+    "rows": 6,
+    "sha256": "a0363ae29c2daf3391b91b9e604f815e6c2023b542bb8ba4fafb36c0032a5711"
+  },
+  {
+    "bytes": 9768251,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_adapter_events.parquet",
+    "rows": 98267,
+    "sha256": "2dfb4f47bffbb2de2ea631ff321e81b18d2b60b86291e89e32ffb2105283023d"
+  },
+  {
+    "bytes": 1763991,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_child_tunnel_events.parquet",
+    "rows": 13512,
+    "sha256": "6c3dc5c6b41c20339b5dde35ca3554f1f30e8d5f6f193d6734f468931662aac8"
+  },
+  {
+    "bytes": 47813666,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_oov2_events.parquet",
+    "rows": 514794,
+    "sha256": "6f3b243a9df36affbdfb3ffd03fd78a5359557b16e9cce4e822d9b873a735db7"
+  },
+  {
+    "bytes": 12469227,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_uma_gamma_links.parquet",
+    "rows": 42676,
+    "sha256": "e33b68e610a58e3fcd88d951d311cce74be4098af43fb7641f3fdb525f042ce9"
+  },
+  {
+    "bytes": 1518161,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+    "rows": 42676,
+    "sha256": "fe025843c774765b9c7da16cfc9ef610bf02e44006d3b95fa94ae5177db4282c"
+  },
+  {
+    "bytes": 11167492,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_uma_request_rounds.parquet",
+    "rows": 42676,
+    "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230"
+  },
+  {
+    "bytes": 19223359,
+    "passed": true,
+    "path": "data/curated/parquet/polygon_uma_token_flows.parquet",
+    "rows": 562536,
+    "sha256": "7a55dc2fdcef6223e7e727f77be0dbb491a60d93190f9850239bf96598eebbad"
+  },
+  {
+    "bytes": 20399,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_decision_time_price_onchain_validation.parquet",
+    "rows": 48,
+    "sha256": "b3e27a6d96c674a3bb88c3a6281971c836b8d51921052cbf1952e8d616f2431b"
+  },
+  {
+    "bytes": 189107,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+    "rows": 810,
+    "sha256": "e6784b932748669a8761e7301fb1e2a427a8b23d37dcdd84bc07aba1add30f41"
+  },
+  {
+    "bytes": 152359,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_decision_time_prices.parquet",
+    "rows": 810,
+    "sha256": "c996f51c711f47c3d42c772577d6036420f35f77192776a2fd555103516a92e7"
+  },
+  {
+    "bytes": 125256,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+    "rows": 291,
+    "sha256": "ade711bcf9bc062d75321024dd822cd0b98d0efa6c95993e9825fffaf08b3557"
+  },
+  {
+    "bytes": 82830,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+    "rows": 291,
+    "sha256": "dda4516ce0907e27f3e3689c150156a28055803f5c7472e63a51ec2f8fcd5888"
+  },
+  {
+    "bytes": 92640198,
+    "passed": true,
+    "path": "data/curated/parquet/polymarket_gamma_markets.parquet",
+    "rows": 463022,
+    "sha256": "3908d276cf0534435b79a5553ea724db441d878f682b651fd6b015de99780c91"
+  },
+  {
+    "bytes": 27297906,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_economic_events.parquet",
+    "rows": 459083,
+    "sha256": "0e75370b73752cdeec90fa0101e88d597161a94632eae785c84becef35d95499"
+  },
+  {
+    "bytes": 3703,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_historical_observability.parquet",
+    "rows": 6,
+    "sha256": "9184533a990e9379eb4558d70b5ba415bc28c1b48fcf907329b6b6d9b904f0e7"
+  },
+  {
+    "bytes": 71184144,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_instructions.parquet",
+    "rows": 518560,
+    "sha256": "4c6b28ca65b7d14f98c7914487bbd5f165d5bdeac0ca7e1a9030e09b5999eaa6"
+  },
+  {
+    "bytes": 17619,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_publisher_epoch_factors.parquet",
+    "rows": 6566,
+    "sha256": "45486317d6c893e24231d8cf427d73cb427361593975c38637ae47ec07883354"
+  },
+  {
+    "bytes": 3831,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_reward_epochs.parquet",
+    "rows": 49,
+    "sha256": "e73360306656c3195decd6fe125e83b14c293c044fa4e7386f0470ea04321163"
+  },
+  {
+    "bytes": 6380,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_slash_counters.parquet",
+    "rows": 134,
+    "sha256": "e15a617a0cb73d6b9d41055ed03297e02c5d82ac67d227675136a1d9af3d49ef"
+  },
+  {
+    "bytes": 16505145,
+    "passed": true,
+    "path": "data/curated/parquet/pyth_ois_stake_events.parquet",
+    "rows": 122071,
+    "sha256": "e2d16ed106c12f92a29cd0a2195e8d6dbe114b003834f42949e7d0e6b3aa1d28"
+  },
+  {
+    "bytes": 20623170,
+    "passed": true,
+    "path": "data/curated/parquet/redstone_ethereum_push_events.parquet",
+    "rows": 614319,
+    "sha256": "7bf0d8aadf503e2a39730bd93d50264cc8739b6b08d86571c4abf3dfdb0d6484"
+  },
+  {
+    "bytes": 148286845,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_aggregate_height_index.parquet",
+    "rows": 9972753,
+    "sha256": "53ea2f16c14d075b7cd4161b1845405a62713f45981f913e02d997b0e3fbdcfc"
+  },
+  {
+    "bytes": 3618,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_dispute_payments.parquet",
+    "rows": 21,
+    "sha256": "fc512e808c5cfcfb593e34f53c24e7357fe5b711007f18b41268ba2bf18a56ce"
+  },
+  {
+    "bytes": 6054,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_dispute_votes.parquet",
+    "rows": 55,
+    "sha256": "9040e016d562a187ea007c8733549f81728c904072fcfb057becd64434355f76"
+  },
+  {
+    "bytes": 12935,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_disputes.parquet",
+    "rows": 13,
+    "sha256": "bb790e9469a3a658c9f9fac748480036fc7e0e2e42ec6ebcd6d38c0d7cfe8c89"
+  },
+  {
+    "bytes": 5662,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_jail_events.parquet",
+    "rows": 26,
+    "sha256": "da2c5435bdf42c3b2942a11aef1cd45818edbb37a012629e8696c2b1b8d77d18"
+  },
+  {
+    "bytes": 5867,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_jail_lifecycles.parquet",
+    "rows": 13,
+    "sha256": "7e9b53bc3261a69921a011b12b8ea9d5cda1246edef64e415f86e6dedf7ef124"
+  },
+  {
+    "bytes": 2834,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_legacy_selector_reward_accruals.parquet",
+    "rows": 0,
+    "sha256": "41d3bc010d22fa74f96af4a2e942b2c3a17515297ba93fb7d4a33d893d9f5466"
+  },
+  {
+    "bytes": 1024662,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_liveness_reward_distributions_full.parquet",
+    "rows": 59920,
+    "sha256": "b1d34e0770a5e96f58e655be6cae7bead6725d58f69ab525b2f0fc159380de3c"
+  },
+  {
+    "bytes": 462712658,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_micro_reports.parquet",
+    "rows": 82866640,
+    "sha256": "e8764928eba7436cdf957ee53f42e312592d13174d0fde043e97926d92f94c17"
+  },
+  {
+    "bytes": 1595132,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_query_tip_funding.parquet",
+    "rows": 29310,
+    "sha256": "e72603acb40b4eeebda9de47d58a2876cd669a60f2cd9a5c03604f89cc32692e"
+  },
+  {
+    "bytes": 35033877,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_reporter_reward_accruals_full.parquet",
+    "rows": 715362,
+    "sha256": "7516799d796e763635e74c2b7aa9ff4b300092dc2d7148751e23fab6f962d61a"
+  },
+  {
+    "bytes": 1287034,
+    "passed": true,
+    "path": "data/curated/parquet/tellor_tip_withdrawals_realized.parquet",
+    "rows": 20380,
+    "sha256": "03eb729ccd69ae97b5508d0af1a056b3352df0d6b4dd3ecefb99c4c10339040f"
+  },
+  {
+    "bytes": 469143,
+    "passed": true,
+    "path": "data/curated/parquet/uma_dvm_requests.parquet",
+    "rows": 3744,
+    "sha256": "158273c7b83591f540a266618bf7136c9dbe1c28fb8ca788485cd05387b837ff"
+  },
+  {
+    "bytes": 23139868,
+    "passed": true,
+    "path": "data/curated/parquet/uma_dvm_staking_events.parquet",
+    "rows": 2211876,
+    "sha256": "9f932a49e59ed8bebcc39b8ca06ce3d26d8ce25f8b05963902a7f260369475bb"
+  },
+  {
+    "bytes": 39203134,
+    "passed": true,
+    "path": "data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+    "rows": 2663684,
+    "sha256": "48e6010a53b2b3caf35d57b996dd2b803feb75a09b06bfa5bce7633d51e35a8b"
+  },
+  {
+    "bytes": 22818301,
+    "passed": true,
+    "path": "data/curated/parquet/uma_dvm_votes_events.parquet",
+    "rows": 3587231,
+    "sha256": "bf2f4613a523989dd3f246b8415c14f571eee3a12259a68b7ec449bd99a4c389"
+  },
+  {
+    "bytes": 9343301,
+    "passed": true,
+    "path": "data/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+    "rows": 947128,
+    "sha256": "8d8369f24158606ab16cb9dfb388d202fb26a856c028922baf220565f7e70522"
+  },
+  {
+    "bytes": 3537343,
+    "passed": true,
+    "path": "data/curated/parquet/uma_phase2_request_panel.parquet",
+    "rows": 40534,
+    "sha256": "6dcd3bb263c9cd9a09bce7e233b8a603da3645c5b3efc8f4017a07e8dc5c370f"
+  },
+  {
+    "bytes": 214885,
+    "passed": true,
+    "path": "data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+    "rows": 835,
+    "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359"
+  },
+  {
+    "bytes": 495481,
+    "passed": true,
+    "path": "data/applications/trustworthy_ai_challenge/decision_samples.parquet",
+    "rows": 810,
+    "sha256": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864"
+  },
+  {
+    "bytes": 60472,
+    "passed": true,
+    "path": "data/applications/trustworthy_ai_challenge/splits.parquet",
+    "rows": 810,
+    "sha256": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae"
+  }
+]

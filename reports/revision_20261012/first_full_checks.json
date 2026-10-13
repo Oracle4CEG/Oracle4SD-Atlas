@@ -1,0 +1,128 @@
+[
+  {
+    "name": "common_truth_basis",
+    "passed": true,
+    "scope": "all common rows; reviewed definitions in metadata/semantic_decisions.json",
+    "violations": 0
+  },
+  {
+    "name": "common_accountability_unit_type",
+    "passed": true,
+    "scope": "all common rows; reviewed definitions in metadata/semantic_decisions.json",
+    "violations": 0
+  },
+  {
+    "name": "common_schema_version",
+    "passed": true,
+    "scope": "all common rows",
+    "violations": 0
+  },
+  {
+    "name": "common_event_id_unique",
+    "passed": true,
+    "scope": "all common rows",
+    "violations": 0
+  },
+  {
+    "name": "common_no_accrual_as_principal",
+    "passed": true,
+    "scope": "all DVM accrual rows",
+    "violations": 0
+  },
+  {
+    "name": "common_no_transfer_as_truth",
+    "passed": true,
+    "scope": "all Pyth economic/stake rows",
+    "violations": 0
+  },
+  {
+    "name": "common_cutoff",
+    "passed": true,
+    "scope": "all non-null common timestamps",
+    "violations": 0
+  },
+  {
+    "name": "realized_requires_evidence",
+    "passed": true,
+    "scope": "all realized-layer rows",
+    "violations": 0
+  },
+  {
+    "name": "realized_requires_inclusion",
+    "passed": true,
+    "scope": "all realized-layer rows",
+    "violations": 0
+  },
+  {
+    "name": "accrual_excluded_from_realized",
+    "passed": true,
+    "scope": "all economic-layer rows",
+    "violations": 0
+  },
+  {
+    "name": "episode_id_unique",
+    "passed": true,
+    "scope": "all rebuilt episodes",
+    "violations": 0
+  },
+  {
+    "name": "episode_time_order",
+    "passed": true,
+    "scope": "all timed episodes",
+    "violations": 0
+  },
+  {
+    "name": "rate_is_not_reward_amount",
+    "passed": true,
+    "scope": "all Pyth publisher epochs",
+    "violations": 0
+  },
+  {
+    "name": "uma_gross_principal_gain_identity",
+    "passed": true,
+    "scope": "all flow-confirmed UMA settlements",
+    "violations": 0
+  },
+  {
+    "name": "uma_link_evidence",
+    "passed": true,
+    "scope": "all cross-chain flagged UMA episodes",
+    "violations": 0
+  },
+  {
+    "name": "false_challenged",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  },
+  {
+    "name": "transfer_without_settlement",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  },
+  {
+    "name": "incomplete_disputed_reward",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  },
+  {
+    "name": "rejected_challenge_as_slash",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  },
+  {
+    "name": "unapplied_principal_slash",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  },
+  {
+    "name": "inverted_tellor_labels",
+    "passed": true,
+    "scope": "full affected table join",
+    "violations": 0
+  }
+]

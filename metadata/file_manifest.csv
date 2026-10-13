@@ -1,1 +1,32 @@
-file_id,release_version,relative_path,persistent_url,access_level,format,compression,bytes,sha256,record_count,record_unit,schema_or_dictionary,source_ids,license,description
+path,sha256,bytes,data_version,scope,license
+data/data_source/uma_case/case_spec.json,6bc9d141f52398b1f3446a93d7619e4e475535419bffec528f2b662ae7c3b865,6089,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/data_source/uma_case/raw/ethereum_rpc_snapshot.json,2af8dd712384c6b67e1323bdb0a9fde4b3849cf8a99bf2eec3299e868614c0d6,29216,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/data_source/uma_case/raw/polygon_rpc_snapshot.json,bdf308fce350db604af04f889826c16304081a0197b01fceae9e147450d273f8,99358,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/data_source/uma_case/source/OptimisticOracleV2.sol,9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf,32293,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/data_source/uma_case/source/OptimisticOracleV2Interface.sol,d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328,16138,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/data_source/uma_case/source/VotingV2.abi.json,84e7656bf39385b2fb4af555422f1ec36d933889be38eed9f3a2e3b9500117c6,42629,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/data_source/uma_case/source/VotingV2.sol,154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337,59632,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/queried_data/uma_case/case_spec.json,6bc9d141f52398b1f3446a93d7619e4e475535419bffec528f2b662ae7c3b865,6089,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/queried_data/uma_case/raw/ethereum_rpc_snapshot.json,2af8dd712384c6b67e1323bdb0a9fde4b3849cf8a99bf2eec3299e868614c0d6,29216,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/queried_data/uma_case/raw/polygon_rpc_snapshot.json,bdf308fce350db604af04f889826c16304081a0197b01fceae9e147450d273f8,99358,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/queried_data/uma_case/source/OptimisticOracleV2.sol,9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf,32293,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/queried_data/uma_case/source/OptimisticOracleV2Interface.sol,d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328,16138,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/queried_data/uma_case/source/VotingV2.abi.json,84e7656bf39385b2fb4af555422f1ec36d933889be38eed9f3a2e3b9500117c6,42629,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/queried_data/uma_case/source/VotingV2.sol,154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337,59632,uma-public-rpc-case-v1,one real UMA case,AGPL-3.0-only
+data/processed_data/uma_case/abc_economic_measures.csv,190f17ff171349e06af5baeaf8f73cc1ef1c66272334c04255fb3ac4657a1203,7601,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/canonical_chain_qc.csv,3503d909c59178c92a035fd73f0ad0dce57802996fbdf6924a1be511011dcc9b,1183,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/economic_cashflows.csv,d2657ae450245284c8c6eedfb5a685416874d9c8cf138768e34d1b17023d539a,229,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/economic_episode.json,9df290cafdc0940342693c1107669de13bbae766d7776594d8d5fc30802d5e7c,4479,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/economic_episodes.csv,1f6ed84085c06d7e35bbdd4ec95420bd022f467f281e46251a3d4a3ef20e342e,3782,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/economic_link_qc.csv,607d5579ff74ddc62db416d01a91985af165ae7c9eefe48db5ed60962316f90b,520,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/lifecycle_timeline.csv,4fffc4fcf28d89151e740c8369d68ab5d50b05a5454d15b162a524affc92d350,608,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/source_events.csv,67a006f942835a278484b2bc708b2283212e51e49f25ee0c5a28ea5a893b7e24,26416,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/token_flows.csv,6b6a883d92b801723ac64910ab859bb3c5366e08063ef1906d1d3325f3978fbe,1920,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+data/processed_data/uma_case/variable_provenance.csv,52b2293e4b5c966c6352220b2eba6a1fd849ff2fbf389efb2c74c9f73fdd3a96,4848,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/analysis/cashflow_components.csv,837adb172d0f5309587509f220f02d578731ba40ed8c92caabfb15445ff306ed,93,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/analysis/field_availability.csv,5acc83d79af480039ff28d770eae9b8d3524e73d2b32d722d7d65e000ea701f1,3138,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/analysis/summary.json,99b2e16658428bbe3d18540e9672b2c6f6ae4fa38070c1763dce014bea3bdb54,441,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/reports/acquisition.json,d7a682b9134c5f64a4211c4d00f0ed4d420fd84e167c48c9ac57ea47e67595ef,2917,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/reports/processing.json,e3a8e3a545a8939cad58924b510f67c5b2dbdf687de6475c7012f8c38b2eb9bd,697,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/reports/run_environment.json,dd650f35e34cc6fcc576c7f62b1b3f3a82019214c08c7f08524dcd4f34f579cb,10784,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained
+reports/uma_case/reports/validation.json,ed249ed1f51d1075c895160840fc062da79b1e29a9df5a1edc6dd9f507a09e37,5543,uma-public-rpc-case-v1,one real UMA case,CC-BY-4.0 original evidence; source rights retained

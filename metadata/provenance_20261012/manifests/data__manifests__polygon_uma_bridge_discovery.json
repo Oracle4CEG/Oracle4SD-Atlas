@@ -1,0 +1,17 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_bridge_discovery.json",
+  "original_sha256": "2d0228cf396ecd85ac38c2997c2ee52733c78c47323a62b79bb481950b14e622",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "block_range": [
+      37477509,
+      70228226
+    ],
+    "price_request_added_addresses": {
+      "0xbed4c1fc0fd95a2020ec351379b22d8582b904e3": 521
+    },
+    "raw_receipts": "workspace:/data/raw/polygon/uma_bridge_discovery/dispute_receipts.jsonl.gz",
+    "receipts": 521,
+    "unlinked_disputes": 521
+  }
+}

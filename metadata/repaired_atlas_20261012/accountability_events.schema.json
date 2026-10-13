@@ -1,0 +1,375 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Oracle4CEG/Oracle4SD-Atlas/schemas/accountability-events-2.0.0.json",
+  "title": "Oracle Accountability Event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "accountability_event_id",
+    "oracle_network",
+    "mechanism_family",
+    "security_chain",
+    "accountability_unit_type",
+    "accountability_unit_id",
+    "event_granularity",
+    "truth_basis",
+    "outcome_status",
+    "external_truth_available",
+    "source_event",
+    "rule_id",
+    "observability_grade",
+    "confidence_grade",
+    "native_table"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0",
+      "description": "Version of the common economic interpretation and field contract."
+    },
+    "accountability_event_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 identity derived from protocol-native keys; identifies this representation, not a person or a factual proposition."
+    },
+    "oracle_network": {
+      "type": "string",
+      "description": "Oracle protocol branch; not necessarily the chain that stores or settles the observation."
+    },
+    "mechanism_family": {
+      "type": "string",
+      "description": "Registered protocol incentive/adjudication mechanism category."
+    },
+    "security_chain": {
+      "type": "string",
+      "description": "Chain or native execution system recording the security or settlement evidence."
+    },
+    "delivery_chain": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Chain receiving the oracle result, when observed."
+    },
+    "accountability_unit_type": {
+      "enum": [
+        "request",
+        "individual_report",
+        "dispute",
+        "voting_request",
+        "voting_epoch",
+        "reward_epoch",
+        "publisher_pool_epoch",
+        "service_availability_window",
+        "reporter_jail_lifecycle",
+        "staking_position"
+      ],
+      "x-enumDefinitions": {
+        "request": "One oracle request round, identified by the native request ID.",
+        "individual_report": "One native report or authenticated update; not a unique independent real-world fact.",
+        "dispute": "A native dispute or a vote/payment event linked to a dispute; consult event_granularity.",
+        "voting_request": "Voter-level accrual linked to a DVM request; multiple voters share the request ID.",
+        "voting_epoch": "A protocol-defined voting round.",
+        "reward_epoch": "A provider, beneficiary or claim observation linked to a protocol reward epoch.",
+        "publisher_pool_epoch": "Pyth publisher epoch, stake instruction or reward transfer; native granularity remains essential.",
+        "service_availability_window": "Chainlink service interval or staking action; consult native_table and event_granularity.",
+        "reporter_jail_lifecycle": "Tellor jail/release event; two rows may belong to one restriction lifecycle.",
+        "staking_position": "DIA withdrawal against a native staking position index."
+      },
+      "description": "Protocol-native unit family; interpretations are enumerated in semantic_decisions.json."
+    },
+    "accountability_unit_id": {
+      "type": "string",
+      "description": "Native object identity; one object can contribute multiple typed events."
+    },
+    "event_granularity": {
+      "type": "string",
+      "description": "Specific kind of native action/component represented by this row."
+    },
+    "event_time_unix": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Observed native event timestamp in UTC Unix seconds; null when the retained source has no time."
+    },
+    "actor": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Public pseudonymous address or protocol identifier associated with this row, qualified by actor_role."
+    },
+    "actor_role": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Role of the actor for this observation; may be outcome-derived and is excluded from T0 predictive features."
+    },
+    "counterparty": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Other protocol participant or contract, when identified by native evidence."
+    },
+    "counterparty_role": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Role of the counterparty relative to the recorded action."
+    },
+    "reward_class": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Reward mechanism and economic stage; accrued, claimable and paid classes must not be combined."
+    },
+    "reward_amount_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Integer amount associated with reward_class; this field alone does not imply payment."
+    },
+    "reward_asset": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Token contract, symbol or denomination for reward_amount_raw."
+    },
+    "reward_asset_decimals": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Number of decimal places for the reward asset; divide raw token units by 10**decimals."
+    },
+    "reward_accrual_time_unix": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "UTC Unix seconds at which the entitlement accrues, if observed."
+    },
+    "reward_payment_time_unix": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "UTC Unix seconds of an observed reward payment, if observed."
+    },
+    "penalty_class": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Penalty mechanism and realization stage; accrued penalties are not applied principal losses."
+    },
+    "principal_slashed_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Applied principal loss supported by native state/settlement evidence. Null means no quantified applied loss is established."
+    },
+    "bond_forfeited_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Posted bond amount forfeited under the settled protocol outcome, separate from returned principal and fees."
+    },
+    "fee_forfeited_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Protocol fee component lost by the affected participant, separate from the bond."
+    },
+    "reward_forfeited_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Previously eligible/accrued reward lost under protocol rules; not principal slashing."
+    },
+    "penalty_asset": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Token identifier or denomination for the penalty amount."
+    },
+    "penalty_asset_decimals": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Decimal precision of the penalty token."
+    },
+    "nonmonetary_penalty": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Native restriction such as jail/chill, distinct from a quantified token loss."
+    },
+    "principal_locked_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Observable participant principal at risk; for UMA the effective bond plus final fee, for Tellor the escrow amount, never report power."
+    },
+    "principal_returned_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Participant principal included in a settlement return; excluded from token gain and reward."
+    },
+    "principal_asset": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Token identifier or denomination of posted/returned principal."
+    },
+    "principal_asset_decimals": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Decimal precision of the principal token."
+    },
+    "truth_basis": {
+      "enum": [
+        "undisputed_acceptance",
+        "protocol_vote_adjudication",
+        "consensus_median_alignment",
+        "independent_reference_adjudication",
+        "service_availability_condition",
+        "external_ground_truth",
+        "protocol_aggregate",
+        "signed_payload_verification",
+        "cryptographic_validation_and_challenge",
+        "protocol_recognized_reporting",
+        "staking_participation_not_individual_report_truth",
+        "protocol_state_transition"
+      ],
+      "description": "What the evidence establishes; protocol adjudication, signatures and state transitions are not independent factual truth.",
+      "x-enumDefinitions": {
+        "undisputed_acceptance": "Protocol acceptance without adjudication; does not establish factual truth.",
+        "protocol_vote_adjudication": "Protocol voting outcome, not independent factual ground truth.",
+        "consensus_median_alignment": "Agreement with the protocol aggregate, not an independent reference.",
+        "independent_reference_adjudication": "Adjudication against an explicitly identified independent reference; not inferred from a transfer.",
+        "service_availability_condition": "Recorded service or eligibility condition, without a factual truth judgment.",
+        "external_ground_truth": "Independent factual label requiring its own source and validation.",
+        "protocol_aggregate": "Tellor native report/aggregate inclusion; does not certify the report as true.",
+        "signed_payload_verification": "RedStone authenticated payload evidence; signatures authenticate a source, not the price.",
+        "cryptographic_validation_and_challenge": "Chronicle validation/challenge mechanism; factual truth is not independently observed.",
+        "protocol_recognized_reporting": "Tellor report recognized for a payment; recognition is not external truth.",
+        "staking_participation_not_individual_report_truth": "DIA staking withdrawal evidence, with no individual report correctness label.",
+        "protocol_state_transition": "Observed Pyth stake/transfer state transition without independent factual adjudication."
+      }
+    },
+    "outcome_status": {
+      "type": "string",
+      "description": "Protocol-native outcome or classified state; interpretation requires native_table and rule_id."
+    },
+    "external_truth_available": {
+      "type": "boolean",
+      "description": "Whether an independent factual reference is supplied, not merely a protocol vote."
+    },
+    "service_window_seconds": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Elapsed seconds in the observed service interval."
+    },
+    "service_threshold_seconds": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Registered protocol service threshold in seconds."
+    },
+    "source_event": {
+      "type": "string",
+      "description": "Name of the native log, instruction or state evidence used."
+    },
+    "source_tx": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Source transaction hash/signature; chain identity must also be retained."
+    },
+    "source_block": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Native block number/height, not a wall-clock timestamp."
+    },
+    "source_log_index": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Position of the source log within its transaction/block convention."
+    },
+    "source_contract": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Contract/program address emitting or governing the evidence."
+    },
+    "rule_id": {
+      "type": "string",
+      "description": "Versioned transformation or interpretation rule identifier."
+    },
+    "parameter_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Protocol configuration or parameter version used for interpretation."
+    },
+    "observability_grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ],
+      "description": "Evidence/coverage grade A, B, C or U; not a factual truth or economic validity guarantee."
+    },
+    "confidence_grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ],
+      "description": "Registered linkage/interpretation grade A, B, C or U."
+    },
+    "native_table": {
+      "type": "string",
+      "description": "Name of the native input table to which the observation can be traced."
+    },
+    "sample_tier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Declared cohort or scope category; cohorts can overlap."
+    },
+    "interpretation_note": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Source-specific meaning, stage distinction or limitation retained with the record."
+    },
+    "penalty_accrued_raw": {
+      "$ref": "#/$defs/rawAmount",
+      "description": "Calculated negative accrual magnitude; not realized loss and not additive to the later applied net change."
+    }
+  },
+  "$defs": {
+    "rawAmount": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^-?[0-9]+$"
+    }
+  },
+  "additionalProperties": false
+}

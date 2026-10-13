@@ -1,0 +1,41 @@
+{
+  "original_relative_path": "data/manifests/polymarket_decision_time_web_evidence.json",
+  "original_sha256": "8b2d232a12b72aa3e9fdd6129c60062090907f0f39134313513d2ef6f1238368",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "checks": {
+      "all_fetched_captures_available_at_decision": true,
+      "all_required_assertions_pass": true,
+      "all_source_links_are_onchain_preproposal": true,
+      "archived_binary_or_empty_rows": 2,
+      "archived_text_rows": 18,
+      "capture_fetch_error_rows": 157,
+      "no_predecision_capture_rows": 17,
+      "postdecision_capture_rows": 0,
+      "samples_with_url": 249,
+      "timemap_error_rows": 97,
+      "unique_domains": 75,
+      "unique_urls": 126,
+      "url_occurrences": 291
+    },
+    "current_pages_used": false,
+    "dataset": "Polymarket proposal-time archived web evidence",
+    "files": [
+      {
+        "bytes": 125256,
+        "path": "workspace:/data/curated/parquet/polymarket_decision_time_web_evidence.parquet",
+        "sha256": "ade711bcf9bc062d75321024dd822cd0b98d0efa6c95993e9825fffaf08b3557"
+      },
+      {
+        "bytes": 82830,
+        "path": "workspace:/data/curated/parquet/polymarket_decision_time_web_provenance.parquet",
+        "sha256": "dda4516ce0907e27f3e3689c150156a28055803f5c7472e63a51ec2f8fcd5888"
+      }
+    ],
+    "gamma_resolution_source_used": false,
+    "generated_at_utc": "2026-08-18T01:53:30.089805+00:00",
+    "selection_rule": "latest HTTP-200 Wayback capture with timestamp <= proposal time",
+    "version": "1.0.0"
+  }
+}

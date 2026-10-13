@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca",
+  "dvm_request_id": "0xdb17bc52e96153cceafbc3a275338732d7259cb766141acab55c1372307942a2",
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "selection_rule": "fixed real primary settled Grade-A disputed UMA episode; specification values are QC expectations and are never used to derive economic outputs",
+  "chains": {
+    "polygon": {
+      "chain_id": 137,
+      "public_rpc_documentation": "https://docs.polygon.technology/pos/reference/rpc-endpoints",
+      "default_public_rpc_candidates": [
+        "https://polygon.drpc.org",
+        "https://tenderly.rpc.polygon.community"
+      ],
+      "finality_rule": "successful canonical receipts whose receipt blockHash equals the independently fetched fixed block hash; blocks are older than the fixed release cutoff",
+      "transactions": {
+        "request": {
+          "hash": "0x6fc39485f25f23d42bcb55baf68633b31aa5aa53a881116ecf1382e6a1245ede",
+          "block_number": 63645613,
+          "block_hash": "0x0c3431e36122a4e52804555266e97001edc8681d78bac9a853d8ba611565fcba",
+          "block_timestamp": 1730232350
+        },
+        "proposal": {
+          "hash": "0xa9ff6827a32b90f134345bbc646a480787676f481ac651b00088520379b47903",
+          "block_number": 63658346,
+          "block_hash": "0xebb3215a79ad74f112c7231aa34a67e876c91f4bdef09d08180b23e954470b20",
+          "block_timestamp": 1730260036
+        },
+        "dispute": {
+          "hash": "0xa5742b4d0b43dbe96de0e57480fbc11a6aa61c64765395db9f27ae45ae5b2198",
+          "block_number": 63658420,
+          "block_hash": "0x781c4513e9c5c2932ac6a362a1cf43ed089948ddac4c422aaf195ce0ee634736",
+          "block_timestamp": 1730260194
+        },
+        "settlement": {
+          "hash": "0xe9457425a7a67a5e1bb431a7e3b1f8fe4649fcf04f3bb74376caa15600420310",
+          "block_number": 63813887,
+          "block_hash": "0x0bec2f78c9364203da297005531f11590be4d84be65cb0a5ef9eee4483817368",
+          "block_timestamp": 1730593355
+        }
+      }
+    },
+    "ethereum": {
+      "chain_id": 1,
+      "default_public_rpc_candidates": [
+        "https://ethereum-rpc.publicnode.com",
+        "https://ethereum.drpc.org"
+      ],
+      "finality_rule": "successful canonical receipt whose blockHash equals the independently fetched fixed block hash; deployed runtime hash is checked at latest when the public provider does not expose historical eth_getCode",
+      "transactions": {
+        "dvm_resolution": {
+          "hash": "0xc845c4be3da71936e760b5fb8b70eeb8753a7bc5012c452e7d335166d9b14039",
+          "block_number": 21103395,
+          "block_hash": "0x2e517faccd43244b242c0ccc6b43dfa55415bf847960c15b03a8ee566cd1e7f2",
+          "block_timestamp": 1730592035
+        }
+      }
+    }
+  },
+  "contracts": {
+    "polygon_oov2": {
+      "chain": "polygon",
+      "address": "0xee3afe347d5c74317041e2618c49534daf887c24",
+      "runtime_code_hash": "0xdc59e0d28ac7f24147f6a9e24e8e7a011ba1575a6ec5ec7d73f1c87666927856"
+    },
+    "polymarket_adapter_v2": {
+      "chain": "polygon",
+      "address": "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74",
+      "runtime_code_hash": "0x18957c31c3b8369c5737be2d9ea2a3cccade4ec22a5fef043a2526bc9627cc3e"
+    },
+    "polygon_legacy_child_tunnel": {
+      "chain": "polygon",
+      "address": "0xbed4c1fc0fd95a2020ec351379b22d8582b904e3",
+      "runtime_code_hash": "0x3b4bd7c39566db2aae418ab4a2090d17e4fe9e38477f2e212d4670519eeee6a8"
+    },
+    "ethereum_voting_v2": {
+      "chain": "ethereum",
+      "address": "0x004395edb43efca9885cedad51ec9faf93bd34ac",
+      "runtime_code_hash": "0x1b8bf8377b8f2ac8b465146937427cd4f1942484a8d02b680c16dcca4c139785"
+    },
+    "polygon_usdc_e": {
+      "chain": "polygon",
+      "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "symbol": "USDC.e",
+      "decimals": 6
+    }
+  },
+  "source_records": [
+    {
+      "id": "uma_oov2",
+      "url": "https://raw.githubusercontent.com/UMAprotocol/protocol/a16ee53125c433dfa4e29738b73d9069ff109c03/packages/core/contracts/optimistic-oracle-v2/implementation/OptimisticOracleV2.sol",
+      "sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+      "output_name": "OptimisticOracleV2.sol"
+    },
+    {
+      "id": "uma_oov2_interface",
+      "url": "https://raw.githubusercontent.com/UMAprotocol/protocol/a16ee53125c433dfa4e29738b73d9069ff109c03/packages/core/contracts/optimistic-oracle-v2/interfaces/OptimisticOracleV2Interface.sol",
+      "sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328",
+      "output_name": "OptimisticOracleV2Interface.sol"
+    },
+    {
+      "id": "uma_voting_v2_deployed_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x004395edb43EFca9885CEdad51EC9fAf93Bd34ac",
+      "source_code_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+      "output_name": "VotingV2.sol"
+    }
+  ],
+  "expected_economic_result": {
+    "asset_address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "asset_decimals": 6,
+    "requester": "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74",
+    "proposer": "0x22476393e22cba31a719ce37918c0def1cce39d4",
+    "disputer": "0x0db5aea9f41ce8398104e9d4694cfb18f146c493",
+    "identifier": "0x5945535f4f525f4e4f5f51554552590000000000000000000000000000000000",
+    "question_reward_configured_raw": "5000000",
+    "bond_raw": "500000000",
+    "final_fee_raw": "250000000",
+    "escrow_principal_raw": "750000000",
+    "settlement_transfer_raw": "1000000000",
+    "principal_returned_raw": "750000000",
+    "realized_payoff_raw": "250000000",
+    "protocol_fee_raw": "500000000",
+    "resolved_price_raw": "-57896044618658097711785492504343953926634992332820282019728792003956564819968",
+    "proposal_expiration_time": 1730267236,
+    "polygon_event_log_indexes": {
+      "RequestPrice": 196,
+      "ProposePrice": 327,
+      "DisputePrice": 397,
+      "Settle": 104,
+      "PriceRequestAdded": 394,
+      "MessageSent": 395
+    },
+    "ethereum_request_resolved_log_index": 141
+  }
+}

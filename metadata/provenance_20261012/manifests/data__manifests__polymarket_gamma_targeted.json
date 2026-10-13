@@ -1,0 +1,16 @@
+{
+  "original_relative_path": "data/manifests/polymarket_gamma_targeted.json",
+  "original_sha256": "064b3f4e9b2d2517ec250c2588c842a80f01ebea18d24e18d5f666b35bc5f507",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "batch_size": 30,
+    "dataset": "Polymarket Gamma exact on-chain question lookup",
+    "markets": 40379,
+    "question_ids": 41982,
+    "question_ids_found": 40379,
+    "question_ids_not_found": 1603,
+    "raw_directory": "workspace:/data/raw/polymarket/gamma_markets/targeted_questions",
+    "request_batches": 2800,
+    "source": "https://gamma-api.polymarket.com/markets/keyset"
+  }
+}

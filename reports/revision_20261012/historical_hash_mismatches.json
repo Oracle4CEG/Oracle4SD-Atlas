@@ -1,0 +1,20 @@
+[
+  {
+    "inventory": "economic_v1.5",
+    "path": "data/applications/trustworthy_ai_public_source_demo/manifest.json",
+    "exists": "True",
+    "size_matches": "True",
+    "hash_matches": "False",
+    "expected_sha256": "ea7ff01e3db05001f83d0749ac49791458ec2efcb53ffcb4eabf35b07806103b",
+    "actual_sha256": "bc50f1b80dd356f7b9ab9e58174e9ce9bb98039efbb1b36a2b07ef732b50341d"
+  },
+  {
+    "inventory": "economic_v1.5",
+    "path": "reports/neurips_release_peer_evaluation.md",
+    "exists": "True",
+    "size_matches": "False",
+    "hash_matches": "False",
+    "expected_sha256": "e535da69a6224bed8eb97e73052f6bf72ac901d6f6c24a7b25ff60ec9b799199",
+    "actual_sha256": "92ba7ad8ad400a480b90a7ae97e68e89e48293a0af1d0936d6442e71720c30c5"
+  }
+]

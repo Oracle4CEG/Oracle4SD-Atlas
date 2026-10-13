@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "upload_type": "dataset",
+    "publication_date": "2026-10-12",
+    "title": "Oracle4SD Atlas: reproducible oracle accountability evidence",
+    "version": "atlas-repaired-20261012",
+    "creators": [
+      {
+        "name": "Jia, Huaiyu",
+        "affiliation": "The Hong Kong University of Science and Technology"
+      },
+      {
+        "name": "Li, Siguang",
+        "affiliation": "The Hong Kong University of Science and Technology"
+      },
+      {
+        "name": "Cong, Lin William",
+        "affiliation": "Nanyang Technological University"
+      },
+      {
+        "name": "Zhang, Luyao",
+        "affiliation": "Duke University"
+      }
+    ],
+    "description": "<p>Versioned oracle accountability evidence through 2026-06-30 23:59:59 UTC. The Atlas archive contains 64 frozen native input tables, 95 canonical reconstructed Parquet tables, one additional decision-benchmark prediction table, pinned source registries, field documentation, execution evidence and a separate acquisition-provenance supplement. Layer row counts overlap and must not be summed as distinct observations.</p><p>The full release passed 50 scoped software checks. Financial experiments completed 21 model/task fits; the decision experiment evaluates three baselines on 810 observations. Protocol adjudication is not independent factual truth. Accrued entitlement, realized transfer, returned principal and token gain remain distinct. Original collection operators, executed collector commits and exhaustive raw-response ancestry are not established for all older records. Actual Google-hosted Colab execution remains pending.</p><p>This record is scoped to the Oracle4SD Atlas release paths in the artifact plan; it excludes other studies in the hosting repository. Derived data and documentation: CC BY 4.0. Included original code: MIT; third-party sources retain their own notices and licenses.</p>",
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+      "blockchain oracles",
+      "accountability",
+      "reproducible research",
+      "economic evidence"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/virusLuke3/Oracle4SD-Atlas/tree/6317a1b66bc6f9653b21650a7d170dc762891a31",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/tree/57ab1e2409652291c75f02c9e066c52011d8b4ad/atlas/releases/atlas-repaired-20261012/repaired",
+        "relation": "hasPart",
+        "scheme": "url"
+      }
+    ]
+  }
+}

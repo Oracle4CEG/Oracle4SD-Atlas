@@ -1,0 +1,49 @@
+{
+  "enum_accountability_unit_type": [
+    {
+      "actual_value": "staking_position",
+      "n_rows": 129
+    },
+    {
+      "actual_value": "reporter_jail_lifecycle",
+      "n_rows": 26
+    }
+  ],
+  "enum_truth_basis": [
+    {
+      "actual_value": "cryptographic_validation_and_challenge",
+      "n_rows": 140526
+    },
+    {
+      "actual_value": "protocol_recognized_reporting",
+      "n_rows": 20380
+    },
+    {
+      "actual_value": "protocol_aggregate",
+      "n_rows": 82866640
+    },
+    {
+      "actual_value": "signed_payload_verification",
+      "n_rows": 614319
+    },
+    {
+      "actual_value": "staking_participation_not_individual_report_truth",
+      "n_rows": 129
+    }
+  ],
+  "enum_observability_grade": [],
+  "enum_confidence_grade": [],
+  "financial_inherits_amounts": [
+    {
+      "n_matched": 2784472,
+      "changed_reward": 0,
+      "changed_slash": 0
+    }
+  ],
+  "financial_tellor_slash": [
+    {
+      "terminal_event": "principal_slashed",
+      "n_rows": 13
+    }
+  ]
+}

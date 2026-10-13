@@ -1,32 +1,65 @@
-"""Describe the synthetic teaching sample with explicit missing-value denominators."""
+"""Describe economic composition without a population or model claim."""
+
+import argparse, json, sys
 from pathlib import Path
-import argparse
-from decimal import Decimal
-import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from common import load_config, read_csv, write_csv
+from common import ROOT, load_config, read_json, require, write_csv, write_json
 
 
-def analyze(config, run_root):
-    load_config(config, require_demo=True)
-    rows = read_csv(Path(run_root) / "processed_data/observations.csv")
-    values = [Decimal(row["temperature_c"]) for row in rows if row["temperature_c"] != ""]
-    result = {
-        "evidence_status": "SYNTHETIC", "n_records": len(rows), "n_nonmissing": len(values),
-        "n_missing": len(rows)-len(values),
-        "mean_temperature_c": f"{sum(values) / len(values):.4f}" if values else "",
-        "unit": "degree_Celsius", "interpretation": "Teaching example only; no real-world inference"}
-    target = Path(run_root) / "analysis/summary.csv"
-    if target.exists():
-        raise FileExistsError("Refusing stale analysis output")
-    write_csv(target, list(result), [result])
-    return result
+def analyze(config, run_dir):
+    cfg = load_config(config)
+    run = Path(run_dir)
+    ep = read_json(run / "processed_data/economic_episode.json")
+    principal = int(ep["principal_returned_raw"])
+    gross = int(ep["gross_payout_raw"])
+    payoff = int(ep["realized_payoff_raw"])
+    require(
+        gross - principal == payoff,
+        "Gross payout must separate returned principal and payoff",
+    )
+    stats = {
+        "data_version": cfg["data_version"],
+        "observations": 1,
+        "source_transactions": 5,
+        "asset": ep["asset_symbol"],
+        "asset_decimals": ep["asset_decimals"],
+        "principal_returned_raw": str(principal),
+        "gross_payout_raw": str(gross),
+        "realized_payoff_raw": str(payoff),
+        "configured_reward_raw": ep["reward_configured_raw"],
+        "external_truth": ep["ground_truth_status"],
+        "scope": "one case descriptive reconstruction; not population inference or full economic profit",
+    }
+    write_json(run / "analysis/summary.json", stats)
+    write_csv(
+        run / "analysis/cashflow_components.csv",
+        [
+            {
+                "component": "principal_returned",
+                "amount_raw": str(principal),
+                "asset": ep["asset_symbol"],
+            },
+            {
+                "component": "token_payoff",
+                "amount_raw": str(payoff),
+                "asset": ep["asset_symbol"],
+            },
+        ],
+    )
+    write_csv(
+        run / "analysis/field_availability.csv",
+        [
+            {"field": k, "is_null": v is None, "scope": "one episode"}
+            for k, v in ep.items()
+        ],
+    )
+    return stats
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", required=True)
-    parser.add_argument("--run-dir", required=True)
-    args = parser.parse_args()
-    analyze(args.config, Path(args.run_dir).resolve())
+    p = argparse.ArgumentParser()
+    p.add_argument("--config", default=str(ROOT / "configs/project.json"))
+    p.add_argument("--run-dir", required=True)
+    a = p.parse_args()
+    print(json.dumps(analyze(a.config, a.run_dir), indent=2))

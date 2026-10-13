@@ -1,67 +1,92 @@
-"""Run all four stages in a new directory and compare to the governed teaching reference."""
-from pathlib import Path
-import argparse
+"""Query -> process -> describe -> validate one real, version-bound case."""
+
+import argparse, json, platform, subprocess, sys, time, uuid
 from datetime import datetime, timezone
-import platform
-import subprocess
-import sys
-import time
-import uuid
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "code"))
-from common import contained, fresh_output, load_config, read_json, sha256, write_json
+from common import fresh_output, load_config, read_json, sha256, write_json
 
 
-def compare(run_root, manifest):
-    checks = []
-    for item in manifest["files"]:
-        file = contained(run_root, item["path"])
-        checks.append({"path": item["path"], "status": "pass" if file.is_file() and
-                       sha256(file) == item["sha256"] else "fail"})
-    if not checks:
-        raise ValueError("Reference contains no files")
-    return checks
-
-
-def run(config, output=None, verify=True):
-    cfg = load_config(config, require_demo=True)  # stops blank project runs before any output
-    reference = read_json(ROOT/"tests/reference/demo_manifest.json") if verify else None
-    if verify and reference.get("data_version") != cfg["data_version"]:
-        raise ValueError("Reference data_version does not match the configured data release")
-    output = output or ROOT / "runs" / ("demo-" + uuid.uuid4().hex[:10])
-    target = fresh_output(output)
-    started = time.monotonic()
-    for folder, script in [("query_data","query.py"), ("process_data","process.py"),
-                           ("analyze_data","analyze.py"), ("technical_validation","validate.py")]:
-        subprocess.run([sys.executable, str(ROOT/"code"/folder/script), "--config", str(Path(config).resolve()),
-                        "--run-dir", str(target)], check=True, cwd=ROOT)
-    comparison = compare(target, reference) if verify else []
-    write_json(target/"reports/reproduction.json", {
-        "evidence_status": "SYNTHETIC", "data_version": cfg["data_version"], "checks": comparison,
-        "comparison": "Byte identity of selected deterministic teaching outputs",
-        "limits": "Does not validate research measurements or representativeness"})
-    git = subprocess.run(["git","rev-parse","HEAD"], cwd=ROOT,capture_output=True,text=True)
-    worktree = subprocess.run(["git","status","--porcelain"],cwd=ROOT,capture_output=True,text=True)
-    source_files = sorted(list((ROOT/"code").rglob("*.py")) + [Path(__file__).resolve()])
-    write_json(target/"reports/run_environment.json",{
-        "python": platform.python_version(), "platform": platform.platform(),
-        "code_commit": git.stdout.strip() if git.returncode == 0 else None,
-        "code_worktree_dirty": bool(worktree.stdout.strip()) if worktree.returncode == 0 else None,
-        "source_file_hashes": {f.relative_to(ROOT).as_posix():sha256(f) for f in source_files},
-        "config_sha256": sha256(config),
-        "elapsed_seconds": round(time.monotonic()-started,4),
-        "created_utc": datetime.now(timezone.utc).isoformat(), "scope": "synthetic teaching sample"})
-    if any(x["status"] == "fail" for x in comparison):
-        raise ValueError("Reference mismatch; inspect reports/reproduction.json")
-    print("Teaching pipeline complete:", target)
-    print("Scientific validation: NOT EVALUATED")
-    return target
+def run(config, output=None, mode="bundled"):
+    cfg = load_config(config)
+    output = fresh_output(output or ROOT / "runs" / ("uma-" + uuid.uuid4().hex[:10]))
+    start = time.monotonic()
+    for folder, script in [
+        ("query_data", "query.py"),
+        ("process_data", "process.py"),
+        ("analyze_data", "analyze.py"),
+        ("technical_validation", "validate.py"),
+    ]:
+        cmd = [
+            sys.executable,
+            str(ROOT / "code" / folder / script),
+            "--config",
+            str(Path(config).resolve()),
+            "--run-dir",
+            str(output),
+        ]
+        if folder == "query_data":
+            cmd += ["--mode", mode]
+        result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+        (output / "reports").mkdir(parents=True, exist_ok=True)
+        (output / "reports" / f"{folder}.stderr.log").write_text(result.stderr)
+        if result.returncode:
+            print(result.stdout, file=sys.stderr)
+            print(result.stderr, file=sys.stderr)
+            raise RuntimeError(
+                f"{folder} failed; see {output}/reports/{folder}.stderr.log"
+            )
+        (output / "reports" / f"{folder}.log").write_text(result.stdout)
+        print(folder, "completed", flush=True)
+    git = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True
+    )
+    dirty = subprocess.run(
+        ["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True
+    )
+    write_json(
+        output / "reports/run_environment.json",
+        {
+            "data_version": cfg["data_version"],
+            "review_bundle": cfg["review_bundle"],
+            "code_commit": git.stdout.strip() if git.returncode == 0 else None,
+            "worktree_dirty": bool(dirty.stdout.strip()),
+            "python": platform.python_version(),
+            "platform": platform.platform(),
+            "elapsed_seconds": round(time.monotonic() - start, 3),
+            "created_utc": datetime.now(timezone.utc).isoformat(),
+            "config_sha256": sha256(config),
+            "mode": mode,
+            "scope": cfg["scope"],
+            "source_hashes": {
+                p.relative_to(ROOT).as_posix(): sha256(p)
+                for p in sorted((ROOT / "code").rglob("*.py"))
+            },
+        },
+    )
+    print(
+        json.dumps(
+            {
+                "run_dir": str(output),
+                "data_version": cfg["data_version"],
+                "validation_passed": read_json(output / "reports/validation.json")[
+                    "passed"
+                ],
+            },
+            indent=2,
+        )
+    )
+    return output
 
 
 if __name__ == "__main__":
-    p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--config",default=str(ROOT/"configs/demo.json"))
+    p = argparse.ArgumentParser()
+    p.add_argument("--config", default=str(ROOT / "configs/project.json"))
     p.add_argument("--output")
-    args=p.parse_args()
-    run(args.config,args.output)
+    p.add_argument(
+        "--mode", choices=["bundled", "public-download", "live"], default="bundled"
+    )
+    a = p.parse_args()
+    run(a.config, a.output, a.mode)

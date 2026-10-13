@@ -1,0 +1,39 @@
+{
+  "original_relative_path": "data/manifests/tellor_layer_disputes.json",
+  "original_sha256": "e1b2df98168f45f686c7c306146fef63889bff1c4f76487b46009d1ff9b98698",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "api_host": "mainnet.tellorlayer.com",
+    "chain_id": "tellor-1",
+    "curated_disputes": "data/curated/tellor_disputes.jsonl",
+    "curated_payments": "data/curated/tellor_dispute_payments.jsonl",
+    "curated_votes": "data/curated/tellor_dispute_votes.jsonl",
+    "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+    "cutoff_height": 19890860,
+    "dataset": "Tellor Layer dispute accountability ledger",
+    "disputes": 13,
+    "disputes_by_result": {
+      "AGAINST": 1,
+      "NO_QUORUM_MAJORITY_AGAINST": 9,
+      "NO_QUORUM_MAJORITY_SUPPORT": 2,
+      "SUPPORT": 1
+    },
+    "duplicate_dispute_ids": 0,
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-21T02:01:36.314402+00:00",
+    "malformed_integer_fields": 0,
+    "messages_by_action": {
+      "/layer.dispute.MsgClaimReward": 18,
+      "/layer.dispute.MsgProposeDispute": 13,
+      "/layer.dispute.MsgVote": 55,
+      "/layer.dispute.MsgWithdrawFeeRefund": 3
+    },
+    "payments": 21,
+    "proposal_tx_links": 13,
+    "raw_state": "data/raw/tellor_layer/disputes_state.json.gz",
+    "raw_transactions": "data/raw/tellor_layer/dispute_transactions.json.gz",
+    "rpc_host": "mainnet.tellorlayer.com",
+    "scope_limit": "Complete dispute panel through cutoff; full report/tip/end-block reward history still requires a dedicated tellor-1 archive collection.",
+    "votes": 55
+  }
+}

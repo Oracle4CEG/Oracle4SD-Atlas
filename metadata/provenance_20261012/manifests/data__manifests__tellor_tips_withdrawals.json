@@ -1,0 +1,33 @@
+{
+  "original_relative_path": "data/manifests/tellor_tips_withdrawals.json",
+  "original_sha256": "72859c8bf82fa1061af168a7f64cd7853c946a9531ca92b955594e91e8cc7693",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "chain_id": "tellor-1",
+    "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+    "cutoff_height": 19890860,
+    "dataset": "Tellor query-tip funding and realized withdrawal ledger",
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-27T05:09:01.520875+00:00",
+    "gross_tip_loya_raw": "44870732",
+    "net_tip_funding_loya_raw": "43973339",
+    "protocol_tip_burn_loya_raw": "897393",
+    "realized_withdrawal_events": 20380,
+    "realized_withdrawal_loya_raw": "8748623099",
+    "scope_guard": "tip_added is query reward funding after the protocol's 2% burn, not a reporter payment. tip_withdrawn is realized reward because the TipsEscrow module cash flow is delegated into the selector's stake.",
+    "segments_per_action": 199,
+    "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484",
+    "tip_action_events": 29310,
+    "tip_cashflow_failures": 0,
+    "tip_funding_events": 29310,
+    "tip_transactions": 29310,
+    "withdraw_action_events": 20380,
+    "withdraw_cashflow_failures": 0,
+    "withdraw_transactions": 20380,
+    "withdrawal_event_schema_counts": {
+      "v1_without_validator_shares": 2137,
+      "v2_with_validator_shares": 18243
+    }
+  }
+}

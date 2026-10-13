@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "revision": "6f9c6616950393682a778aa16747c43d6843bc11",
+  "root_manifest_files": 46,
+  "checks": [
+    {
+      "path": "CITATION.cff",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "DATA_LICENSE.md",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "README.md",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "croissant.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "data/abc_dictionary.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/ai_feature_dictionary.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/decision_evidence.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_decisions.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_episodes.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_evidence.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_metrics.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_predictions.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/public_ai_splits.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_decision_splits.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_decisions.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_public_rpc_abc.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_public_rpc_episode.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_real_episode.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "data/uma_real_episode_abc.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "dataset_info.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_coefficients.csv",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_metrics.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "demo_outputs/minimal_ai_demo_predictions_sample.csv",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.drawio",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.pdf",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.png",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "editable_figures/oracle_trustworthy_dgp.svg",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.drawio",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.pdf",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.png",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "editable_figures/uma_what_predicts_what.svg",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "notebooks/uma_minimal_trustworthy_ai_demo.ipynb",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_ai_evidence/manifest.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_ai_evidence/pipeline_qc.parquet",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "public_ai_evidence/public_rpc_records.jsonl.gz",
+      "passed": true,
+      "method": "remote LFS binding"
+    },
+    {
+      "path": "public_ai_evidence/report.md",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_ai_evidence/source_registry.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/case_spec.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/contract_semantics.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/ethereum_rpc_snapshot.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/polygon_rpc_snapshot.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/reproduction_report.md",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "public_evidence/source_manifest.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "review_metadata_validation.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "review_provenance.json",
+      "passed": true,
+      "method": "public byte download"
+    },
+    {
+      "path": "task_definition.json",
+      "passed": true,
+      "method": "public byte download"
+    }
+  ]
+}

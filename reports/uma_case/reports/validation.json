@@ -1,0 +1,214 @@
+{
+  "checks": [
+    {
+      "check": "episode_schema",
+      "denominator": 1,
+      "passed": true,
+      "scope": "85-field case schema; not full common schema",
+      "unit": "episode"
+    },
+    {
+      "check": "frozen_reference_values",
+      "denominator": 1,
+      "passed": true,
+      "scope": "previous reconstruction values; not independent factual truth",
+      "unit": "case"
+    },
+    {
+      "check": "episode_identity",
+      "denominator": 1,
+      "passed": true,
+      "scope": "fixed preregistered request",
+      "unit": "episode"
+    },
+    {
+      "check": "principal_not_profit",
+      "denominator": 1,
+      "passed": true,
+      "scope": "integer equality",
+      "unit": "settlement"
+    },
+    {
+      "check": "asset_precision",
+      "denominator": 1,
+      "passed": true,
+      "scope": "this case only",
+      "unit": "asset"
+    },
+    {
+      "check": "four_oov2_lifecycle_events",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "adapter_parameters_same_request",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "proposal_deposit_equals_bond_plus_final_fee",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "disputer_deposit_equals_bond_plus_final_fee",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "configured_reward_refunded_and_rolled",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "settlement_event_equals_transfer",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "legacy_child_ancillary_exact",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "bridge_request_hash_exact",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "bridge_message_hash_exact",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "dvm_request_hash_exact",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "dvm_identifier_time_ancillary_exact",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "resolved_price_cross_chain_consistent",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "public_result_matches_preregistered_qc_values",
+      "denominator": 1,
+      "passed": true,
+      "scope": "raw-derived case assertion",
+      "unit": "case assertion"
+    },
+    {
+      "check": "canonical_chain_qc",
+      "denominator": 30,
+      "passed": true,
+      "scope": "retained receipt/header or economic link",
+      "unit": "check"
+    },
+    {
+      "check": "economic_link_qc",
+      "denominator": 13,
+      "passed": true,
+      "scope": "retained receipt/header or economic link",
+      "unit": "check"
+    },
+    {
+      "check": "source_hash:case_spec.json",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:raw/ethereum_rpc_snapshot.json",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:raw/polygon_rpc_snapshot.json",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:source/OptimisticOracleV2.sol",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:source/OptimisticOracleV2Interface.sol",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:source/VotingV2.abi.json",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "source_hash:source/VotingV2.sol",
+      "denominator": 1,
+      "passed": true,
+      "scope": "run input identity",
+      "unit": "file"
+    },
+    {
+      "check": "config_version",
+      "denominator": 2,
+      "passed": true,
+      "scope": "one sample version",
+      "unit": "stage"
+    }
+  ],
+  "data_version": "uma-public-rpc-case-v1",
+  "failed_checks": 0,
+  "known_core_failures": "reports/core_audit_20260915/known_issues.csv",
+  "not_evaluated": [
+    "all-protocol recollection",
+    "population representativeness",
+    "independent external truth",
+    "full-core schema/application issues"
+  ],
+  "passed": true,
+  "passed_checks": 28,
+  "review_bundle": "atlas-review-20260916",
+  "schema_errors": [],
+  "scope": "one real UMA disputed request; 5 source transactions across Polygon and Ethereum"
+}

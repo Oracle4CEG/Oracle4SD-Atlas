@@ -1,0 +1,117 @@
+{
+  "dataset": "UMA public-source minimal Trustworthy-AI demonstration",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-08-18T01:53:50.763489+00:00",
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "derivation_input_policy": "label-free source registry plus credential-free public RPC only",
+  "curated_ledger_inputs_used": false,
+  "public_provider_hosts": {
+    "polygon": "polygon.drpc.org",
+    "ethereum": "eth-mainnet.g.alchemy.com"
+  },
+  "endpoint_credentials_stored": false,
+  "all_required_assertions_pass": true,
+  "rows": {
+    "episodes": 64,
+    "decisions": 64,
+    "evidence": 192,
+    "predictions": 70
+  },
+  "files": [
+    {
+      "path": "economic/challenge_economics.parquet",
+      "bytes": 13197,
+      "sha256": "0871042fc66da2684950973405f61832ceebe31a52cf5faee48dd6677d48434c"
+    },
+    {
+      "path": "processed/decision_samples.parquet",
+      "bytes": 69171,
+      "sha256": "254115c294b67a4b3704885602056ed742e810fca8b19e19de429bb82840141a"
+    },
+    {
+      "path": "processed/economic_episodes.parquet",
+      "bytes": 96636,
+      "sha256": "c1a724528d70c7bf1eeb27aba06fdc83b773ba42e8921a0cf9b9cd27a02de138"
+    },
+    {
+      "path": "processed/evidence_provenance.parquet",
+      "bytes": 34661,
+      "sha256": "65ba2ded30945343a8c6b61ea7a57c98398af8f081625d306c5284fac9e48dcd"
+    },
+    {
+      "path": "processed/temporal_splits.parquet",
+      "bytes": 7607,
+      "sha256": "ae97727cb6396b878caca729691fe933ba917b4233aca282d60ef62c2da8e2f5"
+    },
+    {
+      "path": "raw/public_rpc_records.jsonl.gz",
+      "bytes": 1595697,
+      "sha256": "ed309ebb2d4b3b1367d73d4aa27972af54ce00e5a981f2e6f243cdfecb58419d"
+    },
+    {
+      "path": "report.md",
+      "bytes": 961,
+      "sha256": "b9816869ffd9c687ea985f11b21c00a10ecff2f572ed5a6d36cc63899be19127"
+    },
+    {
+      "path": "source/source_registry.json",
+      "bytes": 94505,
+      "sha256": "16e515ca1a76be1d00a3ffdf7beef90f8440423dcb9179256887d373a6e16474"
+    },
+    {
+      "path": "statistics/metrics.csv",
+      "bytes": 814,
+      "sha256": "4d85801c6894aa6e5c0074490808fb404028710ee28f4dcc340f2774781f6ca8"
+    },
+    {
+      "path": "statistics/metrics.parquet",
+      "bytes": 8638,
+      "sha256": "ddbf60d814ae129922f68bd795be629d871c6a218187b06fc501629b518ca7be"
+    },
+    {
+      "path": "statistics/model_coefficients.csv",
+      "bytes": 4731,
+      "sha256": "36f18fc06efd6393aec69017582bd9e2123625c9ec40117bde50771057f27c6b"
+    },
+    {
+      "path": "statistics/predictions.parquet",
+      "bytes": 15132,
+      "sha256": "d2eb8190eac2e5774fae94521e1dea82dae746d839c8af4c52ff54bb389e1261"
+    },
+    {
+      "path": "statistics/reliability.json",
+      "bytes": 213,
+      "sha256": "e0f8a5954b16ce80d7d2585067bfcf94375811b3bad31ae406eff7c10eabfc30"
+    },
+    {
+      "path": "statistics/risk_coverage.parquet",
+      "bytes": 4126,
+      "sha256": "015c2e8a36f24c84903b9d318e1e9635f48ad5623a2f4f44275188638f12f6f1"
+    },
+    {
+      "path": "statistics/robustness.parquet",
+      "bytes": 4256,
+      "sha256": "b16c9e5ecdccc55a5ad193fd126b6c1d0a8e8c45d8434d085464d0682d6c066c"
+    },
+    {
+      "path": "statistics/summary.json",
+      "bytes": 510,
+      "sha256": "26d334130dbb86c578de146bad182e96a66280e3ed70ad974609866b0b2da013"
+    },
+    {
+      "path": "validated/canonical_receipt_qc.parquet",
+      "bytes": 22376,
+      "sha256": "3699f72ac40172a9c7761f220a2b2ae5fab4de67d07f89f82ee2e3ac978f15fe"
+    },
+    {
+      "path": "validated/decoded_protocol_events.parquet",
+      "bytes": 190816,
+      "sha256": "fff110d8d76eb86b64d945ff80c1b721ad1c768f982d57affd1176e4b7998a0c"
+    },
+    {
+      "path": "validated/pipeline_qc.parquet",
+      "bytes": 2156,
+      "sha256": "0dc2173498b749ee2f5733da4c577e83117a2a36e4d83621c38060a211ded403"
+    }
+  ]
+}

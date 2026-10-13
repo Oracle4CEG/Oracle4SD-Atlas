@@ -1,0 +1,53 @@
+{
+  "original_relative_path": "data/manifests/flare_fsp_rewards.json",
+  "original_sha256": "c8bb1bd7d2ecd6d0a9ce16ea3e6916f4f26e2ffd1f378b24fa99df9501661bb3",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "beneficiaries_queried_for_chill_state": 474,
+    "chain_id": 14,
+    "claim_amount_raw_by_type": {
+      "DIRECT": "253015126560729759216099834",
+      "FEE": "793314546694386421156019195",
+      "MIRROR": "408825037011208314995749166",
+      "WNAT": "2765355528536701539776201164"
+    },
+    "claim_counts_by_type": {
+      "DIRECT": 1996,
+      "FEE": 14250,
+      "MIRROR": 19343,
+      "WNAT": 14269
+    },
+    "condition_pass_mismatches": 0,
+    "condition_registration_link_misses": 0,
+    "cutoff_block": 64054789,
+    "cutoff_block_hash": "0x4c77cf5230d62fa130d5895a3a21594475c1f83ea51fcd50d4cd26b1b85c7430",
+    "cutoff_block_time": "2026-06-30T23:59:59Z",
+    "dataset": "Flare FSP reward and FTSOv2 provider accountability ledger",
+    "duplicate_claim_keys": 0,
+    "excluded_straddling_epoch": 411,
+    "feed_total_mismatches": 0,
+    "first_minimum_conditions_epoch": 251,
+    "first_reward_epoch": 228,
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-21T02:15:29.275807+00:00",
+    "last_reward_epoch": 410,
+    "merkle_roots_matching_onchain_at_cutoff": 183,
+    "nonzero_chill_states": 6,
+    "raw_bytes": 194012764,
+    "raw_directory": "data/raw/flare_fsp",
+    "raw_files": 686,
+    "row_counts": {
+      "flare_beneficiary_chill_state": 6,
+      "flare_provider_conditions": 14379,
+      "flare_provider_failures": 3742,
+      "flare_provider_feed_performance": 869278,
+      "flare_provider_passes": 14379,
+      "flare_reward_claims": 49858,
+      "flare_reward_epochs": 183,
+      "flare_voter_registrations": 15859
+    },
+    "scope_guard": "Merkle claims are aggregate FSP entitlements, not pure FTSO accuracy rewards. Minimum conditions combine FTSO scaling, Fast Updates, staking availability, and FDC. Explicit historical BeneficiaryChilled logs are not bulk-collected because the public RPC limits eth_getLogs to 30 blocks; cutoff contract state is retained instead.",
+    "source_commit": "56dccda13597ec78e47c24a38f875fa9ebad897c",
+    "source_repository": "https://github.com/flare-foundation/fsp-rewards"
+  }
+}

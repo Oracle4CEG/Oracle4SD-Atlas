@@ -1,0 +1,48 @@
+{
+  "answer_update_gaps_over_3h": 0,
+  "answer_updated_unique_times": 46683,
+  "event_link_flow_qc": {
+    "ForfeitedRewardDistributed_accounting_only": 600,
+    "RewardClaimed_exact": 29927,
+    "Staked_exact": 17648,
+    "Unstaked_exact": 3197
+  },
+  "event_link_flow_routes": {
+    "RewardClaimed:source_contract_to_actor": 29927,
+    "Staked:contract_mediated_to_pool": 6528,
+    "Staked:direct_staker_to_pool": 11120,
+    "Unstaked:source_contract_to_actor": 3197
+  },
+  "feed_events": {
+    "AnswerUpdated": 46723,
+    "NewTransmission": 15852
+  },
+  "feed_events_excluded_outside_active_phase": 504,
+  "feed_phase_intervals": [
+    {
+      "aggregator": "0xe62b71cf983019bff55bc83b48601ce8419650cc",
+      "phase_id": 6,
+      "valid_from_block": 18572190,
+      "valid_to_block": 20822020
+    },
+    {
+      "aggregator": "0x7d4e742018fb52e48b08be73d041c18b21de6fb5",
+      "phase_id": 7,
+      "valid_from_block": 20822021,
+      "valid_to_block": 25433938
+    }
+  ],
+  "interpretation_guard": "Accepted feed update timing is necessary service evidence; alert validity still requires the contemporaneous controller configuration and alert transaction.",
+  "link_flows": 77203,
+  "link_flows_by_direction": {
+    "incoming": 44079,
+    "outgoing": 33124
+  },
+  "max_answer_update_gap_seconds": 3732,
+  "outputs": {
+    "event_qc": "/mnt/sda/hy/oracle-nature-data/curated/chainlink_event_link_flow_qc.jsonl",
+    "feed_reports": "/mnt/sda/hy/oracle-nature-data/curated/chainlink_eth_usd_reports.jsonl",
+    "flows": "/mnt/sda/hy/oracle-nature-data/curated/chainlink_link_flows.jsonl"
+  },
+  "protocol": "Chainlink Staking v0.2 LINK and ETH/USD evidence"
+}

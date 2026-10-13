@@ -1,0 +1,10 @@
+{
+  "revision": "57ab1e2409652291c75f02c9e066c52011d8b4ad",
+  "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1/commit/57ab1e2409652291c75f02c9e066c52011d8b4ad",
+  "files": 143,
+  "bytes": 17344034410,
+  "scientific_code_commit": "6317a1b66bc6f9653b21650a7d170dc762891a31",
+  "canonical_parquet_tables": 95,
+  "additional_experiment_parquet_files": 1,
+  "parquet_files": 96
+}

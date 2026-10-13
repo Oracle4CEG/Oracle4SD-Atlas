@@ -1,0 +1,21 @@
+{
+  "amount_policy": "integer strings only",
+  "by_event": {
+    "CommunityPoolRewardUpdated": 42389,
+    "FeedConfigSet": 1,
+    "ForfeitedRewardDistributed": 600,
+    "OperatorPoolRewardUpdated": 353,
+    "RewardAdded": 10,
+    "RewardClaimed": 29927,
+    "RewardFinalized": 20853,
+    "SlasherConfigSet": 1,
+    "Staked": 17648,
+    "StakerRewardUpdated": 50780,
+    "UnbondingPeriodReset": 62,
+    "UnbondingPeriodStarted": 9069,
+    "Unstaked": 3197
+  },
+  "protocol": "Chainlink Staking v0.2",
+  "rows": 174890,
+  "source": "/mnt/sda/hy/oracle-nature-data/curated/chainlink_staking_v02_events.jsonl"
+}

@@ -1,0 +1,120 @@
+{
+  "R001_uma_zero_address_challenge": [
+    {
+      "eligible": 42676,
+      "projected_challenged": 41827,
+      "native_dispute_tx": 835,
+      "zero_address_false_challenge": 40992,
+      "transfer_flag_without_settlement": 850,
+      "cross_chain_flag_without_dispute": 41841
+    }
+  ],
+  "R002_uma_episode_reward_projection": [
+    {
+      "disputed_settled": 834,
+      "differing_reward_components": 834
+    }
+  ],
+  "R003_tellor_sample_c_label_direction": [
+    {
+      "outcome_status": "AGAINST",
+      "strict_event_class": "tellor_report_rejected",
+      "actor_role": "successful_reporter",
+      "penalty_class": "dispute_fee_forfeiture",
+      "n_rows": 1
+    },
+    {
+      "outcome_status": "NO_QUORUM_MAJORITY_AGAINST",
+      "strict_event_class": "tellor_report_rejected",
+      "actor_role": "successful_reporter",
+      "penalty_class": "dispute_fee_forfeiture",
+      "n_rows": 9
+    },
+    {
+      "outcome_status": "NO_QUORUM_MAJORITY_SUPPORT",
+      "strict_event_class": "tellor_report_supported",
+      "actor_role": "successful_disputer",
+      "penalty_class": "principal_slash",
+      "n_rows": 2
+    },
+    {
+      "outcome_status": "SUPPORT",
+      "strict_event_class": "tellor_report_supported",
+      "actor_role": "successful_disputer",
+      "penalty_class": "principal_slash",
+      "n_rows": 1
+    }
+  ],
+  "R004_tellor_episode_slash": [
+    {
+      "vote_result": "NO_QUORUM_MAJORITY_AGAINST",
+      "n_rows": 9,
+      "projected_slash_positive": 9,
+      "projected_state_change_true": 9
+    },
+    {
+      "vote_result": "NO_QUORUM_MAJORITY_SUPPORT",
+      "n_rows": 2,
+      "projected_slash_positive": 2,
+      "projected_state_change_true": 2
+    },
+    {
+      "vote_result": "SUPPORT",
+      "n_rows": 1,
+      "projected_slash_positive": 1,
+      "projected_state_change_true": 1
+    },
+    {
+      "vote_result": "AGAINST",
+      "n_rows": 1,
+      "projected_slash_positive": 1,
+      "projected_state_change_true": 1
+    }
+  ],
+  "R005_dvm_accrual_as_slash_state": [
+    {
+      "n_rows": 2663684,
+      "accrued_negative_as_slash_state": 947128,
+      "state_change_confirmed": 0
+    }
+  ],
+  "R006_episode_uniqueness": [
+    {
+      "n_rows": 2784472,
+      "unique_ids": 2784472,
+      "missing_start": 956552,
+      "reversed_time": 0,
+      "right_censored": 2674966
+    }
+  ],
+  "R007_tellor_raw_outcomes": [
+    {
+      "vote_result": "NO_QUORUM_MAJORITY_AGAINST",
+      "n_rows": 9
+    },
+    {
+      "vote_result": "NO_QUORUM_MAJORITY_SUPPORT",
+      "n_rows": 2
+    },
+    {
+      "vote_result": "SUPPORT",
+      "n_rows": 1
+    },
+    {
+      "vote_result": "AGAINST",
+      "n_rows": 1
+    }
+  ],
+  "R008_uma_native_nonsettled": [
+    {
+      "status": "disputed",
+      "economic_status": "not_settled",
+      "n_rows": 1
+    },
+    {
+      "status": "requested",
+      "economic_status": "not_settled",
+      "n_rows": 849
+    }
+  ]
+}

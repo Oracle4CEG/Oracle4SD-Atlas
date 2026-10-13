@@ -1,0 +1,28 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_token_flows_raw.json",
+  "original_sha256": "749a5a94aef3c8aa5857d451c10d5dab37e89d1a33cd2cc94c5ff9f5fbe62097",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "chain_id": 137,
+    "chunks": 6587,
+    "from_block": 23569780,
+    "interpretation_guard": "Transfers are reconciliation evidence and are not independently labelled rewards.",
+    "logs": 562429,
+    "protocol": "Polygon Polymarket UMA token flow evidence",
+    "targets": [
+      "0x157ce2d672854c848c9b79c49a8cc6cc89176a49",
+      "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74",
+      "0x71392e133063cc0d16f40e1f9b60227404bc03f7",
+      "0xac60353a54873c446101216829a6a98cdbbc3f3d",
+      "0xb97455fcf78eb37375e8be6f26df895341ca073d",
+      "0xcb1822859cef82cd2eb4e6276c7916e692995130",
+      "0xe58480ca74f1a819fafdd77beded4e2d5629943d",
+      "0xee3afe347d5c74317041e2618c49534daf887c24"
+    ],
+    "to_block": 89439336,
+    "tokens": {
+      "USDC": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+      "USDC_e": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+    }
+  }
+}

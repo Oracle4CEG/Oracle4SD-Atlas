@@ -1,0 +1,10 @@
+{
+  "upstream": "https://github.com/Oracle4CEG/Oracle4SD-Atlas",
+  "upstream_commit": "2ca64c50c43e189aa9cfc2cacd03520b71119301",
+  "fork": "https://github.com/virusLuke3/Oracle4SD-Atlas",
+  "mentor_colab_url": "https://colab.research.google.com/drive/13CYILher0diP4UBsZRgMTbaWIiyK7u6w",
+  "template_notebook_used": "notebooks/Scientific_Data_Colab_Tutorial_Sample.ipynb and Scientific_Data_Colab_Tutorial_Template.ipynb at upstream commit",
+  "adaptation": "retains eight-part structure; replaces invented temperature examples and unfilled author inputs with real project case",
+  "license": "upstream MIT notice preserved in LICENSE",
+  "direct_drive_access": "not available via unauthenticated fetch; repository-preserved template inspected"
+}

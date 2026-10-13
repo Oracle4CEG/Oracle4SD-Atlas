@@ -1,0 +1,26 @@
+[
+  {
+    "scope": "all 64 native inputs",
+    "field": "historical operator / agent use / executed collector commit",
+    "status": "unknown",
+    "needed": "Original job logs, execution commit receipts and collector attestation; DOI authors do not establish collectors."
+  },
+  {
+    "scope": "raw acquisition outside the 688 explicitly audited files",
+    "field": "raw file completeness and identities",
+    "status": "not exhaustively checked",
+    "needed": "Inventory every raw segment and bind each to historical requests/responses and output rows."
+  },
+  {
+    "scope": "derived outputs",
+    "field": "row-level ancestry",
+    "status": "build-level lineage only",
+    "needed": "Protocol-specific event/join ancestry for every derived row; preserved identifiers support targeted audits."
+  },
+  {
+    "scope": "mutable Gamma and Pyth state",
+    "field": "historical availability",
+    "status": "limited by recorded snapshot times",
+    "needed": "Contemporaneous archive evidence for unavailable historical fields; do not substitute later snapshots."
+  }
+]

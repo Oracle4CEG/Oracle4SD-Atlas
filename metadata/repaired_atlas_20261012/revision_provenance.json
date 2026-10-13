@@ -1,0 +1,37 @@
+{
+  "release": "atlas-repaired-20261012",
+  "schema_version": "2.0.0",
+  "cutoff": "2026-06-30T23:59:59Z",
+  "native_input_revision": "c7df3127756d831a61c781d0531c155dc8d9c2fb",
+  "source_registry_revision": "212d469bcae7acdf22a19736e861b4c85596cd73",
+  "scientific_code_repository": "https://github.com/virusLuke3/Oracle4SD-Atlas",
+  "scientific_code_commit": "6317a1b66bc6f9653b21650a7d170dc762891a31",
+  "activities": [
+    {
+      "name": "native reconstruction",
+      "code_commit": "09e9cc971bacd81ee7c89f22156a6f080d36234b",
+      "evidence": "validation/baseline_full_release.json"
+    },
+    {
+      "name": "unsettled-request rule repair",
+      "code_commit": "0c3b3875f88b5712a013094a4e78a3005fb5f28a",
+      "evidence": "validation/finalization_initial_failure.log"
+    },
+    {
+      "name": "final financial recomputation and validation",
+      "code_commit": "6317a1b66bc6f9653b21650a7d170dc762891a31",
+      "evidence": "validation/full_release.json"
+    }
+  ],
+  "agents": {
+    "human": "The requester supplied the research task and revision requirements. Independent author/reviewer sign-off is not recorded by these automated checks.",
+    "automated": "Codex assisted implementation, source restoration, execution and release checks. Protocol observations predate this revision; current classifications and predictions are software-derived."
+  },
+  "limits": [
+    "Native snapshots are archived; fresh recollection of every historical RPC response is not claimed.",
+    "Protocol adjudication is not independent factual truth.",
+    "Complete historical human/agent acquisition provenance is not established for all older inputs.",
+    "No Google-hosted Colab execution or DOI is asserted."
+  ],
+  "benchmark_interpretation": "Protocol-balanced computational samples; F1/F2 use a labeled random fallback and F3 chronological evaluation. High pooled scores can reflect protocol/time/observability structure. They are not evidence of generalization, factual truth or trading profit."
+}

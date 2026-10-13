@@ -1,0 +1,26 @@
+{
+  "snapshot_sha256": "fcd29f8b5b520c848693790459ab8304047338b8910d2478d1b76fb8502f35f4",
+  "source_commit": "68a9a36ec3d41364490e71b056b422c99f13e0cf",
+  "scope": "archived account state; not a fresh RPC collection",
+  "checks": [
+    {
+      "table": "pyth_ois_reward_epochs",
+      "rows": 49,
+      "passed": true,
+      "differing_rows": 0
+    },
+    {
+      "table": "pyth_ois_publisher_epoch_factors",
+      "rows": 6566,
+      "passed": true,
+      "differing_rows": 0
+    },
+    {
+      "table": "pyth_ois_slash_counters",
+      "rows": 134,
+      "passed": true,
+      "differing_rows": 0
+    }
+  ],
+  "passed": true
+}

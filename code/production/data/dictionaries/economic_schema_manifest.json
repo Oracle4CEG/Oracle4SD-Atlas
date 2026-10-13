@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1.0",
+  "fixed_cutoff_unix": 1782863999,
+  "observation_schema": "schemas/cross_chain_economic_observation.schema.json",
+  "variable_dictionary_schema": "schemas/economic_variable_dictionary.schema.json",
+  "variable_count": 33,
+  "abc_measure_count": 28,
+  "abc_family_counts": {
+    "A": 4,
+    "B": 9,
+    "C": 15
+  },
+  "source_files": [
+    "data/curated/parquet/polygon_uma_request_rounds.parquet",
+    "data/curated/parquet/polygon_oov2_events.parquet",
+    "data/curated/parquet/polygon_uma_token_flows.parquet",
+    "data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+    "data/curated/parquet/uma_dvm_requests.parquet",
+    "data/curated/parquet/uma_dvm_voter_payoffs.parquet",
+    "data/curated/parquet/uma_dvm_staking_events.parquet",
+    "data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet"
+  ],
+  "outputs": [
+    {
+      "path": "schemas/cross_chain_economic_observation.schema.json",
+      "bytes": 6957,
+      "sha256": "cf3d2a0e89a57af345fbe13fed314841eeb68da96503c07533d548507aec050c"
+    },
+    {
+      "path": "schemas/economic_variable_dictionary.schema.json",
+      "bytes": 2231,
+      "sha256": "217977503bc401f71c7fcd5f03d78a5b62c4336dedbfc3826dd8402f39bbae22"
+    },
+    {
+      "path": "data/dictionaries/economic_variable_dictionary.csv",
+      "bytes": 35518,
+      "sha256": "2560ddd773e5978066d2f43dc8ec7fe003bb9f2c341b59c67755ebea35fcf9a2"
+    },
+    {
+      "path": "data/dictionaries/economic_variable_dictionary.parquet",
+      "bytes": 38130,
+      "sha256": "f2b6c51489a9ed80b8a5a2bed9593ee3474efd6b80d8749eaa6124fb258d606f"
+    },
+    {
+      "path": "data/dictionaries/economic_variable_dictionary.json",
+      "bytes": 53885,
+      "sha256": "ae83cea16747936db4e6e9c440635dcea6c0bf5f783b6f63d72b4cd3ddcdfacd"
+    },
+    {
+      "path": "data/dictionaries/abc_economic_measure_dictionary.csv",
+      "bytes": 30771,
+      "sha256": "ab47c5fcaf6724cffc9720ce5e239ad4131d254e9a452a2264f514eba5a16e17"
+    },
+    {
+      "path": "data/dictionaries/abc_economic_measure_dictionary.parquet",
+      "bytes": 35711,
+      "sha256": "f925173189f402148d5c04b8fe00347d3bd1a1198369a28a90ba9f5d21bd3ed0"
+    },
+    {
+      "path": "data/dictionaries/abc_economic_measure_dictionary.json",
+      "bytes": 46299,
+      "sha256": "19df1450e4d7c6b3a035e0ca5cd65df33dc18073a538e0cdd68d05980ab036f6"
+    },
+    {
+      "path": "data/dictionaries/abc_family_definitions.json",
+      "bytes": 2051,
+      "sha256": "dc0313aff0519149c8fa917d7234ae4e6f93f20cc3ea5aab885cf9eb18892c2e"
+    },
+    {
+      "path": "data/dictionaries/cross_chain_economic_observation_fields.csv",
+      "bytes": 4203,
+      "sha256": "e087e89be903edd77d5c7e646b1c9980bf403d470ac01d628abd21cb7ad01c49"
+    },
+    {
+      "path": "data/dictionaries/cross_chain_economic_observation_fields.parquet",
+      "bytes": 4936,
+      "sha256": "eaaa2cc4844357ad838b8fb3d163e09435f176e7fe054bd61f4906891e798950"
+    },
+    {
+      "path": "data/dictionaries/uma_variable_constructability.parquet",
+      "bytes": 2971,
+      "sha256": "079a4fd5adab2c94b3076d3fd7ed2cbc366244029a7cf6d707b35af65590cde9"
+    }
+  ]
+}

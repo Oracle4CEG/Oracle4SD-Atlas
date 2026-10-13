@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "dataset_id": "Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+  "revision": "ee197fc6fd6b8d980e7c7dda4feae966efe5d28c",
+  "archive": {
+    "artifact": "atlas",
+    "path": "atlas/selected-inputs/2026-10-10/atlas-20261010.tar.gz",
+    "sha256": "ee03c3b44db567a1cc0202f17c8a87cd50c2d1610c58b508b723917c41add774",
+    "bytes": 60490297,
+    "files": 4
+  },
+  "research_code_commit": "33ec7020e97fc6b8dd0005415d3184ce889d3e28",
+  "research_repository": "https://github.com/Oracle4CEG/Oracle-Agentic-Audit",
+  "scope": "Four byte-identical selected UMA source tables from the 71-record historical inventory; not the full Atlas",
+  "semantic_validation": "Research replays its exact 810-case intersection, labels and features. Full Atlas known semantic issues remain open.",
+  "files": [
+    {
+      "archive_member": "data/local/polygon_oov2_events.parquet",
+      "inventory_path": "data/curated/parquet/polygon_oov2_events.parquet",
+      "sha256": "6f3b243a9df36affbdfb3ffd03fd78a5359557b16e9cce4e822d9b873a735db7",
+      "bytes": 47813666,
+      "rows": 514794
+    },
+    {
+      "archive_member": "data/local/polygon_uma_request_flow_qc.parquet",
+      "inventory_path": "data/curated/parquet/polygon_uma_request_flow_qc.parquet",
+      "sha256": "fe025843c774765b9c7da16cfc9ef610bf02e44006d3b95fa94ae5177db4282c",
+      "bytes": 1518161,
+      "rows": 42676
+    },
+    {
+      "archive_member": "data/local/polygon_uma_request_rounds.parquet",
+      "inventory_path": "data/curated/parquet/polygon_uma_request_rounds.parquet",
+      "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230",
+      "bytes": 11167492,
+      "rows": 42676
+    },
+    {
+      "archive_member": "data/local/uma_polygon_ethereum_grade_a_links.parquet",
+      "inventory_path": "data/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359",
+      "bytes": 214885,
+      "rows": 835
+    }
+  ]
+}

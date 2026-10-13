@@ -1,2 +1,12 @@
-# Core workflow uses only the Python 3.12 standard library.
-# No third-party dependency installation is needed for the demo or tests.
+-c constraints.txt
+# Tested case replay, Python 3.12. Transitive freeze: reports/reproducibility/environment.freeze.txt
+numpy==1.26.4
+pandas==2.2.2
+pyarrow==16.1.0
+requests==2.32.3
+eth-abi==5.2.0
+eth-utils==5.3.1
+matplotlib==3.9.2
+jsonschema==4.23.0
+eth-hash[pycryptodome]==0.8.0
+pycryptodome==3.23.0

@@ -1,14 +1,13 @@
-check_id,requirement,applies_to,evidence_path,status,reason_if_not_applicable,owner,checked_date
-R01,Claims have release-specific evidence,All,,not_evaluated,,,
-R02,Sources and release rights documented,All,,not_evaluated,,,
-R03,Files dictionary manuscript and notebook agree,All,,not_evaluated,,,
-R04,Scientific validation and limits reported,All,,not_evaluated,,,
-R05,Independent reproduction recorded,All,,not_evaluated,,,
-R06,Data version and access verified,All,,not_evaluated,,,
-R07,Current headings and declarations complete,Scientific Data,,not_evaluated,,,
-R08,Core and minimal RAI Croissant validated,NeurIPS dataset contribution,,not_evaluated,,,
-R09,Evaluative purpose and assumptions supported,NeurIPS E&D,,not_evaluated,,,
-R10,Small sample for data larger than 4 GB,NeurIPS E&D when applicable,,not_evaluated,,,
-R11,Review mode and URLs follow current rules,NeurIPS E&D,,not_evaluated,,,
-R12,Official current-year checklist completed,NeurIPS submission,,not_evaluated,,,
-R13,Teaching prompts removed from submission,Completed manuscript,,not_evaluated,,,
+check_id,requirement,status,evidence_path,checked_date
+R01,case source identity and preserved licenses,passed,metadata/source_register.csv,2026-10-12
+R02,full field/type/source reference coverage,passed_with_native_semantic_limits,metadata/repaired_atlas_20261012/documentation_validation.json,2026-10-12
+R03,case replays and 28 regression tests,passed,reports/revision_20261012/notebook/retained_evidence.json,2026-10-12
+R04,all notebook cells in a fresh local kernel,passed_local_fresh_kernel,reports/revision_20261012/notebook/notebook_execution.json,2026-10-12
+R05,full immutable public inputs and outputs,passed,reports/revision_20261012/full_public_verification.json,2026-10-12
+R06,full semantic/schema/reconstruction gate,passed_50_checks,reports/revision_20261012/full_release.json,2026-10-12
+R07,independent organization review,pending_human_review,docs/REVISION_20261012.md,2026-10-12
+R08,hosted Google Colab execution,pending_hosted_run,docs/REVISION_20261012.md,2026-10-12
+R09,manuscript changes,excluded_by_user,docs/REVISION_20261012.md,2026-10-12
+R10,shared data identity and reproducible downloads,passed,configs/data_releases.json,2026-10-12
+R11,archival dataset DOI,not_assigned,metadata/release.json,2026-10-12
+R12,complete historical acquisition and human/agent provenance,not_fully_established,metadata/repaired_atlas_20261012/revision_provenance.json,2026-10-12

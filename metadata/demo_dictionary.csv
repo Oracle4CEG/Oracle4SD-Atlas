@@ -1,8 +1,0 @@
-field,type,definition,unit,missing_code,derivation
-observation_id,string,Stable invented observation ID,none,not allowed,source
-group_id,string,Invented teaching group,none,not allowed,source
-timestamp_utc,string,Invented ISO 8601 UTC timestamp,UTC,not allowed,source
-temperature_c,decimal,Invented Celsius value,degree_Celsius,empty,formatted source
-temperature_k,decimal,Converted teaching value,kelvin,empty,temperature_c plus 273.15
-value_status,string,synthetic_value or missing,none,not allowed,explicit missingness rule
-origin,string,synthetic_teaching constant,none,not allowed,source

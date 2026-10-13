@@ -1,0 +1,27 @@
+[project]
+name = "oracle-honesty-ledger"
+version = "0.1.0"
+description = "Reproducible feasibility audit for the Polymarket–UMA oracle honesty ledger"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.3",
+  "eth-abi>=5.0",
+  "eth-utils>=5.0",
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "pyarrow>=16.0",
+  "jsonschema>=4.23",
+  "matplotlib>=3.9",
+  "mcp>=1.19,<2",
+  "scikit-learn>=1.5",
+  "PyYAML>=6.0",
+  "requests>=2.32",
+  "statsmodels>=0.14",
+]
+
+[project.scripts]
+oracle-ledger = "oracle_ledger.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

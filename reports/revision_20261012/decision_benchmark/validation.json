@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "source_files": {
+    "data/applications/trustworthy_ai_challenge/decision_samples.parquet": "f2c1f2226fb395ab9b69abc0af5b9fdb0daabe579795c6c31a2bc939a5f46864",
+    "data/applications/trustworthy_ai_challenge/splits.parquet": "acb96824ee165521b0c87764b0a685bb11c887990310a8fd2a56164143caecae"
+  },
+  "split_counts": {
+    "train": 489,
+    "validation": 161,
+    "test": 160
+  },
+  "features": [
+    "log_bond_raw",
+    "log_final_fee_raw",
+    "log_reward_plus1_raw",
+    "reward_to_bond_ratio",
+    "liveness_hours",
+    "proposal_latency_hours",
+    "ancillary_bytes",
+    "proposer_prior_completed",
+    "proposer_prior_dispute_rate",
+    "proposer_prior_rejection_rate",
+    "requester_prior_completed",
+    "requester_prior_dispute_rate",
+    "requester_prior_rejection_rate",
+    "requester_is_polymarket_adapter",
+    "proposed_price_class",
+    "adapter_version"
+  ],
+  "training": "Training split only; transformations are fit on training data; fixed hyperparameters, no test-set selection.",
+  "scope": "Conditional challenged-UMA protocol-outcome prediction; no independent factual-truth or causal policy claim.",
+  "checks": {
+    "unique_ids": true,
+    "exact_split_coverage": true,
+    "strict_time_order": true,
+    "declared_evidence_not_after_decision": true,
+    "future_columns_excluded_by_allowlist": true
+  },
+  "limitation": "Historical feature construction is retained; timing checks do not independently authenticate every off-chain item."
+}

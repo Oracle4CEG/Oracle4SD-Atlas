@@ -1,0 +1,66 @@
+{
+  "original_relative_path": "data/manifests/uma_phase2_analysis.json",
+  "original_sha256": "fa689ae90fa9ef5475d475b04ace3aa7d9570778e85a26685e3b756d40a746a8",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "analysis_version": "2.0.0",
+    "assertions": {
+      "both_models_completed": true,
+      "disputed_rows_match_phase1": true,
+      "dvm_negative_rows_match_ledger": true,
+      "matching_final_reveal_negative_anomalies_zero": true,
+      "negative_slash_classification_exhaustive": true,
+      "request_rows_match_primary_settled": true
+    },
+    "dataset": "UMA phase-two fixed-cutoff statistical analysis",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-21T10:56:08.991266+00:00",
+    "inputs": {
+      "polygon_uma_request_rounds": {
+        "path": "data:/curated/parquet/polygon_uma_request_rounds.parquet",
+        "sha256": "aca73afae366cfb22a2076c1780124afc588f6f22075fb2919c584a4ceb85230"
+      },
+      "uma_dvm_requests": {
+        "path": "data:/curated/parquet/uma_dvm_requests.parquet",
+        "sha256": "158273c7b83591f540a266618bf7136c9dbe1c28fb8ca788485cd05387b837ff"
+      },
+      "uma_dvm_voter_payoffs": {
+        "path": "data:/curated/parquet/uma_dvm_voter_payoffs.parquet",
+        "sha256": "48e6010a53b2b3caf35d57b996dd2b803feb75a09b06bfa5bce7633d51e35a8b"
+      },
+      "uma_dvm_votes_events": {
+        "path": "data:/curated/parquet/uma_dvm_votes_events.parquet",
+        "sha256": "bf2f4613a523989dd3f246b8415c14f571eee3a12259a68b7ec449bd99a4c389"
+      },
+      "uma_polygon_ethereum_grade_a_links": {
+        "path": "data:/curated/parquet/uma_polygon_ethereum_grade_a_links.parquet",
+        "sha256": "b17db4d2808afc5fcc29f8a60b5172a970408ba1abeee92033770c850808c359"
+      }
+    },
+    "outputs": {
+      "dvm_negative_slash_panel": {
+        "path": "data:/curated/parquet/uma_phase2_dvm_negative_slash_panel.parquet",
+        "rows": 947128,
+        "sha256": "8d8369f24158606ab16cb9dfb388d202fb26a856c028922baf220565f7e70522"
+      },
+      "model_coefficients": {
+        "path": "workspace:/data/analysis/uma_phase2_model_coefficients.csv",
+        "sha256": "6338dec3618de84d2a05ca67998e151dea7bcb475f15789d1bbb7f3aa733bf95"
+      },
+      "report": {
+        "path": "workspace:/reports/uma_phase2_research.md",
+        "sha256": "0c3fa33a5d65dff03bfd17cb4a7fbadf8803fa2662358186d31d079256bd87cd"
+      },
+      "request_panel": {
+        "path": "data:/curated/parquet/uma_phase2_request_panel.parquet",
+        "rows": 40534,
+        "sha256": "6dcd3bb263c9cd9a09bce7e233b8a603da3645c5b3efc8f4017a07e8dc5c370f"
+      },
+      "summary": {
+        "path": "workspace:/data/analysis/uma_phase2_summary.json",
+        "sha256": "d3714e8403bfce7061a236f8ddc62f06e5978e4613c90961935b352c48d70aef"
+      }
+    }
+  }
+}

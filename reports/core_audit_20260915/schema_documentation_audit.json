@@ -1,0 +1,238 @@
+{
+  "accountability_events.schema.json": {
+    "title": "Oracle Accountability Event",
+    "properties": 49,
+    "required": [
+      "schema_version",
+      "accountability_event_id",
+      "oracle_network",
+      "mechanism_family",
+      "security_chain",
+      "accountability_unit_type",
+      "accountability_unit_id",
+      "event_granularity",
+      "truth_basis",
+      "outcome_status",
+      "external_truth_available",
+      "source_event",
+      "rule_id",
+      "observability_grade",
+      "confidence_grade",
+      "native_table"
+    ],
+    "enums": {
+      "accountability_unit_type": [
+        "request",
+        "individual_report",
+        "dispute",
+        "voting_request",
+        "voting_epoch",
+        "reward_epoch",
+        "publisher_pool_epoch",
+        "service_availability_window"
+      ],
+      "truth_basis": [
+        "undisputed_acceptance",
+        "protocol_vote_adjudication",
+        "consensus_median_alignment",
+        "independent_reference_adjudication",
+        "service_availability_condition",
+        "external_ground_truth"
+      ],
+      "observability_grade": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ],
+      "confidence_grade": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ]
+    },
+    "described_fields": 0
+  },
+  "cross_chain_economic_observation.schema.json": {
+    "title": "Cross-chain oracle economic observation",
+    "properties": 85,
+    "required": [
+      "schema_version",
+      "episode_id",
+      "protocol",
+      "mechanism",
+      "observation_unit",
+      "security_chain_namespace",
+      "security_chain_id",
+      "decision_time_unix",
+      "action",
+      "terminal_outcome",
+      "right_censored",
+      "source_finality_rule",
+      "provenance_id",
+      "coverage_status",
+      "validation_status"
+    ],
+    "enums": {
+      "observation_unit": [
+        "request",
+        "actor_episode",
+        "proposal",
+        "dispute",
+        "vote",
+        "epoch",
+        "service_window",
+        "cross_chain_episode"
+      ],
+      "action": [
+        "accept",
+        "investigate",
+        "challenge",
+        "abstain",
+        "protocol_observed_action",
+        "not_applicable"
+      ],
+      "ground_truth_status": [
+        "available",
+        "protocol_resolution_only",
+        "ambiguous",
+        "unavailable",
+        "not_applicable"
+      ],
+      "cross_chain_link_grade": [
+        "A",
+        "B",
+        "C",
+        "U",
+        "not_applicable"
+      ],
+      "coverage_status": [
+        "complete",
+        "partial",
+        "verified_zero",
+        "unknown",
+        "unavailable",
+        "not_applicable"
+      ],
+      "evidence_grade": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ],
+      "validation_status": [
+        "passed",
+        "failed",
+        "pending",
+        "not_applicable"
+      ]
+    },
+    "described_fields": 1
+  },
+  "economic_variable_dictionary.schema.json": {
+    "title": "Economic variable dictionary entry",
+    "properties": 21,
+    "required": [
+      "variable_name",
+      "measure_family",
+      "track",
+      "mathematical_definition",
+      "indexing",
+      "observation_unit",
+      "measurement_unit",
+      "economic_definition",
+      "economic_mechanism",
+      "hypothesis_role",
+      "source_mapping",
+      "decision_time_availability",
+      "evidence_class",
+      "missing_value_rule",
+      "validation_rule",
+      "references",
+      "measurement_limitations",
+      "uma_constructability"
+    ],
+    "enums": {
+      "measure_family": [
+        "A",
+        "B",
+        "C",
+        "supporting"
+      ],
+      "track": [
+        "identity",
+        "timing",
+        "incentive",
+        "penalty",
+        "capital",
+        "cost",
+        "outcome",
+        "monitoring",
+        "provenance",
+        "trustworthy_ai"
+      ],
+      "decision_time_availability": [
+        "T0",
+        "T1",
+        "T2",
+        "terminal_only",
+        "retrospective_only",
+        "not_applicable"
+      ],
+      "evidence_class": [
+        "contract_parameter",
+        "event",
+        "token_flow",
+        "state_delta",
+        "transaction_receipt",
+        "cross_chain_link",
+        "external_evidence",
+        "derived"
+      ],
+      "uma_constructability": [
+        "complete",
+        "partial",
+        "unavailable",
+        "not_applicable"
+      ]
+    },
+    "described_fields": 0
+  },
+  "economic_semantics_events.schema.json": {
+    "title": "Source- and transaction-gated oracle economic evidence",
+    "properties": 28,
+    "required": [
+      "evidence_id",
+      "oracle_network",
+      "economic_kind",
+      "economic_evidence_class",
+      "realization_status",
+      "source_event",
+      "source_table",
+      "tx_or_state_evidence",
+      "cashflow_verified",
+      "state_delta_verified",
+      "source_semantics_rule_id",
+      "include_in_realized_reward",
+      "include_in_realized_slash"
+    ],
+    "enums": {
+      "economic_kind": [
+        "reward",
+        "slash",
+        "penalty",
+        "accounting",
+        "parameter",
+        "state_delta"
+      ],
+      "source_confidence": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ]
+    },
+    "described_fields": 0
+  }
+}

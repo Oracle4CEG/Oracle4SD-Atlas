@@ -1,0 +1,34 @@
+{
+  "original_relative_path": "data/manifests/polymarket_decision_time_prices.json",
+  "original_sha256": "16fa091953619e5a41c368b29895ee5df5c445946d4dfd143e243cc68b201279",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "dataset": "Polymarket decision-time historical price evidence",
+    "generated_at_utc": "2026-08-18T01:52:51.280133+00:00",
+    "source": "https://clob.polymarket.com",
+    "window_seconds": 604800,
+    "fidelity_minutes": 10,
+    "credentials_used": false,
+    "raw_directory": "workspace:/data/raw/polymarket/decision_time_prices_v1",
+    "output": "data:/curated/parquet/polymarket_decision_time_prices.parquet",
+    "provenance": "data:/curated/parquet/polymarket_decision_time_price_provenance.parquet",
+    "rows": 810,
+    "checks": {
+      "all_810_targets_represented": true,
+      "exact_token_mapping_rows": 795,
+      "unavailable_rows": 15,
+      "token_mapping_mismatches": 0,
+      "post_decision_points": 0,
+      "raw_snapshot_checksum_unique": true,
+      "primary_price_bounds_failures": 0,
+      "secondary_price_bounds_failures": 0
+    },
+    "all_required_assertions_pass": true,
+    "official_contract_context": {
+      "chain_id": 137,
+      "v1_ctf_exchange": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
+      "v1_neg_risk_exchange": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
+      "order_filled_topic": "0xd0a08e8c493f9c94f29311604c9de1b4e8c8d4c06bd0c789af57f2d65bfec0f6"
+    }
+  }
+}

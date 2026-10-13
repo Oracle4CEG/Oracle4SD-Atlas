@@ -1,0 +1,34 @@
+{
+  "original_relative_path": "data/manifests/tellor_rewards_full.json",
+  "original_sha256": "8951ac40cb56ec1a6fd4d2322dfc58bf3a168e1532151ecb1807b84122e0b56d",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "blocks_without_target_events": 0,
+    "chain_id": "tellor-1",
+    "current_gross_reward_total_loya_decimal": "6422270789.578947368531914382",
+    "current_liveness_accrual_events": 681859,
+    "current_query_tip_accrual_events": 33503,
+    "current_reporter_period_accrual_events": 715362,
+    "cutoff_block_time": "2026-06-30T23:59:57.550796+00:00",
+    "cutoff_height": 19890860,
+    "dataset": "Tellor Layer complete observable reward-allocation ledger",
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-27T08:33:57.155371+00:00",
+    "legacy_cumulative_only_events": 0,
+    "legacy_event_query_complete_zero_observed": true,
+    "legacy_incremental_amount_observable_events": 0,
+    "legacy_incremental_reward_total_loya_raw": "0",
+    "legacy_selector_tip_accrual_events": 0,
+    "liveness_distribution_events": 59920,
+    "reporter_count_mismatches": 0,
+    "scope_guard": "Deployed legacy rewards_added exposes a cumulative amount and a raw-byte selector value, not a canonical address or per-event increment; it is retained as cumulative-only evidence. Current rewards_accumulated is an internal allocation/accrual event, not an account payment. Only tip_withdrawn is a realized selector payment into stake and is collected in the separate Tellor tip/withdrawal transaction ledger. Periods before rewards_added was deployed have no event-level selector allocation interface and are not silently imputed.",
+    "segments": 199,
+    "source_commit": "943a2709ef0a60eb560447278b2f59923b9de484",
+    "source_event_queries": [
+      "rewards_added.delegator EXISTS",
+      "rewards_accumulated.reporter EXISTS"
+    ],
+    "unique_reward_blocks": 62840
+  }
+}

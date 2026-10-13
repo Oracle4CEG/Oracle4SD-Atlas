@@ -1,0 +1,16 @@
+{
+  "original_relative_path": "data/manifests/chronicle_redstone_settlement_audit.json",
+  "original_sha256": "b7d920cb4b7b6e80f9aace7325620b7cf4a3dc506afc797dc864298e28192b0a",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "dataset": "Chronicle and RedStone source-backed settlement boundary",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-28T11:26:05.427816+00:00",
+    "output": "data:/curated/chronicle_redstone_settlement_interfaces.jsonl",
+    "publisher_amounts_guessed_from_ordinary_token_flows": 0,
+    "redstone_scoped_settlement_terms_found": [],
+    "redstone_solidity_files_searched": 157,
+    "rows": 2
+  }
+}

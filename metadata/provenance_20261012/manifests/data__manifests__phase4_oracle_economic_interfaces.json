@@ -1,0 +1,30 @@
+{
+  "original_relative_path": "data/manifests/phase4_oracle_economic_interfaces.json",
+  "original_sha256": "92002dd87ccf5c1461cc99024708a44d49796df67c770dcdee7f459edd98eb44",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "amounts_guessed_from_token_flows": 0,
+    "dataset": "Phase-four Oracle economic event-interface ledger",
+    "fixed_cutoff": "2026-06-30T23:59:59Z",
+    "generated_at_utc": "2026-07-28T11:39:33.428455+00:00",
+    "node_required": [
+      "Band",
+      "Supra"
+    ],
+    "output": "data:/curated/phase4_oracle_economic_interfaces.jsonl",
+    "protocol_names": [
+      "Band",
+      "Switchboard",
+      "API3",
+      "DIA",
+      "Stork",
+      "Supra"
+    ],
+    "protocols": 6,
+    "verified_scoped_absence": [
+      "API3",
+      "Stork"
+    ]
+  }
+}

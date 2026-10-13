@@ -1,0 +1,17 @@
+[
+  {
+    "path": "chainlink_evidence_ledger.json",
+    "sha256": "0088921e9fe37c9fb10750e4fb260f4bb48dcf1b4aa81709ade9704d8e5ff8fc",
+    "role": "archived configuration/semantic-rule metadata, not a fresh validation result"
+  },
+  {
+    "path": "chainlink_staking_v02_ledger.json",
+    "sha256": "78b86de17b3d2e5c420a45a5d2cee8b403b150da17b4e5b3ddb1d3730d09457c",
+    "role": "archived configuration/semantic-rule metadata, not a fresh validation result"
+  },
+  {
+    "path": "contract_semantics_audit.json",
+    "sha256": "40b6786ef77706c2a0940b2f1d898201b2634df35ee5072636289ade388be312",
+    "role": "archived configuration/semantic-rule metadata, not a fresh validation result"
+  }
+]

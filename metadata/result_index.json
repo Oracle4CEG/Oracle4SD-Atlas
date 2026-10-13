@@ -1,0 +1,25 @@
+{
+  "historical_core_audit": "reports/core_audit_20260915/README.md",
+  "outputs": {
+    "abc_economic_measures.csv": "data/processed_data/uma_case/abc_economic_measures.csv",
+    "canonical_chain_qc.csv": "data/processed_data/uma_case/canonical_chain_qc.csv",
+    "economic_cashflows.csv": "data/processed_data/uma_case/economic_cashflows.csv",
+    "economic_episode.json": "data/processed_data/uma_case/economic_episode.json",
+    "economic_episodes.csv": "data/processed_data/uma_case/economic_episodes.csv",
+    "economic_link_qc.csv": "data/processed_data/uma_case/economic_link_qc.csv",
+    "lifecycle_timeline.csv": "data/processed_data/uma_case/lifecycle_timeline.csv",
+    "source_events.csv": "data/processed_data/uma_case/source_events.csv",
+    "token_flows.csv": "data/processed_data/uma_case/token_flows.csv",
+    "variable_provenance.csv": "data/processed_data/uma_case/variable_provenance.csv"
+  },
+  "sample_summary": "reports/uma_case/analysis/summary.json",
+  "sample_validation": "reports/uma_case/reports/validation.json",
+  "case_data_version": "uma-public-rpc-case-v1",
+  "release": "atlas-repaired-20261012",
+  "full_validation": "reports/revision_20261012/full_release.json",
+  "full_catalog": "metadata/repaired_atlas_20261012/table_catalog.json",
+  "public_downloads": "configs/data_releases.json",
+  "decision_experiment": "reports/revision_20261012/decision_benchmark/",
+  "financial_experiment": "reports/revision_20261012/financial_benchmark/",
+  "notebook": "reports/revision_20261012/notebook/"
+}

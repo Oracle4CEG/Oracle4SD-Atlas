@@ -1,0 +1,31 @@
+{
+  "original_relative_path": "data/manifests/tellor_jail_lifecycle.json",
+  "original_sha256": "c6506710fe3cb38b4789405cb0ff52be00b46a1d296dbd28a406f17ac7d6f994",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "chain_id": "tellor-1",
+    "curated_events": "data:/curated/tellor_jail_events.jsonl",
+    "curated_lifecycles": "data:/curated/tellor_jail_lifecycles.jsonl",
+    "cutoff_height": 19890860,
+    "dataset": "Tellor Layer reporter jail lifecycle ledger",
+    "duplicate_event_ids": 0,
+    "duration_counts": {
+      "0": 13
+    },
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-28T11:08:16.629911+00:00",
+    "jail_start_events": 13,
+    "lifecycle_status_counts": {
+      "unjailed": 13
+    },
+    "lifecycles": 13,
+    "raw_transactions": "data:/raw/tellor_layer/jail/jail_transactions.jsonl.gz",
+    "source_code_evidence": {
+      "jail_start": "x/reporter/keeper/jail.go:JailReporter emits jailed_reporter only on false-to-true transition",
+      "unjail": "x/reporter/keeper/msg_server.go:UnjailReporter emits unjailed_reporter after successful state mutation"
+    },
+    "unjail_events": 13,
+    "unmatched_unjail_events": 0
+  }
+}

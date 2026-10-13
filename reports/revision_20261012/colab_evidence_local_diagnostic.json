@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "all_nine_code_cells_unchanged",
+      "passed": true
+    },
+    {
+      "check": "all_cells_executed_in_order",
+      "passed": true
+    },
+    {
+      "check": "no_notebook_error_outputs",
+      "passed": true
+    },
+    {
+      "check": "final_success_output",
+      "passed": true
+    },
+    {
+      "check": "pinned_code_and_data",
+      "passed": true
+    },
+    {
+      "check": "runtime_kind",
+      "passed": true
+    },
+    {
+      "check": "managed_python_and_successful_bootstrap",
+      "passed": true
+    },
+    {
+      "check": "retained:bootstrap.log",
+      "passed": true
+    },
+    {
+      "check": "retained:execution.log",
+      "passed": true
+    },
+    {
+      "check": "retained:scientific.freeze.txt",
+      "passed": true
+    },
+    {
+      "check": "retained:host.freeze.txt",
+      "passed": true
+    },
+    {
+      "check": "identity_consistency",
+      "passed": true
+    },
+    {
+      "check": "run1:28_checks_passed",
+      "passed": true
+    },
+    {
+      "check": "run1:source:case_spec.json",
+      "passed": true
+    },
+    {
+      "check": "run1:source:raw/ethereum_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "run1:source:raw/polygon_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "run1:source:source/OptimisticOracleV2.sol",
+      "passed": true
+    },
+    {
+      "check": "run1:source:source/OptimisticOracleV2Interface.sol",
+      "passed": true
+    },
+    {
+      "check": "run1:source:source/VotingV2.abi.json",
+      "passed": true
+    },
+    {
+      "check": "run1:source:source/VotingV2.sol",
+      "passed": true
+    },
+    {
+      "check": "run1:case_counts",
+      "passed": true
+    },
+    {
+      "check": "run1:payment_decomposition",
+      "passed": true
+    },
+    {
+      "check": "run2:28_checks_passed",
+      "passed": true
+    },
+    {
+      "check": "run2:source:case_spec.json",
+      "passed": true
+    },
+    {
+      "check": "run2:source:raw/ethereum_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "run2:source:raw/polygon_rpc_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "run2:source:source/OptimisticOracleV2.sol",
+      "passed": true
+    },
+    {
+      "check": "run2:source:source/OptimisticOracleV2Interface.sol",
+      "passed": true
+    },
+    {
+      "check": "run2:source:source/VotingV2.abi.json",
+      "passed": true
+    },
+    {
+      "check": "run2:source:source/VotingV2.sol",
+      "passed": true
+    },
+    {
+      "check": "run2:case_counts",
+      "passed": true
+    },
+    {
+      "check": "run2:payment_decomposition",
+      "passed": true
+    },
+    {
+      "check": "deterministic_summaries",
+      "passed": true
+    },
+    {
+      "check": "28_regression_tests_succeeded",
+      "passed": true
+    }
+  ],
+  "runtime_kind_reported": "local_jupyter_kernel",
+  "hosted_runtime_required": false,
+  "hosting_independently_attested": false,
+  "scope": "Pinned small-case tutorial and saved regression evidence; not full Atlas or independent replication.",
+  "verified_at_utc": "2026-10-12T08:11:10.422670+00:00",
+  "notebook_delivery_commit": "7060311b563beb1fc963d59433ae6b968913662a",
+  "expected_code_commit": "d558c4669b1020b2664af2bf852658828a1c1da6",
+  "artifact_sha256": {
+    "reports/revision_20261012/notebook/tutorial.executed.ipynb": "e50d4868abfed5af7fc3c84189a9f66530dc9a0e877e1703c87105be1735c308",
+    "reports/revision_20261012/notebook/case-evidence.zip": "6cf955cb533dfd34da7ddb9a54bfed0a486e62200fd1f6dd3d650cc01aefeeb2"
+  }
+}

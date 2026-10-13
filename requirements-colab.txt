@@ -1,3 +1,6 @@
-# The authoring notebook uses these when connected to a real project.
-# The completed project must replace this note with its own tested dependency lock.
-# The runnable repository demo needs no third-party packages.
+-c constraints.txt
+-r requirements.txt
+-r requirements-release.txt
+ipykernel==6.29.5
+nbclient==0.10.2
+nbformat==5.10.4

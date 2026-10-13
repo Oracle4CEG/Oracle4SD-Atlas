@@ -1,0 +1,26 @@
+{
+  "original_relative_path": "data/manifests/chainlink_staking_v02_ledger.json",
+  "original_sha256": "78b86de17b3d2e5c420a45a5d2cee8b403b150da17b4e5b3ddb1d3730d09457c",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "amount_policy": "integer strings only",
+    "by_event": {
+      "CommunityPoolRewardUpdated": 42389,
+      "FeedConfigSet": 1,
+      "ForfeitedRewardDistributed": 600,
+      "OperatorPoolRewardUpdated": 353,
+      "RewardAdded": 10,
+      "RewardClaimed": 29927,
+      "RewardFinalized": 20853,
+      "SlasherConfigSet": 1,
+      "Staked": 17648,
+      "StakerRewardUpdated": 50780,
+      "UnbondingPeriodReset": 62,
+      "UnbondingPeriodStarted": 9069,
+      "Unstaked": 3197
+    },
+    "protocol": "Chainlink Staking v0.2",
+    "rows": 174890,
+    "source": "data:/curated/chainlink_staking_v02_events.jsonl"
+  }
+}

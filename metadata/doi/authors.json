@@ -1,0 +1,37 @@
+{
+  "source": "Author list, order, affiliations, domains and profile URLs supplied by the requester on 2026-10-12. No ORCIDs supplied or inferred. Affiliations retained verbatim.",
+  "authors": [
+    {
+      "name": "Huaiyu Jia",
+      "family_name": "Jia",
+      "given_names": "Huaiyu",
+      "affiliation": "The Hong Kong University of Science and Technology",
+      "affiliation_domain": "hkust-gz.edu.cn",
+      "profile": "https://openreview.net/profile?id=~Huaiyu_Jia2"
+    },
+    {
+      "name": "Siguang Li",
+      "family_name": "Li",
+      "given_names": "Siguang",
+      "affiliation": "The Hong Kong University of Science and Technology",
+      "affiliation_domain": "hkust-gz.edu.cn",
+      "profile": "https://openreview.net/profile?id=~Siguang_Li1"
+    },
+    {
+      "name": "Lin William Cong",
+      "family_name": "Cong",
+      "given_names": "Lin William",
+      "affiliation": "Nanyang Technological University",
+      "affiliation_domain": "ntu.edu.sg",
+      "profile": "https://openreview.net/profile?id=~Lin_William_Cong1"
+    },
+    {
+      "name": "Luyao Zhang",
+      "family_name": "Zhang",
+      "given_names": "Luyao",
+      "affiliation": "Duke University",
+      "affiliation_domain": "duke.edu",
+      "profile": "https://openreview.net/profile?id=~Luyao_Zhang1"
+    }
+  ]
+}

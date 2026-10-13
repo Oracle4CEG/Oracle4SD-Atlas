@@ -1,0 +1,82 @@
+{
+  "original_relative_path": "data/manifests/ethereum_feasibility_audit.json",
+  "original_sha256": "a9ce2823c5f5ee766ee098a73dc4b6b4eb107df079992530f1e37e372de45186",
+  "sanitization": "Workspace roots normalized; sensitive key values and URL query/userinfo removed. This wrapper is not the original file.",
+  "metadata": {
+    "audit_version": "0.1.0",
+    "ethereum": {
+      "chain_id": 1,
+      "cutoff_block": 25433938,
+      "head_block": 25557884,
+      "logs": {
+        "by_signature": {
+          "DelegateSet(address,address)": 887,
+          "DelegatorSet(address,address)": 642,
+          "EncryptedVote(address,uint32,bytes32,uint256,bytes,bytes)": 1829513,
+          "ExecutedUnstake(address,uint128,uint128)": 3698,
+          "GatAndSpatChanged(uint128,uint64)": 2,
+          "MaxRequestsPerRoundChanged(uint32)": 1,
+          "MaxRollsChanged(uint32)": 1,
+          "OwnershipTransferred(address,address)": 2,
+          "RequestAdded(address,uint32,bytes32,uint256,bytes,bool)": 3744,
+          "RequestDeleted(bytes32,uint256,bytes,uint32)": 1,
+          "RequestResolved(uint32,uint256,bytes32,uint256,bytes,int256)": 3712,
+          "RequestRolled(bytes32,uint256,bytes,uint32)": 80,
+          "RequestedUnstake(address,uint128,uint64,uint128)": 3935,
+          "SetNewEmissionRate(uint128)": 4,
+          "SetNewUnstakeCoolDown(uint64)": 1,
+          "SlashingLibraryChanged(address)": 1,
+          "Staked(address,address,uint128,uint128,uint128,uint128)": 28951,
+          "UpdatedReward(address,uint128,uint64)": 1893599,
+          "VoteCommitted(address,address,uint32,bytes32,uint256,bytes)": 1841405,
+          "VoteRevealed(address,address,uint32,bytes32,uint256,bytes,int256,uint128)": 1745826,
+          "VoterSlashApplied(address,int128,uint128)": 262448,
+          "VoterSlashed(address,uint256,int128)": 2663684,
+          "WithdrawnRewards(address,address,uint128)": 19240
+        },
+        "chunks": 1184,
+        "from_block": 16697232,
+        "to_block": 25433938,
+        "total": 10301377,
+        "unknown_topic_counts": {},
+        "voter_slashed": {
+          "negative_penalty_events": 947128,
+          "positive_reward_events": 1618542,
+          "slash_applied_events": 262448,
+          "zero_events": 98014
+        }
+      },
+      "voting_token": {
+        "address": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+        "decimals": 18,
+        "runtime_code_hash_at_cutoff": "0xf50a67bf6563d74527ce0e87a9f886499d00cc5b8f577acf057ea5b76268b765",
+        "symbol": "UMA"
+      },
+      "voting_v2": {
+        "address": "0x004395edb43efca9885cedad51ec9faf93bd34ac",
+        "deployment_block": 16697232,
+        "deployment_tx_hash": "0xe8644c1ce7f8ec90207a6a086059a39fb1b364fca56fe3110ac51245a8feed41",
+        "runtime_code_bytes_at_cutoff": 22904,
+        "runtime_code_hash_at_cutoff": "0x1b8bf8377b8f2ac8b465146937427cd4f1942484a8d02b680c16dcca4c139785"
+      },
+      "window_start_block": 16950602
+    },
+    "generated_at_utc": "2026-07-18T09:38:51.062142+00:00",
+    "rpc": {
+      "client_version": "reth/v1.11.3-d6324d6/x86_64-unknown-linux-gnu",
+      "syncing": false,
+      "url": "http://127.0.0.1:8545"
+    },
+    "scope_limitations": [
+      "No POLYGON_ARCHIVE_RPC_URL or POLYGON_VALIDATION_RPC_URL was configured, so Polygon contracts, OOV2 rewards/bonds, and Grade A cross-chain links were not audited.",
+      "No Ethereum validation RPC was configured, so independent-provider sampling is pending.",
+      "The audit stores raw Ethereum logs but does not derive payoffs, rewards, penalties, or DVM matches."
+    ],
+    "semantic_verification": {
+      "blocking_issue": "Exact deployed-source/bytecode semantic equivalence has not yet been independently reproduced; no payoff ingestion is authorised.",
+      "configured_source": "UMAprotocol/protocol VotingV2.sol and Staker.sol",
+      "source_commit": "a16ee53125c433dfa4e29738b73d9069ff109c03",
+      "status": "event_abi_compatible_only"
+    }
+  }
+}

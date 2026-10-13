@@ -1,17 +1,6 @@
 ---
-name: First-author question or review issue
-about: Ask a specific question with artifact-level evidence
-title: ""
-labels: ""
-assignees: ""
+name: Dataset evidence or reproduction issue
+about: Report a scoped data, semantic or execution issue
 ---
 
-**Artifact and exact page/file/field/URL:** AUTHOR INPUT
-
-**What is clear or supported?** AUTHOR INPUT
-
-**What remains unclear or unverifiable?** AUTHOR INPUT
-
-**Specific revision requested and why:** AUTHOR INPUT
-
-**Expected evidence of resolution:** AUTHOR INPUT
+Provide the code commit, data version, command, expected result, observed result and relevant source identifiers. Remove credentials. Explain whether the finding concerns the real case or the larger candidate dataset.

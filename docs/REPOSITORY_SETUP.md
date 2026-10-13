@@ -1,24 +1,7 @@
-# Reuse and repository settings
+# Repository setup and review boundary
 
-The repository contents form a reusable scaffold. GitHub's separate **Template repository**
-setting enables the **Use this template** button.
+Upstream: https://github.com/Oracle4CEG/Oracle4SD-Atlas. Personal fork: https://github.com/virusLuke3/Oracle4SD-Atlas. Starting template commit: 2ca64c50c43e189aa9cfc2cacd03520b71119301.
 
-1. Open the repository's Settings → General.
-2. Enable Template repository.
-3. Use the template to create a new repository for each project; choose its visibility deliberately.
+Current repairs are on `fix/usable-atlas-release-20261012` in the personal fork and proposed through organization PR #1 via `review/scientific-data-reproducibility-20260916`. The organization default branch is not merged automatically. Use the explicit branch clone command in the README and record the checked-out commit.
 
-See [GitHub's official instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
-
-The connected GitHub plugin can edit files, branches and pull requests but does not expose
-repository-settings mutations. These settings need an account with repository administration access.
-
-Suggested About description:
-
-Reusable Scientific Data project scaffold with source, queried and processed data; reproducible
-code; first-author instructions; Colab tutorials; NeurIPS metadata guidance; Hugging Face packaging.
-
-Suggested topics: scientific-data, open-science, reproducibility, data-documentation,
-dataset-template, google-colab, huggingface, neurips, research-data.
-
-The existing MIT licence is preserved. Select and document a separate data licence for
-each real resource; do not infer it from the code licence.
+The original oracle-nature workspace is not modified by this repository pipeline. Production code is copied with original/imported checksums. The notebook's code commit and the documentation/report commit can differ: the notebook pins a preceding immutable code commit to avoid circular self-reference; execution reports record it explicitly.
