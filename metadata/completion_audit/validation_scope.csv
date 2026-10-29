@@ -1,0 +1,7 @@
+scope,population,criterion,reference,evidence,not_tested
+UMA case,one linked episode; five transactions,28 top-level checks,"case specification, raw receipts and settlement rules",reports/publication_20261029/tutorial.executed.ipynb,external factual truth; population representativeness
+Native replay,eight bounded archived subsets,"SHA-256, row counts and supported clock schema",tutorial_revision/metadata/profiles.json,reports/publication_20261029/tutorial.executed.ipynb,full raw-to-native history; continuous collection
+Live locators,one transaction or height per branch,native locator matches registered target,tutorial_revision/metadata/raw_profiles.json,reports/publication_20261029/bounded_acquisition.json,historical runtime binding; complete pagination
+Physical release,100 catalogued tables,"hash, row count and dictionary field coverage",metadata/revision/file_manifest.csv,reports/publication_20261029/release_validation.json,human semantic review of all native fields
+UTC conversion,retained records with supported clocks,"native precision, interval meaning and keyed companion checks",metadata/revision/temporal_native,metadata/revision/core_temporal_validation.json,unrecovered block times; zero-filled missing days
+Independent/hosted reproduction,not yet observed,independent receipt and actual hosted execution,docs/COLAB_ACCEPTANCE.md,pending,local execution does not establish either condition

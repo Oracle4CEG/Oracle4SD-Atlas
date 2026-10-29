@@ -1,0 +1,611 @@
+{
+  "physical_tables": 100,
+  "dictionary_fields": 1810,
+  "schema_and_row_checks_passed": true,
+  "hash_check_status": "passed",
+  "tables": [
+    {
+      "path": "data/native/chainlink_eth_usd_reports.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/chainlink_event_link_flow_qc.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/chainlink_link_flows.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/chainlink_staking_v02_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/chronicle_ethereum_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/chronicle_redstone_settlement_interfaces.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/dia_staking_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/dia_staking_withdrawals.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/ecosystem_observability_evidence.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_beneficiary_chill_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_beneficiary_chill_state.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_provider_conditions.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_provider_failures.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_provider_feed_performance.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_provider_passes.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claim_epoch_qc.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claim_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claims.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_reward_component_attribution.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_reward_epochs.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/flare_voter_registrations.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/phase4_oracle_economic_interfaces.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_adapter_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_child_tunnel_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_oov2_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_gamma_links.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_request_flow_qc.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_request_rounds.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_token_flows.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_price_onchain_validation.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_price_provenance.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_prices.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_web_evidence.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_web_provenance.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/polymarket_gamma_markets.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_economic_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_historical_observability.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_instructions.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_publisher_epoch_factors.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_reward_epochs.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_slash_counters.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_stake_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/redstone_ethereum_push_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_aggregate_height_index.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_dispute_payments.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_dispute_votes.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_disputes.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_jail_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_jail_lifecycles.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_legacy_selector_reward_accruals.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_liveness_reward_distributions_full.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_micro_reports.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_query_tip_funding.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_reporter_reward_accruals_full.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/tellor_tip_withdrawals_realized.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_requests.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_staking_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_voter_payoffs.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_votes_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_phase2_dvm_negative_slash_panel.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_phase2_request_panel.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/native/uma_polygon_ethereum_grade_a_links.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core_clocks/accountability_events_clocks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core/accountability_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core_clocks/economic_semantics_events_clocks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core/economic_semantics_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core_clocks/realized_reward_slash_events_clocks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core/realized_reward_slash_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core_clocks/sample_b_observable_accountability_clocks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core/sample_b_observable_accountability.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core_clocks/sample_c_strict_honesty_events_clocks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/core/sample_c_strict_honesty_events.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/daily_measurements.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/daily_recipient_amounts.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/daily_reward_concentration.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/flare_historical_signing_policy.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/flare_signer_weights.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/uma_daily_completion_delay.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/uma_daily_escrow_exposure.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/uma_escrow_eligibility.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/daily/uma_escrow_flow_intervals.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/prediction/feature_availability.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/prediction/feature_corrections.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/prediction/uma_prediction_tasks.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/DVM_ACCRUAL_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/TELLOR_APPLIED_LOSS_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/TELLOR_OUTCOME_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/UMA_CHALLENGE_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/UMA_SETTLEMENT_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/UMA_WINNER_COMPONENT_V2.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/accounting/dvm_accrual_vs_applied.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/accounting/dvm_net_stake_applications.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/accounting/tellor_dispute_reconciliation.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/accounting/uma_settlement_accounting.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/cashflows.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/five_transactions.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/identity_link.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/sensitivity/epoch_allocation_sensitivity.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/sensitivity/uma_request_followup.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    },
+    {
+      "path": "data/sensitivity/weekly_measurements.parquet",
+      "bytes_match": true,
+      "rows_match": true,
+      "fields_match": true
+    }
+  ],
+  "all_100_sha256_match": true,
+  "total_parquet_files_in_package": 124,
+  "additional_parquet_scope": "metadata, nested-record mirrors and retained reproduction inputs"
+}

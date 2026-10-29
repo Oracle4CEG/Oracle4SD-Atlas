@@ -1,0 +1,30 @@
+Temporal companion: archived-input replay
+
+Inputs: the 64 native entries of metadata/full_source_register_20261012.csv in
+Oracle4CEG/Oracle4SD-Atlas at commit
+1dc0dfc3bc919e64f43a110bf29b75ef0e34459c.
+Download URLs are pinned in that register. The normalizer verifies every SHA-256.
+Use the original native input tree, not already annotated outputs. Keep output
+in a separate directory. No original input file is modified.
+
+Run from the extracted LaTeX project root. Replace the three absolute placeholders:
+python temporal_source/normalize_native_times.py --source-root /absolute/native-input-root --atlas-root /absolute/pinned-atlas-clone --output /absolute/new-temporal-data --metadata supplementary/temporal
+python temporal_source/validate_temporal.py --source-root /absolute/native-input-root --output /absolute/new-temporal-data --metadata supplementary/temporal
+python temporal_source/enrich_temporal_register.py --source-root /absolute/native-input-root --atlas-root /absolute/pinned-atlas-clone --project-root .
+python temporal_source/extract_recovery_examples.py --output /absolute/new-temporal-data --metadata supplementary/temporal
+python temporal_source/build_temporal_tables.py
+
+The table update command refreshes only the scientific availability rates. It does not insert diagnostic dates, counts or paths into the paper.
+
+The recorded runtime versions are in requirements.txt / runtime_versions.json.
+Normalization reads about 1.81 GB of source files and writes about 2.12 GB.
+Validation reads all original columns back. This can take several minutes.
+The 31 downstream catalogue tables are not rebuilt by these commands.
+
+The supplementary figure uses the small, supplied epoch_figure_data.csv. Regenerate:
+python figure_source/build_temporal_figure.py --font-dir /absolute/Times-New-Roman-font-directory
+Times.TTF must be genuine Times New Roman. The generated PDF/SVG already embeds
+font subsets; Overleaf needs neither Python nor separately installed fonts.
+
+Compile the paper: tectonic main.tex (tested with Tectonic 0.15.0), or the original
+project's LaTeX setup in Overleaf. No shell escape is needed for the included figures.

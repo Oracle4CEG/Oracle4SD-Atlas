@@ -1,0 +1,959 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "UMA:actions_requester:count_conservation",
+      "passed": true,
+      "expected": 179944,
+      "actual": 179944
+    },
+    {
+      "check": "UMA:actions_proposer:count_conservation",
+      "passed": true,
+      "expected": 166507,
+      "actual": 166507
+    },
+    {
+      "check": "UMA:actions_disputer:count_conservation",
+      "passed": true,
+      "expected": 1843,
+      "actual": 1843
+    },
+    {
+      "check": "UMA:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 41758,
+      "actual": 41758
+    },
+    {
+      "check": "UMA:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "382385000000"
+    },
+    {
+      "check": "UMA:bond_forfeited:count_conservation",
+      "passed": true,
+      "expected": 41758,
+      "actual": 41758
+    },
+    {
+      "check": "UMA:bond_forfeited:integer_sum",
+      "passed": true,
+      "expected": "403000000000"
+    },
+    {
+      "check": "UMA:principal_returned:count_conservation",
+      "passed": true,
+      "expected": 41758,
+      "actual": 41758
+    },
+    {
+      "check": "UMA:principal_returned:integer_sum",
+      "passed": true,
+      "expected": "29777181000000"
+    },
+    {
+      "check": "UMA:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 68,
+      "actual": 68
+    },
+    {
+      "check": "UMA:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "1252000000"
+    },
+    {
+      "check": "UMA:bond_forfeited:count_conservation",
+      "passed": true,
+      "expected": 68,
+      "actual": 68
+    },
+    {
+      "check": "UMA:bond_forfeited:integer_sum",
+      "passed": true,
+      "expected": "2500000000"
+    },
+    {
+      "check": "UMA:principal_returned:count_conservation",
+      "passed": true,
+      "expected": 68,
+      "actual": 68
+    },
+    {
+      "check": "UMA:principal_returned:integer_sum",
+      "passed": true,
+      "expected": "33506000000"
+    },
+    {
+      "check": "UMA:stake_loss_applied:count_conservation",
+      "passed": true,
+      "expected": 11409,
+      "actual": 11409
+    },
+    {
+      "check": "UMA:stake_loss_applied:integer_sum",
+      "passed": true,
+      "expected": "408212672778110625161258"
+    },
+    {
+      "check": "UMA:stake_redistribution_applied:count_conservation",
+      "passed": true,
+      "expected": 11510,
+      "actual": 11510
+    },
+    {
+      "check": "UMA:stake_redistribution_applied:integer_sum",
+      "passed": true,
+      "expected": "595876856442933737056635"
+    },
+    {
+      "check": "Chainlink:staking_actions:count_conservation",
+      "passed": true,
+      "expected": 3000,
+      "actual": 3000
+    },
+    {
+      "check": "Chainlink:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 2454,
+      "actual": 2454
+    },
+    {
+      "check": "Chainlink:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "226137102352790968079012"
+    },
+    {
+      "check": "Tellor:report_submissions:count_conservation",
+      "passed": true,
+      "expected": 82866640,
+      "actual": 82866640
+    },
+    {
+      "check": "Tellor:tip_reward_paid:count_conservation",
+      "passed": true,
+      "expected": 20380,
+      "actual": 20380
+    },
+    {
+      "check": "Tellor:tip_reward_paid:integer_sum",
+      "passed": true,
+      "expected": "8748623099"
+    },
+    {
+      "check": "Flare FTSOv2:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 18468675,
+      "actual": 18468675
+    },
+    {
+      "check": "Flare FTSOv2:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "3936734286992524182177003731"
+    },
+    {
+      "check": "Pyth:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 459083,
+      "actual": 459083
+    },
+    {
+      "check": "Pyth:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "109117725148136"
+    },
+    {
+      "check": "Pyth:stake_actions:count_conservation",
+      "passed": true,
+      "expected": 122071,
+      "actual": 122071
+    },
+    {
+      "check": "Chronicle:update_actions:count_conservation",
+      "passed": true,
+      "expected": 138634,
+      "actual": 138634
+    },
+    {
+      "check": "Chronicle:challenge_reward_paid:count_conservation",
+      "passed": true,
+      "expected": 14,
+      "actual": 14
+    },
+    {
+      "check": "Chronicle:challenge_reward_paid:integer_sum",
+      "passed": true,
+      "expected": "11020000000000000000"
+    },
+    {
+      "check": "RedStone Push:delivery_updates:count_conservation",
+      "passed": true,
+      "expected": 614319,
+      "actual": 614319
+    },
+    {
+      "check": "DIA:staking_actions:count_conservation",
+      "passed": true,
+      "expected": 436,
+      "actual": 436
+    },
+    {
+      "check": "DIA:reward_paid:count_conservation",
+      "passed": true,
+      "expected": 129,
+      "actual": 129
+    },
+    {
+      "check": "DIA:reward_paid:integer_sum",
+      "passed": true,
+      "expected": "22235907087809645291878"
+    },
+    {
+      "check": "flare_policy_228_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_229_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_230_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_231_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_232_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_233_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_234_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_235_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_236_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_237_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_238_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_239_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_240_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_241_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_242_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_243_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_244_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_245_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_246_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_247_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_248_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_249_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_250_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_251_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_252_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_253_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_254_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_255_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_256_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_257_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_258_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_259_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_260_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_261_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_262_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_263_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_264_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_265_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_266_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_267_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_268_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_269_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_270_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_271_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_272_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_273_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_274_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_275_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_276_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_277_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_278_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_279_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_280_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_281_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_282_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_283_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_284_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_285_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_286_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_287_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_288_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_289_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_290_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_291_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_292_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_293_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_294_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_295_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_296_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_297_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_298_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_299_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_300_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_301_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_302_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_303_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_304_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_305_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_306_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_307_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_308_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_309_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_310_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_311_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_312_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_313_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_314_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_315_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_316_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_317_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_318_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_319_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_320_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_321_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_322_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_323_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_324_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_325_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_326_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_327_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_328_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_329_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_330_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_331_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_332_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_333_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_334_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_335_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_336_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_337_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_338_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_339_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_340_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_341_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_342_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_343_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_344_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_345_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_346_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_347_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_348_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_349_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_350_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_351_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_352_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_353_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_354_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_355_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_356_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_357_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_358_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_359_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_360_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_361_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_362_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_363_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_364_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_365_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_366_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_367_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_368_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_369_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_370_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_371_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_372_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_373_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_374_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_375_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_376_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_377_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_378_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_379_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_380_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_381_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_382_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_383_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_384_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_385_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_386_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_387_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_388_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_389_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_390_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_391_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_392_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_393_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_394_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_395_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_396_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_397_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_398_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_399_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_400_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_401_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_402_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_403_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_404_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_405_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_406_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_407_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_408_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_409_mapping",
+      "passed": true
+    },
+    {
+      "check": "flare_policy_410_mapping",
+      "passed": true
+    },
+    {
+      "check": "eight_branches",
+      "passed": true
+    },
+    {
+      "check": "no_post_cutoff_day",
+      "passed": true
+    },
+    {
+      "check": "no_unsubstantiated_complete_coverage",
+      "passed": "True"
+    }
+  ],
+  "daily_rows": 13269,
+  "signing_epochs": 183
+}

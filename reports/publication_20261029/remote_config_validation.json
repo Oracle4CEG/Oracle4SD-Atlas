@@ -1,0 +1,79 @@
+{
+  "repo_id": "Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+  "content_commit": "a8e4e93016b7adfcb651bff9bafd26c2fab06093",
+  "expected_configs": 10,
+  "completed_configs": 10,
+  "all_passed": true,
+  "configs": [
+    {
+      "config": "uma",
+      "rows": 42676,
+      "columns": 54,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 9.89
+    },
+    {
+      "config": "chainlink",
+      "rows": 174890,
+      "columns": 39,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 6.719
+    },
+    {
+      "config": "tellor",
+      "rows": 13,
+      "columns": 35,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 3.617
+    },
+    {
+      "config": "flare_ftsov2",
+      "rows": 183,
+      "columns": 26,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 3.659
+    },
+    {
+      "config": "pyth",
+      "rows": 49,
+      "columns": 17,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 3.644
+    },
+    {
+      "config": "chronicle",
+      "rows": 140526,
+      "columns": 39,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 7.017
+    },
+    {
+      "config": "redstone_push",
+      "rows": 614319,
+      "columns": 20,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 7.551
+    },
+    {
+      "config": "dia",
+      "rows": 129,
+      "columns": 22,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 4.395
+    },
+    {
+      "config": "uma_prediction",
+      "rows": 810,
+      "columns": 36,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 4.236
+    },
+    {
+      "config": "daily_measurements",
+      "rows": 13269,
+      "columns": 22,
+      "anonymous_public_load": true,
+      "elapsed_seconds": 2.144
+    }
+  ]
+}

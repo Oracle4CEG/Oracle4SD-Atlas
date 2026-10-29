@@ -1,0 +1,15 @@
+folder_role,purpose
+data/data_source,Source declarations and retained raw inputs
+data/queried_data,Acquired evidence before processing
+data/processed_data,Processed case outputs; current full data in separate deposit
+code/query_data,Acquisition modes
+code/process_data,Case processing
+code/technical_validation,Validation
+code/analyze_data,Descriptive outputs
+metadata,"Catalogues, dictionaries, provenance and release identity"
+notebooks,Tutorial entry and historical notebook archive
+templates,Role retained; finished artifacts in tutorial_revision and paper replace blank templates
+paper,Current LaTeX manuscript and compiled PDF
+reports,"Run evidence, historical reports labelled as predecessors"
+configs,Declared source scopes and versions
+tests,Reference checks and reconstruction validation

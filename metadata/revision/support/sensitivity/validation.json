@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "weekly_integer_mass",
+      "passed": true
+    },
+    {
+      "check": "weekly_event_count",
+      "passed": true
+    },
+    {
+      "check": "epoch_overlap_duration_conservation",
+      "passed": true
+    },
+    {
+      "check": "epoch_end_label_amount_conservation",
+      "passed": true
+    },
+    {
+      "check": "lifecycle_unique",
+      "passed": true
+    },
+    {
+      "check": "lifecycle_nonnegative_followup",
+      "passed": true
+    },
+    {
+      "check": "censored_population",
+      "passed": true
+    }
+  ],
+  "limitation": "No complete-coverage subset can be certified from first/last retained events; strict-coverage estimates remain missing."
+}

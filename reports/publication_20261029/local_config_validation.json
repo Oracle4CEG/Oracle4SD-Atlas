@@ -1,0 +1,62 @@
+[
+  {
+    "config": "uma",
+    "rows": 42676,
+    "columns": 54,
+    "loaded": true
+  },
+  {
+    "config": "chainlink",
+    "rows": 174890,
+    "columns": 39,
+    "loaded": true
+  },
+  {
+    "config": "tellor",
+    "rows": 13,
+    "columns": 35,
+    "loaded": true
+  },
+  {
+    "config": "flare_ftsov2",
+    "rows": 183,
+    "columns": 26,
+    "loaded": true
+  },
+  {
+    "config": "pyth",
+    "rows": 49,
+    "columns": 17,
+    "loaded": true
+  },
+  {
+    "config": "chronicle",
+    "rows": 140526,
+    "columns": 39,
+    "loaded": true
+  },
+  {
+    "config": "redstone_push",
+    "rows": 614319,
+    "columns": 20,
+    "loaded": true
+  },
+  {
+    "config": "dia",
+    "rows": 129,
+    "columns": 22,
+    "loaded": true
+  },
+  {
+    "config": "uma_prediction",
+    "rows": 810,
+    "columns": 36,
+    "loaded": true
+  },
+  {
+    "config": "daily_measurements",
+    "rows": 13269,
+    "columns": 22,
+    "loaded": true
+  }
+]

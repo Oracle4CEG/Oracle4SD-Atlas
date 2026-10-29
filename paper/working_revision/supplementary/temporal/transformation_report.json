@@ -1,0 +1,18 @@
+{
+  "code_version": "oracle4sd-temporal-v1-20261026",
+  "script_sha256": "d0d9cfd547f4fc38befea7c81a8811ade9c49b7657ef468d29d816a16ca387bb",
+  "source_atlas_commit": "1dc0dfc3bc919e64f43a110bf29b75ef0e34459c",
+  "native_inputs": 64,
+  "catalogue_tables": 95,
+  "annotated_rows": 126654730,
+  "derived_tables_not_rebuilt": 31,
+  "block_lookup_rows": 875299,
+  "block_lookup_conflicts": 0,
+  "original_fields_and_order_preserved": true,
+  "invalid_inputs": 0,
+  "fresh_rpc_acquisition": false,
+  "python": "3.12.7",
+  "pandas": "2.2.2",
+  "pyarrow": "16.1.0",
+  "output_bytes": 2119349014
+}

@@ -1,0 +1,3 @@
+reward_epoch_id,epoch_start_utc,epoch_end_utc,registered_signers,weight_total,threshold_raw,registration_mapping_complete
+228,2024-09-26 18:59:15+00:00,2024-09-30 06:59:15+00:00,45,65513,32757,True
+229,2024-09-30 06:59:15+00:00,2024-10-03 18:59:15+00:00,49,65512,32756,True

@@ -1,0 +1,9 @@
+branch,source,method,expected_block,status,locator_verified,elapsed_seconds
+UMA,polygon_oov2_events,eth_getTransactionReceipt,30622389,verified_native_locator,True,0.503
+Chainlink,chainlink_staking_v02_events,eth_getTransactionReceipt,18688297,historical_record_unavailable,,0.49
+Flare FTSOv2,flare_reward_claim_events,eth_getTransactionReceipt,30726907,verified_native_locator,True,0.893
+Chronicle,chronicle_ethereum_events,eth_getTransactionReceipt,19212137,historical_record_unavailable,,0.393
+RedStone Push,redstone_ethereum_push_events,eth_getTransactionReceipt,18733900,historical_record_unavailable,,0.393
+DIA,dia_staking_withdrawals,eth_getTransactionReceipt,4875792,verified_native_locator,True,3.469
+Pyth,pyth_ois_economic_events,getTransaction,293360328,verified_native_locator,True,1.303
+Tellor,tellor_disputes,GET,8073265,verified_native_locator,True,1.954

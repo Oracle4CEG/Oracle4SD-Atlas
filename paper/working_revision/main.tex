@@ -1,0 +1,80 @@
+% !TeX program = xelatex
+% Oracle Atlas working paper. Use XeLaTeX for the checked line layout; no shell escape required.
+%%% Hugging Face: https://huggingface.co/organizations/Oracle4CEG
+%%% Github Template: https://github.com/Oracle4CEG/Oracle4SD-Template
+%%% GitHub: https://github.com/Oracle4CEG/Oracle4SD-Atlas/tree/main
+\documentclass[11pt,a4paper]{article}
+\usepackage{styles/preprint}
+
+\hypersetup{
+  pdftitle={A cross-protocol dataset of blockchain oracle incentives and accountability},
+  pdfauthor={Huaiyu Jia, Siguang Li, Lin William Cong, Luyao Zhang},
+  pdfsubject={Blockchain oracles, economic incentives, accountability, data provenance}
+}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries A cross-protocol dataset of blockchain\\oracle incentives and accountability\par}
+  \vspace{0.9em}
+  {\normalsize
+    Huaiyu Jia\textsuperscript{a}\hspace{1.45em}
+    Siguang Li\textsuperscript{a}\hspace{1.45em}
+    Lin William Cong\textsuperscript{b}\hspace{1.45em}
+    Luyao Zhang\textsuperscript{c,\hyperlink{correspondence-note}{*}}\par}
+  \vspace{0.55em}
+  {\small
+    \textsuperscript{a} The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China\par
+    \textsuperscript{b} Nanyang Technological University, Singapore\par
+    \textsuperscript{c} Duke Kunshan University, Kunshan, China\par}
+  \vspace{0.55em}
+  {\footnotesize\itshape Working paper \enspace\textbullet\enspace October 2026\par}
+\end{center}
+\begingroup
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{\hypertarget{correspondence-note}{}Corresponding author: Luyao Zhang. Duke Kunshan University, 8 Duke Avenue,\\ Kunshan, Suzhou, Jiangsu 215316, China. Email: \href{mailto:lz183@duke.edu}{lz183@duke.edu}.}
+\endgroup
+\setcounter{footnote}{0}
+\vspace{-0.25em}
+\begin{abstract}
+Blockchain oracles connect smart contracts to external information, but their records use different units and accounting conventions. We present a data resource covering eight oracle branches, with five detailed panels and three narrower extensions. Native observations are linked to protocol rules and reconstructed lifecycles, distinguishing configured incentives, accruals, entitlements, payments and applied losses. UTC annotations preserve event times, epoch intervals and snapshots separately. Two derived products provide daily measurements within documented coverage and a request-level UMA prediction task with candidate inputs, availability records and protocol-resolution labels. Validation examines native identities, economic classifications, settlement accounting and a cross-chain dispute. The resulting resource supports descriptive research on participation, rewards and accountability while retaining differences in mechanism, asset and observation unit. Missing evidence remains explicit, and protocol adjudication is distinguished from independent verification of external facts.
+\end{abstract}
+
+\input{sections/01_background}
+\input{sections/02_methods}
+\input{sections/03_records}
+\input{sections/04_overview}
+\input{sections/05_validation}
+\input{sections/06_usage}
+\input{sections/07_availability}
+
+\FloatBarrier
+\input{references}
+
+\clearpage
+\appendix
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theHtable}{appendix.\arabic{table}}
+\input{sections/appendix_a_scope}
+\FloatBarrier
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\theHfigure}{temporal.\arabic{figure}}
+\input{sections/appendix_b_temporal}
+\FloatBarrier
+\input{sections/appendix_c_products}
+\FloatBarrier
+\input{sections/appendix_d_daily}
+\FloatBarrier
+\input{sections/appendix_e_semantics}
+\FloatBarrier
+\input{sections/appendix_f_prediction}
+\FloatBarrier
+\input{sections/appendix_g_case}
+\FloatBarrier
+\input{sections/appendix_h_reproduction}
+\FloatBarrier
+\clearpage
+\input{sections/appendix_i_glossary}
+\FloatBarrier
+\end{document}

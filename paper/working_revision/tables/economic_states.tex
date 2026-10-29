@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering\tabstyle[economictint]
+\caption{Economic states distinguished in reconstruction. Each classification requires the evidence specified by the originating protocol. A lifecycle need not expose every state.}
+\label{tab:economic_states}
+\begin{tabularx}{\linewidth}{@{}L{0.20\linewidth} L{0.33\linewidth} Y@{}}
+\toprule\tablehead
+\thcell{clock}{State} & \thcell{coin}{Economic meaning} & \thcell{compare}{Interpretation rule} \\
+\midrule
+Configured incentive & Reward specified in protocol parameters & A design parameter; not automatically participant income. \\
+Accrued reward or penalty & Calculated entitlement or liability & Distinct from subsequent payment or application; counting both may duplicate one change. \\
+Claimable entitlement & Amount eligible for a claim & An unclaimed entitlement is not a zero payment or a realized transfer. \\
+Paid reward & Observed transfer or realized protocol credit & Realized only when qualifying cash-flow or state evidence is present. \\
+Applied slash & Reduction applied to a participant's balance or principal & Requires observed application, beyond a penalty calculation or accrual. \\
+Principal deposit or return & Capital posted and subsequently recovered & Kept separate from rewards and fees; returned capital is not profit. \\
+Refund or rollover & Incentive returned or carried to another state & Not attributed to the current participant without supporting evidence. \\
+Protocol fee & Amount charged or retained under protocol rules & Separated from participant reward and principal. \\
+\bottomrule
+\end{tabularx}
+\end{table}

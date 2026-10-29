@@ -1,0 +1,6 @@
+{
+  "metadata_parsed": true,
+  "recordsets": 100,
+  "validator": "mlcroissant",
+  "scope": "metadata graph only; physical hashes and schemas checked separately"
+}

@@ -1,0 +1,15 @@
+{
+  "branch": "Flare FTSOv2",
+  "rows": 8,
+  "clock_fields": [
+    "epoch_start_utc",
+    "epoch_end_utc",
+    "event_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "9ebd417011cd58fa311c8a88c17b2eb17f9610e62b23f2fa4fddf71369186de8",
+  "parent_sha256": "e9bd828503356da4b2fa1112ee1950995dc4de591c789e88a84794ee0324a4ce",
+  "source_unit": "flare_reward_epochs",
+  "missing_event_time": 8,
+  "check": "sample_identity_and_clock_schema"
+}

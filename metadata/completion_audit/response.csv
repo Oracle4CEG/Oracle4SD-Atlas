@@ -1,0 +1,31 @@
+audit_id,status,response,evidence
+G01,implemented,README fourteen-role navigation and tutorial section column,README.md
+G02,implemented,Eight source-to-output rows with fixed code links,README.md
+G03,implemented,"Clickable eight-stage navigation, outputs and code",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G04,implemented,"Seven-file register, full historical register and branch scope displayed",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G05,implemented,"Bounded raw receipt, transaction link and decoded event preview",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G06,implemented,"Transformation units, keys and integer principal/gain accounting",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G07,implemented,"85-field set equality, types, units and null rules displayed",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G08,implemented,Case artifacts and current 100-table catalogue; overlapping units explained,metadata/table_dictionary.json
+G09,implemented,Per-field missingness with episode denominator and paper output map,metadata/revision/paper_data_code_map.csv
+G10,implemented,English reset/run/export/independent-reader guide,docs/COLAB_ACCEPTANCE.md
+G11,implemented,Eight named bounded native samples with identity checks and previews,notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G12,implemented,"Acquisition mode table, archive baseline and optional fresh calls",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G13,implemented,Live runs use separate directories and preserve endpoint failures,tutorial_revision/query.py
+G14,implemented,Optional pinned public-download mode with archive byte checks,notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G15,implemented_bounded,"Eight bounded live commands run; stop, timeout and measured duration retained; not full historical collection",docs/BOUNDED_ACQUISITION.md
+G16,implemented,Raw response/native table/derived product boundaries documented,docs/FULL_DATA.md
+G17,unresolved_historical_evidence,Original operator identities and exhaustive historical job receipts are unavailable; claims remain limited,docs/ACQUISITION_PROVENANCE.md
+G18,implemented,"Executable inspection of the current 13,269-row daily table",notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G19,implemented,Five detailed panels and three extensions; scope/units/ranges shown,metadata/acquisition_profiles.json
+G20,partial,Displayed clock and case meanings defined; 904 native dictionary entries still use source-reference definitions,metadata/revision/field_dictionary.csv
+G21,implemented,Organization code links and separate fixed code/data version records,configs/atlas_utc_release.json
+G22,implemented,Current navigation supersedes dated historical handoffs,docs/HANDOFF.md
+G23,implemented,100-recordset Croissant and physical schema/hash checks; parser scope distinguished,metadata/revision/croissant.json
+G24,implemented,"Validation matrix states populations, criteria, references and untested scope",metadata/completion_audit/validation_scope.csv
+G25,pending_independent_reader,"Requires an actual independent reader, interventions and comparison receipt",docs/COLAB_ACCEPTANCE.md
+G26,pending_hosted_colab,Requires actual Google-hosted CPU execution and operator statement,docs/COLAB_ACCEPTANCE.md
+G27,implemented,Explicit public evidence inventory before ZIP export,notebooks/Oracle4SD_Atlas_Tutorial.ipynb
+G28,partial,Manuscript and artifact links supplied; named independent reviewer and agreed checkpoint not provided,docs/HANDOFF.md
+G29,implemented,"Finished registers, dictionaries, paper and guide replace blank forms",docs/TEMPLATE_ALIGNMENT.md
+G30,implemented,"Actual title, creators, version and data URL; no unassigned DOI",CITATION.cff

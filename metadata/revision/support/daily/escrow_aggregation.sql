@@ -1,0 +1,3 @@
+WITH expanded AS (SELECT *,unnest(generate_series(date_trunc('day',event_time_utc),date_trunc('day',next_time),INTERVAL 1 DAY)) d FROM eligible WHERE next_time>event_time_utc AND balance_raw>0)
+    SELECT CAST(d AS DATE) date_utc,asset,count(DISTINCT oo_request_id) requests,sum(balance_raw*greatest(0,date_diff('second',greatest(d,event_time_utc),least(d+INTERVAL 1 DAY,next_time))))::VARCHAR raw_token_seconds
+    FROM expanded WHERE d<next_time AND d+INTERVAL 1 DAY>event_time_utc GROUP BY 1,2 ORDER BY 1,2

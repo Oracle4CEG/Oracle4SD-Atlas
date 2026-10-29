@@ -1,0 +1,6 @@
+artifact,input,script,paper
+Ecosystem figure,registered implementation and scope sources,paper/working_revision/figure_source/build_ecosystem_figure.py,Introduction / Appendix A
+Daily gallery,daily_measurements and epoch signing policies,code/revision/build_figures.py,Data overview / Appendix D
+UMA task,uma_prediction_tasks and feature_availability,code/revision/build_prediction.py,Methods / Appendix F
+Cross-chain gallery,five_transactions and cashflows,code/revision/build_evidence.py,Technical validation / Appendix G
+Semantic gallery,object correction ledgers and rule summary,code/revision/build_evidence.py,Technical validation / Appendix E

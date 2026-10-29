@@ -1,0 +1,2517 @@
+A cross-protocol dataset of blockchain oracle incentives and
+accountability
+Huaiyu Jiaa
+Siguang Lia
+Lin William Congb
+Luyao Zhangc,*
+a The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China
+b Nanyang Technological University, Singapore
+c Duke Kunshan University, Kunshan, China
+Working paper • October 2026
+Abstract.
+Blockchain oracles connect smart contracts to external information, but their records use
+different units and accounting conventions. We present a data resource covering eight oracle branches,
+with ﬁve detailed panels and three narrower extensions. Native observations are linked to protocol rules
+and reconstructed lifecycles, distinguishing conﬁgured incentives, accruals, entitlements, payments and
+applied losses. UTC annotations preserve event times, epoch intervals and snapshots separately. Two
+derived products provide daily measurements within documented coverage and a request-level UMA pre-
+diction task with proposal-time inputs and protocol-resolution labels. Validation examines native iden-
+tities, economic classiﬁcations, settlement accounting and a cross-chain dispute. The resulting resource
+supports descriptive research on participation, rewards and accountability while retaining differences in
+mechanism, asset and observation unit. Missing evidence remains explicit, and protocol adjudication is
+distinguished from independent veriﬁcation of external facts.
+1 Introduction
+Blockchain oracles make a fundamental institutional choice visible: a programmable contract must rely on
+someone, or some mechanism, to supply information that the ledger itself cannot observe. Prices, event
+outcomes and other external facts become inputs to deterministic execution through systems of reporting,
+veriﬁcation and dispute resolution [1, 2]. The resulting arrangements combine technical infrastructure with
+economic commitments. Participants may earn rewards, post capital, challenge a report or incur a penalty,
+while users depend on the process that determines which information the contract accepts. Studying this
+infrastructure therefore requires attention to both information provision and the incentives that sustain it [3,
+4].
+Public visibility of transactions does not, by itself, make these incentives measurable. The record of a
+single transfer may combine returned principal with a reward, and a negative accounting adjustment may
+precede any applied reduction in a participant’s stake. A disputed request can traverse several contracts
+or chains before reaching settlement. Differences in protocol versions, native identiﬁers and accounting
+conventions further complicate comparison. These are substantive measurement problems: an analysis that
+treats gross payouts as proﬁt, or accruals as realized losses, changes the economic object being studied. A
+useful comparative dataset must reconstruct the relevant lifecycle while retaining the institutional meaning
+of each observed state.
+Oracle arrangements expose different routes from information provision to economic accountability.
+Some provide records of proposals, challenges and adjudication, whereas others expose staking operations,
+reward epochs, signed updates or withdrawals. These differences motivate a resource organized around
+observable mechanisms and historical implementations. Accordingly, the scope of Oracle4SD Atlas reﬂects
+both substantive variation across mechanisms and the evidence retained for reconstruction. The resulting
+branches support comparisons among speciﬁed activities; they do not constitute a census of oracle services
+or a probability sample of the oracle ecosystem.
+We address this problem with a layered data resource covering eight oracle branches. UMA, Chainlink,
+Tellor, Flare FTSOv2 and Pyth provide ﬁve detailed panels; Chronicle, RedStone Push and DIA contribute
+*Corresponding author: Luyao Zhang. Duke Kunshan University, 8 Duke Avenue, Kunshan, Suzhou, Jiangsu 215316, China.
+Email: lz183@duke.edu.
+1
+
+three narrower extensions. The common accountability representation contains 105,588,120 typed obser-
+vations, complemented by 22,723,389 economic components and 19,275,854 records that meet protocol-
+speciﬁc realization criteria. These overlapping representations retain different observation units and cannot
+be added as independent samples. Native records remain available alongside the common ﬁelds, allowing
+researchers to move between comparative measures and the protocol evidence on which those measures
+depend.
+The contribution is a measurement framework that connects protocol rules and native records to observ-
+able economic states. By distinguishing conﬁgured incentives, accrued adjustments, claimable entitlements,
+realized payments and applied losses, the resource supports descriptive research on participation, incentives
+and accountability within documented coverage boundaries. Figure 1 situates the sampled implementations
+within the wider oracle ecosystem, while Table 3 summarizes the scope of each branch. Comparisons remain
+conditional on observation units, historical rules and evidence availability. Protocol acceptance and ﬁnancial
+execution are therefore interpreted separately from independent veriﬁcation of external facts.
+a
+History and sample windows
+b
+Chains and sampled roles
+2018
+2020
+2022
+2024
+2026
+ETH POL SOL FLR TLR PYT DIA ARB BAS BNB
+UMA
+VS VSD
+Chainlink
+SD
+D
+D
+D
+D
+Tellor
+VS
+H
+Flare FTSOv2
+VS
+Pyth
+S
+I
+D
+D
+D
+D
+Chronicle
+VSD
+D
+D
+RedStone Push
+VD
+D
+D
+D
+DIA
+S
+D
+D
+D
+D
+Origin
+Service
+Mechanism
+Records
+Sampled
+Context
+I
+Input
+Figure 1. Historical context and sampled scope of Oracle4SD Atlas. Purple denotes ﬁve detailed panels; coral
+denotes three narrower extensions. (a) Symbols mark project or network origins, service openings, and mechanism
+announcements or access milestones. Coloured segments delimit retained timestamps in one selected table per branch;
+they do not imply uninterrupted acquisition. The dashed line marks the 30 June 2026 cutoff. (b) Filled cells identify
+sampled chain roles; grey outlines show selected ecosystem context. V, veriﬁcation/adjudication; S, economic
+settlement/accounting; D, delivery; H, historical implementation; I, retained derived inputs. ETH, Ethereum; POL,
+Polygon; SOL, Solana; FLR, Flare; TLR, tellor-1; PYT, Pythnet; DIA, Lasernet; ARB, Arbitrum; BAS, Base; BNB,
+BNB Chain. Dates and source evidence are provided in Appendix A.
+2 Related work
+Research on oracles and research on blockchain datasets approach the same infrastructure from complemen-
+tary directions. Oracle studies examine how external information is authenticated, aggregated and incen-
+tivized; data-resource studies establish reusable representations of transactions, entities and contracts. The
+present work connects these perspectives by making the relationship between native protocol evidence and
+economic measurement explicit. Tables 1 and 2 summarize representative contributions without treating
+their differing units or purposes as directly comparable measures of scale.
+2
+
+2.1 Oracle design, security and economic institutions
+Town Crier uses trusted hardware to authenticate external data delivery, whereas DECO develops crypto-
+graphic proofs about data obtained over TLS [1, 5]. The oracle systematization of knowledge situates such
+designs within a wider set of trust assumptions, attacks and mitigations [2]. Subsequent work addresses
+other parts of the information-security problem: adaptive conformal consensus provides guarantees under
+speciﬁed conditions for aggregating oracle reports, and SMARTCAT detects contracts associated with price-
+manipulation attacks [6, 7]. These contributions clarify how oracle information can be delivered or threat-
+ened. Their stated objectives differ from reconstructing the participant-level sequence between an incentive
+commitment and its eventual economic realization.
+Empirical oracle studies provide a second foundation. A ﬁrst look at DeFi oracles measures deployed
+price-oracle behavior, while Demystifying Pythia examines Chainlink usage, pricing and service quality on
+Ethereum [8, 9]. Economic research complements these observations by analyzing incentives, staking, de-
+centralization and the integration of oracle networks with ﬁnancial markets [4, 10]. Together, these studies
+motivate an empirical representation that follows the economic process across participation, challenge, ad-
+judication and settlement. The framework developed here retains those stages where the source evidence
+supports them, rather than assuming that every mechanism exposes an equivalent lifecycle.
+The mechanisms represented in the Atlas expose different empirical objects. UMA and Tellor provide set-
+tings for studying contestable reporting, challenge participation and adjudicated outcomes [22, 24]. Chain-
+link’s staking and feed records distinguish economic participation from observable service updates [23],
+while Flare FTSOv2 separates reward entitlements, provider conditions and subsequent claims [25]. Pyth’s
+OIS records connect publisher-related incentive states with staking operations and economic transfers within
+the retained historical window [26]. The narrower Chronicle, RedStone Push and DIA extensions add ob-
+servations of challenge mechanisms, signed update delivery and staking withdrawals, respectively [27–29].
+These branches contribute different parts of the measurement problem; their native records are not inter-
+changeable observations of a universal oracle process.
+Oracle economics and empirical studies of deployed services motivate questions about incentives, mon-
+itoring, participation and service provision [4, 8–10]. Addressing these questions requires identifying the
+observation unit, applicable rule and economic stage represented by each record. The Atlas contributes
+reusable observations and reconstruction materials for this purpose. Protocol documentation provides ev-
+idence about intended mechanisms, whereas historical execution records support claims about observed
+behavior. Neither a valid signature, agreement with a protocol’s consensus outcome nor a recorded payment
+independently establishes the correctness of the underlying external information. Connections to mechanism
+design are research motivations, not claims that a deployed protocol satisﬁes a theoretical equilibrium or
+security theorem.
+2.2 Reusable blockchain data resources
+Graph datasets make blockchain activity accessible to a broader research community. Elliptic represents
+Bitcoin transactions for illicit-activity classiﬁcation; Elliptic2 shifts attention to labeled subgraphs of en-
+tity clusters [11, 12]. Chartalist provides machine-learning-ready datasets for UTXO- and account-based
+blockchains, while temporal Bitcoin datasets support entity and transaction graph analysis [13–15]. EX-
+Graph connects Ethereum and X, and the multi-chain Graphs of Graphs resource preserves relationships
+within and across token networks [16, 17]. These representations capture important network structure. Ora-
+cle economics additionally requires identifying what a request, report, entitlement or applied balance change
+means within its originating mechanism.
+Other datasets broaden the range of relevant units. Research on NFTs and memecoins links market
+behavior to network and visual features [18, 19]; event-aware DeFi forecasting emphasizes ﬁne-grained on-
+chain events [20]. DIVE organizes smart contracts into separate pre- and post-deployment representations
+for vulnerability analysis [21]. The latter illustrates the value of preserving multiple views of one underlying
+object, a principle also used here. Our economic components, however, describe oracle participation and
+ﬁnancial accountability rather than contract vulnerabilities, and their annotations depend on protocol-speciﬁc
+3
+
+Table 1. Oracle research and the measurement problem addressed here. “Conceptual” denotes a mechanism or
+taxonomy rather than a deposited cross-protocol economic panel. The comparison concerns the stated contribution of
+each work.
+Study
+Evidence focus
+Representation
+Economic coverage
+Town Crier [1]
+Authenticated delivery
+Trusted-hardware oracle
+architecture
+External-data delivery; no
+cross-protocol economic lifecycle
+panel.
+DECO [5]
+Web-data provenance
+Cryptographic proofs for
+TLS data
+Data provenance and privacy; no
+reconstruction of oracle compensation
+or losses.
+Oracle SoK [2]
+Security and trust
+Taxonomy of designs,
+attacks and assumptions
+Conceptual treatment of economic
+security and manipulation.
+DeFi oracle
+measurement [8]
+Deployed price oracles
+Reported values,
+deviations and operation
+Selected operational measurements
+rather than harmonized incentive
+states.
+Demystifying
+Pythia [9]
+Chainlink on Ethereum
+Usage, pricing and
+service quality
+System-speciﬁc economic and usage
+measurements.
+Oracle economics
+primer [4]
+Incentives and
+institutions
+Economic framework for
+oracle mechanisms
+Conceptual analysis of staking,
+decentralization and tokenomics.
+This resource
+Participation and
+accountability
+Native lifecycles with
+typed economic
+components
+Five detailed panels and three
+extensions; realized economics only
+where observable.
+accounting and evidence rules.
+Table 2. Representative blockchain datasets and their analytical units. Scales refer to different scientiﬁc objects and
+are therefore not comparable sample sizes. The present resource complements graph and contract-security datasets by
+retaining protocol-speciﬁc economic stages.
+Resource
+Observation unit
+Published scope
+Analytical purpose
+Elliptic [11]
+Bitcoin transaction
+203,769 nodes; 234,355
+directed edges
+Illicit-transaction classiﬁcation and
+ﬁnancial forensics.
+Elliptic2 [12]
+Entity cluster and labeled
+subgraph
+49.3 million clusters; 196.2
+million edges; 121,810
+labeled subgraphs
+Money-laundering patterns at
+subgraph level.
+Chartalist [13]
+Dataset-speciﬁc graph,
+address or transaction
+Multiple UTXO- and
+account-based blockchain
+datasets
+Reusable data access, graph
+construction and machine-learning
+benchmarks.
+DIVE [21]
+Ethereum smart contract
+22,330 contracts; pre- and
+post-deployment
+representations
+Vulnerability analysis with
+lifecycle-speciﬁc features.
+This resource
+Typed protocol-native
+observation
+105,588,120 harmonized
+observations; eight branches
+Incentive and accountability
+measurement, with native units and
+economic realization states retained.
+The unresolved measurement need is thus not simply a larger transaction collection. Comparative ora-
+cle research needs shared concepts that remain connected to native roles, timing and economic states. This
+resource supplies that connection through layered representations, documented reconstruction rules and ex-
+plicitly scoped validation. It complements the existing literature by distinguishing an announced incentive
+from a claimable entitlement, a transfer from participant gain, and an institutional decision from external
+truth. Those distinctions permit comparison without erasing the differences that the comparison seeks to
+understand.
+4
+
+3 Methods
+Construction proceeds from protocol evidence to economic interpretation, and only then to common analyti-
+cal ﬁelds. This order matters because raw blockchain events do not deﬁne interchangeable economic observa-
+tions. The workﬂow in Figure 2 ﬁrst registers historical sources and decodes native records, then reconstructs
+supported lifecycles and economic states, and ﬁnally harmonizes the resulting observations. Unresolved iden-
+tities, open lifecycles and unobservable outcomes remain explicit throughout. The method therefore treats
+a common schema as a structured comparison of evidence, rather than a substitute for protocol-speciﬁc
+reconstruction.
+3.1 Scope, selection and historical boundaries
+The discovery registry contains 56 oracle or related mechanism categories and 366 recorded protocol–oracle
+relationships. It supports source discovery and ecosystem description, rather than deﬁning a probability
+sampling frame. Within this broader registry, the present release contains eight oracle branches. Selection re-
+ﬂects the economic or accountability process exposed by each implementation, the availability of identiﬁable
+historical records and the extent to which those records support interpretable reconstruction. Here, a branch
+denotes a speciﬁed protocol mechanism and implementation scope, together with the chain roles represented
+in its observations.
+UMA, Chainlink, Tellor, Flare FTSOv2 and Pyth provide ﬁve detailed native panels. Chronicle, RedStone
+Push and DIA provide three narrower extensions covering selected challenge, update-delivery or staking ac-
+tivities. This distinction describes the breadth of reconstruction in this release; it does not imply complete his-
+torical coverage, identical variable availability or a ranking of protocol quality. Other versions, deployments
+and services remain outside the release unless explicitly included in the source register. Table 3 summarizes
+each branch’s measurement role and scope; Appendix A records implementation identiﬁers, source bindings
+and exclusions.
+Chain roles are distinguished by function. A veriﬁcation or adjudication chain records the relevant accep-
+tance or dispute-resolution process; an economic settlement chain records the associated payment or applied
+balance change; and a delivery chain records provision of the oracle output to a consuming application. A
+single network may serve several roles. In the linked UMA disputes studied here, Polygon hosts the OOv2
+lifecycle and observed local settlement ﬂows, whereas Ethereum hosts VotingV2 adjudication. Linking these
+records establishes a relationship between protocol objects and does not, by itself, establish a cross-chain to-
+ken transfer. The eight branches consequently do not denote eight independent blockchains.
+The common upper observation cutoff is 30 June 2026 at 23:59:59 UTC. Table-level temporal support is
+documented separately from protocol history in Appendix B. The temporal register identiﬁes deployment-
+bound scans, implementation changes, retained-history limits and cohort restrictions without treating a ﬁrst
+event as a deployment date. Lower boundaries vary with deployment, implementation changes, historical
+source availability and collection limits. Project founding dates, production-service launches, deployment
+boundaries, scanned intervals and ﬁrst observed events are distinct quantities. An interval between the ﬁrst
+and last retained events does not establish uninterrupted observation. Transaction histories and retained
+state panels may also have different temporal support, as in the Pyth OIS branch. Historical interpretation
+requires an implementation applicable to the observation; unresolved source bindings and acquisition gaps re-
+main limitations. Current protocol documentation supplies architectural context [22–29], while Appendix A
+distinguishes that context from retained historical evidence.
+3.2 Source acquisition and native decoding
+For each branch, a source register identiﬁes the network, contract or program, implementation, collection
+interval and retrieval interface. EVM-compatible branches use historical logs, supplemented where necessary
+by transactions, receipts, block metadata and token-transfer evidence. ERC-20 transfers are retained when
+they help separate principal, fees and rewards from a settlement event. Tellor instead combines tellor-1
+module state, ABCI events and block results; multiple reports within one block produce a one-to-many
+expansion into 82,866,640 report observations. Pyth evidence is located by Solana transaction signatures
+5
+
+Scope &
+Mechanism Design
+Web/Docs/Whitepaper
+Github/Source Code
+Forum/Governance
+Explorers/RPC Scan
+Research/Prior Work
+1
+Program Registry
+2
+Protocol Catalog
+Chain/Environment
+Deployment Discovery
+Address & Creator Map
+Addr1
+CreatorX
+Interface &
+Semantic Modeling
+3
+Contract/Program
+Code & ABI
+1  event Reward()
+2  event Slash()
+Semantic Extraction
+Reward
+Slash
+Stake
+Dispute
+Settlement
+Subject(actor)
+Asset(token)
+Amount(raw)
+Status(designed/
+Applied/paid)
+Evidence Type
+Raw Data
+Acquisition
+4
+Multi-Chain Collectors
+Ethereum
+(Reth Archive)
+Polygon
+(RPC Archive)
+Flare
+(RPC+Files)
+Tellor Layer
+(Cosmos RPC)
+Pythnet/Solana
+(Solana RPC)
+Data Types
+Logs / Events
+Transactions
+Traces(call / internal)
+State / Storage
+Token Transfers
+Snapshots / Accounts
+Contract &
+Implementation record
+ABI
+Scope
+Economic schema
+Protocol-Specific
+Construction
+5
+UMA (optimistic)
+Requests->Proposals
+Disputes->Settlements
+DVM votes->payouts
+Chainlink (Staking DON)
+Feeds / Phases
+Stakes / Rewards
+Flare FTSOv2 (Epoch)
+Reward Epochs
+Provider Pass / Fail
+Tellor (Dispute Layer)
+Reports -> Disputes
+Votes -> Outcomes
+Tip / Fee / Rewards
+Pyth OIS (Publisher)
+Pools
+Reward Factors
+Slash Events
+Normalization
+6
+Core Entities
+Report
+Request
+Stake
+Reward
+Dispute
+Settlement
+Slash / Forfeit
+Actor / Account
+Asset / Token
+Epoch / Window
+Linkage
+Cross-chain IDs
+Same Outcome
+Contract Version
+Economic 
+Evidence
+7
+Evidence Classification
+REWARD
+SLASH
+NOT REALIZED
+MOVEMENT
+QC Checks
+Event <- Transfer
+Duplicate Identifier
+Merkle Root Verify
+Amount Check
+Balance Change
+Research Dataset
+8
+State Snapshots
+Files / Epochs
+Economic Dataset
+Normalized Events
+Realized Rewards/Slashes
+Non-realized Entitlements
+Actor / Asset Tables
+Metadata & Docs
+Data Dictionary
+Collection Manifest
+Coverage Report
+QC Report
+Retained evidence
+Native logs
+Observed reward
+Applied loss
+Configured / claimable
+Principal movement
+Cross-Cutting
+Challenges
+Heterogeneous
+Architectures
+Inconsistent
+interfaces
+Upgrade / Version
+Complexity
+Partial / Missing
+Observability
+Cross-chain
+Identity
+Event Economic
+Outcomes
+Regulatory
+Uncertainty
+Reorg / finality
+Double Counting
+Risk
+Figure 2. Conceptual construction and validation of the oracle data resource. Read stages 1–4 across the upper row,
+then stages 5–8 across the lower row. Sources and implementations are registered before native semantics and
+acquisition are deﬁned. Supported lifecycles, identities and economic states are then reconstructed into analytical
+records and documentation. The lower strip identiﬁes cross-cutting measurement challenges. Depicted transitions and
+checks apply only where retained evidence supports them; protocol decisions do not establish independent external
+truth.
+6
+
+Table 3. Measurement roles, implementation scope and historical boundaries of the eight oracle branches. Coverage
+refers to registered sources, not all services of a protocol. The upper cutoff is 30 June 2026, 23:59:59 UTC.
+Appendix A separates deployment, scanning and retained-event boundaries.
+Branch
+Implementation and
+chain
+Registered coverage
+Measurement role and main exclusion
+UMA
+Ethereum VotingV2;
+Polygon OOv2 and
+adapters
+DVM blocks
+16,697,232–25,433,938;
+Polygon contract-speciﬁc
+starts through 89,439,336
+Proposals, disputes, adjudication and
+settlement. Other UMA versions and
+deployments are outside the registered
+scope.
+Chainlink
+Ethereum Staking v0.2;
+ETH/USD proxy and
+feed phases
+Staking from block
+18,572,190; registered
+sources through 25,433,938
+Staking economics and selected feed
+updates. Other feeds, networks and
+services are excluded.
+Tellor
+tellor-1 modules,
+ABCI events and block
+results
+Heights 1–19,890,860; ﬁrst
+report at height 317
+Reports, disputes, votes, payments and
+restrictions. Legacy Ethereum Tellor is
+excluded.
+Flare
+FTSOv2
+Flare RewardManager,
+VoterRegistry and reward
+artifacts
+Closed reward epochs
+228–410; cutoff block
+64,054,789
+Entitlements, provider conditions and
+claims. Table coverage differs; aggregate
+claims may resist attribution.
+Pyth
+Solana OIS transactions
+and retained
+Pythnet-derived inputs
+Transaction archive from 11
+September 2024; 49 retained
+closed state epochs
+Publisher–epoch states, staking and
+transfers. State coverage is shorter; other
+products and delivery networks are
+excluded.
+Chronicle
+Registered Ethereum
+validator and challenge
+contracts
+Registered log scan
+0–25,433,938; deployment
+dates are separate
+Reports, challenges and challenge
+rewards. Rewards are not a complete
+publisher-compensation ledger.
+RedStone
+Push
+Registered Ethereum
+Push adapters and feeds
+Registered log scan
+0–25,433,938; deployment
+dates are separate
+Signed publication and Push updates.
+Other delivery modes and full AVS
+economics are excluded.
+DIA
+Registered Lasernet
+staking contracts
+Deployment block 3,874,186
+through cutoff 31,302,665
+Withdrawals, returned principal and
+rewards. This is not a complete
+price-production or delivery audit.
+and outer or inner instruction positions. Flare combines on-chain records with ofﬁcial reward-calculation
+artifacts, preserving the distinction between entitlement and claim.
+Source qualiﬁcation applies the registered version, cutoff and deterministic decoding conditions. For
+Polygon UMA, 626,578 raw records include ﬁve unknown event topics that remain in the raw collection
+but are excluded from the recognized decoded event families. For Chainlink staking, 175,015 collected
+logs yield 174,890 decoded events and 125 unclassiﬁed records. These classiﬁcations describe decoding
+outcomes; they are not recoded as absent economic behavior. Native tables retain the strongest available
+source keys and monetary amounts in integer units of the underlying asset, with asset identiﬁers and decimal
+precision recorded separately. This preserves both the identity of an observation and the arithmetic needed
+to interpret it.
+3.3 Lifecycle reconstruction and cross-chain linkage
+Decoded records are joined where the native mechanism identiﬁes a relationship between successive states.
+UMA requests link proposals, disputes, DVM adjudication and settlement through reconstructed request
+identiﬁers. For requester r, identiﬁer i, timestamp t and ancillary data a, the identiﬁer is
+q = Keccak256(pack(r,i,t,a)),
+(1)
+where pack denotes the protocol’s packed ABI encoding. The reconstructed OOV2 panel contains 42,676
+request rounds: 41,826 settle by the cutoff and 850 remain open. Other mechanisms require different objects.
+For example, 46,723 retained Chainlink ETH/USD answer updates deﬁne 46,722 adjacent service windows,
+7
+
+and 13 Tellor jail events are paired with 13 release events to reconstruct reporter restrictions.
+Cross-chain identity is established through version-aware ancillary-data transformations and native re-
+quest construction. A UMA link receives Grade A only when the registered bridge or adapter rule identiﬁes
+one unique DVM request. Of 835 attempted links, 832 meet this deterministic deﬁnition and three remain un-
+matched. The grade describes the identity of a reconstructed object; it does not certify the factual correctness
+of the oracle’s decision. Retaining unmatched and unﬁnished objects prevents the apparent completeness
+of an analytical table from replacing evidence about the underlying process. The worked case links request,
+proposal, dispute, DVM resolution and Polygon settlement. Each endpoint is located by its chain, transaction
+and log position. The retained evidence supports the object linkage and elapsed intervals; intermediate relay
+operations are represented separately where their transactions are not retained.
+3.4 Economic states and settlement accounting
+An economic observation is classiﬁed by its state and evidentiary basis. Table 4 distinguishes conﬁgured
+incentives, accrued rewards or penalties, claimable entitlements, realized payments, applied losses, principal,
+refunds and fees. The distinctions are protocol-speciﬁc. UMA challenge status requires native challenge
+evidence, and settlement is not inferred merely from a transfer-like event. Tellor SUPPORT outcomes refer
+to acceptance of the challenge and rejection of the challenged report. Negative DVM accruals remain distinct
+from an observed reduction in staked principal. Pyth reward rates are not token reward amounts, and Flare
+participation restrictions are not automatically monetary losses.
+UMA settlement provides a concrete accounting example. Let B be the effective bond, F the ﬁnal fee
+and R the conﬁgured reward, all measured in the smallest integer unit of the same asset. Posted principal is
+P = B+F. For disputed requests, the identiﬁable winner component is W = B−⌊B/2⌋, while the protocol
+component is Fprotocol = ⌊B/2⌋+F. Expected gross payouts follow the registered contract and adapter rules:
+Gundisputed = B+F +R,
+Gdisputed = B+F +W +Rsettlement.
+(2)
+Here Rsettlement denotes the reward component attributable to the settlement under the applicable adapter; a
+refund or rollover is not automatically participant income. Reconciliation uses exact integer arithmetic and
+checks ∆payout = Gactual −Gexpected against zero.
+In the worked settlement described in Section 6.6, expressed in human-readable token units, a gross
+payout of 1,000 comprises 750 units of returned principal and 250 units of token gain before the additional
+costs needed to calculate net proﬁt. A separately conﬁgured reward of ﬁve units follows its observed refund or
+rollover treatment. This example illustrates why transfer, principal recovery, token gain and net proﬁt require
+separate measures. Funds-ﬂow checks apply the same logic where evidence permits: UMA settlements are
+compared with token movements, Chainlink distinguishes transfer-requiring events from accounting-only
+adjustments, and Flare claim reconciliation does not invent components that an aggregate claim fails to
+expose.
+3.5 Harmonization, missingness and documentation
+Supported native concepts are projected into common ﬁelds for protocol, unit, role, actor or beneﬁciary,
+lifecycle identity, time, asset, economic stage, source and evidence status. The common accountability layer
+contains 105,588,120 typed observations. The economic-semantic layer contains 22,723,389 components,
+and its stricter realized representation contains 19,275,854 components that satisfy branch-speciﬁc payment
+or applied-state criteria. These layers overlap. Their purpose is to offer complementary views of the same
+processes, not three independent populations.
+Timestamp availability is also distinct from observation coverage. A valid clock on every retained row
+does not establish that every eligible event was collected. Conversely, a missing common-layer clock does
+not imply that the source event was absent. Epoch-only and snapshot-only records retain their appropriate
+clocks while their canonical event time remains null. Missingness is interpreted as part of the measurement.
+An absent value may indicate an inapplicable mechanism, an unexposed quantity, incomplete collection,
+a decoding problem or an unﬁnished lifecycle; it is not automatically an observed zero. Where supported,
+8
+
+Table 4. Economic states distinguished in reconstruction. Each classiﬁcation requires the evidence speciﬁed by the
+originating protocol. A lifecycle need not expose every state.
+State
+Economic meaning
+Interpretation rule
+Conﬁgured incentive
+Reward speciﬁed in protocol
+parameters
+A design parameter; not automatically participant
+income.
+Accrued reward or
+penalty
+Calculated entitlement or liability
+Distinct from subsequent payment or application;
+counting both may duplicate one change.
+Claimable entitlement
+Amount eligible for a claim
+An unclaimed entitlement is not a zero payment or
+a realized transfer.
+Paid reward
+Observed transfer or realized protocol
+credit
+Realized only when qualifying cash-ﬂow or state
+evidence is present.
+Applied slash
+Reduction applied to a participant’s
+balance or principal
+Requires observed application, beyond a penalty
+calculation or accrual.
+Principal deposit or
+return
+Capital posted and subsequently
+recovered
+Kept separate from rewards and fees; returned
+capital is not proﬁt.
+Refund or rollover
+Incentive returned or carried to another
+state
+Not attributed to the current participant without
+supporting evidence.
+Protocol fee
+Amount charged or retained under
+protocol rules
+Separated from participant reward and principal.
+schemas distinguish complete, partial, veriﬁed-zero, unknown, unavailable and not-applicable coverage, with
+right censoring represented separately. Deduplication uses native source keys rather than equality of entire
+rows. Intentional multiplicity remains when one source object appears in different representations or one
+settlement produces several economic components. Table 5 summarizes the operations that establish these
+relationships.
+Documentation records native identiﬁers, source registers, input inventories, schemas, variable deﬁnitions
+and validation rules. Quality controls assess selected key relationships, lifecycle orderings, cutoff conditions,
+economic identities and deterministic links. The accompanying artifacts identify the tested populations and
+the evidence available for reconstruction. Their traceability supports inspection of speciﬁc mappings, while
+leaving incomplete historical acquisition and unresolved source ancestry visible.
+3.6 Temporal harmonization
+Native timestamps are expressed in UTC while retaining their original values and precision. Each time ﬁeld is
+documented by its source, unit and role in the protocol. The ﬁeld event_time_utc identiﬁes when an event
+was recorded or executed. Request-reference timestamps, oracle payload times and scheduled deadlines
+are represented separately because they can refer to a different point in the lifecycle. Records sharing a
+timestamp retain their native block, transaction, log or instruction order.
+Unix-second and millisecond values are converted without rounding. Textual timestamps are interpreted
+using their recorded timezone; timezone-naive values are treated as UTC where this convention is established
+by the source. Missing EVM event times are recovered only when another retained record identiﬁes the times-
+tamp of the same block on the same chain. Conﬂicting matches are rejected and unmatched observations
+remain undated. The provenance of recovered timestamps is recorded with the data.
+Epoch observations retain their start and end times as half-open intervals [ae,be). Payment, snapshot and
+retrieval times describe separate events and are stored independently. In particular, an epoch-end label does
+not establish when a reward became claimable or was paid. Historical state recovered from a later snapshot
+also requires care when assessing information available at a past decision time.
+Daily windows begin at midnight UTC, and weekly windows run from Monday to the following Monday.
+Epoch totals remain attached to their native support intervals. Daily aggregation therefore requires an event-
+level measure or an explicit allocation rule, together with evidence that the relevant period was observed.
+Appendix B describes the native clocks and temporal limitations of each branch.
+9
+
+Table 5. Processing operations and their outputs. Rows describe transformations rather than statistically independent
+populations: operations may expand, aggregate, join or decompose their inputs.
+Operation
+Input and rule
+Output
+Source registration
+Network, contract or program, historical
+version, interval and interface
+Branch-speciﬁc collection speciﬁcation.
+Acquisition and
+qualiﬁcation
+Logs, transactions, receipts, block or module
+state, signatures and protocol artifacts; cutoff
+and decoding rules
+Qualiﬁed source records, with unresolved
+decoding outcomes retained.
+Native decoding
+Protocol event and state deﬁnitions; integer
+amounts and native keys
+Protocol-native tables.
+Lifecycle reconstruction
+Request, dispute, claim, epoch or other native
+object relationships
+Supported lifecycle objects and open
+cases.
+Cross-chain linkage
+Version-speciﬁc identiﬁer and ancillary-data
+transformations
+Deterministic matches, link grades and
+unmatched cases.
+Economic-state
+mapping
+Native lifecycle and accounting evidence
+Conﬁgured, accrued, claimable, paid,
+applied, returned, refunded and fee
+components.
+Funds-ﬂow
+reconciliation
+Expected quantities against observed
+transfers or applied state changes
+Realization ﬂags and accounting
+differences.
+Harmonization
+Shared concepts with native units and source
+links retained
+105,588,120 typed accountability
+observations.
+Realization ﬁltering
+Protocol-speciﬁc evidence conditions applied
+to 22,723,389 economic components
+19,275,854 qualifying realized
+components.
+Documentation
+Dictionaries, schemas, coverage information,
+source registers and validation results
+Interpretable data and reconstruction
+materials.
+3.7 UMA prediction-task construction
+The prediction task asks whether UMA’s eventual resolution differs from the proposed price. Each observa-
+tion is one request, and the decision time T0 is the proposal event. For proposed price pi and resolved price
+zi, the label is Yi = 1{zi ̸= pi}. Native values are compared as integers. Indeterminate and early-expiration
+values retain their own classes; neither is recoded as a binary answer.
+The cohort comprises challenged requests with a unique deterministic DVM link, consistent resolution
+values and a reconciled settlement transfer. These conditions are evaluated retrospectively. The task therefore
+concerns adjudication among selected disputes, rather than the probability that an arbitrary new request will
+be challenged. Challenge, resolution and settlement ﬁelds are retained as outcome evidence and excluded
+from the feature set.
+The sixteen candidate features describe incentive amounts, timing, ancillary-data length, participant his-
+tory and adapter identity. Participant histories are calculated separately for proposers and requesters, using
+only requests that settled before the current proposal in native execution order. Rates are missing when no
+prior settlement is retained. Proposal latency begins at the request event, while liveness ends at the proposal’s
+expiry. Parameter-derived features carry a separate availability status because a value reconstructed from a
+historical adapter requires evidence that the relevant parameter was available at T0. Appendix F gives the
+complete deﬁnitions and information boundary.
+3.8 Daily economic measurements
+Daily observations group supported events within midnight-to-midnight UTC intervals. Each measure re-
+tains its branch, implementation, actor role, asset, observation unit and economic stage. The feasibility
+assessment distinguishes derivable quantities from those requiring additional acquisition, quantities inappli-
+cable to the sampled mechanism, and unresolved cases. Appendix D describes the aggregation rules and
+their denominators.
+Payments enter the daily product only under the relevant realization rule. UMA rewards are separated
+10
+
+from returned principal and forfeited bonds; Tellor withdrawals into stake and Pyth transfers to stake custody
+retain those destinations. Flare fee burns are excluded from participant payments. Chainlink claims require
+a matched transfer and an execution timestamp. An unobserved day is left unﬁlled, and totals over retained
+records are not presented as complete protocol totals.
+Participation measures count addresses within a named role. Reward concentration is calculated among
+recipients with positive observed payments, separately by asset and economic stage. For completed UMA
+requests, delay runs from the request event to settlement, and committed-capital exposure is allocated across
+days by the duration of each funded position. These completed-position measures do not represent unre-
+solved capital obligations. Flare signing weights and thresholds are retained on their native epoch intervals;
+they are not interpreted as daily payments or token collateral.
+4 Data records
+The resource comprises ten logical products: eight protocol branches, the UMA prediction task and the daily
+measurement product. A logical product can contain several linked physical tables. Protocol-native tables,
+reconstructed lifecycles, common accountability ﬁelds and economic components serve different purposes
+within this architecture. Researchers can begin with a common representation for comparison, then return
+to native tables when the question depends on a particular mechanism, timing convention or accounting rule.
+Table 6 describes the principal components; the catalogue and dictionaries supply the detailed paths, types
+and deﬁnitions needed for reuse.
+Table 6. Organization of the data resource. Physical tables can contribute to more than one representation; their row
+counts are not additive.
+Component
+Form
+Contents
+Eight native branches
+Parquet and retained
+source artifacts
+Requests, reports, votes, claims, transfers, policies and
+state observations.
+Common representations
+Typed Parquet
+projections
+Shared accountability ﬁelds and economic components
+with native source references.
+Temporal annotations
+UTC ﬁelds and
+dictionaries
+Event times, reference clocks, epochs, snapshots and
+missing-time status.
+UMA prediction task
+Request and availability
+tables
+Protocol-resolution label, sixteen candidate features and
+retrospective selection rules.
+Daily measurements
+Daily and epoch
+companion tables
+Typed counts and amounts, recipient aggregates,
+completed-request delays, capital exposure and policy
+weights.
+Supporting evidence
+Ledger and case tables
+Old/new semantic values, source locators, case intervals
+and cashﬂows.
+Metadata and reproduction
+Catalogues, dictionaries
+and code
+Ten logical products, physical recordsets, ﬁngerprints and
+executable examples.
+4.1 Native records and table relationships
+Native tables preserve the object meaningful to the originating protocol. The UMA OOV2 panel contains
+42,676 request lifecycles, while the Tellor micro-report table contains 82,866,640 reports. Other examples
+include 18,468,735 Flare claim events and 518,560 decoded Pyth OIS instructions. These quantities count
+requests, reports, claims and instructions, respectively. A comparison that treats them as equivalent oracle
+events would confuse differences in data granularity with differences in institutional activity. Within a branch,
+related evidence can also be stored separately: UMA request-level lifecycle and payout ﬁelds link to token-
+ﬂow records rather than repeating each transfer inside the request table.
+Identiﬁers follow the strongest available native structure. EVM logs use chain, transaction and log po-
+sition; Tellor relies on module-speciﬁc report metadata; Solana evidence uses signatures and instruction
+positions. Table 7 summarizes these keys and their relationships. Checks on the named UMA, Chainlink
+11
+
+and cross-chain linkage tables assess selected primary-key and foreign-key constraints. A one-to-many re-
+lationship can represent several events within a lifecycle or several components within one settlement. It is
+therefore a relationship to interpret, rather than a duplication to remove automatically.
+Table 7. Native units, identiﬁer construction and logical relationships. One-to-many relationships describe scientiﬁc
+objects, not mandatory duplication in every physical table. Native ordering is authoritative; physical row order is not.
+Unit
+Identiﬁer
+Relationship and interpretation
+EVM log
+Chain, transaction hash and log index
+A transaction can contain several logs. Order by block
+and log position; retain receipt and block evidence.
+UMA OOV2 request
+oo_request_id; requester,
+identiﬁer, timestamp and ancillary
+data
+One request links several lifecycle events and
+transfers. Request, proposal, dispute and settlement
+times remain distinct.
+UMA DVM request
+or voter record
+dvm_request_id; voter and
+source-event location for actor-level
+records
+One request can link many voters and adjustments.
+Accrual and applied stake change are different
+observations.
+Tellor report
+query_id, reporter and meta_id;
+block-position namespace for the
+common key
+Multiple reports can contribute to an aggregate.
+Native module metadata replaces a universal EVM
+transaction/log key.
+Flare entitlement or
+claim
+Epoch, beneﬁciary and claim type;
+transaction/log position for a claim
+Entitlements and claims are not universally
+one-to-one. Epoch end differs from claim time.
+Pyth instruction or
+transfer
+Signature and
+outer_instruction_index; inner
+position for token transfers
+One transaction can contain several instructions and
+transfers. Reconstruct time from block time and
+instruction positions.
+Common
+observation
+accountability_event_id,
+protocol namespace, native_table
+and accountability_unit_id
+Native-to-common mapping can be one-to-many. The
+retained native unit deﬁnes the statistical object.
+Economic
+component
+evidence_id and originating
+table/event identity
+One settlement can yield several components.
+do_not_sum_group identiﬁes related components at
+risk of double counting.
+4.2 Common accountability and economic representations
+The common accountability table contains 105,588,120 rows and 50 columns. Each row is a typed projection
+of a native observation, retaining protocol identity, unit, roles, source references and evidence status. The
+population includes requests, individual reports, disputes, epochs, staking observations and service windows.
+Protocol, native table, unit type and unit identity must consequently accompany any cross-protocol aggrega-
+tion. The representation provides shared analytical vocabulary while preserving the information needed to
+determine whether two rows are comparable.
+Economic components are represented in a separate 22,723,389-row, 28-column table. Its ﬁelds record
+the mechanism, stage, actor, counterparty, amount, asset, source object, evidence class and validation status.
+A stricter 19,275,854-row representation uses the same physical schema but requires qualifying evidence of
+payment or an applied economic change. It overlaps the broader component table and is not an independent
+sample. Stage, actor, asset and the documented grouping of related components must be considered together:
+adding an accrued penalty to a later applied slash can count the same economic process twice.
+4.3 Dictionaries, types and interpretive states
+Documentation operates at two levels. The conceptual dictionary deﬁnes 33 economic variables: 28 core
+measures and ﬁve supporting variables. The core measures comprise four participation or concentration
+variables, nine incentive or friction variables, and ﬁfteen outcome or accountability variables. Supporting
+entries identify the episode, decision time, challenge deadline, cross-chain link grade and provenance. Their
+deﬁnitions specify units, derivation, decision-time availability, evidence class, missingness and validation
+rules. Separately, the physical catalogue describes 1,789 ﬁeld entries across 95 Parquet tables. A conceptual
+12
+
+variable and a physical column are different documentation objects; their counts are not alternative estimates
+of dataset dimensionality.
+Table 8 summarizes selected ﬁeld families. Raw monetary amounts are stored as integer-valued strings
+and interpreted with their asset and decimal ﬁelds, avoiding loss from ﬂoating-point conversion. The com-
+mon representation includes integer Unix-second labels. Separate UTC annotations preserve native times-
+tamp precision and distinguish event times from epoch boundaries and snapshots. JSON schemas deﬁne re-
+quired ﬁelds and controlled values, including the 85-ﬁeld cross-chain observation schema. Where supported,
+coverage distinguishes complete, partial, veriﬁed-zero, unknown, unavailable and not-applicable conditions;
+right censoring separately identiﬁes unﬁnished lifecycles. Schema checks establish consistency with these
+tested deﬁnitions, rather than proving every historical interpretation correct.
+Table 8. Selected ﬁeld families in the common and economic representations. Field names illustrate the
+machine-readable schema; the deposited dictionaries provide complete deﬁnitions. Raw monetary values require the
+corresponding asset and decimal precision.
+Field family
+Representative ﬁelds
+Type and analytical meaning
+Identity and
+mechanism
+oracle_network, mechanism_family,
+native_table, security_chain,
+delivery_chain
+Strings identifying the mechanism, native table
+and chain context.
+Observation unit
+accountability_unit_type,
+accountability_unit_id,
+event_granularity
+Strings or controlled values deﬁning what a row
+represents.
+Time
+event_time_unix,
+reward_accrual_time_unix,
+reward_payment_time_unix
+Integer-second labels in the common
+representation; separate UTC annotations
+distinguish event, epoch, payment and snapshot
+times (Appendix B).
+Actors and roles
+actor, actor_role, counterparty,
+counterparty_role
+Native addresses or identiﬁers and interpreted
+roles; not natural-person identities.
+Reward
+reward_class, reward_amount_raw,
+reward_asset,
+reward_asset_decimals
+Integer string, asset identity and decimal
+precision. Economic stage determines
+interpretation.
+Penalty and forfeiture
+penalty_accrued_raw,
+principal_slashed_raw,
+bond_forfeited_raw,
+fee_forfeited_raw,
+reward_forfeited_raw
+Integer strings with asset metadata; distinguishes
+accrual, applied principal loss and other
+forfeitures.
+Principal
+principal_locked_raw,
+principal_returned_raw,
+principal_asset
+Integer strings and asset metadata; separates
+exposed or recovered capital from gain.
+Outcome basis
+truth_basis, outcome_status,
+external_truth_available
+Strings and booleans describing the basis for an
+outcome; protocol resolution is not external
+ground truth.
+Source and rule
+source_event, source_tx,
+source_block, source_contract,
+rule_id, parameter_version
+Strings and integers linking observations to
+native evidence and the interpretation rule.
+Realization
+economic_kind,
+economic_evidence_class,
+realization_status, amount_raw,
+signed_amount_raw,
+cashflow_verified,
+state_delta_verified
+Controlled values, integer strings and booleans
+recording the economic stage and evidence for
+realization.
+Most curated tables use Zstandard-compressed Apache Parquet; tabular and structured metadata use UTF-
+8 CSV or JSON. Retained source packages use JSONL or compressed JSONL according to the originating
+13
+
+interface. The earlier deposit contains a 95-table catalogue and supporting application artifacts. The revised
+product catalogue distinguishes these retained representations from the new task, daily measurements and ev-
+idence ledgers. Source registers, input inventories and validation reports distinguish retained reconstruction
+inputs from derived outputs and from original acquisition evidence. This organization makes the resource
+usable at several levels of abstraction while preserving the boundaries between data access, computational
+reconstruction and scientiﬁc interpretation.
+4.4 Temporal metadata
+Temporal annotations form a separate data layer linked to the native records. They retain the original times-
+tamps and identiﬁers and add UTC ﬁelds for the clocks supported by each source. Their deﬁnitions specify
+the observation unit, temporal meaning, precision and treatment of missing values. Because the annotations
+and the original common representation are separately versioned, analyses should identify which temporal
+representation they use.
+The temporal metadata describe the available interval and missing timestamps for each table. They also
+distinguish execution times, epoch support, scheduled deadlines and later snapshots. This information allows
+users to select comparable observation periods without treating all timestamped records as instantaneous
+events.
+4.5 Derived products and supporting evidence
+The UMA task contains one row per eligible request, a sixteen-ﬁeld feature dictionary and a feature-level
+availability record. The daily product contains typed measurements, recipient-level payment aggregates,
+completion delays and committed-capital exposure, together with a separate historical Flare signing-policy
+table. The latter retains epoch support because signing weights are deﬁned by the policy interval.
+The correction ledger records old and revised ﬁeld values for identiﬁable native objects. The cross-chain
+case retains the event register, elapsed intervals, cashﬂow components and unresolved evidence links. These
+supporting tables document how the measurements were obtained; their rows are not additional independent
+oracle observations. Appendix C describes the ten products and their relationships.
+5 Data overview
+Figure 3 illustrates the temporal support and units of selected measurements. Daily participation and pay-
+ments are available for different retained populations, while UMA delay describes completed requests and
+Flare concentration describes epoch-speciﬁc signing policies. These quantities are interpreted within their
+branch, role and observation window. Open requests remain in the lifecycle records, days without eligi-
+ble retained events remain unﬁlled, and policy weights are kept separate from token amounts. The broader
+feasibility assessment in Appendix D identiﬁes which comparisons require additional evidence.
+6 Technical validation
+Validation assesses whether speciﬁed reconstructions satisfy structural, economic and computational require-
+ments. Its strength depends on the tested population and acceptance rule. File readability, a unique identiﬁer,
+a balanced settlement identity and successful replay establish different properties; none alone demonstrates
+complete historical acquisition or independent oracle truth. We therefore distinguish the release’s docu-
+mented checks, direct checks on retained tables, historical protocol-level validation records and bounded
+computational replay.
+6.1 Structural consistency and economic semantics
+Structural validation examines source identities, native keys, relationships between tables and lifecycle con-
+sistency. Request-level records and voter-level accounting entries are evaluated separately because they rep-
+resent different observation units. Cross-chain checks additionally assess whether the linked records identify
+the same protocol object.
+Economic classiﬁcation is checked against the historical implementation, the recorded execution and
+the ﬁnancial quantity being measured. For each correction, an object-level record preserves the previous
+14
+
+Jul 2025
+Jan 2026
+Jul 2026
+5
+10
+15
+20
+Active addresses / day
+(a) Tellor reporter participation
+Jan 2025
+Jul 2025
+Jan 2026
+Jul 2026
+0
+10
+20
+FLR paid / day (millions)
+(b) Flare realized claims
+Jan 2023
+Jan 2024
+Jan 2025
+Jan 2026
+10
+1
+10
+2
+10
+3
+10
+4
+Request to settlement (h)
+(c) UMA completed-request delay
+90th percentile
+Median
+Jan 2025
+Jul 2025
+Jan 2026
+Jul 2026
+30
+40
+50
+60
+Effective signing addresses
+(d) Flare signing-weight concentration
+Figure 3. Selected measurements from the daily product and its epoch-level companion. (a) Distinct Tellor reporter
+addresses with retained reports on each observed day. (b) Flare claims in FLR, excluding fee burns. (c) Median and
+90th-percentile request-to-settlement delay among ﬂow-reconciled UMA USDC.e requests completed on that day; the
+vertical axis is logarithmic. (d) Effective signing-address count, 1/∑i w2
+i , using normalized Flare signing-policy
+weights within each retained epoch. Address counts do not identify independent entities.
+value, the revised value, the source locator and the applied rule. Source binding is strongest for the retained
+VotingV2 implementation; the OOv2 and Tellor bindings remain qualiﬁed, as described in Appendix E.
+Economic validation also led to corrections in the classiﬁcation of existing observations. Table 9 reports
+rule violations before and after correction for UMA challenge and settlement ﬁelds, Tellor dispute outcomes
+and DVM penalty accruals. The UMA corrections identify disputed winner-reward components totaling
+201,500 USDC.e and 1,250 USDC, reported separately by asset. These amounts revise the measurement of
+existing settlements; they do not describe newly generated payments. For Tellor, three of the thirteen disputes
+support the challenge and have positive applied slashes, while the ten against-challenge outcomes have no
+positive applied slash under the recorded checks. This follows the protocol’s interpretation of SUPPORT as
+supporting the disputer.
+In the DVM accounting population, 947,128 negative accrual records had previously been treated as
+applied principal losses without evidence of a corresponding reduction. They are now represented as penalty
+accruals. The correction preserves a liability-related accounting state while avoiding an unsupported claim of
+realized loss. More broadly, the results demonstrate why economic classiﬁcation requires the mechanism’s
+state-transition rules: a syntactically valid record can still misstate the ﬁnancial event if its observation stage
+is misidentiﬁed.
+6.2 Accounting reconciliation and object identity
+All 41,826 settled UMA requests satisfy the recorded integer payout identity,
+∆payout = Gactual −Gexpected = 0,
+(3)
+with the associated transfer-matching checks passing under the applicable contract and adapter rules. Chain-
+link checks identify 51,372 qualiﬁed staking and reward records: 50,772 require transfers and match the
+recorded token movements, while 600 are accounting-only adjustments. The historical Flare report docu-
+ments Merkle-root and claim reconciliation for 183 closed reward epochs. Those retained results are distin-
+15
+
+Table 9. Economic-semantic checks and the evidence required for each correction. Counts concern the stated native
+population and may overlap across rules.
+Rule
+Evidence and interpretation
+Population
+Before / after
+UMA challenge
+Dispute event and nonzero disputer; a proposal alone is
+insufﬁcient.
+42,676
+40,992 / 0
+UMA settlement
+Settled lifecycle and matched token movement. Open requests
+remain unsettled.
+42,676
+850 / 0
+UMA winner gain
+Contract payout rule and settlement transfer; returned principal
+is separate.
+42,676
+834 / 0
+Tellor outcome
+SUPPORT accepts the challenge and rejects the report.
+13
+13 / 0
+Tellor applied loss
+Final dispute outcome; initiation escrow is distinct from applied
+loss.
+13
+10 / 0
+DVM accrual
+Signed request accrual; an applied stake change requires
+separate evidence.
+2,663,684
+947,128 / 0
+0
+25
+50
+75
+100
+Rule violations within each tested population (%)
+UMA challenge status
+UMA settlement status
+UMA winner component
+Tellor outcome meaning
+Tellor applied loss
+DVM accrual classification
+96.1
+2.0
+2.0
+100.0
+76.9
+35.6
+After correction
+Figure 4. Economic-semantic corrections within six separately deﬁned populations. Bars show the proportion
+violating each rule before correction; orange markers show the corresponding proportion after applying the rule.
+Populations and rule evidence are speciﬁed in Table 9. A request may be affected by more than one rule.
+guished from a fresh rerun of the complete chain-level validation.
+Identity checks provide a complementary form of evidence. Of 835 UMA cross-chain link attempts,
+832 satisfy the deterministic Grade-A rule and three remain unmatched. The Pyth reconstruction covers 49
+retained closed epochs; replay of the retained inputs checks the associated reward-state calculation within
+that window. These outcomes support speciﬁc accounting and reconstruction relationships. They do not
+establish universal source completeness, a fully veriﬁed ancestry chain for every derived row, or agreement
+between protocol decisions and external facts.
+6.3 Computational reproducibility
+Reconstruction was evaluated using archived inputs and a worked UMA case. The case links native events
+to a request lifecycle and reconciles the resulting economic records with the associated token movements.
+Comparisons of repeated archived executions assess whether the same inputs and code produce consistent
+scientiﬁc outputs.
+These evaluations concern reconstruction from retained evidence. Reacquiring historical data also de-
+pends on archive access, interface behaviour and the original collection boundaries. The acquisition records
+document those conditions separately from the computational checks.
+6.4 Temporal consistency
+Temporal validation compares converted timestamps with the native values and checks that the original obser-
+vations and their ordering are preserved. Millisecond timestamps retain their fractional-second components
+16
+
+after conversion. Record selection over the tested daily and weekly windows agrees between the native and
+UTC representations. Epoch boundaries are checked against the retained start and end ﬁelds, including the
+assignment of observations at interval boundaries.
+Missing timestamps are assessed separately from event absence. Exact block matching improves temporal
+availability for some EVM records, while unresolved observations retain a missing-time status. Appendix B
+summarizes these limitations and the distinction between timestamp availability and historical coverage.
+6.5 Daily aggregation and prediction-task checks
+Daily validation checks that grouped event counts and integer monetary totals agree with their eligible native
+inputs. Capital exposure is checked by comparing the sum of daily interval overlaps with the corresponding
+position-level duration. A valid timestamp is required for assignment to a day; eligible observations without
+one remain in the source population and in the missing-time accounting.
+The prediction-task checks examine request uniqueness, cohort membership, target construction and fea-
+ture timing. Role-history counts and rates are compared with a separate direct selection of prior settlements.
+The checks also preserve the distinction between a native event observed by the proposal and a historical
+parameter whose availability requires additional source binding. Feature distributions and missingness are
+provided in Appendix F to support inspection of the task data.
+6.6 Worked cross-chain settlement
+The worked UMA dispute connects four Polygon transactions with one Ethereum resolution.
+Polygon
+records the request, proposal, challenge and local settlement; Ethereum records the VotingV2 decision. Re-
+ceipt status, block identity, event position and the linked request identiﬁer are checked against the retained
+evidence. Figure 5 shows the elapsed timeline and the settlement decomposition; Appendix G provides the
+event register and unresolved relay boundaries.
+The request is proposed after about 7.7 hours and challenged shortly afterwards. Approximately 92.2
+hours separate the challenge from DVM resolution, followed by about 22 minutes to Polygon settlement.
+The longer interval includes transport, scheduling and adjudication, which cannot be separated using the
+ﬁve endpoints alone. The resolved value is the protocol’s early-expiration value, distinct from either binary
+answer.
+Each disputing party posts 750 USDC.e. The winner receives 1,000 USDC.e, comprising 750 in returned
+principal and 250 in gain; the protocol fee recipient receives 500. The separately conﬁgured reward follows
+its observed refund or rollover treatment. The recorded participant and fee ﬂows balance, but transaction
+costs and other costs would be needed to calculate net proﬁt. The identity link between chains does not
+establish that these funds crossed a bridge.
+7 Research use and interpretation
+Research use should begin with a mechanism-speciﬁc question and an explicitly deﬁned observation unit.
+Table 10 connects the eight branches to research questions, available observations and additional evidence
+requirements. These mappings identify opportunities for reuse rather than report tests of the proposed hy-
+potheses. Analyses should retain implementation version, actor role, asset, economic stage and observation
+window, and establish comparability for the particular measure being studied. A shared schema facilitates
+this work but does not, by itself, identify causal effects or make different native activities interchangeable.
+Parquet tables can be read with DuckDB, PyArrow or compatible analytical software. Column selection
+and predicate ﬁltering allow work on the large tables without loading every row into memory; the repository
+notebook demonstrates a smaller reconstruction route. The catalogue documents ﬁle locations and relation-
+ships, while the dictionaries deﬁne the variables and their interpretation. Monetary values require their asset
+and decimal precision, timestamps require the branch’s native chronology, and physical row order is not an
+event-time deﬁnition. Addresses represent protocol actors or accounts rather than independently identiﬁed
+natural persons.
+Economic aggregation requires particular care. Conﬁgured rewards, accruals, claimable entitlements,
+payments and applied penalties occupy different stages of a lifecycle. Returned principal must be separated
+17
+
+0
+25
+50
+75
+100
+Elapsed UTC hours
+Request
+Proposal
+Dispute
+DVM resolution
+Settlement
+(a) Request lifecycle
+0
+200
+400
+600
+800
+1000
+USDC.e
+750
+250
+(b) Settlement payout
+P i
+i
+l
+t
+d
+Wi
+i
+−750
+−500
+−250
+0
+250
+500
+USDC.e
+Proposer
+Disputer
+Fee recipient
+(c) Net recorded flows
+Figure 5. A linked UMA dispute. (a) Events on a proportional elapsed-time axis: Polygon events are purple and the
+Ethereum resolution is blue. The proposal and challenge are close in time. The interval between challenge and
+resolution includes unobserved intermediate transport steps. (b) The winner’s gross payout separates principal from
+gain. (c) Recorded net ﬂows of the two participants and fee recipient balance in USDC.e; additional costs are
+excluded.
+from participant gain, and token gain still differs from net proﬁt after costs. Related component groups
+should be checked before summation, and USDC.e and USDC should remain distinct assets unless an explicit
+conversion rule is justiﬁed. Missing, unavailable or not-applicable quantities should not be imputed as zero,
+and unﬁnished lifecycles should be retained as censored observations where the research design requires
+them.
+The UMA prediction-task dataset provides a documented starting point for future predictive modelling of
+protocol adjudication, subject to its cohort-selection and decision-time information constraints. Causal stud-
+ies of incentive design require an identiﬁcation strategy and evidence beyond the descriptive reconstruction
+provided here.
+The public repositories provide access to data, code, documentation and an issue tracker. Reuse should
+record exact ﬁle versions and the computational environment, and distinguish reconstruction from retained
+inputs from historical reacquisition. Subsequent users can extend analyses and report corrections while
+preserving native meanings and evidence limitations.
+8 Data and code availability
+The earlier data release is available through the project’s Hugging Face repository.1 It contains the retained
+native and derived tables, source registers and validation materials. The additional daily measurements,
+revised UMA task and evidence ledgers described here are supplied with this working-paper revision. Their
+catalogue records ﬁle identities, variable deﬁnitions and the relationship to the earlier release; they are not
+yet assigned a separate public deposit version.
+The public processing repository provides the earlier reconstruction and case-replay code.2 The revision
+package includes the additional processing scripts, ﬁgure sources and an executed tutorial with bounded
+examples for all eight branches. Input versions and execution records distinguish archived reconstruction
+from fresh public-interface acquisition. Appendix H describes the reproducibility boundaries.
+1Data and documentation: https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1.
+2Processing and case replay: https://github.com/Oracle4CEG/Oracle4SD-Atlas.
+18
+
+Table 10. Research opportunities supported by the eight branches. Rows identify potential uses and evidence needed
+for stronger claims; they are not ﬁndings or tests of mechanism-design guarantees.
+Branch /
+literature
+Question
+Available observations
+Further evidence needed
+UMA [4, 22]
+How do challenges and
+settlement timing vary with
+incentive commitments?
+Bonds, conﬁgured rewards,
+liveness and request lifecycles.
+Monitoring opportunities, costs,
+factual labels and an identiﬁcation
+design for incentive effects.
+Chainlink [8, 9,
+23]
+How do participation and
+reward realization relate to
+service provision?
+Stake operations, reward
+claims and selected ETH/USD
+updates.
+Node–service mappings, historical
+obligations and external
+references.
+Tellor [4, 24]
+How is accountability
+executed in observed
+disputes?
+Reports, disputes, votes,
+payments and restrictions.
+Broader comparable disputes,
+challenge opportunities and
+independent factual outcomes.
+Flare
+FTSOv2 [4,
+25]
+How are reward entitlements
+formed and realized?
+Provider conditions,
+entitlements, claims and
+epoch signing policies.
+Eligibility–claim matching;
+historical runtime binding and
+entity-level ownership for control
+analysis; external prices for
+accuracy.
+Pyth [4, 26]
+How do participation and
+economic realization vary
+across OIS regimes?
+Retained publisher–epoch
+states, staking instructions and
+transfers.
+Effective rule-change times,
+comparable windows and
+treatment of concurrent changes.
+Chronicle [2,
+27]
+Which reporting and
+challenge pathways are
+observable?
+Registered reports, challenges
+and challenge rewards.
+Historical signer sets, thresholds
+and factual references; full
+compensation remains
+unobserved.
+RedStone
+Push [2, 28]
+How do signed publications
+translate into Push updates?
+Publication and update
+records for registered adapters
+and feeds.
+Historical update settings and
+external references; AVS
+economics requires separate
+acquisition.
+DIA [4, 29]
+How much of a withdrawal is
+capital recovery versus
+reward?
+Staking withdrawals and
+principal/reward components.
+Deposit–withdrawal matching and
+costs for position returns; feeder
+lineage for price-production
+analysis.
+References
+[1] Zhang, F., Cecchetti, E., Croman, K., Juels, A. & Shi, E. Town Crier: An authenticated data feed for
+smart contracts. In Proceedings of the ACM SIGSAC Conference on Computer and Communications
+Security, 270–282 (2016). https://doi.org/10.1145/2976749.2978326.
+[2] Eskandari, S., Salehi, M., Gu, W. C. & Clark, J. SoK: Oracles from the ground truth to market manip-
+ulation. In Proceedings of the 3rd ACM Conference on Advances in Financial Technologies, 127–141
+(2021). https://doi.org/10.1145/3479722.3480994.
+[3] Cong, L. W. & He, Z. Blockchain disruption and smart contracts. The Review of Financial Studies 32,
+1754–1797 (2019). https://doi.org/10.1093/rfs/hhz007.
+[4] Cong, L. W., Fox, L., Li, S. & Zhou, L. A primer on oracle economics. Journal of Corporate Finance
+94, 102800 (2025). https://doi.org/10.1016/j.jcorpfin.2025.102800.
+[5] Zhang, F., Maram, D., Malvai, H., Goldfeder, S. & Juels, A. DECO: Liberating web data using decen-
+tralized oracles for TLS. In Proceedings of the ACM SIGSAC Conference on Computer and Communi-
+cations Security, 1919–1938 (2020). https://doi.org/10.1145/3372297.3417239.
+[6] Park, S., Bastani, O. & Kim, T. ACon2: Adaptive conformal consensus for provable blockchain oracles.
+19
+
+In 32nd USENIX Security Symposium, 3313–3330 (2023). https://www.usenix.org/conference/usenix
+security23/presentation/park.
+[7] Zhang, B., He, N., Hu, X., Ma, K. & Wang, H. Following Devils’ Footprint: Towards real-time
+detection of price manipulation attacks. In 34th USENIX Security Symposium, 4127–4145 (2025).
+https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-bosi.
+[8] Liu, B., Szalachowski, P. & Zhou, J. A ﬁrst look into DeFi oracles. In IEEE International Conference
+on Decentralized Applications and Infrastructures, 39–48 (2021). https://doi.org/10.1109/DAPPS522
+56.2021.00010.
+[9] Kaleem, M. & Shi, W. Demystifying Pythia: A survey of ChainLink oracles usage on Ethereum. In
+Financial Cryptography and Data Security: FC 2021 International Workshops, 115–123 (2021). https:
+//doi.org/10.1007/978-3-662-63958-0_10.
+[10] Cong, L. W., Prasad, E. S. & Rabetti, D. Financial and informational integration through oracle net-
+works. Working paper (2023; revised March 2026). https://doi.org/10.2139/ssrn.4495514.
+[11] Weber, M., Domeniconi, G., Chen, J., Weidele, D. K. I., Bellei, C., Robinson, T. & Leiserson, C.
+E. Anti-money laundering in Bitcoin: Experimenting with graph convolutional networks for ﬁnancial
+forensics. KDD Workshop on Anomaly Detection in Finance (2019). https://arxiv.org/abs/1908.02591.
+[12] Bellei, C., Xu, M., Phillips, R., Robinson, T., Weber, M., Kaler, T., Leiserson, C. E., Arvind & Chen, J.
+The shape of money laundering: Subgraph representation learning on the blockchain with the Elliptic2
+dataset. KDD Workshop on Machine Learning in Finance (2024). https://arxiv.org/abs/2404.19109.
+[13] Shamsi, K., Victor, F., Kantarcioglu, M., Gel, Y. & Akcora, C. G. Chartalist: Labeled graph datasets for
+UTXO and account-based blockchains. Advances in Neural Information Processing Systems 35 (2022).
+https://doi.org/10.52202/068431-2531.
+[14] Coquidé, C. & Cazabet, R. A temporal graph dataset of Bitcoin entity–entity transactions. Scientiﬁc
+Data 12, 337 (2025). https://doi.org/10.1038/s41597-025-04595-8.
+[15] Schnoering, H. & Vazirgiannis, M. Bitcoin research with a transaction graph dataset. Scientiﬁc Data
+12, 404 (2025). https://doi.org/10.1038/s41597-025-04684-8.
+[16] Wang, Q., Zhang, Z., Liu, Z., Lu, S., Luo, B. & He, B. EX-Graph: A pioneering dataset bridging
+Ethereum and X. International Conference on Learning Representations (2024). https://openreview.n
+et/forum?id=juE0rWGCJW.
+[17] Luo, B., Zhang, Z., Wang, Q. & He, B. Multi-chain graphs of graphs: A new approach to analyzing
+blockchain datasets. Advances in Neural Information Processing Systems 37, 28490–28514 (2024).
+https://doi.org/10.52202/079017-0894.
+[18] Nadini, M., Alessandretti, L., Di Giacinto, F., Martino, M., Aiello, L. M. & Baronchelli, A. Mapping
+the NFT revolution: Market trends, trade networks, and visual features. Scientiﬁc Reports 11, 20902
+(2021). https://doi.org/10.1038/s41598-021-00053-8.
+[19] Long, H.-W., Wong, N.-M. & Cai, W. Bridging culture and ﬁnance: A multimodal analysis of meme-
+coins in the Web3 ecosystem. In Companion Proceedings of the ACM Web Conference, 1158–1161
+(2025). https://doi.org/10.1145/3701716.3715561.
+[20] Jia, H., You, J., Liu, J., Luo, Y. & Sun, S. Towards event-aware forecasting in DeFi: Insights from
+on-chain automated market maker protocols. In Proceedings of the 32nd ACM SIGKDD Conference on
+Knowledge Discovery and Data Mining V.2, 9171–9182 (2026). https://doi.org/10.1145/3770855.3817
+502.
+20
+
+[21] Alsunaidi, S. J., Aljamaan, H. & Hammoudeh, M. DIVE: A multi-label smart contract vulnerability
+dataset. Scientiﬁc Data 13, 664 (2026). https://doi.org/10.1038/s41597-026-07025-5.
+[22] UMA. Optimistic Oracle v2. https://docs.uma.xyz/developers/optimistic-oracle (accessed 13 October
+2026).
+[23] Chainlink. Chainlink staking. https://chain.link/economics/staking (accessed 13 October 2026).
+[24] Tellor. Disputes and reporter governance. https://docs.tellor.io/tellor/running-tellor/disputes-and-repor
+ter-governance (accessed 13 October 2026).
+[25] Flare Network. FTSOv2 scaling. https://dev.ﬂare.network/ftso/scaling/overview (accessed 13 October
+2026).
+[26] Pyth Network. Oracle Integrity Staking: Mathematical representation. https://docs.pyth.network/orac
+le-integrity-staking/mathematical-representation (accessed 13 October 2026).
+[27] Chronicle Labs. Chronicle documentation. https://docs.chroniclelabs.org/ (accessed 13 October 2026).
+[28] RedStone. RedStone documentation. https://docs.redstone.ﬁnance/ (accessed 13 October 2026).
+[29] DIA. DIA documentation. https://www.diadata.org/docs/home (accessed 13 October 2026).
+[30] Oracle4SD. Historical acquisition proﬁles, contract registry, source manifests and time-coverage meta-
+data. Oracle4SD-Atlas, commit 1dc0dfc3bc919e64f43a110bf29b75ef0e34459c (2026). https:
+//github.com/Oracle4CEG/Oracle4SD-Atlas/tree/1dc0dfc3bc919e64f43a110bf29b75ef0e34459c
+/metadata.
+[31] Risk Labs. Our story: UMA whitepaper publication. accessed 26 October 2026. https://risklabs.found
+ation/.
+[32] Lambur, H.. Introducing UMA’s Optimistic Oracle. 13 May 2021. https://medium.com/uma-project/i
+ntroducing-umas-optimistic-oracle-d92ce5d1a4bc.
+[33] Chainlink. Chainlink: Connected consensus on Ethereum. 30 May 2019. https://chain.link/blog/chainl
+ink-connected-consensus-on-ethereum.
+[34] Chainlink. Chainlink Staking v0.2 is now live. 28 November 2023. https://chain.link/blog/chainlink-s
+taking-v0-2-now-live.
+[35] Tellor. Tellor launches to mainnet. 5 August 2019. https://tellor.io/tellor-launches-to-mainnet/.
+[36] Tellor. Tellor Layer mainnet open to public. 4 August 2025. https://tellor.io/blog/layer-mainnet-open-t
+o-public/.
+[37] Flare Network. Flare at three: Powering a connected and data-rich DeFi ecosystem. 14 July 2025.
+https://ﬂare.network/news/ﬂare-third-anniversary.
+[38] Flare Network. FTSOv2: More data, delivered faster. 16 September 2024. https://ﬂare.network/news/ft
+sov2-more-data-delivered-faster.
+[39] Pyth Network. Pyth Network mainnet launch. 26 August 2021. https://www.pyth.network/blog/pyth-n
+etwork-mainnet.
+[40] Pyth Network. Oracle Integrity Staking: Incentivizing safer price feeds for a more secure DeFi. 2
+September 2024. https://www.pyth.network/blog/oracle-integrity-staking-incentivizing-safer-price-f
+eeds-for-a-more-secure-defi.
+21
+
+[41] Chronicle Protocol. Chronicle Protocol opens access to all Web3 builders. 5 September 2023. https:
+//www.globenewswire.com/en/news-release/2023/09/05/2737624/0/en/Chronicle-Protocol-the-Exclu
+sive-5B-Oracle-of-MakerDAO-Opens-Access-to-All-Web3-Builders.html.
+[42] DIA. DIA launches mainnet staking and blockchain oracle grants campaign. 24 June 2025. https://ww
+w.diadata.org/blog/post/mainnet-staking-blockchain-oracle-grants/.
+[43] DIA. Lasernet mainnet is live: DIA Lumina’s full rollout is here. 26 March 2025. https://www.diadata.
+org/blog/post/dia-lumina-mainnet-live/.
+22
+
+A Scope and sources
+A.1 Selection and scope boundaries
+This appendix documents the eight branches at the level of the sampled mechanism and implementation.
+Selection combines a measurement contribution with identiﬁable historical evidence: contestable reporting
+and adjudication for UMA and Tellor; staking and selected feed service for Chainlink; entitlement and
+claim stages for Flare FTSOv2; publisher–epoch incentives and staking operations for Pyth; and narrower
+challenge, Push-update and withdrawal observations for Chronicle, RedStone and DIA. Table 3 identiﬁes the
+corresponding boundaries. The registry is a discovery resource, not a probability sample or an exhaustive
+census. Exclusions describe this release and do not establish that an economic activity or service is absent
+elsewhere in a protocol.
+Public events alone are insufﬁcient for inclusion in an economic comparison. An observation must have an
+interpretable native unit and an identiﬁable implementation and source. Economic amounts additionally re-
+quire an asset and a defensible accounting stage. This explains why a signed update can enter a delivery panel
+without supplying a publisher-payment observation, and why a withdrawal can support principal/reward de-
+composition without identifying the correctness of a price report. The distinctions also constrain the research
+opportunities in Table 10.
+A.2 Historical implementations and source register
+Table S1 records the principal contracts, programs and source versions. The accompanying source register
+describes their network roles, observation units, historical boundaries and inclusion criteria, including the
+Tellor modules and Chainlink feed proxy. Acquisition records preserve the connection between each sampled
+implementation and the evidence used to reconstruct it [30].
+Deployment, scan and observation boundaries are kept separate. The Chronicle and RedStone acquisition
+proﬁles specify a log-search range beginning at block 0; that value is a search bound, not a deployment
+block. Pyth’s archive boundary is a transaction timestamp, not a numeric EVM block. A pinned repository
+or a runtime observed at the cutoff does not establish an unchanged implementation throughout the observa-
+tion interval. Deployment UTC times and historical implementation intervals are left unresolved where the
+retained metadata does not establish them. Historical implementation assignments remain unresolved where
+this evidence is insufﬁcient.
+Table S1. Historical implementation and source register. Declared deployment blocks and retained source versions
+reproduce the deposited metadata; they are not newly veriﬁed deployment or runtime histories. Full addresses, source
+commits and unresolved ﬁelds are preserved in the accompanying ﬁles.
+Branch
+Principal identiﬁer and chain role
+Retained source, boundary and limitation
+UMA
+Polygon (137), OOv2: 0xee3afe347d5c7431
+7041e2618c49534daf887c24. Ethereum (1),
+VotingV2: 0x004395edb43efca9885cedad
+51ec9faf93bd34ac. Registered adapters and
+tunnels are listed separately in the contract
+CSV. Roles: veriﬁcation, settlement and
+delivery, by implementation.
+Retained UMA source a16ee53125c4 and
+adapter source 8b76cc9e0d46. Declared OOv2
+deployment: Polygon block 29,786,052; earliest
+registered adapter: 23,569,780; cutoff:
+89,439,336. DVM: 16,697,232–25,433,938.
+Historical runtime intervals are not fully
+established by cutoff code hashes.
+Chainlink
+Ethereum (1), community pool: 0xbc10f2e8
+62ed4502144c7d632a3459f49dfcdb5e;
+operator pool: 0xa1d76a7ca72128541e9fca
+cafbda3a92ef94fdc5; ETH/USD proxy:
+0x5f4ec3df9cbd43714fe2740f5e361615
+5c5b8419. Roles: staking accounting and feed
+delivery.
+Staking v0.2 application conﬁguration and ABI;
+retained phase-speciﬁc feed evidence. Pools start
+at declared deployment block 18,572,190; vault
+at 18,621,067; controller at 18,621,068; cutoff
+25,433,938. Exact historical frontend/code
+version bindings remain incomplete.
+Continued on next page
+23
+
+Table S1 continued
+Branch
+Principal identiﬁer and chain role
+Retained source, boundary and limitation
+Tellor
+tellor-1 application modules, ABCI
+new_report events and block results. Roles:
+reporting, adjudication and economic
+accounting on Tellor Layer.
+Retained Layer source 943a2709ef0a.
+Registered heights 1–19,890,860; ﬁrst report at
+317. Public opening is not genesis. The
+pre-opening network stage and completeness
+across historical module changes require separate
+evidence.
+Flare
+FTSOv2
+Flare (14), RewardManager: 0xc8f55c5aa2
+c752ee285bd872855c749f4ee6239b;
+VoterRegistry: 0x2580101692366e2f331e89
+1180d9ffdf861fce83. Roles:
+provider/registry evidence and reward
+accounting.
+Reward artifacts: fsp-rewards commit
+56dccda13597. Declared deployment blocks
+29,549,020 and 29,549,006, respectively; cutoff
+64,054,789. Closed epochs 228–410; provider
+conditions start at 251. Aggregate claims need
+not identify every component.
+Pyth
+Solana mainnet OIS program: pyti8TM4zRVB
+jmarcgAPmTNNAXYKJv7WVHrkrm6woLN. Role:
+staking and transfer accounting;
+Pythnet-derived states are retained inputs, not a
+full independent chain scan.
+Retained governance source 68a9a36ec3d4.
+Transaction timestamps: 2024-09-11 19:53:53 to
+2026-06-30 23:11:29 UTC. State epochs
+2898–2946 cover 49 closed epochs. A later
+snapshot does not by itself establish historical
+decision-time availability.
+Chronicle
+Ethereum (1): 72 validated
+Scribe/ScribeOptimistic emitted-event
+contracts, individually identiﬁed in the source
+register. Roles: report validation, delivery and
+challenge-reward accounting.
+Source 12ff06ca7881; validator registry
+f06e0a8209fc. Registered scan: blocks
+0–25,433,938. Zero is a scan start, not
+deployment. Historical deployment dates and
+per-interval implementation bindings are not
+established for every address.
+RedStone
+Push
+Ethereum (1): 9 Push adapters and 91 feed
+contracts in the frozen registry, with individual
+addresses recorded in the source register.
+Roles: signed-publication veriﬁcation and
+delivery.
+Source/manifest commit 95f8cb9fd00b.
+Registered scan: blocks 0–25,433,938;
+deployment dates are separate. First retained
+update is not ﬁrst protocol launch. Pull modes,
+other networks and full AVS economics are
+outside this branch.
+DIA
+Lasernet (1050), staking: 0x677Cf1299c367F
+6cf6F3E1669aCC18Fd059a5919;
+wrapped-DIA address is retained in the
+contract CSV. Role: staking accounting and
+principal/reward payment.
+Staking-application conﬁguration and ABI
+retained in the manifest. Declared staking
+deployment: block 3,874,186; cutoff: 31,302,665.
+Deployment UTC time and a complete historical
+runtime-version mapping are not established by
+this summary.
+A.3 Evidence for the ecosystem ﬁgure
+Figure 1 combines two evidence types. Its coloured intervals use ﬁrst and last timestamps from the explicitly
+named tables in Table S2, derived from the pinned coverage metadata [30]. They are table-speciﬁc retained
+extents, not full branch histories or continuous-coverage claims. The Pyth series uses epoch-end labels; its
+transaction archive starts earlier. Tellor’s ﬁrst retained report precedes its public-opening announcement, so
+the announcement is not used as a genesis date. Chainlink’s ETH/USD service-window start is independent
+of the staking v0.2 opening, and DIA’s ﬁrst retained withdrawal is independent of staking deployment or
+service launch.
+24
+
+Table S2. Selected-table timestamp extents used in Figure 1. Dates are UTC calendar dates, not deployment or scan
+bounds. Exact UTC timestamps and table identiﬁers are supplied with the ﬁgure source data.
+Branch
+Selected observation
+First retained date
+Last retained date
+UMA
+Request rounds
+2022-11-04
+2026-06-30
+Chainlink
+ETH/USD service windows
+2023-11-14
+2026-06-30
+Tellor
+Micro-reports
+2025-05-09
+2026-06-30
+Flare FTSOv2
+Reward-claim events
+2024-10-03
+2026-06-30
+Pyth
+Publisher epoch-end labels
+2025-07-24
+2026-06-25
+Chronicle
+Validator / challenge events
+2023-08-28
+2026-06-30
+RedStone Push
+Push update events
+2023-12-07
+2026-06-30
+DIA
+Staking withdrawals
+2025-07-08
+2026-06-18
+Historical markers are listed in Table S3. Month- and year-level dates retain the precision of their sources.
+Service announcements, public access and implementation deployment describe different events; for exam-
+ple, UMA’s optimistic-oracle launch does not date its OOv2 deployment. Markers are included only where
+a dated source identiﬁes the event represented.
+Table S3. Historical markers in Figure 1. A listed date refers to the named event. Day, month and year precision are
+not interchangeable; announcements do not automatically identify contract deployment. RedStone has no veriﬁed
+ﬁrst-Push milestone in this ﬁgure.
+Branch
+Date / precision
+Event and primary source
+UMA
+2018-12
+Whitepaper; Project / network history [31].
+UMA
+2021-05-13
+Optimistic Oracle; Service / public access [32].
+Chainlink
+2019-05-30
+Ethereum mainnet; Service / public access [33].
+Chainlink
+2023-11-28
+Staking v0.2; Mechanism announcement / access [34].
+Tellor
+2019-08-05
+Ethereum mainnet; Service / public access [35].
+Tellor
+2025-08-04
+Layer public access; Mechanism announcement / access [36].
+Flare FTSOv2
+2022-07-14
+Flare genesis; Project / network history [37].
+Flare FTSOv2
+2024-09-16
+FTSOv2 announcement; Mechanism announcement / access [38].
+Pyth
+2021-08-26
+Solana feeds; Service / public access [39].
+Pyth
+2024-09-02
+OIS introduction; Mechanism announcement / access [40].
+Chronicle
+2017
+Maker oracle roots; Project / network history [41].
+Chronicle
+2023-09-05
+Public access; Service / public access [41].
+DIA
+2025-03-26
+Lasernet mainnet; Project / network history [43].
+DIA
+2025-06-24
+Staking launch; Mechanism announcement / access [42].
+The chain matrix distinguishes the sampled mechanisms from the wider services described in protocol
+documentation [22–29]. Its historical scope remains deﬁned by the sampled implementations. Pythnet iden-
+tiﬁes retained inputs used in the Pyth reconstruction; it does not denote a complete chain scan. Unmarked
+cells indicate relationships outside the documented ﬁgure scope.
+25
+
+B Temporal harmonization
+B.1 Native clocks and observation boundaries
+Temporal coverage is deﬁned for each sampled implementation and observation type. Its lower boundary
+may reﬂect contract deployment, a change in protocol rules, archive availability or the retention limits of a
+state interface. These boundaries are distinct from the ﬁrst event found in a table. Table S4 summarizes the
+reasons for the observed scope; Appendix A provides the implementation and source details.
+Table S4. Native clocks and lower-bound rationales. These entries describe evidence scope; a ﬁrst observed event is
+not a deployment date.
+Branch
+Native clock and observation
+Starting boundary and limitation
+UMA
+Polygon event blocks; Ethereum DVM blocks.
+Request-reference timestamps remain
+separate.
+Version-speciﬁc registered contracts and scans.
+The native DVM inputs lack explicit event
+clocks; only exact retained block matches are
+recovered.
+Chainlink
+Staking event blocks; ETH/USD
+updated_at payload and separate execution
+time.
+Staking v0.2 deployment-bound collection; feed
+history is phase-speciﬁc. The native feed table
+and the common adjacent-window projection
+have different populations.
+Tellor
+Millisecond report time; aggregate index
+time; dispute and execution clocks, some with
+subsecond text.
+tellor-1 scan through height 19,890,860. First
+retained report is at height 317; the later
+public-opening announcement does not date that
+event.
+Flare FTSOv2
+Reward-epoch support, claim execution time
+and cutoff state remain separate.
+Retained reward epochs 228–410; conditions
+from 251. RewardManager and VoterRegistry
+have separate deployments. Epoch 411 straddles
+the cutoff and is outside the closed-epoch panel.
+Pyth
+Solana transaction time; publisher-epoch
+support; later state snapshot.
+Transaction history predates the retained state
+panel. Its ﬁrst epoch-end label is later than the
+beginning of its support interval. The circular
+buffer does not preserve full deployment history.
+Chronicle
+Ethereum execution block and separate oracle
+payload time.
+Validated historical contract set, scanned from
+block 0 to the cutoff. The scan boundary and
+ﬁrst retained event do not establish deployment.
+RedStone Push
+Ethereum Push execution block and separate
+payload time.
+Pinned Push contracts, scanned from block 0.
+Pull and AVS activity are outside this
+observation window.
+DIA
+Lasernet staking event and veriﬁed
+withdrawal execution times.
+Deployment-bound staking scan from block
+3,874,186. The ﬁrst withdrawal does not date
+deployment or the beginning of staking activity.
+The interpretation of time also depends on the native object. A UMA request-reference timestamp con-
+tributes to request identity, whereas the block timestamp dates the recorded event. Tellor report, aggregate
+and dispute clocks refer to different stages of reporting and adjudication. An epoch or state snapshot repre-
+sents temporal support or a state observation rather than an instantaneous event.
+B.2 UTC representation and epoch support
+UTC conversion preserves the temporal information supplied by the source. Integer seconds and milliseconds
+retain their original precision, while textual timestamps preserve the available fractional component and
+timezone. The original values remain attached to the UTC annotations so that conversion rules can be
+checked against the source. Worked conversions are provided with the temporal metadata.
+For EVM observations without an explicit execution time, retained records from the same chain and block
+provide a possible time reference. This lookup uses both identiﬁers and accepts only a consistent timestamp.
+26
+
+Its provenance is recorded separately from timestamps carried directly by the source. Blocks without a
+matching reference remain undated.
+Epoch-based observations are represented by their native start and end boundaries. The retained Flare
+and Pyth reward intervals have different durations, and neither interval determines when a payment occurred.
+Figure S1 illustrates their alignment near the observation cutoff. A timestamp on a shared epoch bound-
+ary belongs to the later interval under the half-open convention. Later state snapshots preserve their own
+acquisition context and do not establish when historical values became available to participants.
+11 Jun
+15 Jun
+19 Jun
+23 Jun
+27 Jun
+01 Jul
+Pyth OIS
+Flare FTSOv2
+406
+407
+408
+409
+410
+2945
+2946
+Cutoff
+Retained epoch support
+Figure S1. Native epoch intervals near the observation cutoff. Bars represent the retained Flare and Pyth epochs;
+diamonds mark their end labels. The intervals span three and a half days and seven days, respectively. Daily grid lines
+provide a common reference. Epoch-end labels describe the support of an observation rather than the timing of a
+reward payment.
+B.3 Temporal availability and coverage
+Timestamp availability is the proportion of retained observations with a valid clock. Historical coverage ad-
+ditionally requires evidence about the period in which a mechanism was active and the intervals successfully
+collected. A sequence with timestamps on every row can therefore still contain acquisition gaps. Coverage
+remains unspeciﬁed when the underlying observation period cannot be established.
+Table S5. Timestamp availability after exact matching to retained block times. The Chainlink analytical subset
+contains staking, withdrawal, reward-payment, reward-ﬁnalization and forfeiture-distribution events. Availability
+refers to the named population of retained records.
+Observation population
+Available
+Remaining limitation
+UMA DVM voter accruals
+10.9%
+Execution time is unavailable for unmatched
+blocks.
+Chainlink native staking logs
+6.0%
+Retained block references cover only part of the log
+history.
+Chainlink analytical subset
+5.0%
+Temporal analysis remains restricted to the dated
+observations.
+Comparisons with native records found no discrepancies in the converted timestamps or in record selec-
+tion over the tested time windows. Subsecond values and native ordering were preserved. Checks of epoch
+duration and boundary membership supported the interval representation used here. These checks assess
+the consistency of temporal processing; they do not measure the accuracy of a blockchain clock or establish
+uninterrupted acquisition.
+Temporal annotations and the original common representation are separately versioned. Analyses should
+use a consistent representation and restrict comparisons to compatible observation periods. Daily economic
+measures further require deﬁned participant roles, assets, economic stages and exposure. Epoch totals should
+remain attached to their support intervals unless the data justify a more detailed temporal allocation.
+27
+
+C Product organization and metadata
+The ten logical products group observations by mechanism or reuse task. They do not denote ten physi-
+cal ﬁles or ten independent samples. Native and harmonized representations may describe the same event,
+and the two derived products draw on the protocol branches. The catalogue therefore records the product
+membership of each table together with its row unit, source relationship and version.
+Table S6. Ten logical data products and their principal observation units.
+Product
+Principal units
+Main relationships
+UMA
+Request, vote, voter accrual and stake event
+Polygon request–Ethereum adjudication;
+settlement–transfer
+Chainlink
+Feed update, service interval and staking
+event
+Staking or reward event–LINK movement
+Tellor
+Report, aggregate, dispute and payment
+Report–dispute; tip funding–withdrawal
+Flare FTSOv2
+Provider–epoch, entitlement and claim
+Epoch policy–registration; entitlement–claim
+evidence
+Pyth
+Instruction, reward transfer and
+publisher–epoch
+OIS instruction–custody transfer; historical
+epoch state
+Chronicle
+Update, challenge and challenge reward
+Registered implementation–event;
+challenge–payment
+RedStone Push
+Adapter/feed update
+Registered delivery contract–update
+DIA
+Stake action and withdrawal position
+Position–principal and reward components
+UMA prediction
+One eligible request
+Proposal-time feature–availability
+record–resolution label
+Daily measurements
+Date–branch–role–asset–stage–measure
+Native eligible population–daily aggregate;
+epoch companions separate
+Field dictionaries specify types, units, economic stage, source keys, missingness and calculation rules.
+Raw monetary amounts remain integer-valued strings, while UTC clocks distinguish event time from refer-
+ence time, deadlines, epochs and snapshots. Croissant recordsets describe physical tables and link them to
+their logical product; the product count is consequently different from the recordset count. The dataset card,
+table catalogue and tutorial use the same product identiﬁers.
+D Daily measurement deﬁnitions
+D.1 Feasibility and coverage
+Feasibility is assessed for each branch and measurement family before aggregation. A derivable quantity
+is supported within a stated retained population; this designation does not imply continuous acquisition
+or applicability to every service offered by the protocol. A quantity requiring additional acquisition has a
+plausible source or linkage requirement. Inapplicable quantities do not describe the sampled unit, whereas
+unknown quantities lack sufﬁcient evidence to resolve their status. Figure S2 summarizes selected families;
+the accompanying matrix includes the full deﬁnitions and qualiﬁcations.
+D.2 Aggregation and denominators
+For an eligible event population Eg with grouping key g, a daily amount is
+Adg =
+∑
+i∈Eg:ti∈[d,d+1)
+ai.
+(4)
+The grouping key includes the branch, implementation, actor role, asset and economic stage. Amounts
+are added in integer native units before applying the asset’s decimal precision. The number of eligible
+retained events supplies the observation denominator; neither event counts nor a nonempty day establish that
+acquisition was complete. An absent timestamp prevents daily assignment and is recorded in the source-level
+missingness accounting.
+28
+
+Actors
+Payments
+Losses
+Capital
+time
+Delay
+Weights
+Threshold
+External
+reference
+UMA
+Chainlink
+Tellor
+Flare FTSOv2
+Pyth
+Chronicle
+RedStone Push
+DIA
+D
+D
+D
+D
+D
+A
+A
+?
+D
+D
+A
+A
+A
+A
+A
+?
+D
+D
+A
+A
+A
+A
+A
+?
+D
+D
+A
+A
+A
+D
+D
+?
+D
+D
+A
+A
+A
+A
+A
+?
+D
+D
+A
+A
+A
+A
+A
+?
+A
+A
+A
+A
+A
+A
+A
+?
+D
+D
+A
+A
+A
+A
+A
+?
+Figure S2. Measurement feasibility within the registered branch scope. D: derivable within the stated retained
+population; A: additional acquisition or linkage required; dash: inapplicable to the sampled unit; question mark:
+unresolved. Flare weights and thresholds are epoch-supported. RedStone Push exposes delivery-contract activity,
+while publisher participation and AVS economics require a separate scope. The full matrix qualiﬁes each cell by its
+native unit and evidence boundary.
+Participation counts distinct observed addresses within a speciﬁed role. Delivery-contract activity in Red-
+Stone is recorded as contract activity, and Flare reward owners are distinguished from registered providers.
+Reward inequality uses positive observed recipient totals within the same day, asset and stage. The top-
+decile share includes the largest ⌈0.1n⌉recipient totals. A recipient with no recorded payment is outside that
+recipient population; its absence is not a veriﬁed zero reward.
+UMA completion delay is measured from the request event to the settlement event and grouped by set-
+tlement day. Its denominator consists of completed, ﬂow-reconciled requests. A completion fraction would
+additionally require a deﬁned obligation and a comparable risk set, so it is not inferred by dividing daily
+settlements by daily requests. For a funded position with principal Pi and interval [ai,bi), daily exposure is
+Kdi = Pi
+[ai,bi)∩[d,d +1)
+.
+(5)
+The stored quantity uses raw token-seconds; conversion to token-hours divides by the asset precision and
+3,600. The completed-position population leaves unresolved obligations outside this measure. It does not
+establish total protocol collateral or the amount legally or mechanically subject to slashing.
+D.3 Historical signing policies
+Flare epoch artifacts identify policy signers, integer weights, a threshold and the starting voting round. These
+are matched to the retained voter registrations. With normalized weights wi, concentration is H = ∑i w2
+i and
+the effective address count is 1/H. The companion table also reports the smallest number of largest-weight
+addresses whose cumulative weight reaches or exceeds the recorded threshold, retaining both weak and strict
+threshold conventions. Interpretation as an operative security threshold requires the applicable historical
+contract rule and runtime binding. These calculations describe policy addresses, not beneﬁcial ownership,
+independent organizations or attack feasibility.
+Reward entitlement, signing weight and deposited capital have different units and roles. Epoch quantities
+remain attached to their support intervals. No uniform daily allocation is used to turn an epoch reward factor
+into a payment, and no signature or protocol-aggregate agreement is treated as an independent price-accuracy
+measure.
+E Semantic rules and assistance disclosure
+The correction ledger connects each changed ﬁeld to a native object, a historical rule and its previous interpre-
+tation. UMA challenge corrections require an observed dispute; settlement corrections require a completed
+lifecycle and the relevant token ﬂow. Winner payments separate posted principal from the unburned portion
+29
+
+of the losing bond. Tellor outcomes are interpreted from the challenge’s perspective: SUPPORT accepts
+the challenge, while an AGAINST outcome does not justify an applied reporter loss merely because stake
+entered escrow earlier.
+VotingV2 requires a further distinction between request-level accrual and application to stake. A signed
+accrual records an adjustment associated with a voting request. The later application event concerns the net
+change actually applied to a stake position. The ledger retains the accrued amount and leaves a request-level
+applied loss unknown when application evidence is not matched. Adding the accrual to a subsequent net
+application would count stages of the same accounting process twice.
+Historical binding is documented separately from a rule’s arithmetic. The retained register gives stronger
+source-binding evidence for VotingV2 than for the OOv2 and Tellor implementations. A repository commit
+identiﬁes inspected source code but does not alone establish which binary executed at every historical block.
+Correction counts in Table 9 refer to the named populations and do not establish the validity of untested
+ﬁelds.
+Codex assisted with source inspection, processing-code development, manuscript editing and ﬁgure prepa-
+ration. Its contributions and the available model information are documented in the assistance record. Au-
+tomated reconstruction and consistency checks are recorded separately from author review. The supplied
+record does not contain author sign-off on the historical rule bindings or individual interpretations; such
+sign-off must not be inferred from a passing automated check.
+F UMA task deﬁnition and feature dictionary
+The task contains 810 retrospectively eligible requests, of which 466 resolve to a value different from the
+proposal and 344 retain the proposed value. A changed value is an institutional adjudication label. The
+cohort is restricted to challenged, linked and reconciled requests, so these proportions do not estimate the
+prevalence of incorrect proposals in the full request population.
+Request
+Proposal
+Challenge
+Resolution
+T0
+Past settlements
+Retrospective selection
+(a) Information and outcome
+Unchanged
+Changed
+0
+100
+200
+300
+400
+Requests
+(b) Resolution vs proposal
+Figure S3. Information boundary and target of the UMA task. (a) T0 is the proposal event; prior-history features use
+earlier settled requests. Challenge and resolution determine retrospective eligibility and the outcome. (b) Counts
+compare the native proposed and resolved integers, retaining special resolution classes.
+Let B, F and R denote the effective bond, ﬁnal fee and conﬁgured reward in the smallest units of the
+identiﬁed asset. Let Na count retained prior settlements for address a in the speciﬁed role, Da the challenged
+subset, and Ja the subset whose challenged proposal was rejected. A prior settlement must precede the current
+proposal in block, transaction and log order. Proposer and requester histories use separate role-speciﬁc
+populations. The history is bounded by retained records and does not represent the address’s complete
+lifetime activity.
+Feature availability is recorded for each request and feature. Native event ﬁelds, reconstructed past his-
+tories and parameters requiring historical binding have distinct statuses. Fields used only to establish the
+eventual label remain outside the feature allowlist. Missing rates are retained as missing values so that subse-
+quent users can choose and document their own preprocessing. Figure S4 presents the feature distributions;
+no predictive model is ﬁtted as part of this data description.
+30
+
+Table S7. Sixteen candidate features. Rates with Na = 0 and ratios with B = 0 are missing. Parameter-derived entries
+require historical binding before they can be certiﬁed as available at the proposal.
+Feature
+Deﬁnition or unit
+Evidence / missingness
+Bond magnitude
+log(1+B)
+Reconstructed effective bond; historical
+parameter binding.
+Final-fee magnitude
+log(1+F)
+Native fee; missing if absent.
+Reward magnitude
+log(1+R)
+Conﬁgured adapter reward; historical binding.
+Reward–bond ratio
+R/B
+Same-asset amounts; undeﬁned for zero bond.
+Liveness
+Expiry minus proposal,
+hours
+Proposal event and recorded expiry.
+Proposal latency
+Proposal minus request
+event, hours
+Execution clocks, not request-reference time.
+Ancillary length
+Decoded byte count
+Native request payload.
+Proposer prior count
+Na
+Earlier settlements in proposer role.
+Proposer dispute rate
+Da/Na
+Missing when no prior settlement is retained.
+Proposer rejection rate
+Ja/Na
+Rejected challenged proposals among prior
+settlements.
+Requester prior count
+Na
+Earlier settlements in requester role.
+Requester dispute rate
+Da/Na
+Missing when no prior settlement is retained.
+Requester rejection rate
+Ja/Na
+Same-role prior settlement outcomes.
+Registered adapter
+Binary membership
+Requester contract registry.
+Proposed price class
+Zero, one, half, early expiry,
+other
+Native proposed integer; no forced binary
+recoding.
+Adapter version
+Registered implementation
+class
+Historical source binding required.
+31
+
+20
+22
+0
+250
+500
+Requests
+(a) log(1 + bond)
+19.5
+20.0
+0
+500
+(b) log(1 + final fee)
+0
+10
+0
+500
+(c) log(1 + reward)
+0
+1
+2
+×10
+−2
+0
+250
+500
+(d) Reward / bond
+1.0
+1.5
+2.0
+0
+500
+Requests
+(e) Liveness (h)
+0
+5000
+0
+250
+500
+(f) Proposal delay (h)
+1000
+2000
+0
+100
+(g) Ancillary bytes
+0.0
+0.5
+1.0
+×10
+4
+0
+500
+(h) Prior proposer count
+0.0
+0.5
+1.0
+0
+200
+400
+Requests
+(i) Prior proposer dispute rate
+0.0
+0.5
+1.0
+0
+200
+400
+(j) Prior proposer rejection rate
+0
+1
+2
+×10
+4
+0
+50
+100
+(k) Prior requester count
+0
+2
+×10
+−2
+0
+200
+(l) Prior requester dispute ra
+0
+1
+×10
+−2
+0
+100
+200
+Requests
+(m) Prior requester rejection rate
+Yes
+0
+500
+(n) Registered adapter
+1
+0
+½
+other
+0
+200
+400
+(o) Proposed price class
+v2_0
+v3_current
+0
+250
+500
+(p) Adapter version
+Figure S4. Distributions of the sixteen task features. Histograms use nonmissing observations on the units in
+Table S7; categorical panels retain the recorded classes. Prior-history rates exclude requests with no retained earlier
+settlement in that role. Detailed missingness and availability statuses accompany the task data.
+32
+
+G Cross-chain event register
+The worked case is a single OOv2 request linked to one VotingV2 request. Table S8 locates the ﬁve observed
+endpoints. Full contract addresses, request identiﬁers, transaction hashes and receipt evidence accompany the
+register. A log position is interpreted within its transaction and chain; equal-looking identiﬁers on different
+chains are not joined without the registered ancillary-data transformation.
+Table S8. Observed endpoints of the worked UMA dispute. UTC coordinates identify actual case events. Explorer
+links locate the transactions; retained receipts provide the reproducible evidence.
+Event
+Chain
+UTC
+Block / log
+Evidence
+T1 Request
+Polygon
+2024-10-29 20:05:50
+63645613 / 196
+Transaction
+T2 Proposal
+Polygon
+2024-10-30 03:47:16
+63658346 / 327
+Transaction
+T3 Dispute
+Polygon
+2024-10-30 03:49:54
+63658420 / 397
+Transaction
+T4 DVM resolution
+Ethereum
+2024-11-03 00:00:35
+21103395 / 141
+Transaction
+T5 Settlement
+Polygon
+2024-11-03 00:22:35
+63813887 / 104
+Transaction
+The Polygon request, proposal and dispute are decoded from OOv2 events; Ethereum’s resolution is
+decoded from VotingV2. The Polygon settlement retains the same resolved value. Native request hashing
+and ancillary-data transformations support the identity match. The ﬁve retained transactions do not provide
+a complete sequence of relay acceptance, processing and return operations, so the interval between dispute
+and resolution is not attributed solely to voting or solely to transport.
+The accounting record separates both posted deposits, the winner’s gross payout and the protocol fee. The
+principal-return and gain components refer to the same payout and must not be counted again as separate
+transfers. The conﬁgured reward is tracked separately from the observed payout components. No inde-
+pendent factual adjudication is available for the underlying proposition, and the early-expiration resolution
+retains its native meaning.
+H Reconstruction and versioned evidence
+Reproducibility is organized around the relationship between retained inputs, deterministic transformations
+and named outputs. Input ﬁngerprints bind a calculation to the ﬁles it used. Source registries identify
+the interfaces and historical boundaries, while result manifests connect tables and ﬁgures to the relevant
+processing rules. A successful replay establishes consistency for those inputs and transformations.
+The companion tutorial contains a bounded example for each of the eight branches. Each example veriﬁes
+its retained input, reads native observation units and inspects the available clocks. These archived examples
+are distinguished from fresh public-interface queries, whose results depend on archive retention and provider
+behaviour. Access to one historical receipt or block does not demonstrate continuous acquisition across an
+entire registered interval.
+The supplementary reproduction record contains the executable commands, environment versions, valida-
+tion output and unresolved acquisition requirements. Historical model experiments are preserved separately
+for provenance; they are not evidence about the revised feature deﬁnitions. The product catalogue and
+checksums identify the material accompanying this working-paper revision separately from earlier public
+deposits.
+I Measurement glossary
+33
+
+Table S9. Terms used to distinguish protocol activity, economic states and evidence.
+Term
+Meaning
+Branch
+Registered mechanism and implementation scope, with speciﬁed chain roles.
+Observation unit
+Native object counted or measured, such as a request, claim or provider–epoch.
+Conﬁgured incentive
+A rule or parameter describing a potential reward or penalty.
+Accrual
+An accounting adjustment associated with an activity, before separate application or
+payment evidence.
+Entitlement
+A recorded claim to an amount under the applicable eligibility rules.
+Realized payment
+A qualifying transfer or execution record under a stated branch-speciﬁc rule.
+Applied loss
+A supported reduction or forfeiture; not inferred from every negative accrual.
+Principal return
+Recovery of posted capital, distinct from income.
+Committed-capital exposure
+Principal multiplied by its supported lock duration, with asset and population retained.
+Policy weight
+A mechanism-speciﬁc inﬂuence measure; not automatically collateral or
+organizational independence.
+Coverage state
+Evidence about what was observable and collected for a particular population or
+interval.
+Protocol adjudication
+An institutional resolution; an independent factual reference requires separate
+evidence.
+34

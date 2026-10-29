@@ -1,0 +1,9 @@
+﻿意见,论文位置,证据文件（supplementary/temporal）,本轮完成,剩余边界
+逐表解释时间起点,§3.1；附录B.1/表S4,temporal_registry.csv；coverage_interval_evidence.csv,95表已登记；64保留输入完成转换,部署UTC不从首个事件反推；未重新审计全部采集回执
+UTC字段及原始字段保留,§3.6；§4.4；附录B.2,normalized_file_manifest.csv；native_preservation_checks.csv,64文件已生成；204检查通过,31下游投影/应用表未重建
+单位、精度、含义、溯源和缺失,§3.5/3.6；§4.3；表8,temporal_clock_dictionary.csv；clock_statistics.csv,139项时钟+64项状态字段说明,存储ns不等于源时钟精确到ns
+真实before/after示例,附录B.2说明转换；精确记录随数据文档提供,worked_records.csv；block_recovery_examples.csv,八分支实例和缺失/补齐实例已提供,不把payload时间当执行时间
+epoch/付款/快照/抓取分开,§3.6；附录B.2；图S1,validated_epoch_intervals.csv；epoch_figure_data.csv,232个保留epoch区间核验；真TNR矢量图,不推断资格时点；不分摊日度金额
+时间可用率与覆盖,§5；附录B.3；表S5,legacy_projection_time_audit.csv；time_recovery_populations.csv,精确恢复DVM289025条；Chainlink资格子集3581条,剩余缺失保持NULL；旧共同投影未替换
+验证与复现,§6.3/新§6.4；附录B.3,temporal_validation_checks.csv；RUN_TEMPORAL.txt,204/204通过；完整读回64文件,没有fresh RPC、外部事实认证或人工签字
+用户最新文风要求,§3.6、§4.4、§5、§6.1/6.3/6.4、附录A/B,写作核对记录.txt；WRITING_GUIDELINES.txt,先联网对照期刊规范及发表实例，清理运行日志/路径/修订进度语句,不删除真实核验记录，不把缺失证据改写为已验证

@@ -1,0 +1,3 @@
+component,amount_raw,asset
+principal_returned,750000000,USDC.e
+token_payoff,250000000,USDC.e

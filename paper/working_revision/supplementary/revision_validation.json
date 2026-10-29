@@ -1,0 +1,54 @@
+{
+  "scope": "Guide 1 selection, ecosystem and research uses only",
+  "input_zip_sha256": "f5e629518361d22e3a16184cee54b1936d913e037cd2b17e7395d78718529f48",
+  "compile_engine": "Tectonic 0.15.0 (local; Overleaf service not invoked)",
+  "compile_success": true,
+  "pdf_pages": 23,
+  "page_map": {
+    "Figure 1.": 2,
+    "Table 3.": 7,
+    "Table 11.": 17,
+    "A Scope and sources": 21,
+    "Table S1.": 21,
+    "Table S2.": 23,
+    "Table S3.": 23
+  },
+  "modified_original_tex_files": [
+    "main.tex",
+    "references.tex",
+    "sections/01_background.tex",
+    "sections/02_methods.tex",
+    "sections/06_usage.tex",
+    "tables/protocol_sources.tex"
+  ],
+  "new_tex_files": [
+    "figures/ecosystem_scope.tex",
+    "sections/appendix_a_scope.tex",
+    "tables/figure_observation_windows.tex",
+    "tables/historical_milestones.tex",
+    "tables/implementation_register.tex",
+    "tables/research_opportunities.tex"
+  ],
+  "unresolved_references": [],
+  "unresolved_citations": [],
+  "duplicate_labels": [],
+  "overfull_boxes": false,
+  "figure_size_mm": [
+    166.0,
+    90.38
+  ],
+  "figure_fonts": [
+    "TimesNewRomanPS-BoldMT",
+    "TimesNewRomanPSMT"
+  ],
+  "figure_minimum_font_pt": 7.7,
+  "figure_raster_images": 0,
+  "eight_branch_register_rows": 8,
+  "science_experiments_executed": false,
+  "historical_runtime_binding_certified": false,
+  "retained_baseline_warnings": [
+    "inputenc ignored under UTF-8 engine",
+    "Existing PDF 1.7 figures imported by a PDF 1.5-default driver"
+  ],
+  "source_metadata_commit": "1dc0dfc3bc919e64f43a110bf29b75ef0e34459c"
+}

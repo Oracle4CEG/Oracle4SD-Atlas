@@ -1,0 +1,14 @@
+{
+  "branch": "DIA",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "payment_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "91e78cf990c5434b1b81843c5512cbd02e0fb3459e7d0abc02b6b4fdbb009f26",
+  "parent_sha256": "ac78ae2d0bf41d94f61e284cf81e92c30d40b09356d5c3d29c80f0a22dc6bf4f",
+  "source_unit": "dia_staking_withdrawals",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

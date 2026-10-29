@@ -1,0 +1,14 @@
+[
+  {
+    "edge": "Polygon child request -> Ethereum request acceptance",
+    "status": "identity_link_supported; complete relay transaction sequence not retained"
+  },
+  {
+    "edge": "Ethereum result -> Polygon delivery",
+    "status": "matching resolution value retained; intermediate processing transactions not fully documented"
+  },
+  {
+    "edge": "human explorer review",
+    "status": "pending_author_review"
+  }
+]

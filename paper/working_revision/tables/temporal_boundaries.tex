@@ -1,0 +1,19 @@
+\begingroup
+\small\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.14}
+\begin{longtable}{@{}L{0.13\linewidth} L{0.39\linewidth} L{0.41\linewidth}@{}}
+\caption{Native clocks and lower boundaries. First observations do not establish deployment dates.}\label{tab:temporal_boundaries}\\
+\toprule Branch & Native clock and observation & Starting boundary and limitation \\
+\midrule\endfirsthead
+\toprule Branch & Native clock and observation & Starting boundary and limitation \\
+\midrule\endhead
+UMA & Polygon event blocks; Ethereum DVM blocks. Request-reference timestamps remain separate. & Version-specific registered contracts and scans. The native DVM inputs lack explicit event clocks; only exact retained block matches are recovered. \\
+Chainlink & Staking event blocks; ETH/USD \codefield{updated_at} payload and separate execution time. & Staking v0.2 deployment-bound collection; feed history is phase-specific. The native feed table and the common adjacent-window projection have different populations. \\
+Tellor & Millisecond report time; aggregate index time; dispute and execution clocks, some with subsecond text. & tellor-1 scan through height 19,890,860. First retained report is at height 317; the later public-opening announcement does not date that event. \\
+Flare FTSOv2 & Reward-epoch support, claim execution time and cutoff state remain separate. & Retained reward epochs 228--410; conditions from 251. RewardManager and VoterRegistry have separate deployments. Epoch 411 straddles the cutoff and is outside the closed-epoch panel. \\
+Pyth & Solana transaction time; publisher-epoch support; later state snapshot. & Transaction history predates the retained state panel. Its first epoch-end label is later than the beginning of its support interval. The circular buffer does not preserve full deployment history. \\
+Chronicle & Ethereum execution block and separate oracle payload time. & Validated historical contract set, scanned from block 0 to the cutoff. The scan boundary and first retained event do not establish deployment. \\
+RedStone Push & Ethereum Push execution block and separate payload time. & Pinned Push contracts, scanned from block 0. Pull and AVS activity are outside this observation window. \\
+DIA & Lasernet staking event and verified withdrawal execution times. & Deployment-bound staking scan from block 3,874,186. The first withdrawal does not date deployment or the beginning of staking activity. \\
+\bottomrule
+\end{longtable}
+\endgroup

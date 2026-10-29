@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "tables": [
+    {
+      "table": "accountability_events",
+      "rows": 105588120,
+      "row_count_preserved": true,
+      "native_key_hash_preserved": true,
+      "post_cutoff_event_clocks": 0,
+      "non_event_clock_violations": 0,
+      "time_status_counts": {
+        "missing_native_event_clock": 2443329,
+        "native_block_clock": 103027260,
+        "source_time_not_economic_execution": 46722,
+        "native_epoch_support": 70803,
+        "snapshot_not_event": 6
+      },
+      "parent_table": "accountability_events",
+      "parent_key": "accountability_event_id",
+      "legacy_fields": "source table remains unchanged; join this clock companion by parent_key",
+      "passed": true
+    },
+    {
+      "table": "sample_b_observable_accountability",
+      "rows": 105702424,
+      "row_count_preserved": true,
+      "native_key_hash_preserved": true,
+      "post_cutoff_event_clocks": 0,
+      "non_event_clock_violations": 0,
+      "time_status_counts": {
+        "missing_native_event_clock": 2443329,
+        "native_block_clock": 102272286,
+        "source_time_not_economic_execution": 46722,
+        "native_epoch_support": 940081,
+        "snapshot_not_event": 6
+      },
+      "parent_table": "sample_b_observable_accountability",
+      "parent_key": "accountability_event_id",
+      "legacy_fields": "source table remains unchanged; join this clock companion by parent_key",
+      "passed": true
+    },
+    {
+      "table": "sample_c_strict_honesty_events",
+      "rows": 3435826,
+      "row_count_preserved": true,
+      "native_key_hash_preserved": true,
+      "post_cutoff_event_clocks": 0,
+      "non_event_clock_violations": 0,
+      "time_status_counts": {
+        "missing_native_event_clock": 2287540,
+        "native_block_clock": 279008,
+        "native_epoch_support": 869278
+      },
+      "parent_table": "sample_c_strict_honesty_events",
+      "parent_key": "accountability_event_id",
+      "legacy_fields": "source table remains unchanged; join this clock companion by parent_key",
+      "passed": true
+    },
+    {
+      "table": "economic_semantics_events",
+      "rows": 22723389,
+      "row_count_preserved": true,
+      "native_key_hash_preserved": true,
+      "post_cutoff_event_clocks": 0,
+      "non_event_clock_violations": 0,
+      "time_status_counts": {
+        "missing_native_event_clock": 2644459,
+        "native_block_clock": 20022503,
+        "source_time_not_economic_execution": 3,
+        "native_epoch_support": 56424
+      },
+      "parent_table": "economic_semantics_events",
+      "parent_key": "evidence_id",
+      "legacy_fields": "source table remains unchanged; join this clock companion by parent_key",
+      "passed": true
+    },
+    {
+      "table": "realized_reward_slash_events",
+      "rows": 19275854,
+      "row_count_preserved": true,
+      "native_key_hash_preserved": true,
+      "post_cutoff_event_clocks": 0,
+      "non_event_clock_violations": 0,
+      "time_status_counts": {
+        "missing_native_event_clock": 258744,
+        "native_block_clock": 19017107,
+        "source_time_not_economic_execution": 3
+      },
+      "parent_table": "realized_reward_slash_events",
+      "parent_key": "evidence_id",
+      "legacy_fields": "source table remains unchanged; join this clock companion by parent_key",
+      "passed": true
+    }
+  ],
+  "scope": "Five core tables; legacy model/application views remain archived and use earlier clocks."
+}

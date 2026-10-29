@@ -1,0 +1,15 @@
+{
+  "branch": "Tellor",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "dispute_end_time_utc",
+    "report_reference_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "b2eb2bbeacb6a0350f33a78b7b24976a59f7f88a4ddd44ae53a4a6d059d3449c",
+  "parent_sha256": "626f150907eb28aa635754f080626173294b4d35a67ff4c5817526d54b6a82b3",
+  "source_unit": "tellor_disputes",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

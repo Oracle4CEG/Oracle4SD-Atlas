@@ -1,0 +1,32 @@
+{
+  "branch": "DIA",
+  "mode": "live",
+  "result_keys": [
+    "blockHash",
+    "blockNumber",
+    "contractAddress",
+    "cumulativeGasUsed",
+    "effectiveGasPrice",
+    "from",
+    "gasUsed",
+    "gasUsedForL1",
+    "l1BlockNumber",
+    "logs",
+    "logsBloom",
+    "status",
+    "to",
+    "transactionHash",
+    "transactionIndex",
+    "type"
+  ],
+  "output": "dia/live_response.json",
+  "expected_native_block": 4875792,
+  "locator_verified": true,
+  "run_sha256": "55772f4201d7c32f7390567fbc0a5d49a4087baeff549582d0fff45d1a719fc3",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.657,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

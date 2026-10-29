@@ -1,0 +1,37 @@
+[
+  {
+    "scope": "six semantic rules",
+    "status": "pending_author_review",
+    "reviewer": null,
+    "review_time": null,
+    "decision": null
+  },
+  {
+    "scope": "historical implementation bindings",
+    "status": "pending_author_review",
+    "reviewer": null,
+    "review_time": null,
+    "decision": null
+  },
+  {
+    "scope": "proposal-time parameter availability",
+    "status": "pending_author_review",
+    "reviewer": null,
+    "review_time": null,
+    "decision": null
+  },
+  {
+    "scope": "cross-chain case interpretation",
+    "status": "pending_author_review",
+    "reviewer": null,
+    "review_time": null,
+    "decision": null
+  },
+  {
+    "scope": "final scientific wording",
+    "status": "pending_author_review",
+    "reviewer": null,
+    "review_time": null,
+    "decision": null
+  }
+]

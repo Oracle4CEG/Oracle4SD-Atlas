@@ -1,0 +1,4066 @@
+{
+  "jsonrpc": "2.0",
+  "id": -1,
+  "result": {
+    "height": "8073265",
+    "txs_results": [
+      {
+        "code": 2,
+        "data": null,
+        "log": "tx parse error",
+        "info": "",
+        "gas_wanted": "0",
+        "gas_used": "0",
+        "events": [],
+        "codespace": "sdk"
+      },
+      {
+        "code": 0,
+        "data": "EioKKC9sYXllci5kaXNwdXRlLk1zZ1Byb3Bvc2VEaXNwdXRlUmVzcG9uc2U=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "500000",
+        "gas_used": "367428",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "13loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "13loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "13loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "13loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv/4039642",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "SigSv2+wBXYctyMKWqfPMg8/lPCGAvqw+o/7DBlZ/0weDP/A2vdclds60cMtkG7tQECPxJjZoIM83W6jttttYw==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.dispute.MsgProposeDispute",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "dispute",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9980000loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9980000loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9980000loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "29199351loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor1p7y0yvqnw3ajjq6vsjv7yahsvjxs6ahhs5lxq7",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "29199351loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor1p7y0yvqnw3ajjq6vsjv7yahsvjxs6ahhs5lxq7",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "29199351loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "withdraw_rewards",
+            "attributes": [
+              {
+                "key": "amount",
+                "value": "29199351loya",
+                "index": true
+              },
+              {
+                "key": "validator",
+                "value": "tellorvaloper12mtrv5yn54xqsvdfvkz0g92w8wmeqyf3lenjxy",
+                "index": true
+              },
+              {
+                "key": "delegator",
+                "value": "tellor1p7y0yvqnw3ajjq6vsjv7yahsvjxs6ahhs5lxq7",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9880226loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9880226loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "9880226loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "783loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "783loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "783loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "withdraw_rewards",
+            "attributes": [
+              {
+                "key": "amount",
+                "value": "783loya",
+                "index": true
+              },
+              {
+                "key": "validator",
+                "value": "tellorvaloper12mtrv5yn54xqsvdfvkz0g92w8wmeqyf3lenjxy",
+                "index": true
+              },
+              {
+                "key": "delegator",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "99773loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "99773loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor1et4y07sgf2z39wlptxmfu5nvhrjwhjgdsyp5qj",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "99773loya",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34ds5rz",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "jailed_reporter",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "duration",
+                "value": "0",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_dispute",
+            "attributes": [
+              {
+                "key": "disputer",
+                "value": "tellor1gtrkqyyzwhag05jl87h5d75khv4s6r2xwsjspv",
+                "index": true
+              },
+              {
+                "key": "reporter",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "dispute_category",
+                "value": "DISPUTE_CATEGORY_WARNING",
+                "index": true
+              },
+              {
+                "key": "total_fee",
+                "value": "9980000",
+                "index": true
+              },
+              {
+                "key": "fee_paid",
+                "value": "9980000",
+                "index": true
+              },
+              {
+                "key": "pay_from_bond",
+                "value": "false",
+                "index": true
+              },
+              {
+                "key": "dispute_id",
+                "value": "1",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "000000000000000000000000000000000000000007a2b7b56fb30768e3ced000",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "0bc2d41117ae8779da7623ee76a109c88b84b9bf4d9b404524df04f7d0ca4ca7",
+                "index": true
+              },
+              {
+                "key": "report_block_number",
+                "value": "8056140",
+                "index": true
+              },
+              {
+                "key": "microreport_timestamp",
+                "value": "1759118635968",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "157080",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987/3987152",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "6gOe2FWBddK6lRgL714OWfyFqAjzn0H+wRnNmu/JdCgpssHoLD+45KouzV7ee7m/rgD50eCeFmozc5Zcb8rV0g==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor16vuuwx7lekkfy57nl9mxmxrplfzflgylxzg987",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1008",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "152910",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd/110408",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "ZbvM0qnDMBbiyuIlFSOtOhmT3+k4rPYw+6pxVFnTys1Go98a2omHTsfBdGcnnaK/XF5Nz3WLjag/PIz7eKeUdw==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor1r55ktpxc50c38uqpaza7820smjsyalykngz7pd",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "173506",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz/4040030",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "YiFZUY28p6ohOGp6u8frGCqjFI924GUIvKY6iJj3doJrPXGDBExzLgz9hL4gUZwYIoELcpxkRLBcHhczmvTB+Q==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1010",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "159634",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz/3990783",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "ypBuKThYTB1XHntVKpXmM+ZNMTwk7VE/yt1RmjS9Xr9OSBB6GCyKedm8X912ji0skAzwqK54RyWBcJoLS0VWsA==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor1uac7nf2wgq203phmh00lvu2pkwj2rz29q85yaz",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "997",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "159583",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x/4039997",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "oKb/w3R/5q3u1zUcEj1qZ/z1/+lHeMrzahFf38Rhfy5Bv1Ncsh28UF4ZTMRSF8LWnYdu1Q/KlsG4+5Iphaf3BQ==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor1fyc97jykpyvwrm78f0gfvffg987sqlvumww27x",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1008",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 1104,
+        "data": null,
+        "log": "failed to execute message; message index: 0: reporter has 0, required 1000000: not enough stake",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "68691",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1tjsgsqx8ld8y8vruckltcxj6e8w70rg9wehrhk",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1tjsgsqx8ld8y8vruckltcxj6e8w70rg9wehrhk",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1tjsgsqx8ld8y8vruckltcxj6e8w70rg9wehrhk",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1tjsgsqx8ld8y8vruckltcxj6e8w70rg9wehrhk",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1tjsgsqx8ld8y8vruckltcxj6e8w70rg9wehrhk/126708",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "ZFlmqQoVogjv9ME/Hn1Ue5Nto23yh6TL+UvRCkl77jMj+oqVR0yjkUHTxvsgjIcbambeAyYJb310gvaKVC+emQ==",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": "oracle"
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "153158",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h/11036",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "+5CjOdINuqk9fhjHv/+HZgXVyk/4Js3YZFW7cX6d4+ZozdTl9nfukar6SEpRp9IX4vzZXXeDVdx7m0yfKWcuzQ==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor164jg2mvl5qen57tkwhrk3c9s5w0et4nlaad92h",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "152682",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq/97971",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "3HZqlO1vH2d+BqZwra1EQeJ7ghbSfKCLATsNrUDoMVkOBx2Hwpei52oe3FJ7YiMvo4QEv9BIlqdO2hx+vj675Q==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltne7tsq",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      },
+      {
+        "code": 1112,
+        "data": null,
+        "log": "failed to execute message; message index: 0: reporter tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5 is in jail: reporter jailed",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "52826",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor12mtrv5yn54xqsvdfvkz0g92w8wmeqyf32klql5/4040141",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "cbHgUN6xq/eRYIyMw6sH441kWJmBA3XjJH5puxDhtjhY56pstt+bgQ7PLXSHyycgbJDlODmA6CNkyxx+odb4MQ==",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": "reporter"
+      },
+      {
+        "code": 0,
+        "data": "Ei0KJC9sYXllci5vcmFjbGUuTXNnU3VibWl0VmFsdWVSZXNwb25zZRIFCJPM9gE=",
+        "log": "",
+        "info": "",
+        "gas_wanted": "300000",
+        "gas_used": "152862",
+        "events": [
+          {
+            "type": "coin_spent",
+            "attributes": [
+              {
+                "key": "spender",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "coin_received",
+            "attributes": [
+              {
+                "key": "receiver",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "transfer",
+            "attributes": [
+              {
+                "key": "recipient",
+                "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              },
+              {
+                "key": "amount",
+                "value": "8loya",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "sender",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "fee",
+                "value": "8loya",
+                "index": true
+              },
+              {
+                "key": "fee_payer",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "acc_seq",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz/226996",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "tx",
+            "attributes": [
+              {
+                "key": "signature",
+                "value": "dMqbT3MCQSCk8U7Bgf55JXbP/FBUETXHbBsyUpMjbgkJ2csWh8sdJtone7foHRdj4qBAzrrp9SBTtWeu1RcGtg==",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "message",
+            "attributes": [
+              {
+                "key": "action",
+                "value": "/layer.oracle.MsgSubmitValue",
+                "index": true
+              },
+              {
+                "key": "sender",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              },
+              {
+                "key": "module",
+                "value": "oracle",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          },
+          {
+            "type": "new_report",
+            "attributes": [
+              {
+                "key": "reporter",
+                "value": "tellor1dtqlmyscetmjp6rdm3zx0av5nku29450xllavz",
+                "index": true
+              },
+              {
+                "key": "reporter_power",
+                "value": "1",
+                "index": true
+              },
+              {
+                "key": "query_type",
+                "value": "SpotPrice",
+                "index": true
+              },
+              {
+                "key": "query_id",
+                "value": "83a7f3d48786ac2667503a61e8c415438ed2922eb86a2906e4ee66d9a2ce4992",
+                "index": true
+              },
+              {
+                "key": "value",
+                "value": "0000000000000000000000000000000000000000000000de5829bb40d343f000",
+                "index": true
+              },
+              {
+                "key": "cyclelist",
+                "value": "true",
+                "index": true
+              },
+              {
+                "key": "aggregate_method",
+                "value": "weighted-median",
+                "index": true
+              },
+              {
+                "key": "query_data",
+                "value": "00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000953706f745072696365000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037573640000000000000000000000000000000000000000000000000000000000",
+                "index": true
+              },
+              {
+                "key": "timestamp",
+                "value": "1759147542069",
+                "index": true
+              },
+              {
+                "key": "meta_id",
+                "value": "4040211",
+                "index": true
+              },
+              {
+                "key": "msg_index",
+                "value": "0",
+                "index": true
+              }
+            ]
+          }
+        ],
+        "codespace": ""
+      }
+    ],
+    "finalize_block_events": [
+      {
+        "type": "coin_spent",
+        "attributes": [
+          {
+            "key": "spender",
+            "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+            "index": true
+          },
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "coin_received",
+        "attributes": [
+          {
+            "key": "receiver",
+            "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+            "index": true
+          },
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "attributes": [
+          {
+            "key": "recipient",
+            "value": "tellor1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88fa8n2",
+            "index": true
+          },
+          {
+            "key": "sender",
+            "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+            "index": true
+          },
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "message",
+        "attributes": [
+          {
+            "key": "sender",
+            "value": "tellor17xpfvakm2amg962yls6f84z3kell8c5ls06m3g",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper168hv5trkskdwvxj2hzqdmch7r7l0prlnvwud6j",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper168hv5trkskdwvxj2hzqdmch7r7l0prlnvwud6j",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1fyc97jykpyvwrm78f0gfvffg987sqlvuwpzc8k",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1fyc97jykpyvwrm78f0gfvffg987sqlvuwpzc8k",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper16vuuwx7lekkfy57nl9mxmxrplfzflgylndyh7w",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper16vuuwx7lekkfy57nl9mxmxrplfzflgylndyh7w",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1gtrkqyyzwhag05jl87h5d75khv4s6r2xml7zcu",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1gtrkqyyzwhag05jl87h5d75khv4s6r2xml7zcu",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper12mtrv5yn54xqsvdfvkz0g92w8wmeqyf3lenjxy",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper12mtrv5yn54xqsvdfvkz0g92w8wmeqyf3lenjxy",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1uac7nf2wgq203phmh00lvu2pkwj2rz294gckyj",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1uac7nf2wgq203phmh00lvu2pkwj2rz294gckyj",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1dtqlmyscetmjp6rdm3zx0av5nku29450nsn04j",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1dtqlmyscetmjp6rdm3zx0av5nku29450nsn04j",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper10gdcl83p8nzu7kgrpyh8ksnuucwxv7agu9z2ys",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper10gdcl83p8nzu7kgrpyh8ksnuucwxv7agu9z2ys",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1yms0qd0u80r844xphnmlwlyhynxt8tzzg8fk07",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1yms0qd0u80r844xphnmlwlyhynxt8tzzg8fk07",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1jfq05ev088sz7ngfpuaauk2znvnklv4k2qzatt",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1jfq05ev088sz7ngfpuaauk2znvnklv4k2qzatt",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1d5948qyjvj0t5fz72vjuxnhzt660xzvrv0n5e5",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1d5948qyjvj0t5fz72vjuxnhzt660xzvrv0n5e5",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper164jg2mvl5qen57tkwhrk3c9s5w0et4nlgjphn8",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper164jg2mvl5qen57tkwhrk3c9s5w0et4nlgjphn8",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1tfyrkqcfeds8n6kw4jplltx0uz0ryudezetqys",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1tfyrkqcfeds8n6kw4jplltx0uz0ryudezetqys",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1lk56rhnd8pzlvjxn2dapwd4wcrxxg8zflfnl4g",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1lk56rhnd8pzlvjxn2dapwd4wcrxxg8zflfnl4g",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper10n3fs6fkl4fp9dcsdfl2vl3ay7pk7snnyfsayv",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper10n3fs6fkl4fp9dcsdfl2vl3ay7pk7snnyfsayv",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper15hnkaauruuv495xph83f7gt95t5pg4tmcg3jd8",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper15hnkaauruuv495xph83f7gt95t5pg4tmcg3jd8",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1rrxsy8c0wsqdkt02569yhuqkzhg6arw6dj98rf",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1rrxsy8c0wsqdkt02569yhuqkzhg6arw6dj98rf",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltxkjefs",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1ugn62kvzv5fs7uh62eyxkjy3n8k4aeltxkjefs",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1yr8g5tzvzv6djgjjg9zjnmf2uayw5elmklm0qh",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1yr8g5tzvzv6djgjjg9zjnmf2uayw5elmklm0qh",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1njw68f4qfvxzerexcf72cda8llj484znt2rmu2",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1njw68f4qfvxzerexcf72cda8llj484znt2rmu2",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1t25cu9cg0qgvlhc79ghtfmrr7kt92592myqx8g",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1t25cu9cg0qgvlhc79ghtfmrr7kt92592myqx8g",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper107zlzemxrs4gf26jjev40plh88vesmexx25yvv",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper107zlzemxrs4gf26jjev40plh88vesmexx25yvv",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1zcxpkarndhr6dw6tgxshenk98gruyt9caqqm4p",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1zcxpkarndhr6dw6tgxshenk98gruyt9caqqm4p",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper100gypgs8a32xwheejfl4ahsp4xye3r4euyp7a6",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper100gypgs8a32xwheejfl4ahsp4xye3r4euyp7a6",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1nfq0q0jk4e4773j0thc2dhlp9ws8s3lx8j36jc",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1nfq0q0jk4e4773j0thc2dhlp9ws8s3lx8j36jc",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper126nmhcr685fvl4ypmy5t6efv6c8zntx5l8wkxq",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper126nmhcr685fvl4ypmy5t6efv6c8zntx5l8wkxq",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1mexffnccs8atut7zzkl4zl6e9mk38pk0mhdtlc",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1mexffnccs8atut7zzkl4zl6e9mk38pk0mhdtlc",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wd8drn696q8leskknn76uv0f2ddv8s06xulef6",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wd8drn696q8leskknn76uv0f2ddv8s06xulef6",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1esnxuz6scvcwxpjackqxyje5m5gg7awphlykn3",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1esnxuz6scvcwxpjackqxyje5m5gg7awphlykn3",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1x70l4dcj30nr4x52ph3jmkpgz79qgktxu6cy7v",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1x70l4dcj30nr4x52ph3jmkpgz79qgktxu6cy7v",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper13nwzm5dfd26ue74jr6sc39gyn3qze0rjja9t60",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper13nwzm5dfd26ue74jr6sc39gyn3qze0rjja9t60",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wtf8sglpa3exrp45nftz9xmkalv3zsa5xa675k",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wtf8sglpa3exrp45nftz9xmkalv3zsa5xa675k",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1uucm2p9j49xjtpruu75uarwyu75cvq8a44unrq",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1uucm2p9j49xjtpruu75uarwyu75cvq8a44unrq",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wdkauafxxvvmthwxh3va97yx7j85m5mmdu4uvz",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1wdkauafxxvvmthwxh3va97yx7j85m5mmdu4uvz",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1mmdzk6gudp370g8dpw7uuqlcvkruk7m383fzxw",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1mmdzk6gudp370g8dpw7uuqlcvkruk7m383fzxw",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1r55ktpxc50c38uqpaza7820smjsyalykx8wvca",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1r55ktpxc50c38uqpaza7820smjsyalykx8wvca",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1ja6tq8p046qdz44zsq0d02y8yjukscy2ah8pjg",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1ja6tq8p046qdz44zsq0d02y8yjukscy2ah8pjg",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "commission",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1n8a2au0p0w49rctey3mxh3kajsdqtdypqr0esj",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      },
+      {
+        "type": "rewards",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "",
+            "index": true
+          },
+          {
+            "key": "validator",
+            "value": "tellorvaloper1n8a2au0p0w49rctey3mxh3kajsdqtdypqr0esj",
+            "index": true
+          },
+          {
+            "key": "mode",
+            "value": "BeginBlock",
+            "index": true
+          }
+        ]
+      }
+    ],
+    "validator_updates": [
+      {
+        "pub_key": {
+          "Sum": {
+            "type": "tendermint.crypto.PublicKey_Ed25519",
+            "value": {
+              "ed25519": "xsQaujRMWFuugL7nvOJ1zC37W/9iTtwQa0/8kqQsejc="
+            }
+          }
+        },
+        "power": "988"
+      }
+    ],
+    "consensus_param_updates": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {},
+      "abci": {
+        "vote_extensions_enable_height": "1"
+      }
+    },
+    "app_hash": "QdJR71rp+RKNIFb9NYk3rbFsdv6ceTndPD65kNn+tws="
+  }
+}

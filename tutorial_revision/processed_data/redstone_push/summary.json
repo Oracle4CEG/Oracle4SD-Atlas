@@ -1,0 +1,14 @@
+{
+  "branch": "RedStone Push",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "oracle_timestamp_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "1d23c2286ccfe41466c07d1743afbbe78f4f43e735fa623548616ec25eacfbd0",
+  "parent_sha256": "03ea0ca606691b9d30540a8a4aacd8abc92ba2446fd6c11ae7ef415b9121d4b2",
+  "source_unit": "redstone_ethereum_push_events",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

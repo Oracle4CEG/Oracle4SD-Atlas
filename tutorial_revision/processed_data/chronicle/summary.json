@@ -1,0 +1,15 @@
+{
+  "branch": "Chronicle",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "oracle_timestamp_utc",
+    "payment_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "29cd91d46866bf98af70df105635e799bee826a3021a7fc8fc31bc391f82fab4",
+  "parent_sha256": "ddaa05c697ef73d7c8faf21fb91cdc843ce084d83f42b7b029895085795aa263",
+  "source_unit": "chronicle_ethereum_events",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

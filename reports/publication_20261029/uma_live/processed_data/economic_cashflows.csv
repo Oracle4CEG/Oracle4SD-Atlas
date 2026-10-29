@@ -1,0 +1,5 @@
+role,component,amount_raw,amount_token
+proposer,bond + final fee lost,-750000000,-750.0
+disputer,escrow deposited,-750000000,-750.0
+disputer,settlement received,1000000000,1000.0
+oracle fee recipient,protocol fee,500000000,500.0

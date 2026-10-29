@@ -1,0 +1,44 @@
+{
+  "assistant": "Codex",
+  "model_family_disclosed_by_environment": "GPT-6",
+  "exact_backend_model_version": "not_exposed",
+  "revision_date": "2026-10-26",
+  "user_instruction": "Complete remaining mentor revisions; use natural scholarly prose; browse primary writing guidance before drafting.",
+  "tasks": [
+    "source inspection",
+    "Python/SQL drafting",
+    "data recomputation",
+    "LaTeX revision",
+    "vector figure generation",
+    "automated checks"
+  ],
+  "human_rule_approval": "not_supplied",
+  "historical_prompt_transcripts": "not_reconstructed",
+  "author_review_required": [
+    "historical implementation binding",
+    "six semantic rules",
+    "feature availability at proposal time",
+    "case interpretation",
+    "final scientific wording"
+  ],
+  "limitations": "Automated checks and model assistance do not constitute human verification.",
+  "adopted_changes": [
+    "recomputed role-separated UMA histories",
+    "UTC clock companions",
+    "typed daily measurements",
+    "closed-request observed escrow exposure",
+    "six object-level correction ledgers",
+    "cross-chain worked case",
+    "compact vector figures",
+    "Data Descriptor prose and appendices"
+  ],
+  "publication_update": {
+    "date": "2026-10-29",
+    "tasks": [
+      "Template completion comparison",
+      "tutorial and documentation editing",
+      "Hugging Face release assembly and automated validation"
+    ],
+    "human_signoff": "not_supplied"
+  }
+}

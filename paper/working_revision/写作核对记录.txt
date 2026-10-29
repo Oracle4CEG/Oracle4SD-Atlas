@@ -1,0 +1,31 @@
+本轮写作对照来源（不加入科学论文参考文献）
+
+1. Scientific Data Submission Guidelines
+https://www.nature.com/sdata/submission-guidelines
+核对 Methods、Data Records、Technical Validation 的职责。Methods解释数据生成，Technical Validation给出质量证据；内部修订进度不作为研究内容。
+
+2. Bitcoin research with a transaction graph dataset, Scientific Data (2025)
+https://www.nature.com/articles/s41597-025-04684-8
+对照区块链数据论文如何连接原始记录、研究对象及数据表示。仅用于结构对照，不照搬其文字或算法分析安排。
+
+3. LifeSnaps, a 4-month multi-modal dataset capturing unobtrusive snapshots of our lives in the wild (2022)
+https://doi.org/10.1038/s41597-022-01764-x
+检索结果中核对共同时间参考的表述；完整HTML访问受站点跳转限制，未声称完整阅读全文。
+
+已执行的编辑
+- 时间方法和验证改为研究方法叙述，不列运行日志。
+- 删除任意测试日/周和对应记录数；精确证据仍在数据文档。
+- 删除论文内本地路径、内部文件名及“本轮未重建”叙述；版本区别以数据定义解释。
+- 清理上一轮附录中的路径、建议稿日期和对建议稿的过程性引用。
+- 清理原验证部分的代码单元数量和测试运行数量。
+- 保留研究必要的截止边界、历史来源和有解释作用的可用率。
+- 数据文件、校验结果、未完成任务清单未因改文风而改写。
+
+本轮全文压缩：写作前查阅 Scientific Data 投稿规范与 Duke Scientific Writing Resource 的 Concision and Simplicity，采用删冗余、保留科学限定的方式改写；未使用 AI 检测分数。
+https://www.nature.com/sdata/submission-guidelines
+https://sites.duke.edu/scientificwriting/lesson-3-concision-and-simplicity/
+PDF 实际字形宽度已核对；正文/附录短尾行 58→0，30 条图表注释均通过，参考文献续行和首页脚注已检查。本地 XeTeX 编译无溢出或未定义引用。
+
+Appendix B.2 示例表：写作前查阅 Scientific Data Submission Guidelines 与 Duke Scientific Writing Resource。以真实记录展示秒/毫秒、epoch 和缺失处理；日期仅服务于转换示例，路径和完整交易标识保留在证据文件。未改变数据覆盖或人工审核状态。
+https://www.nature.com/sdata/submission-guidelines
+https://sites.duke.edu/scientificwriting/lesson-3-concision-and-simplicity/

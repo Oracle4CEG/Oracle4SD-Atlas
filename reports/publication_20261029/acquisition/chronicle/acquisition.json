@@ -1,0 +1,30 @@
+{
+  "branch": "Chronicle",
+  "mode": "live",
+  "result_keys": [
+    "type",
+    "status",
+    "cumulativeGasUsed",
+    "logs",
+    "logsBloom",
+    "transactionHash",
+    "transactionIndex",
+    "blockHash",
+    "blockNumber",
+    "gasUsed",
+    "effectiveGasPrice",
+    "from",
+    "to",
+    "contractAddress"
+  ],
+  "output": "chronicle/live_response.json",
+  "expected_native_block": 19212137,
+  "locator_verified": true,
+  "run_sha256": "9c69811394986aaffd4279827f399be6c8e31be7bc17ccec4164d4f62ce8e277",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.546,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

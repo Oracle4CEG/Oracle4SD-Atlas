@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca",
+  "derivation_inputs": "public RPC receipts, canonical block headers, deployed code and pinned public contract sources",
+  "curated_ledger_inputs_used": false,
+  "source_modes": {
+    "polygon": "frozen_rpc_snapshot_replay",
+    "ethereum": "frozen_rpc_snapshot_replay"
+  },
+  "source_origin_modes": {
+    "polygon": "public_rpc",
+    "ethereum": "public_rpc"
+  },
+  "public_provider_hosts": {
+    "polygon": "polygon.drpc.org",
+    "ethereum": "ethereum.drpc.org"
+  },
+  "contract_semantic_rules_passed": 7,
+  "all_required_assertions_pass": true,
+  "assertions": {
+    "four_oov2_lifecycle_events": true,
+    "adapter_parameters_same_request": true,
+    "proposal_deposit_equals_bond_plus_final_fee": true,
+    "disputer_deposit_equals_bond_plus_final_fee": true,
+    "configured_reward_refunded_and_rolled": true,
+    "settlement_event_equals_transfer": true,
+    "legacy_child_ancillary_exact": true,
+    "bridge_request_hash_exact": true,
+    "bridge_message_hash_exact": true,
+    "dvm_request_hash_exact": true,
+    "dvm_identifier_time_ancillary_exact": true,
+    "resolved_price_cross_chain_consistent": true,
+    "public_result_matches_preregistered_qc_values": true
+  },
+  "files": [
+    {
+      "path": "economic/abc_economic_measures.csv",
+      "bytes": 7601,
+      "sha256": "190f17ff171349e06af5baeaf8f73cc1ef1c66272334c04255fb3ac4657a1203"
+    },
+    {
+      "path": "economic/abc_economic_measures.parquet",
+      "bytes": 10385,
+      "sha256": "24b3579163617162dab47c00ea5180f4cc6b5d4a3a690ff0a6df3c57b6f3e423"
+    },
+    {
+      "path": "economic/variable_provenance.parquet",
+      "bytes": 9169,
+      "sha256": "8ac62c2eefc3c0916d07a9c573cbc9ceee0cd00577847da9b24cced73a1a9235"
+    },
+    {
+      "path": "figures/uma_public_rpc_case.pdf",
+      "bytes": 28554,
+      "sha256": "f4eeffbe7c6bd2a9910838e2b769f5c3076fafb59142d5e78df517457923f0ee"
+    },
+    {
+      "path": "figures/uma_public_rpc_case.png",
+      "bytes": 147744,
+      "sha256": "336442a4f934c53f1c5976642a0e083278a6d6c1d089ab944ea1837f603b0e3b"
+    },
+    {
+      "path": "processed/economic_episode.json",
+      "bytes": 4479,
+      "sha256": "01289ca619272dea7a6d596a8d6bda1ae799f3b38d78394f144983aea2bd836f"
+    },
+    {
+      "path": "processed/economic_episode.parquet",
+      "bytes": 67627,
+      "sha256": "312d8205c19a79bcb50ecb4f76c061999894853d76c01455034600c801d062ae"
+    },
+    {
+      "path": "raw/ethereum_rpc_snapshot.json",
+      "bytes": 29199,
+      "sha256": "17c3ea9bf6e51971bdc5a15c3daef0ea976c4336bd32561aa9eb43f79d29f7dc"
+    },
+    {
+      "path": "raw/polygon_rpc_snapshot.json",
+      "bytes": 99358,
+      "sha256": "0eaf3a1a80445f64e99250a406988c7a00ddb04ce9869c06001806fb0fde9da7"
+    },
+    {
+      "path": "report.md",
+      "bytes": 2102,
+      "sha256": "1325d3a195be49aa4b6670d2fbbdac475fd577ea9736be056dea4dc1853f0a0a"
+    },
+    {
+      "path": "source/OptimisticOracleV2.sol",
+      "bytes": 32293,
+      "sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf"
+    },
+    {
+      "path": "source/OptimisticOracleV2Interface.sol",
+      "bytes": 16138,
+      "sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328"
+    },
+    {
+      "path": "source/VotingV2.abi.json",
+      "bytes": 42629,
+      "sha256": "84e7656bf39385b2fb4af555422f1ec36d933889be38eed9f3a2e3b9500117c6"
+    },
+    {
+      "path": "source/VotingV2.sol",
+      "bytes": 59632,
+      "sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337"
+    },
+    {
+      "path": "source/case_spec.json",
+      "bytes": 6089,
+      "sha256": "6bc9d141f52398b1f3446a93d7619e4e475535419bffec528f2b662ae7c3b865"
+    },
+    {
+      "path": "source/source_manifest.json",
+      "bytes": 1419,
+      "sha256": "af0ed9b92b73398e5af168adf74aea45022e8d2a6b586dd0095a4243bc80dc0f"
+    },
+    {
+      "path": "statistics/economic_cashflows.parquet",
+      "bytes": 3375,
+      "sha256": "72cc34b25e8bce68baf7fc5e03f303375980b0ee902e9412d1d7caa3eb0294f2"
+    },
+    {
+      "path": "statistics/lifecycle_timeline.parquet",
+      "bytes": 4691,
+      "sha256": "a6c01ce44ba5f8262fbaec6e2f5b5ec998308f98f1c7c6a593f675aec18ec593"
+    },
+    {
+      "path": "statistics/summary.csv",
+      "bytes": 304,
+      "sha256": "451c1d166658ed64574c34145b6773d46d805a9f9258c27d87433100706a791a"
+    },
+    {
+      "path": "statistics/summary.json",
+      "bytes": 371,
+      "sha256": "5e9678df88661d81cc50ea6ea81dbb5eb37b274b87ba8fc4d5f2ad5c78af1894"
+    },
+    {
+      "path": "validated/canonical_chain_qc.parquet",
+      "bytes": 3102,
+      "sha256": "e92ba1a9471ba01d013435db694cc52180a520fb739554da5ab23c5de3ae8052"
+    },
+    {
+      "path": "validated/contract_semantics.json",
+      "bytes": 3050,
+      "sha256": "49d545fde6037df7c4d5e1d7c347fcb9c03928483eb09a2e48ca8b9bb1223db0"
+    },
+    {
+      "path": "validated/economic_link_qc.parquet",
+      "bytes": 2200,
+      "sha256": "55b4fc78d6014ed154a9357ea63c12b13b2d8301a65d4b63812b44915ca4a82b"
+    },
+    {
+      "path": "validated/ethereum_dvm_resolution.parquet",
+      "bytes": 30044,
+      "sha256": "e5a382fee3897dcbd014a9b24ba1d321f7a6d580066f2e3954b91f5b1d8dfad9"
+    },
+    {
+      "path": "validated/polygon_decoded_events.parquet",
+      "bytes": 84958,
+      "sha256": "7e4e33990b2f19f06991d9396278a121d45b5fc96e0ac358f1619b98c2951dc1"
+    },
+    {
+      "path": "validated/token_flows.parquet",
+      "bytes": 7612,
+      "sha256": "eeecd1cf4fe07819087d888dd39d079928b932d362a72226c058c14a6a752641"
+    }
+  ]
+}

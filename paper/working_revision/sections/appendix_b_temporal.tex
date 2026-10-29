@@ -1,0 +1,39 @@
+\clearpage
+\section{Temporal harmonization}
+\label{app:temporal}
+
+\subsection{Native clocks and observation boundaries}
+
+Temporal coverage is defined for each sampled implementation and observation type. Its lower boundary may reflect contract deployment, a change in protocol rules, archive availability or the retention limits of a state interface. These boundaries are distinct from the first event found in a table. Table~\ref{tab:temporal_boundaries} summarizes the reasons for the observed scope; Appendix~\ref{app:scope} provides the implementation and source details.
+
+\input{tables/temporal_boundaries}
+
+The interpretation of time also depends on the native object. A UMA request-reference timestamp contributes to request identity, whereas the block timestamp dates the recorded event. Tellor report, aggregate and dispute clocks refer to different stages of reporting and adjudication. An epoch or state snapshot represents temporal support or a state observation rather than an instantaneous event.
+
+\subsection{UTC representation and epoch support}
+
+UTC conversion preserves native values, units and precision. Table~\ref{tab:temporal_examples} illustrates second and millisecond clocks, epoch intervals and missing-time handling. Native identifiers and execution order are retained; nanosecond storage does not increase source precision.
+
+Missing EVM times are recovered from consistent same-chain, same-block timestamps, with provenance distinguishing recovered and source-provided clocks. Conflicting or unmatched blocks remain undated.
+
+\input{tables/temporal_worked_examples}
+
+Epoch-based observations are represented by their native start and end boundaries. The retained Flare and Pyth reward intervals have different durations, and neither interval determines when a payment occurred. Figure~\ref{fig:temporal_support} illustrates their alignment near the observation cutoff. A timestamp on a shared epoch boundary belongs to the later interval under the half-open convention. Later state snapshots preserve their own acquisition context and do not establish when historical values became available to participants.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/temporal_epoch_support.pdf}
+\caption{Native epochs near the cutoff. Flare and Pyth bars span three and a half and seven days, respectively; diamonds mark epoch-end labels against a daily grid. Labels denote observation intervals, not payments.}
+\label{fig:temporal_support}
+\end{figure}
+
+\FloatBarrier
+\subsection{Temporal availability and coverage}
+
+Timestamp availability is the proportion of retained observations with a valid clock. Historical coverage additionally requires evidence about the period in which a mechanism was active and the intervals successfully collected. A sequence with timestamps on every row can therefore still contain acquisition gaps. Coverage remains unspecified when the underlying observation period cannot be established.
+
+\input{tables/temporal_recovery}
+
+\input{tables/temporal_validation_summary}
+
+Temporal annotations and the original common representation are separately versioned. Analyses should use a consistent representation and restrict comparisons to compatible observation periods. Daily economic measures further require defined participant roles, assets, economic stages and exposure. Epoch totals should remain attached to their support intervals unless the data justify a more detailed temporal allocation.

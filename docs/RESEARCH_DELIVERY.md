@@ -1,3 +1,5 @@
+> Historical instructions below describe an earlier release. For the current ten-product data, manuscript and tutorial use [the project README](../README.md) and [release configuration](../configs/atlas_utc_release.json). Earlier execution and publication statements do not describe the current release.
+
 # Atlas and research delivery boundary
 
 Hugging Face revision `ee197fc6fd6b8d980e7c7dda4feae966efe5d28c` preserves the

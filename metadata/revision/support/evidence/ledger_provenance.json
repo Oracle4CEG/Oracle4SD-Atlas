@@ -1,0 +1,31 @@
+{
+  "old_episode_sha256": "9fc63110c2ecc088fe5306493e0b05d0e6f96e93219bf070ce5ff86b132cba24",
+  "old_sample_c_sha256": "b47a7d4b550ebfeee59ea022aa7eb68ee888a4b47f45aebe7ea612a9bd8569c1",
+  "rules": [
+    {
+      "rule_id": "UMA_CHALLENGE_V2",
+      "query": "SELECT r.oo_request_id object_id,'Polygon' AS chain,r.source_contract,r.source_tx,r.log_index source_log_index,'challenged' AS field,e.challenged::VARCHAR before_value,'false' after_value,'Native dispute transaction and nonzero disputer required' reason FROM old_episode e JOIN read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/polygon_uma_request_rounds.parquet') r ON e.unit_id=r.oo_request_id WHERE e.episode_type='uma_oov2_request' AND e.challenged AND (r.dispute_tx IS NULL OR r.disputer='0x0000000000000000000000000000000000000000')"
+    },
+    {
+      "rule_id": "UMA_SETTLEMENT_V2",
+      "query": "SELECT r.oo_request_id,'Polygon',r.source_contract,r.source_tx,r.log_index,'transfer_confirmed',e.transfer_confirmed::VARCHAR,'false','Unsettled request cannot be a completed payment' FROM old_episode e JOIN read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/polygon_uma_request_rounds.parquet') r ON e.unit_id=r.oo_request_id WHERE e.episode_type='uma_oov2_request' AND e.transfer_confirmed AND r.settlement_tx IS NULL"
+    },
+    {
+      "rule_id": "UMA_WINNER_COMPONENT_V2",
+      "query": "SELECT r.oo_request_id,'Polygon',r.source_contract,r.settlement_tx,r.log_index,'reward_paid_raw',e.reward_paid_raw,(try_cast(r.explicit_report_reward_raw AS HUGEINT)+try_cast(r.dispute_winner_reward_raw AS HUGEINT))::VARCHAR,'Separate returned principal from configured reward and unburned winner bond' FROM old_episode e JOIN read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/polygon_uma_request_rounds.parquet') r ON e.unit_id=r.oo_request_id WHERE e.episode_type='uma_oov2_request' AND r.economic_status LIKE 'settled_disputed_%' AND try_cast(e.reward_paid_raw AS HUGEINT) IS DISTINCT FROM try_cast(r.explicit_report_reward_raw AS HUGEINT)+try_cast(r.dispute_winner_reward_raw AS HUGEINT)"
+    },
+    {
+      "rule_id": "TELLOR_OUTCOME_V2",
+      "query": "SELECT d.dispute_id,'tellor-1',NULL,d.source_tx,NULL,'strict_event_class',s.strict_event_class,CASE WHEN d.vote_result LIKE '%SUPPORT' THEN 'tellor_report_rejected' ELSE 'tellor_report_supported' END,'SUPPORT supports the disputer' FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/sample_c_strict_honesty_events.parquet') s JOIN read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/tellor_disputes.parquet') d ON s.accountability_unit_id=d.dispute_id WHERE s.native_table='tellor_disputes' AND ((s.outcome_status LIKE '%SUPPORT' AND s.strict_event_class<>'tellor_report_rejected') OR (s.outcome_status LIKE '%AGAINST' AND s.strict_event_class<>'tellor_report_supported'))"
+    },
+    {
+      "rule_id": "TELLOR_APPLIED_LOSS_V2",
+      "query": "SELECT d.dispute_id,'tellor-1',NULL,d.source_tx,NULL,'principal_slashed_raw',e.principal_slashed_raw,'0','Rejected challenge returns reporter stake; initial escrow is not final applied loss' FROM old_episode e JOIN read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/tellor_disputes.parquet') d ON e.unit_id=d.dispute_id WHERE e.episode_type='tellor_dispute' AND d.vote_result NOT IN ('SUPPORT','NO_QUORUM_MAJORITY_SUPPORT') AND try_cast(e.principal_slashed_raw AS HUGEINT)>0"
+    },
+    {
+      "rule_id": "DVM_ACCRUAL_V2",
+      "query": "SELECT p.dvm_request_id||':'||p.voter||':'||p.source_tx||':'||p.log_index::VARCHAR,'Ethereum',p.source_contract,p.source_tx,p.log_index,'principal_slashed_raw',p.wrong_or_no_vote_slash_raw,NULL,'VoterSlashed is a signed accrual; applied net stake change requires separate evidence' FROM read_parquet('/home/hy/develop/oracle-nature/data/curated/parquet/uma_dvm_voter_payoffs.parquet') p WHERE try_cast(p.wrong_or_no_vote_slash_raw AS HUGEINT)>0"
+    }
+  ],
+  "human_review": "No author sign-off supplied; fields remain pending."
+}

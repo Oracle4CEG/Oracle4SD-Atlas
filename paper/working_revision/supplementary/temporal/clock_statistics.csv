@@ -1,0 +1,140 @@
+table,branch,chain,field,rows,valid_rows,null_rows,invalid_source_values,first_utc,last_utc,post_cutoff_rows,subsecond_rows
+chainlink_eth_usd_reports,Chainlink,Ethereum,oracle_update_time_utc,62575,46723,15852,0,2023-11-14T19:56:23Z,2026-06-30T23:21:35Z,0,0
+chainlink_eth_usd_reports,Chainlink,Ethereum,event_time_utc,62575,8399,54176,0,2023-11-17T01:55:47Z,2026-06-30T20:20:35Z,0,0
+chainlink_event_link_flow_qc,Chainlink,Ethereum,event_time_utc,51372,0,51372,0,,,0,0
+chainlink_link_flows,Chainlink,Ethereum,event_time_utc,77203,3491,73712,0,2023-11-28T17:27:47Z,2026-06-30T18:30:35Z,0,0
+chainlink_staking_v02_events,Chainlink,Ethereum,event_time_utc,174890,10563,164327,0,2023-11-28T17:27:47Z,2026-06-30T18:30:35Z,0,0
+chainlink_staking_v02_events,Chainlink,Ethereum,payment_time_utc,174890,2454,172436,0,2024-02-05T07:50:59Z,2026-06-30T18:30:35Z,0,0
+chronicle_ethereum_events,Chronicle,Ethereum,event_time_utc,140526,140526,0,0,2023-08-28T16:17:11Z,2026-06-30T23:36:47Z,0,0
+chronicle_ethereum_events,Chronicle,Ethereum,oracle_timestamp_utc,140526,138650,1876,0,2023-10-11T11:25:30Z,2026-06-30T23:35:35Z,0,0
+chronicle_ethereum_events,Chronicle,Ethereum,payment_time_utc,140526,14,140512,0,2024-02-12T13:06:59Z,2026-01-22T10:47:23Z,0,0
+chronicle_redstone_settlement_interfaces,Multiple,row-specific,event_time_utc,2,0,2,0,,,0,0
+dia_staking_events,DIA,Lasernet,event_time_utc,801,801,0,0,2025-06-24T13:15:35Z,2026-06-24T22:01:07Z,0,0
+dia_staking_withdrawals,DIA,Lasernet,event_time_utc,129,129,0,0,2025-07-08T10:30:45Z,2026-06-18T16:30:19Z,0,0
+dia_staking_withdrawals,DIA,Lasernet,payment_time_utc,129,129,0,0,2025-07-08T10:30:45Z,2026-06-18T16:30:19Z,0,0
+ecosystem_observability_evidence,Multiple,row-specific,event_time_utc,2,0,2,0,,,0,0
+flare_beneficiary_chill_events,Flare FTSOv2,Flare,event_time_utc,6,6,0,0,2025-12-18T09:12:04Z,2025-12-18T09:12:04Z,0,0
+flare_beneficiary_chill_state,Flare FTSOv2,Flare,snapshot_time_utc,6,6,0,0,2026-06-30T23:59:59Z,2026-06-30T23:59:59Z,0,6
+flare_beneficiary_chill_state,Flare FTSOv2,Flare,event_time_utc,6,0,6,0,,,0,0
+flare_provider_conditions,Flare FTSOv2,Flare,epoch_end_utc,14379,14379,0,0,2024-12-19T18:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_provider_conditions,Flare FTSOv2,Flare,epoch_start_utc,14379,14379,0,0,2024-12-16T06:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_provider_conditions,Flare FTSOv2,Flare,event_time_utc,14379,0,14379,0,,,0,0
+flare_provider_failures,Flare FTSOv2,Flare,epoch_start_utc,3742,3742,0,0,2024-12-16T06:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_provider_failures,Flare FTSOv2,Flare,epoch_end_utc,3742,3742,0,0,2024-12-19T18:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_provider_failures,Flare FTSOv2,Flare,event_time_utc,3742,0,3742,0,,,0,0
+flare_provider_feed_performance,Flare FTSOv2,Flare,epoch_start_utc,869278,869278,0,0,2024-12-16T06:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_provider_feed_performance,Flare FTSOv2,Flare,epoch_end_utc,869278,869278,0,0,2024-12-19T18:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_provider_feed_performance,Flare FTSOv2,Flare,event_time_utc,869278,0,869278,0,,,0,0
+flare_provider_passes,Flare FTSOv2,Flare,epoch_start_utc,14379,14379,0,0,2024-12-16T06:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_provider_passes,Flare FTSOv2,Flare,epoch_end_utc,14379,14379,0,0,2024-12-19T18:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_provider_passes,Flare FTSOv2,Flare,event_time_utc,14379,0,14379,0,,,0,0
+flare_reward_claim_epoch_qc,Flare FTSOv2,Flare,epoch_start_utc,183,183,0,0,2024-09-26T18:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_reward_claim_epoch_qc,Flare FTSOv2,Flare,epoch_end_utc,183,183,0,0,2024-09-30T06:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_reward_claim_epoch_qc,Flare FTSOv2,Flare,snapshot_time_utc,183,183,0,0,2026-06-30T23:59:59Z,2026-06-30T23:59:59Z,0,183
+flare_reward_claim_epoch_qc,Flare FTSOv2,Flare,event_time_utc,183,0,183,0,,,0,0
+flare_reward_claim_events,Flare FTSOv2,Flare,event_time_utc,18468735,18468735,0,0,2024-10-03T20:10:09Z,2026-06-30T23:59:26Z,0,0
+flare_reward_claim_events,Flare FTSOv2,Flare,epoch_start_utc,18468735,18468735,0,0,2024-09-26T18:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_reward_claim_events,Flare FTSOv2,Flare,epoch_end_utc,18468735,18468735,0,0,2024-09-30T06:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_reward_claim_events,Flare FTSOv2,Flare,payment_time_utc,18468735,18468675,60,0,2024-10-03T20:10:09Z,2026-06-30T23:59:26Z,0,0
+flare_reward_claims,Flare FTSOv2,Flare,epoch_end_utc,49858,49858,0,0,2024-09-30T06:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_reward_claims,Flare FTSOv2,Flare,epoch_start_utc,49858,49858,0,0,2024-09-26T18:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_reward_claims,Flare FTSOv2,Flare,event_time_utc,49858,0,49858,0,,,0,0
+flare_reward_component_attribution,Flare FTSOv2,Flare,epoch_start_utc,86274,86274,0,0,2024-12-16T06:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_reward_component_attribution,Flare FTSOv2,Flare,epoch_end_utc,86274,86274,0,0,2024-12-19T18:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_reward_component_attribution,Flare FTSOv2,Flare,event_time_utc,86274,0,86274,0,,,0,0
+flare_reward_epochs,Flare FTSOv2,Flare,epoch_start_utc,183,183,0,0,2024-09-26T18:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_reward_epochs,Flare FTSOv2,Flare,epoch_end_utc,183,183,0,0,2024-09-30T06:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_reward_epochs,Flare FTSOv2,Flare,event_time_utc,183,0,183,0,,,0,0
+flare_voter_registrations,Flare FTSOv2,Flare,epoch_start_utc,15859,15859,0,0,2024-09-26T18:59:15Z,2026-06-25T18:59:15Z,0,0
+flare_voter_registrations,Flare FTSOv2,Flare,epoch_end_utc,15859,15859,0,0,2024-09-30T06:59:15Z,2026-06-29T06:59:15Z,0,0
+flare_voter_registrations,Flare FTSOv2,Flare,event_time_utc,15859,0,15859,0,,,0,0
+phase4_oracle_economic_interfaces,Multiple,row-specific,metadata_audit_time_utc,6,6,0,0,2026-07-28T11:39:33.428455Z,2026-07-28T11:39:33.428455Z,6,6
+phase4_oracle_economic_interfaces,Multiple,row-specific,event_time_utc,6,0,6,0,,,0,0
+polygon_adapter_events,UMA,Polygon,event_time_utc,98267,98267,0,0,2022-01-10T21:05:06Z,2026-06-30T16:02:58Z,0,0
+polygon_adapter_events,UMA,Polygon,request_reference_time_utc,98267,45005,53262,0,2022-01-10T22:50:32Z,2026-01-31T01:15:26Z,0,0
+polygon_child_tunnel_events,UMA,Polygon,event_time_utc,13512,13512,0,0,2022-04-11T06:15:43Z,2026-06-30T19:03:25Z,0,0
+polygon_child_tunnel_events,UMA,Polygon,dvm_reference_time_utc,13512,9925,3587,0,2022-04-11T05:35:31Z,2026-06-30T18:42:05Z,0,0
+polygon_oov2_events,UMA,Polygon,event_time_utc,514794,514794,0,0,2022-07-11T17:56:38Z,2026-06-30T22:59:19Z,0,0
+polygon_oov2_events,UMA,Polygon,request_reference_time_utc,514794,514794,0,0,2022-07-11T17:56:38Z,2026-06-30T22:38:34Z,0,0
+polygon_oov2_events,UMA,Polygon,expiration_time_utc,514794,166507,348287,0,2022-07-12T00:21:00Z,2026-07-01T00:55:04Z,1,0
+polygon_uma_gamma_links,UMA,Polygon,metadata_created_utc,42676,41057,1619,0,2022-11-21T21:56:04.980000Z,2025-09-03T19:17:43.256386Z,0,41054
+polygon_uma_gamma_links,UMA,Polygon,metadata_updated_utc,42676,41057,1619,0,2023-01-31T01:31:31.508000Z,2026-07-20T10:49:08.433832Z,24,41053
+polygon_uma_gamma_links,UMA,Polygon,metadata_closed_utc,42676,41029,1647,0,2022-11-22T15:14:12Z,2026-07-04T06:26:05Z,4,37
+polygon_uma_gamma_links,UMA,Polygon,market_end_utc,42676,40834,1842,0,2022-11-21T00:00:00Z,2027-01-01T05:00:00Z,28,17
+polygon_uma_gamma_links,UMA,Polygon,event_time_utc,42676,0,42676,0,,,0,0
+polygon_uma_request_flow_qc,UMA,Polygon,event_time_utc,42676,0,42676,0,,,0,0
+polygon_uma_request_rounds,UMA,Polygon,event_time_utc,42676,42676,0,0,2022-11-04T20:20:30Z,2026-06-30T16:02:58Z,0,0
+polygon_uma_request_rounds,UMA,Polygon,request_reference_time_utc,42676,42676,0,0,2022-11-04T20:20:30Z,2026-06-30T16:02:58Z,0,0
+polygon_uma_request_rounds,UMA,Polygon,expiration_time_utc,42676,41827,849,0,2022-11-05T20:32:45Z,2026-06-30T18:02:10Z,0,0
+polygon_uma_token_flows,UMA,Polygon,event_time_utc,562536,562462,74,0,2022-01-10T22:50:32Z,2026-06-30T22:59:19Z,0,0
+polymarket_decision_time_price_onchain_validation,UMA,Polygon,event_time_utc,48,2,46,0,2025-07-01T04:30:05Z,2025-07-01T04:30:05Z,0,0
+polymarket_decision_time_price_provenance,UMA,Polygon,retrieval_time_utc,810,810,0,0,2026-08-06T02:35:23.688077Z,2026-08-06T02:37:06.892578Z,810,810
+polymarket_decision_time_price_provenance,UMA,Polygon,decision_time_utc,810,810,0,0,2023-04-08T22:26:58Z,2026-05-09T15:24:17Z,0,0
+polymarket_decision_time_price_provenance,UMA,Polygon,event_time_utc,810,0,810,0,,,0,0
+polymarket_decision_time_prices,UMA,Polygon,decision_time_utc,810,810,0,0,2023-04-08T22:26:58Z,2026-05-09T15:24:17Z,0,0
+polymarket_decision_time_prices,UMA,Polygon,event_time_utc,810,0,810,0,,,0,0
+polymarket_decision_time_web_evidence,UMA,Polygon,decision_time_utc,291,291,0,0,2023-05-11T13:08:23Z,2026-01-05T20:31:25Z,0,0
+polymarket_decision_time_web_evidence,UMA,Polygon,capture_time_utc,291,177,114,0,2023-05-06T21:55:33Z,2026-01-04T08:33:10Z,0,0
+polymarket_decision_time_web_evidence,UMA,Polygon,event_time_utc,291,0,291,0,,,0,0
+polymarket_decision_time_web_provenance,UMA,Polygon,decision_time_utc,291,291,0,0,2023-05-11T13:08:23Z,2026-01-05T20:31:25Z,0,0
+polymarket_decision_time_web_provenance,UMA,Polygon,capture_time_utc,291,177,114,0,2023-05-06T21:55:33Z,2026-01-04T08:33:10Z,0,0
+polymarket_decision_time_web_provenance,UMA,Polygon,event_time_utc,291,0,291,0,,,0,0
+polymarket_gamma_markets,UMA,Polygon,snapshot_time_utc,463022,463022,0,0,2026-07-20T10:52:44.978309Z,2026-07-20T10:52:44.978309Z,463022,463022
+polymarket_gamma_markets,UMA,Polygon,metadata_created_utc,463022,463022,0,0,2020-10-02T16:10:01.467000Z,2026-07-20T10:27:40.806238Z,154651,463012
+polymarket_gamma_markets,UMA,Polygon,metadata_updated_utc,463022,463022,0,0,2023-01-26T21:36:08.201000Z,2026-07-20T10:49:08.433832Z,169994,463016
+polymarket_gamma_markets,UMA,Polygon,metadata_closed_utc,463022,399498,63524,0,2020-10-25T20:25:48Z,2026-07-20T10:27:58Z,106553,1343
+polymarket_gamma_markets,UMA,Polygon,market_end_utc,463022,460346,2676,0,2011-07-05T20:21:00Z,2029-01-20T00:00:00Z,166325,1708
+polymarket_gamma_markets,UMA,Polygon,event_time_utc,463022,0,463022,0,,,0,0
+pyth_ois_economic_events,Pyth,Solana,event_time_utc,459083,459083,0,0,2024-10-03T00:08:34Z,2026-06-27T13:25:17Z,0,0
+pyth_ois_economic_events,Pyth,Solana,payment_time_utc,459083,459083,0,0,2024-10-03T00:08:34Z,2026-06-27T13:25:17Z,0,0
+pyth_ois_historical_observability,Pyth,Solana,event_time_utc,6,0,6,0,,,0,0
+pyth_ois_instructions,Pyth,Solana,event_time_utc,518560,518560,0,0,2024-09-11T20:29:12Z,2026-06-30T23:11:29Z,0,0
+pyth_ois_publisher_epoch_factors,Pyth,Solana,epoch_start_utc,6566,6566,0,0,2025-07-17T00:00:00Z,2026-06-18T00:00:00Z,0,0
+pyth_ois_publisher_epoch_factors,Pyth,Solana,epoch_end_utc,6566,6566,0,0,2025-07-24T00:00:00Z,2026-06-25T00:00:00Z,0,0
+pyth_ois_publisher_epoch_factors,Pyth,Solana,snapshot_time_utc,6566,6566,0,0,2026-07-21T02:29:48Z,2026-07-21T02:29:48Z,6566,6566
+pyth_ois_publisher_epoch_factors,Pyth,Solana,event_time_utc,6566,0,6566,0,,,0,0
+pyth_ois_reward_epochs,Pyth,Solana,epoch_start_utc,49,49,0,0,2025-07-17T00:00:00Z,2026-06-18T00:00:00Z,0,0
+pyth_ois_reward_epochs,Pyth,Solana,epoch_end_utc,49,49,0,0,2025-07-24T00:00:00Z,2026-06-25T00:00:00Z,0,0
+pyth_ois_reward_epochs,Pyth,Solana,snapshot_time_utc,49,49,0,0,2026-07-21T02:29:48Z,2026-07-21T02:29:48Z,49,49
+pyth_ois_reward_epochs,Pyth,Solana,event_time_utc,49,0,49,0,,,0,0
+pyth_ois_slash_counters,Pyth,Solana,snapshot_time_utc,134,134,0,0,2026-07-21T02:29:48Z,2026-07-21T02:29:48Z,134,0
+pyth_ois_slash_counters,Pyth,Solana,event_time_utc,134,0,134,0,,,0,0
+pyth_ois_stake_events,Pyth,Solana,event_time_utc,122071,122071,0,0,2024-09-18T15:45:21Z,2026-06-30T23:11:29Z,0,0
+redstone_ethereum_push_events,RedStone Push,Ethereum,event_time_utc,614319,614319,0,0,2023-12-07T10:44:35Z,2026-06-30T23:59:23Z,0,0
+redstone_ethereum_push_events,RedStone Push,Ethereum,oracle_timestamp_utc,614319,603030,11289,0,2023-12-07T10:44:35Z,2026-06-30T23:59:23Z,0,0
+tellor_aggregate_height_index,Tellor,tellor-1,aggregate_time_utc,9972753,9972753,0,0,2025-05-09T14:44:05.665000Z,2026-06-30T23:59:55.617000Z,0,9962511
+tellor_aggregate_height_index,Tellor,tellor-1,event_time_utc,9972753,0,9972753,0,,,0,0
+tellor_dispute_payments,Tellor,tellor-1,event_time_utc,21,21,0,0,2025-12-01T18:34:43Z,2026-04-09T19:37:19Z,0,21
+tellor_dispute_votes,Tellor,tellor-1,event_time_utc,55,55,0,0,2025-09-29T17:05:03Z,2026-04-02T12:44:38Z,0,55
+tellor_disputes,Tellor,tellor-1,event_time_utc,13,13,0,0,2025-09-29T12:05:42.069816482Z,2026-04-01T16:25:16.940749215Z,0,13
+tellor_disputes,Tellor,tellor-1,dispute_end_time_utc,13,13,0,0,2025-10-02T12:05:42.069816482Z,2026-04-04T16:25:16.940749215Z,0,13
+tellor_disputes,Tellor,tellor-1,report_reference_time_utc,13,13,0,0,2025-09-29T04:03:55.968000Z,2026-03-30T21:24:45.654000Z,0,13
+tellor_jail_events,Tellor,tellor-1,event_time_utc,26,26,0,0,2025-09-29T12:05:42Z,2026-04-02T00:01:00Z,0,26
+tellor_jail_lifecycles,Tellor,tellor-1,event_time_utc,13,13,0,0,2025-09-29T12:05:42Z,2026-04-01T16:25:16Z,0,13
+tellor_jail_lifecycles,Tellor,tellor-1,release_time_utc,13,13,0,0,2025-09-29T12:11:15Z,2026-04-02T00:01:00Z,0,13
+tellor_jail_lifecycles,Tellor,tellor-1,scheduled_release_time_utc,13,13,0,0,2025-09-29T12:05:42Z,2026-04-01T16:25:16Z,0,13
+tellor_legacy_selector_reward_accruals,Tellor,tellor-1,event_time_utc,0,0,0,0,,,0,0
+tellor_liveness_reward_distributions_full,Tellor,tellor-1,event_time_utc,59920,59920,0,0,2026-04-30T15:11:01.983611512Z,2026-06-30T23:59:55.617223958Z,0,59920
+tellor_micro_reports,Tellor,tellor-1,event_time_utc,82866640,82866640,0,0,2025-05-09T14:44:05.665000Z,2026-06-30T23:59:57.550000Z,0,82782345
+tellor_query_tip_funding,Tellor,tellor-1,event_time_utc,29310,29310,0,0,2025-05-13T16:10:44.960257428Z,2026-06-23T08:53:31.133346065Z,0,29310
+tellor_reporter_reward_accruals_full,Tellor,tellor-1,event_time_utc,715362,715362,0,0,2026-04-30T15:11:01.983611512Z,2026-06-30T23:59:55.617223958Z,0,715362
+tellor_tip_withdrawals_realized,Tellor,tellor-1,event_time_utc,20380,20380,0,0,2025-05-13T17:03:32.113271496Z,2026-06-30T23:56:00.702362775Z,0,20380
+uma_dvm_requests,UMA,Ethereum,request_reference_time_utc,3744,3744,0,0,2023-03-07T19:45:35Z,2026-06-30T18:42:05Z,0,0
+uma_dvm_requests,UMA,Ethereum,event_time_utc,3744,316,3428,0,2025-02-11T00:00:35Z,2026-06-30T16:46:23Z,0,0
+uma_dvm_staking_events,UMA,Ethereum,event_time_utc,2211876,254623,1957253,0,2023-10-18T10:06:35Z,2026-06-30T23:59:23Z,0,0
+uma_dvm_voter_payoffs,UMA,Ethereum,event_time_utc,2663684,289025,2374659,0,2023-10-18T10:06:35Z,2026-06-30T23:59:23Z,0,0
+uma_dvm_votes_events,UMA,Ethereum,request_reference_time_utc,3587231,3587231,0,0,2023-03-07T19:45:35Z,2026-06-28T20:29:58Z,0,0
+uma_dvm_votes_events,UMA,Ethereum,event_time_utc,3587231,419173,3168058,0,2023-10-15T00:54:47Z,2026-06-30T23:59:23Z,0,0
+uma_phase2_dvm_negative_slash_panel,UMA,Ethereum,request_reference_time_utc,947128,947128,0,0,2023-03-07T19:45:35Z,2026-06-27T12:58:11Z,0,0
+uma_phase2_dvm_negative_slash_panel,UMA,Ethereum,event_time_utc,947128,86304,860824,0,2023-10-18T10:06:35Z,2026-06-30T22:55:23Z,0,0
+uma_phase2_request_panel,UMA,Polygon,request_reference_time_utc,40534,40534,0,0,2023-04-01T18:07:02Z,2026-05-09T17:03:08Z,0,0
+uma_phase2_request_panel,UMA,Polygon,event_time_utc,40534,40534,0,0,2023-04-01T18:07:02Z,2026-05-09T17:03:08Z,0,0
+uma_polygon_ethereum_grade_a_links,UMA,Polygon + Ethereum,request_reference_time_utc,835,835,0,0,2022-12-28T17:42:14Z,2026-02-09T02:34:47Z,0,0
+uma_polygon_ethereum_grade_a_links,UMA,Polygon + Ethereum,dvm_reference_time_utc,835,835,0,0,2022-12-30T20:44:33Z,2026-06-30T16:02:10Z,0,0
+uma_polygon_ethereum_grade_a_links,UMA,Polygon + Ethereum,event_time_utc,835,0,835,0,,,0,0
+decision_samples,UMA,Polygon,decision_time_utc,810,810,0,0,2023-04-08T22:26:58Z,2026-05-09T15:24:17Z,0,0
+decision_samples,UMA,Polygon,challenge_deadline_utc,810,810,0,0,2023-04-09T00:26:58Z,2026-05-09T17:24:17Z,0,0
+decision_samples,UMA,Polygon,evidence_label_time_utc,810,810,0,0,2023-04-08T22:26:58Z,2026-05-09T15:24:17Z,0,0
+decision_samples,UMA,Polygon,event_time_utc,810,0,810,0,,,0,0
+splits,UMA,Polygon,decision_time_utc,810,810,0,0,2023-04-08T22:26:58Z,2026-05-09T15:24:17Z,0,0
+splits,UMA,Polygon,event_time_utc,810,0,810,0,,,0,0

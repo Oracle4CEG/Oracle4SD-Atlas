@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "data/daily/validation.json",
+      "passed": true,
+      "scope": "Previously executed actual data checks"
+    },
+    {
+      "check": "data/daily/escrow_validation.json",
+      "passed": true,
+      "scope": "Previously executed actual data checks"
+    },
+    {
+      "check": "data/prediction/validation.json",
+      "passed": true,
+      "scope": "Previously executed actual data checks"
+    },
+    {
+      "check": "data/evidence/validation.json",
+      "passed": true,
+      "scope": "Previously executed actual data checks"
+    },
+    {
+      "check": "data/sensitivity/validation.json",
+      "passed": true,
+      "scope": "Previously executed actual data checks"
+    },
+    {
+      "check": "metadata/core_validation.json",
+      "passed": true,
+      "scope": "Five full core companion populations"
+    },
+    {
+      "check": "metadata/core_key_validation.json",
+      "passed": true,
+      "scope": "Five full core companion populations"
+    },
+    {
+      "check": "full_reconstruction",
+      "passed": true,
+      "scope": "Full 90-table reconstruction and 48 checks"
+    },
+    {
+      "check": "physical_dictionary_exact",
+      "passed": true,
+      "scope": "All 100 product tables; schema names and Arrow types"
+    },
+    {
+      "check": "ten_logical_products",
+      "passed": true,
+      "scope": "Eight branches, one task, one daily product"
+    },
+    {
+      "check": "vector_fonts_and_text",
+      "passed": true,
+      "scope": "Eight new figures; Times New Roman, vector-only PDFs and editable SVG text"
+    },
+    {
+      "check": "tutorial_executed",
+      "passed": true,
+      "scope": "Local Python kernel; no hosted or independent-reader assertion"
+    },
+    {
+      "check": "three_acquisition_modes",
+      "passed": true,
+      "scope": "Same bounded case, 28 checks per mode"
+    },
+    {
+      "check": "croissant_sample_loads",
+      "passed": true,
+      "scope": "Two nested native tables and two derived products; metadata parser covers 100 RecordSets"
+    },
+    {
+      "check": "latex_references",
+      "passed": true,
+      "scope": "Latest local Tectonic compile"
+    },
+    {
+      "check": "appendices_A_to_I",
+      "passed": true,
+      "scope": "Nine included appendix sections"
+    },
+    {
+      "check": "no_old_model_results",
+      "passed": true,
+      "scope": "Paper prose and active section files"
+    },
+    {
+      "check": "compiled_pdf",
+      "passed": true,
+      "scope": "Compiled manuscript"
+    },
+    {
+      "check": "fourteen_folder_roles",
+      "passed": true,
+      "scope": "Current local repository navigation"
+    }
+  ],
+  "paper_pages": 35,
+  "public_release_created": false,
+  "human_signoff_completed": false,
+  "independent_reader_completed": false,
+  "full_historical_acquisition_completed": false,
+  "historical_receipt_note": "Local validation before public publication. Current publication evidence is in publication_validation.json.",
+  "current_publication_record": "reports/publication_20261029/remote_file_validation.json"
+}

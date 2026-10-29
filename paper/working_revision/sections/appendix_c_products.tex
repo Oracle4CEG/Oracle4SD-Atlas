@@ -1,0 +1,26 @@
+\section{Product organization and metadata}
+\label{app:products}
+
+The ten logical products group observations by mechanism or reuse task. They do not denote ten physical files or ten independent samples. Native and harmonized representations may describe the same event, and the two derived products draw on the protocol branches. The catalogue therefore records the product membership of each table together with its row unit, source relationship and version.
+
+\begin{table}[!htbp]
+\centering\tabstyle
+\caption{Ten logical data products and their principal observation units.}
+\label{tab:logical_products}
+\begin{tabularx}{\linewidth}{@{}L{.19\linewidth}Y Y@{}}
+\toprule Product & Principal units & Main relationships \\ \midrule
+UMA & Request, vote, voter accrual and stake event & Polygon request--Ethereum adjudication; settlement--transfer \\
+Chainlink & Feed update, service interval and staking event & Staking or reward event--LINK movement \\
+Tellor & Report, aggregate, dispute and payment & Report--dispute; tip funding--withdrawal \\
+Flare FTSOv2 & Provider--epoch, entitlement and claim & Epoch policy--registration; entitlement--claim evidence \\
+Pyth & Instruction, reward transfer and publisher--epoch & OIS instruction--custody transfer; historical epoch state \\
+Chronicle & Update, challenge and challenge reward & Registered implementation--event; challenge--payment \\
+RedStone Push & Adapter/feed update & Registered delivery contract--update \\
+DIA & Stake action and withdrawal position & Position--principal and reward components \\
+UMA prediction & One eligible request & Proposal-time feature--availability record--resolution label \\
+Daily measurements & Date--branch--role--asset--stage--measure & Native eligible population--daily aggregate; epoch companions separate \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Field dictionaries specify types, units, economic stage, source keys, missingness and calculation rules. Raw monetary amounts remain integer-valued strings, while UTC clocks distinguish event time from reference time, deadlines, epochs and snapshots. Croissant recordsets describe physical tables and link them to their logical product; the product count is consequently different from the recordset count. The dataset card, table catalogue and tutorial use the same product identifiers.

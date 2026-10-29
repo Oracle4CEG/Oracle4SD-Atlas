@@ -1,0 +1,38 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_legacy_child_tunnel_raw.json",
+  "original_sha256": "9681f5565f479d26d1b12e8a88fce2985971dafa281f411a84c51c59b5f9b2b7",
+  "metadata": {
+    "chain_id": 137,
+    "contract": {
+      "address": "0xbed4c1fc0fd95a2020ec351379b22d8582b904e3",
+      "deployment_block": 26514464,
+      "role": "oracle_child_tunnel_legacy",
+      "runtime_code_bytes_at_cutoff": 6812,
+      "runtime_code_hash_at_cutoff": "0x3b4bd7c39566db2aae418ab4a2090d17e4fe9e38477f2e212d4670519eeee6a8"
+    },
+    "cutoff_block": 89439336,
+    "discovery_manifest": "data/manifests/polygon_uma_bridge_discovery.json",
+    "generated_at_utc": "2026-07-20T09:26:14.446570+00:00",
+    "head_block": 90556132,
+    "protocol": "UMA Polygon historical ChildTunnel",
+    "raw_log_scan": {
+      "chunks": 6293,
+      "event_counts": {
+        "MessageSent": 819,
+        "PriceRequestAdded": 819,
+        "PushedPrice": 813
+      },
+      "event_counts_by_contract": {
+        "oracle_child_tunnel_legacy": {
+          "MessageSent": 819,
+          "PriceRequestAdded": 819,
+          "PushedPrice": 813
+        }
+      },
+      "from_block": 26514464,
+      "to_block": 89439336,
+      "total_logs": 2451,
+      "unknown_topic_counts": {}
+    }
+  }
+}

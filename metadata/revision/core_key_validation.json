@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "table": "accountability_events_clocks.parquet",
+      "rows": 105588120,
+      "distinct_keys": 105588120,
+      "passed": true
+    },
+    {
+      "table": "economic_semantics_events_clocks.parquet",
+      "rows": 22723389,
+      "distinct_keys": 22723389,
+      "passed": true
+    },
+    {
+      "table": "realized_reward_slash_events_clocks.parquet",
+      "rows": 19275854,
+      "distinct_keys": 19275854,
+      "passed": true
+    },
+    {
+      "table": "sample_b_observable_accountability_clocks.parquet",
+      "rows": 105702424,
+      "distinct_keys": 105702424,
+      "passed": true
+    },
+    {
+      "table": "sample_c_strict_honesty_events_clocks.parquet",
+      "rows": 3435826,
+      "distinct_keys": 3435826,
+      "passed": true
+    }
+  ]
+}

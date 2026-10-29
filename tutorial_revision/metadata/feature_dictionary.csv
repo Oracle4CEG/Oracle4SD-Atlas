@@ -1,0 +1,17 @@
+feature,formula,unit,source,missingness,availability_status
+log_bond_raw,log(1+B),dimensionless,"effective bond, smallest asset units",null if historical parameter missing,historical_parameter_binding_required
+log_final_fee_raw,log(1+F),dimensionless,"final fee, smallest asset units",null if absent,observed_at_or_before_proposal
+log_reward_plus1_raw,log(1+R),dimensionless,"configured adapter reward, smallest asset units",null if absent,historical_parameter_binding_required
+reward_to_bond_ratio,R/B,ratio,configured reward / effective bond,null for B=0 or missing parameter,historical_parameter_binding_required
+liveness_hours,(expiry-T0)/3600,hours,proposal expiry and proposal event UTC,null if either endpoint absent,observed_at_or_before_proposal
+proposal_latency_hours,(T0-request event UTC)/3600,hours,"event times, not oracle reference timestamp",null if either endpoint absent,observed_at_or_before_proposal
+ancillary_bytes,length(decoded ancillary bytes),bytes,request ancillary_data_hex,null if unavailable,observed_at_or_before_proposal
+proposer_prior_completed,"N(proposer, settlement before T0)",requests,retained primary settled requests in same role,0 denotes no retained prior settlement,reconstructed_past_settlements
+proposer_prior_dispute_rate,D(proposer)/N(proposer),ratio,challenged prior settlements / prior settlements,null when N=0,reconstructed_past_settlements
+proposer_prior_rejection_rate,J(proposer)/N(proposer),ratio,challenged prior settlements with changed price / prior settlements,null when N=0,reconstructed_past_settlements
+requester_prior_completed,"N(requester, settlement before T0)",requests,retained primary settled requests in same role,0 denotes no retained prior settlement,reconstructed_past_settlements
+requester_prior_dispute_rate,D(requester)/N(requester),ratio,challenged prior settlements / prior settlements,null when N=0,reconstructed_past_settlements
+requester_prior_rejection_rate,J(requester)/N(requester),ratio,challenged prior settlements with changed price / prior settlements,null when N=0,reconstructed_past_settlements
+requester_is_polymarket_adapter,registered requester membership,binary,registered requester contract,unknown if not historically bound,observed_at_or_before_proposal
+proposed_price_class,map native proposed integer to named class,category,proposal price: zero/one/half/early-expiration/other,null if absent,observed_at_or_before_proposal
+adapter_version,registered adapter version,category,requester implementation register,unknown if unresolved,historical_parameter_binding_required

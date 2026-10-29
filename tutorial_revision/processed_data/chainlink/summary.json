@@ -1,0 +1,14 @@
+{
+  "branch": "Chainlink",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "payment_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "079207aca6594f26647524dc6f92c5128aa9e33fbce3a78effd481527383f310",
+  "parent_sha256": "b6443ce749b366536d1bcc0bc8b90147f4748527a1544b204233722ba47a959f",
+  "source_unit": "chainlink_staking_v02_events",
+  "missing_event_time": 8,
+  "check": "sample_identity_and_clock_schema"
+}

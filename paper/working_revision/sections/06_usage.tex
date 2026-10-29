@@ -1,0 +1,13 @@
+\section{Research use and interpretation}
+
+Research use should begin with a mechanism-specific question and an explicitly defined observation unit. Table~\ref{tab:research_opportunities} connects the eight branches to research questions, available observations and additional evidence requirements. These mappings identify opportunities for reuse rather than report tests of the proposed hypotheses. Analyses should retain implementation version, actor role, asset, economic stage and observation window, and establish comparability for the particular measure being studied. A shared schema facilitates this work but does not, by itself, identify causal effects or make different native activities interchangeable.
+
+\input{tables/research_opportunities}
+
+DuckDB, PyArrow and compatible tools can query Parquet tables through column selection and filtering. The repository notebook provides a smaller reconstruction example; the catalogue and dictionaries document table relationships and variables. Monetary values require asset and decimal fields. Event order follows native chronology, not row position. Addresses identify accounts, not their owners.
+
+Economic aggregation must distinguish configured rewards, accruals, entitlements, payments and applied penalties. Returned principal differs from gain, and net profit requires costs. Check related components before summation; keep USDC.e and USDC separate unless a justified conversion rule applies. Missing, unavailable and inapplicable values are not zeros. Retain censored lifecycles as needed.
+
+The UMA task supports modelling subject to retrospective selection and decision-time constraints. Causal analysis requires an identification strategy and further evidence.
+
+Repositories provide data, code, documentation and an issue tracker. Reuse should record input versions and the computational environment, distinguish archived reconstruction from historical reacquisition, and preserve native meanings when extending analyses or reporting corrections.

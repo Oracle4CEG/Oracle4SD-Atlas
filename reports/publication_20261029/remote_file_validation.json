@@ -1,0 +1,508 @@
+{
+  "content_commit": "a8e4e93016b7adfcb651bff9bafd26c2fab06093",
+  "all_100_remote_hashes_match": true,
+  "all_previous_paths_preserved": true,
+  "configs": 10,
+  "tables": [
+    {
+      "path": "data/native/chainlink_eth_usd_reports.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/chainlink_event_link_flow_qc.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/chainlink_link_flows.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/chainlink_staking_v02_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/chronicle_ethereum_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/chronicle_redstone_settlement_interfaces.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/dia_staking_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/dia_staking_withdrawals.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/ecosystem_observability_evidence.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_beneficiary_chill_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_beneficiary_chill_state.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_provider_conditions.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_provider_failures.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_provider_feed_performance.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_provider_passes.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claim_epoch_qc.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claim_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_reward_claims.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_reward_component_attribution.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_reward_epochs.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/flare_voter_registrations.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/phase4_oracle_economic_interfaces.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_adapter_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_child_tunnel_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_oov2_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_gamma_links.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_request_flow_qc.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_request_rounds.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polygon_uma_token_flows.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_price_onchain_validation.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_price_provenance.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_prices.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_web_evidence.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_decision_time_web_provenance.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/polymarket_gamma_markets.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_economic_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_historical_observability.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_instructions.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_publisher_epoch_factors.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_reward_epochs.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_slash_counters.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/pyth_ois_stake_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/redstone_ethereum_push_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_aggregate_height_index.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_dispute_payments.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_dispute_votes.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_disputes.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_jail_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_jail_lifecycles.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_legacy_selector_reward_accruals.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_liveness_reward_distributions_full.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_micro_reports.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_query_tip_funding.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_reporter_reward_accruals_full.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/tellor_tip_withdrawals_realized.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_requests.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_staking_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_voter_payoffs.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_dvm_votes_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_phase2_dvm_negative_slash_panel.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_phase2_request_panel.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/native/uma_polygon_ethereum_grade_a_links.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core_clocks/accountability_events_clocks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core/accountability_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core_clocks/economic_semantics_events_clocks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core/economic_semantics_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core_clocks/realized_reward_slash_events_clocks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core/realized_reward_slash_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core_clocks/sample_b_observable_accountability_clocks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core/sample_b_observable_accountability.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core_clocks/sample_c_strict_honesty_events_clocks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/core/sample_c_strict_honesty_events.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/daily_measurements.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/daily_recipient_amounts.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/daily_reward_concentration.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/flare_historical_signing_policy.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/flare_signer_weights.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/uma_daily_completion_delay.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/uma_daily_escrow_exposure.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/uma_escrow_eligibility.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/daily/uma_escrow_flow_intervals.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/prediction/feature_availability.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/prediction/feature_corrections.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/prediction/uma_prediction_tasks.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/DVM_ACCRUAL_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/TELLOR_APPLIED_LOSS_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/TELLOR_OUTCOME_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/UMA_CHALLENGE_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/UMA_SETTLEMENT_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/UMA_WINNER_COMPONENT_V2.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/accounting/dvm_accrual_vs_applied.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/accounting/dvm_net_stake_applications.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/accounting/tellor_dispute_reconciliation.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/accounting/uma_settlement_accounting.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/cashflows.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/five_transactions.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/evidence/cross_chain/identity_link.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/sensitivity/epoch_allocation_sensitivity.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/sensitivity/uma_request_followup.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "data/sensitivity/weekly_measurements.parquet",
+      "sha256_match": true,
+      "bytes_match": true
+    }
+  ]
+}

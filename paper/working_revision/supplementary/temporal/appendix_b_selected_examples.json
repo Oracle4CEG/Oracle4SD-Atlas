@@ -1,0 +1,146 @@
+[
+  {
+    "example_id": "E1",
+    "observation": "UMA request",
+    "table": "polygon_uma_request_rounds",
+    "row_ordinal": 0,
+    "native_keys": {
+      "source_tx": "0xc33d0c97bc5e893067939be484f953b1b3e2bb20ce1dee60fe3d420e2fba0ddb",
+      "source_block": 35203540,
+      "log_index": 29,
+      "oo_request_id": "0x9c8e1a2b6952f32c32ceecceeaab31740f713af9458e5305d64cfa8ba9be1737"
+    },
+    "declared_source_sha256": "cf9cd6fa6c857f61bbb81ede3af8b7afc21fc3427d6eca8909a231c285b885d7",
+    "raw_fields": [
+      "block_time"
+    ],
+    "raw_values": [
+      "1667593230"
+    ],
+    "unit": "s",
+    "target_fields": [
+      "event_time_utc"
+    ],
+    "utc_values": [
+      "2022-11-04T20:20:30Z"
+    ],
+    "meaning": "Recorded request-event block time; distinct from request-reference time."
+  },
+  {
+    "example_id": "E2",
+    "observation": "Tellor report",
+    "table": "tellor_micro_reports",
+    "row_ordinal": 0,
+    "native_keys": {
+      "reporter": "tellor168hv5trkskdwvxj2hzqdmch7r7l0prlnepslrz",
+      "query_id": "a6f013ee236804827b77696d350e9f0ac3e879328f2a3021d473a0b778ad78ac",
+      "block_number": 317,
+      "source_tx_index": 1
+    },
+    "declared_source_sha256": "65f29fde20a0cd56834d798374ee76618bf48d69b1982ac3019bdb395a82084b",
+    "raw_fields": [
+      "timestamp_ms"
+    ],
+    "raw_values": [
+      "1746801845665"
+    ],
+    "unit": "ms",
+    "target_fields": [
+      "event_time_utc"
+    ],
+    "utc_values": [
+      "2025-05-09T14:44:05.665Z"
+    ],
+    "meaning": "Native report timestamp with millisecond precision."
+  },
+  {
+    "example_id": "E3",
+    "observation": "Pyth epoch",
+    "table": "pyth_ois_publisher_epoch_factors",
+    "row_ordinal": 0,
+    "native_keys": {
+      "epoch_id": 2898,
+      "publisher": "8Mg3RA4aNRzw68pZKjB3rsBJ7gB3UDcFwKBbiXLnhHX"
+    },
+    "declared_source_sha256": "b89e996d7a7e6165c8844f27ddfb89726968a48248aa903b10fbcf27feb69799",
+    "raw_fields": [
+      "epoch_start_time_unix",
+      "epoch_end_time_unix"
+    ],
+    "raw_values": [
+      "1752710400",
+      "1753315200"
+    ],
+    "unit": "s",
+    "target_fields": [
+      "epoch_start_utc",
+      "epoch_end_utc"
+    ],
+    "utc_values": [
+      "2025-07-17T00:00:00Z",
+      "2025-07-24T00:00:00Z"
+    ],
+    "meaning": "Half-open support interval [start, end); neither payment nor instantaneous event time."
+  },
+  {
+    "example_id": "E4",
+    "observation": "Chainlink staking event",
+    "table": "chainlink_staking_v02_events",
+    "row_ordinal": 2129,
+    "native_keys": {
+      "source_tx": "0x1b0037964bad15bd2cc148cdcf1fd2bf9ac0fcf50de6b68c6b5de18b5ed04aa5",
+      "source_block": 18671606,
+      "log_index": 324
+    },
+    "declared_source_sha256": "b6443ce749b366536d1bcc0bc8b90147f4748527a1544b204233722ba47a959f",
+    "raw_fields": [],
+    "raw_values": [
+      null
+    ],
+    "unit": null,
+    "target_fields": [
+      "event_time_utc"
+    ],
+    "utc_values": [
+      "2023-11-28T17:27:47Z"
+    ],
+    "meaning": "Missing execution time recovered from a consistent retained Ethereum block reference.",
+    "matched_chain": "Ethereum",
+    "matched_source_table": "chronicle_ethereum_events",
+    "matched_source_sha256": "ddaa05c697ef73d7c8faf21fb91cdc843ce084d83f42b7b029895085795aa263",
+    "matched_records": [
+      {
+        "transaction_hash": "0xd79dd80a8cac8ff994b188d7216fc4caeac0e22bf61bf0dd3a248c7c14289c25",
+        "block_number": 18671606,
+        "log_index": 388,
+        "block_timestamp": 1701192467,
+        "event_time_utc": "2023-11-28 17:27:47+00:00"
+      }
+    ],
+    "matched_block_seconds": "1701192467"
+  },
+  {
+    "example_id": "E5",
+    "observation": "Chainlink staking event",
+    "table": "chainlink_staking_v02_events",
+    "row_ordinal": 0,
+    "native_keys": {
+      "source_tx": "0x6fbb6557996af927f8062e62cfdde0a70ae3067b6f5b73577511a8892ac363c3",
+      "source_block": 18621068,
+      "log_index": 94
+    },
+    "declared_source_sha256": "b6443ce749b366536d1bcc0bc8b90147f4748527a1544b204233722ba47a959f",
+    "raw_fields": [],
+    "raw_values": [
+      null
+    ],
+    "unit": null,
+    "target_fields": [
+      "event_time_utc"
+    ],
+    "utc_values": [
+      null
+    ],
+    "meaning": "No match in the retained recovery register; missing status preserved. This is not a claim that the timestamp is unknowable from other sources."
+  }
+]

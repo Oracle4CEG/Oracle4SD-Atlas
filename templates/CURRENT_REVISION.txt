@@ -1,0 +1,1 @@
+Current revision navigation: root README.md and metadata/revision/revision_response.csv. Existing dated reports are historical evidence.

@@ -1,0 +1,41 @@
+﻿编号,优先级,原修改位置,本轮状态,实际处理,证据_相对交付目录,尚未完成或解释边界
+R01,P0,全稿、GitHub、HF、教程,本地完成；公共版本待发布,冻结来源提交、数据清单、论文与教程对应关系。,metadata/release_identity.json,公共 GitHub/HF/Overleaf 尚未同步。
+R02,P0,Abstract；Introduction；§7,完成,摘要、引言和研究用途围绕测量与数据复用重写。,Oracle4SD_Atlas/main.tex,
+R03,P1,Introduction；Related work；§3.1；Table 3,完成,保留五详细面板与三窄扩展；逐分支说明代表性、历史证据及纳排。,Oracle4SD_Atlas/tables/protocol_sources.tex,
+R04,P1,§3.1；Figure gallery 1；Appendix A.2,完成；历史绑定有明确限定,实现登记表、时间线与链角色图已纳入。,Oracle4SD_Atlas/supplementary/implementation_register.csv,未把项目上线、版本部署和首事件混写。
+R05,P0,新增 temporal harmonization；§3.5；Table 8；Appendix B,完成当前发布范围,保留原生精度；共同层与经济层使用按唯一键连接的 UTC companion。,dataset_deposit/metadata/core_temporal_validation.json,旧模型应用表属于历史存档。
+R06,P0,时间补齐；§5；Appendix B.2,部分完成,已用原生事件及已留存区块时间补齐可匹配记录；完成额外 Ethereum header 试采。,data/acquisition/ethereum_header_pilot.json,尚缺大量历史区块头，未插值或用采集时间填补。
+R07,P0,§3.1；§5；Appendix B.3,部分完成,区间来源、边界与 partial/unknown 状态明确；缺失日不填零。,Oracle4SD_Atlas/supplementary/temporal/coverage_interval_evidence.csv,完整扫描回执和分页终止审计仍待补充。
+R08,P0,新增日频Methods；Appendix D.1–2,完成当前证据范围,建立八分支与二十候选变量的可行性矩阵。,metadata/variable_feasibility.csv,可推导不代表协议全服务覆盖。
+R09,P0,Methods；§4；§5；Appendix D.3,完成有证据的日频产品,生成八分支分角色、资产和经济阶段的日度观察及原生分母。,data/daily/daily_measurements.parquet,全部保留部分覆盖限定；未虚构缺失变量。
+R10,P0,§5；§6；Appendix D,完成可计算部分,完成日/周守恒、共同日历外边界、epoch 两种假设分配对照。,data/sensitivity/validation.json,严格连续覆盖子集不可认证，相应估计保持空值。
+R11,P0,§5；§6；Appendix D,完成,生成完整请求随访、已完成延迟 ECDF 与右删失状态。,data/sensitivity/uma_request_followup.parquet,完成样本曲线不当作总体生存概率。
+R12,P0,Methods；§6.1；Table 9；Appendix E.1,完成自动证据；待人工复核,六规则补总体、历史绑定与执行证据；表9与附录E一致。,data/evidence/validation.json,作者尚未签署历史规则解释。
+R13,P0,§6.1；Appendix E.2,完成,输出六个逐对象旧值/新值修正账本。,data/evidence,同对象可能命中多规则，不能相加成独立对象总数。
+R14,P0,§6.2；Appendix E/G,完成声明范围的重跑,完整核心重建通过48项检查；三种采集模式的同案例均通过28项检查。,dataset_deposit/metadata/full_reconstruction_validation.json,重建与外部事实真值、人工审核分开。
+R15,P0,§3.6改名UMA prediction-task dataset；Appendix F.1,完成,810请求；T0为提议事件；目标为原生已决整数与提议整数不等。,data/prediction/uma_prediction_tasks.parquet,回顾性挑战/链接/对账筛选，不能作完整请求错误率。
+R16,P0,Appendix F.2；Data records,完成,十六特征的公式、单位、missing、来源和分布图齐备。,data/prediction/feature_dictionary.csv,历史参数字段仍有绑定限定。
+R17,P0,UMA历史特征构造；Appendix F.2–3,完成,角色分开的严格过去历史；全810请求直接筛选交叉核验；保留394处特征更正。,data/prediction/feature_corrections.parquet,旧 pooled-history 模型输出仅归档。
+R18,P0,预测数据字典及构造,完成,无历史率、零分母比值保持为空；原生金额精度和特殊值保留。,data/prediction/validation.json,
+R19,P0,Appendix F.3；§6新的变量验证,完成状态审计；部分参数待补证,逐特征可用时间状态；报告早到期排除与二元已决值子集敏感性。,data/prediction/feature_availability.parquet,未将全部候选特征宣称为已证明 T0 可用。
+R20,P0,删除§6.4模型结果；Table 10；当前Figure 2；摘要和§7,完成,删除算法和性能叙述、模型图表；旧实验隔离存档。,archive/model_experiments,
+R21,P0,§3.3；§6.2；Appendix G.1,完成,完整五交易登记及receipt/header、标识符、时间检查。,data/evidence/cross_chain/five_transactions.parquet,历史事实真值未单独核验。
+R22,P1,Appendix G.2；跨链图,部分完成,实线观察事件、虚线跨链身份/结果链接；明确 relay 路径未知。,figures/cross_chain_evidence_links.svg,完整发送/接收/回传交易和人工浏览器核验待补。
+R23,P0,§6.2；Appendix G.3；资金图,完成,同资产双边押金、费、返本、收益及配置奖励处理重算。,data/evidence/cross_chain/cashflows.parquet,转账费与机会成本不计入已知净利润。
+R24,P0,§4；Table 6；Appendix C.1,完成,十逻辑产品对应100物理Parquet表；共享层非重复独立样本。,dataset_deposit/metadata/logical_products.json,
+R25,P1,§4.3；Table 8；Appendix C.2,完成主变量；一般原生字段仍需深化,新派生字段、时间与案例解释补全；1810字段均列出定义完成度。,dataset_deposit/metadata/field_dictionary.csv,904条保留源码引用层级定义，不声称全部经济语义已人工核验。
+R26,P0,HF；§8；Appendix C.3/H,本地完成；线上待发布,十Viewer配置、100RecordSet与物理字典对照；Croissant官方解析通过。,dataset_deposit/croissant.json,两个嵌套表有嵌套字段镜像；未创建公开新版本。
+R27,P1,五套组合图；Appendix I,完成,五类组合图及补充图均有PDF、可编辑SVG、源数据与脚本。,figures,
+R28,P1,新增Appendix A–I,完成,补齐附录A–I并清理正文交叉引用。,Oracle4SD_Atlas/main.tex,
+R29,P1,§7 Research use；Related work,完成,八分支文献、问题、变量、可支持分析与证据缺口逐项对应。,Oracle4SD_Atlas/tables/research_opportunities.tex,理论类比不写作满足定理。
+R30,P0,README；Notebook C01；metadata/result_index.json,本地完成,14角色导航、三数据阶段、四代码阶段与八分支来源到结果表。,Oracle4SD_Atlas_Repository/README.md,线上导航未同步。
+R31,P0,Notebook C03–C14,完成本地执行,教程加入来源、raw预览、前后值、字典、缺失与图表映射。,tutorial/Oracle4SD_Atlas_Tutorial_executed.ipynb,
+R32,P0,Notebook C05–C06；query.py,完成限定案例,bundled/public-download/live独立目录；实时链、区块、代码与运行hash核验。,data/acquisition/acquisition_mode_comparison.json,三模式完整链针对同一五交易案例；八分支探针仅为有界原生定位检查。
+R33,P0,教程与configs/protocol_samples,完成有界演示,八分支native小样本及八份新取得raw响应归档重放。,tutorial/metadata/raw_replay_validation.json,不等于八分支全量重新采集。
+R34,P0,§6.3；Appendix H；教程C15–C19,待外部执行,本地notebook和三模式已执行；提供独立读者与hosted验收步骤。,metadata/independent_reader_acceptance.txt,没有冒充Google托管Colab或独立读者。
+R35,P1,README、docs、Notebook C19,本地完成；线上待发布,组织仓库入口及当前版本导航统一；旧文档标注历史。,Oracle4SD_Atlas_Repository/README.md,尚无当前修订的公开固定commit。
+R36,P0,Appendix E.3,部分完成,记录本轮实际模型可知信息、提示、采用内容及自动验证。,metadata/ai_assistance_log.json,精确后台版本未暴露；历史提示不补造；人工复核待签署。
+R37,P1,新增采集任务：RedStone AVS,有界试采受接口限制,Base目标合约历史代码、1000块窗口与失败证据已保存。,data/acquisition/redstone_avs_extension/pilot_report.json,历史logs限流/需token；operator/delegator奖励、提现、制裁证据尚未构建。
+R38,P1,新增采集任务：历史control weights,完成保留政策重建；绑定待复核,183个Flare历史policy重建权重、角色映射与阈值；另给两个epoch窗口。,data/daily/flare_historical_signing_policy.parquet,运行时历史绑定尚未独立认证；地址不等于实体。
+R39,后续研究,独立真值、因果机制、RL/Agent,完成范围限定,独立真值、因果和RL/Agent写作后续研究所需证据。,Oracle4SD_Atlas/sections/06_usage.tex,本轮无因果或强化学习新结论。
+R40,P1,配色和补充附件,部分完成,按已附指南配色与现有生态图协调；记录所用附件。,metadata/asset_provenance.csv,邮件另提配色PNG和Daily_Panel_and_Figure_References.pdf未见附件。

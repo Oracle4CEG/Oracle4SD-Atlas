@@ -1,0 +1,55 @@
+{
+  "checks": 204,
+  "passed": 204,
+  "full_native_readback_tables": 64,
+  "tellor_rows": 82866640,
+  "tellor_nonzero_subsecond_rows": 82782345,
+  "tellor_integer_roundtrip_mismatches": 0,
+  "legacy_rounding_changed_rows": 82782345,
+  "legacy_rounding_max_abs_seconds": 0.5,
+  "window_pilots": {
+    "day": {
+      "native": 214075,
+      "utc": 214075
+    },
+    "week": {
+      "native": 1480160,
+      "utc": 1480160
+    }
+  },
+  "populations": [
+    {
+      "table": "uma_dvm_voter_payoffs",
+      "population": "all native rows",
+      "rows": 2663684,
+      "utc_available": 289025,
+      "utc_missing": 2374659,
+      "utc_fraction": 0.10850573866870095
+    },
+    {
+      "table": "uma_dvm_voter_payoffs",
+      "population": "legacy common-projection eligible rows",
+      "rows": 2663684,
+      "utc_available": 289025,
+      "utc_missing": 2374659,
+      "utc_fraction": 0.10850573866870095
+    },
+    {
+      "table": "chainlink_staking_v02_events",
+      "population": "all native rows",
+      "rows": 174890,
+      "utc_available": 10563,
+      "utc_missing": 164327,
+      "utc_fraction": 0.06039796443478758
+    },
+    {
+      "table": "chainlink_staking_v02_events",
+      "population": "legacy common-projection eligible rows",
+      "rows": 72225,
+      "utc_available": 3581,
+      "utc_missing": 68644,
+      "utc_fraction": 0.04958116995500173
+    }
+  ],
+  "fresh_rpc_acquisition": false
+}

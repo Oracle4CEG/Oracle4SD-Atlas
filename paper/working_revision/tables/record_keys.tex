@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering\tabstyle[normalizationtint]
+\caption{Native units, identifier construction and logical relationships. One-to-many relationships describe scientific objects, not mandatory duplication in every physical table. Native ordering is authoritative; physical row order is not.}
+\label{tab:record_keys}
+\begin{tabularx}{\linewidth}{@{}L{0.18\linewidth} L{0.32\linewidth} Y@{}}
+\toprule\tablehead
+\thcell{data}{Unit} & \thcell{link}{Identifier} & \thcell{clock}{Relationship and interpretation} \\
+\midrule
+EVM log & Chain, transaction hash and log index & A transaction can contain several logs. Order by block and log position; retain receipt and block evidence. \\
+UMA OOV2 request & \codefield{oo_request_id}; requester, identifier, timestamp and ancillary data & One request links several lifecycle events and transfers. Request, proposal, dispute and settlement times remain distinct. \\
+UMA DVM request or voter record & \codefield{dvm_request_id}; voter and source-event location for actor-level records & One request can link many voters and adjustments. Accrual and applied stake change are different observations. \\
+Tellor report & \codefield{query_id}, reporter and \codefield{meta_id}; block-position namespace for the common key & Multiple reports can contribute to an aggregate. Native module metadata replaces a universal EVM transaction/log key. \\
+Flare entitlement or claim & Epoch, beneficiary and claim type; transaction/log position for a claim & Entitlements and claims are not universally one-to-one. Epoch end differs from claim time. \\
+Pyth instruction or transfer & Signature and \codefield{outer_instruction_index}; inner position for token transfers & One transaction can contain several instructions and transfers. Reconstruct time from block time and instruction positions. \\
+Common observation & \codefield{accountability_event_id}, protocol namespace, \codefield{native_table} and \codefield{accountability_unit_id} & Native-to-common mapping can be one-to-many. The retained native unit defines the statistical object. \\
+Economic component & \codefield{evidence_id} and originating table/event identity & One settlement can yield several components. \codefield{do_not_sum_group} identifies related components at risk of double counting. \\
+\bottomrule
+\end{tabularx}
+\end{table}

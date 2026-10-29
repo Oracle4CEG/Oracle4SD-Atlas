@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\tabstyle[acquisitiontint]
+\caption{Processing operations and their outputs. Rows describe transformations rather than statistically independent populations: operations may expand, aggregate, join or decompose their inputs.}
+\label{tab:processing_pipeline}
+\begin{tabularx}{\linewidth}{@{}L{0.21\linewidth} L{0.39\linewidth} Y@{}}
+\toprule\tablehead
+\thcell{clock}{Operation} & \thcell{document}{Input and rule} & \thcell{data}{Output} \\
+\midrule
+Source registration & Network, contract or program, historical version, interval and interface & Branch-specific collection specification. \\
+Acquisition and qualification & Logs, transactions, receipts, block or module state, signatures and protocol artifacts; cutoff and decoding rules & Qualified source records, with unresolved decoding outcomes retained. \\
+Native decoding & Protocol event and state definitions; integer amounts and native keys & Protocol-native tables. \\
+Lifecycle reconstruction & Request, dispute, claim, epoch or other native object relationships & Supported lifecycle objects and open cases. \\
+Cross-chain linkage & Version-specific identifier and ancillary-data transformations & Deterministic matches, link grades and unmatched cases. \\
+Economic-state mapping & Native lifecycle and accounting evidence & Configured, accrued, claimable, paid, applied, returned, refunded and fee components. \\
+Funds-flow reconciliation & Expected quantities against observed transfers or applied state changes & Realization flags and accounting differences. \\
+Harmonization & Shared concepts with native units and source links retained & 105,588,120 typed accountability observations. \\
+Realization filtering & Protocol-specific evidence conditions applied to 22,723,389 economic components & 19,275,854 qualifying realized components. \\
+Documentation & Dictionaries, schemas, coverage information, source registers and validation results & Interpretable data and reconstruction materials. \\
+\bottomrule
+\end{tabularx}
+\end{table}

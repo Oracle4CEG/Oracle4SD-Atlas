@@ -1,0 +1,17 @@
+feature,nonmissing,missing
+log_bond_raw,810,0
+log_final_fee_raw,810,0
+log_reward_plus1_raw,810,0
+reward_to_bond_ratio,810,0
+liveness_hours,810,0
+proposal_latency_hours,810,0
+ancillary_bytes,810,0
+proposer_prior_completed,810,0
+proposer_prior_dispute_rate,613,197
+proposer_prior_rejection_rate,613,197
+requester_prior_completed,810,0
+requester_prior_dispute_rate,810,0
+requester_prior_rejection_rate,810,0
+requester_is_polymarket_adapter,810,0
+proposed_price_class,810,0
+adapter_version,810,0

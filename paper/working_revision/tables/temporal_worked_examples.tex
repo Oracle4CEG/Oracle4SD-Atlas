@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering\tabstyle
+\caption{Native-to-UTC examples from retained observations. Epochs use $[a,b)$ intervals; missing values remain explicit. Record identifiers and source matches accompany the examples.}
+\label{tab:temporal_examples}
+\begin{tabularx}{\linewidth}{@{}L{.16\linewidth}L{.23\linewidth}L{.25\linewidth}Y@{}}
+\toprule\tablehead
+Observation & Native value & UTC representation & Interpretation \\
+\midrule
+\textbf{E1} UMA request & 1667593230 s & 2022-11-04\newline 20:20:30 & Exact second conversion; request-event block time. \\
+\textbf{E2} Tellor report & 1746801845665 ms & 2025-05-09\newline 14:44:05.665 & Exact millisecond conversion; fractional seconds retained. \\
+\textbf{E3} Pyth epoch & $[1752710400,$\newline $1753315200)$ s & Start: 2025-07-17\newline End: 2025-07-24\newline Both at 00:00:00 & Epoch support interval; no event or payment time inferred. \\
+\textbf{E4} Chainlink staking & Missing; Ethereum block 18,671,606 & 2023-11-28\newline 17:27:47 & Recovered from a retained Chronicle record for the same Ethereum block. \\
+\textbf{E5} Chainlink staking & Missing; Ethereum block 18,621,068 & Missing & No retained block-time match; value remains missing. \\
+\bottomrule
+\end{tabularx}
+\end{table}

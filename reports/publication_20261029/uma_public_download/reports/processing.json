@@ -1,0 +1,19 @@
+{
+  "amount_policy": "raw integers + asset + decimals; no cross-token sum",
+  "counts": {
+    "abc_economic_measures": 28,
+    "canonical_chain_qc": 30,
+    "economic_cashflows": 4,
+    "economic_episodes": 1,
+    "economic_link_qc": 13,
+    "lifecycle_timeline": 5,
+    "source_events": 9,
+    "token_flows": 8,
+    "variable_provenance": 12
+  },
+  "data_version": "uma-public-rpc-case-v1",
+  "operation": "multi-event cross-chain linking -> one request lifecycle; transfers remain child rows",
+  "rule_implementation": "code/production/scripts/case_studies/reproduce_uma_public_rpc_case.py",
+  "scope": "one preregistered real request; no missing-value imputation",
+  "source_transactions": 5
+}

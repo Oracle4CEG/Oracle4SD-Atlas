@@ -1,3 +1,5 @@
+> Historical instructions below describe an earlier release. For the current ten-product data, manuscript and tutorial use [the project README](../README.md) and [release configuration](../configs/atlas_utc_release.json). Earlier execution and publication statements do not describe the current release.
+
 # Public data releases
 
 Dataset: [OracleEconLab-Oracle-Incentives-v1](https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1).
