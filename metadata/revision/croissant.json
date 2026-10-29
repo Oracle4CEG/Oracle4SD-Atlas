@@ -29292,5 +29292,7 @@
       ]
     }
   ],
-  "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1"
+  "url": "https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+  "citeAs": "Huaiyu Jia, Siguang Li, Lin William Cong and Luyao Zhang. Oracle4SD Atlas: eight oracle branches, UMA tasks and daily measurements. Version atlas-utc-20261029. Hugging Face, 2026.",
+  "datePublished": "2026-10-29"
 }

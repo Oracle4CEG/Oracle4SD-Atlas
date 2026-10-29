@@ -53,5 +53,14 @@
       "unit": "derived variable and evidence path"
     }
   },
-  "version": "uma-public-rpc-case-v1"
+  "version": "uma-public-rpc-case-v1",
+  "serialized_episode_artifact": {
+    "path": "processed_data/economic_episode.json",
+    "rows": 1,
+    "unit": "one lifecycle; JSON representation of the same economic_episodes CSV row",
+    "primary_key": [
+      "episode_id"
+    ],
+    "relationship": "Same episode, not an additional observation; nine tabular outputs plus this JSON artifact."
+  }
 }
