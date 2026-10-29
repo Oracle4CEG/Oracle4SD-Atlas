@@ -1,0 +1,1 @@
+Current release: atlas-utc-20261029. Start with README.md, configs/atlas_utc_release.json and reports/publication_20261029. Other dated run reports retain their historical scope.

@@ -1,0 +1,22 @@
+{
+  "branch": "Pyth",
+  "mode": "live",
+  "result_keys": [
+    "blockTime",
+    "meta",
+    "slot",
+    "transaction",
+    "transactionIndex",
+    "version"
+  ],
+  "output": "pyth/live_response.json",
+  "expected_native_block": 293360328,
+  "locator_verified": true,
+  "run_sha256": "17e74c2bf7b8a83e647d5f4be04f7815f13aea59fae7d92021518354e9668eba",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 10.065,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

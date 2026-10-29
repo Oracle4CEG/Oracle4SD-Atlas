@@ -1,3 +1,5 @@
+> Historical instructions below describe an earlier release. For the current ten-product data, manuscript and tutorial use [the project README](../README.md) and [release configuration](../configs/atlas_utc_release.json). Earlier execution and publication statements do not describe the current release.
+
 # 运行数据与实验
 
 以下命令在仓库根目录执行。已验证环境为 Linux x86-64、CPU；不需要钱包、RPC 密钥或 GPU。主文档见 [FULL_DATA.md](FULL_DATA.md)。

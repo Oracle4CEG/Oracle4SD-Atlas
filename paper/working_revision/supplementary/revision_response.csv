@@ -1,0 +1,8 @@
+﻿本轮要求,位置,文件,状态
+选择逻辑与贡献,Introduction,sections/01_background.tex,已改；已有选择段整理为独立段，无重复
+八分支文献与测量联系,Related work §2.1,sections/01_background.tex,已改；理论联系未写成已证定理
+分支范围、链角色与起点,§3.1 / Table 3,sections/02_methods.tex; tables/protocol_sources.tex,已改；扫描起点不再冒充部署
+紧凑正文图,Figure 1，第2页,figures/ecosystem_scope.pdf,已插入；166 mm；Times New Roman；图注在图外
+逐分支研究用途,§7 / Table 11，第17页,sections/06_usage.tex; tables/research_opportunities.tex,已改；列出观察与额外证据
+历史实现及图形来源,Appendix A / Tables S1–S3，第21–23页,sections/appendix_a_scope.tex; supplementary/,已补；未知部署UTC时间和历史绑定限制明确保留
+后续数据与实验修改,指南2–3后续轮次,原§3.6 / §6.4等,本轮未执行，未声称已移除算法或重跑实验

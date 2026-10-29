@@ -1,0 +1,7 @@
+rule_id,population,before_violations,expected_archived,count_matches,after_violations,after_evidence,historical_source_binding
+UMA_CHALLENGE_V2,42676,40992,40992,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,B
+UMA_SETTLEMENT_V2,42676,850,850,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,B
+UMA_WINNER_COMPONENT_V2,42676,834,834,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,B
+TELLOR_OUTCOME_V2,13,13,13,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,B
+TELLOR_APPLIED_LOSS_V2,13,10,10,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,B
+DVM_ACCRUAL_V2,2663684,947128,947128,True,0,rule-transformed values; independent rebuilt-table check in reconstruction validation,A

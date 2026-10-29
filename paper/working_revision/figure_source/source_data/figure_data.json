@@ -1,0 +1,719 @@
+{
+  "branches": [
+    {
+      "branch": "UMA",
+      "tier": "detailed",
+      "native_table": "polygon_uma_request_rounds",
+      "unit_en": "Request rounds",
+      "unit_zh": "请求轮次",
+      "first_time_utc": "2022-11-04T20:20:30+00:00",
+      "last_time_utc": "2026-06-30T16:02:58+00:00",
+      "rows": 42676,
+      "timed_rows": 42676,
+      "implementation_en": "OOv2 (Polygon) + VotingV2 (Ethereum)",
+      "implementation_zh": "Polygon OOv2 + Ethereum VotingV2",
+      "registered_native_bounds": "Ethereum DVM blocks 16697232–25433938; Polygon contract-specific ranges",
+      "source_refs": "P1;G1 p.7;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "Chainlink",
+      "tier": "detailed",
+      "native_table": "chainlink_eth_usd_reports",
+      "unit_en": "ETH/USD service windows",
+      "unit_zh": "ETH/USD 服务窗口",
+      "first_time_utc": "2023-11-14T20:05:23+00:00",
+      "last_time_utc": "2026-06-30T23:21:35+00:00",
+      "rows": 46722,
+      "timed_rows": 46722,
+      "implementation_en": "Staking v0.2 + ETH/USD (Ethereum)",
+      "implementation_zh": "Ethereum 质押 v0.2 + ETH/USD",
+      "registered_native_bounds": "Ethereum staking from block 18572190; feed phases through 25433938",
+      "source_refs": "P1;G1 p.8;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "Tellor",
+      "tier": "detailed",
+      "native_table": "tellor_micro_reports",
+      "unit_en": "Micro-reports",
+      "unit_zh": "微报告",
+      "first_time_utc": "2025-05-09T14:44:06+00:00",
+      "last_time_utc": "2026-06-30T23:59:58+00:00",
+      "rows": 82866640,
+      "timed_rows": 82866640,
+      "implementation_en": "tellor-1 reports, disputes and payments",
+      "implementation_zh": "tellor-1 报告、争议及支付",
+      "registered_native_bounds": "tellor-1 heights 1–19890860; first report height 317",
+      "source_refs": "P1;G1 p.9;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "Flare FTSOv2",
+      "tier": "detailed",
+      "native_table": "flare_reward_claim_events",
+      "unit_en": "Reward-claim events",
+      "unit_zh": "奖励领取事件",
+      "first_time_utc": "2024-10-03T20:10:09+00:00",
+      "last_time_utc": "2026-06-30T23:59:26+00:00",
+      "rows": 18468735,
+      "timed_rows": 18468735,
+      "implementation_en": "RewardManager + VoterRegistry (Flare)",
+      "implementation_zh": "Flare 奖励管理、注册及奖励文件",
+      "registered_native_bounds": "Closed reward epochs 228–410; cutoff block 64054789",
+      "source_refs": "P1;G1 p.10;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "Pyth",
+      "tier": "detailed",
+      "native_table": "pyth_ois_publisher_epoch_factors",
+      "unit_en": "Publisher epoch-end labels",
+      "unit_zh": "发布者 epoch 结束标签",
+      "first_time_utc": "2025-07-24T00:00:00+00:00",
+      "last_time_utc": "2026-06-25T00:00:00+00:00",
+      "rows": 6566,
+      "timed_rows": 6566,
+      "implementation_en": "Solana OIS + retained Pythnet-era inputs",
+      "implementation_zh": "Solana OIS + 保留的 Pythnet 时期输入",
+      "registered_native_bounds": "Transaction archive from 2024-09-11; state panel has 49 closed epochs",
+      "source_refs": "P1;G1 p.11;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "Chronicle",
+      "tier": "narrow",
+      "native_table": "chronicle_ethereum_events",
+      "unit_en": "Validator / challenge events",
+      "unit_zh": "验证者与挑战事件",
+      "first_time_utc": "2023-08-28T16:17:11+00:00",
+      "last_time_utc": "2026-06-30T23:36:47+00:00",
+      "rows": 140526,
+      "timed_rows": 140526,
+      "implementation_en": "Registered validator / challenge contracts",
+      "implementation_zh": "Ethereum 已登记的验证与挑战合约",
+      "registered_native_bounds": "Contract-specific Ethereum deployment ranges through 25433938",
+      "source_refs": "P1;G1 p.12;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "RedStone Push",
+      "tier": "narrow",
+      "native_table": "redstone_ethereum_push_events",
+      "unit_en": "Push update events",
+      "unit_zh": "Push 更新事件",
+      "first_time_utc": "2023-12-07T10:44:35+00:00",
+      "last_time_utc": "2026-06-30T23:59:23+00:00",
+      "rows": 614319,
+      "timed_rows": 614319,
+      "implementation_en": "Registered Push adapters / feeds (Ethereum)",
+      "implementation_zh": "Ethereum 已登记的 Push 适配器及喂价",
+      "registered_native_bounds": "Contract-specific Ethereum deployment ranges through 25433938",
+      "source_refs": "P1;G1 p.13;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    },
+    {
+      "branch": "DIA",
+      "tier": "narrow",
+      "native_table": "dia_staking_withdrawals",
+      "unit_en": "Staking withdrawals",
+      "unit_zh": "质押提款",
+      "first_time_utc": "2025-07-08T10:30:45+00:00",
+      "last_time_utc": "2026-06-18T16:30:19+00:00",
+      "rows": 129,
+      "timed_rows": 129,
+      "implementation_en": "Lasernet staking; principal / reward records",
+      "implementation_zh": "Lasernet 质押及本金、奖励记录",
+      "registered_native_bounds": "Lasernet blocks 3874186–31302665",
+      "source_refs": "P1;G1 p.14;M1",
+      "coverage_semantics": "Selected table timestamp extent only; not a scan interval or continuous-coverage claim"
+    }
+  ],
+  "milestones": [
+    {
+      "branch": "UMA",
+      "date": "2018-12-01",
+      "precision": "month",
+      "kind": "history",
+      "label_en": "Whitepaper",
+      "label_zh": "白皮书",
+      "source_refs": "H1",
+      "note": "Month interval shown, not an exact day",
+      "precision_end": "2019-01-01"
+    },
+    {
+      "branch": "UMA",
+      "date": "2021-05-13",
+      "precision": "day",
+      "kind": "service",
+      "label_en": "Optimistic Oracle",
+      "label_zh": "乐观预言机服务",
+      "source_refs": "H2",
+      "note": "Not OOv2 deployment",
+      "precision_end": null
+    },
+    {
+      "branch": "Chainlink",
+      "date": "2019-05-30",
+      "precision": "day",
+      "kind": "service",
+      "label_en": "Ethereum mainnet",
+      "label_zh": "Ethereum 主网上线",
+      "source_refs": "H3",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "Chainlink",
+      "date": "2023-11-28",
+      "precision": "day",
+      "kind": "mechanism",
+      "label_en": "Staking v0.2",
+      "label_zh": "质押 v0.2",
+      "source_refs": "H4",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "Tellor",
+      "date": "2019-08-05",
+      "precision": "day",
+      "kind": "service",
+      "label_en": "Ethereum mainnet",
+      "label_zh": "Ethereum 主网上线",
+      "source_refs": "H5",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "Tellor",
+      "date": "2025-08-04",
+      "precision": "day",
+      "kind": "mechanism",
+      "label_en": "Layer public access*",
+      "label_zh": "Layer 对公众开放*",
+      "source_refs": "H6",
+      "note": "Not genesis; source says public opening",
+      "precision_end": null
+    },
+    {
+      "branch": "Flare FTSOv2",
+      "date": "2022-07-14",
+      "precision": "day",
+      "kind": "history",
+      "label_en": "Flare genesis",
+      "label_zh": "Flare 创世",
+      "source_refs": "H7",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "Flare FTSOv2",
+      "date": "2024-09-16",
+      "precision": "day",
+      "kind": "mechanism",
+      "label_en": "FTSOv2 announcement",
+      "label_zh": "FTSOv2 运行公告",
+      "source_refs": "H8",
+      "note": "Dated production announcement, not verified deployment",
+      "precision_end": null
+    },
+    {
+      "branch": "Pyth",
+      "date": "2021-08-26",
+      "precision": "day",
+      "kind": "service",
+      "label_en": "Solana feeds",
+      "label_zh": "Solana 喂价上线",
+      "source_refs": "H9",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "Pyth",
+      "date": "2024-09-02",
+      "precision": "day",
+      "kind": "mechanism",
+      "label_en": "OIS introduction",
+      "label_zh": "OIS 机制公告",
+      "source_refs": "H10",
+      "note": "Announcement date, not program deployment",
+      "precision_end": null
+    },
+    {
+      "branch": "Chronicle",
+      "date": "2017-01-01",
+      "precision": "year",
+      "kind": "history",
+      "label_en": "Maker oracle roots",
+      "label_zh": "Maker 预言机前身",
+      "source_refs": "H11",
+      "note": "Year interval; no precise day available",
+      "precision_end": "2018-01-01"
+    },
+    {
+      "branch": "Chronicle",
+      "date": "2023-09-05",
+      "precision": "day",
+      "kind": "service",
+      "label_en": "Public access",
+      "label_zh": "面向外部开发者",
+      "source_refs": "H11",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "DIA",
+      "date": "2025-03-26",
+      "precision": "day",
+      "kind": "history",
+      "label_en": "Lasernet mainnet",
+      "label_zh": "Lasernet 主网",
+      "source_refs": "H13",
+      "note": "",
+      "precision_end": null
+    },
+    {
+      "branch": "DIA",
+      "date": "2025-06-24",
+      "precision": "day",
+      "kind": "mechanism",
+      "label_en": "Staking launch",
+      "label_zh": "质押服务上线",
+      "source_refs": "H12",
+      "note": "",
+      "precision_end": null
+    }
+  ],
+  "relations": [
+    {
+      "branch": "UMA",
+      "chain": "Ethereum",
+      "scope": "sample",
+      "roles": "V/S",
+      "detail": "VotingV2 adjudication plus DVM economic records",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "UMA",
+      "chain": "Polygon",
+      "scope": "sample",
+      "roles": "V/S/D",
+      "detail": "OOv2 proposal acceptance, local settlement and delivery to requester",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Chainlink",
+      "chain": "Ethereum",
+      "scope": "sample",
+      "roles": "S/D",
+      "detail": "Staking economics and ETH/USD feed service windows; no off-chain report census",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Tellor",
+      "chain": "Tellor L1",
+      "scope": "sample",
+      "roles": "V/S",
+      "detail": "tellor-1 reports, disputes, votes and economic events",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Flare FTSOv2",
+      "chain": "Flare",
+      "scope": "sample",
+      "roles": "V/S",
+      "detail": "FTSOv2 provider/registry evidence and reward entitlements/claims; role does not imply complete vote reconstruction",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Pyth",
+      "chain": "Solana",
+      "scope": "sample",
+      "roles": "S",
+      "detail": "OIS instruction, staking and transfer evidence",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Pyth",
+      "chain": "Pythnet",
+      "scope": "input",
+      "roles": "I",
+      "detail": "Retained derived inputs / publisher epoch states; not a complete independent Pythnet chain scan",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Chronicle",
+      "chain": "Ethereum",
+      "scope": "sample",
+      "roles": "V/S/D",
+      "detail": "Registered report validation, challenges and challenge rewards",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "RedStone Push",
+      "chain": "Ethereum",
+      "scope": "sample",
+      "roles": "V/D",
+      "detail": "Registered signed-publication checks and Push delivery; no AVS economic extension",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "DIA",
+      "chain": "Lasernet",
+      "scope": "sample",
+      "roles": "S",
+      "detail": "Staking withdrawal principal and reward components; not the complete feed-production path",
+      "source_refs": "P1;G1",
+      "context_as_of": "",
+      "observation_cutoff": "2026-06-30T23:59:59Z"
+    },
+    {
+      "branch": "Chainlink",
+      "chain": "Polygon",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Chainlink",
+      "chain": "Arbitrum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Chainlink",
+      "chain": "Base",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Chainlink",
+      "chain": "BNB Chain",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Pyth",
+      "chain": "Ethereum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Pyth",
+      "chain": "Arbitrum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Pyth",
+      "chain": "Base",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Pyth",
+      "chain": "BNB Chain",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Chronicle",
+      "chain": "Arbitrum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Chronicle",
+      "chain": "Base",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "RedStone Push",
+      "chain": "Arbitrum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "RedStone Push",
+      "chain": "Base",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "RedStone Push",
+      "chain": "BNB Chain",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "DIA",
+      "chain": "Ethereum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "DIA",
+      "chain": "Polygon",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "DIA",
+      "chain": "Arbitrum",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "DIA",
+      "chain": "Base",
+      "scope": "context",
+      "roles": "D",
+      "detail": "Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain",
+      "source_refs": "G1 p.5; G1 protocol profile",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    },
+    {
+      "branch": "Tellor",
+      "chain": "Ethereum",
+      "scope": "context",
+      "roles": "H",
+      "detail": "Historical Ethereum implementation; outside the tellor-1 sample",
+      "source_refs": "G1 pp.5,9;H5",
+      "context_as_of": "2026-10-15",
+      "observation_cutoff": ""
+    }
+  ],
+  "chain_order": [
+    "Ethereum",
+    "Polygon",
+    "Solana",
+    "Flare",
+    "Tellor L1",
+    "Pythnet",
+    "Lasernet",
+    "Arbitrum",
+    "Base",
+    "BNB Chain"
+  ],
+  "cutoff": "2026-06-30T23:59:59Z",
+  "repo_commit": "1dc0dfc3bc919e64f43a110bf29b75ef0e34459c",
+  "sources": [
+    {
+      "source_id": "P1",
+      "title": "Oracle4SD Atlas manuscript",
+      "location": "Attached Oracle4SD_Atlas.pdf",
+      "locator": "pp. 4–6, §3.1–3.2, Table 3",
+      "interpretation": "User-supplied manuscript; release cutoff 2026-06-30"
+    },
+    {
+      "source_id": "G1",
+      "title": "Ecosystem mechanism design guide",
+      "location": "Attached 1.Oracle_Ecosystem_Mechanism_Design_Bilingual_Research_Guide_2026.pdf",
+      "locator": "pp. 2–5, 7–14, 25",
+      "interpretation": "Guide dated 2026-10-15; contextual network examples, not a historical network census"
+    },
+    {
+      "source_id": "G2",
+      "title": "Data alignment guide",
+      "location": "Attached 2.Oracle4SD_Data_Alignment_Complete_Bilingual_A4_Revision_Guide.pdf",
+      "locator": "pp. 7–8",
+      "interpretation": "Event endpoints, deployment, archive and epoch clocks must be distinguished"
+    },
+    {
+      "source_id": "F1",
+      "title": "Advanced figure catalogue",
+      "location": "Attached Visualizations-Oracle_Advanced_Figure_Catalogue.pdf",
+      "locator": "pp. 3–5; F01 and F02",
+      "interpretation": "Interval plot and oracle–chain relation matrix; re-encoded from evidence"
+    },
+    {
+      "source_id": "A1",
+      "title": "The AI Economist",
+      "location": "Attached Science_AI_Economist_sciadv.abk2607.pdf",
+      "locator": "Figures 4–5, pp. 7–8",
+      "interpretation": "Composition reference only; no data or artwork copied"
+    },
+    {
+      "source_id": "M1",
+      "title": "Pinned temporal coverage metadata",
+      "location": "https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/1dc0dfc3bc919e64f43a110bf29b75ef0e34459c/metadata/repaired_atlas_20261012/time_coverage.csv",
+      "locator": "first_time, last_time, native_table",
+      "interpretation": "Exact UNIX seconds converted to UTC; one selected table per branch"
+    },
+    {
+      "source_id": "H1",
+      "title": "Risk Labs history",
+      "location": "https://risklabs.foundation/",
+      "locator": "Our Story: December 2018 whitepaper",
+      "interpretation": "Month precision; not an OOv2 deployment date"
+    },
+    {
+      "source_id": "H2",
+      "title": "Introducing UMA’s Optimistic Oracle",
+      "location": "https://medium.com/uma-project/introducing-umas-optimistic-oracle-d92ce5d1a4bc",
+      "locator": "13 May 2021",
+      "interpretation": "First-party launch announcement; not OOv2"
+    },
+    {
+      "source_id": "H3",
+      "title": "Chainlink Ethereum launch",
+      "location": "https://chain.link/blog/chainlink-connected-consensus-on-ethereum",
+      "locator": "30 May 2019",
+      "interpretation": "First-party launch announcement"
+    },
+    {
+      "source_id": "H4",
+      "title": "Chainlink Staking v0.2 live",
+      "location": "https://chain.link/blog/chainlink-staking-v0-2-now-live",
+      "locator": "28 November 2023",
+      "interpretation": "Priority migration launch; not contract deployment or full public access"
+    },
+    {
+      "source_id": "H5",
+      "title": "Tellor Ethereum launch",
+      "location": "https://tellor.io/tellor-launches-to-mainnet/",
+      "locator": "5 August 2019",
+      "interpretation": "First-party launch announcement"
+    },
+    {
+      "source_id": "H6",
+      "title": "Tellor Layer public opening",
+      "location": "https://tellor.io/blog/layer-mainnet-open-to-public/",
+      "locator": "4 August 2025",
+      "interpretation": "Public opening, not genesis; retained reports predate this announcement"
+    },
+    {
+      "source_id": "H7",
+      "title": "Flare third anniversary",
+      "location": "https://flare.network/news/flare-third-anniversary",
+      "locator": "14 July 2025 article; genesis 14 July 2022",
+      "interpretation": "Historical retrospective specifying genesis"
+    },
+    {
+      "source_id": "H8",
+      "title": "FTSOv2: More data, delivered faster",
+      "location": "https://flare.network/news/ftsov2-more-data-delivered-faster",
+      "locator": "16 September 2024",
+      "interpretation": "Production announcement; not a verified contract deployment timestamp"
+    },
+    {
+      "source_id": "H9",
+      "title": "Pyth Network Mainnet Launch",
+      "location": "https://www.pyth.network/blog/pyth-network-mainnet",
+      "locator": "26 August 2021",
+      "interpretation": "Solana price feed launch"
+    },
+    {
+      "source_id": "H10",
+      "title": "Oracle Integrity Staking introduction",
+      "location": "https://www.pyth.network/blog/oracle-integrity-staking-incentivizing-safer-price-feeds-for-a-more-secure-defi",
+      "locator": "2 September 2024",
+      "interpretation": "Announcement date; not a verified program deployment timestamp"
+    },
+    {
+      "source_id": "H11",
+      "title": "Chronicle public access release",
+      "location": "https://www.globenewswire.com/en/news-release/2023/09/05/2737624/0/en/Chronicle-Protocol-the-Exclusive-5B-Oracle-of-MakerDAO-Opens-Access-to-All-Web3-Builders.html",
+      "locator": "5 September 2023; Maker roots 2017",
+      "interpretation": "Chronicle-issued press release; 2017 has year precision only"
+    },
+    {
+      "source_id": "H12",
+      "title": "DIA mainnet staking launch",
+      "location": "https://www.diadata.org/blog/post/mainnet-staking-blockchain-oracle-grants/",
+      "locator": "24 June 2025",
+      "interpretation": "Staking launch distinct from Lasernet mainnet launch"
+    },
+    {
+      "source_id": "H13",
+      "title": "Lasernet mainnet live",
+      "location": "https://www.diadata.org/blog/post/dia-lumina-mainnet-live/",
+      "locator": "26 March 2025",
+      "interpretation": "Network/stack launch; staking was still forthcoming"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Oracle4SD Atlas 发布修订
+
+当前论文：paper/working_revision/main.pdf，共31页；Appendix B.2已有真实UTC转换示例表。
+当前教程：notebooks/Oracle4SD_Atlas_Tutorial.ipynb；本地执行结果：reports/publication_20261029/tutorial.executed.ipynb。
+Template对照：docs/TEMPLATE_ALIGNMENT.md；30项逐项响应：metadata/completion_audit/response.csv。
+十组数据发布身份：configs/atlas_utc_release.json；物理表与字段：metadata/revision。
+历史收集凭证、部分原生字段解释、人工审核、独立读者与Google托管验收仍有未完成项；不得把本地检查或公开发布视为这些工作的完成证明。

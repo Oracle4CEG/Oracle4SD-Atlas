@@ -1,0 +1,30 @@
+{
+  "branch": "RedStone Push",
+  "mode": "live",
+  "result_keys": [
+    "type",
+    "status",
+    "cumulativeGasUsed",
+    "logs",
+    "logsBloom",
+    "transactionHash",
+    "transactionIndex",
+    "blockHash",
+    "blockNumber",
+    "gasUsed",
+    "effectiveGasPrice",
+    "from",
+    "to",
+    "contractAddress"
+  ],
+  "output": "redstone_push/live_response.json",
+  "expected_native_block": 18733900,
+  "locator_verified": true,
+  "run_sha256": "de3ec7679c18e67e6d37715ebfa3c9fe9c488aac63b381a32bfead924bab213b",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.489,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

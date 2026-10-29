@@ -1,0 +1,14 @@
+{
+  "branch": "Pyth",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "payment_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "5e4d30ccbb067954b9e0dc25747c2c37f1f2fafeed26b024e241b25b1b93acad",
+  "parent_sha256": "d8318e1ddfa4c010e2bf3f3cb3c410a5846e25767162474a93cfebd36d4c9f6a",
+  "source_unit": "pyth_ois_economic_events",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

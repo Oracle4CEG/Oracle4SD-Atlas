@@ -1,0 +1,15 @@
+{
+  "branch": "UMA",
+  "rows": 8,
+  "clock_fields": [
+    "event_time_utc",
+    "request_reference_time_utc",
+    "expiration_time_utc"
+  ],
+  "source_mode": "archived_native_replay",
+  "source_sha256": "3c270f24376de163b21b3f9cee975049f7b426585f697ba156c25d5b7b9a5ed4",
+  "parent_sha256": "cf9cd6fa6c857f61bbb81ede3af8b7afc21fc3427d6eca8909a231c285b885d7",
+  "source_unit": "polygon_uma_request_rounds",
+  "missing_event_time": 0,
+  "check": "sample_identity_and_clock_schema"
+}

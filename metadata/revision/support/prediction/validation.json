@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "unique_request_unit",
+      "passed": true
+    },
+    {
+      "check": "same_retrospective_cohort",
+      "passed": true
+    },
+    {
+      "check": "target_price_identity",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_event_latency",
+      "passed": true
+    },
+    {
+      "check": "no_outcome_in_allowlist",
+      "passed": true
+    },
+    {
+      "check": "independent_full_cohort_history",
+      "passed": true,
+      "discrepancies": 0
+    }
+  ],
+  "requests": 810,
+  "target_counts": {
+    "1": 466,
+    "0": 344
+  },
+  "features": [
+    "log_bond_raw",
+    "log_final_fee_raw",
+    "log_reward_plus1_raw",
+    "reward_to_bond_ratio",
+    "liveness_hours",
+    "proposal_latency_hours",
+    "ancillary_bytes",
+    "proposer_prior_completed",
+    "proposer_prior_dispute_rate",
+    "proposer_prior_rejection_rate",
+    "requester_prior_completed",
+    "requester_prior_dispute_rate",
+    "requester_prior_rejection_rate",
+    "requester_is_polymarket_adapter",
+    "proposed_price_class",
+    "adapter_version"
+  ],
+  "changed_feature_cells": 394,
+  "changed_requests": 197,
+  "interpretation": "Retrospectively selected challenged requests; no fitted models; no independent factual labels."
+}

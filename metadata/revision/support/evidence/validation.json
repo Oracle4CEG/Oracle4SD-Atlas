@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "semantic_rules": [
+    {
+      "rule_id": "UMA_CHALLENGE_V2",
+      "population": 42676,
+      "before_violations": 40992,
+      "expected_archived": 40992,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "B"
+    },
+    {
+      "rule_id": "UMA_SETTLEMENT_V2",
+      "population": 42676,
+      "before_violations": 850,
+      "expected_archived": 850,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "B"
+    },
+    {
+      "rule_id": "UMA_WINNER_COMPONENT_V2",
+      "population": 42676,
+      "before_violations": 834,
+      "expected_archived": 834,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "B"
+    },
+    {
+      "rule_id": "TELLOR_OUTCOME_V2",
+      "population": 13,
+      "before_violations": 13,
+      "expected_archived": 13,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "B"
+    },
+    {
+      "rule_id": "TELLOR_APPLIED_LOSS_V2",
+      "population": 13,
+      "before_violations": 10,
+      "expected_archived": 10,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "B"
+    },
+    {
+      "rule_id": "DVM_ACCRUAL_V2",
+      "population": 2663684,
+      "before_violations": 947128,
+      "expected_archived": 947128,
+      "count_matches": true,
+      "after_violations": 0,
+      "after_evidence": "rule-transformed values; independent rebuilt-table check in reconstruction validation",
+      "historical_source_binding": "A"
+    }
+  ],
+  "case_checks": [
+    {
+      "event": "Request",
+      "check": "successful_receipt",
+      "passed": true
+    },
+    {
+      "event": "Request",
+      "check": "header_hash",
+      "passed": true
+    },
+    {
+      "event": "Request",
+      "check": "block_time",
+      "passed": true
+    },
+    {
+      "event": "Request",
+      "check": "event_contract",
+      "passed": true
+    },
+    {
+      "event": "Request",
+      "check": "event_transaction",
+      "passed": true
+    },
+    {
+      "event": "Request",
+      "check": "not_removed",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "successful_receipt",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "header_hash",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "block_time",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "event_contract",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "event_transaction",
+      "passed": true
+    },
+    {
+      "event": "Proposal",
+      "check": "not_removed",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "successful_receipt",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "header_hash",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "block_time",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "event_contract",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "event_transaction",
+      "passed": true
+    },
+    {
+      "event": "Dispute",
+      "check": "not_removed",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "successful_receipt",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "header_hash",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "block_time",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "event_contract",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "event_transaction",
+      "passed": true
+    },
+    {
+      "event": "DVM resolution",
+      "check": "not_removed",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "successful_receipt",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "header_hash",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "block_time",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "event_contract",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "event_transaction",
+      "passed": true
+    },
+    {
+      "event": "Settlement",
+      "check": "not_removed",
+      "passed": true
+    },
+    {
+      "check": "same_native_request_identity",
+      "passed": true
+    },
+    {
+      "check": "net_cashflow_zero",
+      "passed": true
+    },
+    {
+      "check": "elapsed_additivity",
+      "passed": true
+    }
+  ]
+}

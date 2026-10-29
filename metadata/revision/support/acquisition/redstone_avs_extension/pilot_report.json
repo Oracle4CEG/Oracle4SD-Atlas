@@ -1,0 +1,23 @@
+{
+  "branch": "RedStone AVS extension",
+  "included_in_push_sample": false,
+  "contract": "0x2B766957ce3dbab9eC4b227f5086855CeE7a1ad6",
+  "chain": "Base",
+  "chain_id": 8453,
+  "documentation": "https://docs.redstone.finance/docs/network-tokenomics/restaking-avs/service-components/",
+  "historical_implementation_binding": "unverified",
+  "cutoff_utc": "2026-06-30T23:59:59Z",
+  "to_block": 48037326,
+  "from_block": 48036327,
+  "code_present_at_cutoff": true,
+  "runtime_sha256": "e0c64e522d1435dbff2a47957a1a07e6b8dbacae479f21a8ffdf3fc96b572e6f",
+  "eip1967_implementation_slot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "status": "interface_or_archive_limit",
+  "error": "429 Client Error: Too Many Requests for url: https://mainnet.base.org/",
+  "fallback_endpoint": "https://base-rpc.publicnode.com",
+  "fallback_http_status": 403,
+  "fallback_error": {
+    "code": -32602,
+    "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+  }
+}

@@ -1,0 +1,20 @@
+\begin{table}[!htbp]
+\centering\tabstyle[registrytint]
+\caption{Measurement roles, implementation scope and historical boundaries of the eight oracle branches. Coverage refers to registered sources, not all services of a protocol. The upper cutoff is 30 June 2026, 23:59:59 UTC. Appendix~\ref{app:scope} separates deployment, scanning and retained-event boundaries.}
+\label{tab:protocol_sources}
+\begin{tabularx}{\linewidth}{@{}L{0.105\linewidth} L{0.22\linewidth} L{0.255\linewidth} Y@{}}
+\toprule\tablehead
+\textbf{Branch} & \textbf{Implementation and chain} & \textbf{Registered coverage} & \textbf{Measurement role and main exclusion} \\
+\midrule
+UMA & Ethereum VotingV2; Polygon OOv2 and adapters & DVM blocks 16,697,232--25,433,938; Polygon contract-specific starts through 89,439,336 & Proposals, disputes, adjudication and settlement. Other UMA versions and deployments are outside the registered scope. \\
+Chainlink & Ethereum Staking v0.2; ETH/USD proxy and feed phases & Staking from block 18,572,190; registered sources through 25,433,938 & Staking economics and selected feed updates. Other feeds, networks and services are excluded. \\
+Tellor & \texttt{tellor-1} modules, ABCI events and block results & Heights 1--19,890,860; first report at height 317 & Reports, disputes, votes, payments and restrictions. Legacy Ethereum Tellor is excluded. \\
+Flare FTSOv2 & Flare RewardManager, VoterRegistry and reward artifacts & Closed reward epochs 228--410; cutoff block 64,054,789 & Entitlements, provider conditions and claims. Table coverage differs; aggregate claims may resist attribution. \\
+Pyth & Solana OIS transactions and retained Pythnet-derived inputs & Transaction archive from 11 September 2024; 49 retained closed state epochs & Publisher--epoch states, staking and transfers. State coverage is shorter; other products and delivery networks are excluded. \\
+\midrule
+Chronicle & Registered Ethereum validator and challenge contracts & Registered log scan 0--25,433,938; deployment dates are separate & Reports, challenges and challenge rewards. Rewards are not a complete publisher-compensation ledger. \\
+RedStone Push & Registered Ethereum Push adapters and feeds & Registered log scan 0--25,433,938; deployment dates are separate & Signed publication and Push updates. Other delivery modes and full AVS economics are excluded. \\
+DIA & Registered Lasernet staking contracts & Deployment block 3,874,186 through cutoff 31,302,665 & Withdrawals, returned principal and rewards. This is not a complete price-production or delivery audit. \\
+\bottomrule
+\end{tabularx}
+\end{table}

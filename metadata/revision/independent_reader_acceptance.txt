@@ -1,0 +1,3 @@
+Independent-reader and hosted acceptance
+
+Use the finalized public repository commit and public data version after publication. Record the actual commit, environment, start/end time and any intervention. Run the eight-branch notebook with a fresh Python environment. Separately run the bounded UMA bundled, public-download and live acquisition examples in new directories, followed by processing and validation. Preserve executed notebooks, commands, output checksums and failures. Do not claim full-history acquisition from a bounded success. A Google-hosted Colab run must record its actual hosted CPU/runtime; the supplied local kernel run is not a substitute. The independent reader must enter their own identity and sign-off; no such sign-off is supplied in this delivery.

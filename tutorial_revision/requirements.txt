@@ -1,0 +1,6 @@
+pandas
+pyarrow
+requests
+nbformat
+nbclient
+ipykernel

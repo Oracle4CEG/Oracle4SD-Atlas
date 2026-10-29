@@ -1,0 +1,6 @@
+{
+  "matched": 947128,
+  "value_mismatches": 0,
+  "passed": true,
+  "query": "SELECT count(*),count(*) FILTER(WHERE e.principal_slashed_raw IS DISTINCT FROM p.wrong_or_no_vote_slash_raw) FROM read_parquet('data/curated/parquet/uma_dvm_voter_payoffs.parquet') p JOIN read_parquet('data/applications/oata/accountability_episodes.parquet') e ON e.unit_id=p.dvm_request_id AND e.actor=p.voter AND e.episode_type='uma_dvm_voter' WHERE try_cast(p.wrong_or_no_vote_slash_raw AS HUGEINT)>0"
+}

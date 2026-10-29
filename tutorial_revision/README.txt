@@ -1,0 +1,1 @@
+Run Oracle4SD_Atlas_Tutorial.ipynb from this directory. Requires pyarrow, nbformat, nbclient. All eight sections use bounded archived native inputs. No network credentials are required. Each sample is linked by SHA-256 to its full retained parent. Fresh acquisition success is documented separately in the release acquisition report.

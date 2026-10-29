@@ -1,0 +1,17 @@
+{
+  "logical_products": 10,
+  "viewer_configs": 10,
+  "physical_parquet_tables": 100,
+  "croissant_recordsets": 100,
+  "dictionary_entries": 1810,
+  "all_paths_exist": true,
+  "unique_paths": true,
+  "field_count_matches": true,
+  "definition_status_counts": {
+    "native_field_with_source_code_reference": 904,
+    "defined_by_revision_rule": 654,
+    "reviewed_common_or_episode_field": 252
+  },
+  "human_semantic_review": "not_completed",
+  "croissant_nested_leaf_mirrors": 2
+}

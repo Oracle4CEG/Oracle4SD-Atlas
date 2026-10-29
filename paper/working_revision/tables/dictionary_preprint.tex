@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\tabstyle[semantictint]
+\caption{Selected field families. Dictionaries define the schema; amounts require asset and decimal fields.}
+\label{tab:dictionary}
+\begin{tabularx}{\linewidth}{@{}L{0.19\linewidth} L{0.35\linewidth} Y@{}}
+\toprule\tablehead
+\thcell{document}{Field family} & \thcell{data}{Representative fields} & \thcell{compare}{Type and analytical meaning} \\
+\midrule
+Identity and mechanism & \codefield{oracle_network}, \codefield{mechanism_family}, \codefield{native_table}, \codefield{security_chain}, \codefield{delivery_chain} & Strings identifying the mechanism, native table and chain context. \\
+Observation unit & \codefield{accountability_unit_type}, \codefield{accountability_unit_id}, \codefield{event_granularity} & Strings or controlled values defining what a row represents. \\
+Time & \codefield{event_time_unix}, \codefield{reward_accrual_time_unix}, \codefield{reward_payment_time_unix} & Integer-second labels in the common representation; separate UTC annotations distinguish event, epoch, payment and snapshot times (Appendix~\ref{app:temporal}). \\
+Actors and roles & \codefield{actor}, \codefield{actor_role}, \codefield{counterparty}, \codefield{counterparty_role} & Native addresses or identifiers and interpreted roles; not natural-person identities. \\
+Reward & \codefield{reward_class}, \codefield{reward_amount_raw}, \codefield{reward_asset}, \codefield{reward_asset_decimals} & Integer string, asset identity and decimal precision. Economic stage determines interpretation. \\
+Penalty and forfeiture & \codefield{penalty_accrued_raw}, \codefield{principal_slashed_raw}, \codefield{bond_forfeited_raw}, \codefield{fee_forfeited_raw}, \codefield{reward_forfeited_raw} & Integer strings with asset metadata; distinguishes accrual, applied principal loss and other forfeitures. \\
+Principal & \codefield{principal_locked_raw}, \codefield{principal_returned_raw}, \codefield{principal_asset} & Integer strings and asset metadata; separates exposed or recovered capital from gain. \\
+Outcome basis & \codefield{truth_basis}, \codefield{outcome_status}, \codefield{external_truth_available} & Strings and booleans describing the basis for an outcome; protocol resolution is not external ground truth. \\
+Source and rule & \codefield{source_event}, \codefield{source_tx}, \codefield{source_block}, \codefield{source_contract}, \codefield{rule_id}, \codefield{parameter_version} & Strings and integers linking observations to native evidence and the interpretation rule. \\
+Realization & \codefield{economic_kind}, \codefield{economic_evidence_class}, \codefield{realization_status}, \codefield{amount_raw}, \codefield{signed_amount_raw}, \codefield{cashflow_verified}, \codefield{state_delta_verified} & Controlled values, integer strings and booleans recording the economic stage and evidence for realization. \\
+\bottomrule
+\end{tabularx}
+\end{table}

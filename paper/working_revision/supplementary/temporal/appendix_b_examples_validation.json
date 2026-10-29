@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "examples": 5,
+  "checks": [
+    {
+      "check": "UMA integer-second conversion agrees with retained UTC",
+      "passed": true
+    },
+    {
+      "check": "Tellor integer-millisecond conversion agrees with retained UTC",
+      "passed": true
+    },
+    {
+      "check": "Tellor millisecond remainder is preserved",
+      "passed": true
+    },
+    {
+      "check": "Pyth start and end agree with retained UTC",
+      "passed": true
+    },
+    {
+      "check": "Pyth interval has positive duration",
+      "passed": true
+    },
+    {
+      "check": "Pyth interval has no invented event time",
+      "passed": true
+    },
+    {
+      "check": "Ethereum block lookup has one consistent retained timestamp",
+      "passed": true
+    },
+    {
+      "check": "Chainlink recovered time agrees with matching block evidence",
+      "passed": true
+    },
+    {
+      "check": "Chainlink recovery retains its evidence status",
+      "passed": true
+    },
+    {
+      "check": "Unmatched example retains missing event time and status",
+      "passed": true
+    },
+    {
+      "check": "Chainlink row 2129 agrees with the earlier recovery register",
+      "passed": true
+    },
+    {
+      "check": "Chainlink row 0 agrees with the earlier recovery register",
+      "passed": true
+    }
+  ],
+  "scope": "Bounded checks against retained native records and prior UTC annotations; no fresh acquisition or complete-coverage claim.",
+  "source_hashes": "Copied from the existing versioned file manifest; full source-file checksums were not recomputed for this bounded selection.",
+  "table_sha256": "6dbf6b2e530790757373c3e2b9ffe507ad7c9994d35df83abc692603abfff463"
+}

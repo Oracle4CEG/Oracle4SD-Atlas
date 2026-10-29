@@ -1,0 +1,30 @@
+{
+  "branch": "Flare FTSOv2",
+  "mode": "live",
+  "result_keys": [
+    "blockHash",
+    "blockNumber",
+    "contractAddress",
+    "cumulativeGasUsed",
+    "effectiveGasPrice",
+    "from",
+    "gasUsed",
+    "logs",
+    "logsBloom",
+    "status",
+    "to",
+    "transactionHash",
+    "transactionIndex",
+    "type"
+  ],
+  "output": "flare_ftsov2/live_response.json",
+  "expected_native_block": 30726907,
+  "locator_verified": true,
+  "run_sha256": "9b35d7dea29ee846e370e5492c5eda7a65390b4eedf4f77d3229e143594cf5a1",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.606,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

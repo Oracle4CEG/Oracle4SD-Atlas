@@ -1,3 +1,26 @@
+# Current ten-product release
+
+Use `configs/atlas_utc_release.json` for the dataset repository, fixed revision and version prefix. `scripts/load_atlas_product.py` lists product members and retrieves selected files with checksums. The release contains 100 physical tables; Viewer configurations each expose one representative schema. Shared tables require explicit branch/key filtering.
+
+The reproducibility boundaries are: original chain/API response → retained native table → common/economic representation → prediction/daily product. The bundled raw responses cover selected locators only. Full reconstruction starts from retained native tables; historical operator identities and exhaustive raw collection receipts remain incomplete. The new data preserve supported UTC clocks and clock companions. Older application/model tables are not part of the updated ten-product claim.
+
+The commands below are the retained predecessor reconstruction route. They reproduce the earlier 95-table output, not the current UTC/daily extension. Current builders are in `code/revision`; see the main README and table catalogue.
+
+## Rebuild the current derived products
+
+After downloading the complete version directory, supply its local root as `--deposit`. The preparation step arranges native table paths expected by the builders.
+
+```sh
+python code/revision/prepare_native_layout.py --deposit /path/to/atlas-utc-20261029 --output /tmp/oracle-native
+python code/revision/build_prediction.py --native /tmp/oracle-native --out /tmp/oracle-task
+python code/revision/build_daily.py --native /tmp/oracle-native --raw-root reproduction_inputs --out /tmp/oracle-daily
+python code/revision/build_escrow.py --native /tmp/oracle-native --out /tmp/oracle-daily
+```
+
+For common/economic tables use `code/revision/load_core_with_utc.py` to join supported clocks by record identity. The old integer-second labels remain provenance. `code/revision/assemble_release.py` is the earlier local assembly recipe; published metadata and release identity supersede its local draft labels.
+
+---
+
 # Full Atlas: download, reconstruct and run experiments
 
 The supported reconstruction starts from **64 frozen native/curated input files (1,807,346,651 bytes)**. It builds the common layer, economic projections, research samples and application views. These are the retained native tables, not every original RPC response. Fresh historical network collection is separate and is not required to reproduce this release.

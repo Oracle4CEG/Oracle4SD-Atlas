@@ -1,0 +1,14 @@
+\begin{table}[!htbp]
+\centering\tabstyle
+\caption{Timestamp availability within retained populations after exact block matching. The Chainlink subset covers staking, withdrawals, reward payments, reward finalization and forfeiture distributions.}
+\label{tab:temporal_recovery}
+\begin{tabularx}{\linewidth}{@{}Y r Y@{}}
+\toprule\tablehead
+Observation population & Available & Remaining limitation \\
+\midrule
+UMA DVM voter accruals & 10.9\% & Execution time is unavailable for unmatched blocks. \\
+Chainlink native staking logs & 6.0\% & Retained block references cover only part of the log history. \\
+Chainlink analytical subset & 5.0\% & Temporal analysis remains restricted to the dated observations. \\
+\bottomrule
+\end{tabularx}
+\end{table}

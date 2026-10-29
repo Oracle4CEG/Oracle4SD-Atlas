@@ -1,0 +1,30 @@
+{
+  "branch": "UMA",
+  "mode": "live",
+  "result_keys": [
+    "blockHash",
+    "blockNumber",
+    "contractAddress",
+    "cumulativeGasUsed",
+    "effectiveGasPrice",
+    "from",
+    "gasUsed",
+    "logs",
+    "logsBloom",
+    "status",
+    "to",
+    "transactionHash",
+    "transactionIndex",
+    "type"
+  ],
+  "output": "uma/live_response.json",
+  "expected_native_block": 30622389,
+  "locator_verified": true,
+  "run_sha256": "3dc2b97db02253c67104d7629361ce60ddcadb61e068bb548333352fa3d58207",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.347,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

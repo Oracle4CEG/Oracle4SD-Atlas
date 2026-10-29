@@ -1,0 +1,4 @@
+cohort,requests,changed_proposal,unchanged_proposal,changed_fraction,interpretation
+all_native_outcomes,810,466,344,0.5753086419753086,"label/cohort sensitivity, not factual correctness"
+exclude_early_expiration,413,69,344,0.16707021791767554,"label/cohort sensitivity, not factual correctness"
+binary_resolutions_only,402,59,343,0.14676616915422885,"label/cohort sensitivity, not factual correctness"

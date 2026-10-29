@@ -1,0 +1,41 @@
+\section{Data records}
+
+Ten logical products cover eight protocol branches, the UMA prediction task and daily measurements. Each may contain several linked tables. Common representations support comparison; native tables preserve mechanism-specific timing and accounting. Table~\ref{tab:files} lists the principal components, with types, definitions and relationships documented in the catalogue and dictionaries.
+
+\input{tables/file_inventory_preprint}
+
+\subsection{Native records and table relationships}
+
+Native tables preserve the object meaningful to the originating protocol. The UMA OOV2 panel contains 42,676 request lifecycles, while the Tellor micro-report table contains 82,866,640 reports. Other examples include 18,468,735 Flare claim events and 518,560 decoded Pyth OIS instructions. These quantities count requests, reports, claims and instructions, respectively. A comparison that treats them as equivalent oracle events would confuse differences in data granularity with differences in institutional activity. Within a branch, related evidence can also be stored separately: UMA request-level lifecycle and payout fields link to token-flow records rather than repeating each transfer inside the request table.
+
+Identifiers follow the strongest available native structure. EVM logs use chain, transaction and log position; Tellor relies on module-specific report metadata; Solana evidence uses signatures and instruction positions. Table~\ref{tab:record_keys} summarizes these keys and their relationships. Checks on the named UMA, Chainlink and cross-chain linkage tables assess selected primary-key and foreign-key constraints. A one-to-many relationship can represent several events within a lifecycle or several components within one settlement. It is therefore a relationship to interpret, rather than a duplication to remove automatically.
+
+\input{tables/record_keys}
+
+\subsection{Common accountability and economic representations}
+
+The common accountability table contains 105,588,120 rows and 50 columns. Each row projects a native observation while retaining protocol, unit, role, source and evidence status. Requests, reports, disputes, epochs, staking observations and service windows remain distinct units. Cross-protocol aggregation must therefore retain protocol, native table, unit type and unit identity to establish comparability.
+
+Economic components are represented in a separate 22,723,389-row, 28-column table. Its fields record the mechanism, stage, actor, counterparty, amount, asset, source object, evidence class and validation status. A stricter 19,275,854-row representation uses the same physical schema but requires qualifying evidence of payment or an applied economic change. It overlaps the broader component table and is not an independent sample. Stage, actor, asset and the documented grouping of related components must be considered together: adding an accrued penalty to a later applied slash can count the same economic process twice.
+
+\subsection{Dictionaries, types and interpretive states}
+
+Documentation operates at two levels. The conceptual dictionary defines 33 economic variables: 28 core measures and five supporting variables. The core measures comprise four participation or concentration variables, nine incentive or friction variables, and fifteen outcome or accountability variables. Supporting entries identify the episode, decision time, challenge deadline, cross-chain link grade and provenance. Their definitions specify units, derivation, decision-time availability, evidence class, missingness and validation rules. The physical dictionary describes the columns in each table, including the derived products and their supporting evidence. Conceptual variables and physical columns serve different purposes; the catalogue records their relationships rather than treating their counts as alternative estimates of dataset dimensionality.
+
+Table~\ref{tab:dictionary} summarizes selected field families. Raw monetary amounts are stored as integer-valued strings and interpreted with their asset and decimal fields, avoiding loss from floating-point conversion. The common representation includes integer Unix-second labels. Separate UTC annotations preserve native timestamp precision and distinguish event times from epoch boundaries and snapshots. JSON schemas define required fields and controlled values, including the 85-field cross-chain observation schema. Where supported, coverage distinguishes complete, partial, verified-zero, unknown, unavailable and not-applicable conditions; right censoring separately identifies unfinished lifecycles. Schema checks establish consistency with these tested definitions, rather than proving every historical interpretation correct.
+
+\input{tables/dictionary_preprint}
+
+Curated tables use Zstandard-compressed Apache Parquet; metadata use UTF-8 CSV or JSON, and source packages use JSONL or compressed JSONL. The revised catalogue distinguishes the earlier deposit's 95 tables and application artifacts from the new task, daily measurements and evidence ledgers. Registers, inventories and validation identify acquisition evidence, reconstruction inputs and outputs.
+
+\subsection{Temporal metadata}
+
+Native tables retain the original timestamps and identifiers alongside UTC fields for the clocks supported by each source. The common accountability and economic representations use companion tables joined by their retained record identifiers. These companions distinguish execution times, epoch boundaries and missing clocks without altering the original observations. Their definitions specify temporal meaning, precision and the reason a time is unavailable. Analyses using the common representations should use these supported UTC clocks; the earlier integer-second labels remain for provenance.
+
+Temporal metadata record each table's available interval and missing timestamps. Execution times, epoch intervals, deadlines and snapshots retain distinct meanings, allowing comparable periods to be selected without treating every timestamp as an instantaneous event.
+
+\subsection{Derived products and supporting evidence}
+
+The UMA task contains one row per eligible request, a sixteen-field feature dictionary and a feature-level availability record. The daily product contains typed measurements, recipient-level payment aggregates, completion delays and observed escrow exposure, together with a separate historical Flare signing-policy table. The latter retains epoch support because signing weights are defined by the policy interval.
+
+The correction ledger records old and revised field values for identifiable native objects. The cross-chain case retains the event register, elapsed intervals, cashflow components and unresolved evidence links. These supporting tables document how the measurements were obtained; their rows are not additional independent oracle observations. Appendix~\ref{app:products} describes the ten products and their relationships.

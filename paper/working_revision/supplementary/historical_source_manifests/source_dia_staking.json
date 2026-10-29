@@ -1,0 +1,29 @@
+{
+  "original_relative_path": "data/manifests/dia_staking.json",
+  "original_sha256": "580db95d14e3c354f514bec289dac90afa7f87339b9c74df81b68e2492369a1e",
+  "metadata": {
+    "all_required_assertions_pass": true,
+    "chain_id": 1050,
+    "curated_events": "data/curated/dia_staking_events.jsonl",
+    "curated_withdrawals": "data/curated/dia_staking_withdrawals.jsonl",
+    "cutoff_block": 31302665,
+    "dataset": "DIA Lasernet realized staking reward ledger",
+    "deployment_block": 3874186,
+    "event_counts": {
+      "RewardAdded": 365,
+      "Staked": 298,
+      "UnstakeRequested": 138,
+      "WithdrawalTransfers": 256
+    },
+    "exact_principal_reward_payment_decompositions": 129,
+    "fixed_cutoff": "2026-06-30T23:59:59+00:00",
+    "generated_at_utc": "2026-07-28T11:35:20.445103+00:00",
+    "official_contract_discovery": "DIA staking app runtime configuration and ABI",
+    "raw_logs": "data/raw/dia_lasernet/staking_logs.json.gz",
+    "realized_reward_amount_raw": "22235907087809645291878",
+    "realized_withdrawals": 129,
+    "slashing_amount_imputed_as_zero": false,
+    "slashing_status_at_cutoff": "not_implemented_per_official_staking_FAQ",
+    "staking_events": 801
+  }
+}

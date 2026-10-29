@@ -1,0 +1,166 @@
+{
+  "branch_probes": [
+    {
+      "branch": "UMA",
+      "source": "polygon_oov2_events",
+      "endpoint": "https://polygon.drpc.org",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xbf31669b7695596b6f5aeddcc578cea0cac43cc4dbc726ca5eba19915af6501e"
+      ],
+      "expected_block": 30622389,
+      "key": "0xbf31669b7695596b6f5aeddcc578cea0cac43cc4dbc726ca5eba19915af6501e",
+      "retrieval_utc": "2026-10-26T09:25:53.921193+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "3dc2b97db02253c67104d7629361ce60ddcadb61e068bb548333352fa3d58207",
+      "status": "verified_native_locator",
+      "locator_verified": true,
+      "elapsed_seconds": 0.503
+    },
+    {
+      "branch": "Chainlink",
+      "source": "chainlink_staking_v02_events",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x057fab3b4b9b7712ed97e107460cb0651951abc9457bf14fe4072f45939cd738"
+      ],
+      "expected_block": 18688297,
+      "key": "0x057fab3b4b9b7712ed97e107460cb0651951abc9457bf14fe4072f45939cd738",
+      "retrieval_utc": "2026-10-26T09:25:53.921738+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "7f7d418abed1d0a40b59dae4e543ebb9de6bae70001c168d5d0c071e1ee61fbf",
+      "status": "historical_record_unavailable",
+      "elapsed_seconds": 0.49
+    },
+    {
+      "branch": "Flare FTSOv2",
+      "source": "flare_reward_claim_events",
+      "endpoint": "https://flare-api.flare.network/ext/C/rpc",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xf4745e90de2151a811868e2c1f4589ec50dd69443f6b22235e76991d46b105ec"
+      ],
+      "expected_block": 30726907,
+      "key": "0xf4745e90de2151a811868e2c1f4589ec50dd69443f6b22235e76991d46b105ec",
+      "retrieval_utc": "2026-10-26T09:25:53.922126+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "9b35d7dea29ee846e370e5492c5eda7a65390b4eedf4f77d3229e143594cf5a1",
+      "status": "verified_native_locator",
+      "locator_verified": true,
+      "elapsed_seconds": 0.893
+    },
+    {
+      "branch": "Chronicle",
+      "source": "chronicle_ethereum_events",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x8fe4c1952cb5bd9d7dd6401db6b736f436a127f4e7b01ac7b9fd02d2cddeb4e3"
+      ],
+      "expected_block": 19212137,
+      "key": "0x8fe4c1952cb5bd9d7dd6401db6b736f436a127f4e7b01ac7b9fd02d2cddeb4e3",
+      "retrieval_utc": "2026-10-26T09:25:54.412410+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "7f7d418abed1d0a40b59dae4e543ebb9de6bae70001c168d5d0c071e1ee61fbf",
+      "status": "historical_record_unavailable",
+      "elapsed_seconds": 0.393
+    },
+    {
+      "branch": "RedStone Push",
+      "source": "redstone_ethereum_push_events",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd1d2daf7c29b3c09906d6d4e20abd98e1a182d06ef018445c7a6291ddb84dc27"
+      ],
+      "expected_block": 18733900,
+      "key": "0xd1d2daf7c29b3c09906d6d4e20abd98e1a182d06ef018445c7a6291ddb84dc27",
+      "retrieval_utc": "2026-10-26T09:25:54.425288+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "7f7d418abed1d0a40b59dae4e543ebb9de6bae70001c168d5d0c071e1ee61fbf",
+      "status": "historical_record_unavailable",
+      "elapsed_seconds": 0.393
+    },
+    {
+      "branch": "DIA",
+      "source": "dia_staking_withdrawals",
+      "endpoint": "https://rpc.diadata.org",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x43353c8d7d71c8b03ad008dafd810ad52205c43b3668e82df386153d22079a10"
+      ],
+      "expected_block": 4875792,
+      "key": "0x43353c8d7d71c8b03ad008dafd810ad52205c43b3668e82df386153d22079a10",
+      "retrieval_utc": "2026-10-26T09:25:54.806245+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "55772f4201d7c32f7390567fbc0a5d49a4087baeff549582d0fff45d1a719fc3",
+      "status": "verified_native_locator",
+      "locator_verified": true,
+      "elapsed_seconds": 3.469
+    },
+    {
+      "branch": "Pyth",
+      "source": "pyth_ois_economic_events",
+      "endpoint": "https://api.mainnet-beta.solana.com",
+      "method": "getTransaction",
+      "params": [
+        "5HVMXPDdXrRtYYtytkpUHwqiiS7JuC8ZG78Eq3KGHePqzvVD1snRkXMTeYA38jfQTXsxBYP7ZsW8KA3aTrgAnUmD",
+        {
+          "encoding": "json",
+          "maxSupportedTransactionVersion": 0
+        }
+      ],
+      "expected_block": 293360328,
+      "key": "5HVMXPDdXrRtYYtytkpUHwqiiS7JuC8ZG78Eq3KGHePqzvVD1snRkXMTeYA38jfQTXsxBYP7ZsW8KA3aTrgAnUmD",
+      "retrieval_utc": "2026-10-26T09:25:54.815667+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "17e74c2bf7b8a83e647d5f4be04f7815f13aea59fae7d92021518354e9668eba",
+      "status": "verified_native_locator",
+      "locator_verified": true,
+      "elapsed_seconds": 1.303
+    },
+    {
+      "branch": "Tellor",
+      "source": "tellor_disputes",
+      "endpoint": "https://mainnet.tellorlayer.com/rpc/block_results",
+      "method": "GET",
+      "params": {
+        "height": "8073265"
+      },
+      "expected_block": 8073265,
+      "key": "53E294D3C13D63BF3DC76FCF237B7CF0388686F595B6CBC1E4977608B5BB1A51",
+      "retrieval_utc": "2026-10-26T09:25:54.818869+00:00",
+      "scope": "one historical transaction or height",
+      "source_mode": "fresh_public_probe",
+      "http_status": 200,
+      "response_sha256": "789f891cdc46c311e824cb911e1213219f3f8aa899fe1addaa100e1489219349",
+      "status": "verified_native_locator",
+      "locator_verified": true,
+      "elapsed_seconds": 1.954
+    }
+  ],
+  "missing_time_pilot": {
+    "blocks_requested": 16,
+    "endpoint": "https://ethereum-rpc.publicnode.com",
+    "integrated_into_daily_release": false,
+    "headers_returned": 16,
+    "status": "available",
+    "elapsed_seconds": 0.679
+  },
+  "claim": "Bounded locator checks only; does not establish acquisition continuity or complete relay paths."
+}

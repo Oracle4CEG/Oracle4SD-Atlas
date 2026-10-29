@@ -1,0 +1,205 @@
+check,passed,detail
+chainlink_eth_usd_reports: rows,True,62575
+chainlink_eth_usd_reports: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chainlink_eth_usd_reports: UTC storage,True,"Timestamp[ns, UTC]"
+chainlink_event_link_flow_qc: rows,True,51372
+chainlink_event_link_flow_qc: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chainlink_event_link_flow_qc: UTC storage,True,"Timestamp[ns, UTC]"
+chainlink_link_flows: rows,True,77203
+chainlink_link_flows: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chainlink_link_flows: UTC storage,True,"Timestamp[ns, UTC]"
+chainlink_staking_v02_events: rows,True,174890
+chainlink_staking_v02_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chainlink_staking_v02_events: UTC storage,True,"Timestamp[ns, UTC]"
+chronicle_ethereum_events: rows,True,140526
+chronicle_ethereum_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chronicle_ethereum_events: UTC storage,True,"Timestamp[ns, UTC]"
+chronicle_redstone_settlement_interfaces: rows,True,2
+chronicle_redstone_settlement_interfaces: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+chronicle_redstone_settlement_interfaces: UTC storage,True,"Timestamp[ns, UTC]"
+dia_staking_events: rows,True,801
+dia_staking_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+dia_staking_events: UTC storage,True,"Timestamp[ns, UTC]"
+dia_staking_withdrawals: rows,True,129
+dia_staking_withdrawals: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+dia_staking_withdrawals: UTC storage,True,"Timestamp[ns, UTC]"
+ecosystem_observability_evidence: rows,True,2
+ecosystem_observability_evidence: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+ecosystem_observability_evidence: UTC storage,True,"Timestamp[ns, UTC]"
+flare_beneficiary_chill_events: rows,True,6
+flare_beneficiary_chill_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_beneficiary_chill_events: UTC storage,True,"Timestamp[ns, UTC]"
+flare_beneficiary_chill_state: rows,True,6
+flare_beneficiary_chill_state: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_beneficiary_chill_state: UTC storage,True,"Timestamp[ns, UTC]"
+flare_provider_conditions: rows,True,14379
+flare_provider_conditions: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_provider_conditions: UTC storage,True,"Timestamp[ns, UTC]"
+flare_provider_failures: rows,True,3742
+flare_provider_failures: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_provider_failures: UTC storage,True,"Timestamp[ns, UTC]"
+flare_provider_feed_performance: rows,True,869278
+flare_provider_feed_performance: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_provider_feed_performance: UTC storage,True,"Timestamp[ns, UTC]"
+flare_provider_passes: rows,True,14379
+flare_provider_passes: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_provider_passes: UTC storage,True,"Timestamp[ns, UTC]"
+flare_reward_claim_epoch_qc: rows,True,183
+flare_reward_claim_epoch_qc: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_reward_claim_epoch_qc: UTC storage,True,"Timestamp[ns, UTC]"
+flare_reward_claim_events: rows,True,18468735
+flare_reward_claim_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_reward_claim_events: UTC storage,True,"Timestamp[ns, UTC]"
+flare_reward_claims: rows,True,49858
+flare_reward_claims: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_reward_claims: UTC storage,True,"Timestamp[ns, UTC]"
+flare_reward_component_attribution: rows,True,86274
+flare_reward_component_attribution: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_reward_component_attribution: UTC storage,True,"Timestamp[ns, UTC]"
+flare_reward_epochs: rows,True,183
+flare_reward_epochs: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_reward_epochs: UTC storage,True,"Timestamp[ns, UTC]"
+flare_voter_registrations: rows,True,15859
+flare_voter_registrations: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+flare_voter_registrations: UTC storage,True,"Timestamp[ns, UTC]"
+phase4_oracle_economic_interfaces: rows,True,6
+phase4_oracle_economic_interfaces: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+phase4_oracle_economic_interfaces: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_adapter_events: rows,True,98267
+polygon_adapter_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_adapter_events: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_child_tunnel_events: rows,True,13512
+polygon_child_tunnel_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_child_tunnel_events: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_oov2_events: rows,True,514794
+polygon_oov2_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_oov2_events: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_uma_gamma_links: rows,True,42676
+polygon_uma_gamma_links: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_uma_gamma_links: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_uma_request_flow_qc: rows,True,42676
+polygon_uma_request_flow_qc: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_uma_request_flow_qc: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_uma_request_rounds: rows,True,42676
+polygon_uma_request_rounds: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_uma_request_rounds: UTC storage,True,"Timestamp[ns, UTC]"
+polygon_uma_token_flows: rows,True,562536
+polygon_uma_token_flows: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polygon_uma_token_flows: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_decision_time_price_onchain_validation: rows,True,48
+polymarket_decision_time_price_onchain_validation: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_decision_time_price_onchain_validation: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_decision_time_price_provenance: rows,True,810
+polymarket_decision_time_price_provenance: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_decision_time_price_provenance: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_decision_time_prices: rows,True,810
+polymarket_decision_time_prices: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_decision_time_prices: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_decision_time_web_evidence: rows,True,291
+polymarket_decision_time_web_evidence: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_decision_time_web_evidence: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_decision_time_web_provenance: rows,True,291
+polymarket_decision_time_web_provenance: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_decision_time_web_provenance: UTC storage,True,"Timestamp[ns, UTC]"
+polymarket_gamma_markets: rows,True,463022
+polymarket_gamma_markets: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+polymarket_gamma_markets: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_economic_events: rows,True,459083
+pyth_ois_economic_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_economic_events: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_historical_observability: rows,True,6
+pyth_ois_historical_observability: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_historical_observability: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_instructions: rows,True,518560
+pyth_ois_instructions: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_instructions: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_publisher_epoch_factors: rows,True,6566
+pyth_ois_publisher_epoch_factors: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_publisher_epoch_factors: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_reward_epochs: rows,True,49
+pyth_ois_reward_epochs: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_reward_epochs: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_slash_counters: rows,True,134
+pyth_ois_slash_counters: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_slash_counters: UTC storage,True,"Timestamp[ns, UTC]"
+pyth_ois_stake_events: rows,True,122071
+pyth_ois_stake_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+pyth_ois_stake_events: UTC storage,True,"Timestamp[ns, UTC]"
+redstone_ethereum_push_events: rows,True,614319
+redstone_ethereum_push_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+redstone_ethereum_push_events: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_aggregate_height_index: rows,True,9972753
+tellor_aggregate_height_index: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_aggregate_height_index: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_dispute_payments: rows,True,21
+tellor_dispute_payments: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_dispute_payments: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_dispute_votes: rows,True,55
+tellor_dispute_votes: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_dispute_votes: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_disputes: rows,True,13
+tellor_disputes: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_disputes: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_jail_events: rows,True,26
+tellor_jail_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_jail_events: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_jail_lifecycles: rows,True,13
+tellor_jail_lifecycles: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_jail_lifecycles: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_legacy_selector_reward_accruals: rows,True,0
+tellor_legacy_selector_reward_accruals: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_legacy_selector_reward_accruals: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_liveness_reward_distributions_full: rows,True,59920
+tellor_liveness_reward_distributions_full: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_liveness_reward_distributions_full: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_micro_reports: rows,True,82866640
+tellor_micro_reports: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_micro_reports: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_query_tip_funding: rows,True,29310
+tellor_query_tip_funding: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_query_tip_funding: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_reporter_reward_accruals_full: rows,True,715362
+tellor_reporter_reward_accruals_full: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_reporter_reward_accruals_full: UTC storage,True,"Timestamp[ns, UTC]"
+tellor_tip_withdrawals_realized: rows,True,20380
+tellor_tip_withdrawals_realized: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+tellor_tip_withdrawals_realized: UTC storage,True,"Timestamp[ns, UTC]"
+uma_dvm_requests: rows,True,3744
+uma_dvm_requests: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_dvm_requests: UTC storage,True,"Timestamp[ns, UTC]"
+uma_dvm_staking_events: rows,True,2211876
+uma_dvm_staking_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_dvm_staking_events: UTC storage,True,"Timestamp[ns, UTC]"
+uma_dvm_voter_payoffs: rows,True,2663684
+uma_dvm_voter_payoffs: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_dvm_voter_payoffs: UTC storage,True,"Timestamp[ns, UTC]"
+uma_dvm_votes_events: rows,True,3587231
+uma_dvm_votes_events: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_dvm_votes_events: UTC storage,True,"Timestamp[ns, UTC]"
+uma_phase2_dvm_negative_slash_panel: rows,True,947128
+uma_phase2_dvm_negative_slash_panel: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_phase2_dvm_negative_slash_panel: UTC storage,True,"Timestamp[ns, UTC]"
+uma_phase2_request_panel: rows,True,40534
+uma_phase2_request_panel: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_phase2_request_panel: UTC storage,True,"Timestamp[ns, UTC]"
+uma_polygon_ethereum_grade_a_links: rows,True,835
+uma_polygon_ethereum_grade_a_links: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+uma_polygon_ethereum_grade_a_links: UTC storage,True,"Timestamp[ns, UTC]"
+decision_samples: rows,True,810
+decision_samples: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+decision_samples: UTC storage,True,"Timestamp[ns, UTC]"
+splits: rows,True,810
+splits: complete native read-back,True,"Every original field, value, null and row position compared after serialization"
+splits: UTC storage,True,"Timestamp[ns, UTC]"
+Tellor full millisecond preservation,True,82866640 rows; 82782345 carry nonzero subsecond parts
+UTC day window membership,True,"{'native': 214075, 'utc': 214075}"
+UTC week window membership,True,"{'native': 1480160, 'utc': 1480160}"
+Worked Tellor record,True,1746801845665 ms -> 2025-05-09T14:44:05.665Z
+flare_reward_epochs: retained duration,True,"183 retained epochs, 302400 seconds each"
+flare_reward_epochs: epoch is not event,True,Event clock remains null for epoch records
+flare_reward_epochs: closed by cutoff,True,No incomplete epoch promoted to complete
+pyth_ois_reward_epochs: retained duration,True,"49 retained epochs, 604800 seconds each"
+pyth_ois_reward_epochs: epoch is not event,True,Event clock remains null for epoch records
+pyth_ois_reward_epochs: closed by cutoff,True,No incomplete epoch promoted to complete
+Half-open epoch boundary,True,"2025-07-24T00:00:00Z belongs to epoch 2899, not epoch 2898"
+Late snapshot retained separately,True,Pyth 21 July snapshot is not a pre-cutoff event or availability claim

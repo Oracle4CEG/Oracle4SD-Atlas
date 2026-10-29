@@ -1,0 +1,1421 @@
+[
+  {
+    "path": "data/native/chainlink_eth_usd_reports.parquet",
+    "products": [
+      "Chainlink"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "native feed log",
+    "rows": 62575,
+    "bytes": 5695777,
+    "sha256": "b98d111f949e384a849a5ebb07b9b5ca1915a0843e71392a2e31799080327f10",
+    "input_artifact_name": "chainlink_eth_usd_reports.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chainlink_eth_usd_reports.parquet"
+  },
+  {
+    "path": "data/native/chainlink_event_link_flow_qc.parquet",
+    "products": [
+      "Chainlink"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "staking event and token-flow reconciliation",
+    "rows": 51372,
+    "bytes": 3385623,
+    "sha256": "0549e767efeffad66a264767d0812661b465a73214aa9d0121e37d79359a3aa2",
+    "input_artifact_name": "chainlink_event_link_flow_qc.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chainlink_event_link_flow_qc.parquet"
+  },
+  {
+    "path": "data/native/chainlink_link_flows.parquet",
+    "products": [
+      "Chainlink"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "LINK transfer log",
+    "rows": 77203,
+    "bytes": 2882796,
+    "sha256": "9726b3b813619976b1bdea1af218c83f642dbe60f1c717234ce76ed4425a4507",
+    "input_artifact_name": "chainlink_link_flows.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chainlink_link_flows.parquet"
+  },
+  {
+    "path": "data/native/chainlink_staking_v02_events.parquet",
+    "products": [
+      "Chainlink"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "staking configuration, accounting or action log",
+    "rows": 174890,
+    "bytes": 5467007,
+    "sha256": "b6443ce749b366536d1bcc0bc8b90147f4748527a1544b204233722ba47a959f",
+    "input_artifact_name": "chainlink_staking_v02_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chainlink_staking_v02_events.parquet"
+  },
+  {
+    "path": "data/native/chronicle_ethereum_events.parquet",
+    "products": [
+      "Chronicle"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "Scribe/ScribeOptimistic log",
+    "rows": 140526,
+    "bytes": 14612821,
+    "sha256": "ddaa05c697ef73d7c8faf21fb91cdc843ce084d83f42b7b029895085795aa263",
+    "input_artifact_name": "chronicle_ethereum_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chronicle_ethereum_events.parquet"
+  },
+  {
+    "path": "data/native/chronicle_redstone_settlement_interfaces.parquet",
+    "products": [
+      "Chronicle"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "protocol interface assessment",
+    "rows": 2,
+    "bytes": 8205,
+    "sha256": "c4d3980a74610a9e6d1ee16a163b963a759c002585b64951ef38468957bb827f",
+    "input_artifact_name": "chronicle_redstone_settlement_interfaces.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/chronicle_redstone_settlement_interfaces.parquet"
+  },
+  {
+    "path": "data/native/dia_staking_events.parquet",
+    "products": [
+      "DIA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "staking log",
+    "rows": 801,
+    "bytes": 54672,
+    "sha256": "9b1ffbd19c0f9ae09a6e1a7c4bab96b6d68931de40b7dbdbb31167ca65acc106",
+    "input_artifact_name": "dia_staking_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/dia_staking_events.parquet"
+  },
+  {
+    "path": "data/native/dia_staking_withdrawals.parquet",
+    "products": [
+      "DIA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "reconciled staking-position withdrawal",
+    "rows": 129,
+    "bytes": 27171,
+    "sha256": "ac78ae2d0bf41d94f61e284cf81e92c30d40b09356d5c3d29c80f0a22dc6bf4f",
+    "input_artifact_name": "dia_staking_withdrawals.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/dia_staking_withdrawals.parquet"
+  },
+  {
+    "path": "data/native/ecosystem_observability_evidence.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "protocol observability assessment",
+    "rows": 2,
+    "bytes": 6332,
+    "sha256": "05112046aba6ef0a3167d05223a59b56689f7fcd6f191457e83ef56d2709cafd",
+    "input_artifact_name": "ecosystem_observability_evidence.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/ecosystem_observability_evidence.parquet"
+  },
+  {
+    "path": "data/native/flare_beneficiary_chill_events.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "BeneficiaryChilled event",
+    "rows": 6,
+    "bytes": 6936,
+    "sha256": "4fcb9de50801cb22389743d64c47893018a0b817cd7f84743f53120fc540d489",
+    "input_artifact_name": "flare_beneficiary_chill_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_beneficiary_chill_events.parquet"
+  },
+  {
+    "path": "data/native/flare_beneficiary_chill_state.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "beneficiary state at cutoff",
+    "rows": 6,
+    "bytes": 4575,
+    "sha256": "26a78a1aa58d20b169ad2888255535c634f215e4f1b8f22a8a31d57600244f6c",
+    "input_artifact_name": "flare_beneficiary_chill_state.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_beneficiary_chill_state.parquet"
+  },
+  {
+    "path": "data/native/flare_provider_conditions.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "provider and reward epoch",
+    "rows": 14379,
+    "bytes": 298678,
+    "sha256": "3db38baaa3f4c5ba2a14f278bb32cd23cd56cfd4356bbb9c519e68301a90366e",
+    "input_artifact_name": "flare_provider_conditions.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_provider_conditions.parquet"
+  },
+  {
+    "path": "data/native/flare_provider_failures.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "provider failure and reward epoch",
+    "rows": 3742,
+    "bytes": 21435,
+    "sha256": "498e7083d9d9e5093e77b3def54cd0233884e814bd98f33caabde79042165a03",
+    "input_artifact_name": "flare_provider_failures.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_provider_failures.parquet"
+  },
+  {
+    "path": "data/native/flare_provider_feed_performance.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "provider, feed and reward epoch",
+    "rows": 869278,
+    "bytes": 1276703,
+    "sha256": "a18d0439061b305452cdc7764b8adc30ac9625f89b22a0ec6a48752c42b2ec15",
+    "input_artifact_name": "flare_provider_feed_performance.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_provider_feed_performance.parquet"
+  },
+  {
+    "path": "data/native/flare_provider_passes.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "provider and reward epoch",
+    "rows": 14379,
+    "bytes": 50315,
+    "sha256": "4df4eb1f8a0ea73319689d023d374a36161188914b6c03cc2d9cbf38e8500e25",
+    "input_artifact_name": "flare_provider_passes.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_provider_passes.parquet"
+  },
+  {
+    "path": "data/native/flare_reward_claim_epoch_qc.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "reward epoch reconciliation at cutoff",
+    "rows": 183,
+    "bytes": 27424,
+    "sha256": "17e909d7486b612691d5227baa89337aab019bb622209f1b9d7b866265329cd6",
+    "input_artifact_name": "flare_reward_claim_epoch_qc.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_reward_claim_epoch_qc.parquet"
+  },
+  {
+    "path": "data/native/flare_reward_claim_events.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "RewardClaimed event, including separately marked fee burns",
+    "rows": 18468735,
+    "bytes": 712992123,
+    "sha256": "70357da482052514bafa00dbdfedd43a7f5ca1a15386551277c1157de8b0232c",
+    "input_artifact_name": "flare_reward_claim_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_reward_claim_events.parquet"
+  },
+  {
+    "path": "data/native/flare_reward_claims.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "beneficiary claim-type entitlement in reward epoch",
+    "rows": 49858,
+    "bytes": 740242,
+    "sha256": "c4e7399c455b15ec1d765c11b32cbb27fd2ec7a22801778bf54fa10e8da81ee4",
+    "input_artifact_name": "flare_reward_claims.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_reward_claims.parquet"
+  },
+  {
+    "path": "data/native/flare_reward_component_attribution.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "provider, reward component and epoch",
+    "rows": 86274,
+    "bytes": 115610,
+    "sha256": "2f547222d391be6ca1833c1cd45946ec7f6481264888553b05ce7172094d7255",
+    "input_artifact_name": "flare_reward_component_attribution.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_reward_component_attribution.parquet"
+  },
+  {
+    "path": "data/native/flare_reward_epochs.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "reward epoch",
+    "rows": 183,
+    "bytes": 36759,
+    "sha256": "e9bd828503356da4b2fa1112ee1950995dc4de591c789e88a84794ee0324a4ce",
+    "input_artifact_name": "flare_reward_epochs.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_reward_epochs.parquet"
+  },
+  {
+    "path": "data/native/flare_voter_registrations.parquet",
+    "products": [
+      "Flare FTSOv2"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "voter registration in reward epoch",
+    "rows": 15859,
+    "bytes": 933241,
+    "sha256": "6c70a04e0d5e0f216db9498f21e31d83ef5831fecceebb5be4bfcd59eb6a2780",
+    "input_artifact_name": "flare_voter_registrations.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/flare_voter_registrations.parquet"
+  },
+  {
+    "path": "data/native/phase4_oracle_economic_interfaces.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "protocol interface audit",
+    "rows": 6,
+    "bytes": 10188,
+    "sha256": "e3e098878d8eb2ac3ba113d6e402ce7f4b6b0c44c68f8bd8ad6b602d7012363b",
+    "input_artifact_name": "phase4_oracle_economic_interfaces.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/phase4_oracle_economic_interfaces.parquet"
+  },
+  {
+    "path": "data/native/polygon_adapter_events.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "adapter event log",
+    "rows": 98267,
+    "bytes": 12474257,
+    "sha256": "c79e5726ec66c4855947ebd6591af4d33858b58e58dedc57270baa7dcc86ce94",
+    "input_artifact_name": "polygon_adapter_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_adapter_events.parquet"
+  },
+  {
+    "path": "data/native/polygon_child_tunnel_events.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "child-tunnel event log",
+    "rows": 13512,
+    "bytes": 2044169,
+    "sha256": "771ffafc9d83122606a9a148223c187aab110e8e56a86abc5d64a4eb38de9852",
+    "input_artifact_name": "polygon_child_tunnel_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_child_tunnel_events.parquet"
+  },
+  {
+    "path": "data/native/polygon_oov2_events.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "OOv2 event log",
+    "rows": 514794,
+    "bytes": 66000936,
+    "sha256": "cd6783c29bb8cd9f9cce4a36767769668c218ca3d226b2852361bf91e3182525",
+    "input_artifact_name": "polygon_oov2_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_oov2_events.parquet"
+  },
+  {
+    "path": "data/native/polygon_uma_gamma_links.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "request and off-chain market-metadata link",
+    "rows": 42676,
+    "bytes": 13932436,
+    "sha256": "f0ba7ed5083b3e1ef476d4fe4ddb016b949bd5b60d929d4adf15a811afd52af6",
+    "input_artifact_name": "polygon_uma_gamma_links.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_uma_gamma_links.parquet"
+  },
+  {
+    "path": "data/native/polygon_uma_request_flow_qc.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "request settlement-flow reconciliation",
+    "rows": 42676,
+    "bytes": 1454398,
+    "sha256": "5ffae803e1430f1415d293eeca5a8279455b4279bc505266e0b6b2faa5ba265a",
+    "input_artifact_name": "polygon_uma_request_flow_qc.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_uma_request_flow_qc.parquet"
+  },
+  {
+    "path": "data/native/polygon_uma_request_rounds.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "OOv2 request lifecycle",
+    "rows": 42676,
+    "bytes": 13046374,
+    "sha256": "cf9cd6fa6c857f61bbb81ede3af8b7afc21fc3427d6eca8909a231c285b885d7",
+    "input_artifact_name": "polygon_uma_request_rounds.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_uma_request_rounds.parquet"
+  },
+  {
+    "path": "data/native/polygon_uma_token_flows.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "token transfer log",
+    "rows": 562536,
+    "bytes": 23091841,
+    "sha256": "79784ebcaef0f01db721350bb460e4b08c25ccd5f6ac77be33800f9758e9e5af",
+    "input_artifact_name": "polygon_uma_token_flows.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polygon_uma_token_flows.parquet"
+  },
+  {
+    "path": "data/native/polymarket_decision_time_price_onchain_validation.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "sample-side price comparison",
+    "rows": 48,
+    "bytes": 18334,
+    "sha256": "599a54034ec64759275cae092089b4b64d09230dd5de8dc2a10367d08fdd8fdf",
+    "input_artifact_name": "polymarket_decision_time_price_onchain_validation.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_decision_time_price_onchain_validation.parquet"
+  },
+  {
+    "path": "data/native/polymarket_decision_time_price_provenance.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "sample price-acquisition provenance",
+    "rows": 810,
+    "bytes": 120919,
+    "sha256": "edac939fec849a0cc6bddba37238c8cf38a0bcdd0c11030acb9ff8fecf03e779",
+    "input_artifact_name": "polymarket_decision_time_price_provenance.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_decision_time_price_provenance.parquet"
+  },
+  {
+    "path": "data/native/polymarket_decision_time_prices.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "selected request at proposal-time landmark",
+    "rows": 810,
+    "bytes": 123776,
+    "sha256": "e8f85a6f5c696a2519dede7a746bb69722f6fe3b0f7af4df7d504088020726d0",
+    "input_artifact_name": "polymarket_decision_time_prices.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_decision_time_prices.parquet"
+  },
+  {
+    "path": "data/native/polymarket_decision_time_web_evidence.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "selected request and archived web page",
+    "rows": 291,
+    "bytes": 89494,
+    "sha256": "866c0b2696d352a930b1cbfe8367c9b999fdb335bba057926714cca290eb1a0f",
+    "input_artifact_name": "polymarket_decision_time_web_evidence.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_decision_time_web_evidence.parquet"
+  },
+  {
+    "path": "data/native/polymarket_decision_time_web_provenance.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "sample-page acquisition provenance",
+    "rows": 291,
+    "bytes": 59187,
+    "sha256": "fd914089981521a3bcaecfdabe5f817068363e4f765cad33aacb8f005f9917bb",
+    "input_artifact_name": "polymarket_decision_time_web_provenance.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_decision_time_web_provenance.parquet"
+  },
+  {
+    "path": "data/native/polymarket_gamma_markets.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "off-chain market metadata record",
+    "rows": 463022,
+    "bytes": 102906387,
+    "sha256": "21b13133d60bb452cc4ab0fe7d8d64dc73664fae89f512235d956d5dbdef3d57",
+    "input_artifact_name": "polymarket_gamma_markets.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/polymarket_gamma_markets.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_economic_events.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "reward SPL-token transfer",
+    "rows": 459083,
+    "bytes": 26637179,
+    "sha256": "d8318e1ddfa4c010e2bf3f3cb3c410a5846e25767162474a93cfebd36d4c9f6a",
+    "input_artifact_name": "pyth_ois_economic_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_economic_events.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_historical_observability.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "historical-field observability assessment",
+    "rows": 6,
+    "bytes": 7264,
+    "sha256": "ae3f54c3b06dcce41dddd115a51288b4ac94647a412fc2493796265be3bac3ff",
+    "input_artifact_name": "pyth_ois_historical_observability.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_historical_observability.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_instructions.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "outer program instruction, including retained failed calls",
+    "rows": 518560,
+    "bytes": 73135852,
+    "sha256": "f85ece4705c775f6a41e5550409fd9113e800623ddb0bd817b8183aa89bebfcb",
+    "input_artifact_name": "pyth_ois_instructions.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_instructions.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_publisher_epoch_factors.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "publisher and reward epoch",
+    "rows": 6566,
+    "bytes": 23166,
+    "sha256": "b89e996d7a7e6165c8844f27ddfb89726968a48248aa903b10fbcf27feb69799",
+    "input_artifact_name": "pyth_ois_publisher_epoch_factors.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_publisher_epoch_factors.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_reward_epochs.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "retained reward epoch",
+    "rows": 49,
+    "bytes": 10304,
+    "sha256": "79310dacb21c3a266fc6565fe2e7e5f8a65b94a4431d8e02f35c4cb874cd362b",
+    "input_artifact_name": "pyth_ois_reward_epochs.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_reward_epochs.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_slash_counters.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "publisher lifetime counter at snapshot",
+    "rows": 134,
+    "bytes": 9498,
+    "sha256": "846fe0a9885ea290b00ce642218b690c54378a55769f793ed539f6efa59ee578",
+    "input_artifact_name": "pyth_ois_slash_counters.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_slash_counters.parquet"
+  },
+  {
+    "path": "data/native/pyth_ois_stake_events.parquet",
+    "products": [
+      "Pyth"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "stake-position mutation instruction",
+    "rows": 122071,
+    "bytes": 18165767,
+    "sha256": "5e4564c3bdd371fa0af6b6ead760128de0f6ffbc4e16c509c6f35ba49a5e9127",
+    "input_artifact_name": "pyth_ois_stake_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/pyth_ois_stake_events.parquet"
+  },
+  {
+    "path": "data/native/redstone_ethereum_push_events.parquet",
+    "products": [
+      "RedStone Push"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "Push-adapter event log",
+    "rows": 614319,
+    "bytes": 29809143,
+    "sha256": "03ea0ca606691b9d30540a8a4aacd8abc92ba2446fd6c11ae7ef415b9121d4b2",
+    "input_artifact_name": "redstone_ethereum_push_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/redstone_ethereum_push_events.parquet"
+  },
+  {
+    "path": "data/native/tellor_aggregate_height_index.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "query aggregate index entry",
+    "rows": 9972753,
+    "bytes": 235486555,
+    "sha256": "f62444c4011ff0fd7cd663a0bd582ab665ba677f526d732187efaf17061cc171",
+    "input_artifact_name": "tellor_aggregate_height_index.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_aggregate_height_index.parquet"
+  },
+  {
+    "path": "data/native/tellor_dispute_payments.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "dispute payment-related execution record",
+    "rows": 21,
+    "bytes": 7033,
+    "sha256": "9a8c0db8ce977f60cc097f75ffa217fdcd81fdd35c7d26531f30d709a94a8f38",
+    "input_artifact_name": "tellor_dispute_payments.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_dispute_payments.parquet"
+  },
+  {
+    "path": "data/native/tellor_dispute_votes.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "dispute vote execution record",
+    "rows": 55,
+    "bytes": 9888,
+    "sha256": "d5aaed826e65267b2652655f867a82d9b4ee6cbb1fdcc006afb78b44112a194c",
+    "input_artifact_name": "tellor_dispute_votes.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_dispute_votes.parquet"
+  },
+  {
+    "path": "data/native/tellor_disputes.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "dispute state record",
+    "rows": 13,
+    "bytes": 25405,
+    "sha256": "626f150907eb28aa635754f080626173294b4d35a67ff4c5817526d54b6a82b3",
+    "input_artifact_name": "tellor_disputes.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_disputes.parquet"
+  },
+  {
+    "path": "data/native/tellor_jail_events.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "jail or release event",
+    "rows": 26,
+    "bytes": 9129,
+    "sha256": "7205b2b13c6d167d0818124abc66dcf517aa31da605b00dbb8a686276d9c48ae",
+    "input_artifact_name": "tellor_jail_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_jail_events.parquet"
+  },
+  {
+    "path": "data/native/tellor_jail_lifecycles.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "paired jail/release lifecycle",
+    "rows": 13,
+    "bytes": 11753,
+    "sha256": "0ac46be8c082880372ba9f4cf3ea8ca4c023adb645d9c4826d99f9d48a9f4eeb",
+    "input_artifact_name": "tellor_jail_lifecycles.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_jail_lifecycles.parquet"
+  },
+  {
+    "path": "data/native/tellor_legacy_selector_reward_accruals.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "legacy selector accrual event (empty retained table)",
+    "rows": 0,
+    "bytes": 3336,
+    "sha256": "93c2b5c691056c6576adc9967a5f0a6ebe65e7abac2bd46099c291d4c4dc2555",
+    "input_artifact_name": "tellor_legacy_selector_reward_accruals.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_legacy_selector_reward_accruals.parquet"
+  },
+  {
+    "path": "data/native/tellor_liveness_reward_distributions_full.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "liveness reward distribution",
+    "rows": 59920,
+    "bytes": 1584367,
+    "sha256": "36c9230a3ae3d774495d21a67dd22c8ddf3a7fac9d32115ec88974d965e86804",
+    "input_artifact_name": "tellor_liveness_reward_distributions_full.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_liveness_reward_distributions_full.parquet"
+  },
+  {
+    "path": "data/native/tellor_micro_reports.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "native new_report event",
+    "rows": 82866640,
+    "bytes": 615897372,
+    "sha256": "65f29fde20a0cd56834d798374ee76618bf48d69b1982ac3019bdb395a82084b",
+    "input_artifact_name": "tellor_micro_reports.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_micro_reports.parquet"
+  },
+  {
+    "path": "data/native/tellor_query_tip_funding.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "tip funding event",
+    "rows": 29310,
+    "bytes": 1870754,
+    "sha256": "a81192881a9b291456379ef67751eed6fbd51cb6be79b866fe4a8e775e6a2d30",
+    "input_artifact_name": "tellor_query_tip_funding.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_query_tip_funding.parquet"
+  },
+  {
+    "path": "data/native/tellor_reporter_reward_accruals_full.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "reporter reward accrual component",
+    "rows": 715362,
+    "bytes": 35225947,
+    "sha256": "f3f1cc00506b887740ffa9cda91a7b88cf39236bcbe7d16669bbfe75f869d412",
+    "input_artifact_name": "tellor_reporter_reward_accruals_full.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_reporter_reward_accruals_full.parquet"
+  },
+  {
+    "path": "data/native/tellor_tip_withdrawals_realized.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "tip-to-stake withdrawal execution",
+    "rows": 20380,
+    "bytes": 1478859,
+    "sha256": "68e0db206c0a8dab3efad4c7fc07665cf56000d9446f3ce88a6a84465c629de8",
+    "input_artifact_name": "tellor_tip_withdrawals_realized.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/tellor_tip_withdrawals_realized.parquet"
+  },
+  {
+    "path": "data/native/uma_dvm_requests.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "DVM request",
+    "rows": 3744,
+    "bytes": 497448,
+    "sha256": "8b1c395583bbe173ed444b6c57a9c44550fad3fb7f181b343091e0ca7bb11be7",
+    "input_artifact_name": "uma_dvm_requests.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_dvm_requests.parquet"
+  },
+  {
+    "path": "data/native/uma_dvm_staking_events.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "DVM staking or accounting log",
+    "rows": 2211876,
+    "bytes": 21977302,
+    "sha256": "8c5a1b26de52325fb01181388bca9ad9cd9ff9706a96e7b11b1240eae28a689f",
+    "input_artifact_name": "uma_dvm_staking_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_dvm_staking_events.parquet"
+  },
+  {
+    "path": "data/native/uma_dvm_voter_payoffs.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "voter-level signed accrual event",
+    "rows": 2663684,
+    "bytes": 38138330,
+    "sha256": "7f669ca3d42b34c0dc6290a12843198d6c08fcd8393540961d921fc448c4da58",
+    "input_artifact_name": "uma_dvm_voter_payoffs.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_dvm_voter_payoffs.parquet"
+  },
+  {
+    "path": "data/native/uma_dvm_votes_events.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "commit or reveal event",
+    "rows": 3587231,
+    "bytes": 21611780,
+    "sha256": "76f4f7f5cab3c93cc8c91b33913b51f56f88c20ea611a46ebd2a21d0fbf0a48c",
+    "input_artifact_name": "uma_dvm_votes_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_dvm_votes_events.parquet"
+  },
+  {
+    "path": "data/native/uma_phase2_dvm_negative_slash_panel.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "negative DVM accrual record",
+    "rows": 947128,
+    "bytes": 8782768,
+    "sha256": "4627fd5695951ccba4403649f675d241f77e56d36ee69c656b01ec9a32646716",
+    "input_artifact_name": "uma_phase2_dvm_negative_slash_panel.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_phase2_dvm_negative_slash_panel.parquet"
+  },
+  {
+    "path": "data/native/uma_phase2_request_panel.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "selected request analytical record",
+    "rows": 40534,
+    "bytes": 4319548,
+    "sha256": "9a2ca417d9f5887aca7a69ebe204f36fb637fa428bf47a0f983b73b2a35efe86",
+    "input_artifact_name": "uma_phase2_request_panel.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_phase2_request_panel.parquet"
+  },
+  {
+    "path": "data/native/uma_polygon_ethereum_grade_a_links.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "native_utc",
+    "observation_unit": "attempted Polygon/Ethereum request link",
+    "rows": 835,
+    "bytes": 238885,
+    "sha256": "aff3159a6f438a532b16e1b78f5d5b50904d9cbecfbe19e8f4c148a4fb445443",
+    "input_artifact_name": "uma_polygon_ethereum_grade_a_links.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/native/uma_polygon_ethereum_grade_a_links.parquet"
+  },
+  {
+    "path": "data/core_clocks/accountability_events_clocks.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "core_clock_companion",
+    "observation_unit": "UTC clock annotation joined to its parent by the retained record identifier",
+    "rows": 105588120,
+    "bytes": 3790070951,
+    "sha256": "e4840e8dc30db6c209e19815945ffd8c355fdac9ac1bb39f2e40ea1ef04e0e16",
+    "input_artifact_name": "accountability_events_clocks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core_clocks/accountability_events_clocks.parquet"
+  },
+  {
+    "path": "data/core/accountability_events.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "common_or_economic",
+    "observation_unit": "typed native projection or economic component; clocks are supplied by the linked companion",
+    "rows": 105588120,
+    "bytes": 4853945396,
+    "sha256": "4e32a8ae3f727627c0e04ad3940d97384ca4cb74ebb2c4bc27f66bf9e62c938d",
+    "input_artifact_name": "accountability_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core/accountability_events.parquet"
+  },
+  {
+    "path": "data/core_clocks/economic_semantics_events_clocks.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "core_clock_companion",
+    "observation_unit": "UTC clock annotation joined to its parent by the retained record identifier",
+    "rows": 22723389,
+    "bytes": 809365566,
+    "sha256": "30583ece716b4a60bbaf2d7f1645986fbc0896e193d7fa7362a79ccd55726ed2",
+    "input_artifact_name": "economic_semantics_events_clocks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core_clocks/economic_semantics_events_clocks.parquet"
+  },
+  {
+    "path": "data/core/economic_semantics_events.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "common_or_economic",
+    "observation_unit": "typed native projection or economic component; clocks are supplied by the linked companion",
+    "rows": 22723389,
+    "bytes": 1907463076,
+    "sha256": "3219e257ad11ccdb2f6551fe167beb0cf288fe9df2ddd3ee77d5b7128004367f",
+    "input_artifact_name": "economic_semantics_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core/economic_semantics_events.parquet"
+  },
+  {
+    "path": "data/core_clocks/realized_reward_slash_events_clocks.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "core_clock_companion",
+    "observation_unit": "UTC clock annotation joined to its parent by the retained record identifier",
+    "rows": 19275854,
+    "bytes": 690277216,
+    "sha256": "0360c208afb0b53efae68cbbe4d299e194a05b302eff5dbd62972c8b96911df0",
+    "input_artifact_name": "realized_reward_slash_events_clocks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core_clocks/realized_reward_slash_events_clocks.parquet"
+  },
+  {
+    "path": "data/core/realized_reward_slash_events.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "common_or_economic",
+    "observation_unit": "typed native projection or economic component; clocks are supplied by the linked companion",
+    "rows": 19275854,
+    "bytes": 1703494281,
+    "sha256": "1df516b54d86ec2d33f6c1d650e9d3fb5d7ab559a3d963bfc187e58eb656b428",
+    "input_artifact_name": "realized_reward_slash_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core/realized_reward_slash_events.parquet"
+  },
+  {
+    "path": "data/core_clocks/sample_b_observable_accountability_clocks.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "core_clock_companion",
+    "observation_unit": "UTC clock annotation joined to its parent by the retained record identifier",
+    "rows": 105702424,
+    "bytes": 3790554033,
+    "sha256": "47c108b46ec71b00adef0aabbf25f24f1534520b5a754b904afff7d15e2627f6",
+    "input_artifact_name": "sample_b_observable_accountability_clocks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core_clocks/sample_b_observable_accountability_clocks.parquet"
+  },
+  {
+    "path": "data/core/sample_b_observable_accountability.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "common_or_economic",
+    "observation_unit": "typed native projection or economic component; clocks are supplied by the linked companion",
+    "rows": 105702424,
+    "bytes": 4823715022,
+    "sha256": "ffb4ee62868ab7aa3b9d0505ce113c87775721dde9f0941f00e9247ebdb36b3c",
+    "input_artifact_name": "sample_b_observable_accountability.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core/sample_b_observable_accountability.parquet"
+  },
+  {
+    "path": "data/core_clocks/sample_c_strict_honesty_events_clocks.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "core_clock_companion",
+    "observation_unit": "UTC clock annotation joined to its parent by the retained record identifier",
+    "rows": 3435826,
+    "bytes": 118178813,
+    "sha256": "f5b4e50f86f91161626322bac3fc7545625ea477df8dab0196b984faf74309ec",
+    "input_artifact_name": "sample_c_strict_honesty_events_clocks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core_clocks/sample_c_strict_honesty_events_clocks.parquet"
+  },
+  {
+    "path": "data/core/sample_c_strict_honesty_events.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "common_or_economic",
+    "observation_unit": "typed native projection or economic component; clocks are supplied by the linked companion",
+    "rows": 3435826,
+    "bytes": 149891307,
+    "sha256": "040b677ef52573b2fd0d90669b2f58675db9851aeedb8ef2a3ffa023f9f9752f",
+    "input_artifact_name": "sample_c_strict_honesty_events.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/core/sample_c_strict_honesty_events.parquet"
+  },
+  {
+    "path": "data/daily/daily_measurements.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "date, branch, mechanism, role, asset, stage and measure",
+    "rows": 13269,
+    "bytes": 248146,
+    "sha256": "4c2a6ffde7b0ce098d973602be30e919c1230f74ab1f62d3d107094e7ed4a158",
+    "input_artifact_name": "daily_measurements.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/daily_measurements.parquet"
+  },
+  {
+    "path": "data/daily/daily_recipient_amounts.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 6650387,
+    "bytes": 380516760,
+    "sha256": "1876f35896efd23a9fd90a667e5dbe88e94d1e7b0ba3e6b36b0749949f5a4666",
+    "input_artifact_name": "daily_recipient_amounts.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/daily_recipient_amounts.parquet"
+  },
+  {
+    "path": "data/daily/daily_reward_concentration.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 3325,
+    "bytes": 86227,
+    "sha256": "7c308fb18142a1b29ca547886532b8c6735947a0ac4d5b0f722e83bdf7683aee",
+    "input_artifact_name": "daily_reward_concentration.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/daily_reward_concentration.parquet"
+  },
+  {
+    "path": "data/daily/flare_historical_signing_policy.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 183,
+    "bytes": 37352,
+    "sha256": "86a8fe1e061b589b54ce0c15d2c686b6ab37fafbf89d23359fe46e7f8e8c1196",
+    "input_artifact_name": "flare_historical_signing_policy.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/flare_historical_signing_policy.parquet"
+  },
+  {
+    "path": "data/daily/flare_signer_weights.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 15859,
+    "bytes": 75244,
+    "sha256": "ba81af444df1e123b99946ebc280282ac2b6a6d0fd3780b02ef9b98e06a59f19",
+    "input_artifact_name": "flare_signer_weights.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/flare_signer_weights.parquet"
+  },
+  {
+    "path": "data/daily/uma_daily_completion_delay.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 1167,
+    "bytes": 37124,
+    "sha256": "12249b7f668f44f3815bda8279157574dfa8c8c7e85bbeda3d981693c24b2918",
+    "input_artifact_name": "uma_daily_completion_delay.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/uma_daily_completion_delay.parquet"
+  },
+  {
+    "path": "data/daily/uma_daily_escrow_exposure.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 1674,
+    "bytes": 37273,
+    "sha256": "02f7fedaf877a128f3eced923c74df515f338be6240d9a25287ee8e6311fb559",
+    "input_artifact_name": "uma_daily_escrow_exposure.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/uma_daily_escrow_exposure.parquet"
+  },
+  {
+    "path": "data/daily/uma_escrow_eligibility.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 39591,
+    "bytes": 2497018,
+    "sha256": "e184fad7a80f44088551a6da68a22dff4a6344f216ee22715c342b7eb6fd9eb6",
+    "input_artifact_name": "uma_escrow_eligibility.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/uma_escrow_eligibility.parquet"
+  },
+  {
+    "path": "data/daily/uma_escrow_flow_intervals.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "daily",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 118308,
+    "bytes": 7363564,
+    "sha256": "89dc656352f9ba210039ce61ef898ceabc0b43fef433ba0b5a2cb9075f4229fb",
+    "input_artifact_name": "uma_escrow_flow_intervals.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/daily/uma_escrow_flow_intervals.parquet"
+  },
+  {
+    "path": "data/prediction/feature_availability.parquet",
+    "products": [
+      "UMA prediction"
+    ],
+    "layer": "prediction",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 12960,
+    "bytes": 175979,
+    "sha256": "dc26c8e8ceae9e91cdaf9500e3696930c6755cbc401e2f1b07d30723f2609f46",
+    "input_artifact_name": "feature_availability.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/prediction/feature_availability.parquet"
+  },
+  {
+    "path": "data/prediction/feature_corrections.parquet",
+    "products": [
+      "UMA prediction"
+    ],
+    "layer": "prediction",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 394,
+    "bytes": 17441,
+    "sha256": "b4f5b8ad68f0f2aa98002beb06cdda3c79060610a74e6223a94582b23c90eece",
+    "input_artifact_name": "feature_corrections.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/prediction/feature_corrections.parquet"
+  },
+  {
+    "path": "data/prediction/uma_prediction_tasks.parquet",
+    "products": [
+      "UMA prediction"
+    ],
+    "layer": "prediction",
+    "observation_unit": "request",
+    "rows": 810,
+    "bytes": 376474,
+    "sha256": "117c4e6bcc7fd90c2f4070ecf9e2a347a097ef9fe2b6ee5213c0bdebd437ce8d",
+    "input_artifact_name": "uma_prediction_tasks.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/prediction/uma_prediction_tasks.parquet"
+  },
+  {
+    "path": "data/evidence/DVM_ACCRUAL_V2.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 947128,
+    "bytes": 11516490,
+    "sha256": "3622b0bb53ea794beb593e25e58e6bdeee359cf0fc5cad083edaa8e61ef33061",
+    "input_artifact_name": "DVM_ACCRUAL_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/DVM_ACCRUAL_V2.parquet"
+  },
+  {
+    "path": "data/evidence/TELLOR_APPLIED_LOSS_V2.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 10,
+    "bytes": 4006,
+    "sha256": "22f20ed7b867d66e631bb7df5fe3170b8d45e71c5d0a0ba47c8bdd357bebcde2",
+    "input_artifact_name": "TELLOR_APPLIED_LOSS_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/TELLOR_APPLIED_LOSS_V2.parquet"
+  },
+  {
+    "path": "data/evidence/TELLOR_OUTCOME_V2.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 13,
+    "bytes": 4103,
+    "sha256": "7bc37d99e0b65a82f805d10e7288beb8440c0efdbdd15819d61d1a0584cfe161",
+    "input_artifact_name": "TELLOR_OUTCOME_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/TELLOR_OUTCOME_V2.parquet"
+  },
+  {
+    "path": "data/evidence/UMA_CHALLENGE_V2.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 40992,
+    "bytes": 2946005,
+    "sha256": "871e157f487d9faabb5aba5b4b77691b6ea9c252896498cf4b32574e03856229",
+    "input_artifact_name": "UMA_CHALLENGE_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/UMA_CHALLENGE_V2.parquet"
+  },
+  {
+    "path": "data/evidence/UMA_SETTLEMENT_V2.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 850,
+    "bytes": 64695,
+    "sha256": "1dc12dd8991ca71b9758eb77d73970357701049c8284583597a147c523003106",
+    "input_artifact_name": "UMA_SETTLEMENT_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/UMA_SETTLEMENT_V2.parquet"
+  },
+  {
+    "path": "data/evidence/UMA_WINNER_COMPONENT_V2.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 834,
+    "bytes": 63502,
+    "sha256": "f729764c8c62b354ef88d1aba7401a4115c7460f084f61fe760dd4f1cf7ddfe1",
+    "input_artifact_name": "UMA_WINNER_COMPONENT_V2.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/UMA_WINNER_COMPONENT_V2.parquet"
+  },
+  {
+    "path": "data/evidence/accounting/dvm_accrual_vs_applied.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 2663684,
+    "bytes": 38576866,
+    "sha256": "8eaed8cbd688ff1d8ea4f5efa5abb510fda4a674122a851a754b2a095601cad4",
+    "input_artifact_name": "dvm_accrual_vs_applied.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/accounting/dvm_accrual_vs_applied.parquet"
+  },
+  {
+    "path": "data/evidence/accounting/dvm_net_stake_applications.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 262448,
+    "bytes": 14587789,
+    "sha256": "13119ff9e71e6a8936d592d47aecd9ff7df1bc8538052b62187626a06747448e",
+    "input_artifact_name": "dvm_net_stake_applications.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/accounting/dvm_net_stake_applications.parquet"
+  },
+  {
+    "path": "data/evidence/accounting/tellor_dispute_reconciliation.parquet",
+    "products": [
+      "Tellor"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 13,
+    "bytes": 4247,
+    "sha256": "30f4e5b7c0d71caa563ccc3f8cc2e153fe77df4d435b09e07f904d3f45955d63",
+    "input_artifact_name": "tellor_dispute_reconciliation.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/accounting/tellor_dispute_reconciliation.parquet"
+  },
+  {
+    "path": "data/evidence/accounting/uma_settlement_accounting.parquet",
+    "products": [
+      "UMA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 42676,
+    "bytes": 6025733,
+    "sha256": "e2de6bfc0636a7c2a27f997151b8023ff0287388b6f36523639f5a8e5ab69aea",
+    "input_artifact_name": "uma_settlement_accounting.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/accounting/uma_settlement_accounting.parquet"
+  },
+  {
+    "path": "data/evidence/cross_chain/cashflows.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 4,
+    "bytes": 3375,
+    "sha256": "72cc34b25e8bce68baf7fc5e03f303375980b0ee902e9412d1d7caa3eb0294f2",
+    "input_artifact_name": "cashflows.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/cross_chain/cashflows.parquet"
+  },
+  {
+    "path": "data/evidence/cross_chain/five_transactions.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 5,
+    "bytes": 11944,
+    "sha256": "31364c4eda003d843db3df6010e238e1cbffe95e0aaa5d8f3aa1b49b7e7cf217",
+    "input_artifact_name": "five_transactions.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/cross_chain/five_transactions.parquet"
+  },
+  {
+    "path": "data/evidence/cross_chain/identity_link.parquet",
+    "products": [
+      "UMA",
+      "Chainlink",
+      "Tellor",
+      "Flare FTSOv2",
+      "Pyth",
+      "Chronicle",
+      "RedStone Push",
+      "DIA"
+    ],
+    "layer": "evidence",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 1,
+    "bytes": 20000,
+    "sha256": "3bad0976b02e1ee86285d0feb5f07b8053f64cbe26fb5be727fedd9935fc4785",
+    "input_artifact_name": "identity_link.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/evidence/cross_chain/identity_link.parquet"
+  },
+  {
+    "path": "data/sensitivity/epoch_allocation_sensitivity.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "sensitivity",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 824,
+    "bytes": 29948,
+    "sha256": "b0f566a259db21f4a6eea20eed2585a472d43b599d46e8df4f98a69e91625b9a",
+    "input_artifact_name": "epoch_allocation_sensitivity.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/sensitivity/epoch_allocation_sensitivity.parquet"
+  },
+  {
+    "path": "data/sensitivity/uma_request_followup.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "sensitivity",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 42676,
+    "bytes": 4012311,
+    "sha256": "0ebfa4abdc6c363f76ab3e4beaf5031c222306dd69efeccf5b419fcccf1a74cd",
+    "input_artifact_name": "uma_request_followup.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/sensitivity/uma_request_followup.parquet"
+  },
+  {
+    "path": "data/sensitivity/weekly_measurements.parquet",
+    "products": [
+      "Daily measurements"
+    ],
+    "layer": "sensitivity",
+    "observation_unit": "table-defined supporting observation; see field dictionary",
+    "rows": 2376,
+    "bytes": 44981,
+    "sha256": "d380b2489e7874a1aa6c176bbccdb57e250e088d9c0b36686788e9e96632febe",
+    "input_artifact_name": "weekly_measurements.parquet",
+    "download_path": "atlas/releases/atlas-utc-20261029/data/sensitivity/weekly_measurements.parquet"
+  }
+]

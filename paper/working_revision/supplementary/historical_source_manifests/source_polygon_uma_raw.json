@@ -1,0 +1,137 @@
+{
+  "original_relative_path": "data/manifests/polygon_uma_raw.json",
+  "original_sha256": "c98425785b8d6504989bc9ca84c1bc1d030ec75cf1f448867cf02203d7ad32ad",
+  "metadata": {
+    "chain_id": 137,
+    "contracts": {
+      "adapter_v1_0": {
+        "address": "0xcb1822859cef82cd2eb4e6276c7916e692995130",
+        "deployment_block": 23569780,
+        "runtime_code_bytes_at_cutoff": 13324,
+        "runtime_code_hash_at_cutoff": "0x6974cb6246e7a1ebd494a80bd814a70bceb1a11802a7f9b40704c10489954bb7"
+      },
+      "adapter_v1_0_1": {
+        "address": "0xb97455fcf78eb37375e8be6f26df895341ca073d",
+        "deployment_block": 29838630,
+        "runtime_code_bytes_at_cutoff": 12796,
+        "runtime_code_hash_at_cutoff": "0x93924b596a9358ed2cd2496aaeb7ef9b19bfa47a0f064c4520415e7b44ce8562"
+      },
+      "adapter_v2_0": {
+        "address": "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74",
+        "deployment_block": 34876144,
+        "runtime_code_bytes_at_cutoff": 14139,
+        "runtime_code_hash_at_cutoff": "0x18957c31c3b8369c5737be2d9ea2a3cccade4ec22a5fef043a2526bc9627cc3e"
+      },
+      "adapter_v3_current": {
+        "address": "0x157ce2d672854c848c9b79c49a8cc6cc89176a49",
+        "deployment_block": 46755254,
+        "runtime_code_bytes_at_cutoff": 16185,
+        "runtime_code_hash_at_cutoff": "0xe44d7e53a84493f6b71255e19f42f7cea9b8be486492fee80529c75d75f61579"
+      },
+      "adapter_v3_historical": {
+        "address": "0x71392e133063cc0d16f40e1f9b60227404bc03f7",
+        "deployment_block": 43375847,
+        "runtime_code_bytes_at_cutoff": 14535,
+        "runtime_code_hash_at_cutoff": "0xe9cb309e42c8a6733d19aa83bba15f5c604cc84ad45d4c30d99e9623e31b4139"
+      },
+      "optimistic_oracle_v2": {
+        "address": "0xee3afe347d5c74317041e2618c49534daf887c24",
+        "deployment_block": 29786052,
+        "runtime_code_bytes_at_cutoff": 16861,
+        "runtime_code_hash_at_cutoff": "0xdc59e0d28ac7f24147f6a9e24e8e7a011ba1575a6ec5ec7d73f1c87666927856"
+      },
+      "oracle_child_tunnel": {
+        "address": "0xac60353a54873c446101216829a6a98cdbbc3f3d",
+        "deployment_block": 69807727,
+        "runtime_code_bytes_at_cutoff": 7600,
+        "runtime_code_hash_at_cutoff": "0x4ae1a071f8be2f8c23531da9e3c3908e765fa38ff5995a1fe938e94261cf84be"
+      }
+    },
+    "cutoff_block": 89439336,
+    "generated_at_utc": "2026-07-20T09:56:29.727208+00:00",
+    "head_block": 90557532,
+    "interpretation_guard": "Raw address-scoped logs only; no payout is labelled as reward at this stage.",
+    "protocol": "Polymarket UMA / OptimisticOracleV2",
+    "raw_log_scan": {
+      "chunks": 6587,
+      "event_counts": {
+        "AncillaryDataUpdated": 237,
+        "AuthorizedUser": 5,
+        "DeauthorizedUser": 4,
+        "DisputePrice": 1843,
+        "MessageSent": 2768,
+        "PriceRequestAdded": 2768,
+        "PriceRequestBridged": 2768,
+        "ProposePrice": 166507,
+        "PushedPrice": 2739,
+        "QuestionFlaggedForAdminResolution": 16,
+        "QuestionInitialized": 47812,
+        "QuestionPaused": 1,
+        "QuestionReset": 766,
+        "QuestionResolved": 43472,
+        "QuestionSettled": 2932,
+        "RequestPrice": 179944,
+        "ResolutionDataRequested": 3022,
+        "ResolvedLegacyRequest": 18,
+        "Settle": 166500
+      },
+      "event_counts_by_contract": {
+        "adapter_v1_0": {
+          "AuthorizedUser": 4,
+          "DeauthorizedUser": 4,
+          "QuestionFlaggedForAdminResolution": 16,
+          "QuestionInitialized": 5829,
+          "QuestionPaused": 1,
+          "QuestionReset": 73,
+          "QuestionResolved": 2937,
+          "QuestionSettled": 2932,
+          "ResolutionDataRequested": 3022
+        },
+        "adapter_v1_0_1": {
+          "AuthorizedUser": 1
+        },
+        "adapter_v2_0": {
+          "QuestionInitialized": 28600,
+          "QuestionReset": 601,
+          "QuestionResolved": 27451,
+          "unclassified_topic": 3
+        },
+        "adapter_v3_current": {
+          "AncillaryDataUpdated": 237,
+          "QuestionInitialized": 13380,
+          "QuestionReset": 92,
+          "QuestionResolved": 13084,
+          "unclassified_topic": 2
+        },
+        "adapter_v3_historical": {
+          "QuestionInitialized": 3
+        },
+        "optimistic_oracle_v2": {
+          "DisputePrice": 1843,
+          "ProposePrice": 166507,
+          "RequestPrice": 179944,
+          "Settle": 166500
+        },
+        "oracle_child_tunnel": {
+          "MessageSent": 2768,
+          "PriceRequestAdded": 2768,
+          "PriceRequestBridged": 2768,
+          "PushedPrice": 2739,
+          "ResolvedLegacyRequest": 18
+        }
+      },
+      "from_block": 23569780,
+      "to_block": 89439336,
+      "total_logs": 624127,
+      "unknown_topic_counts": {
+        "0x787a2e12f4a55b658b8f573c32432ee11a5e8b51677d1e1e937aaf6a0bb5776e": 2,
+        "0xf9ffabca9c8276e99321725bcb43fb076a6c66a54b7f21c4e8146d8519b417dc": 3
+      }
+    },
+    "rpc_client": "bor/polygon-pos-mainnet-nd-397-856-825-6668fd7b68-qkp68/v2.9.0/linux-amd64/go1.26.3",
+    "source_commits": {
+      "Polymarket/uma-ctf-adapter": "8b76cc9e0d46c6f7450a0adb0ddc0f5b0568c9cc",
+      "UMAprotocol/protocol": "a16ee53125c433dfa4e29738b73d9069ff109c03"
+    }
+  }
+}

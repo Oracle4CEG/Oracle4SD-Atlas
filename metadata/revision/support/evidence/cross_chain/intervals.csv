@@ -1,0 +1,5 @@
+start,end,elapsed_seconds,interpretation,causal_decomposition_available
+T1,T2,27686.0,request_to_proposal,True
+T2,T3,158.0,proposal_to_dispute,True
+T3,T4,331841.0,dispute_to_DVM_resolution_including_unresolved_transport,False
+T4,T5,1320.0,DVM_resolution_to_Polygon_settlement,True

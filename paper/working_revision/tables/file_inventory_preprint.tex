@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering\tabstyle
+\caption{Data organization. Tables may contribute to several representations; row counts are not additive.}
+\label{tab:files}
+\begin{tabularx}{\linewidth}{@{}L{.25\linewidth}L{.21\linewidth}Y@{}}
+\toprule Component & Form & Contents \\ \midrule
+Eight native branches & Parquet and retained source artifacts & Requests, reports, votes, claims, transfers, policies and state observations. \\
+Common representations & Typed Parquet projections & Shared accountability fields and economic components with native source references. \\
+Temporal annotations & UTC fields and dictionaries & Event times, reference clocks, epochs, snapshots and missing-time status. \\
+UMA prediction task & Request and availability tables & Protocol-resolution label, sixteen candidate features and retrospective selection rules. \\
+Daily measurements & Daily and epoch companion tables & Typed counts and amounts, recipient aggregates, completed-request delays, capital exposure and policy weights. \\
+Supporting evidence & Ledger and case tables & Old/new semantic values, source locators, case intervals and cashflows. \\
+Metadata and reproduction & Catalogues, dictionaries and code & Ten logical products, physical recordsets, fingerprints and executable examples. \\
+\bottomrule
+\end{tabularx}
+\end{table}

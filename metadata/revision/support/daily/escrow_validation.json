@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "candidate_requests": 39591,
+  "flow_observed_requests": 39591,
+  "eligible_requests": 39443,
+  "checks": [
+    {
+      "check": "exposure_conservation",
+      "passed": true,
+      "raw_token_seconds": "456536569251000000"
+    },
+    {
+      "check": "eligible_native_flow_unique",
+      "passed": true
+    },
+    {
+      "check": "no_negative_interval",
+      "passed": true
+    }
+  ],
+  "scope": "Closed requests with unambiguous lifecycle-transaction attribution, observed nonnegative balances and zero closing balance; excludes unresolved and ambiguous histories."
+}

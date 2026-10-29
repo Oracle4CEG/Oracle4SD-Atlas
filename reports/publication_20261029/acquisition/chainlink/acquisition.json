@@ -1,0 +1,30 @@
+{
+  "branch": "Chainlink",
+  "mode": "live",
+  "result_keys": [
+    "type",
+    "status",
+    "cumulativeGasUsed",
+    "logs",
+    "logsBloom",
+    "transactionHash",
+    "transactionIndex",
+    "blockHash",
+    "blockNumber",
+    "gasUsed",
+    "effectiveGasPrice",
+    "from",
+    "to",
+    "contractAddress"
+  ],
+  "output": "chainlink/live_response.json",
+  "expected_native_block": 18688297,
+  "locator_verified": true,
+  "run_sha256": "e92fe65fdde5a83b95ad6c7ddf1ba316ab92c528d02b087d329ad406f1030089",
+  "warning": "Locator verification alone is not historical runtime binding or continuous coverage.",
+  "status": "passed",
+  "elapsed_seconds": 0.552,
+  "timeout_seconds": 25,
+  "retry_count": 0,
+  "stop_condition": "one registered transaction or height; no pagination"
+}

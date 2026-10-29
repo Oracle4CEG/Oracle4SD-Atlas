@@ -1,0 +1,29 @@
+﻿branch,chain,scope,roles,detail,source_refs,context_as_of,observation_cutoff
+UMA,Ethereum,sample,V/S,VotingV2 adjudication plus DVM economic records,P1;G1,,2026-06-30T23:59:59Z
+UMA,Polygon,sample,V/S/D,"OOv2 proposal acceptance, local settlement and delivery to requester",P1;G1,,2026-06-30T23:59:59Z
+Chainlink,Ethereum,sample,S/D,Staking economics and ETH/USD feed service windows; no off-chain report census,P1;G1,,2026-06-30T23:59:59Z
+Tellor,Tellor L1,sample,V/S,"tellor-1 reports, disputes, votes and economic events",P1;G1,,2026-06-30T23:59:59Z
+Flare FTSOv2,Flare,sample,V/S,FTSOv2 provider/registry evidence and reward entitlements/claims; role does not imply complete vote reconstruction,P1;G1,,2026-06-30T23:59:59Z
+Pyth,Solana,sample,S,"OIS instruction, staking and transfer evidence",P1;G1,,2026-06-30T23:59:59Z
+Pyth,Pythnet,input,I,Retained derived inputs / publisher epoch states; not a complete independent Pythnet chain scan,P1;G1,,2026-06-30T23:59:59Z
+Chronicle,Ethereum,sample,V/S/D,"Registered report validation, challenges and challenge rewards",P1;G1,,2026-06-30T23:59:59Z
+RedStone Push,Ethereum,sample,V/D,Registered signed-publication checks and Push delivery; no AVS economic extension,P1;G1,,2026-06-30T23:59:59Z
+DIA,Lasernet,sample,S,Staking withdrawal principal and reward components; not the complete feed-production path,P1;G1,,2026-06-30T23:59:59Z
+Chainlink,Polygon,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Chainlink,Arbitrum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Chainlink,Base,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Chainlink,BNB Chain,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Pyth,Ethereum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Pyth,Arbitrum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Pyth,Base,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Pyth,BNB Chain,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Chronicle,Arbitrum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Chronicle,Base,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+RedStone Push,Arbitrum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+RedStone Push,Base,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+RedStone Push,BNB Chain,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+DIA,Ethereum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+DIA,Polygon,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+DIA,Arbitrum,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+DIA,Base,context,D,Selected ecosystem delivery/deployment example from Guide 1; outside the sampled branch on this chain,G1 p.5; G1 protocol profile,2026-10-15,
+Tellor,Ethereum,context,H,Historical Ethereum implementation; outside the tellor-1 sample,"G1 pp.5,9;H5",2026-10-15,

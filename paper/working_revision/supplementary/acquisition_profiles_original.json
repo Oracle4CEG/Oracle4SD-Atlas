@@ -1,0 +1,302 @@
+{
+  "contract_registry": "metadata/contracts.csv; 195 scoped entries; scan bounds differ from deployments where annotated",
+  "documentation_checked_on": "2026-09-16",
+  "explorer_comparison_only": {
+    "endpoint": "https://api.etherscan.io/v2/api",
+    "pagination": "increment page until proven terminal page; split saturated block windows; retain (chain,transaction,log) identity; status0 is not automatically empty",
+    "params": {
+      "action": "tokentx",
+      "address": "optional actor filter",
+      "apikey": "user environment only",
+      "chainid": "1 or137; not56 in this project",
+      "contractaddress": "registered asset",
+      "endblock": "fixed inclusive cutoff",
+      "module": "account",
+      "offset": "provider-supported page size",
+      "page": 1,
+      "sort": "asc",
+      "startblock": "fixed inclusive start"
+    },
+    "status": "documented methodological comparison; no copied GoG collection code",
+    "used_in_default": false
+  },
+  "historical_endpoints_may_require_archive_service": true,
+  "profiles": [
+    {
+      "chain": "Ethereum mainnet",
+      "code": [
+        "code/production/src/oracle_ledger/ethereum_audit.py",
+        "code/production/src/oracle_ledger/polygon_uma.py"
+      ],
+      "contracts": "VotingV2 0x004395edb43efca9885cedad51ec9faf93bd34ac; OOV2 0xee3afe347d5c74317041e2618c49534daf887c24",
+      "delivery_chain": "Polygon PoS",
+      "end": "Ethereum 25433938; Polygon 89439336",
+      "endpoint": "https://ethereum-rpc.publicnode.com ; https://polygon.drpc.org",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "JsonRpc timeout 120s; no generic call retry; collector splits failed ranges; stop at irreducible failure",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_ethereum_feasibility_audit.json",
+        "source_polygon_uma_raw.json",
+        "source_uma_crosschain_links.json"
+      ],
+      "limitations": "different version deployments; 3 unmatched links; timestamps missing on DVM common projection",
+      "pagination": "Ethereum 100000-block chunks; Polygon 10000; recursively split failed log ranges",
+      "parameters": "eth_getLogs(address,topics,fromBlock,toBlock); receipts; headers; historical code",
+      "protocol": "UMA",
+      "start": "DVM deploy block 16697232; Polygon earliest adapter block 23569780"
+    },
+    {
+      "chain": "Ethereum mainnet",
+      "code": [
+        "code/production/src/oracle_ledger/chainlink_staking.py",
+        "code/production/src/oracle_ledger/chainlink_evidence.py"
+      ],
+      "contracts": "community 0xbc10f2e862ed4502144c7d632a3459f49dfcdb5e; operator 0xa1d76a7ca72128541e9fcacafbda3a92ef94fdc5; ETH/USD proxy 0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+      "delivery_chain": "Ethereum mainnet",
+      "end": "25433938",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "JsonRpc timeout 120s; collector-specific range splitting; no empty-on-error substitution",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_chainlink_staking_v02_raw.json",
+        "source_chainlink_evidence_raw.json"
+      ],
+      "limitations": "125 unclassified raw staking logs; no external truth validation; 72225 common timestamps NULL",
+      "pagination": "100000-block chunks; proxy phase-specific address discovery",
+      "parameters": "eth_getLogs by staking address; eth_call phase aggregators at fixed block; ERC20 Transfer",
+      "protocol": "Chainlink",
+      "start": "staking block 18572190; vault 18621067; controller 18621068"
+    },
+    {
+      "chain": "tellor-1 Cosmos SDK",
+      "code": [
+        "code/production/scripts/ingest_tellor_reports_block_results.py",
+        "code/production/src/oracle_ledger/tellor_layer.py"
+      ],
+      "contracts": "application modules; source commit 943a2709ef0a60eb560447278b2f59923b9de484",
+      "delivery_chain": "Tellor Layer",
+      "end": "height 19890860 at 2026-06-30T23:59:57.550796Z",
+      "endpoint": "https://mainnet.tellorlayer.com/rpc ; https://mainnet.tellorlayer.com",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "block_results timeout180s, at most100 attempts, backoff min(0.25*2^min(attempt,6),15)s; preserve completed segments",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_tellor_micro_reports.json",
+        "source_tellor_rewards_full.json",
+        "source_tellor_layer_disputes.json"
+      ],
+      "limitations": "13 disputes are observed panel; historical reward completeness cannot be generalized across module versions",
+      "pagination": "tx_search pages of 100; ABCI next_key; block_results 10000-height segments and batch 10 heights",
+      "parameters": "block_results(height); tx_search(query,page,per_page); abci_query(path,data,height)",
+      "protocol": "Tellor",
+      "start": "genesis height 1; first report height 317"
+    },
+    {
+      "chain": "Flare chain 14",
+      "code": [
+        "code/production/scripts/ingest_flare_fsp_rewards.py",
+        "code/production/scripts/ingest_flare_claims_rpc_raw.py"
+      ],
+      "contracts": "RewardManager 0xc8f55c5aa2c752ee285bd872855c749f4ee6239b; VoterRegistry 0x2580101692366e2f331e891180d9ffdf861fce83",
+      "delivery_chain": "Flare",
+      "end": "closed epoch 410; cutoff block 64054789",
+      "endpoint": "https://flare-api.flare.network/ext/C/rpc ; https://github.com/flare-foundation/fsp-rewards ; raw-claim alternatives https://flare.public-rpc.com and https://rpc.ankr.com/flare",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "reward download at most6 attempts; exponential backoff capped20s; reject missing/truncated tree; source commit now explicit",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_flare_fsp_rewards.json",
+        "source_flare_claims_chill.json"
+      ],
+      "limitations": "epoch 411 crosses cutoff; provider conditions start 251; components often non-identifiable",
+      "pagination": "epoch directories228..410 at commit56dccda13597ec78e47c24a38f875fa9ebad897c; log segments and adaptive splits per claims script; raw claims:500000-block resume segments,1000-block RPC spans, defaults32 workers; confirm provider budget before running",
+      "parameters": "eth_getLogs RewardClaimed/BeneficiaryChilled; eth_call at cutoff; frozen GitHub reward files",
+      "protocol": "Flare_FTSOv2",
+      "start": "reward epochs 228; RewardManager deploy block 29549020"
+    },
+    {
+      "chain": "Solana mainnet",
+      "code": [
+        "code/production/scripts/ingest_pyth_ois_history.py",
+        "code/production/scripts/ingest_pyth_ois_rolling_state.py"
+      ],
+      "contracts": "pyti8TM4zRVBjmarcgAPmTNNAXYKJv7WVHrkrm6woLN",
+      "delivery_chain": "Pythnet input caps / Solana OIS",
+      "end": "history last retained tx 2026-06-30T23:11:29Z; closed epoch 2946",
+      "endpoint": "https://api.mainnet-beta.solana.com ; archive alternatives in source",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "history timeout180s, bounded10 attempts and endpoint pacing/failover; null transaction is not no event; rolling state 7 attempts",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_pyth_ois_history.json",
+        "source_pyth_ois_rolling_state.json"
+      ],
+      "limitations": "49 rolling epochs do not cover whole transaction history; post-cutoff snapshot is filtered to historical epochs",
+      "pagination": "1000-signature pages using last signature as before; terminal empty page; transaction chunks200",
+      "parameters": "getSignaturesForAddress(program,{limit:1000,commitment:finalized,before}); getTransaction(signature,{encoding:jsonParsed,commitment:finalized,maxSupportedTransactionVersion:0}); getAccountInfo",
+      "protocol": "Pyth",
+      "start": "history 2024-09-11T19:53:53Z; retained rolling epochs 2898 onward"
+    },
+    {
+      "chain": "Ethereum mainnet",
+      "code": [
+        "code/production/scripts/ingest_chronicle_redstone_events.py"
+      ],
+      "contracts": "72 validated registered contracts; full addresses in original manifest",
+      "delivery_chain": "Ethereum",
+      "end": "25433938",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "8 transport attempts exponential cap30s; RPC semantic errors fail; atomic .done cache",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_chronicle_redstone_ethereum_events.json"
+      ],
+      "limitations": "14 paid challenge rewards; no universal publisher settlement panel",
+      "pagination": "100000-block segments from0..25433938; split logs on provider max-results",
+      "parameters": "eth_getLogs by known topics then registry/runtime validation; eth_call/getCode at cutoff",
+      "protocol": "Chronicle",
+      "start": "first retained common event 2023-08-28; individual deployments differ"
+    },
+    {
+      "chain": "Ethereum mainnet",
+      "code": [
+        "code/production/scripts/ingest_chronicle_redstone_events.py"
+      ],
+      "contracts": "9 adapters + 91 feed contracts in frozen registry",
+      "delivery_chain": "Ethereum",
+      "end": "25433938",
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "8 transport attempts exponential cap30s; RPC semantic errors fail; no Pull-history inference",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_chronicle_redstone_ethereum_events.json"
+      ],
+      "limitations": "Pull has no global update log; no inferred publisher payouts",
+      "pagination": "100000-block segments from0..25433938; split logs on provider max-results",
+      "parameters": "eth_getLogs over pinned Push adapter and feed contracts; source signatures",
+      "protocol": "RedStone",
+      "start": "first retained common event 2023-12-07; per-contract deployment differs"
+    },
+    {
+      "chain": "Lasernet chain 1050",
+      "code": [
+        "code/production/scripts/ingest_dia_staking.py"
+      ],
+      "contracts": "staking 0x677Cf1299c367F6cf6F3E1669aCC18Fd059a5919; wDIA 0x9F5dA8630d47178baB71F5923644A28B15cBdCa7",
+      "delivery_chain": "Lasernet",
+      "end": "31302665",
+      "endpoint": "https://rpc.diadata.org/",
+      "execution_status": "historical source evidence; full recollection not run in this review",
+      "failure_handling": "6 attempts, timeout60s, delays min(2^attempt,15)s; stops on failure; no empty-on-error conversion",
+      "fixed_cutoff": "2026-06-30T23:59:59Z",
+      "historical_source_manifests": [
+        "source_dia_staking.json"
+      ],
+      "limitations": "127 positive rewards among 129 withdrawals; staking not report-truth observation",
+      "pagination": "one eth_getLogs per event topic over deployment3874186..31302665; no pagination/adaptive split in this historical collector; provider must support range",
+      "parameters": "eth_getLogs staking and wDIA Transfer; eth_getCode/eth_call fixed cutoff",
+      "protocol": "DIA",
+      "start": "deployment block 3874186"
+    }
+  ],
+  "small_case": {
+    "chains": {
+      "ethereum": {
+        "chain_id": 1,
+        "default_public_rpc_candidates": [
+          "https://ethereum-rpc.publicnode.com",
+          "https://ethereum.drpc.org"
+        ],
+        "finality_rule": "successful canonical receipt whose blockHash equals the independently fetched fixed block hash; deployed runtime hash is checked at latest when the public provider does not expose historical eth_getCode",
+        "transactions": {
+          "dvm_resolution": {
+            "block_hash": "0x2e517faccd43244b242c0ccc6b43dfa55415bf847960c15b03a8ee566cd1e7f2",
+            "block_number": 21103395,
+            "block_timestamp": 1730592035,
+            "hash": "0xc845c4be3da71936e760b5fb8b70eeb8753a7bc5012c452e7d335166d9b14039"
+          }
+        }
+      },
+      "polygon": {
+        "chain_id": 137,
+        "default_public_rpc_candidates": [
+          "https://polygon.drpc.org",
+          "https://tenderly.rpc.polygon.community"
+        ],
+        "finality_rule": "successful canonical receipts whose receipt blockHash equals the independently fetched fixed block hash; blocks are older than the fixed release cutoff",
+        "public_rpc_documentation": "https://docs.polygon.technology/pos/reference/rpc-endpoints",
+        "transactions": {
+          "dispute": {
+            "block_hash": "0x781c4513e9c5c2932ac6a362a1cf43ed089948ddac4c422aaf195ce0ee634736",
+            "block_number": 63658420,
+            "block_timestamp": 1730260194,
+            "hash": "0xa5742b4d0b43dbe96de0e57480fbc11a6aa61c64765395db9f27ae45ae5b2198"
+          },
+          "proposal": {
+            "block_hash": "0xebb3215a79ad74f112c7231aa34a67e876c91f4bdef09d08180b23e954470b20",
+            "block_number": 63658346,
+            "block_timestamp": 1730260036,
+            "hash": "0xa9ff6827a32b90f134345bbc646a480787676f481ac651b00088520379b47903"
+          },
+          "request": {
+            "block_hash": "0x0c3431e36122a4e52804555266e97001edc8681d78bac9a853d8ba611565fcba",
+            "block_number": 63645613,
+            "block_timestamp": 1730232350,
+            "hash": "0x6fc39485f25f23d42bcb55baf68633b31aa5aa53a881116ecf1382e6a1245ede"
+          },
+          "settlement": {
+            "block_hash": "0x0bec2f78c9364203da297005531f11590be4d84be65cb0a5ef9eee4483817368",
+            "block_number": 63813887,
+            "block_timestamp": 1730593355,
+            "hash": "0xe9457425a7a67a5e1bb431a7e3b1f8fe4649fcf04f3bb74376caa15600420310"
+          }
+        }
+      }
+    },
+    "code_fallback": "historical eth_getCode may fall back to latest; recorded separately; not proof of historical runtime when fallback used",
+    "contracts": {
+      "ethereum_voting_v2": {
+        "address": "0x004395edb43efca9885cedad51ec9faf93bd34ac",
+        "chain": "ethereum",
+        "runtime_code_hash": "0x1b8bf8377b8f2ac8b465146937427cd4f1942484a8d02b680c16dcca4c139785"
+      },
+      "polygon_legacy_child_tunnel": {
+        "address": "0xbed4c1fc0fd95a2020ec351379b22d8582b904e3",
+        "chain": "polygon",
+        "runtime_code_hash": "0x3b4bd7c39566db2aae418ab4a2090d17e4fe9e38477f2e212d4670519eeee6a8"
+      },
+      "polygon_oov2": {
+        "address": "0xee3afe347d5c74317041e2618c49534daf887c24",
+        "chain": "polygon",
+        "runtime_code_hash": "0xdc59e0d28ac7f24147f6a9e24e8e7a011ba1575a6ec5ec7d73f1c87666927856"
+      },
+      "polygon_usdc_e": {
+        "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "chain": "polygon",
+        "decimals": 6,
+        "symbol": "USDC.e"
+      },
+      "polymarket_adapter_v2": {
+        "address": "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74",
+        "chain": "polygon",
+        "runtime_code_hash": "0x18957c31c3b8369c5737be2d9ea2a3cccade4ec22a5fef043a2526bc9627cc3e"
+      }
+    },
+    "methods": [
+      "eth_chainId",
+      "eth_getTransactionByHash",
+      "eth_getTransactionReceipt",
+      "eth_getBlockByNumber",
+      "eth_getCode"
+    ],
+    "mode_default": "bundled",
+    "network_in_default": false,
+    "pagination": "none; five fixed transaction hashes",
+    "retry": "4 attempts per Rpc.call; timeout30s; delays0.5,1,1.5 seconds; try candidate endpoint after chain-id and transaction probe",
+    "source_hashes": "configs/project.json"
+  }
+}

@@ -1,0 +1,8 @@
+branch,epoch_id,start_utc,end_utc,source_table,meaning
+Flare FTSOv2,406,2026-06-11T18:59:15+00:00,2026-06-15T06:59:15+00:00,flare_reward_epochs,retained half-open support interval; end marker is not payment
+Flare FTSOv2,407,2026-06-15T06:59:15+00:00,2026-06-18T18:59:15+00:00,flare_reward_epochs,retained half-open support interval; end marker is not payment
+Flare FTSOv2,408,2026-06-18T18:59:15+00:00,2026-06-22T06:59:15+00:00,flare_reward_epochs,retained half-open support interval; end marker is not payment
+Flare FTSOv2,409,2026-06-22T06:59:15+00:00,2026-06-25T18:59:15+00:00,flare_reward_epochs,retained half-open support interval; end marker is not payment
+Flare FTSOv2,410,2026-06-25T18:59:15+00:00,2026-06-29T06:59:15+00:00,flare_reward_epochs,retained half-open support interval; end marker is not payment
+Pyth OIS,2945,2026-06-11T00:00:00+00:00,2026-06-18T00:00:00+00:00,pyth_ois_reward_epochs,retained half-open support interval; end marker is not payment
+Pyth OIS,2946,2026-06-18T00:00:00+00:00,2026-06-25T00:00:00+00:00,pyth_ois_reward_epochs,retained half-open support interval; end marker is not payment

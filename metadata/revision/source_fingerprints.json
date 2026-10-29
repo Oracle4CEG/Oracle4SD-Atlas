@@ -1,0 +1,270 @@
+[
+  {
+    "path": "Oracle4SD_Atlas/main.tex",
+    "sha256": "869e14362c71535391e119c785504fc3685eb4e03ba3a92f3e304d1555f9af44"
+  },
+  {
+    "path": "Oracle4SD_Atlas/references.tex",
+    "sha256": "b6e0de82fcad7fd70b9cfd5ca2153fc2419ae2f68a2d4a1be8625aeafbfec206"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/research_opportunities.tex",
+    "sha256": "c56847faa511a43bede5c645b6ab4ef0eda6752923d1ca681601257866a50191"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/implementation_register.tex",
+    "sha256": "3b8ed17a995324dfac6b7f4e02da48af1d9082f43611272a290a70f6353fec17"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/processing_pipeline.tex",
+    "sha256": "232915b68965ab1c040200990ca41dfd361b6e78ab3deee03fe0f583ff665b14"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/economic_states.tex",
+    "sha256": "985fc38afb5ff09d37e755608627e11159fda0967d61e11541ade738e3f9a241"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/dictionary_preprint.tex",
+    "sha256": "2a1e95472efe95d14b7a75dbfe28fe1bb8077af2e4754c4230ab7af4ea989912"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/temporal_validation_summary.tex",
+    "sha256": "7640ba284d9b99a9e2be78a96df1804ebcc0712b21c5e582cd535080246b9868"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/historical_milestones.tex",
+    "sha256": "37af3593fb7d0c9c258e984bb31182b07eb8e15d65a3ff67ccc2c420442b7fd1"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/blockchain_datasets.tex",
+    "sha256": "a08f1f58d05c1ce189dd256c9eb7b85d21529061bdac798e3fe05d0b81e9fc84"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/temporal_recovery.tex",
+    "sha256": "56b21b3e2d632081004f1efe7db773c5deb83f386dc8cf2e51abefad77cf3990"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/temporal_boundaries.tex",
+    "sha256": "c939dc283471c18346fa8cb6d600503d2682629d0582ab1e585a98970dd5f26a"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/figure_observation_windows.tex",
+    "sha256": "4d81f4db298dbc62fcded76cd3086660b1ddff5581c96f3a7ab79133351f3674"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/semantic_validation.tex",
+    "sha256": "56594399596d10623de9f61fa90b33044fb05d594af33f2904c3802f934333b3"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/record_keys.tex",
+    "sha256": "521480886a2a7b4d8ca3ce2bb1fea65feb0602c2359733c879c918b114d9e0d9"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/protocol_sources.tex",
+    "sha256": "a42e1dfc97ef3c5c496b206996f2bf16171b2845982db332bb133858024d9028"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/oracle_related_work.tex",
+    "sha256": "2625d6c1d623232898fdd5fe0d52600b5072aeace2a5d2c9775cf7e615459006"
+  },
+  {
+    "path": "Oracle4SD_Atlas/tables/file_inventory_preprint.tex",
+    "sha256": "1eff4d993137923f0c1ceef2ed7410520c35d492c14dc1a795599d50177592ea"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/ecosystem_scope.tex",
+    "sha256": "6f7f43c0e92237778c1f3c2a240d5ae4fde0949edefd924bf6a7550a74abeac0"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_i_glossary.tex",
+    "sha256": "cb6e77722d3947ef4fea51feb375be393b309afbe8c83eb8e20c8da5a5950001"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_h_reproduction.tex",
+    "sha256": "75f1a2f7e6d3fd3306baa38738928d30921ac41b8cb151b03fbad3ccc4da9b93"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_g_case.tex",
+    "sha256": "82efe08bd80617cb99598b202deba219cdf1ecf688624026bca5bb0cac0ac079"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_b_temporal.tex",
+    "sha256": "16b1fc3d283983c004ae8ca0fbbd6a84079566109aa750664129ba741a7fd345"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/05_validation.tex",
+    "sha256": "1f756cb98d1847695a22cae47b70bb875539764a90a5800994ce3000ad961142"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/06_usage.tex",
+    "sha256": "a71a6d80e55e56f7ca8c6bf84142739570e410a8360204112418559129d05f6f"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/07_availability.tex",
+    "sha256": "3e325902c347966dd4b5024b3c9c315509f1661a2e0a4a4bf58f4f2cec606fc9"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_e_semantics.tex",
+    "sha256": "fe92b40e699e0777aee0bf9eaf5c7648b09b1bfecde763c0c65212cc1c061ebd"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_a_scope.tex",
+    "sha256": "e1c18aa7928b76c4de1be3fecb7fe061f2a7786579cd17e651ec6b4f7c8af3a0"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/04_overview.tex",
+    "sha256": "b2bbe6df3e09cdd4a34be894b7bd361eeaec7f255b1be65b881db418f5ed6ac8"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/01_background.tex",
+    "sha256": "43a2ebdbcd347d060cf2e315ae6a53aaaf668335961f66595e2b04381a5c1612"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_d_daily.tex",
+    "sha256": "7eff476b43dc5e2287a3c0db707af63302307193053afd457ee39709145cbd00"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_c_products.tex",
+    "sha256": "dec80b83b1bafb6e5642629ae615c8d42a4dd84496b51f43c575e8fea228cf3c"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/03_records.tex",
+    "sha256": "fa740c1a9770743667b34ffc948e11a9df8497557197b4644ce2df481cc058aa"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/appendix_f_prediction.tex",
+    "sha256": "1b1f37b7dc8077b1f4eb60d970b17656b84258ce95d71708aa61872eb575341a"
+  },
+  {
+    "path": "Oracle4SD_Atlas/sections/02_methods.tex",
+    "sha256": "f8853a43269f5975928ba2369cd987d2f08cd9c583862b79131b2e3df63953a1"
+  },
+  {
+    "path": "Oracle4SD_Atlas/styles/preprint.sty",
+    "sha256": "d4440b63da0f0251a557a664938a8db2b8b71e88245368c5d0b5d473273cdf6a"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/cross_chain_gallery.pdf",
+    "sha256": "ace5bf2b66f09185134d90557653f91af90561f75e850ff2dee1461ee8b39152"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/prediction_features.pdf",
+    "sha256": "84ee77e7acd83d0fca2576bb45e226e2a5824da4e52bc6a771c87e5b11c4d701"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/daily_gallery.pdf",
+    "sha256": "4e226e59c981132a54e702d662bf6ff809ff3424f0095bff0362a61d50975d7e"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/prediction_task.pdf",
+    "sha256": "3efb4956a712899aaf9d906a247f9d8d42caf444cb80753709c9f3772a7e3d6f"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/semantic_gallery.pdf",
+    "sha256": "cc4710d4f2c5381d0ced8fce2058063e064b781846ead5d454d590e1e54ffa53"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/feasibility_gallery.pdf",
+    "sha256": "509e6e3e11196b7aefa871fb7338c97002fa98b3d7deec974e18d36643b6fd88"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/ecosystem_scope.pdf",
+    "sha256": "b032fcfabcfd28175a5a69b562d7dbaa72846302383d7d74a626c10afd0661ee"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/uma_followup.pdf",
+    "sha256": "8b412f535f7d95cd2160c33b152468c2e3b167cd7881c37342f3faa215b3737f"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/temporal_epoch_support.pdf",
+    "sha256": "4491997b519d07c147d7ad03ddc606c3cd216fb9d1dcd60a1a87cf0e3430d72d"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/cross_chain_evidence_links.pdf",
+    "sha256": "a9d04ebbdb8c28b4bdfa57180c472170e7f92f2f1412617bfcaf39e26099ddcf"
+  },
+  {
+    "path": "Oracle4SD_Atlas/figures/overview_restored.pdf",
+    "sha256": "3d4915ed0d96f747a781e1cb01b91de6c9e6cbdc1b5cbdfdef211e1d31467e60"
+  },
+  {
+    "path": "code/build_daily.py",
+    "sha256": "b0ac9f7606c41242a34a7e84eba7428c5ad4d9345350e69e1b516a487a13c262"
+  },
+  {
+    "path": "code/redstone_avs_pilot.py",
+    "sha256": "9896d4bbaef40b16f6062bf9f1d77733391877ae28bdf1ff19c2a78d7c173d7b"
+  },
+  {
+    "path": "code/build_escrow.py",
+    "sha256": "9335b361a3ea2d61a1d31b6cbacb03f48ebff917a10e5f477ff3f12b7998b14a"
+  },
+  {
+    "path": "code/export_accounting.py",
+    "sha256": "dd0753062efda52a8f2362661465530247101a009de7fe84bcff7585fb322d25"
+  },
+  {
+    "path": "code/assemble_release.py",
+    "sha256": "3503bdd8957b772f35eaec51a47e779cb9ba3107c0097cd8ecf6103369c32a0f"
+  },
+  {
+    "path": "code/load_core_with_utc.py",
+    "sha256": "0c0e5548c0ed8bb552801eac7c420f3ad2f020e929b81437e6f98729323b3946"
+  },
+  {
+    "path": "code/finalize_metadata.py",
+    "sha256": "76fb00e13d6f260d511a77c059b22028f75fc760d9cbbc69e19a066d0e7e5a58"
+  },
+  {
+    "path": "code/build_extra_figures.py",
+    "sha256": "459ac910556c725c6f3ca28e15ca66e4f5dc121ca8d13e3ce2246f888f39118d"
+  },
+  {
+    "path": "code/prepare_native_layout.py",
+    "sha256": "d9bf9096813afc6f2b2a270dacc5d4d8f81f4a20f19d27985f43a833211669fd"
+  },
+  {
+    "path": "code/build_prediction.py",
+    "sha256": "1bf93502673528b9e20c9e866ac09dbe3a5417d097668e8a70bb7e48ee12c2f5"
+  },
+  {
+    "path": "code/sync_repository.py",
+    "sha256": "a50ed6ec5eb321cb6af62bc41fd7f51799966a31942dbb2f95cff6602d43e5aa"
+  },
+  {
+    "path": "code/build_evidence.py",
+    "sha256": "70b5c51e3b4ed888005aad358247e102e870b08627d554c742022f87779f6b4d"
+  },
+  {
+    "path": "code/build_delivery_records.py",
+    "sha256": "ea6036162fee9abee61b1b40342bc88e2dde4c0e8d08bb7e8f69fa1a5701c50b"
+  },
+  {
+    "path": "code/propagate_core_times.py",
+    "sha256": "2b69029f334197ca361e2f7b2995eb566212a9856087186641171ae9da037bd9"
+  },
+  {
+    "path": "code/package_delivery.py",
+    "sha256": "cca3bee38f97ef167f17c1c7fa421efeab6b6893ec7b2da23574f00a017cdc29"
+  },
+  {
+    "path": "code/build_sensitivity.py",
+    "sha256": "9bd2e1f7c23c3328a2aa3ddea90e7d44c11d2b118926e5bc8f6f77064bc17dd3"
+  },
+  {
+    "path": "code/build_figures.py",
+    "sha256": "f1d9aa5a2eca8c59ccb69d0def25f3f0910f33a4c46fa7eccd79ec299b184d82"
+  },
+  {
+    "path": "code/build_support.py",
+    "sha256": "2edd074920261447eee0120a52be857ce6cf74309f7e3181cdc9e3e83ea153bc"
+  },
+  {
+    "path": "code/bounded_acquisition.py",
+    "sha256": "66db47ccd4f5fac7faec115974971784c8873d79069cbf5403bd3787439a25a6"
+  },
+  {
+    "path": "code/validate_delivery.py",
+    "sha256": "15260f91246b6e72435b75034f859fc052fdfe19b5e7dd52eb804181fc13827e"
+  }
+]

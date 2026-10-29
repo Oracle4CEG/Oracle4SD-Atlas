@@ -1,0 +1,91 @@
+[
+  {
+    "figure": "cross_chain_gallery",
+    "width_mm": 166.0,
+    "height_mm": 76.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "prediction_features",
+    "width_mm": 166.0,
+    "height_mm": 145.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "daily_gallery",
+    "width_mm": 166.0,
+    "height_mm": 101.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "prediction_task",
+    "width_mm": 166.0,
+    "height_mm": 48.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT",
+      "EKLTZR+TimesNewRomanPS-ItalicMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "semantic_gallery",
+    "width_mm": 166.0,
+    "height_mm": 56.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "feasibility_gallery",
+    "width_mm": 166.0,
+    "height_mm": 67.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "uma_followup",
+    "width_mm": 166.0,
+    "height_mm": 54.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  },
+  {
+    "figure": "cross_chain_evidence_links",
+    "width_mm": 166.0,
+    "height_mm": 62.0,
+    "raster_images": 0,
+    "fonts": [
+      "DFKAVT+TimesNewRomanPSMT"
+    ],
+    "editable_svg_text": true,
+    "font_check": true
+  }
+]

@@ -1,4 +1,4 @@
-"""Validate the pinned tutorial's saved notebook and evidence ZIP, without executing them.
+"""Validate the historical 2026-10-12 tutorial receipt, without executing it.
 
 Runtime labels are self-reported. Passing this check is not Google-signed proof
 of hosting or independent scientific replication; retain an operator attestation.
@@ -30,7 +30,9 @@ def validate(notebook, evidence, require_hosted=True):
     def check(name, passed):
         checks.append({"check": name, "passed": bool(passed)})
 
-    template = json.loads((ROOT / "notebooks/Oracle4SD_Atlas_Tutorial.ipynb").read_text())
+    # The receipt pins nine cells from the predecessor notebook. The current
+    # tutorial has a separate scope and must not redefine this historical check.
+    template = json.loads((ROOT / "notebooks/historical/Oracle4SD_Atlas_Tutorial.ipynb").read_text())
     saved = json.loads(notebook.read_text())
     cells = [c for c in saved["cells"] if c["cell_type"] == "code"]
     expected = [c for c in template["cells"] if c["cell_type"] == "code"]

@@ -1,0 +1,27 @@
+\section{Scope and sources}
+\label{app:scope}
+
+\subsection{Selection and scope boundaries}
+Branch selection combines a measurement question with identifiable historical evidence. UMA and Tellor cover contestable reporting and adjudication; Chainlink covers staking and selected feed service; Flare covers entitlements and claims; Pyth covers publisher--epoch incentives and staking. Chronicle, RedStone and DIA add narrower challenge, Push-update and withdrawal observations. Table~\ref{tab:protocol_sources} defines these boundaries. The registry is not exhaustive or probabilistic; exclusions apply only to this release.
+
+Economic comparison requires an interpretable native unit, identifiable implementation and source. Monetary amounts also require an asset and accounting stage. Signed updates can describe delivery without measuring publisher payments; withdrawals can separate principal and reward without proving price accuracy. These limits govern the research opportunities in Table~\ref{tab:research_opportunities}.
+
+\subsection{Historical implementations and source register}
+\label{app:implementations}
+Table~\ref{tab:implementation_register} records the principal contracts, programs and source versions. The accompanying source register describes their network roles, observation units, historical boundaries and inclusion criteria, including the Tellor modules and Chainlink feed proxy. Acquisition records preserve the connection between each sampled implementation and the evidence used to reconstruct it~\cite{atlasScopeMetadata2026}.
+
+Deployment, scan and observation boundaries remain separate. Chronicle and RedStone searches begin at block 0, a search bound rather than a deployment block. Pyth's archive starts at a transaction timestamp rather than an EVM block. A pinned repository or cutoff runtime does not prove an unchanged historical implementation. Deployment times and implementation intervals require supporting metadata.
+
+\input{tables/implementation_register}
+
+\subsection{Evidence for the ecosystem figure}
+\label{app:ecosystem_evidence}
+Figure~\ref{fig:ecosystem_scope} uses first and last timestamps from the tables named in Table~\ref{tab:figure_observation_windows}, derived from pinned coverage metadata~\cite{atlasScopeMetadata2026}. These extents do not establish full branch histories or continuous coverage. Pyth uses epoch-end labels, while its transaction archive starts earlier. Tellor reports predate the public-opening announcement. Chainlink feed and DIA withdrawal histories need not start at staking deployment or launch.
+
+\input{tables/figure_observation_windows}
+
+Table~\ref{tab:historical_milestones} identifies dated historical markers at their source precision. Announcements, public access and deployment remain distinct: UMA's optimistic-oracle launch, for example, does not date OOv2 deployment. Each marker requires a source identifying the event and its date.
+
+\input{tables/historical_milestones}
+
+The chain matrix distinguishes the sampled mechanisms from the wider services described in protocol documentation~\cite{uma2026,chainlinkstaking2026,tellorDisputes2026,flareFTSO2026,pythOIS2026,chronicleDocs2026,redstoneDocs2026,diaDocs2026}. Its historical scope remains defined by the sampled implementations. Pythnet identifies retained inputs used in the Pyth reconstruction; it does not denote a complete chain scan. Unmarked cells indicate relationships outside the documented figure scope.

@@ -1,0 +1,22 @@
+[
+  {
+    "table": "tellor_disputes",
+    "loaded": true,
+    "field_count": 40
+  },
+  {
+    "table": "tellor_dispute_votes",
+    "loaded": true,
+    "field_count": 9
+  },
+  {
+    "table": "uma_prediction_tasks",
+    "loaded": true,
+    "field_count": 36
+  },
+  {
+    "table": "daily_measurements",
+    "loaded": true,
+    "field_count": 22
+  }
+]

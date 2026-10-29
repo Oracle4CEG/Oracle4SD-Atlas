@@ -1,66 +1,71 @@
 # Oracle4SD Atlas
 
-Oracle4SD Atlas reconstructs how blockchain oracle requests are challenged, adjudicated and paid. Protocol decisions, independent factual truth, principal at risk, accrued entitlements and realized payments remain separate.
+Oracle4SD connects native oracle records to economic measurements. This release provides eight protocol branches, a UMA prediction task and daily measurements, together with source registers, code, dictionaries and a manuscript.
 
-[中文操作说明](docs/QUICKSTART_ZH.md) · [Colab 验收步骤](docs/COLAB_ACCEPTANCE_ZH.md) · [DOI 登记材料](docs/DOI_REGISTRATION_ZH.md)
+- [Ten datasets on Hugging Face](https://huggingface.co/datasets/Oracle4CEG/OracleEconLab-Oracle-Incentives-v1) · version `atlas-utc-20261029`
+- [Current manuscript](paper/working_revision/main.pdf) and [LaTeX source](paper/working_revision/main.tex)
+- [Eight-stage tutorial](notebooks/Oracle4SD_Atlas_Tutorial.ipynb) and [executed local notebook](reports/publication_20261029/tutorial.executed.ipynb)
+- [Template comparison and 30-item response](docs/TEMPLATE_ALIGNMENT.md)
+- [English Colab acceptance guide](docs/COLAB_ACCEPTANCE.md)
+- [Full table catalogue](metadata/revision/table_catalog.json), [field dictionary](metadata/revision/field_dictionary.csv), [release identity](configs/atlas_utc_release.json)
 
-**Reconstruction version:** `atlas-repaired-20261012`, common schema **2.0.0**. **Observation cutoff:** 2026-06-30 23:59:59 UTC. The earlier one-request teaching example remains available as `uma-public-rpc-case-v1`.
+The tutorial reconstructs one UMA settlement and examines bounded native evidence for all eight branches. It includes a daily-table inspection and keeps raw acquisition, native replay and full reconstruction separate. Saved execution is local; independent-reader and Google-hosted Colab acceptance remain pending.
 
-## Run a small real case
+## Scope
 
-Use the revision branch while the organization pull request is under review:
+UMA, Chainlink, Tellor, Flare FTSOv2 and Pyth are detailed panels. Chronicle, RedStone Push and DIA are narrower extensions. Each branch has its own implementation, observation units, chains and historical limits in the [acquisition profiles](metadata/acquisition_profiles.json). RedStone Push does not represent the full RedStone service. A first and last observation do not establish continuous coverage.
 
-```bash
-git clone --branch fix/usable-atlas-release-20261012 --single-branch \
-  https://github.com/virusLuke3/Oracle4SD-Atlas.git
-cd Oracle4SD-Atlas
+The ten logical products contain 100 physical tables, including overlapping native, common and economic layers. The Viewer opens one representative table per product. Use the product manifest to retrieve additional tables; do not add overlapping row counts. Daily data retain partial-coverage flags and do not fill missing days with zero. Four UMA task features still require historical evidence for proposal-time availability. Addresses are not identified organizations and protocol outcomes are not independent factual truth.
+
+## Get started
+
+Open the tutorial and run its eight stages in order. Its setup installs a managed environment when one is not provided. To inspect full product membership without downloading data:
+
+```sh
+python scripts/load_atlas_product.py uma
+python scripts/load_atlas_product.py daily_measurements --output /tmp/oracle-daily
 ```
 
-Create the scientific environment. The bootstrap downloads pinned Python 3.12.12, so the host does not need a working `venv`/`ensurepip` installation.
+The download command requires `huggingface_hub` and checks file hashes. Add `--include-shared` only when you need the shared core/evidence tables, then filter the intended branch and join clock companions by their declared key. See [full-data access](docs/FULL_DATA.md) for the reconstruction boundary.
 
-```bash
-python3 scripts/bootstrap_environment.py --output runs/environment
-runs/environment/scientific/bin/python scripts/run_pipeline.py --output runs/my-first-case
-runs/environment/scientific/bin/python -m unittest discover -s tests -v
-```
+## Template folder roles
 
-The case uses five real transactions across Polygon and Ethereum. Expected result: `validation_passed: true`, with 28 case checks. Its 1,000 USDC.e winning transfer separates into 750 returned principal and 250 token gain; it is not a measurement of total economic profit.
+| Role | Completed artifact or purpose | Tutorial section |
+|---|---|---|
+| [data/data_source](data/data_source/) | Source declarations and retained raw inputs | 2 |
+| [data/queried_data](data/queried_data/) | Acquired evidence before processing | 3–4 |
+| [data/processed_data](data/processed_data/) | Processed case outputs; current full data in separate deposit | 5–6 |
+| [code/query_data](code/query_data/) | Acquisition modes | 3 |
+| [code/process_data](code/process_data/) | Case processing | 5 |
+| [code/technical_validation](code/technical_validation/) | Validation | 8 |
+| [code/analyze_data](code/analyze_data/) | Descriptive outputs | 7 |
+| [metadata](metadata/) | Catalogues, dictionaries, provenance and release identity | 2 and 6 |
+| [notebooks](notebooks/) | Tutorial entry and historical notebook archive | 1–8 |
+| [templates](docs/TEMPLATE_ALIGNMENT.md) | Role retained; finished artifacts in tutorial_revision and paper replace blank templates | 1–8 |
+| [paper](paper/) | Current LaTeX manuscript and compiled PDF | 7–8 |
+| [reports](reports/) | Run evidence, historical reports labelled as predecessors | 8 |
+| [configs](configs/) | Declared source scopes and versions | 2–3 |
+| [tests](tests/) | Reference checks and reconstruction validation | 8 |
 
-The [notebook](notebooks/Oracle4SD_Atlas_Tutorial.ipynb) retains two runs, complete command logs, interpreter identities and package freezes in a downloadable ZIP. Hosted Google Colab execution is reported separately from execution in a fresh local notebook kernel.
+Completed source registers, dictionaries, manuscript and acceptance instructions replace the Template's blank forms. The [comparison](docs/TEMPLATE_ALIGNMENT.md) lists those replacements and unresolved external checks.
 
-## Download and rebuild the full Atlas
+## Source-to-output map
 
-```bash
-runs/environment/scientific/bin/python scripts/download_atlas.py \
-  --component native --output runs/native
-runs/environment/scientific/bin/python scripts/rebuild_atlas.py \
-  --input-root runs/native --output runs/full-atlas \
-  --from-native --with-trajectory-views --with-benchmarks
-runs/environment/scientific/bin/python scripts/build_release_metadata.py \
-  --release runs/full-atlas
-```
+Each row describes a bounded raw locator and an archived native sample. The native sample is not reconstructed from that one raw response. Full daily and prediction products are rebuilt from the complete retained native inputs with `code/revision`; the case pipeline in `code/query_data`, `process_data`, `analyze_data` and `technical_validation` reconstructs one linked UMA request.
 
-The 64 frozen inputs total 1.81 GB. Downloads use immutable revisions and are checked against SHA-256 and byte lengths. The builder reconstructs the 105,588,120-row common layer, research samples, economic layers and application views. Layers overlap; their row counts must not be added as distinct observations.
+| Branch | Source | Query code | Queried data | Processing code | Processed sample | Validation / analysis |
+|---|---|---|---|---|---|---|
+| UMA | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/uma/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/uma/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/uma/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| Chainlink | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/chainlink/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/chainlink/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/chainlink/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| Tellor | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/tellor/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/tellor/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/tellor/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| Flare FTSOv2 | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/flare_ftsov2/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/flare_ftsov2/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/flare_ftsov2/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| Pyth | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/pyth/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/pyth/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/pyth/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| Chronicle | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/chronicle/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/chronicle/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/chronicle/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| RedStone Push | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/redstone_push/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/redstone_push/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/redstone_push/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
+| DIA | [source](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/acquisition_profiles.json) / [raw input](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/data_source/dia/raw_response.json) | [query](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/query.py) | [queried response](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/queried_data/dia/archived_raw_response.json) | [native replay](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processing_code/replay.py) | [sample check](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/tutorial_revision/processed_data/dia/summary.json) | [acquisition](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/reports/publication_20261029/bounded_acquisition.json) / [paper map](https://github.com/Oracle4CEG/Oracle4SD-Atlas/blob/PUBLICATION_CODE_REF/metadata/revision/paper_data_code_map.csv) |
 
-The prepared release has **95 Parquet tables (17.34 GB)** and passed **50 full-release checks**. Its [1,789-field/type dictionary](metadata/repaired_atlas_20261012/field_dictionary.json) distinguishes explicit common/episode definitions from native source-reference documentation. The financial benchmark completed 21 fits across seven models and three tasks; the decision benchmark runs three baselines. Scores have task-specific evaluation limits described with the results.
+## Versions and limitations
 
-See [full reproduction instructions](docs/FULL_DATA.md) for downloading prepared outputs, a small 810-observation experiment, disk requirements, field documentation and the boundary between offline replay and fresh network collection. The [revision record](docs/REVISION_20261012.md) explains the UMA, Tellor, DVM, schema, Pyth and metadata repairs with their verification evidence.
+This revision compares Template `2ca64c50c43e189aa9cfc2cacd03520b71119301` with Atlas `1dc0dfc3bc919e64f43a110bf29b75ef0e34459c`. The fixed data revision is recorded in [the release configuration](configs/atlas_utc_release.json). Historical inventories and experimental notebooks remain labelled as predecessors.
 
-## Contents
-
-| Path | Purpose |
-|---|---|
-| [code/reconstruction](code/reconstruction/) | Versioned native-layer and application builders used by this revision |
-| [code/production](code/production/) | Preserved historical import for comparison |
-| [configs/data_releases.json](configs/data_releases.json) | Immutable download URLs, sizes and hashes |
-| [data/data_source](data/data_source/) | Bundled case evidence, archived Pyth state and build metadata |
-| [schemas](schemas/) | Reviewed common-layer schema and semantic enums |
-| [metadata](metadata/) | Source inventories, historical identities and repaired review metadata |
-| [reports/revision_20261012](reports/revision_20261012/) | Executed checks, before/after counts and experiment evidence |
-| [tests](tests/) | Real-row regression fixtures and failure-path tests |
-
-The dataset covers native records from UMA, Chainlink, Tellor, Flare and Pyth, with limited Chronicle, RedStone and DIA extensions. The 56-category ecosystem census is a separate scope. Missing timestamps remain missing unless source evidence establishes them. Machine checks do not replace independent scientific review or a historical acquisition record.
-
-The [acquisition supplement](docs/ACQUISITION_PROVENANCE.md) binds all 64 inputs to 39 retained manifests, rechecks 688 raw-file hashes and records build-level lineage for all 95 canonical outputs. Unknown historical collector identities and execution commits remain explicit gaps. The [Colab acceptance guide](docs/COLAB_ACCEPTANCE_ZH.md) supplies the pinned notebook link, expected results and an evidence validator; actual hosted execution remains pending.
-
-Code is [MIT](LICENSE); original documentation and derived evidence are [CC BY 4.0](DATA_LICENSE.md). Third-party contract/source licenses are preserved in [notices](THIRD_PARTY_NOTICES.md). Cite the actual code commit and immutable data revision. No dataset DOI is assigned here.
+See [remaining work](metadata/completion_audit/response.csv), [human review status](metadata/revision/human_review_log.json) and [acquisition provenance](docs/ACQUISITION_PROVENANCE.md). Automated checks cannot supply missing collection receipts, complete cross-chain relays, historical parameter bindings or author approval. No dataset DOI is assigned. Cite the named data version and resolved commit using [CITATION.cff](CITATION.cff).

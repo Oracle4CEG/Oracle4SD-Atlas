@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering\tabstyle[datasettint]
+\caption{Representative blockchain datasets and analytical units. Counts refer to different objects and cannot be compared as sample sizes. Oracle4SD Atlas complements these resources with protocol-specific economic stages.}
+\label{tab:blockchain_datasets}
+\begin{tabularx}{\linewidth}{@{}L{0.16\linewidth} L{0.22\linewidth} L{0.24\linewidth} Y@{}}
+\toprule\tablehead
+\thcell{document}{Resource} & \thcell{data}{Observation unit} & \thcell{data}{Published scope} & \thcell{compare}{Analytical purpose} \\
+\midrule
+Elliptic~\cite{weber2019elliptic} & Bitcoin transaction & 203,769 nodes; 234,355 directed edges & Illicit-transaction classification and financial forensics. \\
+Elliptic2~\cite{bellei2024elliptic2} & Entity cluster and labeled subgraph & 49.3 million clusters; 196.2 million edges; 121,810 labeled subgraphs & Money-laundering patterns at subgraph level. \\
+Chartalist~\cite{shamsi2022chartalist} & Dataset-specific graph, address or transaction & Multiple UTXO- and account-based blockchain datasets & Reusable data access, graph construction and machine-learning benchmarks. \\
+DIVE~\cite{alsunaidi2026dive} & Ethereum smart contract & 22,330 contracts; pre- and post-deployment representations & Vulnerability analysis with lifecycle-specific features. \\
+\rowcolor{datasettint}
+\textbf{This resource} & Typed protocol-native observation & 105,588,120 harmonized observations; eight branches & Incentive and accountability measurement, with native units and economic realization states retained. \\
+\bottomrule
+\end{tabularx}
+\end{table}

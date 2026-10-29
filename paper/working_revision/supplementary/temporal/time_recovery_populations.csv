@@ -1,0 +1,5 @@
+table,population,rows,utc_available,utc_missing,utc_fraction
+uma_dvm_voter_payoffs,all native rows,2663684,289025,2374659,0.10850573866870095
+uma_dvm_voter_payoffs,legacy common-projection eligible rows,2663684,289025,2374659,0.10850573866870095
+chainlink_staking_v02_events,all native rows,174890,10563,164327,0.06039796443478758
+chainlink_staking_v02_events,legacy common-projection eligible rows,72225,3581,68644,0.04958116995500173

@@ -1,3 +1,5 @@
+> Historical instructions below describe an earlier release. For the current ten-product data, manuscript and tutorial use [the project README](../README.md) and [release configuration](../configs/atlas_utc_release.json). Earlier execution and publication statements do not describe the current release.
+
 # Google Colab 托管验收
 
 这次验收证明：新的 Google 托管 CPU 环境能够从公开仓库启动，复现一个真实 UMA 案例，完成两次确定性回放及固定版本的 28 项回归测试。95 张全量表和全部模型训练使用另一个[全量验收记录](../reports/revision_20261012/full_release.json)，不包含在这个小 notebook 的托管验收范围里。

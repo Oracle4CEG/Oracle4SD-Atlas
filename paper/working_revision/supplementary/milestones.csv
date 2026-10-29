@@ -1,0 +1,15 @@
+﻿branch,date,precision,kind,label_en,label_zh,source_refs,note,precision_end
+UMA,2018-12-01,month,history,Whitepaper,白皮书,H1,"Month interval shown, not an exact day",2019-01-01
+UMA,2021-05-13,day,service,Optimistic Oracle,乐观预言机服务,H2,Not OOv2 deployment,
+Chainlink,2019-05-30,day,service,Ethereum mainnet,Ethereum 主网上线,H3,,
+Chainlink,2023-11-28,day,mechanism,Staking v0.2,质押 v0.2,H4,,
+Tellor,2019-08-05,day,service,Ethereum mainnet,Ethereum 主网上线,H5,,
+Tellor,2025-08-04,day,mechanism,Layer public access*,Layer 对公众开放*,H6,Not genesis; source says public opening,
+Flare FTSOv2,2022-07-14,day,history,Flare genesis,Flare 创世,H7,,
+Flare FTSOv2,2024-09-16,day,mechanism,FTSOv2 announcement,FTSOv2 运行公告,H8,"Dated production announcement, not verified deployment",
+Pyth,2021-08-26,day,service,Solana feeds,Solana 喂价上线,H9,,
+Pyth,2024-09-02,day,mechanism,OIS introduction,OIS 机制公告,H10,"Announcement date, not program deployment",
+Chronicle,2017-01-01,year,history,Maker oracle roots,Maker 预言机前身,H11,Year interval; no precise day available,2018-01-01
+Chronicle,2023-09-05,day,service,Public access,面向外部开发者,H11,,
+DIA,2025-03-26,day,history,Lasernet mainnet,Lasernet 主网,H13,,
+DIA,2025-06-24,day,mechanism,Staking launch,质押服务上线,H12,,
