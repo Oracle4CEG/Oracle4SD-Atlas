@@ -5,5 +5,9 @@
   "runtime_kind": "local_jupyter_kernel",
   "independent_reader": false,
   "hosted_colab": false,
-  "paper_sha256": "3c5dbe7897a22a8db10b0b8cdc878b16e6ce36b5928a64df830999a870078eba"
+  "paper_sha256": "3c5dbe7897a22a8db10b0b8cdc878b16e6ce36b5928a64df830999a870078eba",
+  "processing_code_commit": "71c0e19d3ae2b47d763243371f1bfb97750db61d",
+  "working_tree_modified": false,
+  "reference_checkout": "fresh clean checkout of the pinned processing commit",
+  "scientific_environment": "managed Python 3.12 case environment; package freeze retained in notebook evidence"
 }

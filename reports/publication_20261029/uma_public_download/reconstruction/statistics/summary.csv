@@ -1,0 +1,2 @@
+episode_id,source_transactions,decoded_polygon_events,usdc_transfer_rows,bond_raw,principal_returned_raw,realized_payoff_raw,cross_chain_link_grade,all_required_assertions_pass
+uma:polygon-oov2:0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca,5,9,8,500000000,750000000,250000000,A,True

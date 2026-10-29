@@ -1,6 +1,6 @@
 # Independent-reader and Google Colab acceptance
 
-Open [the publication notebook](https://colab.research.google.com/github/Oracle4CEG/Oracle4SD-Atlas/blob/release/atlas-utc-20261029/notebooks/Oracle4SD_Atlas_Tutorial.ipynb) in a Google-hosted Python CPU runtime. Disconnect and delete any existing runtime, reconnect, and run every cell in order. Do not connect a local runtime or edit assertions. The notebook allocates a fresh temporary directory and bootstraps the scientific environment. Archive replay needs no API credential.
+Open [the publication notebook](https://colab.research.google.com/github/Oracle4CEG/Oracle4SD-Atlas/blob/9d7a227d4895f31a5c2b865d4dd66e3d1ce88b8a/notebooks/Oracle4SD_Atlas_Tutorial.ipynb) in a Google-hosted Python CPU runtime. Disconnect and delete any existing runtime, reconnect, and run every cell in order. Do not connect a local runtime or edit assertions. The notebook allocates a fresh temporary directory and bootstraps the scientific environment. Archive replay needs no API credential.
 
 Expected outputs are one linked UMA case, eight bounded native-sample checks, a 100-table catalogue, a 13,269-row daily-table inspection, 28 passing case checks and an unchanged scientific summary on repeat. Native UTC fields retain nulls. Public-download and live examples are optional and use separate directories; preserve a real access error rather than replacing it with an empty result.
 

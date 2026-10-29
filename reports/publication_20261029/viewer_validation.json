@@ -1,0 +1,16 @@
+{
+  "ready_configs": [
+    "chainlink",
+    "chronicle",
+    "daily_measurements",
+    "dia",
+    "flare_ftsov2",
+    "pyth",
+    "redstone_push",
+    "tellor",
+    "uma",
+    "uma_prediction"
+  ],
+  "pending": [],
+  "failed": []
+}

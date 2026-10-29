@@ -1,0 +1,78 @@
+{
+  "data_version": "uma-public-rpc-case-v1",
+  "failure_policy": "fail closed; no empty response imputed as zero",
+  "files": [
+    {
+      "attempts": 0,
+      "bytes": 6089,
+      "frozen_hash_matches": true,
+      "origin": "data/data_source/uma_case/case_spec.json",
+      "path": "queried_data/uma_case/case_spec.json",
+      "sha256": "6bc9d141f52398b1f3446a93d7619e4e475535419bffec528f2b662ae7c3b865",
+      "source_id": "case_spec.json"
+    },
+    {
+      "attempts": "bounded retries in imported Rpc.call",
+      "bytes": 29143,
+      "frozen_hash_matches": false,
+      "origin": "live public JSON-RPC; provider host ethereum.drpc.org",
+      "path": "queried_data/uma_case/raw/ethereum_rpc_snapshot.json",
+      "sha256": "c183ee69d83208eb3a7c576b840731e03918c222db6cfe7a8c913d6dd30744f9",
+      "source_id": "raw/ethereum_rpc_snapshot.json"
+    },
+    {
+      "attempts": "bounded retries in imported Rpc.call",
+      "bytes": 99302,
+      "frozen_hash_matches": false,
+      "origin": "live public JSON-RPC; provider host polygon.drpc.org",
+      "path": "queried_data/uma_case/raw/polygon_rpc_snapshot.json",
+      "sha256": "555c211d786a5dfc85c56759555e71f18bea66c924570b2aae1b168d51187c32",
+      "source_id": "raw/polygon_rpc_snapshot.json"
+    },
+    {
+      "attempts": 0,
+      "bytes": 32293,
+      "frozen_hash_matches": true,
+      "origin": "data/data_source/uma_case/source/OptimisticOracleV2.sol",
+      "path": "queried_data/uma_case/source/OptimisticOracleV2.sol",
+      "sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+      "source_id": "source/OptimisticOracleV2.sol"
+    },
+    {
+      "attempts": 0,
+      "bytes": 16138,
+      "frozen_hash_matches": true,
+      "origin": "data/data_source/uma_case/source/OptimisticOracleV2Interface.sol",
+      "path": "queried_data/uma_case/source/OptimisticOracleV2Interface.sol",
+      "sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328",
+      "source_id": "source/OptimisticOracleV2Interface.sol"
+    },
+    {
+      "attempts": 0,
+      "bytes": 42629,
+      "frozen_hash_matches": true,
+      "origin": "data/data_source/uma_case/source/VotingV2.abi.json",
+      "path": "queried_data/uma_case/source/VotingV2.abi.json",
+      "sha256": "84e7656bf39385b2fb4af555422f1ec36d933889be38eed9f3a2e3b9500117c6",
+      "source_id": "source/VotingV2.abi.json"
+    },
+    {
+      "attempts": 0,
+      "bytes": 59632,
+      "frozen_hash_matches": true,
+      "origin": "data/data_source/uma_case/source/VotingV2.sol",
+      "path": "queried_data/uma_case/source/VotingV2.sol",
+      "sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+      "source_id": "source/VotingV2.sol"
+    }
+  ],
+  "fixed_cutoff": "2026-06-30T23:59:59Z",
+  "mode": "live",
+  "network_scope": "five fixed transactions plus headers/code; envelope bytes vary",
+  "scope": "one real request; not full protocol histories",
+  "source_transactions": 5,
+  "transactions_by_chain": {
+    "ethereum": 1,
+    "polygon": 4
+  }
+}

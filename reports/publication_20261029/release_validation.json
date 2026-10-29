@@ -2,7 +2,7 @@
   "physical_tables": 100,
   "dictionary_fields": 1810,
   "schema_and_row_checks_passed": true,
-  "hash_check_status": "awaiting_preupload_digest_comparison",
+  "hash_check_status": "passed",
   "tables": [
     {
       "path": "data/native/chainlink_eth_usd_reports.parquet",
@@ -604,5 +604,8 @@
       "rows_match": true,
       "fields_match": true
     }
-  ]
+  ],
+  "all_100_sha256_match": true,
+  "total_parquet_files_in_package": 124,
+  "additional_parquet_scope": "metadata, nested-record mirrors and retained reproduction inputs"
 }

@@ -1,0 +1,6 @@
+{
+  "corrupt_existing_file_rejected": true,
+  "existing_file_not_overwritten": true,
+  "anonymous_download_and_sha256_verified": true,
+  "verified_file": "data/daily/daily_measurements.parquet"
+}

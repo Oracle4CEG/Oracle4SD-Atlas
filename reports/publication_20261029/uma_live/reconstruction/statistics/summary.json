@@ -1,0 +1,11 @@
+{
+  "episode_id": "uma:polygon-oov2:0x699c0842ebca1553171853de9853d07f0336ca0909c90156e731b76442a875ca",
+  "source_transactions": 5,
+  "decoded_polygon_events": 9,
+  "usdc_transfer_rows": 8,
+  "bond_raw": "500000000",
+  "principal_returned_raw": "750000000",
+  "realized_payoff_raw": "250000000",
+  "cross_chain_link_grade": "A",
+  "all_required_assertions_pass": true
+}

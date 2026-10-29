@@ -1,14 +1,15 @@
 {
-  "revision": "local coordinated working-paper revision",
-  "date": "2026-10-26",
+  "version": "atlas-utc-20261029",
+  "dataset_repository": "Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
+  "new_public_data_version": "a8e4e93016b7adfcb651bff9bafd26c2fab06093",
+  "dataset_version_tag": "atlas-utc-20261029",
+  "dataset_prefix": "atlas/releases/atlas-utc-20261029",
+  "predecessor_data_release": "356fb1aeac18fb4e6672ca1ea56988dac72c3417",
+  "processing_code_commit": "71c0e19d3ae2b47d763243371f1bfb97750db61d",
+  "notebook_delivery_commit": "9d7a227d4895f31a5c2b865d4dd66e3d1ce88b8a",
   "atlas_input_commit": "1dc0dfc3bc919e64f43a110bf29b75ef0e34459c",
   "template_input_commit": "2ca64c50c43e189aa9cfc2cacd03520b71119301",
-  "predecessor_data_release": "57ab1e2409652291c75f02c9e066c52011d8b4ad",
-  "new_public_commit": null,
-  "new_public_data_version": null,
-  "manuscript": "Oracle4SD_Atlas/main.tex",
-  "tutorial": "tutorial/Oracle4SD_Atlas_Tutorial_executed.ipynb",
-  "dataset_deposit": "/mnt/sda/hy/oracle4sd_revision_20261026/dataset_deposit",
-  "core_clock_parent_contract": "metadata/core_key_validation.json",
-  "model_experiments": "archive/model_experiments; historical and excluded from current claims"
+  "github_pull_request": "https://github.com/Oracle4CEG/Oracle4SD-Atlas/pull/2",
+  "github_main_status": "awaiting_review_and_merge",
+  "dataset_publication_status": "published"
 }

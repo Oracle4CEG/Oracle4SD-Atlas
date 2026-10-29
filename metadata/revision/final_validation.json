@@ -102,5 +102,6 @@
   "human_signoff_completed": false,
   "independent_reader_completed": false,
   "full_historical_acquisition_completed": false,
-  "historical_receipt_note": "Local validation before public publication. Current publication evidence is in publication_validation.json."
+  "historical_receipt_note": "Local validation before public publication. Current publication evidence is in publication_validation.json.",
+  "current_publication_record": "reports/publication_20261029/remote_file_validation.json"
 }

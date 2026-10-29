@@ -1,0 +1,26 @@
+[
+  {
+    "id": "uma_oov2",
+    "url": "https://raw.githubusercontent.com/UMAprotocol/protocol/a16ee53125c433dfa4e29738b73d9069ff109c03/packages/core/contracts/optimistic-oracle-v2/implementation/OptimisticOracleV2.sol",
+    "local_path": "source/OptimisticOracleV2.sol",
+    "expected_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "observed_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "status": "cached_verified"
+  },
+  {
+    "id": "uma_oov2_interface",
+    "url": "https://raw.githubusercontent.com/UMAprotocol/protocol/a16ee53125c433dfa4e29738b73d9069ff109c03/packages/core/contracts/optimistic-oracle-v2/interfaces/OptimisticOracleV2Interface.sol",
+    "local_path": "source/OptimisticOracleV2Interface.sol",
+    "expected_sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328",
+    "observed_sha256": "d6a09bb47ed210dcb28635f3e4ddb652dcc106355876c72adb760d4f606a4328",
+    "status": "cached_verified"
+  },
+  {
+    "id": "uma_voting_v2_deployed_source",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x004395edb43EFca9885CEdad51EC9fAf93Bd34ac",
+    "local_path": "source/VotingV2.sol",
+    "expected_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+    "observed_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+    "status": "cached_verified"
+  }
+]

@@ -1,10 +1,13 @@
 {
   "repo_id": "Oracle4CEG/OracleEconLab-Oracle-Incentives-v1",
   "repo_type": "dataset",
-  "revision": "atlas-utc-20261029",
+  "revision": "a8e4e93016b7adfcb651bff9bafd26c2fab06093",
   "prefix": "atlas/releases/atlas-utc-20261029",
   "physical_tables": 100,
   "logical_products": 10,
   "manifest": "metadata/revision/file_manifest.csv",
-  "products": "metadata/revision/logical_products.json"
+  "products": "metadata/revision/logical_products.json",
+  "processing_code_commit": "71c0e19d3ae2b47d763243371f1bfb97750db61d",
+  "notebook_delivery_commit": "9d7a227d4895f31a5c2b865d4dd66e3d1ce88b8a",
+  "version_tag": "atlas-utc-20261029"
 }

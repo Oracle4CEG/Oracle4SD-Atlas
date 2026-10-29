@@ -1,0 +1,65 @@
+[
+  {
+    "rule_id": "UMA_OOV2_CONFIGURED_REWARD_ESCROW_V1",
+    "source_file": "OptimisticOracleV2.sol",
+    "source_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "line_number": 159,
+    "matched_statement": "currency.safeTransferFrom(msg.sender, address(this), reward)",
+    "economic_interpretation": "A configured request reward is escrowed when RequestPrice executes.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_OOV2_REWARD_REFUND_ON_DISPUTE_V1",
+    "source_file": "OptimisticOracleV2.sol",
+    "source_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "line_number": 427,
+    "matched_statement": "request.reward = 0",
+    "economic_interpretation": "A refunded configured reward is removed before settlement payout.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_OOV2_PROTOCOL_FEE_PAYMENT_V1",
+    "source_file": "OptimisticOracleV2.sol",
+    "source_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "line_number": 414,
+    "matched_statement": "_getStore().payOracleFeesErc20",
+    "economic_interpretation": "Final fee plus burned bond is paid to the protocol Store.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_OOV2_RESOLVED_PAYOUT_V1",
+    "source_file": "OptimisticOracleV2.sol",
+    "source_sha256": "9ec0240cea18958d5a7c24990e1d19a27177b8fc1262d1626cb02fd857df2eaf",
+    "line_number": 618,
+    "matched_statement": "payout = bond.add(unburnedBond).add(request.finalFee).add(request.reward)",
+    "economic_interpretation": "The winner's gross settlement payout combines returned capital and economic gain.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_DVM_REQUEST_RESOLVED_V1",
+    "source_file": "VotingV2.sol",
+    "source_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+    "line_number": 1047,
+    "matched_statement": "emit RequestResolved(",
+    "economic_interpretation": "VotingV2 emits the terminal protocol resolution linked to Polygon settlement.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_DVM_SLASH_ACCRUAL_DISTINCT_FROM_APPLICATION_V1",
+    "source_file": "VotingV2.sol",
+    "source_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+    "line_number": 863,
+    "matched_statement": "emit VoterSlashed(voter, requestIndex, int128(slash))",
+    "economic_interpretation": "Request-level slash accrual is a distinct event from later stake application.",
+    "validation_status": "passed"
+  },
+  {
+    "rule_id": "UMA_DVM_SLASH_APPLICATION_DISTINCT_FROM_ACCRUAL_V1",
+    "source_file": "VotingV2.sol",
+    "source_sha256": "154377b8e445301888b17b888112645daf9a7acd1d9e356b6940cdb5d642f337",
+    "line_number": 883,
+    "matched_statement": "emit VoterSlashApplied(voter, voterStake.unappliedSlash, voterStake.stake)",
+    "economic_interpretation": "Applied stake mutation is not a second economic slash to add to VoterSlashed.",
+    "validation_status": "passed"
+  }
+]
